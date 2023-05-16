@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>2.1.1.3 Function Notation</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        Several different notations are used to describe functions. For the trebling function in the figure above, it is common to write
+    </span>
+    <span class="multilang" lang="no">
+        Flere forskjellige notasjoner brukes til &#229; beskrive funksjoner. For tredoblingsfunksjonen i figuren ovenfor, er det vanlig &#229; skrive
+    </span>
+</p>
+<p>
+    \(\qquad f(x) = 3x.\)
+</p>
+<p>
+    <span class="multilang" lang="en">
+        This indicates that with an input \(x\), the function, \(f\), produces an output of \(3x\). The input to the function is placed in the brackets after the '\(f\)'. Now, \(f(x)\) is read as '\(f\) is a function of \(x\)', or simply '\(f\) of \(x\)', meaning
+                that the value of the output from the function depends upon the value of the input \(x\). The value of the output is often called the `value of the function&#8217;.
+    </span>
+    <span class="multilang" lang="no">
+        Dette indikerer at med en inngang \(x\), produserer funksjonen, \(f\), en utgang \(3x\). Inngangen til funksjonen er plassert i parentesene etter '\(f\)'. N&#229; leses \(f(x)\) som '\(f\) er en funksjon av \(x\)', eller bare '\(f\) av \(x\)', som betyr at verdien av utgangen fra funksjonen avhenger av verdien av inngangen \(x \). Verdien av utgangen kalles ofte `verdien av funksjonen '.
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        State in words the rule defined by each of the following functions:
+    </span>
+    <span class="multilang" lang="no">
+        Oppgi med ord regelen definert av hver av de f&#248;lgende funksjonene:
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        \(f(x)=6x\).
+    </li>
+    <li>
+        \(f(t)=6t-1\).
+    </li>
+    <li>
+        \(g(x)=x^2-7\).
+    </li>
+    <li>
+        \(h(t)=t^3+5\).
+    </li>
+    <li>
+        \(p(x)=x^3+5\).
+    </li>
+</ol>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The rule for \(f\) is &#8216;multiply the input by \(6\)&#8217;.
+            </span>
+            <span class="multilang" lang="no">
+                Regelen for \(f\) er 'multipliser inngangen med \(6\)'.
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                Here the input has been labelled \(t\). The rule for \(f\) is &#8216;multiply the input by \(6\) and subtract \(1\)&#8217;.
+            </span>
+            <span class="multilang" lang="no">
+                Her har inngangen blitt merket \(t\). Regelen for \(f\) er 'multipliserer inngangen med \(6\) og subtrahere \(1\) '.
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                Here the function has been labelled \(g\). The rule for \(g\) is &#8216;square the input and subtract \(7\)&#8217;.
+            </span>
+            <span class="multilang" lang="no">
+                Her har funksjonen blitt merket \(g\). Regelen for \(g\) er 'kvadrer inngangen og subtrahere \(7\) '.
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The rule for \(h\) is &#8216;cube the input and add \(5\)&#8217;.
+            </span>
+            <span class="multilang" lang="no">
+                Regelen for \(h\) er 'opph&#248;y med 3 og adder \(5\)'.
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The rule for \(h\) is &#8216;cube the input and add \(5\)&#8217;.
+            </span>
+            <span class="multilang" lang="no">
+                Regelen for \(h\) er 'opph&#248;y med 3 og adder \(5\)'.
+            </span>
+        </p>
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        Note from the Example above, parts (d) and (e), that it is the rule that is important when describing a function and not the letters used. Both \(h(t)\) and \(p(x)\) instruct us to &#8216;cube the input and add \(5\)&#8217;. Different letter are used for the variables in each case but both functions do the same thing.
+        <br/>
+    </span>
+    <span class="multilang" lang="no">
+        Merk fra (d) og (e) i eksemplet ovenfor at det er regelen som er viktig n&#229;r du beskriver en funksjon, ikke bokstavene brukt. B&#229;de \(h(t)\) og \(p(x)\) instruere oss til &#229; 'opph&#248;ye med 3 og addere \(5\)'. Ulike bokstaver brukes til variablene i hvert tilfelle, men begge funksjonene gj&#248;r det samme.
+        <br/>
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Write down a mathematical function which can be used to describe the following rules:
+    </span>
+    <span class="multilang" lang="no">
+        Skriv ned en matematisk funksjon som kan brukes til &#229; beskrive f&#248;lgende regler:
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                &#8216;square the input and divide the result by \(2\)&#8217;. Use the letter \(x\) for input and the letter \(f\) to represent the function.
+            </span>
+            <span class="multilang" lang="no">
+                'Kvadrer inngangen og divider resultatet med \(2\)'. Bruk bokstaven \(x\) for inngang og bokstaven \(f\) for &#229; representere funksjonen.
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                &#8216;divide the input by \(3\) and add \(7\)&#8217;. Call the function \(g\) and call the input \(t\).
+            </span>
+            <span class="multilang" lang="no">
+                "Del inngangen med \(3\) og legg til \(7\)'. Kall funksjonen \(g \) og kall inngangen \(t\).
+            </span>
+        </p>
+    </li>
+</ol>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            \( \displaystyle{f(x)={x^2\over 2}}\).
+        </p>
+    </li>
+    <li>
+        <p>
+            \( \displaystyle{g(t)={t\over 3} + 7}\).
+        </p>
+    </li>
+</ol>
+<p>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        State the rule of each of the following functions:
+    </span>
+    <span class="multilang" lang="no">
+        Angi regelene for hver av de f&#248;lgende funksjonene:
+    </span>
+</p>
+<ol class="HELM_parts_inline">
+    <li>
+        \(f(x)=5x\),
+    </li>
+    <li>
+        \(f(t)=5t\),
+    </li>
+    <li>
+        \(f(t)=1-t\),
+    </li>
+    <li>
+        \(f(x)=8x+10\),
+    </li>
+    <li>
+        \(f(t)=7t-27\),
+    </li>
+    <li>
+        \(\displaystyle{h(t)={t\over 3}+ {2\over 3}}\),
+    </li>
+    <li>
+        \(\displaystyle{f(x)={1\over 1+x}}\).
+    </li>
+</ol>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                multiply the input by \(5\).
+            </span>
+            <span class="multilang" lang="no">
+                multipliser inngangen med \(5\).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                same as (a).
+            </span>
+            <span class="multilang" lang="no">
+                samme som (a).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                subtract the input from \(1\).
+            </span>
+            <span class="multilang" lang="no">
+                subraher inngangen fra \(1\).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                multiply the input by \(8\) and then add \(10\).
+            </span>
+            <span class="multilang" lang="no">
+                mulitpliser inngangen med \(8\) og deretter adder \(10\).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                multiply the input by \(7\) and then subtract \(27\).
+            </span>
+            <span class="multilang" lang="no">
+                multipliser inngangen med \(7\) og deretter substraher \(27\).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                divide the input by \(3\) and then add \(2/3\).
+            </span>
+            <span class="multilang" lang="no">
+                divider inngangen med \(3\) og deretter adder \(2/3\).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                add \(1\) to the input and then find the reciprocal of the result.
+            </span>
+            <span class="multilang" lang="no">
+                fin inversen til inngangen addert med \(1\).
+            </span>
+        </p>
+    </li>
+</ol>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

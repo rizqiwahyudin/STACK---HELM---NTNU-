@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>2.1.2.1 The Argument of a Function</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        The Argument of a Function
+    </span>
+    <span class="multilang" lang="no">
+        Argumentet til en funksjon
+    </span>
+    <br/>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        The input to a function is sometimes called its
+        <strong>
+            argument
+        </strong>
+        or
+        <b>
+            independent variable
+        </b>
+        . It is frequently necessary to obtain the output from a function if we are given its argument. For example, given the function \(g(t)=3t+2\)
+                we may require the value of the output when the argument is \(4\). We write this as \(g(t=4)\) or more usually and compactly as \(g(4)\). In this case the value of \(g(4)\) is \(3\times 4+2=14\).
+    </span>
+    <span class="multilang" lang="no">
+        Inngangen til en funksjon kalles noen ganger dens
+        <strong>
+            argument
+        </strong>
+        eller
+        <b>
+            uavhengige variabel
+        </b>
+        . Det er ofte n&#248;dvendig &#229; hente utdataene fra en funksjon hvis vi f&#229;r et argument. For eksempel gitt funksjonen \(g(t)=3t+2\) kan vi trenge verdien av utgangen n&#229;r argumentet er \(4\). Vi skriver dette som \(g(t=4)\) eller mer vanligvis, og kompakt, som \(g(4)\). I dette tilfellet er verdien av \(g(4)\) \(3\times 4+2 = 14 \).
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Given the function \(f(x)=3x+1\) find
+    </span>
+    <span class="multilang" lang="no">
+        Gitt funksjonen \(f(x)=3x+1\) finn
+    </span>
+</p>
+<ol class="HELM_parts_inline">
+    <li>
+        \(f(2)\)
+    </li>
+    <li>
+        \(f(-1)\)
+    </li>
+    <li>
+        \(f(6)\)
+    </li>
+</ol>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The output from the function needs to be found when the argument or input is \(2\). We need to replace \(x\) by \(2\) in the expression for the function. We find \( f(2)=3\times 2 + 1 = 7\).
+            </span>
+            <span class="multilang" lang="no">
+                Utgangen fra funksjonen m&#229; finnes n&#229;r argumentet, eller inngangen, er \(2\). Vi m&#229; erstatte \(x\) med \(2\) i uttrykket for funksjonen. Vi finner \(f(2) = 3\times 2 + 1 = 7 \).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                Here the argument is \(-1\). We find \(f(-1)=3\times (-1) +1 = -2\).
+            </span>
+            <span class="multilang" lang="no">
+                Her er argumentet \(-1\). Vi finner \(f(-1)=3\times (-1) +1 = -2\).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            \(f(6)=3\times 6+1=19\).
+        </p>
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        It is possible to obtain the value of a function when the argument is an algebraic expression. Consider the following Example.
+    </span>
+    <span class="multilang" lang="no">
+        Det er mulig &#229; f&#229; verdien av en funksjon n&#229;r argumentet er et algebraisk uttrykk. Vurder f&#248;lgende eksempel.
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Given the function \(y(x)=3x+2\) find
+    </span>
+    <span class="multilang" lang="no">
+        Gitt funksjonen \(y(x)=3x+2\) finn
+    </span>
+</p>
+<ol class="HELM_parts_inline">
+    <li>
+        \(y(t)\)
+    </li>
+    <li>
+        \(y(2t)\)
+    </li>
+    <li>
+        \(y(z+2)\)
+    </li>
+    <li>
+        \(y(5x)\)
+    </li>
+</ol>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        The rule for this function is &#8216;multiply the input by \(3\) and then add \(2\)&#8217;. We can apply this rule whatever the argument.
+    </span>
+    <span class="multilang" lang="no">
+        Reglen for denne funksjonen er &#8216;multipliser inngengen med \(3\) og adder \(2\)&#8217;. Vi kan bruke denne regelen med hvilke som helst argument.
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                In this case the argument is \(t\). Multiplying this by \(3\) and adding \(2\) we find \(y(t)=3t+2\). Equivalently we can replace \(x\) by \(t\) in the expression for the function, so, \(y(t)=3t+2\).
+            </span>
+            <span class="multilang" lang="no">
+                I dette tilfellet er argumentet \(t\). Ved &#229; multiplisere dette med \(3 \) og legge til \(2\) finner vi \(y(t) = 3t+2\). Tilsvarende kan vi erstatte \(x\) med \(t\) i uttrykket for funksjonen s&#229; \(y(t) = 3t+2\).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                In this case the argument is \(2t\). We need to replace \(x\) by \(2t\) in the expression for the function. So \(y(2t)=3(2t)+2=6t+2\).
+            </span>
+            <span class="multilang" lang="no">
+                I dette tilfellet er argumentet \(2t\). Vi m&#229; erstatte \(x\) med \(2t\) i uttrykket for funksjonen, s&#229; \(y(2t) = 3 (2t)+2 = 6t+2\).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                In this case the argument is \(z+2\). We find \(y(z+2)=3(z+2)+2=3z+8\). It is important to note that \(y(z+2)\) is
+                <strong>
+                    not
+                </strong>
+                \(y\times (z+2)=yz+2y\) but instead reads &#8216;\(y\) of \((z+2)\)&#8217; where &#8216; of&#8217; means &#8216;take the function of&#8217;.
+            </span>
+            <span class="multilang" lang="no">
+                I dette tilfellet er argumentet \(z+2 \). Vi finner \(y(z+2) = 3(z+2)+2 = 3z+8\). Det er viktig &#229; merke seg at \(y(z+2)\) er
+                <strong>
+                    ikke
+                </strong>
+                \(y \times (z+2) = yz+2y \), men i stedet leses som '\(y\) av \((z+2)\)' hvor 'av' betyr 'ta funksjonen av'.
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                Here we have a complication. The argument is \(5x\) and so there appears to be a clash of notation with the original expression for the function. There is no problem if we remember that the rule is to multiply the input by \(3\) and then add \(2\).
+                                        The input now is \(5x\). So \(y(5x)=3(5x)+2=15x+2\).
+            </span>
+            <span class="multilang" lang="no">
+                Her har vi en komplikasjon. Argumentet er \(5x\), og det ser ut til &#229; v&#230;re et notasjonskollisjon med det opprinnelige uttrykket for funksjonen. Det er ikke noe problem hvis vi husker at regelen er &#229; multiplisere inngangen med \(3\) og deretter legge til \(2\).
+                                            Inngangen n&#229; er \(5x\). S&#229; \(y(5x) = 3(5x)+2 = 15x+2 \).
+            </span>
+        </p>
+    </li>
+</ol>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

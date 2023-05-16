@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>2.1.3.1a- Domain of a function</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Domain, range and codomain
+    </span>
+    <span class="multilang" lang="no">
+        Definisjonsmengde, verdiomr&#229;de og kodomene
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        Many of the examples of functions we have met so far can be evaluated for any real number. However the function \(\displaystyle{ f(x)=\frac{1}{x}}\) cannot be evaluated at \(0\), and we say that \(f(x)\) is
+        <b>
+            not defined at
+        </b>
+        \(0\). In other cases
+                the argument of a function might represent time so we only take non-negative input values.
+    </span>
+    <span class="multilang" lang="no">
+        Mange av&#160; funksjonseksemplene vi har m&#248;tt s&#229; langt kan evalueres for et reelt tall. Funksjonen \(\displaystyle {f(x) = \frac{1}{x}}\) kan imidlertid ikke evalueres for \(0\), og vi sier dermed at \(f(x)\) er
+        <b>
+            ikke definert for
+        </b>
+        \(0\). I andre tilfeller kan argumentet for en funksjon representere tid, s&#229; vi tar bare ikke-negative inngangsverdier.
+    </span>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We will often want to specify which values we allow as input values and which values the function will give as output values. By
+        <b>
+            domain
+        </b>
+        we mean the possible input values for a function. If we only have the expression for a function, such as \(\displaystyle{
+                f(x)=\frac{1}{x}}\), then we take as domain the collection of real numbers at which the function is defined; this can sometimes be called the maximum domain of definition.
+    </span>
+    <span class="multilang" lang="no">
+        Vi vil ofte spesifisere hvilke verdier vi tillater som inngangsverdier og hvilke verdier funksjonen kan gi som utgangsverdier. Med
+        <b>
+            definisjonsmengde
+        </b>
+        mener vi mulige inngangsverdier for en funksjon. Hvis vi bare har uttrykket for en funksjon, for eksempel \(\displaystyle{f(x) = \frac{1}{x}}\), vil definisjonsmengden v&#230;re samlingen av reelle tall der funksjonen er definert, og kalles den maksimale definisjonsmengden.
+    </span>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The collection of all possible output values of a function is called the
+        <b>
+            range
+        </b>
+        of the function. Note that the possible output values will depend on the input values. In other words the range will depend on the domain. For example if \(f(t)=2t+1\)
+                has domain \((0,\infty)\), all positive real numbers, then the range will be any real number greater than \(1\). We write this as
+        <br/>
+    </span>
+    <span class="multilang" lang="no">
+        Samlingen av alle mulige utgangsverdier for en funksjon kalles funksjonens
+        <b>
+            verdiomr&#229;de
+        </b>
+        . V&#230;r oppmerksom p&#229; at de mulige utgangsverdiene vil avhenge av inngangsverdiene. Med andre ord vil omr&#229;det avhenge av definisjonsmengden. For eksempel, hvis \(f(t) = 2t+1 \) har definisjonsmengden \((0,\infty)\), alle positive reelle tall, s&#229; vil omr&#229;det v&#230;re et hvilket som helst reelt tall st&#248;rre enn \(1\). Vi skriver dette som
+        <br/>
+    </span>
+</p>
+<p>
+    \[f: (0,\infty) \rightarrow (1,\infty)\]
+    <br/>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        with the domain on the left, and the range on the right.
+    </span>
+    <span class="multilang" lang="no">
+        med definisjonsmengden til venstre, og verdimengden til h&#248;yre.
+    </span>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In general the range of function with a given domain may be difficult to calculate. For a function \(f(x)\) with a given domain we define a
+        <b>
+            codomain
+        </b>
+        to be any collection of values which contains the range of \(f(x)\). A function can have many different
+        codomains, but it will only have one range for each domain.
+    </span>
+    <span class="multilang" lang="no">
+        Generelt kan verdiomr&#229;det for en gitt definisjonsmengde v&#230;re vanskelig &#229; beregne. For en funksjon \(f(x)\) med en gitt definisjonsmengde definerer vi et
+        <b>
+            kodomenet
+        </b>
+        som en samling verdier som inneholder verdiomr&#229;det til \(f(x)\). En funksjon kan ha mange forskjellige
+            kodomener, men det vil bare ha ett omr&#229;de for hver definisjonsmengde.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The concept of the range of a function will be important when we try to reverse the direction and go from the output to the input. This is called the inverse of \(f(x)\) and we will return to this in another section.
+    </span>
+    <span class="multilang" lang="no">
+        Konseptet med en funksjons definisjonsmengde vil v&#230;re viktig n&#229;r vi pr&#248;ver &#229; snu retningen og g&#229; fra utgangen til inngangen. Dette kalles invers av \(f(x)\), og vi kommer tilbake til dette i en annen seksjon.
+    </span>
+</p>
+<p>
+    <br/>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>
