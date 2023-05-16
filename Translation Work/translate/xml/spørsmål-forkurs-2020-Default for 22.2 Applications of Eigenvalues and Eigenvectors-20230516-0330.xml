@@ -1,0 +1,4001 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$module$/top/Default for 22.2 Applications of Eigenvalues and Eigenvectors</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text>The default category for questions shared in context '22.2 Applications of Eigenvalues and Eigenvectors'.</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9311  -->
+  <question type="description">
+    <name>
+      <text>22.2.1.1 Diagonalization of a matrix with distinct eigenvalues</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h3><span class="multilang" lang="en">Diagonalization of a matrix with distinct eigenvalues</span>
+<span class="multilang" lang="no">Diagonalisering av en matrise med ulike egenverdier. </span></h3>
+<p><span class="multilang" lang="en">Diagonalization means transforming a non-diagonal matrix into an equivalent matrix which is diagonal and hence is simpler to deal with.</span>
+<span class="multilang" lang="no">Diagonalisering betyr å transformere en ikke-diagonal matrise til en ekvivalent matrise som er diagonal og dermed enklere å håndtere. </span></p>
+<p><span class="multilang" lang="en">A matrix \(A\) with distinct eigenvalues has eigenvectors which are linearly independent. If we form a matrix \(P\) whose columns are these eigenvectors, it can be shown that \( \det (P)\neq 0\) so that \(P^{-1}\) exists.</span>
+<span class="multilang" lang="no">En matrise \(A\) med distinkte egenverdier har egenvektorer som er lineært uavhengige. Hvis vi danner en matrise \(P\) hvor kolonnene er disse egenvektorene, kan det vises at \( \det (P) \neq 0\) slik at \(P^{-1}\) eksisterer. </span></p>
+<p><span class="multilang" lang="en">The product \(P^{-1}AP\) is then a <strong>diagonal</strong> matrix \(D\) whose diagonal elements are the eigenvalues of \(A\). Thus if \(\lambda_1,\lambda_2,\ldots \lambda_n\) are the distinct eigenvalues of \(A\) with associated eigenvectors \(\underline{x}_1,\underline{x}_2,\ldots , \underline{x}_n\) respectively, then</span>
+<span class="multilang" lang="no">Produktet \(P^{-1}AP\) er da en <strong>diagonal</strong> matrise \(D\) der de diagonal elementene er egenverdiene til \(A\) Dermed, hvis \(\lambda_1,\lambda_2,\ldots \lambda_n\) er de distinkte egenverdiene til \(A\) med tilhørende egenvektorer \(\underline{x}_1,\underline{x}_2,\ldots , \underline{x}_n\) henholdsvis, vil</span></p>
+\[P = [\underline{x}_1 : \underline{x}_2 : \ \cdots\ : \underline{x}_n]\]
+<p><span class="multilang" lang="en">will produce a product</span>
+<span class="multilang" lang="no">produsere et produkt </span></p>
+\[P^{-1}AP = D = \begin{bmatrix}
+\lambda_1 &amp; 0 &amp; \cdots &amp; 0 \\
+0 &amp; \lambda_2 &amp; \cdots &amp; 0 \\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+0 &amp; \cdots &amp; \cdots &amp; \lambda_n
+\end{bmatrix}\]
+
+<p><span class="multilang" lang="en">We see that the order of the eigenvalues in \(D\) matches the order in which \(P\) is formed from the eigenvectors.</span>
+<span class="multilang" lang="no">Vi ser at rekkefølgen til egenverdiene i \(D\) samsvarer med rekkefølgen til \(P\) som formes av egenvektorene. </span></p>
+<p><span class="multilang" lang="en">Note that:</span>
+<span class="multilang" lang="no">Merk at: </span></p>
+<ol type="a">
+<li>
+<p><span class="multilang" lang="en">The matrix \(P\) is called the <strong>modal matrix</strong> of \(A\).</span>
+<span class="multilang" lang="no">Matrisen \(P\) kalles for den&nbsp;<strong>modal matrisen</strong> til \(A\) </span></p>
+</li>
+<li>
+<p><span class="multilang" lang="en">Since \(D\) is a diagonal matrix with eigenvalues \(\lambda_1,\lambda_2,\ldots,\lambda_n\) which are the same as those of \(A\), then the matrices \(D\) and \(A\) are said to be  <strong>similar</strong>.</span>
+<span class="multilang" lang="no">Siden \(D\) er en diagonal matrise med egenverdier \(\lambda_1,\lambda_2,\ldots,\lambda_n\) som er de samme som de til \(A\), sies det at matrisene \(D\) og \(A\) er <strong>like</strong>. </span></p>
+</li>
+<li>
+<p><span class="multilang" lang="en">The transformation of \(A\) into \(D\) using \(P^{-1}AP=D\) is said to be a <strong>similarity transformation.</strong></span>
+<span class="multilang" lang="no">Transformasjon av \(A\) til \(D\) ved bruk av \(P^{-1}AP=D\) kalles en <strong>likhetstransformasjon.</strong> </span></p>
+</li>
+</ol>
+<hr>
+<h4 class="HELM_example"><span class="multilang" lang="en">Example</span>
+<span class="multilang" lang="no">Eksempel </span></h4>
+<p><span class="multilang" lang="en">Let \(A=\left[\begin{array}{cc}2&amp;3\\ 3&amp;2\end{array}\right]\). Obtain the modal matrix \(P\) and calculate the product \(P^{-1}AP\).</span>
+<span class="multilang" lang="no">La \(A=\left[\begin{array}{cc}2&amp;3\\ 3&amp;2\end{array}\right]\) Finn modalmatrisen \(P\) og regn ut produktet \(P^{-1}AP\). </span></p>
+<h4 class="HELM_solution"><span class="multilang" lang="en">Solution</span>
+<span class="multilang" lang="no">Løsning</span></h4>
+<p><span class="multilang" lang="en">The matrix \(A\) has two distinct eigenvalues \(\lambda_1=-1\), \(\lambda_2=5\) with corresponding eigenvectors \(\underline{x_1}=\left[\begin{array}{r}x\\ -x\end{array}\right]\) and \(\underline{x_2}=\left[\begin{array}{c}x\\
+        x\end{array}\right]\). We can therefore form the modal matrix from the simplest eigenvectors of these forms:</span>
+<span class="multilang" lang="no">Matrisen \(A\) har to distinkte egenverdier \(\lambda_1=-1\), \(\lambda_2=5\) med tilhørende egenvektorer \(\underline{x_1}=\left[\begin{array}{r}x\\ -x\end{array}\right]\) og \(\underline{x_2}=\left[\begin{array}{c}x\\
+        x\end{array}\right]\) Vi kan derfor danne den modale matrisen fra de enkleste egenvektorene: </span></p>
+\[ P=\left[\begin{array}{rr}1&amp;1\\ -1&amp;1\end{array}\right]\]
+<p><span class="multilang" lang="en">(Other eigenvectors would be acceptable e.g. we could use \(P=\left[\begin{array}{rr}2&amp;3\\
+        -2&amp;3\end{array}\right]\) but there is no reason to over complicate the calculation.)</span>
+<span class="multilang" lang="no">(Andre egenvektorer ville vært akseptable, f.eks. kunne vi bruke) \(P=\left[\begin{array}{rr}2&amp;3\\
+        -2&amp;3\end{array}\right]\) Men det er ingen grunn til å overkomplisere beregningen. </span></p>
+<p><span class="multilang" lang="en">It is easy to obtain the inverse of this \(2\times 2\) matrix \(P\) and the reader should confirm that:</span>
+<span class="multilang" lang="no">Det er lett å finne inversen til denne \(2\times 2\) matrisen \(P\), og leseren bør bekrefte dette: </span></p>
+\[P^{-1}=\dfrac{1}{\text{det}(P)}\ \text{adj}
+(P)=\dfrac{1}{2}\left[\begin{array}{rr}1&amp;1\\
+-1&amp;1\end{array}\right]^T=\dfrac{1}{2}\left[\begin{array}{rr}1&amp;-1\\ 1&amp;1\end{array}\right]\]
+
+<p><span class="multilang" lang="en">We can now construct the product \(P^{-1}AP\):</span>
+<span class="multilang" lang="no">Vi kan nå konstruere produktet \(P^{-1}AP\): </span></p>
+\[\begin{aligned}
+P^{-1}AP&amp;=\dfrac{1}{2}\left[\begin{array}{rr}1&amp;-1\\
+1&amp;1\end{array}\right]\left[\begin{array}{cc}2&amp;3\\ 3&amp;2\end{array}\right]\left[\begin{array}{rr}1&amp;1\\
+-1&amp;1\end{array}\right]\\
+&amp;=\dfrac{1}{2}\left[\begin{array}{rr}1&amp;-1\\
+1&amp;1\end{array}\right]\left[\begin{array}{rr}-1&amp;5\\
+1&amp;5\end{array}\right]\\
+\\
+&amp;= \dfrac{1}{2}\left[\begin{array}{rr}-2&amp;0\\
+0&amp;10\end{array}\right]\\
+&amp;= \left[\begin{array}{rr}-1&amp;0\\ 0&amp;5\end{array}\right]\end{aligned}\]
+<p><span class="multilang" lang="en">which is a diagonal matrix with entries that are the eigenvalues, as expected. Show (by repeating the method outlined above) that had we defined \(P=\left[\begin{array}{rr}1&amp;1\\ 1&amp;-1\end{array}\right]\) (i.e. interchanged the order in which the eigenvectors were taken) we would find \(P^{-1}AP=\left[\begin{array}{rr}5&amp;0\\ 0&amp;-1\end{array}\right]\) (i.e. the resulting diagonal elements would also be interchanged.)</span>
+<span class="multilang" lang="no">som er en diagonalmatrise med elementer som er egenverdiene, som forventet. Vis (ved å gjenta metoden som er beskrevet over) at hvis vi hadde definert \(P=\left[\begin{array}{rr}1&amp;1\\ 1&amp;-1\end{array}\right]\) (dvs. hvis vi byttet rekkefølgen på hvilke egenvektorer som ble tatt) ville vi finne \(P^{-1}AP=\left[\begin{array}{rr}5&amp;0\\ 0&amp;-1\end{array}\right]\) (dvs. de resulterende diagonale elementene ville også bli byttet om.) </span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9312  -->
+  <question type="description">
+    <name>
+      <text>22.2.1.3 Matrix powers</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h4><span class="multilang" lang="en">Matrix powers</span>
+<span class="multilang" lang="no">Matrise eksponenter</span></h4>
+<p><span class="multilang" lang="en">If \(P^{-1}AP=D\) then we can obtain \(A\) (i.e. make \(A\) the subject of this matrix equation) as follows:</span>
+<span class="multilang" lang="no">Hvis \(P^{-1}AP=D\), kan vi finne \(A\) (dvs. isolere \(A\) for denne matrise-ligningen) som følger:</span></p>
+<p><span class="multilang" lang="en">Multiplying on the left by \(P\) and on the right by \(P^{-1}\) we obtain</span>
+<span class="multilang" lang="no">Ved å multiplisere på venstre side med \(P\) og på høyre side med \(P^{-1}\)  får vi</span></p>
+\[PP^{-1}APP^{-1}=PDP^{-1}\]
+<p><span class="multilang" lang="en">Now using the fact that \(PP^{-1}=P^{-1}P=I\) we obtain</span>
+<span class="multilang" lang="no">Nå bruker vi faktumet at \(PP^{-1}=P^{-1}P=I\) for å få</span></p>
+\[IAI=PDP^{-1}\]
+<p><span class="multilang" lang="en">and so</span>
+<span class="multilang" lang="no">og så</span></p>
+\[A=PDP^{-1}\]
+
+<p><span class="multilang" lang="en">We can use this result to obtain the <strong>powers</strong> of a square matrix, a process which is sometimes useful in control theory. Note that</span>
+<span class="multilang" lang="no">Vi kan bruke dette resultatet til å få <strong>potenser</strong>  av en kvadratisk matrise, en prosess som noen ganger er nyttig innen kontrollteori. Merk at</span></p>
+<p style="text-align: center;"><span class="multilang" lang="en">\(A^2 = A \cdot A\),\(A^3=A \cdot A \cdot A\) etc.</span>
+<span class="multilang" lang="no">\(A^2 = A \cdot A\), \(A^3=A \cdot A \cdot A\) osv.</span></p>
+<p><span class="multilang" lang="en">Clearly, obtaining high powers of \(A\) directly would in general involve many multiplications. The process is quite straightforward, however, for a diagonal matrix \(D\), as this next Exercise shows.</span>
+<span class="multilang" lang="no">Tydeligvis ville det å finne høye potenser av \(A\) direkte i generelt tilfelle involvere mange multiplikasjoner. Prosessen er imidlertid ganske rett frem for en diagonal matrise \(D\), som neste øving viser.</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9313  -->
+  <question type="description">
+    <name>
+      <text>22.2.1.5 Powers of Matrices</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span class="multilang" lang="en">We now use the relation \(\ \ A=PDP^{-1}\) to obtain a formula for powers of \(A\) in terms of the easily calculated powers of the diagonal matrix \(D\):</span>
+<span class="multilang" lang="no">Vi bruker nå relasjonen \(\ \ A=PDP^{-1}\) for å finne en formel for potenser av \(A\) i med de lett utregnbare potensene til diagonalmatrisen \(D\):</span></p>
+\begin{align*}
+A^ = A \cdot A &amp; = (PDP^{-1})(PDP^{-1}) \\
+&amp; = PD(P^{-1}P)DP^{-1} \\
+&amp; = PDIDP^{-1} \\
+&amp; = PD^2P^{-1}
+\end{align*}
+
+<p><span class="multilang" lang="en">Similarly,</span>
+<span class="multilang" lang="no">På samme måte,</span></p>
+\begin{align*}
+A^3 = A^2 \cdot A &amp; (PD^2P^{-1})(PDP^{-1}) \\
+&amp; = PD^2(P^{-1}P)DP^{-1} \\
+&amp; = PD^3P^{-1}
+\end{align*}
+<p><span class="multilang" lang="en">The general result is given in the following Key Point:</span>
+<span class="multilang" lang="no">Det generelle resultatet er gitt i følgende nøkkelpunkt:</span></p>
+<div class="HELM_keypoint">
+<h4><span class="multilang" lang="en">Key Point</span>
+<span class="multilang" lang="no">Nøkkelpunkt</span></h4>
+<p><span class="multilang" lang="en">For a matrix \(A\) with distinct eigenvalues \(\lambda_1,\lambda_2,\dots ,\lambda_n\) and associated eigenvectors \(\underline{x}_1, \underline{x}_2,\dots ,\underline{x}_n\), if</span>
+<span class="multilang" lang="no">For en matrise \(A\) med distinkte egenverdier \(\lambda_1,\lambda_2,\dots ,\lambda_n\) og tilhørende egenvektorer \(\underline{x}_1, \underline{x}_2,\dots ,\underline{x}_n\), hvis</span></p>
+    \[P=[\underline{x}_1 : \underline{x}_2 : \ \cdots\ : \underline{x}_n]\]
+    <p><span class="multilang" lang="en">then \(D=P^{-1}AP\) is a diagonal matrix such that
+        \[ D=\left[\begin{matrix}\lambda_1&amp;&amp;&amp;&amp;\\
+        &amp;\lambda_2&amp;&amp;&amp;\\
+        &amp;&amp;\ddots &amp;&amp;\\
+        &amp;&amp;&amp;\lambda_n\end{matrix}\right]\qquad\text{and}\qquad A^k=PD^kP^{-1}\]</span>
+        <span class="multilang" lang="no">
+        så er \(D=P^{-1}AP\) en diagonalmatrise slik at
+        \[ D=\left[\begin{matrix}\lambda_1&amp;&amp;&amp;&amp;\\
+        &amp;\lambda_2&amp;&amp;&amp;\\
+        &amp;&amp;\ddots &amp;&amp;\\
+        &amp;&amp;&amp;\lambda_n\end{matrix}\right]\qquad\text{og}\qquad A^k=PD^kP^{-1}\]</span></p>
+</div>
+<hr>
+<h4 class="HELM_example"><span class="multilang" lang="en">Example</span>
+<span class="multilang" lang="no">Eksempel</span></h4>
+<p><span class="multilang" lang="en">If \(A=\left[\begin{array}{cc}2&amp;3\\ 3&amp;2\end{array}\right]\), find \(A^{23}\). (Use the results of the previous Example.)</span>
+<span class="multilang" lang="no">Hvis \(A=\left[\begin{array}{cc}2&amp;3\\ 3&amp;2\end{array}\right]\), finn  \(A^{23}\). (Bruk resultatene fra forrige eksempel.)</span></p>
+<h4 class="HELM_solution"><span class="multilang" lang="en">Solution</span>
+<span class="multilang" lang="no">Løsning</span></h4>
+<p><span class="multilang" lang="en">We know from the previous Example that if \(P=\left[\begin{array}{rr}1&amp;1\\-1&amp;1\end{array}\right]\) then \( P^{-1}AP=\left[\begin{array}{rr}-1&amp;0\\ 0&amp;5\end{array}\right]= D\)
+    where \(P^{-1}=\dfrac{1}{2}\left[\begin{array}{rr}\hfill 1&amp;\hfill -1\\ \hfill 1&amp;\hfill
+    1\end{array}\right]\).</span>
+<span class="multilang" lang="no">Vi vet fra det forrige eksempelet at hvis \(P=\left[\begin{array}{rr}1&amp;1\\-1&amp;1\end{array}\right]\) så er \(P^{-1}AP=\left[\begin{array}{rr}-1&amp;0\\ 0&amp;5\end{array}\right]=D\) hvor \(P^{-1}=\dfrac{1}{2}\left[\begin{array}{rr}\hfill 1&amp;\hfill -1\\ \hfill 1&amp;\hfill
+1\end{array}\right]\).</span></p>
+<p><span class="multilang" lang="en">Therefore,</span>
+<span class="multilang" lang="no">Derfor er,</span></p>
+<p style="text-align: center;"><span class="multilang" lang="en">\(A=PDP^{-1}\) and \(A^{23}=PD^{23}P^{-1}\) using the general result in the Key Point, i.e.,</span>
+<span class="multilang" lang="no">\(A=PDP^{-1}\) og \(A^{23}=PD^{23}P^{-1}\) ved hjelp av det generelle resultatet i nøkkelpunktet, dvs.,</span></p>
+\[A^{23}= \dfrac{1}{2}
+\left[\begin{array}{rr}\hfill 1&amp;\hfill 1\\ \hfill -1&amp;\hfill 1\end{array}\right]
+\left[\begin{array}{rr}\hfill -1&amp;\hfill 0\\ \hfill 0&amp;\hfill 5^{23}\end{array}\right]
+\left[\begin{array}{rr}\hfill 1&amp;\hfill -1\\ \hfill 1&amp;\hfill 1\end{array}\right]\]
+<p><span class="multilang" lang="en">which is easily evaluated, especially compared to calculating the product \(A^{23}\) directly!</span>
+<span class="multilang" lang="no">som er lett å beregne, spesielt sammenlignet med å beregne produktet \(A^{23}\) direkte!</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9317  -->
+  <question type="description">
+    <name>
+      <text>22.2.2.1 Systems of first order differential equations</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h3><span style="color: inherit; font-family: inherit;">Systems of first order differential equations</span><br></h3>
+
+<p>Systems of first order ordinary differential equations arise in many areas of mathematics and engineering, for example in control theory and in the analysis of electrical circuits. In each case the basic unknowns are each a function of the time variable <span class="math inline">\(t\)</span>. A number of techniques have been developed to solve such systems of equations; for example the Laplace transform. Here we shall use eigenvalues and eigenvectors to obtain the solution. Our first step will be to recast the system of ordinary differential equations in the <span><strong>matrix form</strong></span> <span class="math inline">\(\dot{\underline{x}}=A \underline{x}\)</span> where <span class="math inline">\(A\)</span> is an <span class="math inline">\(n\times n\)</span> coefficient matrix of constants, <span class="math inline">\(\underline{x}\)</span> is the <span class="math inline">\(n\times 1\)</span> column vector of unknown functions and <span class="math inline">\(\dot {\underline{x}}\)</span> is the <span class="math inline">\(n\times 1\)</span> column vector containing the <span><strong>derivatives</strong></span> of the unknowns. The main step will be to use the modal matrix of <span class="math inline">\(A\)</span> to diagonalise the system of differential equations. This process will transform <span class="math inline">\(\dot {\underline{x}}=A \underline{x}\)</span> into the form <span class="math inline">\(\dot{\underline{y}}=D \underline{x}\)</span> where <span class="math inline">\(D\)</span> is a <span><strong>diagonal matrix</strong></span>. We shall find that this new diagonal system of differential equations can be easily solved. This special solution will allow us to obtain the solution of the original system.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9319  -->
+  <question type="description">
+    <name>
+      <text>22.2.2.3 Using matrices for systems of 1st order diff</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>In the previous Exercise although we had two differential equations to solve they were really quite separate. We needed no knowledge of matrix theory to solve them. However, we should note that the two differential equations can be written in matrix form.</p><p> Thus if
+<br>\(\qquad \underline{x}=\left[\begin{array}{c}x\\ y\end{array}\right]\qquad \dot{ \underline{x}}=\left[\begin{array}{c}\dot x\\ \dot
+y\end{array}\right]\quad A=\left[\begin{array}{rr}-2&amp;0\\ 0&amp;-5\end{array}\right]\)<br><p> the equations
+<br>\(\qquad\left.\begin{array}{l}\dot x=-2x\\ \dot y=-5y\end{array}\right\}\)<br>
+can be written as 
+<br>\(\qquad \left[\begin{array}{c}\dot x\\ \dot y\end{array}\right]=\left[\begin{array}{rr}-2&amp;0\\
+0&amp;-5\end{array}\right]\left[\begin{array}{c}x\\ y\end{array}\right]\)
+<br> i.e. <span class="math inline">\(\dot {\underline{x}}=A \underline{x}\)</span>.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9321  -->
+  <question type="description">
+    <name>
+      <text>22.2.2.5 More on matrices for systems of 1st order diff</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>The essential difference between the two pairs of differential equations just considered is that the first pair were really separate equations whereas the second pair were coupled:</p>
+<ol>
+<li><p>The first equation involving only the unknown <span class="math inline">\(x\)</span>, the second involving only <span class="math inline">\(y\)</span>. In matrix terms this corresponded to a <span><strong>diagonal</strong></span> matrix <span class="math inline">\(A\)</span> in the system <span class="math inline">\(\dot {\underline{x}}=A \underline{x}\)</span>.</p></li>
+<li><p>The pair were coupled in that <span><strong>both</strong></span> equations involved <span><strong>both </strong></span> <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>. This corresponded to the <span><strong>non-diagonal</strong></span> matrix <span class="math inline">\(A\)</span> in the system <span class="math inline">\(\dot{\underline{x}}=A \underline{x}.\)</span></p></li>
+</ol>
+<p>Clearly the second system here is more difficult to deal with than the first and this is where we can use our knowledge of diagonalization.</p>
+<p>Consider a system of differential equations written in matrix form: <span class="math inline">\(\dot{\underline{x}}=A \underline{x}\)</span> where 
+<br>\(\qquad \underline{x}=\left[\begin{array}{c}x(t)\\
+y(t)\end{array}\right]\qquad \text{ and}\qquad \dot{\underline{x}}=\left[\begin{array}{c}\dot x (t)\\
+\dot y (t)\end{array}\right]\)
+We now introduce a new column vector of unknowns <span class="math inline">\(Y=\left[\begin{array}{c}r(t)\\
+s(t)\end{array}\right]\)</span> through the relation <span class="math inline">\( \underline{x}=P\underline{y}\)</span> where <span class="math inline">\(P\)</span> is the modal matrix of <span class="math inline">\(A\)</span>. Then, since <span class="math inline">\(P\)</span> is a matrix of constants: 
+<br>\(\qquad\dot{\underline{x}}= P\dot{\underline{y}}\qquad
+\text{ so}\quad \dot{\underline{x}}=A\underline{x}\quad \text{ becomes}\quad P\dot{\underline{y}}=A(P \underline{y})\)<br>
+Then multiplying by \( P^{-1}\) on the left, <br>
+\(\qquad \dot{\underline{y}}= (P^{-1}AP) \underline{y}\)</span> <br>
+But, because of the properties of the modal matrix, we know that <span class="math inline">\(P^{-1}AP\)</span> is a <span><strong>diagonal matrix</strong></span>. Thus if <span class="math inline">\(\lambda_1,\lambda_2\)</span> are <span><strong>distinct</strong></span> eigenvalues of <span class="math inline">\(A\)</span> then: 
+<br>\(\qquad P^{-1}AP=\left[\begin{array}{cc}\lambda_1&amp;0\\
+0&amp;\lambda_2\end{array}\right]\)<br>
+Hence <span class="math inline">\(\dot{\underline{y}}=(P^{-1}AP) \underline{y}\)</span> becomes 
+<br>\(\qquad \left[\begin{array}{c}\dot r\\
+\dot s\end{array}\right]=\left[\begin{array}{cc}\lambda_1&amp;0\\
+0&amp;\lambda_2\end{array}\right]\left[\begin{array}{c}r\\
+s\end{array}\right].\)
+<br>That is, when written out we have 
+<br>\(\qquad \dot r = \lambda_1 r\)
+\(\qquad \dot s = \lambda_1 s\)
+<br>These equations are <span><strong>decoupled</strong></span>. The first equation only involves the unknown function <span class="math inline">\(r(t)\)</span> and has solution <span class="math inline">\(r(t)=Ce^{\lambda_1t}\)</span>. The second equation only involves the unknown function <span class="math inline">\(s(t)\)</span> and has solution <span class="math inline">\(s(t)=Ke^{\lambda_2t}\)</span>. <span class="math inline">\([C,K\)</span> are arbitrary constants.]</p>
+<p>Once <span class="math inline">\(r,s\)</span> are known the original unknowns <span class="math inline">\(x,y\)</span> can be found from the relation <span class="math inline">\(\underline{x} =P \underline{y}\)</span>. Note that the theory outlined above is more widely applicable as specified in the next Key Point:</p>
+<div class="HELM_keypoint">
+<h4>Key Point</h4>
+<p>For any system of differential equations of the form \(\dot{\underline{x}} =A \underline{x},\) where <span class="math inline">\(A\)</span> is an <span class="math inline">\(n\times n\)</span> matrix with distinct eigenvalues <span class="math inline">\(\lambda_1,\lambda_2,\dots ,\lambda_n\)</span>, and <span class="math inline">\(t\)</span> is the independent variable, the solution is <span class="math display">\[\underline{x}=P \underline{y},\]</span> where <span class="math inline">\(P\)</span> is the modal matrix of <span class="math inline">\(A\)</span> and <span class="math display">\[Y=[C_1 e^{\lambda_1t},\ C_2 e^{\lambda_2t},\dots ,C_n e^{\lambda_nt}]^T.\]</span></p></div>
+
+<hr>
+<h4 class="HELM_example">Example</h4>
+<p>Find the solution of the coupled differential equations
+<br>\(\qquad\dot x =4x+2y\)
+\(\qquad \dot y =-x+y\)
+<br>with initial conditions \(\qquad x(0)=1\qquad y(0)=0\) 
+Here \(\dot x\equiv \dfrac{dx}{dt}\) and \(\dot y\equiv \dfrac{dy}{dt}\).</p>
+
+<h4 class="HELM_solution">Solution</h4>
+
+<p>Here <span class="math inline">\(\quad A=\left[\begin{array}{cc}\hfill 4&amp;\hfill 2\\
+\hfill -1&amp;\hfill 1\end{array}\right].\)</span> It is easily checked that <span class="math inline">\(A\)</span> has distinct eigenvalues <span class="math inline">\(\lambda_1=3\) and \(\lambda_2=2\)</span> and corresponding eigenvectors <span class="math inline">\(\underline{x_1}=\left[\begin{array}{c}\hfill -2\\
+\hfill 1\end{array}\right],\ \underline{x_2}=\left[\begin{array}{c}\hfill 1\\
+\hfill -1\end{array}\right]\)</span>. 
+Therefore, taking <span class="math inline">\(\quad P=\left[\begin{array}{cc}\hfill -2&amp;\hfill 1\\
+\hfill 1&amp;\hfill -1\end{array}\right]\qquad\text{ then}\qquad
+P^{-1}AP=\left[\begin{array}{cc}3&amp;0\\ 0&amp;2\end{array}\right]\)</span> and using the previous Key Point, 
+<br>\(\quad r(t)=Ce^{3t}\qquad s(t)=Ke^{2t},\) so<br>
+<span class="math display">\[\begin{aligned}
+\left[\begin{array}{c}x\\
+y\end{array}\right]\equiv \underline{x}=P\underline{y}=\left[\begin{array}{cc}\hfill -2&amp;\hfill 1\\
+\hfill 1&amp;\hfill -1\end{array}\right]\left[\begin{array}{c}r\\
+s\end{array}\right]
+&amp;=&amp;\left[\begin{array}{cc}\hfill -2&amp;\hfill 1\\
+\hfill 1&amp;\hfill -1\end{array}\right]\left[\begin{array}{c}Ce^{3t}\\
+Ke^{2t}\end{array}\right]\\
+&amp;=&amp;\left[\begin{array}{cc}-2Ce^{3t}+Ke^{2t}\\
+Ce^{3t}-Ke^{2t}\end{array}\right].\end{aligned}\]</span> Therefore <span class="math inline">\(x=-2Ce^{3t}+Ke^{2t}\)</span> and <span class="math inline">\(y=Ce^{3t}-Ke^{2t}.\)</span> 
+We can now impose the initial conditions <span class="math inline">\(x(0)=1\)</span> and <span class="math inline">\(y(0)=0\)</span> to give <span class="math display">\[\begin{aligned}
+1&amp;=-2C+K\\
+0&amp;=C-K.\end{aligned}\]</span> Thus <span class="math inline">\(C=K=-1\)</span> and the solution to the original system of differential equations is <span class="math display">\[\begin{aligned}
+x(t)&amp;=2e^{3t}-e^{2t}\\
+y(t)&amp;=-e^{3t}+e^{2t}\end{aligned}\]</span></p>
+<hr>
+
+<p>The approach we have demonstrated in the previous Example can be extended to</p>
+<ol>
+<li><p>Systems of first order differential equations with <span class="math inline">\(n\)</span> unknowns</p></li>
+<li><p>Systems of second order differential equations (described in the next subsection).</p></li>
+</ol>
+<p>The only restriction, as we have said, is that the matrix <span class="math inline">\(A\)</span> in the system <span class="math inline">\(\dot{\underline{x}}=A \underline{x}\)</span> has distinct eigenvalues.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9322  -->
+  <question type="description">
+    <name>
+      <text>22.2.3.1 Systems of second order differential equations</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h3><span style="color: inherit; font-family: inherit;">Systems of second order differential equations</span><br></h3>
+
+<p>The decoupling method discussed above can be readily extended to this situation which could arise, for example, in a mechanical system consisting of coupled springs.</p>
+<p>A typical example of such a system with two unknowns has the form <br>
+<br>\(\qquad \ddot x=ax+by\)
+<br>\(\qquad \ddot y= cx+dy\)<br>
+<br>or, in matrix form,<br>
+<br>\(\qquad  \ddot{\underline{x}}=A \underline{x}\) where 
+<br>\(\qquad \underline{x}=\left[\begin{array}{c}x\\ y\end{array}\right]\qquad A=\left[\begin{array}{cc}a&amp;b\\
+c&amp;d\end{array}\right],\qquad \ddot x=\dfrac{d^2x}{dt^2},\quad \ddot y=\dfrac{d^2y}{dt^2}.\)</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9314  -->
+  <question type="stack">
+    <name>
+      <text>22.2.1.2 Writing down products</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise</span>
+  <span class="multilang" lang="no">Øving</span></p>
+<p><span class="multilang" lang="en">The matrix \({@matA@}\) has eigenvalues \({@eval1@}\) and \({@eval2@}\) with respective eigenvectors \({@evec1@}\) and \({@evec2@}\).
+    <br>
+    If \( P_1={@p1@}, \
+
+    P_2={@p2@}\) and
+
+    \( P_3={@p3@},\) write down the following products (You may not need to do detailed calculations).</span>
+    <span class="multilang" lang="no">
+        Matrisen \({@matA@}\) har egenverdier \({@eval1@}\) og \({@eval2@}\) med tilhørende egenvektorer \({@evec1@}\) og \({@evec2@}\).
+        <br>
+        Hvis \( P_1={@p1@}, \
+
+        P_2={@p2@}\) og
+
+        \( P_3={@p3@},\) skriv ned følgende produkter (du trenger kanskje ikke å gjøre detaljerte kalkulasjoner).
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <div>\(P_1^{-1}AP_1=\) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]</div>
+    </li>
+    <div>
+        <br>
+    </div>
+
+    <li>
+        <div>\(P_2^{-1}AP_2=\) [[input:ans2]] [[validation:ans2]][[feedback:prt2]]</div>
+    </li>
+    <div><br></div>
+    <li>
+        <div>\(P_3^{-1}AP_3=\) [[input:ans3]] [[validation:ans3]][[feedback:prt3]]</div>
+    </li>
+    <div><br></div>
+</ol>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><span class="multilang" lang="en">Since \(P_1,P_2\) and \(P_3\) are all modal matrices of \(A\),
+    <br>\(\qquad P_1^{-1}AP_1={@matD@}= {@matD@} = D_1\)
+    <br>\(\qquad P_2^{-1}AP_2={@matD2@}= {@matD2@} = D_2\)
+    <br>\(\qquad P_3^{-1}AP_3={@matD@}= {@matD@}= D_3\)
+    <br>Note that \(D_1=D_3,\) demonstrating that any eigenvectors of \(A\) can be used to form \(P\). Note also that since the columns of \(P_1\) have been interchanged in forming \(P_2\) then so have the eigenvalues in \(D_2\) as compared with \(D_1\).
+</span>
+<span class="multilang" lang="no">
+    Ettersom \(P_1,P_2\) og \(P_3\) er alle modal matriser av \(A\),
+    <br>\(\qquad P_1^{-1}AP_1={@matD@}= {@matD@} = D_1\)
+    <br>\(\qquad P_2^{-1}AP_2={@matD2@}= {@matD2@} = D_2\)
+    <br>\(\qquad P_3^{-1}AP_3={@matD@}= {@matD@}= D_3\)
+    <br>Merk at \(D_1=D_3,\) som demonstrerer at enhver egenvektor av \(A\) kan brukes til å danne \(P\). Merk også at siden kolonnene til \(P_1\) har blitt byttet i forbindelse med å danne \(P_2\) så har også egenverdiene i \(D_2\) blitt byttet sammenlignet med \(D_1\).
+</span></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[/*I decided not to tackle this question by generating a random matrix, as that would result in "ugly" evals and evecs. Instead I randomly generate evals and evecs and create the matrix A from them. Unsightly A matrices and question variations with duplicate evecs should be removed manually.
+*/
+
+evec1:rand(matrix([4],[4]))+matrix([1],[0])
+evec2:rand(matrix([4],[4]))+matrix([0],[1])
+
+eval1:rand_with_prohib(-4,4,[0])
+eval2:rand_with_prohib(-4,4,[0])
+
+/*deduce the matrix A*/
+p1:matrix([evec1[1,1],evec2[1,1]],[evec1[2,1],evec2[2,1]])
+p1inv:invert(p1)
+matD:matrix([eval1,0],[0,eval2])
+matA:p1.matD.p1inv
+
+/*Create similar diagonal matrices */
+constant:rand(3)+2
+matD2:matrix([eval2,0],[0,eval1])
+constmatD:constant*matD
+
+/*modular matrices related to similar diagonl matrices*/
+p2:matrix([evec2[1,1],evec1[1,1]],[evec2[2,1],evec1[2,1]])
+p3:constant*p1]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>Evecs: \({@evec1@}, {@evec2@}\)
+Evals: \({@eval1@},{@eval2@}\)
+\(A: {@matA@}\)
+Constant: \({@constant@}\)
+\(P_1={@p1@}\)
+\(P_2={@p2@}\)
+\(P_3={@p3@}\)</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>matD</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>., invert</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>matrix</type>
+      <tans>matD2</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>., invert</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>matrix</type>
+      <tans>matD</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>., invert</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>matD</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>matD2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<span class="multilang" lang="en">
+    Remember that \({@evec1@}\) has associated eigenvalue \({@eval1@}\) and \({@evec2@}\) has associated eigenvalue \({@eval2@}\), not the other way around!</span>
+    <span class="multilang" lang="no">
+        Husk at \({@evec1@}\) har tilknyttet egenverdi \({@eval1@}\) og \({@evec2@}\) har tilknyttet egenverdi \({@eval2@}\), ikke motsatt!
+    </span>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>matD2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>matD</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<span class="multilang" lang="en">Remember that \({@evec1@}\) has associated eigenvalue \({@eval1@}\) and \({@evec2@}\) has associated eigenvalue \({@eval2@}\), not the other way around!</span>
+<span class="multilang" lang="no">
+    Husk at \({@evec1@}\) har tilknyttet egenverdi \({@eval1@}\) og \({@evec2@}\) har tilknyttet egenverdi \({@eval2@}\), ikke motsatt!
+</span>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>matD</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>constmatD</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<span class="multilang" lang="en">It seems your intuition was to multiply \(P_1^{-1}AP_1\) by \({@constant@}\), but that is incorrect! Try doing the Matrix multiplication manually to convince yourself.</span>
+<span class="multilang" lang="no">Det ser ut til at intuisjonen din var å multiplisere \(P_1^{-1}AP_1\) med \({@constant@}\), men det er feil! Prøv å gjøre matrise-multiplikasjonen manuelt for å overbevise deg selv.
+</span>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1767076597</deployedseed>
+    <deployedseed>1634817021</deployedseed>
+    <deployedseed>170397530</deployedseed>
+    <deployedseed>1973883475</deployedseed>
+    <deployedseed>178030172</deployedseed>
+    <deployedseed>1331139091</deployedseed>
+    <deployedseed>1240835568</deployedseed>
+    <deployedseed>1354191285</deployedseed>
+    <deployedseed>458327123</deployedseed>
+    <deployedseed>1576040320</deployedseed>
+    <deployedseed>2050043352</deployedseed>
+    <deployedseed>337635763</deployedseed>
+    <deployedseed>2091769531</deployedseed>
+    <deployedseed>615668983</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>matD</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>matD2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>matD</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>matD2</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>matD</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>constmatD</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt3-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9315  -->
+  <question type="stack">
+    <name>
+      <text>22.2.1.4 Powers of matrices</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise">Exercise</p>
+<p><span class="multilang" lang="en">Let \(D={@matD@}\) and write down the following powers of \(D\):</span>
+<span class="multilang" lang="no">
+    La \(D={@matD@}\) og skriv ned følgende potenser av \(D\):
+</span></p>
+<ol class="HELM_parts">
+    <li>
+        <div>\(D^2=\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</div>
+    </li><br>
+    <li>
+        <div>\(D^3=\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]</div>
+    </li><br>
+    <li>
+        <div>\(D^{{@power@}}=\) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]</div>
+    </li>
+</ol>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>\(\qquad D^2={@matD@}{@matD@}={@matrix([eval1^2,0],[0,eval2^2])@}={@matD2@}\).</p>
+<p>\(\qquad D^3={@matD2@}{@matD@}={@matrix([eval1^3,0],[0,eval2^3])@}={@matD3@}\).</p>
+<p><span class="multilang" lang="en">Continuing in this way:</span>
+  <span class="multilang" lang="no">Fortsetter på denne måten:</span></p>
+<p>\(\qquad D^{@power@}={@matrix([eval1^(power),0],[0,eval2^(power)])@}={@matDn@}\).</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text>simp:true
+/*Generate the eigenvalues and the third power of D*/
+eval1:rand_with_prohib(-3,3,[0,1,-1])
+eval2:rand_with_prohib(-3,3,[0,1])
+matD:matrix([eval1,0],[0,eval2])
+power:rand(7)+8
+
+matD2:matD.matD
+matD3:matD2.matD
+matDn:matrix([eval1^(power),0],[0,eval2^(power)])
+simp:false</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\(D: {@matD@}\)
+Power: \({@power@}\)</text>
+    </questionnote>
+    <questionsimplify>0</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>matD2</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>.,matrix</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>matrix</type>
+      <tans>matD3</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>.,matrix</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>matrix</type>
+      <tans>matDn</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>.,matrix</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1[1,1]</sans>
+        <tans>matD2[1,1]</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>2</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1[2,2]</sans>
+        <tans>matD2[2,2]</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>3</truenextnode>
+        <trueanswernote>prt1-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>prt1-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1[1,2]^2+ans1[2,1]^2</sans>
+        <tans>0</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.5000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2[1,1]</sans>
+        <tans>matD3[1,1]</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2[2,2]</sans>
+        <tans>matD3[2,2]</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>2</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2[1,2]^2+ans2[2,1]^2</sans>
+        <tans>0</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.5000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3[1,1]</sans>
+        <tans>matDn[1,1]</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3[2,2]</sans>
+        <tans>matDn[2,2]</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>2</truenextnode>
+        <trueanswernote>prt3-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt3-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3[1,2]^2+ans3[2,1]^2</sans>
+        <tans>0</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.5000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1766203315</deployedseed>
+    <deployedseed>759360995</deployedseed>
+    <deployedseed>225925801</deployedseed>
+    <deployedseed>2065453948</deployedseed>
+    <deployedseed>1646714594</deployedseed>
+    <deployedseed>658410329</deployedseed>
+    <deployedseed>1506497745</deployedseed>
+    <deployedseed>1170596137</deployedseed>
+    <deployedseed>1505863551</deployedseed>
+    <deployedseed>272956639</deployedseed>
+    <deployedseed>438006201</deployedseed>
+    <deployedseed>1612990747</deployedseed>
+    <deployedseed>243686265</deployedseed>
+    <deployedseed>504774433</deployedseed>
+    <deployedseed>2083789956</deployedseed>
+    <deployedseed>102367243</deployedseed>
+    <deployedseed>417697718</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>matD2</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>matD3</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>matDn</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-4-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-3-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-3-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>matD</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>matD2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>matrix([0,0],[0,0])</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-4-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-3-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt3-3-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>matrix([eval1^2,1],[1,eval2^2])</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>matrix([eval1^3,1],[1,eval2^3])</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>matrix([eval1^power,1],[1,eval2^power])</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-4-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-3-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt3-3-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9316  -->
+  <question type="stack">
+    <name>
+      <text>22.2.1.6 Finding modal matrices</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise</span>
+<span class="multilang" lang="no">Øving</span></p>
+<p><span class="multilang" lang="en">For each of the following matrices, find a modal matrix \(P\):</span>
+<span class="multilang" lang="no">
+    For hver av følgende matriser, finn en modal matrise \(P\):
+</span></p>
+<ol class="HELM_parts">
+    <li>
+        <div>\(A={@matA@}\)</div><br>
+        <div>\( P=\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</div>
+    </li><br>
+    <li>
+        <div>\(A={@matB@}\)</div><br>
+        <div>\( P=\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]</div>
+    </li><br>
+</ol>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<ol class="HELM_parts">
+    <li>
+<span class="multilang" lang="en">        The eigenvalues of \(A={@matA@}\) are \({@eval1@}\) and \({@eval2@}\), with corresponding eigenvectors \({@evec1@}\) and \({@evec2@}\), respectively. Hence a modal matrix to \({@matA@}\) is \(P={@p1@}\). <br>We can confirm that
+    <br>\(\qquad P^{-1}AP={@invert(p1)@}{@matA@}{@p1@}={@matD@},\)
+    <br>hence \({@p1@}\) is a modal matrix of \(A\).
+</span>
+<span class="multilang" lang="no">
+    Egenverdiene til \(A={@matA@}\) er \({@eval1@}\) og \({@eval2@}\), med tilhørende egenvektorer \({@evec1@}\) og \({@evec2@}\), henholdsvis. Derfor er en modal matrise til \({@matA@}\) \(P={@p1@}\). <br>Vi kan bekrefte at
+    <br>\(\qquad P^{-1}AP={@invert(p1)@}{@matA@}{@p1@}={@matD@},\)
+    <br>derfor er \({@p1@}\) en modal matrise til \(A\).
+</span></li>
+    <li> <span class="multilang" lang="en">
+        For \(A={@matB@}\) we find eigenvalues \({@eval3@},{@eval4@}\), and \({@eval5@}\) with corresponding eigenvectors \({@evec3@},{@evec4@}\), and \({@evec5@}\). Hence a modal matrix is \(P={@p2@}\). <br>We can confirm that
+        <br>\(\qquad P^{-1}AP={@invert(p2)@}{@matB@}{@p2@}={@matD2@},\)
+        <br>hence \({@p2@}\) is a modal matrix of \(A\).</span>
+        <span class="multilang" lang="no">
+        For \(A={@matB@}\) finner vi egenverdier \({@eval3@},{@eval4@}\), og \({@eval5@}\) med tilhørende egenvektorer \({@evec3@},{@evec4@}\), og \({@evec5@}\). Derfor er en modal matrise \(P={@p2@}\). <br>Vi kan bekrefte at
+        <br>\(\qquad P^{-1}AP={@invert(p2)@}{@matB@}{@p2@}={@matD2@},\)
+        <br>derfor er \({@p2@}\) en modal matrise til \(A\).
+        </span>
+    </li>
+</ol>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[/*I decided not to tackle this question by generating a random matrix, as that would result in "ugly" evals and evecs. Instead I randomly generate evals and evecs and create the matrix A from them. Unsightly A matrices and question variations with duplicate evecs should be removed manually.
+*/
+
+/*(a) Generate evecs and evals*/
+evec1:rand(matrix([4],[4]))+matrix([1],[0])
+evec2:rand(matrix([4],[4]))+matrix([0],[1])
+
+eval1:rand_with_prohib(-4,4,[0])
+eval2:rand_with_prohib(-4,4,[0,eval1])
+
+/*Deduce matrix A*/
+p1:matrix([evec1[1,1],evec2[1,1]],[evec1[2,1],evec2[2,1]])
+p1inv:invert(p1)
+
+matD:matrix([eval1,0],[0,eval2])
+matA:p1.matD.p1inv
+
+/*(b) Generate evecs and evals*/
+evec3:rand(matrix([3],[3],[3]))+matrix([1],[1],[1])
+evec4:rand(matrix([1],[3],[3]))+matrix([0],[1],[1])
+evec5:rand(matrix([1],[1],[3]))+matrix([0],[0],[1])
+
+eval3:rand_with_prohib(-4,4,[0])
+eval4:rand_with_prohib(-4,4,[0,eval3])
+eval5:rand_with_prohib(-4,4,[0,eval4,eval3])
+
+/*Deduce matrix A*/
+p2:matrix([evec3[1,1],evec4[1,1],evec5[1,1]],[evec3[2,1],evec4[2,1],evec5[2,1]],[evec3[3,1],evec4[3,1],evec5[3,1]])
+p2inv:invert(p2)
+
+matD2:matrix([eval3,0,0],[0,eval4,0],[0,0,eval5])
+matB:p2.matD2.p2inv]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\(A={@matA@}\)
+\(P_1={@p1@}\)
+\(D_1={@matD@}\)
+\(A_2={@matB@}\)
+\(P_2={@p2@}\)
+\(D_2={@matD2@}\)</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>p1</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>.,matrix</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>matrix</type>
+      <tans>p2</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>.,matrix</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>simp:true
+sdiag: invert(ans1).matA.ans1
+isdiag: sdiag[1,2]^2+sdiag[2,1]^2
+diagentries:set(sdiag[1,1],sdiag[2,2])
+simp:false</text>
+      </feedbackvariables>
+      <node>
+        <name>2</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>isdiag</sans>
+        <tans>0</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.6700000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-evals_on_diagonal_perfect_score</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p><span class="multilang" lang="en">Furthermore, Your matrix \(P={@ans1@}\) has the property that \(P^{-1}AP={@sdiag@}\), which is diagonal with the eigenvalues of \(A\) along the diagonal. Hence \(P\) is modal of \(A\). Well done.</span>
+<span class="multilang" lang="no">
+    Videre, har matrisen din \(P={@ans1@}\) egenskapen at \(P^{-1}AP={@sdiag@}\), som er diagonal med egenverdiene til \(A\) langs diagonalen. Derfor er \(P\) en modal av \(A\). Bra gjort.
+</span></p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-not_evals_on_diagonal</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p><span class="multilang" lang="en">
+    However, your matrix \(P={@ans1@}\) is not modal, as it does not satisfy the property that \(P^{-1}AP\) is diagonal. In your case \(PAP^{-1}={@ans1@}{@matA@}{@invert(ans1)@}={@sdiag@}\), which is not diagonal. Please try again.
+</span>
+<span class="multilang" lang="no">
+    Men matrisen din \(P={@ans1@}\) er ikke modal, siden den ikke oppfyller egenskapen at \(P^{-1}AP\) er diagonal. I ditt tilfelle er \(PAP^{-1}={@ans1@}{@matA@}{@invert(ans1)@}={@sdiag@}\), som ikke er diagonal. Vennligst prøv igjen.
+</span></p>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>determinant(ans1)</sans>
+        <tans>0</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-determinant_zero</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p><span class="multilang" lang="en">The column vectors of your Matrix \(P\) are not linearly independent, as \(\det(P)=
+        0\). Hence your matrix is not modal. Please try again.</span>
+    <span class="multilang" lang="no">
+        Kolonnevektorene i din matrise \(P\) er ikke lineært uavhengige, siden \(\det(P)=
+        0\). Derfor er din matrise ikke modal. Vennligst prøv igjen.
+    </span>
+</p>]]></text>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0.3300000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt1-determinant_not_zero</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p><span class="multilang" lang="en">The column vectors of your Matrix \(P\) are linearly independent, as \(\det(P)\neq 0\).</span>
+<span class="multilang" lang="no">
+    Kolonnevektorene i din matrise \(P\) er lineært uavhengige, siden \(\det(P)\neq 0\).
+</span></p>]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>simp:true
+sdiag: invert(ans2).matB.ans2
+isdiag: sdiag[1,2]^2+sdiag[1,3]^2+sdiag[2,1]^2+sdiag[2,3]^2+sdiag[3,1]^2+sdiag[3,2]^2
+diagentries:set(sdiag[1,1],sdiag[2,2],sdiag[3,3])
+simp:false</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>determinant(ans2)</sans>
+        <tans>0</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-determinant_zero</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p><span class="multilang" lang="en">The column vectors of your Matrix \(P\) are not linearly independent, as \(\det(P)= 0\). Hence your matrix is not modal. Please try again.</span>
+<span class="multilang" lang="no">
+    Kolonnevektorene i matrisen din \(P\) er ikke lineært uavhengige, siden \(\det(P)= 0\). Derfor er din matrise ikke modal. Vennligst prøv igjen.
+</span></p>]]></text>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0.3300000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt2-determinant_nonzer</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p><span class="multilang" lang="en">The column vectors of your Matrix \(P\) are linearly independent, as \(\det(P)\neq 0\).</span>
+<span class="multilang" lang="no">
+    Kolonnevektorene i matrisen din \(P\) er lineært uavhengige, siden \(\det(P)\neq 0\).
+</span></p>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>isdiag</sans>
+        <tans>0</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.6700000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-evals_on_diagonal_perfect_score</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p><span class="multilang" lang="en">Furthermore, your matrix \(P={@ans2@}\) has the property that \(P^{-1}AP={@sdiag@}\) is diagonal where the diagonal entries are exactly the eigenvalues of \(A\). Hence your \(P\) is modal of \(A\). Well done.</span>
+<span class="multilang" lang="no">
+    Videre har din matrise \(P={@ans2@}\) egenskapen at \(P^{-1}AP={@sdiag@}\) er diagonal hvor elementene på diagonalen er nøyaktig lik egenverdiene til \(A\). Dermed er din \(P\) modal for \(A\). Bra gjort.
+</span></p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-not_evals_on_diagonal</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p><span class="multilang" lang="en">However, your matrix \(P={@ans2@}\) is not modal, as it does not satisfy the
+        property that \(P^{-1}AP\) is diagonal. In your case \(P^{-1}AP={@ans2@}{@matB@}{@invert(ans2)@}={@sdiag@}\),
+        which is not diagonal. Please try again.</span>
+    <span class="multilang" lang="no">
+        Imidlertid er ikke din matrise \(P={@ans2@}\) modal, siden den ikke oppfyller egenskapen at \(P^{-1}AP\) er
+        diagonal. I ditt tilfelle er \(P^{-1}AP={@ans2@}{@matB@}{@invert(ans2)@}={@sdiag@}\), som ikke er diagonal.
+        Vennligst prøv igjen.
+    </span>
+</p>]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1355024501</deployedseed>
+    <deployedseed>659645835</deployedseed>
+    <deployedseed>2141970867</deployedseed>
+    <deployedseed>1308504826</deployedseed>
+    <deployedseed>1100536150</deployedseed>
+    <deployedseed>1262812987</deployedseed>
+    <deployedseed>110172828</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>p1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>p2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-evals_on_diagonal_perfect_score</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-evals_on_diagonal_perfect_score</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>matrix([0,0],[1,0])</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>matrix([0,0,0],[1,0,0],[0,0,0])</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-determinant_zero</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-determinant_zero</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>matrix([1,0],[0,1])</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>matrix([1,0,0],[0,1,0],[0,0,1])</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.3300000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-not_evals_on_diagonal</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.3300000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-not_evals_on_diagonal</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9318  -->
+  <question type="stack">
+    <name>
+      <text>22.2.2.2 Solving systems of first order differential equations</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise">Exercise</p>
+
+<p>Obtain the solutions of the pair of first order differential equations <br>
+<br>\(\qquad \left.\begin{array}{l}\dot x={@aa@}x\\ \dot y={@bb@}y\end{array}\right\}\ \ \)<br>
+<br>given the <span><strong>initial conditions</strong></span> <br>
+<br>\(\qquad \begin{array}{lll}x(0)={@x0@}&amp;&amp;\text{ i.e.}\ \ x={@x0@}\ \ \text{ at}\ \ t=0\\ y(0)={@y0@}&amp;&amp;\text{ i.e.}\ \ y={@y0@}\ \ \text{ at}\ \
+t=0\end{array}\)<br>
+<br>(The notation is that <span class="math inline">\( \dot x\equiv \dfrac{dx}{dt},\ \ \dot
+y\equiv \dfrac{dy}{dt}\)</span> )
+<br>[Hint: Recall, from your study of differential equations, that the general solution of the differential equation <span class="math inline">\( \dfrac{dy}{dt}=Ky\)</span> is <span class="math inline">\(y=y_0
+e^{Kt}\)</span>.]</p>
+
+
+<div>\(x=\) [[input:ans1]] [[validation:ans1]]</div>
+<div>\(y=\) [[input:ans2]] [[validation:ans2]]</div>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Using the hint: <span class="math inline">\(x=x_0e^{{@aa@}t}\qquad
+y=y_0e^{{@bb@}t}\)</span> where <span class="math inline">\(x_0=x(0)\)</span> and <span class="math inline">\(y_0=y(0)\)</span>. <br>From the given initial condition <span class="math inline">\(x_0={@x0@}\qquad y_0={@x0@}\quad\),</span> <br>so finally <span class="math inline">\(x={@sol1@}\qquad y={@sol2@}\)</span>.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2020070100</text>
+    </stackversion>
+    <questionvariables>
+      <text>aa:rand_with_prohib(-6,6,[0])
+bb:rand_with_prohib(-6,6,[0,aa])
+x0:rand_with_prohib(-6,6,[0,1])
+y0:rand_with_prohib(-6,6,[0,1,x0])
+
+sol1:x0*e^(aa*t)
+sol2:y0*e^(bb*t)</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text>[[feedback:prt1]]</text>
+    </specificfeedback>
+    <questionnote>
+      <text>x={@sol1@}
+y={@sol2@}</text>
+    </questionnote>
+    <questionsimplify>0</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>sol1</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>sol2</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>2</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>sol1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>4</truenextnode>
+        <trueanswernote>x_correct</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>x_wrong</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1/(e^(aa*t))</sans>
+        <tans>1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.2500000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>4</truenextnode>
+        <trueanswernote>forgot_init_condition</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[It looks like you forgot to use the initial condition \(x(0)={@x0@}\).<br>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>4</falsenextnode>
+        <falseanswernote>x_wrong_unsure_why</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>4</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>sol2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>y_correct</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>5</falsenextnode>
+        <falseanswernote>y_wrong</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>5</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2/(e^(bb*t))</sans>
+        <tans>1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.2500000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>y_forgot_init_conditions</trueanswernote>
+        <truefeedback format="html">
+          <text>It looks like you forgot to use the initial condition \(y(0)={@y0@}\).</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>y_wrong_unsure_why</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>919371985</deployedseed>
+    <deployedseed>1333188777</deployedseed>
+    <deployedseed>273872009</deployedseed>
+    <deployedseed>1965347380</deployedseed>
+    <deployedseed>385487911</deployedseed>
+    <deployedseed>1823473994</deployedseed>
+    <deployedseed>146855772</deployedseed>
+    <deployedseed>419424582</deployedseed>
+    <deployedseed>1892346009</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>sol1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>sol2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>y_correct</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>e^(aa*t)</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>e^(bb*t)</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>y_forgot_init_conditions</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>(x0)*exp(aa*t)</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>(y0)*exp(bb*t)</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>y_correct</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9320  -->
+  <question type="stack">
+    <name>
+      <text>22.2.2.4 Writing system of 1st order lin. eqs. in matrix form</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise">Exercise</p>
+<p>Write in matrix form the pair of <span><strong>coupled</strong></span> differential equations <br><br><span class="math inline">\(\qquad \left.\begin{array}{l}\dot x={@eq1@}\\ \dot y={@eq2@}\end{array}\right\}\ \ \)</span></p><br>
+\(\left[\begin{array}{c}\dot x\\ \dot y\end{array}\right]=\) [[input:ans1]][[validation:ans1]]\(\left[\begin{array}{c}x\\ y\end{array}\right]\) </div>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>\(\qquad\left[\begin{array}{c}\dot x\\ \dot y\end{array}\right]={@mat@}\left[\begin{array}{c}x\\ y\end{array}\right]\)<br>
+<br>\(\qquad \ \ \dot{\underline{x}}\ \  \ \ =\ \ \ A\ \underline{x} \qquad\qquad\ \ \ \!\!\!\!\)</span></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2020070100</text>
+    </stackversion>
+    <questionvariables>
+      <text>ordergreat(x,y)
+mat:rand(matrix([4,4],[4,4]))+matrix([1,1],[1,1])
+eq1:mat[1,1]*x+mat[1,2]*y
+eq2:mat[2,1]*x+mat[2,2]*y</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text>[[feedback:prt1]]</text>
+    </specificfeedback>
+    <questionnote>
+      <text>{@mat@}</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>mat</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>matrix,.</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>2</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>mat</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>x_correct</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>x_wrong</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1850080931</deployedseed>
+    <deployedseed>2131604502</deployedseed>
+    <deployedseed>601423159</deployedseed>
+    <deployedseed>2007913165</deployedseed>
+    <deployedseed>2140383476</deployedseed>
+    <deployedseed>309240784</deployedseed>
+    <deployedseed>381104214</deployedseed>
+    <deployedseed>1887476697</deployedseed>
+    <deployedseed>1351291173</deployedseed>
+    <deployedseed>1697182726</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>mat</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>x_correct</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ev(2*mat,simp)</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>x_wrong</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9323  -->
+  <question type="stack">
+    <name>
+      <text>22.2.3.2 Substituting and solve 2nd order diff eqs</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise">Exercise</p>
+<p>Make the substitution <span class="math inline">\(\underline{x}=P\underline{y}\)</span> in the equation \(\ddot{\underline{x}}=A \underline{x}\) where <span class="math inline">\(\underline{y}=\left[\begin{array}{c}r(t)\\ s(t)\end{array}\right]\)</span> and <span class="math inline">\(P\)</span> is the modal matrix of <span class="math inline">\(A\)</span>. \(A\) is assumed to have distinct eigenvalues <span class="math inline">\(\lambda_1\)</span> and <span class="math inline">\(\lambda_2\)</span>.
+<br> Let \(D={@matD@}\).</p>
+
+<br>
+
+<ol class="HELM_parts">
+<li><div>What is the result of the substitution? [[input:ans_a]]
+[[validation:ans_a]][[feedback:prt_a]]</div></li><br>
+
+<p>Now suppose \(\lambda_1\) and \(\lambda_2\) are both negative. You may let \(\lambda_1=-\omega_1^2\),\(\lambda_2=-\omega_2^2\) for \(\omega_1, \omega_2 &gt;0\). Solve the pair of decoupled equations for \(r(t)\) and \(s(t)\) in terms of \(\omega_1, \omega_2\). You can type \(\omega_1\) and \(\omega_2\) as "omega_1" and "omega_2", respectively.
+<br>
+</p><li><div>
+\(r(t)=\) [[input:ans1]][[validation:ans1]]<br>
+\(s(t)=\) [[input:ans2]][[validation:ans2]]
+[[feedback:prt1]]
+</div></li></ol>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>(a) Putting <span class="math inline">\(\underline{x}=P\underline{y}\)</span> into the second order system  <span class="math inline">\(\ddot{\underline{x}}=A \underline{x}\)</span> gives <span class="math inline">\(\ddot{\underline{y}} =P^{-1}AP \underline{y}\)</span>, that is <span class="math inline">\(\ddot{\underline{y}}=D\underline{y}\)</span> where <span class="math inline">\(\quad D=\left[\begin{array}{cc}\lambda_1&amp;0\\ 0&amp;\lambda_2\end{array}\right]\)</span> and <span class="math inline">\(\ddot{\underline{y}}= \left[\begin{array}{c}\ddot r\\ \ddot
+s\end{array}\right]\)</span>.
+
+<br>(b) Hence <span class="math inline">\(\qquad\left[\begin{array}{c}\ddot r\\ \ddot s\end{array}\right]=\left[\begin{array}{cc}\lambda_1&amp;0\\
+0&amp;\lambda_2\end{array}\right]\left[\begin{array}{c}r\\ s\end{array}\right]\)</span>. <br><br>That is, <span class="math inline">\(\ddot
+r=\lambda_1r=-\omega_1^2 r\)</span> and <span class="math inline">\(\ddot s=\lambda_2 s=-\omega_2^2s\)</span> (where <span class="math inline">\(\lambda_1\)</span> and <span class="math inline">\(\lambda_2\)</span> are both negative.) The two decoupled equations are of the form of the differential equation governing simple harmonic motion, hence the general solution is <span class="math inline">\(r=K\cos\omega_1t+L\sin \omega_1t\)</span> and <span class="math inline">\(s=M\cos\omega _2t+N\sin \omega_2 t\)</span>.
+
+<br>The solutions for <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> could then be obtained by use of <span class="math inline">\(\underline{x}=P\underline{y}.\)</span> Note that in this second order case four initial conditions, two each for both <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span>, are required because four constants <span class="math inline">\(K,L,M,N\)</span> arise in the solution.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2020081700</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[simp:true
+/*Possible answers for a*/
+statements:[[true,"\\(\\ddot{\\underline{y}}= D\\underline{y}\\)"],[false,"\\(\\ddot{\\underline{y}}= PAP^{-1} \\underline{y}\\)"],[false,"\\(\\ddot{\\underline{y}}= A \\underline{y}\\)"],[false,"\\(\\ddot{\\underline{y}}= AP \\underline{y}\\)"],[false,"\\(\\ddot{\\underline{y}}=D^{-1}AD \\underline{y}\\)"]]
+
+/* shuffle */
+statements:random_permutation(statements)
+/* add letters, and append the letters to the text of the statements: */
+statements:makelist([sconcat("(",ascii(96+i),")"),statements[i][1],statements[i][2]],i,1,length(statements))
+statements:maplist(lambda([ex],[ex[1],ex[2],sconcat("<b>",ex[1],"</b> ",ex[3])]),statements)
+
+/* produce lists of correct and incorrect statements: */
+sola:mcq_correct(statements)[1]
+incorr:maplist(first, sublist(statements, lambda([ex], not(second(ex)))))
+
+simp:true
+sol1:K*cos(omega_1*t)+L*sin(omega_1*t)
+sol2: M*cos(omega_2*t)+N*sin(omega_2*t)
+
+matD:matrix([lambda_1,0],[0,lambda_2])
+
+sol1_alt: A*cos(omega_1*t)+B*sin(omega_1*t)
+sol2_alt: C*cos(omega_2*t)+D*sin(omega_2*t)
+sol1_alt2:K*cos(-sqrt(lambda_1)*t)+L*sin(-sqrt(lambda_1)*t)
+sol2_alt2:M*cos(-sqrt(lambda_2)*t)+N*sin(-sqrt(lambda_2)*t)
+simp:false]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>{@statements@}</text>
+    </questionnote>
+    <questionsimplify>0</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans_a</name>
+      <type>radio</type>
+      <tans>statements</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint>Use . for matrix multiplication</syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>omega</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>sol1</tans>
+      <boxsize>20</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>lambda,lambda_1,lambda_2</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>1</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>sol2</tans>
+      <boxsize>20</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>lambda,lambda_1,lambda_2</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>1</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt_a</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>/*old code:
+simp:true
+matY:matrix([r(t)],[s(t)])
+matP:matrix([a_1,b_1],[a_2,b_2])
+sola_alg:matD.matY
+ansa_alg:subst(P=matP,subst(Y=matY,subst(D=matD,ans_a)))
+simp:false*/</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans_a</sans>
+        <tans>sola</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt_a-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt_a-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>ans1p:diff(diff(ans1,t),t)
+ans2p:diff(diff(ans2,t),t)
+ansp:matrix([ans1p,ans2p])
+lans1:ans1*(-omega_1^2)
+lans2:ans2*(-omega_2^2)
+lans:matrix([lans1,lans2])</text>
+      </feedbackvariables>
+      <node>
+        <name>2</name>
+        <answertest>SubstEquiv</answertest>
+        <sans>ans1p</sans>
+        <tans>lans1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.2500000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>3</truenextnode>
+        <trueanswernote>r_correct</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[Your equation for \(r(t)\) satisfies \(\ddot r(t)=-\omega_1^2 r(t)=\lambda_1 r(t)\).<br>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>r_wrong</falseanswernote>
+        <falsefeedback format="html">
+          <text>Your equation for \(r(t)\) does not satisfy \(\ddot r(t)=-\omega_1^2 r(t)=\lambda_1 r(t)\). In your case,
+\[(t)={@diff(diff(ans1,t),t)@}\]
+\[-\omega_1^2 r(t)={@ans1*-omega_1^2@}.\]</text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <answertest>SubstEquiv</answertest>
+        <sans>ans2p</sans>
+        <tans>lans2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.2500000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>5</truenextnode>
+        <trueanswernote>s_correct</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[Your equation for \(s(t)\) satisfies \(\ddot s(t)=-\omega_2^2 r(t)=\lambda_2 s(t)\).<br>]]></text>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>s_wrong</falseanswernote>
+        <falsefeedback format="html">
+          <text>Your equation for \(s(t)\) does not satisfy \(\ddot s(t)=-\omega_2^2 r(t)=\lambda_2 s(t)\). In your case,
+\[s(t)={@diff(diff(ans2,t),t)@}.\]
+\[-\omega_2^2 s(t)={@ans2*-omega_2^2@}.\]</text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>4</name>
+        <answertest>SubstEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>sol1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-5-T</trueanswernote>
+        <truefeedback format="html">
+          <text>You have found the correct general solution.</text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-5-F</falseanswernote>
+        <falsefeedback format="html">
+          <text>However, your answer is not equivalent to the correct general answer, even when taking into account any difference in variable names. Perhaps you found a specific answer, instead of the general answer?</text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>5</name>
+        <answertest>SubstEquiv</answertest>
+        <sans>ansp</sans>
+        <tans>lans</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>4</truenextnode>
+        <trueanswernote>prt1-6-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-6-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>2109047495</deployedseed>
+    <deployedseed>1580326410</deployedseed>
+    <deployedseed>1619903051</deployedseed>
+    <deployedseed>786071693</deployedseed>
+    <deployedseed>1430274363</deployedseed>
+    <deployedseed>1165504645</deployedseed>
+    <deployedseed>131939980</deployedseed>
+    <deployedseed>574077978</deployedseed>
+    <deployedseed>1927499770</deployedseed>
+    <deployedseed>1700634343</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans_a</name>
+        <value>sola</value>
+      </testinput>
+      <testinput>
+        <name>ans1</name>
+        <value>sol1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>sol2</value>
+      </testinput>
+      <expected>
+        <name>prt_a</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt_a-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-5-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans_a</name>
+        <value>sola</value>
+      </testinput>
+      <testinput>
+        <name>ans1</name>
+        <value>sol1_alt</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>sol2_alt</value>
+      </testinput>
+      <expected>
+        <name>prt_a</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt_a-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-5-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <testinput>
+        <name>ans_a</name>
+        <value>incorr[1]</value>
+      </testinput>
+      <testinput>
+        <name>ans1</name>
+        <value>0</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>0</value>
+      </testinput>
+      <expected>
+        <name>prt_a</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt_a-1-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-5-F</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>4</testcase>
+      <testinput>
+        <name>ans_a</name>
+        <value>sola</value>
+      </testinput>
+      <testinput>
+        <name>ans1</name>
+        <value>sol1_alt2</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>sol2_alt2</value>
+      </testinput>
+      <expected>
+        <name>prt_a</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt_a-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt1</name>
+        <expectedscore></expectedscore>
+        <expectedpenalty></expectedpenalty>
+        <expectedanswernote>NULL</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9325  -->
+  <question type="stack">
+    <name>
+      <text>22.2.4.1 1st order diff Exercise (a)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise">Exercise</p>
+<p>Solve by decoupling the following first order system:
+
+<p>\(\dfrac{d \underline{x}}{dt}=A\underline{x}\) where \(A={@matA@}, \underline{x}(0)={@init_a@}\).</p>
+
+<div>\(\underline{x}=\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</div>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[We calculate that {@matA@} has eigenvalues {@eval_a1@} and {@eval_a2@}, with corresponding eigenvectors \({@evec_a1@}^T\) and \({@evec_a2@}^T\). Hence we make the substitution \(\underline{x}=P\underline{y}\) with \(P={@p_a@}\) to get \(\dot{\underline{y}}=D\underline{y}\), where \(D={@matD_a@}\). <br>This is then a decoupled equation, with general solution \(\underline{y}={@soly_1@}\). To get the solution in terms of \(\underline{x}\), we use the equation \(\underline{x}=P\underline{y}={@p_a@}{@soly_1@}={@sol1_gen@}\). 
+<br>We then find the particular solution by letting \(t=0\) and solving \(\underline{x}(0)={@sol1_subst@}={@init_a@}\). This is solved by \({@kl[1][1]@},{@kl[1][2]@}\), leading to the specific solution \(\underline{x}={@sol1@}\).]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2020070100</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*part (a)*/
+/*I find it easier to pick A from a list of nice matrices. */
+simp:true
+
+matrices_a:[matrix([3,4],[4,-3]),matrix([5,-4],[6,-5]),matrix([1,2],[3,6]),matrix([5,-1],[3,1]),matrix([-2,-3],[4,5]),matrix([7,-4],[6,-3]),matrix([7,-1],[3,3]),matrix([2,3],[4,-2]),matrix([1,4],[2,-1])]
+index:rand(9)+1
+matA:matrices_a[index]
+evecs_a:eigenvectors(matA)
+evals_a:eigenvalues(matA)
+evec_a1:evecs_a[2][1][1]
+evec_a2:evecs_a[2][2][1]
+
+eval_a1:evals_a[1][1]
+eval_a2:evals_a[1][2]
+
+/*Modal matrix*/
+p_a:matrix([evec_a1[1],evec_a2[1]],[evec_a1[2],evec_a2[2]])
+matD_a:matrix([eval_a1,0],[0,eval_a2])
+
+/*Select initial conditions*/
+xa0:rand_with_prohib(-4,4,[0])
+xa1:rand_with_prohib(-4,4,[0,xa0])
+init_a:matrix([xa0],[xa1])
+
+/*Deduce the solution by finding the general form...*/
+soly_1:matrix([K*e^(eval_a1*t)],[L*e^(eval_a2*t)])
+sol1_gen:p_a.soly_1
+/*...Deducing a particular solution by substituting t=0...*/
+sol1_subst:subst(t=0,sol1_gen)
+/*...finding K,L s.t. it equals the initial conditions...*/
+kl:solve([sol1_subst[1,1]=init_a[1,1],sol1_subst[2,1]=init_a[2,1]],[K,L])
+/*... and substituting back into the general form*/
+sol1:subst(kl[1][1],subst(kl[1][2],sol1_gen))
+
+/*Other variables used for testing*/
+null2:matrix([0],[0])
+null3:matrix([0],[0],[0])</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text><![CDATA[\(A={@matA@}, P={@p_a@}\), evals:\({@eval_a1@},{@eval_a2@}\),solution\(= {@sol1@}\)<br>]]></text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>sol1</tans>
+      <boxsize>18</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>matrix,.</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>ans1_prime:matrix([diff(ans1[1,1],t)],[diff(ans1[2,1],t)])
+ans1_subst:subst(t=0,ans1)</text>
+      </feedbackvariables>
+      <node>
+        <name>2</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1_prime</sans>
+        <tans>matA.ans1</tans>
+        <testoptions>t</testoptions>
+        <quiet>1</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>3</truenextnode>
+        <trueanswernote>x_correct</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[Your answer satisfies \(\dot{\underline{x}}= A\underline{x}\).<br>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>x_wrong</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[Your answer should satisfy \(\dot{\underline{x}}= A\underline{x}\). In your case,
+<br>\(\dot{\underline{x}}={@ans1_prime@}\),
+<br>\(A\underline{x}={@matA.ans1@}\).
+<br>Please try again.]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1_subst</sans>
+        <tans>init_a</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[Your answer satisfies \(\underline{x}(0)={@init_a@}\).<br>
+Hence your answer is correct. Well done.]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>4</falsenextnode>
+        <falseanswernote>prt1-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>4</name>
+        <answertest>SubstEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>sol1_gen</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-5-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[However, it looks like you forgot to use the initial conditions to find a specific solution. <br>Please try again.]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-5-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[However, your answer should satisfy \(\underline{x}(0)={@init_a@}\), when in your case \(\underline{x}(0)={@ans1_subst@}\). <br>Please try again.]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1481223745</deployedseed>
+    <deployedseed>741675709</deployedseed>
+    <deployedseed>536262777</deployedseed>
+    <deployedseed>1749166373</deployedseed>
+    <deployedseed>938872589</deployedseed>
+    <deployedseed>1040050332</deployedseed>
+    <deployedseed>1775712125</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>sol1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-4-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>sol1_gen</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-5-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>null2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-5-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9326  -->
+  <question type="stack">
+    <name>
+      <text>22.2.4.2 1st order diff Exercise (b)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise">Exercise</p>
+<p>Solve by decoupling the following first order system:
+</p><p>\(\dot x_1= {@eq_b[1,1]@} \qquad \dot x_2= {@eq_b[2,1]@} \qquad \dot x_3= {@eq_b[3,1]@} \qquad\) with \(x_1(0)={@init[1,1]@}, \qquad x_2(0)={@init[2,1]@}, \qquad x_3(0)={@init[3,1]@}.\)
+</p><div>\(\underline{x}=\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]</div>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>We first translate the system of equations into a single matrix equation: \(\ddot{\underline{x}} ={@matB@}\underline{x}\). The eigenvalues are \({@evals_b[1][1]@},{@evals_b[1][2]@}\) and \({@evals_b[1][3]@}\), the eigenvectors are \({@evecs_b[2][1][1]@}^T,{@evecs_b[2][2][1]@}^T,{@evecs_b[2][3][1]@}^T\) and hence we substitute \(\underline{x}={@p_b@}\underline{y}\) to get \(\dot{\underline{y}}={@matD_b@}\underline{y}\). 
+We solve the decoupled equations to get \(\underline{y}={@soly_2@}\), then write that in terms of \(\underline{x}\) as \(\underline{x}={@p_b@}{@soly_2@}={@sol2_gen@}\). To find the specific solution we solve \(\underline{x}(0)={@init@}\), which leads to the final solution \(\underline{x}={@sol2@}\).</text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2020070100</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[/*part (b)*/
+/*For this one, it was easier to pick from some prepicked "simple" matrices*/
+matrices_b:[matrix([0,1,0],[1,0,3],[0,1,0]),matrix([0,0,1],[0,0,1],[3,1,0]),matrix([0,3,1],[1,0,0],[1,0,0]),matrix([0,1,0],[1,0,3],[0,1,0]),matrix([0,0,1],[0,0,1],[3,1,0]),matrix([0,3,1],[1,0,0],[1,0,0])]
+inits:[matrix([2],[0],[2]),matrix([4],[4],[0]),matrix([0],[-2],[-2]),matrix([-2],[0],[-2]),matrix([2],[2],[0]),matrix([0],[4],[4])]
+
+/*Pick matrix and its initial conditions, and calculate eigenvectors*/
+index:rand(6)+1
+matB:matrices_b[index]
+init:inits[index]
+evals_b:eigenvalues(matB)
+evecs_b:eigenvectors(matB)
+
+p_b:transpose(matrix(evecs_b[2][1][1],evecs_b[2][2][1],evecs_b[2][3][1]))
+matD_b:matrix([evals_b[1][1],0,0],[0,evals_b[1][2],0],[0,0,evals_b[1][3]])
+
+/*Deduce the solution by finding the general form...(Note by construction, there are three distinct eigenvalues)*/
+soly_2:matrix([A*e^(evals_b[1][1]*t)],[B*e^(evals_b[1][2]*t)],[C*e^(evals_b[1][3]*t)])
+sol2_gen:p_b.soly_2
+/*...Deducing a particular solution by substituting t=0...*/
+sol2_subst:subst(t=0,sol2_gen)
+
+/*...finding A,B,C s.t. it equals the initial conditions...*/
+abc:solve([sol2_subst[1,1]=init[1,1],sol2_subst[2,1]=init[2,1],sol2_subst[3,1]=init[3,1]],[A,B,C])
+/*... and substituting back into the general form*/
+sol2:subst(abc[1][1],subst(abc[1][2],subst(abc[1][3],sol2_gen)))
+
+/*Convert the matrix into a system of equations*/
+eq_b: matB.matrix([x_1],[x_2],[x_3])
+
+/*Other variables used for testing*/
+null2:matrix([0],[0])
+null3:matrix([0],[0],[0])
+wa1:subst(A=0,subst(B=0,subst(C=0,sol2_gen)))]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\(A={@matB@}\), evecs:\({@evecs_b@}\), general: {@sol2_gen@}, init:{@init@}, solution\(= {@sol2@}\)</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans2</name>
+      <type>matrix</type>
+      <tans>sol2</tans>
+      <boxsize>18</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>matrix,.</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>ans2_prime:matrix([diff(ans2[1,1],t)],[diff(ans2[2,1],t)],[diff(ans2[3,1],t)])
+ans2_subst:subst(t=0,ans2)</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2_prime</sans>
+        <tans>matB.ans2</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[Your answer satisfies \(\dot{\underline{x}}= A\underline{x}\).<br>]]></text>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[Your answer should satisfy \(\dot{\underline{x}}= A\underline{x}\). In your case,
+<br>\(\dot{\underline{x}}={@ans2_prime@}\),
+<br>\(A\underline{x}={@matB.ans2@}\).
+<br>Please try again.]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2_subst</sans>
+        <tans>init</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[Your answer satisfies \(\underline{x}(0)={@init@}\).<br>
+Hence your answer is correct. Well done.]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <answertest>SubstEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>sol2_gen</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[However, it looks like you forgot to use the initial conditions to find a specific solution. <br>Please try again.]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[However, your answer should satisfy \(\underline{x}(0)={@init@}\), when in your case \(\underline{x}(0)={@ans2_subst@}\). <br>Please try again.]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>496660860</deployedseed>
+    <deployedseed>1791804520</deployedseed>
+    <deployedseed>1666241603</deployedseed>
+    <deployedseed>1278253507</deployedseed>
+    <deployedseed>651244535</deployedseed>
+    <deployedseed>734693042</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans2</name>
+        <value>sol2</value>
+      </testinput>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans2</name>
+        <value>sol2_gen</value>
+      </testinput>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-3-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <testinput>
+        <name>ans2</name>
+        <value>null3</value>
+      </testinput>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-3-F</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>4</testcase>
+      <testinput>
+        <name>ans2</name>
+        <value>wa1</value>
+      </testinput>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-3-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9324  -->
+  <question type="stack">
+    <name>
+      <text>22.2.4.3 1st order diff Exercise (c)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise">Exercise </p>
+<p>Solve by decoupling the following first order systems:
+\(\dfrac{d \underline{x}}{dt}=A\underline{x}\) where \(A={@matC@}, \underline{x}(0)={@init_c@}\).</p>
+<div>\(\underline{x}=\) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]</div>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>(c) We find that {@matC@} only has two eigenvalues: {@evals_c[1][1]@},{@evals_c[1][2]@}, where the latter is repeated. However, we find a full set of linearly independent eigenvectors \({@evecs_c[2][1][1]@}^T,{@evecs_c[2][2][1]@}^T,{@evecs_c[2][2][2]@}^T\), the latter two corresponding to the eigenvalue {@evals_c[2][1]@}. Hence we proceed as normal, substituting \(\underline{x}={@p_c@}\underline{y}\) to get \(\dot{\underline{y}}={@matD_c@}\underline{y}\), which is solved by \(\underline{y}={@soly_3@}\). Written in terms of \(\underline{x}\), this becomes \(\underline{x}=P\underline{y}={@p_c@}{@soly_3@}={@sol3_gen@}\). To find the specific solution we solve \(\underline{x}(0)={@init_c@}\), which leads to the final solution \(\underline{x}={@sol3@}\).</text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2020070100</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[/*part (c)*/
+/*For this one, it was easier to pick from some prepicked "simple" matrices*/
+matrices_c:[matrix([2,2,1],[1,3,1],[1,2,2]),matrix([0,-4,2],[-2,2,1],[2,2,3]),matrix([-1,1,3],[-6,4,6],[3,-1,-1]),matrix([0,2,3],[-3,5,3],[3,-2,0]),matrix([2,-2,-8],[0,2,0],[0,-1,-2])]
+inits_c:[matrix([0],[0],[1]),matrix([3],[3],[0]),matrix([2],[0],[1]),matrix([0],[2],[2]),matrix([3],[3],[0])]
+index_c:rand(5)+1
+
+matC:matrices_c[index_c]
+init_c:inits_c[index_c]
+evals_c:eigenvalues(matC)
+evecs_c:eigenvectors(matC)
+
+p_c:transpose(matrix(evecs_c[2][1][1],evecs_c[2][2][1],evecs_c[2][2][2]))
+matD_c:matrix([evals_c[1][1],0,0],[0,evals_c[1][2],0],[0,0,evals_c[1][2]])
+
+soly_3:matrix([A*e^(evals_c[1][1]*t)],[B*e^(evals_c[1][2]*t)],[C*e^(evals_c[1][2]*t)])
+/*Deduce the solution by finding the general form...(Note by construction, the greater eigenvalue is repeated)*/
+sol3_gen:p_c.soly_3
+/*...Deducing a particular solution by substituting t=0...*/
+sol3_subst:subst(t=0,sol3_gen)
+/*...finding A,B,C s.t. it equals the initial conditions...*/
+abc_c:solve([sol3_subst[1,1]=init_c[1,1],sol3_subst[2,1]=init_c[2,1],sol3_subst[3,1]=init_c[3,1]],[A,B,C])
+/*... and substituting back into the general form*/
+sol3:subst(abc_c[1][3],subst(abc_c[1][2],subst(abc_c[1][1],sol3_gen)))
+
+/*Other variables used for testing*/
+null2:matrix([0],[0])
+null3:matrix([0],[0],[0])]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\(A={@matC@}\), evecs:\({@evecs_c@}\), solution\(= {@sol3@}\)</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans3</name>
+      <type>matrix</type>
+      <tans>sol3</tans>
+      <boxsize>20</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>matrix,.</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>ans3_prime:matrix([diff(ans3[1,1],t)],[diff(ans3[2,1],t)],[diff(ans3[3,1],t)])
+ans3_subst:subst(t=0,ans3)</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3_prime</sans>
+        <tans>matC.ans3</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[Your answer satisfies \(\dot{\underline{x}}= A\underline{x}\).<br>]]></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[Your answer should satisfy \(\dot{\underline{x}}= A\underline{x}\). In your case,
+<br>\(\dot{\underline{x}}={@ans3_prime@}\),
+<br>\(A\underline{x}={@matC.ans3@}\).
+<br>Please try again.]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3_subst</sans>
+        <tans>init_c</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[Your answer satisfies \(\underline{x}(0)={@init_c@}\).<br>
+Hence your answer is correct. Well done.]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt3-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <answertest>SubstEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>sol3_gen</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[However, it looks like you forgot to use the initial conditions to find a specific solution. <br>Please try again.]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[However, your answer should satisfy \(\underline{x}(0)={@init_c@}\), when in your case \(\underline{x}(0)={@ans3_subst@}\). <br>Please try again.]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>687040085</deployedseed>
+    <deployedseed>145083942</deployedseed>
+    <deployedseed>1429258930</deployedseed>
+    <deployedseed>1355869172</deployedseed>
+    <deployedseed>1362483430</deployedseed>
+    <deployedseed>1353129757</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans3</name>
+        <value>sol3</value>
+      </testinput>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans3</name>
+        <value>sol3_gen</value>
+      </testinput>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt3-3-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <testinput>
+        <name>ans3</name>
+        <value>null3</value>
+      </testinput>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt3-3-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9327  -->
+  <question type="stack">
+    <name>
+      <text>22.2.4.4 1st order diff Exercise (d)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise">Exercise</p>
+<p>Solve by decoupling the following first order systems:
+\(\dfrac{d \underline{x}}{dt}=A \underline{x}\) where \(A={@matB@}, \underline{x}(0)={@init_b@}\).</p>
+<div>\(\underline{x}=\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]</div>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>The eigenvalues are \({@evals_b[1][1]@},{@evals_b[1][2]@}\) and \({@evals_b[1][3]@}\), the eigenvectors are \({@evecs_b[2][1][1]@}^T,{@evecs_b[2][2][1]@}^T,{@evecs_b[2][3][1]@}^T\) and hence we substitute \(\underline{x}={@p_b@}\underline{y}\) to get \(\dot{\underline{y}}={@matD_b@}\underline{y}\). 
+We solve the decoupled equations to get \(\underline{y}={@soly_2@}\), then write that in terms of \(\underline{x}\) as \(\underline{x}={@p_b@}{@soly_2@}={@sol2_gen@}\). To find the specific solution we solve \(\underline{x}(0)={@init_b@}\), which leads to the final solution \(\underline{x}={@sol2@}\).</text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2020081700</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[/*part (d)*/
+/*For this one, it was easier to pick from some prepicked "simple" matrices*/
+matrices_b:[matrix([1,0,0],[0,-2,1],[0,4,1]),matrix([1,0,4],[0,1,0],[1,0,-2]),matrix([-2,1,0],[4,1,0],[0,0,1])]
+inits_b:[matrix([1],[1],[1]),matrix([2],[2],[2]),matrix([-1],[-1],[-1])]
+matB:matrices_b[rand(3)+1]
+init_b:inits_b[rand(3)+1]
+evals_b:eigenvalues(matB)
+evecs_b:eigenvectors(matB)
+
+p_b:transpose(matrix(evecs_b[2][1][1],evecs_b[2][2][1],evecs_b[2][3][1]))
+matD_b:matrix([evals_b[1][1],0,0],[0,evals_b[1][2],0],[0,0,evals_b[1][3]])
+
+/*Deduce the solution by finding the general form...(Note by construction, there are three distinct eigenvalues)*/
+soly_2:matrix([A*e^(evals_b[1][1]*t)],[B*e^(evals_b[1][2]*t)],[C*e^(evals_b[1][3]*t)])
+sol2_gen:p_b.soly_2
+/*...Deducing a particular solution by substituting t=0...*/
+sol2_subst:subst(t=0,sol2_gen)
+/*...finding A,B,C s.t. it equals the initial conditions...*/
+abc_b:solve([sol2_subst[1,1]=init_b[1,1],sol2_subst[2,1]=init_b[2,1],sol2_subst[3,1]=init_b[3,1]],[A,B,C])
+/*... and substituting back into the general form*/
+sol2:subst(abc_b[1][3],subst(abc_b[1][2],subst(abc_b[1][1],sol2_gen)))
+
+/*Other variables used for testing*/
+null2:matrix([0],[0])
+null3:matrix([0],[0],[0])]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\(A={@matB@}\), evecs:\({@evecs_b@}\), solution\(= {@sol2@}\)</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans2</name>
+      <type>matrix</type>
+      <tans>sol2</tans>
+      <boxsize>25</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>matrix,.</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>ans2_prime:matrix([diff(ans2[1,1],t)],[diff(ans2[2,1],t)],[diff(ans2[3,1],t)])
+ans2_subst:subst(t=0,ans2)</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2_prime</sans>
+        <tans>matB.ans2</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[Your answer satisfies \(\dot{\underline{x}}= A\underline{x}\).<br>]]></text>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[Your answer should satisfy \(\dot{\underline{x}}= A\underline{x}\). In your case,
+<br>\(\dot{\underline{x}}={@ans2_prime@}\),
+<br>\(A\underline{x}={@matB.ans2@}\).
+<br>Please try again.]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2_subst</sans>
+        <tans>init_b</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[Your answer satisfies \(\underline{x}(0)={@init_b@}\).<br>
+Hence your answer is correct. Well done.]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <answertest>SubstEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>sol2_gen</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[However, it looks like you forgot to use the initial conditions to find a specific solution. <br>Please try again.]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[However, your answer should satisfy \(\underline{x}(0)={@init_b@}\), when in your case \(\underline{x}(0)={@ans2_subst@}\). <br>Please try again.]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>2113849926</deployedseed>
+    <deployedseed>1839906184</deployedseed>
+    <deployedseed>1492885293</deployedseed>
+    <deployedseed>15048083</deployedseed>
+    <deployedseed>1705138499</deployedseed>
+    <deployedseed>309549408</deployedseed>
+    <deployedseed>548175751</deployedseed>
+    <deployedseed>1405917399</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans2</name>
+        <value>sol2</value>
+      </testinput>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans2</name>
+        <value>sol2_gen</value>
+      </testinput>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-3-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <testinput>
+        <name>ans2</name>
+        <value>null3</value>
+      </testinput>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-3-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9328  -->
+  <question type="stack">
+    <name>
+      <text>22.2.4.5 2nd order diff exercises</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise">Exercise</p>
+
+<p>Matrix methods can be used to solve systems of <span><strong>second order</strong></span> differential equations such as might arise with coupled electrical or mechanical systems. For example the motion of two masses <span class="math inline">\(m_1\)</span> and <span class="math inline">\(m_2\)</span> vibrating on coupled springs, neglecting damping and spring masses, is governed by <span class="math display">\[\begin{aligned}
+m_1{\ddot
+y}_1&amp;=-k_1y_1+k_2(y_2-y_1)\\ 
+m_2{\ddot y}_2&amp;=-k_2(y_2-y_1)\end{aligned}\]</span> where dots denote derivatives with respect to time. Write this system as a matrix equation <span class="math inline">\({\ddot{\underline{y}}}=A\underline{y}\)</span> and use the decoupling method to find <span class="math inline">\(\underline{y}\)</span>.
+
+<ol class="HELM_parts"> 
+ <li>  \(m_1=m_2=1,\ k_1={@k_1a@},\ k_2={@k_2a@}\) with initial conditions \(y_1(0)={@y_1a@}, y_2(0)={@y_2a@},{\dot y_1}(0)={@yprime_1a@},{\dot
+y}_2(0)={@yprime_2a@}.\)
+<br>
+\(Y=\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+</li>
+
+<li>   \(m_1=m_2=1,\ k_1={@k_1b@},\ k_2={@k_2b@}\) with initial conditions \(y_1(0)={@y_1b@}, y_2(0)={@y_2b@},{\dot y_1}(0)={@yprime_1b@},{\dot
+y}_2(0)={@yprime_2b@}.\)
+<br>
+<br>\(\underline{y}=\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
+</li>
+
+</ol>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[(a) First we convert the problem into matrix form: \(\ddot{\underline{y}}=A\underline{y}\) where \(A={@matrix([-k_1-k_2,k_2],[k_2,-k_2])@}={@matA@}\). We find the eigenvalues of \(A\) to be {@eval_a1@} and {@eval_a2@} with corresponding eigenvectors \({@evec_a1@}^T\) and \({@evec_a2@}^T\). Letting \(P={@p_a@}\) we substitute \(\underline{z}=P\underline{y}\) to get \(\ddot{\underline{z}}=D\underline{z}\) where \(D={@matD_a@}\). This can be solved by the method of decoupled equations for \(\underline{z}={@solz_1@}\). We then convert back to the original system with \(\underline{y}=P\underline{z}={@p_a@}{@solz_1@}={@sol1_gen@}\).
+<br> To find the specific solution, we solve for \(A,B,C,D\) in \(\underline{y}(0)={@inity_a@}\) and \(\dot{\underline{y}}(0)={@inity_prime_a@}\) to get \(A={@myA@},B={@myB@},C={@myC@},D={@myD@}\) and a specific solution of \(\underline{y}={@sol1@}\).
+
+(b) Similarly, we start by converting to matrix form: \(\ddot{\underline{y}}=A\underline{y}\) where \(A={@matB@}\). We find the eigenvalues of \(A\) to be {@eval_b1@} and {@eval_b2@} with corresponding eigenvectors \({@evec_b1@}^T\) and \({@evec_b2@}^T\). Letting \(P={@p_b@}\) we substitute \(\underline{z}=P\underline{y}\) to get \(\ddot{\underline{z}}=D\underline{z}\) where \(D={@matD_b@}\). This can be solved by the method of decoupled equations for \(\underline{z}={@solz_2@}\). We then convert back to the original system with \(\underline{y}=P\underline{z}={@p_b@}{@solz_2@}={@sol2_gen@}\).
+<br> To find the specific solution, we solve for \(A,B,C,D\) in \(\underline{y}(0)={@inity_b@}\) and \(\dot{\underline{y}}(0)={@inity_prime_b@}\) to get \(A={@myA2@},B={@myB2@},C={@myC2@},D={@myD2@}\) and a specific solution of \(\underline{y}={@sol2@}\).]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2020081700</text>
+    </stackversion>
+    <questionvariables>
+      <text>/*part (a)*/
+/*Set parameters*/
+m_1:1
+m_2:1
+
+/*We use only one matrix for question (a), as all the other matrices of this form with negative integer eigenvalues are more difficult than the given (a), and the HELM author likely intended for part (a) to be easier than part (b).*/
+k_1a:3
+k_2a:2
+
+/*I will find y_0, y'_0 later, s.t. they produce a nice result.*/
+
+/*Calculate eigenvalues and -vectors. By construction there are two distinct evals, both of which are negative.*/
+matA:matrix([-k_1a-k_2a,k_2a],[k_2a,-k_2a])
+evals_a:eigenvalues(matA)
+evecs_a:eigenvectors(matA)
+
+evec_a1:evecs_a[2][1][1]
+evec_a2:evecs_a[2][2][1]
+
+eval_a1:evals_a[1][1]
+eval_a2:evals_a[1][2]
+
+/*Modal matrix*/
+p_a:matrix([evec_a1[1],evec_a2[1]],[evec_a1[2],evec_a2[2]])
+matD_a:matrix([eval_a1,0],[0,eval_a2])
+
+/*Let Z=PY*/
+/*Solve the equation Z''=DZ*/
+omega_a1:sqrt(-eval_a1)
+omega_a2:sqrt(-eval_a2)
+solz_1:matrix([A*cos(omega_a1*t)+B*sin(omega_a1*t)],[C*cos(omega_a2*t)+D*sin(omega_a2*t)])
+/*Hence find the general solution for Y*/
+sol1_gen:p_a.solz_1
+
+
+/*Now we decide what we would like A,B,C,D to be, to give a nice solution.*/
+myA:0
+myB:rand_with_prohib(-2,2,[0])
+myC:rand_with_prohib(-2,2,[0])
+myD:0
+
+/*Substitute into general form for solution*/
+sol1:subst(D=myD,subst(C=myC,subst(B=myB,subst(A=myA,sol1_gen))))
+
+/*To find the initial values, find the derivative...*/
+sol1_prime:diff(sol1_gen,t)
+/*... and substitute t=0 into both*/
+sol1_subst:subst(t=0,sol1_gen)
+sol1_prime_subst:subst(t=0,sol1_prime)
+
+/*Then the initial values are found by substituting in myA,myB,...*/
+
+inity_a:subst(D=myD,subst(C=myC,subst(B=myB,subst(A=myA,sol1_subst))))
+y_1a:inity_a[1][1]
+y_2a:inity_a[2][1]
+
+inity_prime_a:subst(D=myD,subst(C=myC,subst(B=myB,subst(A=myA,sol1_prime_subst))))
+yprime_1a:inity_prime_a[1][1]
+yprime_2a:inity_prime_a[2][1]
+
+
+
+
+
+/*part (b)*/
+/*Set parameters*/
+m_1:1
+m_2:1
+
+/*For party (b) there are exactly 4 matrices of similar difficulty to the one given by HELM, with integer eigenvalues.*/
+k_1bs:[5,6,8,9]
+k_2bs:[6,4,3,6]
+index:rand(4)+1
+k_1b:k_1bs[index]
+k_2b:k_2bs[index]
+
+/*I will find y_0, y'_0 later, s.t. they produce a nice result.*/
+
+/*Calculate eigenvalues and -vectors. By construction there are two distinct evals, both of which are negative.*/
+matB:matrix([-k_1b-k_2b,k_2b],[k_2b,-k_2b])
+evals_b:eigenvalues(matB)
+evecs_b:eigenvectors(matB)
+
+evec_b1:evecs_b[2][1][1]
+evec_b2:evecs_b[2][2][1]
+
+eval_b1:evals_b[1][1]
+eval_b2:evals_b[1][2]
+
+/*Modal matrix*/
+p_b:matrix([evec_b1[1],evec_b2[1]],[evec_b1[2],evec_b2[2]])
+matD_b:matrix([eval_b1,0],[0,eval_b2])
+
+/*Let Z=PY*/
+/*Solve the equation Z''=DZ*/
+omega_b1:sqrt(-eval_b1)
+omega_b2:sqrt(-eval_b2)
+solz_2:matrix([A*cos(omega_b1*t)+B*sin(omega_b1*t)],[C*cos(omega_b2*t)+D*sin(omega_b2*t)])
+/*Hence find the general solution for Y*/
+sol2_gen:p_b.solz_2
+
+
+/*Now we decide what we would like A,B,C,D to be, to give a nice solution.*/
+myA2:0
+myB2:rand_with_prohib(-2,2,[0])
+myC2:0
+myD2:0
+
+/*Substitute into general form for solution*/
+sol2:subst(D=myD2,subst(C=myC2,subst(B=myB2,subst(A=myA2,sol2_gen))))
+
+/*To find the initial values, find the derivative...*/
+sol2_prime:diff(sol2_gen,t)
+/*... and substitute t=0 into both*/
+sol2_subst:subst(t=0,sol2_gen)
+sol2_prime_subst:subst(t=0,sol2_prime)
+
+/*Then the initial values are found by substituting in myA,myB,...*/
+
+inity_b:subst(D=myD2,subst(C=myC2,subst(B=myB2,subst(A=myA2,sol2_subst))))
+y_1b:inity_b[1][1]
+y_2b:inity_b[2][1]
+
+inity_prime_b:subst(D=myD2,subst(C=myC2,subst(B=myB2,subst(A=myA2,sol2_prime_subst))))
+yprime_1b:inity_prime_b[1][1]
+yprime_2b:inity_prime_b[2][1]
+
+</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text><![CDATA[(a)
+Question: \(k_1={@k_1a@}, k_2={@k_2a@},A= {@matA@}, Y_0={@inity_a@},\dot Y_0= {@inity_prime_a@}\)
+Solution: {@sol1@}
+<br>(b)
+Question: \(k_1={@k_1b@}, k_2={@k_2b@},A= {@matB@}, Y_0={@inity_b@},\dot Y_0= {@inity_prime_b@}\)
+Solution: {@sol2@}]]></text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>sol1</tans>
+      <boxsize>20</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>.,matrix</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>1</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>matrix</type>
+      <tans>sol2</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>.,matrix</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>1</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>ans1_pprime:matrix([diff(diff(ans1[1,1],t),t)],[diff(diff(ans1[2,1],t),t)])
+ans1_prime_subst:subst(t=0,matrix([diff(ans1[1,1],t)],[diff(ans1[2,1],t)]))
+ans1_subst:subst(t=0,ans1)</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1_pprime</sans>
+        <tans>matA.ans1</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>3</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[Your answer satisfies \(\ddot{\underline{y}}= {@matA@}\underline{y}\).<br>]]></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[Your answer should satisfy \(\ddot{\underline{y}}= {@matA@}\underline{y}\). In your case,
+<br>\(\ddot{\underline{y}}={@ans1_pprime@}\),
+<br>\({@matA@}\underline{y}={@matA.ans1@}\).
+<br>Please try again.]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1_subst</sans>
+        <tans>inity_a</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.2500000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>2</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[Your answer satisfies \(\underline{y}(0)={@inity_a@}\).<br>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[Your answer does not satisfy \(\underline{y}(0)={@inity_a@}\).<br>
+In your case, \(\underline{y}(0)={@ans1_subst@}\)<br>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1_prime_subst</sans>
+        <tans>inity_prime_a</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.2500000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[Your answer satisfies \(\dot{\underline{y}}(0)={@inity_prime_a@}\).<br>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[Your answer does not satisfy \(\dot{\underline{y}}(0)={@inity_prime_a@}\).<br>
+In your case, \(\dot{\underline{y}}(0)={@ans1_prime_subst@}\)<br>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <answertest>SubstEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>sol1_gen</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[The general form of your answer is correct, but it looks like you forgot to use the initial conditions to find a specific solution. Your answer should satisfy \(\underline{y}(0)={@inity_a@}\) and \(\dot{\underline{y}}(0)={@inity_prime_a@}\). <br>Please try again.]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>ans2_pprime:matrix([diff(diff(ans2[1,1],t),t)],[diff(diff(ans2[2,1],t),t)])
+ans2_prime_subst:subst(t=0,matrix([diff(ans2[1,1],t)],[diff(ans2[2,1],t)]))
+ans2_subst:subst(t=0,ans2)</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2_pprime</sans>
+        <tans>matB.ans2</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[Your answer satisfies \(\ddot{\underline{y}}= {@matB@}\underline{y}\).<br>]]></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[Your answer should satisfy \(\ddot{\underline{y}}= {@matB@}\underline{y}\). In your case,
+<br>\(\ddot{\underline{y}}={@ans2_pprime@}\),
+<br>\({@matB@}\underline{y}={@matB.ans2@}\).
+<br>Please try again.]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>SubstEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>sol2_gen</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[The general form of your answer is correct, but it looks like you forgot to use the initial conditions to find a specific solution. Your answer should satisfy \(\underline{y}(0)={@inity_b@}\) and \(\dot{\underline{y}}(0)={@inity_prime_b@}\). <br>Please try again.]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2_subst</sans>
+        <tans>inity_b</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.2500000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>3</truenextnode>
+        <trueanswernote>prt2-3-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[Your answer satisfies \({\underline{y}}(0)={@inity_b@}\).<br>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>3</falsenextnode>
+        <falseanswernote>prt2-3-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[Your answer does not satisfy \({\underline{y}}(0)={@inity_b@}\).<br>
+In your case, \({\underline{y}}(0)={@ans2_subst@}\)<br>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>3</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2_prime_subst</sans>
+        <tans>inity_prime_b</tans>
+        <testoptions></testoptions>
+        <quiet>1</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.2500000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-4-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[Your answer satisfies \(\dot{\underline{y}}(0)={@inity_prime_b@}\).<br>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-4-F</falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[Your answer does not satisfy \(\dot{\underline{y}}(0)={@inity_prime_b@}\).<br>
+In your case, \(\dot{\underline{y}}(0)={@ans2_prime_subst@}\)<br>]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1769835156</deployedseed>
+    <deployedseed>1104793136</deployedseed>
+    <deployedseed>1803841598</deployedseed>
+    <deployedseed>169999226</deployedseed>
+    <deployedseed>1792497907</deployedseed>
+    <deployedseed>1112758368</deployedseed>
+    <deployedseed>85146950</deployedseed>
+    <deployedseed>66704490</deployedseed>
+    <deployedseed>1358425586</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>sol1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>sol2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-3-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-4-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>sol1_gen</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>sol2_gen</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-4-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>matrix([0],[0])</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>matrix([0],[0])</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.5000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-3-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.7500000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-4-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+</quiz>

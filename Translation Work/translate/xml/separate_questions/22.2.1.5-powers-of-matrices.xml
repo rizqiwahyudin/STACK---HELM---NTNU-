@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>22.2.1.5 Powers of Matrices</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        We now use the relation \(\ \ A=PDP^{-1}\) to obtain a formula for powers of \(A\) in terms of the easily calculated powers of the diagonal matrix \(D\):
+    </span>
+    <span class="multilang" lang="no">
+        Vi bruker n&#229; relasjonen \(\ \ A=PDP^{-1}\) for &#229; finne en formel for potenser av \(A\) i med de lett utregnbare potensene til diagonalmatrisen \(D\):
+    </span>
+</p>
+\begin{align*}
+A^ = A \cdot A &amp; = (PDP^{-1})(PDP^{-1}) \\
+&amp; = PD(P^{-1}P)DP^{-1} \\
+&amp; = PDIDP^{-1} \\
+&amp; = PD^2P^{-1}
+\end{align*}
+<p>
+    <span class="multilang" lang="en">
+        Similarly,
+    </span>
+    <span class="multilang" lang="no">
+        P&#229; samme m&#229;te,
+    </span>
+</p>
+\begin{align*}
+A^3 = A^2 \cdot A &amp; (PD^2P^{-1})(PDP^{-1}) \\
+&amp; = PD^2(P^{-1}P)DP^{-1} \\
+&amp; = PD^3P^{-1}
+\end{align*}
+<p>
+    <span class="multilang" lang="en">
+        The general result is given in the following Key Point:
+    </span>
+    <span class="multilang" lang="no">
+        Det generelle resultatet er gitt i f&#248;lgende n&#248;kkelpunkt:
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            For a matrix \(A\) with distinct eigenvalues \(\lambda_1,\lambda_2,\dots ,\lambda_n\) and associated eigenvectors \(\underline{x}_1, \underline{x}_2,\dots ,\underline{x}_n\), if
+        </span>
+        <span class="multilang" lang="no">
+            For en matrise \(A\) med distinkte egenverdier \(\lambda_1,\lambda_2,\dots ,\lambda_n\) og tilh&#248;rende egenvektorer \(\underline{x}_1, \underline{x}_2,\dots ,\underline{x}_n\), hvis
+        </span>
+    </p>
+    \[P=[\underline{x}_1 : \underline{x}_2 : \ \cdots\ : \underline{x}_n]\]
+    <p>
+        <span class="multilang" lang="en">
+            then \(D=P^{-1}AP\) is a diagonal matrix such that
+                                \[ D=\left[\begin{matrix}\lambda_1&amp;&amp;&amp;&amp;\\
+                                &amp;\lambda_2&amp;&amp;&amp;\\
+                                &amp;&amp;\ddots &amp;&amp;\\
+                                &amp;&amp;&amp;\lambda_n\end{matrix}\right]\qquad\text{and}\qquad A^k=PD^kP^{-1}\]
+        </span>
+        <span class="multilang" lang="no">
+            s&#229; er \(D=P^{-1}AP\) en diagonalmatrise slik at
+                                \[ D=\left[\begin{matrix}\lambda_1&amp;&amp;&amp;&amp;\\
+                                &amp;\lambda_2&amp;&amp;&amp;\\
+                                &amp;&amp;\ddots &amp;&amp;\\
+                                &amp;&amp;&amp;\lambda_n\end{matrix}\right]\qquad\text{og}\qquad A^k=PD^kP^{-1}\]
+        </span>
+    </p>
+</div>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        If \(A=\left[\begin{array}{cc}2&amp;3\\ 3&amp;2\end{array}\right]\), find \(A^{23}\). (Use the results of the previous Example.)
+    </span>
+    <span class="multilang" lang="no">
+        Hvis \(A=\left[\begin{array}{cc}2&amp;3\\ 3&amp;2\end{array}\right]\), finn  \(A^{23}\). (Bruk resultatene fra forrige eksempel.)
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        We know from the previous Example that if \(P=\left[\begin{array}{rr}1&amp;1\\-1&amp;1\end{array}\right]\) then \( P^{-1}AP=\left[\begin{array}{rr}-1&amp;0\\ 0&amp;5\end{array}\right]= D\)
+                where \(P^{-1}=\dfrac{1}{2}\left[\begin{array}{rr}\hfill 1&amp;\hfill -1\\ \hfill 1&amp;\hfill
+                1\end{array}\right]\).
+    </span>
+    <span class="multilang" lang="no">
+        Vi vet fra det forrige eksempelet at hvis \(P=\left[\begin{array}{rr}1&amp;1\\-1&amp;1\end{array}\right]\) s&#229; er \(P^{-1}AP=\left[\begin{array}{rr}-1&amp;0\\ 0&amp;5\end{array}\right]=D\) hvor \(P^{-1}=\dfrac{1}{2}\left[\begin{array}{rr}\hfill 1&amp;\hfill -1\\ \hfill 1&amp;\hfill
+1\end{array}\right]\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Therefore,
+    </span>
+    <span class="multilang" lang="no">
+        Derfor er,
+    </span>
+</p>
+<p style="text-align: center;">
+    <span class="multilang" lang="en">
+        \(A=PDP^{-1}\) and \(A^{23}=PD^{23}P^{-1}\) using the general result in the Key Point, i.e.,
+    </span>
+    <span class="multilang" lang="no">
+        \(A=PDP^{-1}\) og \(A^{23}=PD^{23}P^{-1}\) ved hjelp av det generelle resultatet i n&#248;kkelpunktet, dvs.,
+    </span>
+</p>
+\[A^{23}= \dfrac{1}{2}
+\left[\begin{array}{rr}\hfill 1&amp;\hfill 1\\ \hfill -1&amp;\hfill 1\end{array}\right]
+\left[\begin{array}{rr}\hfill -1&amp;\hfill 0\\ \hfill 0&amp;\hfill 5^{23}\end{array}\right]
+\left[\begin{array}{rr}\hfill 1&amp;\hfill -1\\ \hfill 1&amp;\hfill 1\end{array}\right]\]
+<p>
+    <span class="multilang" lang="en">
+        which is easily evaluated, especially compared to calculating the product \(A^{23}\) directly!
+    </span>
+    <span class="multilang" lang="no">
+        som er lett &#229; beregne, spesielt sammenlignet med &#229; beregne produktet \(A^{23}\) direkte!
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

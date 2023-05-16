@@ -1,0 +1,21 @@
+------------------------------------------------------------------------------------
+						EASY STUFF
+------------------------------------------------------------------------------------
+- KNN Classifier FLowchart (?) NN Classifier 
+- Clustering Diagram 
+- LDC Classifier FLowchart
+- Iris FLower 3 subspecies (Oppgavetekst) 
+- Digits (oppgavetekst)
+- Tables (runtime, error rates, table of features they removed, with error rates)
+- Weighting Matrices (30/20, 20/30, 5, 7 total) 
+- Formatting 
+------------------------------------------------------------------------------------
+						HARD STUFF
+------------------------------------------------------------------------------------
+- Sort out Code (convert to jupyter notebook for python, matlab is basically done)  
+- Implementation 
+ -- Discussion
+ -- Results 
+- Conclusion 
+- References 
+- Appendices/Code 

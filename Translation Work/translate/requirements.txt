@@ -1,0 +1,3 @@
+#cat requirements.txt
+bs4==0.0.1
+googletrans==4.0.0rc1
