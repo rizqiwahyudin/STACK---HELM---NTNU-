@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>Motsigelsesbevis</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    Motsigelsesbevis
+</h3>
+<p>
+    En p&#229;stand, \(P\), er enten sann eller usann. Hvis det er vanskelig &#229; bevise p&#229;standen kan det v&#230;re letter &#229; pr&#248;ve &#229; bevise det motsatte, alts&#229; ikke-\(P\), og n&#229; en tydelig selvmotsigelse. Siden ikke-\(P\) ikke stemmer, m&#229; det omvendte, alts&#229; \(P\), stemme.
+</p>
+<h4 class="HELM_example">
+    Eksempel
+</h4>
+<p>
+    Vis at \(\sqrt{2}\) ikke kan skrives som br&#248;k.
+</p>
+<h4 class="HELM_solution">
+    L&#248;sning
+</h4>
+<p>
+    P&#229; ekte motsigelsesbevis vis pr&#248;ver vi &#229; bevise det motsatte, alts&#229; at \(\sqrt{2}\) KAN skrives som br&#248;k. Matematisk blir dette:
+</p>
+<p>
+    \(\sqrt{2} =\frac{m}{n}\)
+</p>
+<p>
+    Vi antar her at br&#248;ken er forkortet s&#229; \(m\) og \(n\) ikke har noen felles faktorer. Videre:
+</p>
+<p>
+    \(\sqrt{2} =\frac{m}{n} \implies\)
+</p>
+<p>
+    \(2 =\left(\frac{m}{n}\right)^2 \implies\)
+</p>
+<p>
+    \(2n^2 = m^2\)
+</p>
+<p>
+    Vi ser her at \(m^2\) er et partall. Siden \(m\) og \(n\) m&#229; v&#230;re heltall m&#229; \(m\) ogs&#229; v&#230;re et partall. (Husk: Hvis \(n^2\) er et partall er \(n\) ogs&#229; et partall)
+</p>
+<p>
+    N&#229;r \(m\) er et partall kan vi representere \(m\) som \(m=2k \implies m^2=4k^2\).
+</p>
+<p>
+    Dette satt tilbake i siste linje gir:
+</p>
+<p>
+    \(2n^2=m^2 \implies 2n^2=4k^2 \Leftrightarrow n^2=2k^2\)
+</p>
+<p>
+    Vi ser her at \(n^2\), og dermed \(n\), ogs&#229; er et partall, som betyr at b&#229;de \(m\) og \(n\) er partall. Dette kan ikke stemme siden \(m\) og \(n\) ikke skulle ha noen felles faktorer, men her er begge en multippel av 2. Vi kan konkuldere at p&#229;standen "\(\sqrt{2}\) kan skrives som br&#248;k" er feil og at p&#229;standen "\(\sqrt{2}\) kan ikke skrives som br&#248;k" dermed stemmer.
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>8.156</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+</p>
+<p>
+    Gammastr&#229;ling er en type radioaktiv str&#229;ling. N&#229;r denne str&#229;lingen passerer gjennom en blyvegg, avtar den i intensitet. Vi setter intensiteten i friluft til \({@i0@}\). Etter at gammastr&#229;lingen har passert blyveggen, er intensiteten \(I(x)\) redusert til \( \newline \displaystyle { I(x)={@exp@} } \) der \(x\) er tykkelsen p&#229; blyveggen m&#229;lt i millimeter.
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    \(a)\) Finn intensiteten n&#229;r gammastr&#229;lingen har passert en blyvegg p&#229; \({@m1@}\) mm.
+</p>
+<p>
+    [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    \(b)\) Hvor mange millimeter tykk m&#229; veggen v&#230;re dersom intensiteten skal halveres?
+</p>
+<p>
+    [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
+    <br/>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text>i0:100*rand([1,2,3])
+a:-rand_with_step(0.030,0.040,0.001)
+m1:10+rand(8)
+
+exp:i0*%e^(a*x)
+ta1:decimalplaces(ev(exp,x=m1),1)
+halv:i0/2
+ta2:decimalplaces(ln(halv/i0)/(a),1)</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote>
+            <text>\({@exp@}\rightarrow I={@ta1@} \newline \) ved {@m1@} mm tykk vegg.
+\(\newline b) :{@ta2@} \newline \)</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>numerical</type>
+            <tans>ta1</tans>
+            <boxsize>7</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>1</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>numerical</type>
+            <tans>ta2</tans>
+            <boxsize>7</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>1</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions>0.6</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans2</sans>
+                <tans>ta2</tans>
+                <testoptions>0.6</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>806277276</deployedseed>
+        <deployedseed>2027716437</deployedseed>
+        <deployedseed>179915521</deployedseed>
+        <deployedseed>575082496</deployedseed>
+        <deployedseed>178001090</deployedseed>
+        <deployedseed>382584171</deployedseed>
+        <deployedseed>1638810980</deployedseed>
+        <deployedseed>787146421</deployedseed>
+        <deployedseed>300844567</deployedseed>
+        <deployedseed>941618576</deployedseed>
+    </question>
+    
+
+</quiz>

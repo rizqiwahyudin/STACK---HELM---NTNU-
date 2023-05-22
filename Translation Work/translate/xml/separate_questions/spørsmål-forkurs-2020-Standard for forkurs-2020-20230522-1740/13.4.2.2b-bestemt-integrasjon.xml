@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>13.4.2.2b Bestemt integrasjon</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="en">
+    <p class="HELM_exercise">
+        Exercise
+    </p>
+    <ol class="HELM_parts">
+        Find the values of the following integrals giving your answers to \(4\) d.p.
+        <p>
+        </p>
+        <li>
+            \({\displaystyle\int_{@l4@}^{@u4@} {@exp4@}\mathrm{d}x}\).[[input:ans4]] [[validation:ans4]] [[feedback:prt4]]
+        </li>
+        <li>
+            \({\displaystyle\int_{@l5@}^{@u5@} {@exp5@}\mathrm{d}x}\).[[input:ans5]] [[validation:ans5]] [[feedback:prt5]]
+        </li>
+    </ol>
+</span>
+<span class="multilang" lang="no">
+    <p class="HELM_exercise">
+        Oppgave
+    </p>
+    <ol class="HELM_parts">
+        Regn ut integralene og rund av til \(4\) gjeldende siffer.
+        <p>
+        </p>
+        <li>
+            \({\displaystyle\int_{@l4@}^{@u4@} {@exp4@}\mathrm{d}x}\).[[input:ans4]] [[validation:ans4]] [[feedback:prt4]]
+        </li>
+        <li>
+            \({\displaystyle\int_{@l5@}^{@u5@} {@exp5@}\mathrm{d}x}\).[[input:ans5]] [[validation:ans5]] [[feedback:prt5]]
+        </li>
+    </ol>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+[[facts:calc_int_methods_parts]]
+<ol class="HELM_parts">
+    <br/>
+    <p>
+    </p>
+    <li>
+        \(\displaystyle{ \int_{@l4@}^{@u4@} {@exp4@} \mathrm{d}x = \left[ {@int(exp4,x)@} \right]_{@l4@}^{@u4@} = {@ta4r@}= {@ta4@}}.\)
+    </li>
+    <li>
+        \(\displaystyle{ \int_{@l5@}^{@u5@} {@exp5@} \mathrm{d}x = \left[ {@int(exp5,x)@} \right]_{@l5@}^{@u5@} = {@factorout(ta5r,x)@}= {@ta5@}}.\)
+    </li>
+</ol>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text>aa: rand([2, 4, 6, 8]); 
+bb: rand([3, 5, 7, 9]); 
+cc: rand(4)+1;
+
+exp4: (x+cc)*sin(x);
+exp5: (x^2-bb*x+1)*e^x;
+
+l4: 1;
+u4: 2;
+ta4r: int(exp4, x, l4, u4);
+ta4: decimalplaces(float(int(exp4, x, l4, u4)),4); 
+
+l5: 0;
+u5: 1;
+ta5r: int(exp5, x, l5, u5);
+ta5: decimalplaces(float(int(exp5, x, l5, u5)),4);</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote>
+            <text>\(\int_{@l4@}^{@u4@} {@exp4@}\mathrm{d}x = {@ta4@}, \quad \int_{@l5@}^{@u5@} {@exp5@}\mathrm{d}t = {@ta5@}\)</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans4</name>
+            <type>numerical</type>
+            <tans>ta4</tans>
+            <boxsize>7</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans5</name>
+            <type>numerical</type>
+            <tans>ta5</tans>
+            <boxsize>7</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>NumDecPlaces</answertest>
+                <sans>ans4</sans>
+                <tans>ta4</tans>
+                <testoptions>4</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt5</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>NumDecPlaces</answertest>
+                <sans>ans5</sans>
+                <tans>ta5</tans>
+                <testoptions>4</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt5-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

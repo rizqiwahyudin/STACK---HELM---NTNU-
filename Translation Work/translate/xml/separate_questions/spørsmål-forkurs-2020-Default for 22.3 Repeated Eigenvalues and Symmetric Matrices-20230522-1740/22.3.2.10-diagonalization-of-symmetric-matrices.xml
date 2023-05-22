@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>22.3.2.10 Diagonalization of symmetric matrices</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Diagonalization of symmetric matrices
+    </span>
+    <span class="multilang" lang="no">
+        Diagonalisering av symmetriske matriser
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Recall from our earlier work that
+    </span>
+    <span class="multilang" lang="no">
+        Husk fra tidligere arbeid at
+    </span>
+</p>
+<ol>
+    <li>
+        <span class="multilang" lang="en">
+            We can
+            <strong>
+                always
+            </strong>
+            diagonalize a matrix with distinct eigenvalues (whether these are real or complex).
+        </span>
+        <span class="multilang" lang="no">
+            Vi kan
+            <strong>
+                alltid
+            </strong>
+            diagonalisere en matrise med ulike egenverdier (uansett om disse er reelle eller komplekse).
+        </span>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            We can
+            <strong>
+                sometimes
+            </strong>
+            diagonalize a matrix with repeated eigenvalues. (The condition for this to be possible is that any eigenvalue of multiplicity \(m\) had to have associated with it \(m\) linearly independent eigenvectors.)
+        </span>
+        <span class="multilang" lang="no">
+            Vi kan
+            <strong>
+                noen ganger
+            </strong>
+            diagonalisere en matrise med like egenverdier. (Betingelsen for at dette skal v&#230;re mulig er at en egenverdi av multiplicitet \(m\) m&#229;tte ha v&#230;rt assosiert med \(m\) line&#230;rt uavhengige egenvektorer.)
+        </span>
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        The situation with symmetric matrices is simpler. Basically we can diagonalize
+        <strong>
+            any
+        </strong>
+        symmetric matrix. To take the discussions further we first need the concept of an
+        <strong>
+            orthogonal
+        </strong>
+        matrix.
+    </span>
+    <span class="multilang" lang="no">
+        Situasjonen med symmetriske matriser er enklere. I bunn og grunn kan vi diagonalisere
+        <strong>
+            enhver
+        </strong>
+        symmetrisk matrise. For &#229; ta diskusjonene videre trenger vi f&#248;rst begrepet om en
+        <strong>
+            ortogonal
+        </strong>
+        matrise.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        A square matrix \(A\) is said to be orthogonal if its inverse (if it exists) is equal to its transpose: \[A^{-1}=A^T \qquad \text{or, equivalently,}\qquad AA^T=A^TA=I.\]
+    </span>
+    <span class="multilang" lang="no">
+        En kvadratisk matrise \(A\) sies &#229; v&#230;re ortogonal hvis dens inverse (hvis den eksisterer) er lik dens transponerte: \[A^{-1}=A^T \qquad \text{eller, tilsvarende,}\qquad AA^T=A^TA=I.\]
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        An important example of an orthogonal matrix is \[A=\left[\begin{array}{rc}\cos\phi&amp;\sin\phi\\ -\sin\phi&amp;\cos\phi\end{array}\right]\] which arises when we use matrices to describe rotations in a plane. \[\begin{aligned} AA^T&amp;=\left[\begin{array}{rc}\cos\phi&amp;\sin\phi\\
+                -\sin\phi&amp;\cos\phi\end{array}\right]\left[\begin{array}{cr}\cos\phi&amp;-\sin\phi \\ \sin\phi&amp;\cos\phi\end{array}\right]\\ \\ &amp;=\left[\begin{array}{cc}\cos^2\phi+\sin^{2}\phi&amp;0\\ 0&amp;\sin^2\phi+\cos^2\phi\end{array}\right]=\left[\begin{array}{cc}1&amp;0\\
+                0&amp;1\end{array}\right]=I\qquad\qquad\qquad\qquad\qquad\quad\end{aligned}\] It is clear that \(A^TA=I\) also, so \(A\) is indeed orthogonal.
+    </span>
+    <span class="multilang" lang="no">
+        Et viktig eksempel p&#229; en ortogonal matrise er \[A=\left[\begin{array}{rc}\cos\phi&amp;\sin\phi\\ -\sin\phi&amp;\cos\phi\end{array}\right]\] som oppst&#229;r n&#229;r vi bruker matriser til &#229; beskrive rotasjoner i et plan. \[\begin{aligned} AA^T&amp;=\left[\begin{array}{rc}\cos\phi&amp;\sin\phi\\
+                -\sin\phi&amp;\cos\phi\end{array}\right]\left[\begin{array}{cr}\cos\phi&amp;-\sin\phi \\ \sin\phi&amp;\cos\phi\end{array}\right]\\ \\ &amp;=\left[\begin{array}{cc}\cos^2\phi+\sin^{2}\phi&amp;0\\ 0&amp;\sin^2\phi+\cos^2\phi\end{array}\right]=\left[\begin{array}{cc}1&amp;0\\
+                0&amp;1\end{array}\right]=I\qquad\qquad\qquad\qquad\qquad\quad\end{aligned}\] Det er klart at \(A^TA=I\) ogs&#229;, s&#229; \(A\) er faktisk ortogonal.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        It can be shown, but we omit the details, that any \(2\times 2\) matrix which is orthogonal can be written in one of the two forms: \[\left[\begin{array}{rc}\cos\phi&amp;\sin\phi\\ -\sin\phi&amp;\cos\phi\end{array}\right]\qquad\text{or}\qquad \left[\begin{array}{cc}\cos\phi&amp;-\sin\phi\\\sin\phi&amp;\cos\phi\end{array}\right].\]
+                If we look closely at either of these matrices we can see that
+    </span>
+    <span class="multilang" lang="no">
+        Det kan bli vist, men vi unnlater detaljene, at enhver \(2\times 2\) matrise som er ortogonal kan skrives i en av de to formene: \[\left[\begin{array}{rc}\cos\phi&amp;\sin\phi\\ -\sin\phi&amp;\cos\phi\end{array}\right]\qquad\text{eller}\qquad \left[\begin{array}{cc}\cos\phi&amp;-\sin\phi\\\sin\phi&amp;\cos\phi\end{array}\right].\]
+                                Hvis vi ser n&#248;ye p&#229; en av disse matrisene kan vi se at
+    </span>
+</p>
+<ol>
+    <li>
+        <span class="multilang" lang="en">
+            The two columns are mutually orthogonal e.g. for the first matrix we have \[\left[\cos\phi\quad -\sin\phi\right]\left[\begin{array}{c}\sin\phi\\ \cos\phi\end{array}\right]=\cos\phi\sin\phi-\sin\phi\cos\phi=0.\]
+        </span>
+        <span class="multilang" lang="no">
+            De to kolonnene er ortogonale, dvs. for den f&#248;rste matrisen har vi \[\left[\cos\phi\quad -\sin\phi\right]\left[\begin{array}{c}\sin\phi\\ \cos\phi\end{array}\right]=\cos\phi\sin\phi-\sin\phi\cos\phi=0.\]
+        </span>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            Each column has magnitude \(1\) (because \(\sqrt{\cos^2\phi+\sin^2\phi}=1)\).
+        </span>
+        <span class="multilang" lang="no">
+            Hver kolonne har st&#248;rrelse \(1\) (fordi \(\sqrt{\cos^2\phi+\sin^2\phi}=1)\).
+        </span>
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        Although we shall not prove it, these results are necessary and sufficient for any order square matrix to be orthogonal.
+    </span>
+    <span class="multilang" lang="no">
+        Selv om vi ikke skal bevise det, er disse resultatene n&#248;dvendige og tilstrekkelige for at en kvadratisk matrise av hvilken seom helst orden skal v&#230;re ortogonal.
+    </span>
+</p>
+<hr/>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;llpunkt
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            A square matrix \(A\) is said to be orthogonal, if its inverse (if it exists) is equal to its transpose: \[A^{-1} = A^T\] or, equivalently, \[AA^T=A^TA=I.\] A square matrix is orthogonal if and only if its columns are mutually orthogonal and each
+                                column has unit magnitude.
+        </span>
+        <span class="multilang" lang="no">
+            En kvadratisk matrise \(A\) sies &#229; v&#230;re ortogonal hvis dens inverse (hvis den eksisterer) er lik dens transponerte: \[A^{-1} = A^T\] eller, tilsvarende, \[AA^T=A^TA=I.\] En kvadratisk matrise er ortogonal hvis og bare hvis dens kolonner er ortogonale og hver kolonne har enhetsst&#248;rrelse.
+        </span>
+    </p>
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

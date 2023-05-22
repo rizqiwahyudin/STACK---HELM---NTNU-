@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>22.1.2.4 Eigenvalues and eigenvectors of a 2x2 matrix</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        &#216;ving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Let \(\textbf{A}\) be the following matrix: \(\textbf{A} = {@A@}\).
+    </span>
+    <span class="multilang" lang="no">
+        La \(\textbf{A}\) v&#230;re f&#248;lgende matrise: \(\textbf{A} = {@A@}\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        What are the eigenvalues of \(\textbf{A}\)? Input&#160;your answer, as a set (e.g.
+        <code>
+            {7,3,5/4}
+        </code>
+        including the curly braces), in
+                the box below:
+    </span>
+    <span class="multilang" lang="no">
+        Hva er egenverdiene til \(\textbf{A}\)? Skriv inn svaret ditt, som et sett (f.eks.
+        <code>
+            {7,3,5/4}
+        </code>
+        inkluder
+                kr&#248;llparentesene), i boksen under:
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The eigenvalues of \(\textbf{A}\) are
+    </span>
+    <span class="multilang" lang="no">
+        Egenverdiene til \(\textbf{A}\) er
+    </span>
+    [[input:ans1]] [[validation:ans1]]
+</p>
+[[feedback:prt1]]
+<p>
+    <span class="multilang" lang="en">
+        Find any eigenvector of \(\textbf{A}\). Input your answer, using column vector notation, in the boxes below:
+    </span>
+    <span class="multilang" lang="no">
+        Finn en egenvektor til \(\textbf{A}\). Skriv inn svaret ditt, ved &#229; bruke kolonnevektornotasjon, i boksene under:
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        An eigenvector of \(\textbf{A}\) is
+    </span>
+    <span class="multilang" lang="no">
+        En egenvektor til \(\textbf{A}\) er
+    </span>
+    [[input:ans2]] [[validation:ans2]]
+</p>
+[[feedback:prt2]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        Our matrix \(\textbf{A}\) is given to be \(\textbf{A} = {@A@}\).
+    </span>
+    <span class="multilang" lang="no">
+        Matrisen v&#229;r \(\textbf{A}\) er gitt som \(\textbf{A} = {@A@}\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The eigenvalues \(\lambda_i\) (\(i = 1,\ldots, n\)) of \(\textbf{A}\) are the roots of the characteristic polynomial
+                \(\chi\,(\lambda)\), which is calculated below:
+    </span>
+    <span class="multilang" lang="no">
+        Egenverdiene \(\lambda_i\) (\(i = 1,\ldots, n\)) til \(\textbf{A}\) er r&#248;ttene til det karakteristiske polynomet
+                \(\chi\,(\lambda)\), som er beregnet nedenfor:
+    </span>
+</p>
+<p>
+    \[\begin{array}{rcl} \chi\,(\lambda) &amp; = &amp; \textrm{det}\,\left({{@A@} - \lambda\,{@ident(2)@}}\right)\\ &amp;
+                = &amp; \textrm{det}\,\left({@A_m_l_I@}\right)\\ &amp; = &amp; \cdots\\ &amp; = &amp; {@charpol@}.\end{array}\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Upon factorisation and solution of the characteristic equation \({@charpol@} = 0\), we arrive at the set of
+                eigenvalues of \(\textbf{A}\), which is {@ta1@}.
+    </span>
+    <span class="multilang" lang="no">
+        Ved faktorisering og l&#248;sning av den karakteristiske likningen \({@charpol@} = 0\), kommer vi til settet av
+                egenverdiene til \(\textbf{A}\), som er {@ta1@}.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        From the set of eigenvalues, we select any one eigenvalue \(\lambda\). Finding the kernel of {@A_m_l_I@} (i.e. the
+                set of things which, when {@A_m_l_I@} is applied to them, gives the zero vector as its result) gives us a basis in
+                the \(\lambda\)-eigenspace.
+    </span>
+    <span class="multilang" lang="no">
+        Fra settet av egenverdier, velger vi en egenverdi \(\lambda\). &#197; finne kjerne til {@A_m_l_I@} (alts&#229; settet av
+                                ting som, n&#229;r brukt p&#229; {@A_m_l_I@}, gir nullvektoren som resultat) gir oss en basis i
+                                \(\lambda\)-egenrommet.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Any eigenvector in the&#160;\(\lambda\)-eigenspace (which, therefore, is an example of an eigenvector of
+                \(\textbf{A}\)) may be found by taking some linear combination of the relevant basis vectors. Whichever vector
+                \(\textbf{v}\) you have chosen in this way will, by definition, satisfy the eigenvalue equation:
+    </span>
+    <span class="multilang" lang="no">
+        Enhver egenvektor i \(\lambda\)-egenrommet (som dermed er et eksempel p&#229; en egenvektor til
+                                \(\textbf{A}\)) kan bestemmes ved &#229; ta en line&#230;r kombinasjon av de relevante basisvektorene. Uansett hvilken
+                                vektor \(\textbf{v}\) du har valgt p&#229; denne m&#229;ten, vil vektoren, per definisjon, oppfylle egenverdiligningen:
+    </span>
+</p>
+<p>
+    \[\textbf{A}\,\textbf{v} = \lambda\,\textbf{v}.\]
+</p>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text>/* First we determine the desired eigenvalues */
+l1: rand_with_prohib(-4, 4, [0]);
+l2: rand_with_prohib(-4, 4, [0, l1]);
+/* Diagonal matrix with the same eigenvalues */
+D: matrix([l1, 0], [0, l2]);
+/* Change of basis matrix with integer inverse */
+T: matrix([3, 1], [2, 1]);
+Tinv: invert(T);
+/* Performing the change of basis to D gives a nondiagonal matrix with the same eigenvalues */
+A: Tinv . D . T;
+
+/*For the general feedback, it will be useful to have variable names for certain items. These are given below, and only used in general feedback. */
+A_m_l_I: A - lambda*ident(2);
+charpol: ev(expand(charpoly(A,lambda)),simp);
+
+/* We ignore multiplicity of eigenvalues, and turn it into a set. */
+ta1:setify(first(eigenvalues(A)))
+/* Just take the first thing which looks like an eigen vector. */
+v1:first(first(second(eigenvectors(A))));
+v2:transpose(matrix(v1));
+
+/* Could also have, for example, the eigenvectors corresponding to the second eigenvalues of A. */
+w1:first(second(second(eigenvectors(A))));
+w2:transpose(matrix(w1));
+</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote>
+            <text>The eigenvalues of the matrix \(\textbf{A} = {@A@}\) are {@ta1@}. An example of an eigenvector which could be given as an answer is {@v2@}.</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<p>
+    Correct answer, well done.
+</p>
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<p>
+    Your answer is partially correct.
+</p>
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<p>
+    Incorrect answer.
+</p>
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>ta1</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>1</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>matrix</type>
+            <tans>v2</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>LINALG-EVALUES-TRUE</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>LINALG-EVALUES-FALSE</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        You have not entered the correct set of eigenvalues for this question. Remember that the eigenvalues are the roots of the characteristic polynomial; recall how to generate and solve the characteristic polynomial, and try again.
+    </span>
+    <span class="multilang" lang="no">
+        Du har ikke skrevet inn de korrekte egenverdiene for dette sp&#248;rsm&#229;let. Husk at egenverdiene er r&#248;ttene til det karakteristiske polynomet; husk hvordan du genererer og l&#248;ser karakteristisk polynom, og pr&#248;v igjen.
+    </span>
+</p>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>/* This code tests if two vectors are linearly independent */
+/* We want to establish the linear dependence of ans2 and A.ans2 */
+C:matrix(first(transpose(ans2)),first(transpose(A.ans2)))</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>determinant(C)</sans>
+                <tans>0</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>LINALG-SATISFIES_EVALUE_EQ</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>LINALG-EVECT-FALSE</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        You have not entered a correct eigenvector here.
+    </span>
+    <span class="multilang" lang="no">
+        Du har ikke skrevet inn en korrekt egenvektor her.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Your answer should satisfy the eigenvalue equation:&#160;\({@texboldatoms(M)@} {@texboldatoms(x)@} = \lambda {@texboldatoms(x)@}\), where \(\lambda\) is some real number. &#160;In fact, what you have actually entered satisfies
+    </span>
+    <span class="multilang" lang="no">
+        Svaret ditt b&#248;r oppfylle egenverdi likningen:&#160;\({@texboldatoms(M)@} {@texboldatoms(x)@} = \lambda {@texboldatoms(x)@}\), hvor \(\lambda\) er et reelt tall. &#160;I virkeligheten oppfyller det du har skrevet inn
+    </span>
+</p>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \[{@A@} {@ans2@} = {@A.ans2@} \neq \lambda {@ans2@} \textrm{ for any real } \lambda.\]
+    </span>
+    <span class="multilang" lang="no">
+        \[{@A@} {@ans2@} = {@A.ans2@} \neq \lambda {@ans2@} \textrm{ for enhver reell } \lambda.\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Remember how we can use any eigenvalue of our matrix to construct any number of eigenvectors, and try this part of the question again.
+    </span>
+    <span class="multilang" lang="no">
+        Husk hvordan vi kan bruke enhver egenverdi av matrisen v&#229;r til &#229; konstruere et uendelig antall egenvektorer, og pr&#248;v denne delen av sp&#248;rsm&#229;let p&#229; nytt.
+    </span>
+</p>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <answertest>CasEqual</answertest>
+                <sans>ans2</sans>
+                <tans>zeromatrix(first(matrix_size(ans2)),second(matrix_size(ans2)))</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>LINALG-USED_ZERO_VECTOR</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        Eigenvectors cannot be the zero vector.
+    </span>
+    <span class="multilang" lang="no">
+        Egenvektorer kan ikke v&#230;re nullvektoren.
+    </span>
+</p>
+]]></text>
+                </truefeedback>
+                <falsescoremode>+</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>LINALG-NONZERO_CORRECT_EVECT_GIVEN</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1006025814</deployedseed>
+        <deployedseed>1287214461</deployedseed>
+        <deployedseed>1389943480</deployedseed>
+        <deployedseed>303153968</deployedseed>
+        <deployedseed>598084907</deployedseed>
+        <deployedseed>590341021</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta1</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>v2</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>LINALG-EVALUES-TRUE</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>LINALG-NONZERO_CORRECT_EVECT_GIVEN</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>{0}</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>matrix([1],[0])</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>LINALG-EVALUES-FALSE</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>LINALG-EVECT-FALSE</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>3</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>{0}</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>matrix([0],[0])</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>LINALG-EVALUES-FALSE</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>LINALG-USED_ZERO_VECTOR</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>4</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ans1</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>w2</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>LINALG-EVALUES-TRUE</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>LINALG-NONZERO_CORRECT_EVECT_GIVEN</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

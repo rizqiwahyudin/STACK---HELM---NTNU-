@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="matching">
+        <name>
+            <text>10.2.2.5 Argument</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        &#216;ving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Assume \(k&gt;0\) is a real number.&#160; For each complex number specify the argument.
+    </span>
+    <span class="multilang" lang="no">
+        Anta at \(k&gt;0\) er et reellt tall.&#160; Angi argumentet for hvert komplekst tall.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <shuffleanswers>true</shuffleanswers>
+        <correctfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="en">
+    Your answer is correct.
+</span>
+<span class="multilang" lang="no">
+    Svaret ditt er riktig.
+</span>
+]]></text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="en">
+    Your answer is partially correct.
+</span>
+<span class="multilang" lang="no">
+    Svaret ditt er delvis riktig.
+</span>
+]]></text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="en">
+    Your answer is incorrect.
+</span>
+<span class="multilang" lang="no">
+    Svaret ditt er feil.
+</span>
+]]></text>
+        </incorrectfeedback>
+        <shownumcorrect/>
+        <subquestion format="html">
+            <text><![CDATA[
+<p>
+    \(k+ki\)
+</p>
+]]></text>
+            <answer>
+                <text>45 degrees</text>
+            </answer>
+        </subquestion>
+        <subquestion format="html">
+            <text><![CDATA[
+<p>
+    \(k-ki\)
+    <br/>
+</p>
+]]></text>
+            <answer>
+                <text>-45 degrees</text>
+            </answer>
+        </subquestion>
+        <subquestion format="html">
+            <text><![CDATA[
+<p>
+    \(-k+ki\)
+    <br/>
+</p>
+]]></text>
+            <answer>
+                <text>135 degrees</text>
+            </answer>
+        </subquestion>
+        <subquestion format="html">
+            <text><![CDATA[
+<p>
+    \(-k-ki\)
+    <br/>
+</p>
+]]></text>
+            <answer>
+                <text>-135 degrees</text>
+            </answer>
+        </subquestion>
+    </question>
+    
+
+</quiz>

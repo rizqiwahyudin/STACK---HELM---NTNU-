@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>7.1.2.4 Equality of Matrices</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Equality of matrices
+    </span>
+    <span class="multilang" lang="no">
+        Likhet av matriser
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        As we noted earlier, the terms in a matrix are called the
+        <b>
+            elements
+        </b>
+        or
+        <b>
+            entries
+        </b>
+        of the matrix.
+    </span>
+    <span class="multilang" lang="no">
+        Som vi bemerket tidligere, kalles leddene i en matrise
+        <b>
+            elementer
+        </b>
+        eller
+        <b>
+            innf&#248;ringer
+        </b>
+        av matrisen.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \[\text{The elements of the matrix}\quad A=\left[\begin{array}{ll}\hfill1&amp;\hfill 2\\ \hfill -1 &amp;\hfill -4\end{array}\right]\quad \text{are}\quad1,2,-1,-4.\]
+    </span>
+    <span class="multilang" lang="no">
+        \[\text{Elementene i matrisen}\quad A=\left[\begin{array}{ll}\hfill1&amp;\hfill 2\\ \hfill -1 &amp;\hfill -4\end{array}\right]\quad \text{er}\quad1,2,-1,-4.\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We say two matrices \(A\), \(B\) are
+        <b>
+            equal
+        </b>
+        to each other if and only if \(A\) and \(B\) have the same number of rows and the same number of columns and if each element of \(A\) is equal to the corresponding element of \(B\). When this is the case we write \(A=B\). For example if the following two matrices are equal:
+    </span>
+    <span class="multilang" lang="no">
+        Vi sier at to matriser \(A\), \(B \) er
+        <b>
+            lik
+        </b>
+        hverandre hvis og bare hvis \(A \) og \(B \) har samme antall rader og samme antall kolonner, og hvis hvert element av \(A \) er lik det tilsvarende elementet til \(B\). N&#229;r dette er tilfelle, skriver vi \(A=B \). For eksempel hvis f&#248;lgende matriser er like:
+    </span>
+</p>
+<p>
+    \[A=\left[\begin{array}{ll}\hfill 1&amp;\hfill \alpha \\ \hfill -1&amp;\hfill -\beta\end{array}\right]\qquad B=\left[\begin{array}{ll}\hfill 1&amp;\hfill 2\\ \hfill -1&amp;\hfill -4\end{array}\right]\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        then we can conclude that \(\alpha=2\) and \(\beta =4\).
+    </span>
+    <span class="multilang" lang="no">
+        kan vi konkludere med at \(\alpha = 2 \) og \(\beta = 4 \).
+    </span>
+</p>
+<h4>
+    <span class="multilang" lang="en">
+        The unit matrix
+    </span>
+    <span class="multilang" lang="no">
+        Enhetsmatrisen
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        The
+        <b>
+            unit matrix
+        </b>
+        or the
+        <b>
+            identity matrix
+        </b>
+        , denoted by \(I_n\) (or, often, simply \(I\)), is the diagonal matrix of order \(n\) in which all diagonal elements are \(1\). Hence, for example, \(I_2=\left[\begin{array}{cc}1&amp;0\\ 0&amp;1\end{array}\right]\) and \(I_3=\left[\begin{array}{ccc}1&amp;0&amp;0\\ 0&amp;1&amp;0\\ 0&amp;0&amp;1\end{array}\right]\).
+    </span>
+    <span class="multilang" lang="no">
+        <b>
+            Enhetsmatrisen
+        </b>
+        eller
+        <b>
+            Identitetsmatrisen
+        </b>
+        , betegnet som \(I_n \) (eller ofte, ganske enkelt \(I \)), er den diagonale matrisen av orden \(n \) der alle diagonale elementer er \(1 \). Derforfo er for eksempel \(I_2=\left[\begin{array}{cc}1&amp;0\\ 0&amp;1\end{array}\right]\) og \(I_3=\left[\begin{array}{ccc}1&amp;0&amp;0\\ 0&amp;1&amp;0\\ 0&amp;0&amp;1\end{array}\right]\).
+    </span>
+</p>
+<h4>
+    <span class="multilang" lang="en">
+        The zero matrix
+    </span>
+    <span class="multilang" lang="no">
+        Nullmatrisen
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        The
+        <b>
+            zero matrix
+        </b>
+        or
+        <b>
+            null matrix
+        </b>
+        is the matrix all of whose elements are zero. There is a zero matrix for every size. For example the \(2\times 3\) and \(2\times 2\) cases are:
+    </span>
+    <span class="multilang" lang="no">
+        <b>
+            Nullmatrisen
+        </b>
+        er matrisen der alle elementene er null. Det er en nullmatrise for alle st&#248;rrelser. For eksempel er nullmatrisen for tilfellene \(2\times 3\) og \(2\times 2\):
+    </span>
+</p>
+<p>
+    \[\left[\begin{array}{ccc}0&amp;0&amp;0\\ 0&amp;0&amp;0\end{array}\right],\ \left[\begin{array}{cc}0&amp;0\\ 0&amp;0\end{array}\right].\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Zero matrices, of whatever size, are denoted by \({\underline 0}\) with the size often inferred from the context.
+    </span>
+    <span class="multilang" lang="no">
+        Nullmatriser, uansett st&#248;rrelse, betegnes av \({\underline 0}\) med st&#248;rrelsen ofte utledet fra konteksten.
+    </span>
+</p>
+<h4>
+    <span class="multilang" lang="en">
+        The transpose of a matrix
+    </span>
+    <span class="multilang" lang="no">
+        Transponering av en matrise
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        The
+        <b>
+            transpose
+        </b>
+        of a matrix \(A\) is a matrix where the rows of \(A\) become the columns of the new matrix and the columns of \(A\) become its rows. For example
+    </span>
+    <span class="multilang" lang="no">
+        Den
+        <b>
+            transponerte
+        </b>
+        til en matrise \(S \) er en matrise der radene til \(A \) blir kolonnene til den nye matrisen og kolonnene til \(A\) blir dens rader. For eksempel er den transponerte til
+    </span>
+</p>
+<p>
+    \[ A=\left[\begin{array}{ccc}1&amp;2&amp;3\\ 4&amp;5&amp;6\end{array}\right]\ \ \text{
+    <span class="multilang" lang="en">
+        becomes
+    </span>
+    <span class="multilang" lang="no">
+        lik
+    </span>
+    }\ \left[\begin{array}{cc}1&amp;4\\ 2&amp;5\\ 3&amp;6\end{array}\right]\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The resulting matrix is called the
+        <b>
+            transposed matrix
+        </b>
+        of \(A\) and denoted \(A^T\). In the previous example it is clear that \(A^T\) is not equal to \(A\) since the matrices are of different sizes. If \(A\) is square \(n\times n\) then \(A^T\) will also be \(n\times n\).
+    </span>
+    <span class="multilang" lang="no">
+        Den resulterende matrisen kalles den
+        <b>
+            transponerte matrisen
+        </b>
+        av \(A \) og betegnet som \(A^T \). I det forrige eksemplet er det klart at \(A^T \) ikke er lik \(A \) siden matrisene er av forskjellige st&#248;rrelser. Hvis \(A \) er en kvadratisk \(n \times n \), vil \(A^T \) ogs&#229; v&#230;re \(n \times n \).
+    </span>
+</p>
+<p>
+</p>
+<p>
+    <br/>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Find the transpose of the matrix \(B=\left[\begin{array}{ccc}1&amp;2&amp;3\\ 4&amp;5&amp;6\\ 7&amp;8&amp;9\end{array}\right].\)
+    </span>
+    <span class="multilang" lang="no">
+        Finn den transponerte til matrisen \(B=\left[\begin{array}{ccc}1&amp;2&amp;3\\ 4&amp;5&amp;6\\ 7&amp;8&amp;9\end{array}\right].\)
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Interchanging rows with columns we find \[\qquad B^T=\left[\begin{array}{ccc}1&amp;4&amp;7\\ 2&amp;5&amp;8\\ 3&amp;6&amp;9\end{array}\right].\]
+    </span>
+    <span class="multilang" lang="no">
+        Ved utveksling av rader med kolonner finner vi \[\qquad B^T=\left[\begin{array}{ccc}1&amp;4&amp;7\\ 2&amp;5&amp;8\\ 3&amp;6&amp;9\end{array}\right].\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Both matrices are \(3\times 3\) but \(B\) and \(B^T\) are clearly different.
+    </span>
+    <span class="multilang" lang="no">
+        Begge matrisene er \(3 \times 3 \) men \(B \) og \(B^T \) er helt klart forskjellige.
+    </span>
+</p>
+<hr/>
+<p>
+    <span class="multilang" lang="en">
+        When the transpose of a matrix is equal to the original matrix i.e. \(A^T=A\), then we say that the matrix \(A\) is
+        <b>
+            symmetric
+        </b>
+        . (This is because it has symmetry about the leading diagonal.)
+    </span>
+    <span class="multilang" lang="no">
+        N&#229;r transponering av en matrise er lik den opprinnelige matrisen, dvs. \(A^T = A \), sier vi at matrisen \(A \) er
+        <b>
+            symmetrisk
+        </b>
+        . (Dette er fordi den har symmetri om den ledende diagonalen.)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In the previous example \(B\) is
+        <b>
+            not
+        </b>
+        symmetric.
+    </span>
+    <span class="multilang" lang="no">
+        I forrige eksempel er \(B\)
+        <b>
+            ikke
+        </b>
+        symmetrisk.
+    </span>
+</p>
+<p>
+</p>
+<br/>
+<p>
+</p>
+<p>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Show that the matrix \(C=\left[\begin{array}{rrr}1&amp;-2&amp;3\\ -2&amp;4&amp;-5\\ 3&amp;-5&amp;6\end{array}\right]\) is symmetric.
+    </span>
+    <span class="multilang" lang="no">
+        Vis at matrisen \(C=\left[\begin{array}{rrr}1&amp;-2&amp;3\\ -2&amp;4&amp;-5\\ 3&amp;-5&amp;6\end{array}\right]\) er symmetrisk.
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Taking the transpose of \(C\):
+    </span>
+    <span class="multilang" lang="no">
+        Transponerer \(C\):
+    </span>
+</p>
+<p>
+    \[C^T=\left[\begin{array}{rrr}1&amp;-2&amp;3\\ -2&amp;4&amp;-5\\ 3&amp;-5&amp;6\end{array}\right].\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Clearly \(C^T=C\) and so \(C\) is a symmetric matrix. Notice how the leading diagonal acts as a "mirror'' with the entries on the diagonal remaining fixed in place and, for example, \(c_{12}=-2\) and \(c_{21}=-2\) reflecting through the diagonal.
+    </span>
+    <span class="multilang" lang="no">
+        S&#229;klart er \(C^T = C \) s&#229; \(C\) er en symmetrisk matrise. Legg merke til hvordan den ledende diagonalen fungerer som et "speil" s&#229; elementene p&#229; diagonalen blir festet p&#229; plass og for eksempel \(c_ {12} =-2 \) og \(c_ {21} =-2 \) reflekterer gjennom diagonalen.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In general \(c_{ij}=c_{ji}\) for a symmetric matrix.
+    </span>
+    <span class="multilang" lang="no">
+        Generelter er \(c_{ij} = c_{ji} \) for en symmetrisk matrise.
+    </span>
+</p>
+<p>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

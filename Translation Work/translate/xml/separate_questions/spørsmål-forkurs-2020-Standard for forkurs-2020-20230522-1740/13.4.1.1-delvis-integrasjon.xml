@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>13.4.1.1 Delvis integrasjon</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span>
+        <span class="multilang" lang="en">
+            Indefinite integration
+        </span>
+        <span class="multilang" lang="no">
+            Ubestemt integrasjon
+        </span>
+    </span>
+    <br/>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        The technique known as
+        <strong>
+            integration by parts
+        </strong>
+        is used to integrate a product of two functions, such as in these two examples:
+    </span>
+    <span class="multilang" lang="no">
+        <strong>
+            Delvis integrasjon
+        </strong>
+        er en integrasjonsteknikk som brukes for &#229; integrere et produkt av to funksjoner, slik som i disse eksemplene:
+    </span>
+</p>
+<ul>
+    <li>
+        \({\displaystyle\int e^{2x}\sin 3x\mathrm{d}x}\)
+    </li>
+    <li>
+        \({\displaystyle\int_0^1 x^3 e^{-2x}\mathrm{d}x}\)
+    </li>
+</ul>
+<p>
+    <span class="multilang" lang="en">
+        Note that in the first example, the integrand is the product of the functions \(e^{2x}\) and \(\sin 3x\), and in the second example the integrand is the product of the functions \(x^3\) and \(e^{-2x}\). Note also that we can change the order of the terms
+                in the product if we wish and write
+    </span>
+    <span class="multilang" lang="no">
+        I det f&#248;rste eksempelet er integranden produktet av funksjonene \(e^{2x}\) og \(\sin 3x\), og i det andre eksempelet er integranden produktet av funksjonene \(x^3\) og \(e^{-2x}\). Merk at vi kan endre rekkef&#248;lgen p&#229; produktene og skrive de som
+    </span>
+</p>
+<ul>
+    <li>
+        \({\displaystyle\int (\sin 3x) e^{2x}\mathrm{d}x}\)
+    </li>
+    <li>
+        \({\displaystyle\int_0^1 e^{-2x}x^3\mathrm{d}x}\).
+    </li>
+</ul>
+<span class="multilang" lang="en">
+    What you must never do is integrate each term in the product separately and then multiply - the integral of a product is not the product of the separate integrals. However, it is often possible to find integrals involving products using the method of
+integration by parts - you can think of this as a
+    <em>
+        product rule
+    </em>
+    for integrals.
+</span>
+<span class="multilang" lang="no">
+    Merk at du
+    <strong>
+        ikke
+    </strong>
+    kan integrere hver faktor for seg, for s&#229; &#229; gange dem sammen - integralet av et produkt er ikke lik produktet av de separate integralene. Derimot kan vi ofte finne antideriverte av produkter ved hjelp av delvis integrasjon - tenk p&#229; det som en
+    <em>
+        produktregel
+    </em>
+    for integraler.
+</span>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The integration by parts formula states:
+    </span>
+    <span class="multilang" lang="no">
+        Formelen for delvis integrasjon sier:
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            Kort fortalt
+        </span>
+    </h4>
+    <p>
+        <strong>
+            <span class="multilang" lang="en">
+                Integration by Parts for Indefinite Integrals
+            </span>
+            <span class="multilang" lang="no">
+                Delvis integrasjon for ubestemte integral
+            </span>
+        </strong>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            given functions \(f(x)\) and \(g(x)\):
+        </span>
+        <span class="multilang" lang="no">
+            gitt funksjoner \(f(x)\) og \(g(x)\):
+        </span>
+    </p>
+    \({\displaystyle\int f \cdot g \phantom{1} \mathrm{d}x}\) = \(f\) \(\cdot\) \({\displaystyle\int g \phantom{1} \mathrm{d}x}\) - \({\displaystyle\int \left(\dfrac{df}{dx} \displaystyle\int g \phantom{1} \mathrm{d}x \right)\mathrm{d}x}\)
+    <p>
+        <span class="multilang" lang="en">
+            Alternatively, given functions \(u\) and \(v\):
+        </span>
+        <span class="multilang" lang="en">
+            Alternativt, gitt funksjoner \(u\) og \(v\):
+        </span>
+    </p>
+    \({\displaystyle \int u\dfrac{d v}{d x}\mathrm{d}x = u.v-\displaystyle \int v\dfrac{d u}{d x} \mathrm{d}x}\)
+</div>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Study the formula carefully and note the following observations. Firstly, to apply the formula we must be able to differentiate the function \(f\) to find \(\dfrac{d f}{d x}\), and we must be able to integrate the function, \(g\).
+    </span>
+    <span class="multilang" lang="no">
+        Studer formelen n&#248;ye og legg merke til f&#248;lgende: For det f&#248;rste, for &#229; kunne bruke formelen m&#229; vi kunne derivere funksjonen \(f\) for &#229; finne \(\dfrac{d f}{d x}\) og vi m&#229; kunne integrere funksjonen \(g\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Secondly the formula replaces one integral, the one on the left, with a different integral, that on the far right. The intention is that the latter, whilst it may look more complicated in the formula above, is simpler to evaluate. Consider the following Example:
+    </span>
+    <span class="multilang" lang="no">
+        For det andre s&#229; erstatter formelen et integral, det til venstre, med et annet, det helt til h&#248;yre. Hensikten er at det integralet til h&#248;yre er lettere &#229; regn ut, selv om det kan se mer komplisert ut med symboler i formelen. Vi ser p&#229; f&#248;lgende eksempel:
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Find the integral of the product of \(x\) with \(\sin x\); that is, find \({\displaystyle \int x\sin x\mathrm{d}x}\).
+    </span>
+    <span class="multilang" lang="no">
+        Finn integralet av produktet av \(x\) og \(\sin x\); alts&#229;, finn \({\displaystyle \int x\sin x\mathrm{d}x}\).
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Compare the required integral with the formula for integration by parts: we choose \(f = x\) and \(g = \sin x\)
+    </span>
+    <span class="multilang" lang="no">
+        Sammenlikn integralet med formelen for delvis integrasjon: vi velger \(f = x\) og \(g = \sin x\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        It follows that \(\dfrac{df}{dx} = 1\) and \({\displaystyle\int g\phantom{1}\mathrm{d}x = \displaystyle\int \sin x\mathrm{d}x} = -\cos x\)
+    </span>
+    <span class="multilang" lang="no">
+        Dermed blir \(\dfrac{df}{dx} = 1\) og \({\displaystyle\int g\phantom{1}\mathrm{d}x = \displaystyle\int \sin x\mathrm{d}x} = -\cos x\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        (When integrating \(g\) there is no need to worry about a constant of integration. When you become confident with the method, you may like to think about why this is the case.)
+    </span>
+    <span class="multilang" lang="no">
+        (N&#229;r vi integrerer \(g\), trenger vi ikke &#229; ta med en integrasjonskonstant. Hvorfor dette er tilfelle kan du tenke over n&#229;r du blir bedre kjent med metoden.)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Applying the formula we obtain
+    </span>
+    <span class="multilang" lang="no">
+        Vi anvender formelen og f&#229;r
+    </span>
+</p>
+\begin{eqnarray*} \int x\sin x\mathrm{d} x &amp;=&amp; f\cdot \int g\phantom{1}\mathrm{d} x -\int \left( {d f\over d x}\cdot\int g\phantom{1}\mathrm{d} x \right)\,d x \\ &amp;=&amp; x(-\cos x) - \int 1(-\cos x)\mathrm{d} x\\ &amp;=&amp; -x\cos x + \int
+\cos x\mathrm{d} x\\ &amp;=&amp; -x\cos x + \sin x +c \end{eqnarray*}
+<p>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Find \({\displaystyle\int(5x+1)\cos 2x\mathrm{d}x}\).
+    </span>
+    <span class="multilang" lang="no">
+        Finn \({\displaystyle\int(5x+1)\cos 2x\mathrm{d}x}\).
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Let \(f=5x+1\) and \(g=\cos 2x\). Now calculate \(\dfrac{df}{dx}\) and \({\displaystyle\int g\phantom{1}\mathrm{d}x}\) to obtain:
+    </span>
+    <span class="multilang" lang="no">
+        La \(f=5x+1\) og \(g=\cos 2x\). Beregn \(\dfrac{df}{dx}\) og \({\displaystyle\int g\phantom{1}\mathrm{d}x}\) slik at:
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\dfrac{df}{dx}=5\) and \({\displaystyle\int\cos(2x)\mathrm{d}x} = \dfrac{1}{2}\sin(2x)\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\dfrac{df}{dx}=5\) og \({\displaystyle\int\cos(2x)\mathrm{d}x} = \dfrac{1}{2}\sin(2x)\)
+    </span>
+</p>
+<span class="multilang" lang="en">
+    Substituting these expressions into our formula we find:
+</span>
+<span class="multilang" lang="no">
+    Setter vi disse uttrykkene inn i formelen f&#229;r vi:
+</span>
+<p>
+</p>
+\((5x+1)\left(\dfrac{1}{2}\sin (2x)\right)-{\displaystyle\int 5\left(\dfrac{1}{2}\sin (2x)\right)\mathrm{d}x}=\dfrac{1}{2}{(5x+1)\sin (2x)} +\dfrac{5}{4}\cos 2x +c\)
+<hr/>
+<p>
+    <span class="multilang" lang="en">
+        Sometimes it is necessary to apply the formula more than once, as the next Example shows.
+    </span>
+    <span class="multilang" lang="no">
+        Noen ganger kan det v&#230;re n&#248;dvendig &#229; bruke formelen flere ganger, slik som i det neste eksemplet.
+    </span>
+</p>
+<p>
+</p>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Find \({\displaystyle\int 2x^2 e^{-x}\mathrm{d}x}\).
+    </span>
+    <span class="multilang" lang="no">
+        Finn \({\displaystyle\int 2x^2 e^{-x}\mathrm{d}x}\).
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        We let \(f=2x^2\) and \(g=e^{-x}\). Then \(\dfrac{d f}{d x}=4x\) and \({\displaystyle\int g\phantom{1}\mathrm{d}x} = -e^{-x}\)
+    </span>
+    <span class="multilang" lang="no">
+        Vi lar \(f=2x^2\) og \(g=e^{-x}\). Da blir \(\dfrac{d f}{d x}=4x\) og \({\displaystyle\int g\phantom{1}\mathrm{d}x} = -e^{-x}\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Using the formula for integration by parts we find
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; bruke formelen for delvis integrasjon f&#229;r vi at
+    </span>
+</p>
+\({\displaystyle\int 2x^2 e^{-x}\mathrm{d}x = 2x^2(-e^{-x})-\displaystyle\int 4x(-e^{-x})\mathrm{d}x = -2x^2e^{-x}+\displaystyle\int4xe^{-x}\mathrm{d}x}\)
+<p>
+    <span class="multilang" lang="en">
+        We now need to find \({\displaystyle\int4xe^{-x}\mathrm{d}x}\) using integration by parts again. We get
+    </span>
+    <span class="multilang" lang="no">
+        N&#229; m&#229; vi finne \({\displaystyle\int4xe^{-x}\mathrm{d}x}\) ved hjelp av en ny runde delvis integrasjon. Vi f&#229;r
+    </span>
+</p>
+\begin{eqnarray*} \int 4xe^{-x}d x&amp;=&amp;4x(-e^{-x})-\int4(-e^{-x})d x\\ &amp;=&amp;-4xe^{-x}+\int 4e^{-x}d x\\ &amp;=&amp;-4xe^{-x}-4e^{-x}\end{eqnarray*}
+<p>
+    <span class="multilang" lang="en">
+        Altogether we have
+    </span>
+    <span class="multilang" lang="en">
+        Tilsammen f&#229;r vi
+    </span>
+</p>
+\({\displaystyle\int 2x^2e^{-x}\mathrm{d}x} = -2x^2e^{-x}-4x e^{-x}-4 e^{-x}+c = -2e^{-x}(x^2+2x+2)+c\)
+<hr/>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

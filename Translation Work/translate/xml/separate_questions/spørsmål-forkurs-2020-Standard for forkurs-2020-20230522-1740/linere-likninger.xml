@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>Line&#230;re likninger</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span>
+        Line&#230;re likninger
+    </span>
+    <br/>
+</h3>
+<div class="HELM_keypoint">
+    <h4>
+        Kort fortalt
+    </h4>
+    <p>
+        En
+        <b>
+            line&#230;r likning
+        </b>
+        <span style="font-size: 0.9375rem;">
+            kan skrives p&#229; formen
+        </span>
+    </p>
+    <p>
+        <span lang="FR">
+            \(ax+b=0 \qquad a\ne 0\),
+        </span>
+    </p>
+    <p>
+        der \(a\) and \(b\) er kjente tall, og \(x\) er en ukjent (et tall vi skal finne).
+    </p>
+    <p>
+    </p>
+</div>
+<p>
+    <br/>
+</p>
+<p>
+</p>
+<p>
+    I likningen \(ax+b=0\) kan vi kalle \(a\)
+    <b>
+        koeffisienten
+til
+    </b>
+    \(x\), og tallet \(b\)
+    <b>
+        konstantleddet
+    </b>
+    .
+</p>
+<p>
+</p>
+<p>
+</p>
+<p>
+    Det f&#248;lgende er eksempler p&#229; line&#230;re likninger.
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        \(3x+4=0\),
+    </li>
+    <br/>
+    <li>
+        \(-2x+3=0\),
+    </li>
+    <br/>
+    <li>
+        \(-\dfrac{1}{2}x-3=0\).
+    </li>
+</ul>
+<p>
+</p>
+<p>
+    I line&#230;re likninger er den ukjente, \(x\), av f&#248;rste orden, alts&#229; \(x\), og ikke \(x^2\) eller \(\sqrt{x}\). Line&#230;re likninger kan ofte v&#230;re stilt opp p&#229; en annen form enn eksemplene over, og i tillegg kan den ukjente gjerne representeres med andre bokstaver
+                enn \(x\). For eksempel er
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        \( 2x=x+1\),
+    </li>
+    <br/>
+    <li>
+        \(3t-7=17\),
+    </li>
+    <br/>
+    <li>
+        \(1-\dfrac{1}{2}y+3\),
+    </li>
+    <br/>
+    <li>
+        \(2\alpha-1.5=0\),
+    </li>
+    <br/>
+</ul>
+<p>
+    ogs&#229; line&#230;re likninger. Vi skriver om likningene p&#229; formen \(ax+b=0\) der det kreves. Det vil vi forklare i dette kapittelet.
+</p>
+<hr/>
+<h4 class="HELM_example">
+    Eksempel
+</h4>
+<ol class="HELM_parts">
+    <p>
+        Hvilke av disse er line&#230;re likninger?
+    </p>
+    <br/>
+    <li>
+        \(3x+7=0\),
+    </li>
+    <br/>
+    <li>
+        \(-3t+17=0\),
+    </li>
+    <br/>
+    <li>
+        \(3x^2+7=0\),
+    </li>
+    <br/>
+    <li>
+        \(5p=0\).
+    </li>
+    <br/>
+</ol>
+<h4 class="HELM_solution">
+    L&#248;sning
+</h4>
+<ol class="HELM_parts">
+    <p>
+        Likningene som kan skrives p&#229; formen \(ax+b=0\) er line&#230;re.
+    </p>
+    <li>
+        line&#230;r likning med \(x\) som variabel,
+    </li>
+    <li>
+        line&#230;r likning med \(t\) som variabel,
+    </li>
+    <li>
+        ikke-line&#230;r (andregrads) likning med \(x\) som variabel,
+    </li>
+    <li>
+        line&#230;r likning med \(p\) som variabel (Konstantleddet er null).
+    </li>
+</ol>
+<p>
+</p>
+<hr/>
+<p>
+    &#197; l&#248;se en likning betyr &#229; finne den verdien av \(x\)&#160; som kan settes inn i likningen slik at venstre side er lik h&#248;yre side. Enhver slik verdi er en
+    <strong>
+        l&#248;sning
+    </strong>
+    av likningen. Vi sier at verdien av \(x\)
+    <strong>
+        tilfredsstiller
+    </strong>
+    likningen.
+</p>
+<hr/>
+<h4 class="HELM_example">
+    Eksempel
+</h4>
+<ol class="HELM_parts">
+    <p>
+        Gitt likningen \(3x-2=10\).
+    </p>
+    <br/>
+    <li>
+        Vis at \(x=4\) er en l&#248;sning.
+    </li>
+    <br/>
+    <li>
+        Vis at \(x=2\)
+        <i>
+            ikke
+        </i>
+        er en l&#248;sning.
+    </li>
+    <br/>
+</ol>
+<h4 class="HELM_solution">
+    L&#248;sning
+</h4>
+<ol class="HELM_parts">
+    <li>
+        For &#229; vise at \(x=4\) er en l&#248;sning, setter vi inn verdien for \(x\) og sjekker om h&#248;yre og venstre side er like. Venstre side er 10, og det samme gjelder h&#248;yre side. Alts&#229; er \(x=4\) en l&#248;sning. Vi sier at \(x=4\) tilfredsstiller likningen.
+    </li>
+    <li>
+        N&#229;r vi setter inn \(x=2\) p&#229; venstre side, f&#229;r vi \(3(2)-2=4\) . Venstre side er alts&#229; ikke lik h&#248;yre side, og dermed er ikke \(x=2\) en l&#248;sning. Tallet \(x=2\) tilfredsstiller ikke likningen.
+    </li>
+</ol>
+<p>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    Eksempel
+</h4>
+<ol class="HELM_parts">
+    <p>
+        Finn ut hvilke av verdiene under som er l&#248;sning p&#229; likningen \(18-4x=26\).
+    </p>
+    <br/>
+    <li>
+        \(x=2\),
+    </li>
+    <li>
+        \(x=-2\),
+    </li>
+    <li>
+        \(x=8\).
+    </li>
+</ol>
+<h4 class="HELM_solution">
+    L&#248;sning
+</h4>
+<ol class="HELM_parts">
+    <li>
+        N&#229;r vi setter inn \(x=2\) er venstre side lik \(18-4\times 2=10\). Men \(10 &#8800; 26\), s&#229; \(x=2\) er ikke en l&#248;sning.
+    </li>
+    <li>
+        Ved &#229; sette inn \(x=-2\) f&#229;r vi \(18-4\times -2=26\) p&#229; venstre side. Dette er det samme som h&#248;yre side, s&#229; \(x=-2\) er en l&#248;sning.
+    </li>
+    <li>
+        Setter inn\(x=8\) i likningen. Da er venstre side \(18-4\times 8=-14\). Siden \(-14 &#8800; 26\) er \(x=2\) ikke en l&#248;sning.
+    </li>
+</ol>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

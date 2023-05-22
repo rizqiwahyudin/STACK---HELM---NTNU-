@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>8.1.1.2 Key point 1</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <br/>
+    <p>
+        <span class="multilang" lang="en">
+            The unique solution to the equations:
+        </span>
+        <span class="multilang" lang="no">
+            Den unike l&#248;sningen p&#229; likningene:
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            \(\qquad ax+by=e\)
+        </span>
+        <span class="multilang" lang="no">
+            \(\qquad ax+by=e\)
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            \(\qquad cx+dy=f\)
+        </span>
+        <span class="multilang" lang="no">
+            \(\qquad cx+dy=f\)
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            is given by:
+        </span>
+        <span class="multilang" lang="no">
+            er gitt ved:
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            \(\qquad x=\dfrac{\Delta_x}{\Delta},\ \ y=\dfrac{\Delta_y}{\Delta}\)
+        </span>
+        <span class="multilang" lang="no">
+            \(\qquad x=\dfrac{\Delta_x}{\Delta},\ \ y=\dfrac{\Delta_y}{\Delta}\)
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            in which
+        </span>
+        <span class="multilang" lang="no">
+            hvor
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            \(\qquad\Delta=\left|\begin{array}{cc}a&amp;b\\ c&amp;d\end{array}\right|,\ \&#160;\Delta_x=\left|\begin{array}{cc}e&amp;b\\ f&amp;d\end{array}\right|,\ \ \Delta_y=\left|\begin{array}{cc}a&amp;e\\ c&amp;f\end{array}\right|.\)
+        </span>
+        <span class="multilang" lang="no">
+            \(\qquad\Delta=\left|\begin{array}{cc}a&amp;b\\ c&amp;d\end{array}\right|\), \(\Delta_x=\left|\begin{array}{cc}e&amp;b\\ f&amp;d\end{array}\right|\), \( \Delta_y=\left|\begin{array}{cc}a&amp;e\\ c&amp;f\end{array}\right|\).
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            If \(\Delta=0\) this method of solution cannot be used.
+        </span>
+        <span class="multilang" lang="no">
+            Hvis \(\Delta=0\) kan ikke denne l&#248;sningsmetoden brukes.
+        </span>
+    </p>
+    <br/>
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

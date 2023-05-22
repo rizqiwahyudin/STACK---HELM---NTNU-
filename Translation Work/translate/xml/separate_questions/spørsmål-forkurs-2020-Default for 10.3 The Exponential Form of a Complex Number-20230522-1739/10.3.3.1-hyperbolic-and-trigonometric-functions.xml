@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>10.3.3.1 Hyperbolic and trigonometric functions</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Hyperbolic and trigonometric functions
+    </span>
+    <span class="multilang" lang="no">
+        Hyperbolske og trigonometriske funksjoner
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        We have seen previously that \[\qquad e^{i\theta}=\cos\theta +i\sin\theta\] It follows from this that \[\qquad e^{-i\theta}=\cos (-\theta)+i\sin (-\theta)=\cos\theta -i\sin\theta\] Now if we add these two relations together we obtain \[\qquad \cos\theta ={e^{i\theta}+e^{-i\theta}\over {2}}\] whereas if we subtract the second from the first we have\[\qquad \sin\theta ={e^{i\theta}-e^{-i\theta}\over {2i}}\] These new relations are reminiscent of the hyperbolic functions introduced in a previous quiz. There we defined \(\cosh x\) and \(\sinh x\) in terms of the exponential function: \[\qquad \cosh x ={e^{x}+e^{-x}\over {2}}\qquad \sinh x ={e^{x}-e^{-x}\over {2}}\] In fact, if we replace \(x\) by \(i\theta\) in these last two equations we obtain \[\qquad \cosh (i\theta) ={e^{i\theta } +e^{-i\theta}\over 2}\equiv \cos \theta\qquad \text{and}\qquad \sinh (i\theta) ={e^{i\theta } -e^{-i\theta}\over 2}\equiv i\sin \theta\] Although, by our notation, we have implied that both \(x\) and \(\theta\) are real quantities in fact these expressions for \(\cosh\) and \(\sinh\) in terms of \(\cos\) and \(\sin\) are quite general.
+    </span>
+    <span class="multilang" lang="no">
+        Vi har tidligere sett at \[\qquad e^{i\theta}=\cos\theta +i\sin\theta\] Dermed f&#248;lger det at \[\qquad e^{-i\theta}=\cos (-\theta)+i\sin (-\theta)=\cos\theta -i\sin\theta\] Hvis vi n&#229; legger disse to sammen, f&#229;r vi \[\qquad \cos\theta ={e^{i\theta}+e^{-i\theta}\over {2}}\] Hvis vi derimot trekker den andre fra den f&#248;rste, f&#229;r vi\[\qquad \sin\theta ={e^{i\theta}-e^{-i\theta}\over {2i}}\] Disse nye forholdene minner om de hyperbolske funksjonene som ble introdusert i en tidligere quiz. Der definerte vi \(\cosh x\) og \(\sinh x\) i forhold til eksponentialfunksjonen:  \[\qquad \cosh x ={e^{x}+e^{-x}\over {2}}\qquad \sinh x ={e^{x}-e^{-x}\over {2}}\] Faktisk, hvis vi erstatter \(x\) med \(i\theta\) i de siste to likningene, f&#229;r vi \[\qquad \cosh (i\theta) ={e^{i\theta } +e^{-i\theta}\over 2}\equiv \cos \theta\qquad \text{og}\qquad \sinh (i\theta) ={e^{i\theta } -e^{-i\theta}\over 2}\equiv i\sin \theta\] Selv om vi ved v&#229;r notasjon har antydet at b&#229;de \(x\) og \(\theta\) er reelle st&#248;rrelser, er disse uttrykkene for \(\cosh\) og \(\sinh\) i forhold til \(\cos\) og \(\sin\) ganske generelle.
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            If \(z\) is any complex number then \[\cosh(iz) \equiv \cos z\quad\text{and}\quad\sinh(iz) \equiv i\sin z\] Equivalently, replacing \(z\) by \(iz\): \[\cosh z \equiv \cos(iz) \quad\text{and}\quad i\sinh z \equiv \sin(iz)\]
+        </span>
+        <span class="multilang" lang="no">
+            Hvis \(z\) er et komplekst tall s&#229; gjelder f&#248;lgende: \[\cosh(iz) \equiv \cos z\quad\text{og}\quad\sinh(iz) \equiv i\sin z\] Ekvivalent kan man erstatte \(z\) med \(iz\) og f&#229;: \[\cosh z \equiv \cos(iz) \quad\text{og}\quad i\sinh z \equiv \sin(iz)\]
+        </span>
+    </p>
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>22.3.1.1 Matrices with repeated eigenvalues</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Matrices with repeated eigenvalues
+    </span>
+    <span class="multilang" lang="no">
+        Matriser med gjentatte egenverdier
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        So far we have considered the diagonalization of matrices with distinct (i.e. non-repeated) eigenvalues. We have accomplished this by the use of a
+        <strong>
+            non-singular
+        </strong>
+        modal matrix \(P\) (i.e. one where \(\det P\neq 0\) and hence the inverse \(P^{-1}\) exists). We now want to discuss briefly the case of a matrix \(A\) with at least one pair of
+        <strong>
+            repeated eigenvalues
+        </strong>
+        . We shall see that for some such matrices diagonalization is possible but for others it is not.
+    </span>
+    <span class="multilang" lang="no">
+        S&#229; langt har vi vurdert diagonalisering av matriser med ulike (dvs. ikke-gjentatte) egneverdier. Vi har oppn&#229;dd dette ved &#229; bruke en
+        <strong>
+            ikke-singul&#230;r
+        </strong>
+        modal-matrise \(P\) (dvs. der \(\det P \neq 0\) og den inverse \(P^{-1}\) eksisterer). Vi &#248;nsker n&#229; kort &#229; diskutere tilfellet av en matrise \(A\) med minst ett par
+        <strong>
+            gjentatte egneverdier
+        </strong>
+        . Vi skal se at for noen slike matriser er diagonalisering mulig, men for andre er det ikke mulig.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The crucial question is whether we can form a non-singular modal matrix \(P\) with the eigenvectors of \(A\) as its columns.
+    </span>
+    <span class="multilang" lang="no">
+        Det avgj&#248;rende sp&#248;rsm&#229;let er om vi kan danne en ikke-singul&#230;r modal matrise \(P\) med egenvektorene til \(A\) som dens kolonner.
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Consider the matrix
+                \[ A=\left[\begin{array}{rc}1&amp;0\\ -4&amp;1\end{array}\right]\]
+                which has characteristic equation
+                \[ \det (A-\lambda I)=(1-\lambda)(1-\lambda)=0.\]
+                So the only eigenvalue is \(1\) which is repeated or, more formally, has
+        <strong>
+            multiplicity
+        </strong>
+        2.
+    </span>
+    <span class="multilang" lang="no">
+        Vi ser p&#229; matrisen
+                                \[ A=\left[\begin{array}{rc}1&amp;0\\ -4&amp;1\end{array}\right]\]
+                                som har den karakteristiske likningen
+                                \[ \det (A-\lambda I)=(1-\lambda)(1-\lambda)=0.\]
+                                S&#229; den eneste egneverdien er \(1\) som er gjentatt eller, mer formelt, har
+        <strong>
+            multiplisitet
+        </strong>
+        2.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        To obtain eigenvectors of \(A\) corresponding to \(\lambda=1\) we proceed as usual and solve
+                \[ AX=1X\]
+                or
+                \[ \left[\begin{array}{rc}1&amp;0\\ -4&amp;1\end{array}\right]\left[\begin{array}{c} x\\ y\end{array}\right]= \left[\begin{array}{c}x\\ y\end{array}\right]\]
+                implying
+                \[ x=x\qquad \text{and} \qquad -4x+y=y\]
+                from which \(x=0\) and \(y\) is arbitrary.
+    </span>
+    <span class="multilang" lang="no">
+        For &#229; f&#229; egenvektorer til \(A\) som svarer til \(\lambda=1\) gj&#248;r vi som vanlig og l&#248;ser
+                                \[ AX=1X\]
+                                eller
+                                \[ \left[\begin{array}{rc}1&amp;0\\ -4&amp;1\end{array}\right]\left[\begin{array}{c} x\\ y\end{array}\right]= \left[\begin{array}{c}x\\ y\end{array}\right]\]
+                                som gir
+                                \[ x=x\qquad \text{og} \qquad -4x+y=y\]
+                                fra hvilket \(x=0\) og \(y\) er vilk&#229;rlig.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Thus possible eigenvectors are \(\qquad \left[\begin{array}{r}0\\-1\end{array}\right],\quad \left[\begin{array}{c}0\\ 1\end{array}\right],\quad \left[\begin{array}{c}0\\ 2\end{array}\right],\quad \left[\begin{array}{c}0\\ 3\end{array}\right]\quad\dots\)
+    </span>
+    <span class="multilang" lang="no">
+        S&#229; mulige egenvektorer er \(\qquad \left[\begin{array}{r}0\\-1\end{array}\right],\quad \left[\begin{array}{c}0\\ 1\end{array}\right],\quad \left[\begin{array}{c}0\\ 2\end{array}\right],\quad \left[\begin{array}{c}0\\ 3\end{array}\right]\quad\dots\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        However, if we attempt to form a modal matrix \(P\) from any two of these eigenvectors, e.g. \(\left[\begin{array}{r}0\\-1\end{array}\right]\) and \(\left[\begin{array}{c}0\\1\end{array}\right]\) then the resulting matrix \(P=\left[\begin{array}{rc}0&amp;0\\ -1&amp;1\end{array}\right]\) has
+        <strong>
+            zero
+        </strong>
+        determinant.
+    </span>
+    <span class="multilang" lang="no">
+        Men hvis vi pr&#248;ver &#229; danne en modal matrise \(P\) fra noen av disse egenvektorene, f.eks. \(\left[\begin{array}{r}0\\-1\end{array}\right]\) og \(\left[\begin{array}{c}0\\1\end{array}\right]\) s&#229; har den resulterende matrisen \(P=\left[\begin{array}{rc}0&amp;0\\ -1&amp;1\end{array}\right]\)
+        <strong>
+            null
+        </strong>
+        determinant.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Thus \(P^{-1}\)
+        <strong>
+            does not exist
+        </strong>
+        and the similarity transformation \(P^{-1}AP\) that we have used previously to diagonalize a matrix is not possible here. The essential point, at a slightly deeper level, is that the columns of \(P\) in this case are
+        <strong>
+            not linearly independent
+        </strong>
+        since
+                \[ \left[\begin{array}{r}0\\ -1\end{array}\right]=(-1)\left[\begin{array}{c}0\\ 1\end{array}\right]\]
+                i.e. one is a multiple of the other.
+    </span>
+    <span class="multilang" lang="no">
+        S&#229; \(P^{-1}\)
+        <strong>
+            eksisterer ikke
+        </strong>
+        og likhetstransformasjonen \(P^{-1}AP\) som vi har brukt tidligere for &#229; diagonalisere en matrise er ikke mulig her. Det essensielle punktet, p&#229; et litt dypere niv&#229;, er at kolonnene i \(P\) i dette tilfellet
+        <strong>
+            ikke er line&#230;rt uavhengige
+        </strong>
+        siden
+                                \[ \left[\begin{array}{r}0\\ -1\end{array}\right]=(-1)\left[\begin{array}{c}0\\ 1\end{array}\right]\]
+                                dvs. en er en multiplikasjon av den andre.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        This situation is to be contrasted with that of a matrix with non-repeated eigenvalues. Earlier, for example, we showed that the matrix
+                \[ A=\left[\begin{array}{cc}2&amp;3\\ 3&amp;2\end{array}\right]\]
+                has the non-repeated eigenvalues \(\lambda_1=-1,\ \lambda_2=5\) with associated eigenvectors
+                \[ X_1=\left[\begin{array}{r}1\\-1\end{array}\right]\qquad\qquad X_2=\left[\begin{array}{c}1\\ 1\end{array}\right].\]
+                These two eigenvectors
+        <strong>
+            are linearly independent
+        </strong>
+        ,
+                since \(\left[\begin{array}{r}1\\-1\end{array}\right]\neq k\ \left[\begin{array}{c}1\\1\end{array}\right]\) for any value of \(k\ne 0\).
+    </span>
+    <span class="multilang" lang="no">
+        Denne situasjonen er i kontrast til en matrise med ikke-gjentatte egenverdier. Tidligere, for eksempel, viste vi at matrisen
+                                \[ A=\left[\begin{array}{cc}2&amp;3\\ 3&amp;2\end{array}\right]\]
+                                har de ikke-gjentatte egenverdiene \(\lambda_1=-1,\ \lambda_2=5\) med tilh&#248;rende egenvektorer
+                                \[ X_1=\left[\begin{array}{r}1\\-1\end{array}\right]\qquad\qquad X_2=\left[\begin{array}{c}1\\ 1\end{array}\right].\]
+                                Disse to egenvektorene
+        <strong>
+            er line&#230;rt uavhengige
+        </strong>
+        ,
+                                siden \(\left[\begin{array}{r}1\\-1\end{array}\right]\neq k\ \left[\begin{array}{c}1\\1\end{array}\right]\) for noen verdi av \(k\ne 0\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Here the modal matrix
+                \[ P=\left[\begin{array}{rc}1&amp;1\\ -1&amp;1\end{array}\right]\]
+                has linearly independent columns: so that \(\det P\neq 0\) and \(P^{-1}\) exists.
+    </span>
+    <span class="multilang" lang="no">
+        Her har modal matrisen
+                                \[ P=\left[\begin{array}{rc}1&amp;1\\ -1&amp;1\end{array}\right]\]
+                                line&#230;rt uavhengige kolonner: s&#229; \(\det P\neq 0\) og \(P^{-1}\) eksisterer.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The general result, illustrated by this example, is given in the following Key Point.
+    </span>
+    <span class="multilang" lang="no">
+        Det generelle resultatet, illustrert av dette eksemplet, gis i f&#248;lgende n&#248;kkelpunkt.
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            Eigenvectors corresponding to distinct eigenvalues are always linearly independent.
+        </span>
+        <span class="multilang" lang="no">
+            Egenvektorer som tilh&#248;rer ulike egenverdier er alltid line&#230;rt uavhengige.
+        </span>
+    </p>
+</div>
+<p>
+    <span class="multilang" lang="en">
+        It follows from this that we can
+        <strong>
+            always
+        </strong>
+        diagonalize an \(n\times n\) matrix with \(n\)
+        <strong>
+            distinct
+        </strong>
+        eigenvalues since it will possess \(n\) linearly independent eigenvectors. We can then use these as the columns of \(P\), secure in the knowledge that these columns will be linearly independent and hence \(P^{-1}\) will exist. It follows, in considering the case of repeated eigenvalues, that the key problem is whether or not there are still \(n\) linearly independent eigenvectors for an \(n\times n\) matrix.
+    </span>
+    <span class="multilang" lang="no">
+        Dette f&#248;lger av at vi
+        <strong>
+            alltid
+        </strong>
+        kan diagonalisere en \(n\times n\) matrise med \(n\)
+        <strong>
+            ulike
+        </strong>
+        egenverdier siden den vil ha \(n\) line&#230;rt uavhengige egenvektorer. Vi kan deretter bruke disse som kolonnene i \(P\), trygt med kunnskapen om at disse kolonnene vil v&#230;re line&#230;rt uavhengige og dermed eksisterer \(P^{-1}\). Det f&#248;lger, ved &#229; vurdere tilfellet med gjentatte egenverdier, at det viktigste problemet er om det fortsatt er \(n\) line&#230;rt uavhengige egenvektorer for en \(n\times n\) matrise.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We shall now consider two \(3\times 3\) cases as illustrations.
+    </span>
+    <span class="multilang" lang="no">
+        Vi skal n&#229; vurdere to \(3\times 3\) tilfeller som illustrasjoner.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

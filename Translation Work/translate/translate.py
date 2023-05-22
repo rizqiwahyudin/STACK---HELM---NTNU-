@@ -1,17 +1,34 @@
 from inspect import unwrap
 from bs4 import BeautifulSoup
 from googletrans import Translator
-from playsound import playsound 
 # from google_trans_new import google_translator  
 import re
 import openai
 import random 
+import asyncio
+from PIL import Image
+from playsound import playsound
+import time
+import pygetwindow as gw    
 
+async def display_image_and_play_sound(image_path, sound_path):
+    loop = asyncio.get_event_loop()
+    loop.run_in_executor(None, playsound, sound_path)
+
+    # Delay the execution to allow the sound to start playing
+    await asyncio.sleep(0)
+
+    # Open and display the image using PIL
+    image = Image.open(image_path)
+    image.show()
+
+    # image_window = gw.getWindowsWithTitle(image.filename)[0]
+    # image_window.activate()
 
 class ChatApp:
     def __init__(self):
         # Setting the API key to use the OpenAI API
-        openai.api_key = "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"
+        openai.api_key = "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"
         self.messages = [
             {"role": "system", "content": """I'm going to give you mathematical text and you need to translate them to norwegian. Please leave the math inside "\(" and "\)" as is."""}, {},
         ]
@@ -79,11 +96,18 @@ def translateHTMLCode(filename):
 
 # new_span    = soup.new_tag("span", **{'class':'multilang'}, lang="en")
 # new_span_no = soup.new_tag("span", **{'class':'multilang'}, lang="no")
+soundbytes = ["1.mp3","2.mp3"]
+picture_dex = ["1.png","2.jpg"]
+try:
+    translateHTMLCode("input.html")
+except openai.error.RateLimitError as e:
+    print("Error! Please try again later.")
+    playsound(soundbytes[0])
+else:
+    print("Translated successfully!")
+rand = random.randint(0,1)
+asyncio.run(display_image_and_play_sound(picture_dex[1], soundbytes[1]))
 
-translateHTMLCode("input.html")
-soundbytes = ["1.mp3","2.mp3","3.mp3"]
-rand = random.randint(0,2)
-playsound(soundbytes[1])
 
 # string = '''To find the vector \(\overrightarrow{AB}\) we simply subtract the position vector or \(A\) from the position vector of \(B\):'''
 # test = re.split(r"\(", string)

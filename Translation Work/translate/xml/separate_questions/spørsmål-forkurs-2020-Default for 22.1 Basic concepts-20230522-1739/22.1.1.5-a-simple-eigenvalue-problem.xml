@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>22.1.1.5 A simple eigenvalue problem</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        The rules of matrix manipulation
+    </span>
+    <span class="multilang" lang="no">
+        Reglene for matrise manipulasjon
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        It is worth noting that the process of multiplication can be continued to form
+                                products of more than two matrices.
+    </span>
+    <span class="multilang" lang="no">
+        Det er verdt &#229; merke seg at matrise multiplikasjon kan fortsettes for &#229; danne produkter av mer enn to matriser.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Although two matrices may not commute (i.e. in general \(AB\neq BA\)) the
+        <b>
+            associative law
+        </b>
+        always holds i.e. for matrices which
+        <b>
+            can
+        </b>
+        be multiplied, \[A( BC)=( A B)C.\] The
+                                general principle is
+        <b>
+            keep the left to right order
+        </b>
+        , but within that limitation any two adjacent matrices
+                                can be multiplied.
+    </span>
+    <span class="multilang" lang="no">
+        Selv om to matriser ikke kan bytte plass (dvs. generelt \(AB\neq BA\)) gjelder alltid
+        <b>
+            assosiativloven
+        </b>
+        ,
+                                dvs. for matriser som
+        <b>
+            kan
+        </b>
+        multipliseres, \[A( BC)=( A B)C.\] Det generelle prinsippet er &#229;
+        <b>
+            beholde
+                                                rekkef&#248;lgen fra venstre til h&#248;yre
+        </b>
+        , men innenfor den begrensningen kan hvilke som helst to tilst&#248;tende
+                                matriser multipliseres.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        It is important to note that it is not always possible to multiply together any two
+                                given matrices.
+    </span>
+    <span class="multilang" lang="no">
+        Det er viktig &#229; merke seg at det ikke alltid er mulig &#229; multiplisere sammen hvilke som helst to gitt matriser.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        For example if \(A=\begin{bmatrix}1 &amp; 2\\ 3 &amp; 4\end{bmatrix}\) and
+                                \(B=\begin{bmatrix}a &amp; b &amp; c\\ d
+                                &amp; e &amp; f\end{bmatrix}\) then \[AB=\begin{bmatrix} a+2d &amp; b+2e &amp; c+2f\\ 3a+4d &amp; 3b+4e &amp;
+                                3c+4f\end{bmatrix}\]
+    </span>
+    <span class="multilang" lang="no">
+        For eksempel hvis \(A=\begin{bmatrix}1 &amp; 2\\ 3 &amp; 4\end{bmatrix}\) og \(B=\begin{bmatrix}a &amp; b &amp;
+                                c\\ d
+                                &amp; e &amp; f\end{bmatrix}\) s&#229; er \[AB=\begin{bmatrix} a+2d &amp; b+2e &amp; c+2f\\ 3a+4d &amp; 3b+4e &amp;
+                                3c+4f\end{bmatrix}\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        However \(BA=\begin{bmatrix}a &amp; b &amp; c\\
+                                d &amp; e &amp; f\end{bmatrix}\begin{bmatrix}1 &amp; 2\\ 3 &amp; 4\end{bmatrix}\) is
+        <b>
+            not defined
+        </b>
+        since
+                                each
+                                row of \(B\) has three elements whereas each column of \(A\) has two elements and we cannot multiply these
+                                elements
+                                in the manner described.
+    </span>
+    <span class="multilang" lang="no">
+        \(BA=\begin{bmatrix}a &amp; b &amp; c\\
+                                d &amp; e &amp; f\end{bmatrix}\begin{bmatrix}1 &amp; 2\\ 3 &amp; 4\end{bmatrix}\) er
+        <b>
+            ikke definert
+        </b>
+        siden
+                                hver
+                                rad av \(B\) har tre elementer mens hver kolonne for \(A\) har to elementer, og vi kan ikke multiplisere disse
+                                elementene
+                                p&#229; den beskrevne m&#229;ten.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The following is the key result of this Section.
+    </span>
+    <span class="multilang" lang="no">
+        F&#248;lgende er hovedresultatet til seksjonen.
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            <strong>
+                Any
+            </strong>
+            symmetric matrix \(A\) can be diagonalized using an
+                                                orthogonal modal matrix \(P\) via the transformation
+                                                \[ P^TAP = D = \left[\begin{array}{cccc}\lambda_1 &amp; 0 &amp; \cdots &amp; 0\\ 0 &amp; \lambda_2 &amp;
+                                                \cdots &amp; 0\\ \vdots &amp; \vdots &amp; \ddots &amp; \\ 0 &amp; 0 &amp; &amp;
+                                                \lambda_n\end{array}\right]. \]
+                                                It follows that any \(n\times n\) symmetric matrix
+            <strong>
+                must
+            </strong>
+            possess \(n\) mutually orthogonal
+                                                eigenvectors
+            <strong>
+                even if some of the eigenvalues are repeated
+            </strong>
+            .
+        </span>
+        <span class="multilang" lang="no">
+            <strong>
+                Enhver
+            </strong>
+            symmetrisk matrise \(A\) kan diagonaliseres ved hjelp av en ortogonal modal matrise
+                                                \(P\) via transformasjonen
+                                                \[ P^TAP = D = \left[\begin{array}{cccc}\lambda_1 &amp; 0 &amp; \cdots &amp; 0\\ 0 &amp; \lambda_2 &amp;
+                                                \cdots &amp; 0\\ \vdots &amp; \vdots &amp; \ddots &amp; \\ 0 &amp; 0 &amp; &amp;
+                                                \lambda_n\end{array}\right]. \]
+                                                Det f&#248;lger at enhver \(n\times n\) symmetrisk matrise
+            <strong>
+                m&#229;
+            </strong>
+            ha \(n\) ortogonale egenvektorer
+            <strong>
+                selv om noen av egenverdiene er like
+            </strong>
+            .
+        </span>
+    </p>
+</div>
+<p>
+    <span class="multilang" lang="en">
+        It should be clear to the reader that the above Key Point is a very powerful result
+                                for any applications that involve diagonalization of a symmetric matrix. Further, if we do need to find the
+                                inverse of \(P\), then this is a trivial process since \(P^{-1}=P^T\) (the previous Key Point).
+    </span>
+    <span class="multilang" lang="no">
+        Det b&#248;r v&#230;re klart for leseren at ovenst&#229;ende n&#248;kkelpunkt er et sv&#230;rt kraftig resultat for alle applikasjoner
+                                som involverer diagonalisering av en symmetrisk matrise. Videre, hvis vi trenger &#229; finne inversen til \(P\), s&#229;
+                                er dette en enkel prosess siden \(P^{-1}=P^T\) (det forrige n&#248;kkelpunktet).
+    </span>
+</p>
+<p>
+</p>
+<h3>
+    <span class="multilang" lang="en">
+        A simple eigenvalue problem
+    </span>
+    <span class="multilang" lang="no">
+        Et enkelt egenverdi problem
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        We shall be interested in simultaneous equations of the form:
+    </span>
+    <span class="multilang" lang="no">
+        Vi er interessert i ligningssystem av formen:
+    </span>
+</p>
+<p>
+    \(\qquad A\underline{x}=\lambda \underline{x},\)
+</p>
+<p>
+    <span class="multilang" lang="en">
+        where&#160;\(A\)&#160;is an&#160;\(n\times
+                                n\)&#160;matrix,&#160;\(\underline{x}\)&#160;is an&#160;\(n\times
+                                1\)&#160;column vector and&#160;\(\lambda\)&#160;is a scalar (a constant) and, in the first instance, we examine
+                                some simple examples to gain experience of solving problems of this type.
+    </span>
+    <span class="multilang" lang="no">
+        hvor&#160;\(A\)&#160;er en&#160;\(n\times n\)&#160;matrise,&#160;\(\underline{x}\)&#160;er en&#160;\(n\times
+                                1\)&#160;kolonnevektor og&#160;\(\lambda\)&#160;er en skalar (en konstant), og i f&#248;rste omgang unders&#248;ker vi
+                                noen enkle eksempler for &#229; f&#229; erfaring med &#229; l&#248;se problemer av denne typen.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We approach the following example by examining the equations. This should make the
+                                actions within the solution more
+                                transparent. In practice, we will work with the matrices directly which will give a much less cluttered
+                                solution.
+    </span>
+    <span class="multilang" lang="no">
+        Vi ser p&#229; f&#248;lgende eksempel ved &#229; unders&#248;ke ligningene. Dette b&#248;r klargj&#248;re handlingene i l&#248;sningen. I praksis
+                                vil vi arbeide med matrisene direkte, noe som vil gi en mye mindre rotete l&#248;sning.
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Consider the following system with \(n=2\):
+    </span>
+    <span class="multilang" lang="no">
+        Se p&#229; f&#248;lgende system med \(n=2\):
+    </span>
+</p>
+\[\left\{\begin{alignedat}{2}
+2x &amp; {}+{} &amp; 3y &amp; = \lambda x \\
+3x &amp; {}+{} &amp; 2y &amp; = \lambda y
+\end{alignedat}\right.\]
+<p>
+    <span class="multilang" lang="en">
+        so that
+    </span>
+    <span class="multilang" lang="no">
+        slik at
+    </span>
+</p>
+<p style="text-align: center;">
+    <span class="multilang" lang="en">
+        \(A=\begin{bmatrix}2&amp;3\\ 3&amp;2\end{bmatrix}\) &#8195;
+                                and &#8195;
+                                \(\underline{x}=\begin{bmatrix}x\\ y\end{bmatrix}\).
+    </span>
+    <span class="multilang" lang="no">
+        \(A=\begin{bmatrix}2&amp;3\\ 3&amp;2\end{bmatrix}\) og
+                                \(\underline{x}=\begin{bmatrix}x\\ y\end{bmatrix}\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        It appears that there are three unknowns&#160;\(x,y,\lambda\). The obvious
+                                questions to ask are: can we
+                                find&#160;\(x,y\)? what is&#160;\(\lambda\)?
+    </span>
+    <span class="multilang" lang="no">
+        Det ser ut til at det er tre ukjente&#160;\(x,y,\lambda\). De &#229;penbare sp&#248;rsm&#229;lene &#229; stille er: kan vi finne
+        &#160;        &#160;        &#160;        &#160;\(x,y\)? hva er&#160;\(\lambda\)?
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        To solve this problem we firstly re-arrange the equations (take all unknowns onto
+                                one side);
+    </span>
+    <span class="multilang" lang="no">
+        For &#229; l&#248;se dette problemet, endrer vi f&#248;rst p&#229; ligningene (sette alle ukjente til den ene siden);
+    </span>
+</p>
+\begin{align}
+(2-\lambda)x + 3y &amp;= 0 \tag{1} \\
+3x + (2-\lambda)y &amp;= 0 \tag{2}
+\end{align}
+<p>
+    <span class="multilang" lang="en">
+        Therefore, from equation \((2)\):
+    </span>
+    <span class="multilang" lang="no">
+        Derfor, fra ligning \((2)\):
+    </span>
+</p>
+\[x = -\frac{(2-\lambda)}{3}y \tag{3}\]
+<p>
+    <span class="multilang" lang="en">
+        Then when we substitute this into \((1)\)
+    </span>
+    <span class="multilang" lang="no">
+        Deretter setter vi dette inn i \((1)\)
+    </span>
+</p>
+<p style="text-align:center;">
+    <span class="multilang" lang="en">
+        \(\displaystyle -\frac{(2-\lambda)^2}{3}y+3y = 0\) &#8195;
+                                which simplifies to
+                                \([-(2-\lambda)^2+9]y=0\).
+    </span>
+    <span class="multilang" lang="no">
+        \(\displaystyle -\frac{(2-\lambda)^2}{3}y+3y = 0\) som forenkles til
+                                \([-(2-\lambda)^2+9]y=0\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We conclude that either \(y=0\) or \(9=(2-\lambda)^2\). There are thus two cases to
+                                consider:
+    </span>
+    <span class="multilang" lang="no">
+        Vi konkluderer med at enten er \(y=0\) eller \(9=(2-\lambda)^2\). Det er dermed to tilfeller &#229; vurdere:
+    </span>
+</p>
+<h5>
+    <span class="multilang" lang="en">
+        Case 1
+    </span>
+    <span class="multilang" lang="no">
+        Tilfelle 1
+    </span>
+</h5>
+<p>
+    <span class="multilang" lang="en">
+        If \(y=0\) then \(x=0\) (from \((3)\)) and we get the
+        <b>
+            trivial solution
+        </b>
+        . (We
+                                could have guessed this solution
+                                at the outset.)
+    </span>
+    <span class="multilang" lang="no">
+        Hvis \(y=0\) s&#229; er \(x=0\) (fra \((3)\)) og vi f&#229;r den
+        <b>
+            trivielle l&#248;sningen
+        </b>
+        . (Vi kunne ha gjettet denne
+                                l&#248;sningen fra starten.)
+    </span>
+</p>
+<h5>
+    <span class="multilang" lang="en">
+        Case 2
+    </span>
+    <span class="multilang" lang="no">
+        Tilfelle 2
+    </span>
+</h5>
+<p>
+    \(\qquad 9=(2-\lambda)^2\)
+</p>
+<p>
+    <span class="multilang" lang="en">
+        which gives, on taking square roots:
+    </span>
+    <span class="multilang" lang="no">
+        som gir, ved &#229; ta kvadratroten:
+    </span>
+</p>
+<p style="text-align: center;">
+    <span class="multilang" lang="en">
+        \(\pm 3 = 2-\lambda\) &#8195; giving &#8195; \(\lambda=2\pm 3\), &#8195;
+                                so &#8195; \(\lambda = 5\) &#8195; or &#8195;
+                                \(\lambda =1\).
+    </span>
+    <span class="multilang" lang="no">
+        \(\pm 3 = 2-\lambda\) som gir \(\lambda=2\pm 3\), alts&#229; \(\lambda = 5\) eller \(\lambda =1\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Now, from equation \((3)\), if \(\lambda=5\) then \(x=+y\) and if \(\lambda=-1\)
+                                then \(x=-y\).
+    </span>
+    <span class="multilang" lang="no">
+        N&#229;, fra ligning \((3)\), hvis \(\lambda=5\) s&#229; er \(x=+y\) og hvis \(\lambda=-1\) s&#229; er \(x=-y\).
+    </span>
+</p>
+<hr/>
+<p>
+    <span class="multilang" lang="en">
+        We have now completed the analysis. We have found values for \(\lambda\) but we
+                                also see that we cannot obtain unique values for \(x\) and \(y\): all we can find is the ratio between these
+                                quantities. This behaviour is typical, as we shall now see, of an eigenvalue problem.
+    </span>
+    <span class="multilang" lang="no">
+        Vi har n&#229; fullf&#248;rt analysen. Vi har funnet verdier for \(\lambda \), men vi
+                                ser ogs&#229; at vi ikke kan f&#229; unike verdier for \(x\) og \(y\): alt vi kan finne er forholdet mellom disse
+                                mengdene. Denne oppf&#248;rselen er typisk, som vi n&#229; skal se, av et egenverdiproblem.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

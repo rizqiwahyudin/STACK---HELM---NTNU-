@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>4.3.3.6 Half angle formula</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Half-angle formulae
+    </span>
+    <span class="multilang" lang="no">
+        Halvvinkel formelen
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        If we replace \(A\) by \(\dfrac{A}{2}\) and, consequently \(2A\) by \(A\), in the double angle formula, we obtain
+    </span>
+    <span class="multilang" lang="no">
+        Hvis vi erstatter \(A\) med \(\dfrac{A}{2}\) og f&#248;lgelig \(2A\) med \(A\), i dobbeltvinkelformelen, f&#229;r vi
+    </span>
+    <br/>
+</p>
+<p>
+    \(\sin A\equiv 2\sin\left(\dfrac{A}{2}\right)\cos\left(\dfrac{A}{2}\right) \)
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Similarly for the cosine:
+    </span>
+    <span class="multilang" lang="no">
+        Tilsvarende for cosinus:
+    </span>
+    <br/>
+</p>
+<p>
+    \(\cos A\equiv 2\cos^2\left(\dfrac{A}{2}\right)-1\)
+</p>
+<p>
+    <span class="multilang" lang="en">
+        These are examples of
+        <strong>
+            half-angle formulae
+        </strong>
+        . We can obtain a half-angle formula for \(\tan A\) as well. Replacing \(A\) by \(\dfrac{A}{2}\) and \(2A\) by \(A\) in the double angle formula for \(\tan\) we obtain:
+    </span>
+    <span class="multilang" lang="no">
+        Dette er eksempler p&#229;
+        <strong>
+            halvvinkelformler
+        </strong>
+        . Vi kan ogs&#229; f&#229; en halvvinkelformel for \(\tan A\). Ved &#229; erstatte \(A\) med \(\dfrac{A}{2}\) og \(2A\) med \(A\) i dobbeltvinkelformelen for \(\tan\):
+    </span>
+</p>
+<p>
+    \(\tan A\equiv \dfrac{2\tan\left(\dfrac{A}{2}\right)}{1-\tan^2\left(\dfrac{A}{2}\right)} \)
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Other formulae, which can be obtained using the half-angle formulae and are useful for integration when trigonometric functions are present:
+    </span>
+    <span class="multilang" lang="no">
+        Andre formler, som kan finnes ved &#229; bruke halvvinkelformlene er nyttige for integrasjon av trigonometriske funksjoner:
+    </span>
+</p>
+<p>
+    <br/>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+        <br/>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            If \(t= \tan\left(\dfrac{A}{2}\right)\) then
+        </span>
+        <span class="multilang" lang="no">
+            Hvis \(t= \tan\left(\dfrac{A}{2}\right)\) s&#229; er
+        </span>
+        <br/>
+        \(\sin A= \dfrac{2t}{1+t^2}\)
+        <br/>
+        \(\cos A= \dfrac{1-t^2}{1+t^2}\)
+        <br/>
+        \(\tan A= \dfrac{2t}{1-t^2}\)
+    </p>
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

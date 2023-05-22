@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>22.3.2.1 Symmetric matrices</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Symmetric matrices
+    </span>
+    <span class="multilang" lang="no">
+        Symmetriske matriser
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        Symmetric matrices have a number of useful properties which we will investigate in this Section.
+    </span>
+    <span class="multilang" lang="no">
+        Symmetriske matriser har en rekke nyttige egenskaper som vi skal unders&#248;ke i denne seksjonen.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

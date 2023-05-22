@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>Kontrapositivt bevis</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    Kontrapositivt bevis
+</h3>
+<p>
+    P&#229;standene "Jeg er over 140 cm h&#248;y \(\implies\) Jeg kan ri alle attraksjonen i TusenFryd" og "Jeg kan ikke ri alle attraksjonen i TusenFryd \(\implies\) Jeg er ikke over 140 cm h&#248;y" er logiske ekvivalente. Generelt beskrevet; hvis \(P \implies Q\) stemmer, stemmer ogs&#229; \(Ikke-Q \implies Ikke-P\), kjent som den kontrapositive p&#229;standen. Dette er veldig nyttig i bevisteknikken der det &#229; bevise den kontrapositive p&#229;standen er enklere enn &#229; bevise den originale p&#229;standen.
+</p>
+<h4 class="HELM_example">
+    Eksempel
+</h4>
+<p>
+    Bevis p&#229;standen "\(n^2\) er et partall \(\implies\) \(n\) er et partall"
+</p>
+<h4 class="HELM_solution">
+    L&#248;sning
+</h4>
+<p>
+    Istedenfor for &#229; bevise "\(n^2\) er et partall \(\implies\) \(n\) er et partall" vil det v&#230;re enklere &#229; bevise "\(n\) er ikke et partall \(\implies\) \(n^2\) er ikke et partall". "Ikke et partall" betyr "oddetall" som betyr at vi skal bevise: "\(n\) er et oddetall \(\implies\) \(n^2\) er et oddetall".
+</p>
+<p>
+    Vi starter med at \(n=2k+1\) for &#229; "tvinge" \(n\) til &#229; v&#230;re et oddetall.
+</p>
+<p>
+    \(n=2k+1 \implies\)
+</p>
+<p>
+    \(n^2=(2k+1)^2 \implies\)
+</p>
+<p>
+    \(n^2=4k^2+4k+1 \implies\)
+</p>
+<p>
+    \(n^2=4(k^2+k) +1\)
+</p>
+<p>
+    \(4(k^2+k)\) er et partall som betyr at \(4(k^2+k)+1\) er oddetall. Siden "\(n\) er et oddetall \(\implies\) \(n^2\) er et oddetall" og "\(n^2\) er et partall \(\implies\) \(n\) er et partall" er logiske ekvivalente har vi bevist at "\(n^2\) er et partall \(\implies\) \(n\) er et partall".
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

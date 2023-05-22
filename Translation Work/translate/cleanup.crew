@@ -1,0 +1,10 @@
+<p class="HELM_exercise">Exercise</p>
+<p>
+Find the derivative of \(y = \displaystyle{{@y(x)@}}\) using the quotient rule.</p>
+<p>We can see that the two functions are&nbsp;</p>
+<p>\[ f(x) = {@f(x)@} \hspace{1cm} g(x) = {@g(x)@} \]</p>
+<p>Now find the derivative of each of these functions&nbsp;</p>
+<p>\( \dfrac{df}{dx} = \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]</p>
+<p>\( \dfrac{dg}{dx} = \) [[input:ans2]] [[validation:ans2]][[feedback:prt2]]</p>
+<p>Finally, we have&nbsp;</p>
+<p>\( \dfrac{dy}{dx} = \)&nbsp;[[input:ans3]] [[validation:ans3]][[feedback:prt3]]</p>

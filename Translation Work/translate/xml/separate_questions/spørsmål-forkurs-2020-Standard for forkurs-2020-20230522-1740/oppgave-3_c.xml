@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Oppgave 3_c</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+</p>
+<p>
+    Vi trekker tilfeldig 5 kuler (uten tilbakelegging) fra en urne med \({@hvit@}\) hvite og&#160;\({@sort@}\) sorte kuler.
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    \(a)\) Hva er sannsynligheten for at den f&#248;rste kula vi trekker er hvit?
+</p>
+<p>
+    [[input:ans1]] [[validation:ans1]]
+</p>
+<p>
+    <br/>
+</p>
+<p>
+</p>
+<p>
+    \(b)\) Hva er sannsynligheten for at alle de fem kulene vi trekker er hvite?
+</p>
+<p>
+    [[input:ans2]] [[validation:ans2]]
+</p>
+<p>
+    <br/>
+</p>
+<p>
+</p>
+<p>
+    \(c)\) Hva er sannsynligheten for at n&#248;yaktig en av de fem kulene vi trekker er sort?
+</p>
+<p>
+    [[input:ans3]] [[validation:ans3]]
+</p>
+<br/>
+<p>
+</p>
+<br/>
+<p>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020061000</text>
+        </stackversion>
+        <questionvariables>
+            <text>hvit:5+rand(4);
+sort:2+rand(4);
+tot:hvit+sort;
+ta1:hvit/tot;
+ta2:(hvit/tot)*(hvit-1)/(tot-1)*(hvit-2)/(tot-2)*(hvit-3)/(tot-3)*(hvit-4)/(tot-4);
+ta3:5*((sort/tot)*(hvit)/(tot-1)*(hvit-1)/(tot-2)*(hvit-2)/(tot-3)*(hvit-3)/(tot-4));</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text><![CDATA[
+[[feedback:prt1]]
+<br/>
+[[feedback:prt2]]
+<br/>
+[[feedback:prt3]]
+<br/>
+]]></text>
+        </specificfeedback>
+        <questionnote>
+            <text>hvite: {@hvit@}, sorte: {@sort@},   {@ta1@},   {@ta2@},   {@ta3@}</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>ta1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>ta2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>ta3</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions>0.15</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans2</sans>
+                <tans>ta2</tans>
+                <testoptions>0.15</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans3</sans>
+                <tans>ta3</tans>
+                <testoptions>0.15</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1044587304</deployedseed>
+        <deployedseed>537962657</deployedseed>
+        <deployedseed>536631649</deployedseed>
+        <deployedseed>1108190930</deployedseed>
+        <deployedseed>1496301791</deployedseed>
+        <deployedseed>1158702320</deployedseed>
+        <deployedseed>184073904</deployedseed>
+        <deployedseed>1597482335</deployedseed>
+        <deployedseed>1894532812</deployedseed>
+        <deployedseed>699218771</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta1</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta2</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>ta3</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt3-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

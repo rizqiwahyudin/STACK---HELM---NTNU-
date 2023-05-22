@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="ddwtos">
+        <name>
+            <text>2.4.2.4 Piecewise continuity</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        &#216;ving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Study the graphs of the following functions for \(x \in \mathbb{R}\) and fill in the blanks:
+    </span>
+    <span class="multilang" lang="no">
+        Studer grafene for f&#248;lgende funksjoner for \(x \in \mathbb{R} \) og fyll ut feltene:
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(f(x)= x^3-1\) for \(x&lt;1\) and \(=x^2-1\) for \(x \geq 1\) is
+    </span>
+    <span class="multilang" lang="no">
+        \(f(x)= x^3-1\) for \(x&lt;1\) og \(=x^2-1\) for \(x \geq 1\) er
+    </span>
+    [[1]]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(f(x)= x^3-1\) for \(x&lt;-1\) and \(=x^2-1\) for \(x \geq -1\) is
+    </span>
+    <span class="multilang" lang="no">
+        \(f(x) = x^3-1 \) for \(x&lt; -1 \) og \(= x^2-1 \) for \(x \geq -1 \) er
+    </span>
+    [[2]].
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <shuffleanswers>1</shuffleanswers>
+        <correctfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="en">
+    Your answer is correct.
+</span>
+<span class="multilang" lang="no">
+    Svaret ditt er korrekt
+</span>
+]]></text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="en">
+    Your answer is partially correct.
+</span>
+<span class="multilang" lang="no">
+    Svaret ditt er delvis korrekt
+</span>
+]]></text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="en">
+    Your answer is incorrect.
+</span>
+<span class="multilang" lang="no">
+    Svaret ditt er ukorrekt
+</span>
+]]></text>
+        </incorrectfeedback>
+        <shownumcorrect/>
+        <dragbox>
+            <text>continuous</text>
+            <group>1</group>
+            <infinite/>
+        </dragbox>
+        <dragbox>
+            <text>discontinuous</text>
+            <group>1</group>
+            <infinite/>
+        </dragbox>
+        <dragbox>
+            <text>neither continuous nor discontinuous</text>
+            <group>1</group>
+            <infinite/>
+        </dragbox>
+        <dragbox>
+            <text>continuous at all but two points</text>
+            <group>1</group>
+            <infinite/>
+        </dragbox>
+    </question>
+    
+
+</quiz>

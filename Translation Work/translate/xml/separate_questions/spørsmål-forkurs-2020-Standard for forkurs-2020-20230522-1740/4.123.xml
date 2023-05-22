@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>4.123</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+Den rette linja nedenfor beskriver temperaturen til vannet i en kjele som st&#229;r p&#229; en komfyr. Temperaturen i vannet starter p&#229; \({@b@} ^{\circ}C\) f&#248;r komfyren skrus p&#229; og vannet f&#229;r en jevn tilf&#248;rsel av varme slik at etter \(t\) minutter m&#229;les temperaturen
+\(T\) m&#229;lt i celsiusgrader til \(T={@eqn@}\). [[jsxgraph]] var board = JXG.JSXGraph.initBoard(divid, {boundingbox: [-2, 120, 40, -10], axis: true, showCopyright: false, defaultAxes: { x : { name: 't', withLabel: true, label: { position: 'rt', offset:
+[-10, 5] } }, y : { withLabel:true, name: 'T', label: { position: 'rt', offset: [-20, -5] } } } }); var f = board.jc.snippet('{#eqn#}', true, 'x', true); board.create('functiongraph', [f,0,40]); [[/jsxgraph]]
+<p>
+    Hva er temperaturen etter \({@t1@}\) minutter?
+</p>
+[[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+<p>
+    Hvor mange minutter tar det f&#248;r vannet koker?
+</p>
+[[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text>a:rand_with_step(2,6,0.2)
+b:11+rand(8)
+t1:5+rand_with_step(1,4,0.5)
+eqn:a*x+b
+ta1:ev(eqn,x=t1)
+ta2:(100-b)/a</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote>
+            <text>\({@ta1@}\)</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>numerical</type>
+            <tans>ta1</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>numerical</type>
+            <tans>ta2</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions>0.02</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans2</sans>
+                <tans>ta2</tans>
+                <testoptions>1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text>[[jsxgraph]] var board = JXG.JSXGraph.initBoard(divid, {boundingbox: [-2, 120, 40, -10], axis: true, showCopyright: false, defaultAxes: { x : { name: 't', withLabel: true, label: { position: 'rt', offset: [-10, 5] } }, y : { withLabel:true, name: 'T',
+label: { position: 'rt', offset: [-20, -5] } } } }); var f = board.jc.snippet('{#eqn#}', true, 'x', true); board.create('functiongraph', [f,0,40]); var p = board.create('point',[{#ans2#},{#100#}],{name:'Det koker!'}); [[/jsxgraph]] Riktig!</text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    <br/>
+</p>
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <answertest>GT</answertest>
+                <sans>ans2</sans>
+                <tans>ta2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text>[[jsxgraph]] var board = JXG.JSXGraph.initBoard(divid, {boundingbox: [-2, 120, 40, -10], axis: true, showCopyright: false, defaultAxes: { x : { name: 't', withLabel: true, label: { position: 'rt', offset: [-10, 5] } }, y : { withLabel:true, name: 'T',
+label: { position: 'rt', offset: [-20, -5] } } } }); var f = board.jc.snippet('{#eqn#}', true, 'x', true); board.create('functiongraph', [f,0,40]); var p = board.create('point',[{#ans2#},{#100#}],{name:'Vannet koker f&#248;r!'});[[/jsxgraph]] Husk at vann koker ved \(100 ^{\circ}C\)</text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text>[[jsxgraph]] var board = JXG.JSXGraph.initBoard(divid, {boundingbox: [-2, 120, 40, -10], axis: true, showCopyright: false, defaultAxes: { x : { name: 't', withLabel: true, label: { position: 'rt', offset: [-10, 5] } }, y : { withLabel:true, name: 'T',
+label: { position: 'rt', offset: [-20, -5] } } } }); var f = board.jc.snippet('{#eqn#}', true, 'x', true); board.create('functiongraph', [f,0,40]); var p = board.create('point',[{#ans2#},{#100#}],{name:'Vannet koker ikke enda!'});[[/jsxgraph]] Husk at vann koker ved \(100 ^{\circ}C\)</text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1604391883</deployedseed>
+        <deployedseed>2010119302</deployedseed>
+        <deployedseed>1845983717</deployedseed>
+        <deployedseed>418762242</deployedseed>
+        <deployedseed>901608800</deployedseed>
+        <deployedseed>341997990</deployedseed>
+        <deployedseed>1122455618</deployedseed>
+        <deployedseed>1895518089</deployedseed>
+        <deployedseed>1697732811</deployedseed>
+        <deployedseed>1183246225</deployedseed>
+        <deployedseed>649673657</deployedseed>
+        <deployedseed>614236574</deployedseed>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>9.1.4.3 Resultant vectors</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        &#216;ving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Two forces act on a point object as follows: \( \vec{F_1} = {@F1@}\ \mathrm{N}\) in the direction of the positive \(x\) axis and \( \vec{F_2} = {@F2@}\ \mathrm{N}\) in the direction of the positive \(y\) axis. Find:
+    </span>
+    <span class="multilang" lang="no">
+        To krefter virker p&#229; et punktobjekt som f&#248;lger: \( \vec{F_1} = {@F1@}\ \mathrm{N}\) i retning av den positive \(x\)-aksen og \( \vec{F_2} = {@F2@}\ \mathrm{N}\) i retning av den positive \(y\)-aksen. Finn:
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <span class="multilang" lang="en">
+            The angle the resultant force makes with the positive \(x\)-axis, in degrees, to 1 d.p, \(\theta_{r} = \)
+        </span>
+        <span class="multilang" lang="no">
+            Vinkelen den resulterende kraften lager med den positive \(x\)-aksen, i grader, til 1 d.p, \(\theta_{r} = \)
+        </span>
+        [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+        <br/>
+        <p>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The magnitude of the force to 1 d.p, \(|F_R| = \)
+            </span>
+            <span class="multilang" lang="no">
+                Kraftens st&#248;rrelse til 1 d.p, \(|F_R| = \)
+            </span>
+            [[input:ans2]] [[validation:ans2]] \( \textrm{N}\) [[feedback:prt2]]
+        </p>
+    </li>
+</ol>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<ol class="HELM_parts">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                We calculate the angle of the resultant force using \(\tan\theta = {@F2@}/{@F1@}\).
+            </span>
+            <span class="multilang" lang="no">
+                Vi beregner vinkelen til den resulterende kraften ved &#229; bruke \(\tan\theta = {@F2@}/{@F1@}\).
+            </span>
+        </p>
+        <p>
+            <span class="multilang" lang="en">
+                Therefore,
+            </span>
+            <span class="multilang" lang="no">
+                Dermed er
+            </span>
+        </p>
+        \[\theta = \tan^{-1}\left( \frac{{@F2@}}{{@F1@}} \right) = {@ta1t@}^\circ. \]
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        We use Pythagoras' theorem to find the magnitude of the resultant force:
+    </span>
+    <span class="multilang" lang="no">
+        Vi bruker Pythagoras' teorem for &#229; finne st&#248;rrelsen til den resulterende kraften:
+    </span>
+</p>
+\[\lvert\overrightarrow{F_R}\rvert = \sqrt{F_1^2 + F_2^2} = \sqrt{{@F1@}^2 + {@F2@}^2} = {@ta2t@}\ \mathrm{N}.\]
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2022082900</text>
+        </stackversion>
+        <questionvariables>
+            <text>F1: rand_with_step(100,200,10); 
+F2: rand_with_step(20,90,10);
+
+tantheta: F2/F1;
+theta: atan(tantheta);
+
+ta1: 180*(theta)/%pi;
+ta2: sqrt((F1)^2+(F2)^2);
+ta1t: decimalplaces(ev(ta1,numer), 1);
+ta2t: decimalplaces(ev(ta2,numer), 1);</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote>
+            <text>\( F_1 = {@F1@} \), \( F_2 = {@F2@} \) so \(\theta={@ta1t@}\), \(|F_R| = {@ta2t@} \)</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>numerical</type>
+            <tans>ta1t</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options>maxdp:1, mindp:1</options>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>numerical</type>
+            <tans>ta2t</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options>maxdp:1, mindp:1</options>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>NumDecPlaces</answertest>
+                <sans>ans1</sans>
+                <tans>ta1t</tans>
+                <testoptions>1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>NumDecPlaces</answertest>
+                <sans>ans2</sans>
+                <tans>ta2t</tans>
+                <testoptions>1</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1636385127</deployedseed>
+        <deployedseed>430567712</deployedseed>
+        <deployedseed>768734731</deployedseed>
+        <deployedseed>243354766</deployedseed>
+        <deployedseed>1632364464</deployedseed>
+        <deployedseed>1094842785</deployedseed>
+        <deployedseed>1403704357</deployedseed>
+        <deployedseed>1842761208</deployedseed>
+        <deployedseed>1086490464</deployedseed>
+        <deployedseed>1765485715</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta1t</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta2t</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta1</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta2</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore/>
+                <expectedpenalty/>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>3</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ev(ta1t+1,simp)</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ev(ta2t+1,simp)</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt1-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt2-1-F</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>22.2.1.3 Matrix powers</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Matrix powers
+    </span>
+    <span class="multilang" lang="no">
+        Matrise eksponenter
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        If \(P^{-1}AP=D\) then we can obtain \(A\) (i.e. make \(A\) the subject of this matrix equation) as follows:
+    </span>
+    <span class="multilang" lang="no">
+        Hvis \(P^{-1}AP=D\), kan vi finne \(A\) (dvs. isolere \(A\) for denne matrise-ligningen) som f&#248;lger:
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Multiplying on the left by \(P\) and on the right by \(P^{-1}\) we obtain
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; multiplisere p&#229; venstre side med \(P\) og p&#229; h&#248;yre side med \(P^{-1}\)  f&#229;r vi
+    </span>
+</p>
+\[PP^{-1}APP^{-1}=PDP^{-1}\]
+<p>
+    <span class="multilang" lang="en">
+        Now using the fact that \(PP^{-1}=P^{-1}P=I\) we obtain
+    </span>
+    <span class="multilang" lang="no">
+        N&#229; bruker vi faktumet at \(PP^{-1}=P^{-1}P=I\) for &#229; f&#229;
+    </span>
+</p>
+\[IAI=PDP^{-1}\]
+<p>
+    <span class="multilang" lang="en">
+        and so
+    </span>
+    <span class="multilang" lang="no">
+        og s&#229;
+    </span>
+</p>
+\[A=PDP^{-1}\]
+<p>
+    <span class="multilang" lang="en">
+        We can use this result to obtain the
+        <strong>
+            powers
+        </strong>
+        of a square matrix, a process which is sometimes useful in control theory. Note that
+    </span>
+    <span class="multilang" lang="no">
+        Vi kan bruke dette resultatet til &#229; f&#229;
+        <strong>
+            potenser
+        </strong>
+        av en kvadratisk matrise, en prosess som noen ganger er nyttig innen kontrollteori. Merk at
+    </span>
+</p>
+<p style="text-align: center;">
+    <span class="multilang" lang="en">
+        \(A^2 = A \cdot A\),\(A^3=A \cdot A \cdot A\) etc.
+    </span>
+    <span class="multilang" lang="no">
+        \(A^2 = A \cdot A\), \(A^3=A \cdot A \cdot A\) osv.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Clearly, obtaining high powers of \(A\) directly would in general involve many multiplications. The process is quite straightforward, however, for a diagonal matrix \(D\), as this next Exercise shows.
+    </span>
+    <span class="multilang" lang="no">
+        Tydeligvis ville det &#229; finne h&#248;ye potenser av \(A\) direkte i generelt tilfelle involvere mange multiplikasjoner. Prosessen er imidlertid ganske rett frem for en diagonal matrise \(D\), som neste &#248;ving viser.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

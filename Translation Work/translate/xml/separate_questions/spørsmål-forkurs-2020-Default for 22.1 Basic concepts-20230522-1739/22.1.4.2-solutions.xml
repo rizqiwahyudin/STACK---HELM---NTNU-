@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>22.1.4.2 Solutions</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        &#216;velse
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        If \(\lambda_1,\lambda_2,\ldots \lambda_n\) are the eigenvalues of a matrix \(A,\), get a piece of paper and prove the following:
+        <br/>
+    </span>
+    <span class="multilang" lang="no">
+        Hvis \(\lambda_1,\lambda_2,\ldots \lambda_n\) er egenverdiene til matrisen \(A,\) ta et stykke papir og bevise f&#248;lgende:
+        <br/>
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                \(A^T\) has eigenvalues \(\lambda_1,\lambda_2,\ldots
+                                                                \lambda_n\).
+            </span>
+            <span class="multilang" lang="no">
+                \(A^T\) har egenverdier \(\lambda_1, \lambda_2, \ldots, \lambda_n\).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                If \(A\) is upper triangular, then its eigenvalues are exactly the main diagonal entries.
+            </span>
+            <span class="multilang" lang="no">
+                Hvis \(A\) er &#248;vre triangul&#230;r, er dets egenverdier elementene p&#229; hoveddiagonalen.
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The inverse matrix \(A^{-1}\) has eigenvalues \({{1\over
+\lambda_1}},\ {{1\over \lambda_2}},\ldots {{1\over
+\lambda_n}}\).
+            </span>
+            <span class="multilang" lang="no">
+                Den inverse matrisen \(A^{-1}\) har egenverdier \({{1\over
+\lambda_1}},\ {{1\over \lambda_2}},\ldots {{1\over
+\lambda_n}}\).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The matrix \(A-kI\) has eigenvalues \(\lambda_1-k,\lambda_2-k,\ldots \lambda_n-k\).
+            </span>
+            <span class="multilang" lang="no">
+                Matrisen \(A-kI\) har egenverdiene \(\lambda_1-k,\lambda_2-k,\ldots \lambda_n-k\) .
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                (Harder) The matrix \(A^2\) has eigenvalues \(\lambda_1^2,\lambda_2^2,\ldots \lambda_n^2\).
+            </span>
+            <span class="multilang" lang="no">
+                (Vanskeligere) Matrisen \(A^2\) har egenverdier \(\lambda_1^2, \lambda_2^2, \ldots \lambda_n^2\).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                (Harder) The matrix \(A^k\) (\(k\) a non-negative integer) has eigenvalues \(\lambda_1^k,\lambda_2^k,\ldots \lambda_n^k.\)
+            </span>
+            <span class="multilang" lang="no">
+                (Vanskeligere) Matrisen \(A^k\) ( \(k\) et ikke-negativt heltall) har egenverdiene \(\lambda_1^k,\lambda_2^k,\ldots \lambda_n^k.\)
+            </span>
+        </p>
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        N.B. Some of these results are useful in the numerical calculation of eigenvalues.
+    </span>
+    <span class="multilang" lang="no">
+        N.B. Noen av disse resultatene er nyttige i den numeriske beregningen av egenverdier.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        <b>
+            We give the solution below. Please try to complete the problem before referencing the solution.
+        </b>
+    </span>
+    <span class="multilang" lang="no">
+        <b>
+            Vi gir l&#248;sningen nedenfor. Vennligst pr&#248;v &#229; fullf&#248;re oppgaven f&#248;r du ser l&#248;sningen.
+        </b>
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                Using the property that for any square matrix \(A\),
+                <br/>
+                \[\text{det}(A) = \text{det}(A^T),\]
+                <br/>
+                we see that if
+                <br/>
+                \[ \text{ det}(A-\lambda I)=0\]
+                <br/>
+                then
+                <br/>
+                \[ \text{ det}(A-\lambda I)^T=0.\]
+                <br/>
+                This immediately tells us that \(\text{ det}(A^T-\lambda I)=0\) which shows that \(\lambda\) is also an eigenvalue of \(A^T\).
+            </span>
+            <span class="multilang" lang="no">
+                Ved &#229; bruke egenskapen for hvilken som helst kvadratisk matrise \(A\),
+                <br/>
+                \[\text{det}(A) = \text{det}(A^T),\]
+                <br/>
+                kan vi se at hvis
+                <br/>
+                \[ \text{ det}(A-\lambda I)=0\]
+                <br/>
+                s&#229; vil
+                <br/>
+                \[ \text{ det}(A-\lambda I)^T=0.\]
+                <br/>
+                Dette forteller oss umiddelbart at \(\text{ det}(A^T-\lambda I)=0\) som viser at \(\lambda\) ogs&#229; er en egenverdi av \(A^T\).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                Here simply write down a typical upper triangular matrix \(U\) which has terms on the leading diagonal \(u_{11}, u_{22},\dots , u_{nn}\) and above it. Then construct \((U-\lambda I)\). Finally imagine how you would then obtain \(\text{ det}(U-\lambda I)=0\).
+                <br/>
+                <br/>
+                You should see that the determinant is obtained by multiplying together those terms on the leading diagonal. Here the characteristic equation is:
+                <br/>
+                \[(u_{11}-\lambda)(u_{22}-\lambda)\dots (u_{nn}-\lambda)=0.\]
+                <br/>
+                This polynomial has the obvious roots
+                <br/>
+                \[\lambda_1=u_{11},\ \lambda_2=u_{22},\ \dots ,
+                                                                \lambda_n=u_{nn}.\]
+            </span>
+            <span class="multilang" lang="no">
+                Her skriver du bare ned en typisk &#248;vre triangul&#230;r matrise \(U\) som har termer p&#229; hoveddiagonalen  \(u_{11}, u_{22},\dots , u_{nn}\)  og de over den. Deretter konstruerer du \((U-\lambda I)\). Til slutt kan du tenke p&#229; hvordan du ville f&#229; \(\text{ det}(U-\lambda I)=0\).
+                <br/>
+                <br/>
+                Du vil da se at determinanten blir funnet ved &#229; multiplisere sammen disse termene p&#229; den ledende diagonalen. Her er den karakteristiske likningen:
+                <br/>
+                \[(u_{11}-\lambda)(u_{22}-\lambda)\dots (u_{nn}-\lambda)=0.\]
+                <br/>
+                Dette polynomet har de &#229;penbare r&#248;ttene
+                <br/>
+                \[\lambda_1=u_{11},\ \lambda_2=u_{22},\ \dots ,
+                                                                \lambda_n=u_{nn}.\]
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                Here we begin with the usual eigenvalue problem \(A\underline{x}=\lambda \underline{x}\).
+                <br/>
+                If \(A\) has an inverse \(A^{-1}\) we can multiply both sides by \(A^{-1}\) on the left to give
+                <br/>
+                \[A^{-1}(A\underline{x})=A^{-1}\lambda \underline{x}\]
+                <br/>
+                which gives
+                <br/>
+                \[\underline{x}=\lambda A^{-1}\underline{x}\]
+                <br/>
+                or, dividing through by the scalar \(\lambda\) we get
+                <br/>
+                \[ A^{-1}\underline{x}=\frac{1}{\lambda}\underline{x}\]
+                <br/>
+                which shows that if \(\lambda\) and \(\underline{x}\) are respectively eigenvalue and eigenvector of \(A\) then \(\lambda^{-1}\) and \(\underline{x}\) are respectively eigenvalue and eigenvector of \(A^{-1}\).
+                <br/>
+                <br/>
+                As an example consider \(A=\left[\begin{array}{cc}2&amp;3\\ 3&amp;2\end{array}\right]\). This matrix has eigenvalues
+                <br/>
+                \[\lambda_1=-1,\quad \lambda_2=5\]
+                <br/>
+                with corresponding eigenvectors
+                <br/>
+                \[\underline{x}_1=\left[ \begin{array}{r} 1\\-1 \end{array} \right]\quad \text{and} \quad \underline{x}_2=\left[ \begin{array}{c}1\\1\end{array} \right].\]
+                <br/>
+                <br/>
+                The reader should verify (by direct multiplication) that \(A^{-1}=-\dfrac{1}{5}\left[\begin{array}{cc}\hfill 2&amp;\hfill -3\\ \hfill
+                                                                -3&amp;\hfill 2\end{array}\right]\) has eigenvalues
+                <br/>
+                \[\lambda_1=-1\quad \text{and} \quad \lambda_2=\frac{1}{5} \]
+                <br/>
+                with respective eigenvectors
+                <br/>
+                \[\underline{x}_1=\left[ \begin{array}{r} 1\\-1 \end{array} \right]\quad \text{and} \quad \underline{x}_2=\left[ \begin{array}{c}1\\1\end{array} \right].\]
+            </span>
+            <span class="multilang" lang="no">
+                Her begynner vi med det vanlige egenverdiproblemet  \(A\underline{x}=\lambda \underline{x}\). Hvis  \(A\) har en invers  \(A^{-1}\), kan vi multiplisere begge sider med  \(A^{-1}\) p&#229; venstre side for &#229; gi  \[A^{-1}(A\underline{x})=A^{-1}\lambda \underline{x}\] som gir  \[\underline{x}=\lambda A^{-1}\underline{x}\] eller, ved &#229; dele p&#229; skalar  \(\lambda\) f&#229;r vi  \[ A^{-1}\underline{x}=\frac{1}{\lambda}\underline{x}\] som viser at hvis  \(\lambda\) og  \(\underline{x}\) er henholdsvis egenverdi og egenvektor av  \(A\), s&#229; er  \(\lambda^{-1}\) og  \(\underline{x}\) henholdsvis egenverdi og egenvektor av  \(A^{-1}\).
+                <br/>
+                <br/>
+                Som et eksempel, vurder  \(A=\left[\begin{array}{cc}2&amp;3\\ 3&amp;2\end{array}\right]\). Denne matrisen har egenverdier  \[\lambda_1=-1,\quad \lambda_2=5\] med tilh&#248;rende egenvektorer  \[\underline{x}_1=\left[ \begin{array}{r} 1\\-1 \end{array} \right]\quad \text{og} \quad \underline{x}_2=\left[ \begin{array}{c}1\\1\end{array} \right].\] Leseren b&#248;r verifisere (ved direkte multiplikasjon) at  \(A^{-1}=-\dfrac{1}{5}\left[\begin{array}{cc}\hfill 2&amp;\hfill -3\\ \hfill
+                                                                -3&amp;\hfill 2\end{array}\right]\) har egenverdier  \[\lambda_1=-1\quad \text{og} \quad \lambda_2=\frac{1}{5}\] med tilsvarende egenvektorer  \[\underline{x}_1=\left[ \begin{array}{r} 1\\-1 \end{array} \right]\quad \text{og} \quad \underline{x}_2=\left[ \begin{array}{c}1\\1\end{array} \right].\]
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                Proved in similar way to the proof outlined in (c).
+            </span>
+            <span class="multilang" lang="no">
+                Bevist p&#229; tilsvarende m&#229;te som beviset skissert i (c).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                Proved in similar way to the proof outlined in (c).
+            </span>
+            <span class="multilang" lang="no">
+                Bevist p&#229; samme m&#229;te som beviset skissert i (c).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                Proved in similar way to the proof outlined in (c).
+            </span>
+            <span class="multilang" lang="no">
+                Bevist p&#229; en lignende m&#229;te som beviset skissert i (c).
+            </span>
+        </p>
+    </li>
+</ol>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

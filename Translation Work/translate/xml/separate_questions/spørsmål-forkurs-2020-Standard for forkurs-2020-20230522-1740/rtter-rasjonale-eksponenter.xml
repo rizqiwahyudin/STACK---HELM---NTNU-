@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>R&#248;tter (Rasjonale eksponenter)</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    R&#248;tter (rasjonale eksponenter)
+</h3>
+<p>
+    Her er en liten oversikt av reglene for potenser med rasjonale eksponenter.
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        N&#248;kkelpunkt
+    </h4>
+    <ul>
+        <li>
+            \(a^{1/n} = \sqrt[n]{a}\)
+        </li>
+        <li>
+            \(a^{m/n} = \sqrt[n]{a^m} = (\sqrt[n]{a})^m\)
+        </li>
+        <li>
+            \( \sqrt[n]{ab} = \left(ab\right)^{1/n} = a^{1/n}b^{1/n} = \sqrt[n]{a} \cdot \sqrt[n]{b} \)
+        </li>
+        <li>
+            \( \sqrt[n]{\frac{a}{b}} = \left(\frac{a}{b}\right)^{1/n} = \frac{\sqrt[n]{a}}{\sqrt[n]{b}} \)
+        </li>
+    </ul>
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

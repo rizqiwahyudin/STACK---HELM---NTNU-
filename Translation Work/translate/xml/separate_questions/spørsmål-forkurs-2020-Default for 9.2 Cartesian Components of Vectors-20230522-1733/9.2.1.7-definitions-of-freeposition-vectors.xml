@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="multichoice">
+        <name>
+            <text>9.2.1.7 Definitions of free/position vectors</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        &#216;ving
+    </span>
+    <br/>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Which of the below describes a
+        <b>
+            free
+        </b>
+        vector?
+    </span>
+    <span class="multilang" lang="no">
+        Hvilke valg av de nedenfor beskriver en
+        <b>
+            fri
+        </b>
+        vektor?
+    </span>
+    <br/>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <showstandardinstruction>1</showstandardinstruction>
+        <correctfeedback format="html">
+            <text>Your answer is correct.</text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text>Your answer is partially correct.</text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text>Your answer is incorrect.</text>
+        </incorrectfeedback>
+        <shownumcorrect/>
+        <answer fraction="100" format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        A vector which may be translated to any point in space provided their direction and length remain unchanged.
+    </span>
+    <span class="multilang" lang="no">
+        En vektor som kan flyttes til et hvilket som helst punkt i rommet gitt at deres retning og lengde forblir uendret.
+    </span>
+    <br/>
+</p>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        A vector which always starts at the origin of the coordinate system.
+    </span>
+    <span class="multilang" lang="no">
+        En vektor som alltid starter i origo.
+    </span>
+    <br/>
+</p>
+]]></text>
+            <feedback format="html">
+                <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        A free vector is not tied to any specific point in space.
+    </span>
+    <span class="multilang" lang="no">
+        En fri vektor er ikke knyttet til noe spesifikt punkt i rommet.
+    </span>
+    <br/>
+</p>
+]]></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        A vector whose length may change as long as its direction remains the same.
+    </span>
+    <span class="multilang" lang="no">
+        En vektor der lengden kan endres s&#229; lenge retningen forblir det samme.
+    </span>
+    <br/>
+</p>
+]]></text>
+            <feedback format="html">
+                <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        A vector is defined by both its magnitude and direction therefore by changing either of these we change the vector we are defining.
+    </span>
+    <span class="multilang" lang="no">
+        En vektor er definert av b&#229;de dens st&#248;rrelse og retning, og ved &#229; endre en av disse endrer vi vektoren vi definerer.
+    </span>
+    <br/>
+</p>
+]]></text>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        A vector whose direction may change as long as its length stays the same.
+    </span>
+    <span class="multilang" lang="no">
+        En vektor der retning kan endres s&#229; lenge lengden forblir det samme.
+    </span>
+    <br/>
+</p>
+]]></text>
+            <feedback format="html">
+                <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        A vector is defined by both its magnitude and direction therefore by changing either of these we change the vector we are defining.
+    </span>
+    <span class="multilang" lang="no">
+        En vektor er definert av b&#229;de dens st&#248;rrelse og retning, og ved &#229; endre en av disse endrer vi vektoren vi definerer.
+    </span>
+    <br/>
+</p>
+]]></text>
+            </feedback>
+        </answer>
+    </question>
+    
+
+</quiz>

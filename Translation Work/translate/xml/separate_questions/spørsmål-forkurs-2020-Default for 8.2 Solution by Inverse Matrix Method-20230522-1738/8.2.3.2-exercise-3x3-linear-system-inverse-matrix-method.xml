@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>8.2.3.2 Exercise 3x3 linear system inverse matrix method</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        &#216;ving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Consider the linear system of equations \(AX = B\), where
+    </span>
+    <span class="multilang" lang="no">
+        Betrakt det line&#230;re ligningssystemet \(AX = B\), hvor
+    </span>
+</p>
+<p>
+    \[ A ={@matrixa@}, \hspace{2mm} B = {@BB@}. \]
+</p>
+<ol class="HELM_parts_inline">
+    <li>
+        <span class="multilang" lang="en">
+            Find the inverse of \( A\), if it is invertible.
+        </span>
+        <span class="multilang" lang="no">
+            Finn den inverse av \( A\), hvis den er inverterbar.
+        </span>
+    </li>
+    <div>
+        \(A^{-1}=\) [[input:ans1]] [[validation:ans1]]&#160;[[feedback:Result]]
+    </div>
+    <div>
+        <br/>
+    </div>
+    <li>
+        <span class="multilang" lang="en">
+            Solve the system \(AX = B \) using the inverse matrix method.
+        </span>
+        <span class="multilang" lang="no">
+            L&#248;s systemet \(AX = B \) ved hjelp av den inverse matrisemetoden.
+        </span>
+    </li>
+    <div>
+        \(X=\) [[input:ans2]] [[validation:ans2]]&#160;[[feedback:ans2]]
+    </div>
+    <div>
+        <br/>
+    </div>
+</ol>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<ol class="HELM_parts">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                We find the inverse of \( A \) using the Gauss elimination method (use the determinant method if you prefer). Augment matrix \({\bf A}\) with a 3 by 3 identity matrix:
+            </span>
+            <span class="multilang" lang="no">
+                Vi finner inversen til \( A \) ved hjelp av Gauss eliminering metoden (bruk determinant metoden hvis du
+                                                foretrekker det). Utvid matrisen \({\bf A}\) med en 3 x 3 identitetsmatrise:
+            </span>
+        </p>
+        <p>
+            \[{@auga@}\]
+            <br/>
+            <span class="multilang" lang="en">
+                There is +1 in the upper left-hand corner so create 0's below it by adding \({@-mrow2@}\) times row 1 to row 2 and \({@-mrow3@}\) times row 1 to row 3
+            </span>
+            <span class="multilang" lang="no">
+                Det er +1 i &#248;vre venstre hj&#248;rne s&#229; lag 0'er under den ved &#229; legge til \({@-mrow2@}\) ganger rad 1 til rad 2
+                                                og \({@-mrow3@}\) ganger rad 1 til rad 3
+            </span>
+        </p>
+        <p>
+            \[{@temp1@}\]
+            <br/>
+            <span class="multilang" lang="en">
+                Now there is +1 in entry [2,2] of the matrix so create 0's above and below it by adding \({@-mr1@}\) times row 2 to row 1 and \({@-mr3@}\) times row 2 to row 3
+                <br/>
+                \[{@temp2@}\]
+                <br/>
+                Now there is&#160; +1 in entry [3,3] of the matrix
+                                                so create 0's above it by adding \({@-mro1@}\) times row 3 to row 1 and \({@-mro2@}\) times row 3 to row 2
+                <br/>
+                \[{@temp3@}\]
+                <br/>
+                The left half of this matrix is the identity matrix and the right half is the inverse of \({\bf A}\)
+            </span>
+            <span class="multilang" lang="no">
+                N&#229; er det +1 i oppf&#248;ringen [2,2] av matrisen s&#229; lag 0'er over og under den ved &#229; legge til \({@-mr1@}\) ganger rad 2 til rad 1 og \({@-mr3@}\) ganger rad 2 til rad 3
+                <br/>
+                \[{@temp2@}\]
+                <br/>
+                N&#229; er det +1 i oppf&#248;ringen [3,3] av
+                                                matrisen s&#229; lag 0'er over den ved &#229; legge til \({@-mro1@}\) ganger rad 3 til rad 1 og \({@-mro2@}\) ganger rad 3 til rad 2
+                <br/>
+                \[{@temp3@}\]
+                <br/>
+                Den venstre halvdelen av denne matrisen er identitetsmatrisen og den h&#248;yre
+                                                halvdelen er inversen til \({\bf A}\)
+            </span>
+        </p>
+        <p>
+            <span class="multilang" lang="en">
+                Therefore \({\bf A^{-1}} = {@correctanswer@}\)
+            </span>
+            <span class="multilang" lang="no">
+                Derfor er \({\bf A^{-1}} = {@correctanswer@}\)
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                Since \(A \) is invertible, we can apply the inverse matrix method to solve the system of equations. Multiply the matrix equation \(A X = B \) by \(A^{-1} \) from the left to obtain \[ X = A^{-1} A X = A^{-1} B = {@correctanswer@} {@BB@} = {@correctanswer
+                                                . BB@}. \]
+            </span>
+            <span class="multilang" lang="no">
+                Siden \(A \) er inverterbar, kan vi bruke den inverse matrisen metoden for &#229; l&#248;se likningssystemet. Multipliser matriselikningen \(A X = B \) med \(A^{-1} \) fra venstre for &#229; f&#229; \[ X = A^{-1} A X = A^{-1} B = {@correctanswer@} {@BB@} = {@correctanswer
+                                                . BB@}. \]
+            </span>
+        </p>
+    </li>
+</ol>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text>matrixb:matrix([1,((-1)^rand(2))*(rand(4)+1),0],[0,1,((-1)^rand(2))*(rand(4)+1)],[0,0,1]); matrixc:transpose(matrixb);
+matrixa:matrixc . matrixb;
+auga: addcol(matrixa,[1,0,0],[0,1,0],[0,0,1]);
+ 
+/* Define matrix B from AX = B as BB*/
+BB : matrix([rand(8) - 3], [rand(4) + 1], [rand(8) - 4]); 
+
+ mrow2:auga[2,1];
+ mrow3:auga[3,1];
+ temp1:matrix([auga[1,1],auga[1,2],auga[1,3],auga[1,4],auga[1,5],auga[1,6]],[auga[2,1]-mrow2*auga[1,1],auga[2,2]-mrow2*auga[1,2],auga[2,3]-mrow2*auga[1,3],auga[2,4]-mrow2*auga[1,4],auga[2,5]-mrow2*auga[1,5],auga[2,6]-mrow2*auga[1,6]],[auga[3,1]-mrow3*auga[1,1],auga[3,2]-mrow3*auga[1,2],auga[3,3]-mrow3*auga[1,3],auga[3,4]-mrow3*auga[1,4],auga[3,5]-mrow3*auga[1,5],auga[3,6]-mrow3*auga[1,6]]);
+ mr1:temp1[1,2];
+ mr3:temp1[3,2];
+ temp2:matrix([temp1[1,1]-mr1*temp1[2,1],temp1[1,2]-mr1*temp1[2,2],temp1[1,3]-mr1*temp1[2,3],temp1[1,4]-mr1*temp1[2,4],temp1[1,5]-mr1*temp1[2,5],temp1[1,6]-mr1*temp1[2,6]],[temp1[2,1],temp1[2,2],temp1[2,3],temp1[2,4],temp1[2,5],temp1[2,6]],[temp1[3,1]-mr3*temp1[2,1],temp1[3,2]-mr3*temp1[2,2],temp1[3,3]-mr3*temp1[2,3],temp1[3,4]-mr3*temp1[2,4],temp1[3,5]-mr3*temp1[2,5],temp1[3,6]-mr3*temp1[2,6]]);
+ mro1:temp2[1,3];
+ mro2:temp2[2,3];
+ temp3:matrix([temp2[1,1]-mro1*temp2[3,1],temp2[1,2]-mro1*temp2[3,2],temp2[1,3]-mro1*temp2[3,3],temp2[1,4]-mro1*temp2[3,4],temp2[1,5]-mro1*temp2[3,5],temp2[1,6]-mro1*temp2[3,6]],[temp2[2,1]-mro2*temp2[3,1],temp2[2,2]-mro2*temp2[3,2],temp2[2,3]-mro2*temp2[3,3],temp2[2,4]-mro2*temp2[3,4],temp2[2,5]-mro2*temp2[3,5],temp2[2,6]-mro2*temp2[3,6]],[temp2[3,1],temp2[3,2],temp2[3,3],temp2[3,4],temp2[3,5],temp2[3,6]]);
+ correctanswer:invert(matrixa);
+ wronganswer1:matrixa;
+ wronganswer2:zeromatrix(3,3);
+ wronganswer3:ident(3);
+
+/* Define X = A^-1 B */
+ta2 : correctanswer.BB</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote>
+            <text>\[ AX=B, \quad A = {@matrixa@}, B ={@BB@}\]
+\[ A^{-1} = {@correctanswer@}, \quad X= {@ta2@}\]</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>matrix</type>
+            <tans>correctanswer</tans>
+            <boxsize>4</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords>determinant, invert</forbidwords>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>1</requirelowestterms>
+            <checkanswertype>1</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>matrix</type>
+            <tans>ta2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>ans2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>ta2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>ans2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        Solution to the system found correctly. Well done!
+    </span>
+    <span class="multilang" lang="no">
+        Riktig l&#248;sning til systemet funnet. Bra gjort!
+    </span>
+</p>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>ans2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        Your solution doesn't satisfy the equation \(A X = B \):
+        \[ A X = {@matrixa@} {@ans2@} = {@ matrixa . ans2@} \neq {@BB@} = B. \]
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sningen din tilfredsstiller ikke ligningen \(A X = B \):
+                \[ A X = {@matrixa@} {@ans2@} = {@ matrixa . ans2@} \neq {@BB@} = B. \]
+    </span>
+</p>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>Result</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>correctanswer</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>Result-0-T </trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        (a) Inverse matrix found correctly.
+    </span>
+    <span class="multilang" lang="no">
+        (a) Riktig inversmatrise funnet.
+    </span>
+</p>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>Result-0-F </falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>wronganswer1</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>Result-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        (a) This is the original matrix. You need to invert it, if possible!
+    </span>
+    <span class="multilang" lang="no">
+        (a) Dette er den opprinnelige matrisen. Du m&#229; invertere den, hvis mulig!
+    </span>
+</p>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>2</falsenextnode>
+                <falseanswernote>Result-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>2</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>wronganswer2</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>Result-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        (a) The matrix \({\bf A}\) is invertible.
+    </span>
+    <span class="multilang" lang="no">
+        (a) Matrisen \({\bf A}\) er inverterbar.
+    </span>
+</p>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>3</falsenextnode>
+                <falseanswernote>Result-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>3</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>wronganswer3</tans>
+                <testoptions/>
+                <quiet>1</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>Result-3-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        (a) This is the identity matrix.
+    </span>
+    <span class="multilang" lang="no">
+        (a) Dette er identitetsmatrisen.
+    </span>
+</p>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>Result-3-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>700964662</deployedseed>
+        <deployedseed>146849540</deployedseed>
+        <deployedseed>2114437610</deployedseed>
+        <deployedseed>1869200847</deployedseed>
+        <deployedseed>749750306</deployedseed>
+        <deployedseed>1241206102</deployedseed>
+        <deployedseed>1290863629</deployedseed>
+        <deployedseed>13650169</deployedseed>
+        <deployedseed>830729151</deployedseed>
+        <deployedseed>786056826</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>correctanswer</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta2</value>
+            </testinput>
+            <expected>
+                <name>ans2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>ans2-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>Result</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>Result-0-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>wronganswer1</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ev(ta2+[1,0,0], simp)</value>
+            </testinput>
+            <expected>
+                <name>ans2</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>ans2-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>Result</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>Result-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>3</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>wronganswer2</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta2</value>
+            </testinput>
+            <expected>
+                <name>ans2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>ans2-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>Result</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>Result-2-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>4</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>wronganswer3</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta2</value>
+            </testinput>
+            <expected>
+                <name>ans2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>ans2-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>Result</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>Result-3-T</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

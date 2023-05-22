@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>Eksponentiallikninger</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    Vi kan sette \(\lg\) p&#229; begge sider i en likning. Dette er nyttig hvis x er til stede i en eller flere eksponenter.
+</p>
+<p dir="ltr" style="text-align: left;">
+    Eksempel:
+</p>
+<p dir="ltr" style="text-align: center;">
+    \(2^x=1000\)
+</p>
+<p dir="ltr" style="text-align: center;">
+    \(\lg&#160;2^x= \lg 1000\)
+</p>
+<p dir="ltr" style="text-align: center;">
+    \(x\lg&#160;2= 3\)
+    <br/>
+</p>
+<p dir="ltr" style="text-align: center;">
+    \(x=\frac{3}{\lg&#160;2}\)
+    <br/>
+</p>
+<p dir="ltr" style="text-align: center;">
+    \(x=9.97\)
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

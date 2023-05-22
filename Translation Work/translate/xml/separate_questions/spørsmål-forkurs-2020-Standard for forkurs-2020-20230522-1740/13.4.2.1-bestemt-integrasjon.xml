@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>13.4.2.1 Bestemt integrasjon</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="en">
+    <h3>
+        <span>
+            Definite integration
+        </span>
+        <br/>
+    </h3>
+    <p>
+        When dealing with definite integrals the relevant formula is as follows:
+    </p>
+    <div class="HELM_keypoint">
+        <h4>
+            Key Point
+        </h4>
+        <p>
+            <strong>
+                Integration by Parts for Definite Integrals
+            </strong>
+        </p>
+        <p>
+            For definite integrals, given functions \(f(x)\) and \(g(x)\):
+        </p>
+        \({\displaystyle\int_a^b f \cdot g \phantom{1} \mathrm{d}x}\) = \(\left[f \cdot {\displaystyle\int g \phantom{1} \mathrm{d}x}\right]_a^b - {\displaystyle\int_a^b \left(\dfrac{df}{dx} \displaystyle\int g \phantom{1} \mathrm{d}x \right)\mathrm{d}x}\)
+        <p>
+            Alternatively, given functions \(u\) and \(v\):
+        </p>
+        \({\displaystyle \int_a^b u\dfrac{d v}{d x}\mathrm{d}x = \left[\phantom{\dfrac{1}{1}}\!\!\!u.v\right]_a^b-\displaystyle \int_a^b v\dfrac{d u}{d x} \mathrm{d}x}\)
+    </div>
+    <p>
+    </p>
+    <hr/>
+    <h4 class="HELM_example">
+        Example
+    </h4>
+    <p>
+        Find \({\displaystyle\int_0^2 x e^x\mathrm{d}x}\)
+    </p>
+    <h4 class="HELM_solution">
+        Solution
+    </h4>
+    <p>
+        We let \(f = x\) and \(g = e^x\). Then \(\dfrac{df}{dx} = 1\) and \({\displaystyle\int g \phantom{.} \mathrm{d}x} = e^x\). Using integration by parts we obtain
+    </p>
+    <p>
+    </p>
+    \({\displaystyle\int_0^2 x e^x\mathrm{d}x}\) = \(\left[\phantom{\dfrac{1}{1}}\!\!\! x e^x\right]_0^2 - {\displaystyle\int_0^2 1 . e^x\mathrm{d}x} = 2 e^2 - \left[\phantom{\dfrac{1}{1}}\!\!\!e^x\right]_0^2 = 2 e^2 - [e^2 - 1]= e^2 +1\)
+    <p>
+    </p>
+    <p>
+        (or 8.389 to 3 d.p.)
+    </p>
+    <p>
+    </p>
+    <hr/>
+    <h4 class="HELM_example">
+        Example
+    </h4>
+    <p>
+        Find \({\displaystyle\int_0^{\frac{\pi}{4}}(4-3x)\sin x\mathrm{d}x}\).
+    </p>
+    <h4 class="HELM_solution">
+        Solution
+    </h4>
+    <p>
+        Take \(f = 4-3x\) and \(g = \sin(x)\) and complete the integral:
+    </p>
+    \begin{eqnarray*} \int_0^{\frac{\pi}{4}} (4-3x)\sin x\,dx &amp;=&amp; \left[\phantom{\dfrac{1}{1}}\!\!\!(4-3x)(-\cos x)\right]_0^{\frac{\pi}{4}}-3\int_0^{\frac{\pi}{4}} \cos x\, dx\\ &amp;=&amp; \left[\phantom{\dfrac{1}{1}}\!\!\!(4-3x)(-\cos x)\right]_0^{\frac{\pi}{4}}-3\left[\phantom{\dfrac{1}{1}}\!\!\!\sin
+x\right]_0^{\frac{\pi}{4}}\\ &amp;=&amp; 0.716 \phantom{1}(3\phantom{1}d.p.) \end{eqnarray*}
+</span>
+<span class="multilang" lang="no">
+    <h3>
+        <span>
+            Bestemt integrasjon
+        </span>
+        <br/>
+    </h3>
+    <p>
+        N&#229;r vi regner bestemte integraler brukes f&#248;lgende formel:
+    </p>
+    <div class="HELM_keypoint">
+        <h4>
+            Kort fortalt
+        </h4>
+        <p>
+            <strong>
+                Delvis integrasjon for Bestemte integraler
+            </strong>
+        </p>
+        <p>
+            For bestemte integral, gitt funksjonene \(f(x)\) og \(g(x)\):
+        </p>
+        \({\displaystyle\int_a^b f \cdot g \phantom{1} \mathrm{d}x}\) = \(\left[f \cdot {\displaystyle\int g \phantom{1} \mathrm{d}x}\right]_a^b - {\displaystyle\int_a^b \left(\dfrac{df}{dx} \displaystyle\int g \phantom{1} \mathrm{d}x \right)\mathrm{d}x}\)
+        <p>
+            Alternativt, gitt funksjoner \(u\) og \(v\):
+        </p>
+        \({\displaystyle \int_a^b u\dfrac{d v}{d x}\mathrm{d}x = \left[\phantom{\dfrac{1}{1}}\!\!\!u.v\right]_a^b-\displaystyle \int_a^b v\dfrac{d u}{d x} \mathrm{d}x}\)
+    </div>
+    <p>
+    </p>
+    <hr/>
+    <h4 class="HELM_example">
+        Eksempel
+    </h4>
+    <p>
+        Finn \({\displaystyle\int_0^2 x e^x\mathrm{d}x}\)
+    </p>
+    <h4 class="HELM_solution">
+        L&#248;sning
+    </h4>
+    <p>
+        Vi velger \(f = x\) og \(g = e^x\). Da blir \(\dfrac{df}{dx} = 1\) og \({\displaystyle\int g \phantom{.} \mathrm{d}x} = e^x\). Med delvis integrasjon f&#229;r vi
+    </p>
+    <p>
+    </p>
+    \({\displaystyle\int_0^2 x e^x\mathrm{d}x}\) = \(\left[\phantom{\dfrac{1}{1}}\!\!\! x e^x\right]_0^2 - {\displaystyle\int_0^2 1 . e^x\mathrm{d}x} = 2 e^2 - \left[\phantom{\dfrac{1}{1}}\!\!\!e^x\right]_0^2 = 2 e^2 - [e^2 - 1]= e^2 +1\)
+    <p>
+    </p>
+    <p>
+        (eller 8.389 til 3 gjeldende siffer)
+    </p>
+    <p>
+    </p>
+    <hr/>
+    <h4 class="HELM_example">
+        Eksempel
+    </h4>
+    <p>
+        Finn \({\displaystyle\int_0^{\frac{\pi}{4}}(4-3x)\sin x\mathrm{d}x}\).
+    </p>
+    <h4 class="HELM_solution">
+        L&#248;sning
+    </h4>
+    <p>
+        La \(f = 4-3x\) og \(g = \sin(x)\) og integrer:
+    </p>
+    \begin{eqnarray*} \int_0^{\frac{\pi}{4}} (4-3x)\sin x\,dx &amp;=&amp; \left[\phantom{\dfrac{1}{1}}\!\!\!(4-3x)(-\cos x)\right]_0^{\frac{\pi}{4}}-3\int_0^{\frac{\pi}{4}} \cos x\, dx\\ &amp;=&amp; \left[\phantom{\dfrac{1}{1}}\!\!\!(4-3x)(-\cos x)\right]_0^{\frac{\pi}{4}}-3\left[\phantom{\dfrac{1}{1}}\!\!\!\sin
+x\right]_0^{\frac{\pi}{4}}\\ &amp;=&amp; 0.716 \phantom{1}(3\phantom{1}d.p.) \end{eqnarray*}
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

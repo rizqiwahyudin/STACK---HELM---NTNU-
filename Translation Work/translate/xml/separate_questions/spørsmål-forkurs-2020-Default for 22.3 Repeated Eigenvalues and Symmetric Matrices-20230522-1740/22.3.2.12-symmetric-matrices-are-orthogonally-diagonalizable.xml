@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>22.3.2.12 Symmetric matrices are orthogonally diagonalizable</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        The following is the key result of this Section.
+    </span>
+    <span class="multilang" lang="no">
+        F&#248;lgende er hovedresultatet til seksjonen.
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            <strong>
+                Any
+            </strong>
+            symmetric matrix \(A\) can be diagonalized using an orthogonal modal matrix \(P\) via the transformation
+                                \[ P^TAP = D = \left[\begin{array}{cccc}\lambda_1 &amp; 0 &amp; \cdots &amp; 0\\ 0 &amp; \lambda_2 &amp; \cdots &amp; 0\\ \vdots &amp; \vdots &amp; \ddots &amp; \\ 0 &amp; 0 &amp; &amp; \lambda_n\end{array}\right]. \]
+                                It follows that any \(n\times n\) symmetric matrix
+            <strong>
+                must
+            </strong>
+            possess \(n\) mutually orthogonal eigenvectors
+            <strong>
+                even if some of the eigenvalues are repeated
+            </strong>
+            .
+        </span>
+        <span class="multilang" lang="no">
+            <strong>
+                Enhver
+            </strong>
+            symmetrisk matrise \(A\) kan diagonaliseres ved hjelp av en ortogonal modal matrise \(P\) via transformasjonen
+                                                \[ P^TAP = D = \left[\begin{array}{cccc}\lambda_1 &amp; 0 &amp; \cdots &amp; 0\\ 0 &amp; \lambda_2 &amp; \cdots &amp; 0\\ \vdots &amp; \vdots &amp; \ddots &amp; \\ 0 &amp; 0 &amp; &amp; \lambda_n\end{array}\right]. \]
+                                                Det f&#248;lger at enhver \(n\times n\) symmetrisk matrise
+            <strong>
+                m&#229;
+            </strong>
+            ha \(n\) ortogonale egenvektorer
+            <strong>
+                selv om noen av egenverdiene er like
+            </strong>
+            .
+        </span>
+    </p>
+</div>
+<p>
+    <span class="multilang" lang="en">
+        It should be clear to the reader that the above Key Point is a very powerful result for any applications that involve diagonalization of a symmetric matrix. Further, if we do need to find the inverse of \(P\), then this is a trivial process since \(P^{-1}=P^T\) (the previous Key Point).
+    </span>
+    <span class="multilang" lang="no">
+        Det b&#248;r v&#230;re klart for leseren at ovenst&#229;ende n&#248;kkelpunkt er et sv&#230;rt kraftig resultat for alle applikasjoner som involverer diagonalisering av en symmetrisk matrise. Videre, hvis vi trenger &#229; finne inversen til \(P\), s&#229; er dette en enkel prosess siden \(P^{-1}=P^T\) (det forrige n&#248;kkelpunktet).
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

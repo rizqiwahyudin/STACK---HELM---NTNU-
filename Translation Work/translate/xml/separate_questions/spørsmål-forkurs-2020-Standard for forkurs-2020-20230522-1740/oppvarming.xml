@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="multichoice">
+        <name>
+            <text>Oppvarming</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    Hva er trevektorproduktet \((\vec{a}\times\vec{b})\cdot\vec{c}\)?
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <showstandardinstruction>0</showstandardinstruction>
+        <correctfeedback format="html">
+            <text>Svaret ditt er riktig.</text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text>Svaret ditt er delvis korrekt.</text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text>Svaret ditt er feil</text>
+        </incorrectfeedback>
+        <shownumcorrect/>
+        <answer fraction="-10" format="html">
+            <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    En vektor som st&#229;r vinkelrett p&#229; alle tre vektorer.
+</p>
+]]></text>
+            <feedback format="html">
+                <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    Galt svar. Hint: Husk at kryssproduktet er en vektor! Hva skjer n&#229;r vi finner prikkproduktet av denne vektoren og \(\vec{c}\)?
+</p>
+]]></text>
+            </feedback>
+        </answer>
+        <answer fraction="-10" format="html">
+            <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    En vektor med lengde lik volumet av parallellepipedet utspent av de tre vektorene.
+</p>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <answer fraction="100" format="html">
+            <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    Et tall som er likt volumet av parallellepipedet utspent av de tre vektorene.
+    <br/>
+</p>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <answer fraction="-10" format="html">
+            <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    Et tall som er likt produktet av lengdene til de tre vektorene.
+</p>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <hint format="html">
+            <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    Pr&#248;v igjen!
+</p>
+]]></text>
+        </hint>
+    </question>
+    
+
+</quiz>

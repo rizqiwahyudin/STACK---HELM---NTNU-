@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>4.3.2.1 Engineering example</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<h4>
+    <span class="multilang" lang="en">
+        Amplitude modulation
+    </span>
+    <span class="multilang" lang="no">
+        Amplitudemodulering
+    </span>
+</h4>
+<h5>
+    <span class="multilang" lang="en">
+        Introduction
+    </span>
+    <span class="multilang" lang="no">
+        Indroduksjon
+    </span>
+</h5>
+<p>
+    <span class="multilang" lang="en">
+        Amplitude Modulation (the AM in AM radio) is a method of sending electromagnetic signals of a certain frequency (signal frequency) at another frequency (carrier frequency) which may be better for transmission. Modulation can be represented by the multiplication together of the carrier and modulating signals. To
+        <strong>
+            demodulate
+        </strong>
+        the signal the carrier frequency must be removed from the modulated signal.
+    </span>
+    <span class="multilang" lang="no">
+        Amplitudemodulering (AM i AM-radio) er en metode for &#229; sende elektromagnetiske signaler med en bestemt frekvens (signalfrekvens) ved en annen frekvens (b&#230;refrekvens) som kan v&#230;re bedre for overf&#248;ring. Modulasjon kan representeres ved multiplikasjon av b&#230;reb&#248;lgen og modulasjon signalet. For &#229;
+        <strong>
+            demodulere
+        </strong>
+        signalet m&#229; b&#230;refrekvensen fjernes fra det modulerte signalet.
+    </span>
+</p>
+<h5>
+    <span class="multilang" lang="en">
+        Problems in words
+    </span>
+    <span class="multilang" lang="no">
+        Problemet i ord
+    </span>
+</h5>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                A single frequency of \(200\ \mathrm{Hz}\) (message signal) is amplitude modulated with a carrier frequency of \(2\ \mathrm{MHz}\). Show that the modulated signal can be represented by the sum of two frequencies at \(2 \times 10^6 \pm 200\ \mathrm{Hz}\)
+            </span>
+            <span class="multilang" lang="no">
+                En enkel frekvens p&#229; \(200\ \mathrm{Hz}\) (meldingssignal) er amplitudemodulert med en b&#230;refrekvens p&#229; \(2\ \mathrm{MHz}\). Vis at det modulerte signalet kan representeres som summen av to frekvenser p&#229; \(2 \times 10^6 \pm 200\ \mathrm{Hz}\)
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                Show that the modulated signal can be demodulated by using a locally generated carrier and applying a low-pass filter.
+            </span>
+            <span class="multilang" lang="no">
+                Vis at det modulerte signalet kan demoduleres ved &#229; bruke en lokalt generert b&#230;reb&#248;lge og et lavpassfilter.
+            </span>
+        </p>
+    </li>
+</ol>
+<h5>
+    <span class="multilang" lang="en">
+        Mathematical statement of problem
+    </span>
+    <span class="multilang" lang="no">
+        Matematisk problemformulering
+    </span>
+</h5>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                Express the message signal as \(m=a\cos(\omega_mt)\) and the carrier as \(c=b\cos(\omega_c t)\).
+            </span>
+            <span class="multilang" lang="no">
+                Uttrykk meldingssignalet som \(m=a\cos(\omega_mt)\) og b&#230;reren som \(c=b\cos(\omega_c t)\).
+            </span>
+        </p>
+        <p>
+            <span class="multilang" lang="en">
+                Assume that the modulation gives the product \(mc=ab\cos(\omega_ct)\cos(\omega_mt)\).
+            </span>
+            <span class="multilang" lang="no">
+                Anta at moduleringen gir produktet \(mc=ab\cos(\omega_ct)\cos(\omega_mt)\).
+            </span>
+        </p>
+        <p>
+            <span class="multilang" lang="en">
+                Use trigonometric identities to show that
+            </span>
+            <span class="multilang" lang="no">
+                Bruk trigonometriske identiteter til &#229; vise at
+            </span>
+        </p>
+        \[mc=ab\cos(\omega_ct)\cos( \omega_mt)=k_1\cos((\omega_c- \omega_m)t)+k_2\cos((\omega_c+ \omega_m)t),\]
+        <p>
+            <span class="multilang" lang="en">
+                where \(k_1\) and \(k_2\) are constants.
+            </span>
+            <span class="multilang" lang="no">
+                der \(k_1\) og \(k_2\) er konstanter.
+            </span>
+        </p>
+        <p>
+            <span class="multilang" lang="en">
+                Then substitute \( \omega_c= 2 \times 10^6 \times 2\pi \) and \( \omega_m= 200 \times 2\pi \) to calculate the two resulting frequencies.
+            </span>
+            <span class="multilang" lang="no">
+                Sett deretter inn \( \omega_c= 2 \times 10^6 \times 2\pi \) og \( \omega_m= 200 \times 2\pi \) for &#229; beregne de to resulterende frekvensene.
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                Use trigonometric identities to show that multiplying the modulated signal by \(b\cos ( \omega_ct)\) results in the lowest frequency component of the output having a frequency equal to the original message signal.
+            </span>
+            <span class="multilang" lang="no">
+                Bruk trigonometriske identiteter til &#229; vise at multiplisering av det modulerte signalet med \(b\cos(\omega_ct)\) resulterer i at den laveste frekvenskomponenten til utgangen har en frekvens lik det opprinnelige meldingssignalet.
+            </span>
+        </p>
+    </li>
+</ol>
+<h5>
+    <span class="multilang" lang="en">
+        Mathematical analysis
+    </span>
+    <span class="multilang" lang="no">
+        Matematisk analyse
+    </span>
+</h5>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The message signal has a frequency of \(f_m=200\ \mathrm{Hz}\) so \( \omega_m = 2\pi f_c= 2\pi \times 200 = 400\pi \) radians per second.
+            </span>
+            <span class="multilang" lang="no">
+                Meldingssignalet har en frekvens p&#229; \(f_m=200\ \mathrm{Hz}\) s&#229; \( \omega_m = 2\pi f_c= 2\pi \times 200 = 400\pi \) radianer per sekund.
+            </span>
+        </p>
+        <p>
+            <span class="multilang" lang="en">
+                The carrier signal has a frequency of \(f_c=2 \times 10^6\ \mathrm{Hz}\).
+            </span>
+            <span class="multilang" lang="no">
+                B&#230;resignalet har en frekvens p&#229; \(f_c=2 \times 10^6\ \mathrm{Hz}\).
+            </span>
+        </p>
+        <p>
+            <span class="multilang" lang="en">
+                Hence \(\omega_c = 2\pi f_c=2\pi\times 2 \times10^6 = 4\times 10^6\pi\) radians per second.
+            </span>
+            <span class="multilang" lang="no">
+                Dermed er \(\omega_c = 2\pi f_c=2\pi\times 2 \times10^6 = 4\times 10^6\pi\) radianer per sekund.
+            </span>
+        </p>
+        <p>
+            <span class="multilang" lang="en">
+                So \(mc=ab\cos(4\times 10^6\pi t)\cos(400\pi t)\).
+            </span>
+            <span class="multilang" lang="no">
+                S&#229; \(mc=ab\cos(4\times 10^6\pi t)\cos(400\pi t)\).
+            </span>
+        </p>
+        <p>
+            <span class="multilang" lang="en">
+                We know the identity
+            </span>
+            <span class="multilang" lang="no">
+                Vi kjenner til identiteten
+            </span>
+        </p>
+        \[\cos(A+B)+\cos(A-B)\equiv 2\cos(A)\cos(B)\]
+        <p>
+            <span class="multilang" lang="en">
+                Rearranging gives the identity:
+            </span>
+            <span class="multilang" lang="no">
+                Omorganisering gir identiteten:
+            </span>
+        </p>
+        \[\cos(A)\cos(B)\equiv \frac{1}{2}(\cos(A+B)+\cos(A-B)) \tag{1}\]
+        <p>
+            <span class="multilang" lang="en">
+                Using \((1)\) with \(A=4\times 10^6\pi t\) and \(B=  400\pi t\) gives
+            </span>
+            <span class="multilang" lang="no">
+                &#197; bruke \((1)\) med \(A=4\times 10^6\pi t\) og \(B=  400\pi t\) f&#229;r vi
+            </span>
+        </p>
+        \[\begin{aligned} mc =&amp; ab(\cos(4\times10^6\pi t)\cos (400\pi t))\\ =&amp;\frac{1}{2}ab(\cos(4\times 10^6\pi t+400\pi t)+ \cos(4\times 10^6\pi t-400\pi t))\\ =&amp;\frac{1}{2}ab(\cos(4000400\pi t)+\cos(3999600\pi t)). \end{aligned}\]
+        <p>
+            <span class="multilang" lang="en">
+                So the modulated signal is the
+                <strong>
+                    sum of two waves
+                </strong>
+                with angular frequency of \(4000400\)\(\pi\) and \(3999600\)\(\pi\) radians per second corresponding to frequencies of \(4000400\pi/(2\pi)\) and \(39996000\pi /(2\pi)\), that is \(2000200\ \mathrm{Hz}\) and \(1999800\ \mathrm{Hz}\), i.e. \(2 \times 10^6 \pm 200\ \mathrm{Hz}\).
+            </span>
+            <span class="multilang" lang="no">
+                S&#229; det modulerte signalet er
+                <strong>
+                    summen av to b&#248;lger
+                </strong>
+                med vinkelfrekvensen \(4000400\)\(\pi\) og \(3999600\)\(\pi\) radianer per sekund som tilsvarer frekvenser p&#229; \(4000400\pi/(2\pi)\) og \(39996000\pi /(2\pi)\), det vil si \(2000200\ \mathrm{Hz}\) og \(1999800\ \mathrm{ Hz}\), alts&#229; \(2 \times 10^6 \pm 200\ \mathrm{Hz}\).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                Taking identity \((1)\) and multiplying through by \(\cos(A)\) gives
+            </span>
+            <span class="multilang" lang="no">
+                &#197; ta identitet \((1)\) og multiplisere med \(\cos(A)\) f&#229;r vi
+            </span>
+        </p>
+        \[\cos(A)\cos(A)\cos(B)\equiv \frac{1}{2}\cos (A)(\cos(A+B)+\cos(A-B))\]
+        <p>
+            <span class="multilang" lang="en">
+                so
+            </span>
+            <span class="multilang" lang="no">
+                s&#229;
+            </span>
+        </p>
+        \[\cos(A)\cos(A)\cos(B)\equiv \frac{1}{2}(\cos (A)\cos(A+B)+\cos (A)\cos(A-B)) \tag{2}\]
+        <p>
+            <span class="multilang" lang="en">
+                Identity \((1)\) can be applied to both expressions in the right-hand side of \((2)\). In the first expression, using &#8216;\(A+B\)&#8217; instead of &#8216;\(B\)&#8217;, gives
+            </span>
+            <span class="multilang" lang="no">
+                Identitet \((1)\) kan brukes p&#229; begge uttrykkene p&#229; h&#248;yre side av \((2)\). I det f&#248;rste uttrykket, ved &#229; bruke '\(A+B\)' i stedet for '\(B\)', f&#229;r vi
+            </span>
+        </p>
+        \[\cos(A)\cos(A+B)\equiv \frac{1}{2}(\cos(A+A+B)+\cos(A-A-B))\equiv \frac{1}{2}(\cos (2A+B)+\cos (B)),\]
+        <p>
+            <span class="multilang" lang="en">
+                where we have used \(\cos(-B)\equiv \cos(B).\).
+            </span>
+            <span class="multilang" lang="no">
+                hvor vi har brukt at \(\cos(-B)\equiv \cos(B).\).
+            </span>
+        </p>
+        <p>
+            <span class="multilang" lang="en">
+                Similarly, in the second expression, using &#8216;\(A-B\)&#8217; instead of &#8216;\(B\)&#8217;, gives
+            </span>
+            <span class="multilang" lang="no">
+                Lignende, i det andre uttrykket, ved &#229; bruke '\(A-B\)' i stedet for '\(B\)', f&#229;r vi
+            </span>
+        </p>
+        \[\cos(A)\cos(A-B)\equiv \frac{1}{2}(\cos(2A-B)+\cos(B))\]
+        <p>
+            <span class="multilang" lang="en">
+                Together these give:
+            </span>
+            <span class="multilang" lang="no">
+                Sammen gir disse:
+            </span>
+        </p>
+        \[\begin{aligned} \cos(A)\cos(A)\cos(B) \equiv &amp; \textstyle\frac{1}{4}(\cos(2A+B)+\cos(B)+\cos(2A-B)+\cos(B))\\ \equiv&amp;\textstyle\frac{1}{2}\cos(B)+\textstyle\frac{1}{4}(\cos(2A+B)+\cos(2A-B))\qquad\qquad\qquad\qquad \end{aligned}\]
+        <p>
+            <span class="multilang" lang="en">
+                With \(A=4\times 10^6\pi t\) (carrier) and \(B=400\pi t\) (message) and substituting for the given frequencies, the modulated signal multiplied by the original carrier signal gives
+            </span>
+            <span class="multilang" lang="no">
+                Med \(A=4\times 10^6\pi t\) (b&#230;reb&#248;lge) og \(B=400\pi t\) (melding) og ved &#229; sette inn de gitte frekvensene, gir det modulerte signalet multiplisert med det opprinnelige b&#230;resignalet
+            </span>
+        </p>
+        \[ab^2\cos(4\times 10^6\pi t)\cos(4\times 10^6\pi t)\cos(400\pi t)=\] \[\frac{1}{2}ab^2\cos(2\pi\times 200t)+\frac{1}{4}ab^2(\cos(2\times 4\times10^6\pi t+400\pi t) + \cos(2\times 4\times 10^6\pi t-400\pi t))\]
+        <p>
+            <span class="multilang" lang="en">
+                The last two terms have frequencies of \(4\times 10^6 \pm 200\ \mathrm{Hz}\) which are sufficiently high that a low-pass filter would remove them and leave only the term
+            </span>
+            <span class="multilang" lang="no">
+                De to siste leddene har frekvenser p&#229; \(4\times 10^6 \pm 200\ \mathrm{Hz}\) som er tilstrekkelig h&#248;ye til at et lavpassfilter vil fjerne dem og bare la det riktige leddet st&#229; igjen
+            </span>
+        </p>
+        \[ab^2\cos(2\pi\times 200 t)\]
+        <p>
+            <span class="multilang" lang="en">
+                which is the original message signal multiplied by a constant term.
+            </span>
+            <span class="multilang" lang="no">
+                som er det opprinnelige meldingssignalet multiplisert med et konstant ledd.
+            </span>
+        </p>
+    </li>
+</ol>
+<h5>
+    <span class="multilang" lang="en">
+        Interpretation
+    </span>
+    <span class="multilang" lang="no">
+        Tolkning
+    </span>
+</h5>
+<p>
+    <span class="multilang" lang="en">
+        Amplitude modulation of a single frequency message signal \((f_m)\) with a single frequency carrier signal \((f_c)\) can be shown to be equal to the sum of two cosines with frequencies \(f_c\pm f_m\). Multiplying the modulated signal by a locally generated carrier signal and applying a low-pass filter can reproduce the frequency, \(f_m\), of the message signal.
+    </span>
+    <span class="multilang" lang="no">
+        Amplitudemodulasjon av et enkelt frekvensmeldingssignal \((f_m)\) med et enkelt frekvensb&#230;resignal \((f_c)\) kan vises &#229; v&#230;re lik summen av to cosinus signaler med frekvensene \(f_c\pm f_m\). &#197; multiplisere det modulerte signalet med et lokalt generert b&#230;resignal og bruke et lavpassfilter kan frekvensen, \(f_m\), til meldingssignalet reproduseres .
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        This is known as
+        <strong>
+            double side band amplitude modulation
+        </strong>
+        .
+    </span>
+    <span class="multilang" lang="no">
+        Dette er kjent som
+        <strong>
+            dobbelt sideb&#229;nds amplitudemodulasjon
+        </strong>
+        .
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

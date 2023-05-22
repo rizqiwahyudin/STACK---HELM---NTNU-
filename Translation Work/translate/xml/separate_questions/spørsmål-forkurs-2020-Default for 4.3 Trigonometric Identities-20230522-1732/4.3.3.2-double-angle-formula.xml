@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>4.3.3.2 Double angle formula</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Double angle formulae
+    </span>
+    <span class="multilang" lang="no">
+        Doble vinkler formelen
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        If we put \(B=A\) in the identity \(\sin (A+B)\equiv\sin A\cos B+\cos A\sin B\) we obtain
+    </span>
+    <span class="multilang" lang="no">
+        Hvis vi setter \(B=A\) i identiteten \(\sin (A+B)\equiv\sin A\cos B+\cos A\sin B\) f&#229;r vi
+    </span>
+    <br/>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    \[\sin 2A\equiv\sin A\cos A+\cos A\sin A\]
+    <p>
+        <span class="multilang" lang="en">
+            so
+        </span>
+        <span class="multilang" lang="no">
+            s&#229;
+        </span>
+    </p>
+    \[\sin 2A\equiv 2\sin A\cos A\]
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

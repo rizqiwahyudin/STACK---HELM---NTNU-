@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>7.1.2.1 Definitions</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Definitions
+        <br/>
+    </span>
+    <span class="multilang" lang="no">
+        Definisjoner
+        <br/>
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        An array of numbers, rectangular in shape, is called a
+        <b>
+            matrix
+        </b>
+        .&#160; The first matrix below has \(3\) rows and \(2\) columns and is said to be a '\(3\) by \(2\)' matrix (written \(3\times 2\)). The second matrix is a '\(2\) by \(4\)' matrix (written \(2\times 4\)).
+    </span>
+    <span class="multilang" lang="no">
+        En rekke tall, i rektangul&#230;r form, kalles en
+        <b>
+            matrise
+        </b>
+        . Den f&#248;rste matrisen nedenfor har \(3\) rader og \(2\) kolonner og sies &#229; v&#230;re en '\(3\) ganger \(2\)' matrise (skrevet \(3 \times 2 \)). Den andre matrisen er en '\(2 \) ganger \(4 \)' matrise (skrevet \(2 \times 4 \)).
+    </span>
+</p>
+<p>
+    \[\left[\begin{array}{rr}1&amp;4\\ -2&amp;3\\ 2&amp;1\end{array}\right]\ \qquad\qquad\left[\begin{array}{cccc}1&amp;2&amp;3&amp;4\\ 5&amp;6&amp;7&amp;9\end{array}\right]\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The general \(3\times 3\) matrix can be written
+    </span>
+    <span class="multilang" lang="no">
+        Den generelle \(3 \times 3 \) matrisen kan skrives som
+    </span>
+</p>
+<p>
+    \[A=\left[\begin{array}{lll}a_{11}&amp;a_{12}&amp;a_{13}\\ a_{21}&amp;a_{22}&amp;a_{23}\\a_{31}&amp;a_{32}&amp;a_{33}\end{array}\right]\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        where \(a_{ij}\) denotes the element in row \(i\), column \(j\).
+    </span>
+    <span class="multilang" lang="no">
+        der \(a_{ij}\) betegner elementet i rad \(i\), kolonne \(j\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        For example in the matrix:
+    </span>
+    <span class="multilang" lang="no">
+        For eksempel matrisen:
+    </span>
+</p>
+<p>
+    \[A=\left[\begin{array}{lll}\hfill 0&amp;\hfill -1&amp;\hfill -3\\ \hfill0&amp;\hfill 6&amp;\hfill -12\\ \hfill 5&amp;\hfill 7&amp;\hfill 123\end{array}\right]\]
+</p>
+<p>
+    \[a_{11}= 0,\qquad a_{12}=-1,\qquad a_{13}=-3,\quad\dots \quad a_{22}=6,\quad \dots \quad a_{32}=7,\quad a_{33}=123\]
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <h5 style="text-align:center;">
+        <span class="multilang" lang="en">
+            The General Matrix
+        </span>
+        <span class="multilang" lang="no">
+            Den generelle matrisen
+        </span>
+    </h5>
+    <p style="text-align: left;">
+    </p>
+    <p style="">
+        <span class="multilang" lang="en">
+            A general \(m\times n\) matrix \(A\)&#160; has \(m\) rows and \(n\) columns. The entries in the matrix \(A\) are called the
+            <b>
+                elements
+            </b>
+            of \(A\). In matrix \(A\) the element in row \(i\) and column \(j\) is denoted by \(a_{ij}\).
+        </span>
+        <span class="multilang" lang="no">
+            En generell \(m \times n \) matrise \(A\) har \(m \) rader og \(n \) kolonner. I matrisen \(A\) er elementet i rad \(i \) og kolonne \(j \) betegnet med \(a_{ij} \).
+        </span>
+    </p>
+    <p>
+    </p>
+</div>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        A matrix with only one column is called a
+        <b>
+            column vector
+        </b>
+        (or
+        <b>
+            column matrix
+        </b>
+        ). For example, \(\left[\begin{array}{c}x_1\\ x_2\\ x_3\end{array}\right]\) and \(\left[\begin{array}{c}3\\ 4\\ 5\end{array}\right]\) are both \(3\times 1\) column vectors. A matrix with only one row is called a
+        <b>
+            row vector
+        </b>
+        (or
+        <b>
+            row matrix
+        </b>
+        ). For example,&#160; \([2, -3, 8, 9]\) is a \(1\times 4\) row vector. Often the entries in a row vector are separated by commas for clarity.
+    </span>
+    <span class="multilang" lang="no">
+        En matrise med bare en kolonne kalles en
+        <b>
+            kolonnevektor
+        </b>
+        (eller
+        <b>
+            kolonnematrise
+        </b>
+        ). For eksempel er \(\left[\begin{array}{c}x_1\\ x_2\\ x_3\end{array}\right]\) og \(\left[\begin{array}{c}3\\ 4\\ 5\end{array}\right]\) begge \(3 \times 1 \) kolonnevektorer. En matrise med bare en rad kalles en
+        <b>
+            radvektor
+        </b>
+        (eller
+        <b>
+            radmatrise
+        </b>
+        ). For eksempel er \([2, -3, 8, 9] \) en \(1 \times 4 \) radvektor. Ofte skilles elementene i en radvektor med komma for oversiktlighet.
+    </span>
+</p>
+<h4>
+    <span class="multilang" lang="en">
+        Square matrices
+    </span>
+    <span class="multilang" lang="no">
+        Kvadratisk matriser
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+    </span>
+    <span class="multilang" lang="no">
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        When the number of rows is the same as the number of columns, i.e. \(m=n\), the matrix is said to be
+        <b>
+            square
+        </b>
+        and of
+        <b>
+            order
+        </b>
+        \(n\) (or \(m\)).
+    </span>
+    <span class="multilang" lang="no">
+        N&#229;r antall rader er det samme som antall kolonner, dvs. \(m = n \), sies matrisen &#229; v&#230;re
+        <b>
+            kvadratisk
+        </b>
+        og av
+        <b>
+            orden
+        </b>
+        \(n\) (eller \(m\)).
+    </span>
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        <span class="multilang" lang="en">
+            In an \(n\times n\) square matrix \(A\), the
+            <b>
+                leading diagonal
+            </b>
+            (or
+            <b>
+                principal diagonal
+            </b>
+            ) is the `north-west to south-east' collection of elements \(a_{11},a_{22},\ldots , a_{nn}.\) The sum of the elements in the leading diagonal of \(A\) is called the
+            <b>
+                trace
+            </b>
+            of the matrix, denoted by \(\text{tr}(A)\).
+        </span>
+        <span class="multilang" lang="no">
+            I en \(n\times n\) kvadratisk matrix \(A\), er
+            <b>
+                diagonalen
+            </b>
+            den `nord-vest til s&#248;r-&#248;stlige' samlingen av elementer \(a_{11},a_{22},\ldots , a_{nn}.\) Summen av elementene i diagonalen til \(A\) er kjent som
+            <b>
+                sporet
+            </b>
+            til matrisen, og betegnet som \(\text{tr}(A)\).
+        </span>
+    </li>
+</ul>
+<p>
+</p>
+<p>
+    \[A=\left[\begin{matrix} a_{11}&amp;a_{12}&amp;\dots&amp;a_{1n}\\a_{21}&amp;a_{22}&amp;\dots&amp;a_{2n}\\\vdots&amp;\vdots&amp;\vdots&amp;\vdots\\a_{n1}&amp;a_{n2}&amp;\dots&amp;a_{nn}\end{matrix}\right] \qquad\qquad \text{tr}(A)=a_{11}+a_{22}+\dots +a_{nn}\]
+</p>
+<p>
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        <span class="multilang" lang="en">
+            A square matrix in which all the elements below the leading diagonal are zero is called an
+            <b>
+                upper triangular matrix
+            </b>
+            , often denoted by \(U\).
+        </span>
+        <span class="multilang" lang="no">
+            En kvadratisk matrise der alle elementene under den ledende diagonalen er null kalles en
+            <b>
+                &#248;vre triangulert matrise
+            </b>
+            , ofte betegnet med \(U\).
+        </span>
+    </li>
+</ul>
+\[U=\left[\begin{matrix}u_{11}&amp;u_{12}&amp;\dots&amp;\dots&amp;u_{1n}\\0&amp;u_{22}&amp;\dots&amp;\dots&amp;u_{2n}\\0&amp;0&amp;\dots&amp;\vdots&amp;\vdots\\0&amp;0&amp;\dots&amp;0&amp;u_{nn}\end{matrix}\right] \qquad\qquad u_{ij}=0\quad \text{
+<span class="multilang" lang="en">
+    when
+</span>
+<span class="multilang" lang="no">
+    n&#229;r
+</span>
+}\ \ i&gt;j\]
+<br/>
+<ul>
+    <li>
+        <span class="multilang" lang="en">
+            A square matrix in which all the elements above the leading diagonal are zero is called a
+            <b>
+                lower triangular matrix
+            </b>
+            , often denoted by \(L\).
+        </span>
+        <span class="multilang" lang="no">
+            En kvadratisk matrise der alle elementene over den ledende diagonalen er null kalles en
+            <b>
+                nedre triangulert matrise
+            </b>
+            , ofte betegnet som \(L\).
+        </span>
+    </li>
+    <p>
+    </p>
+</ul>
+\[L=\left[\begin{matrix}l_{11}&amp;0&amp;0&amp;\dots&amp;0\\l_{21}&amp;l_{22}&amp;0&amp;\dots&amp;0\\\vdots&amp;\vdots&amp;\dots&amp;\dots&amp;0\\l_{n1}&amp;l_{n2}&amp;\vdots&amp;\dots&amp;l_{nn}\end{matrix}\right] \qquad\qquad l_{ij}=0\quad \text{
+<span class="multilang" lang="en">
+    when
+</span>
+<span class="multilang" lang="no">
+    n&#229;r
+</span>
+}\ \ i&lt;j\]
+<p>
+</p>
+<ul>
+    <li>
+        <span class="multilang" lang="en">
+            A square matrix where all the non-zero elements are along the leading diagonal is called a diagonal matrix, often denoted by \(D\).
+        </span>
+        <span class="multilang" lang="no">
+            En kvadratisk matrise der alle ikke-null-elementene er langs den ledende diagonalen kalles en diagonal matrise, ofte betegnet som \(D \).
+        </span>
+    </li>
+</ul>
+<p>
+</p>
+<p>
+    \[ D=\left[\begin{matrix}d_{11}&amp;0&amp;0&amp;\dots&amp;0\\0&amp;d_{22}&amp;0&amp;\dots&amp;0\\0&amp;0&amp;\dots&amp;\dots&amp;0\\0&amp;0&amp;0&amp;\dots&amp;d_{nn}\end{matrix}\right] \qquad\qquad d_{ij}=0\quad \text{
+    <span class="multilang" lang="en">
+        when
+    </span>
+    <span class="multilang" lang="no">
+        n&#229;r
+    </span>
+    }\ \ i\ne j\]
+</p>
+<p>
+</p>
+<h4>
+    <span class="multilang" lang="en">
+        Some examples of matrices and their classification
+    </span>
+    <span class="multilang" lang="no">
+        Noen eksempler p&#229; matriser og deres klassifisering
+    </span>
+</h4>
+<p>
+    \(\qquad A=\left[\begin{array}{ccc} 1&amp;2&amp;3\\ 4&amp;5&amp;6\end{array}\right]\)
+    <span class="multilang" lang="en">
+        is \(2\times 3\).&#160; It is not square.
+    </span>
+    <span class="multilang" lang="no">
+        er \(2\times 3\).&#160; Den er ikke kvadratisk.
+    </span>
+</p>
+<p>
+    \(\qquad B=\left[\begin{array}{cc}1&amp;2\\ 3&amp;4\end{array}\right]\)
+    <span class="multilang" lang="en">
+        is \(2\times 2\). It is square.
+    </span>
+    <span class="multilang" lang="no">
+        er \(2\times 2\). Den er kvadratisk.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Also, \(\text{tr}(A)\) does not exist as it is not a square matrix, but \(\text{tr}(B)=1+4=5\).
+    </span>
+    <span class="multilang" lang="no">
+        \(\text{tr}(A)\) eksisterer ikke siden den ikke er kvadratisk, men \(\text{tr}(B)=1+4=5\).
+    </span>
+</p>
+<p>
+    \(\qquad C=\left[\begin{array}{rrr}1&amp;2&amp;3\\ 0&amp;-2&amp;-5\\ 0&amp;0&amp;1\end{array}\right]\)
+    <span class="multilang" lang="en">
+        and
+    </span>
+    <span class="multilang" lang="no">
+        og
+    </span>
+    \(D=\left[\begin{array}{rrr} 4&amp;0&amp;3\\ 0&amp;-2&amp;5\\ 0&amp;0&amp;1\end{array}\right]\)
+    <span class="multilang" lang="en">
+        are both \(3\times 3\), square and upper triangular.
+    </span>
+    <span class="multilang" lang="no">
+        er begge \(3\times 3\), kvadratisk og &#248;vre triangul&#230;re.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Also, \(\text{tr}(C)=0\) and \(\text{tr}(D)=3\).
+    </span>
+    <span class="multilang" lang="no">
+        \(\text{tr}(C)=0\) og \(\text{tr}(D)=3\).
+    </span>
+</p>
+<p>
+    \(\qquad E=\left[\begin{array}{rrr}1&amp;0&amp;0\\ 2&amp;-2&amp;0\\ 3&amp;-5&amp;1\end{array}\right]\)
+    <span class="multilang" lang="en">
+        and
+    </span>
+    <span class="multilang" lang="no">
+        og
+    </span>
+    \(F=\left[\begin{array}{rrr}-1&amp;0&amp;0\\ 1&amp;4&amp;0\\ 0&amp;1&amp;1\end{array}\right]\)
+    <span class="multilang" lang="en">
+        are both \(3\times 3\), square and lower triangular.
+    </span>
+    <span class="multilang" lang="no">
+        er begge \(3\times 3\), kvadratisk og nedre triangul&#230;re.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Also, \(\text{tr}(E)=0\) and \(\text{tr}(F)=4\).
+    </span>
+    <span class="multilang" lang="no">
+        \(\text{tr}(E)=0\) og \(\text{tr}(F)=4\).
+    </span>
+</p>
+<p>
+    \(\qquad G=\left[\begin{array}{rrr}1&amp;0&amp;0\\ 0&amp;2&amp;0\\ 0&amp;0&amp;-3\end{array}\right]\)
+    <span class="multilang" lang="en">
+        and
+    </span>
+    <span class="multilang" lang="no">
+        og
+    </span>
+    \(H=\left[\begin{array}{ccc}4&amp;0&amp;0\\ 0&amp;2&amp;0\\ 0&amp;0&amp;0\end{array}\right]\)
+    <span class="multilang" lang="en">
+        are both \(3\times 3\), square and diagonal.
+    </span>
+    <span class="multilang" lang="no">
+        er begge \(3\times 3\), kvadratiske og diagonale matriser.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Also, \(\text{tr}(G)=0\) and \(\text{tr}(H)=6\).
+    </span>
+    <span class="multilang" lang="no">
+        \(\text{tr}(G)=0\) og \(\text{tr}(H)=6\).
+    </span>
+</p>
+<ul>
+    <p>
+    </p>
+</ul>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

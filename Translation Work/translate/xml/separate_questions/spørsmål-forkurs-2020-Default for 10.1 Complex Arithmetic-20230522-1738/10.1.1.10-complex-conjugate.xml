@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>10.1.1.10 Complex Conjugate</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        If \(z=a+i b\) is any complex number then the complex conjugate of \(z\) is denoted by \(z^*\) and is defined by \[z^*=a-i b.\](Sometimes the notation \(\bar z\) is used instead of \(z^*\) to denote the conjugate).
+    </span>
+    <span class="multilang" lang="no">
+        Hvis \(z=a+ib\) er et komplekst tall, s&#229; er det kompleks konjugerte av \(z\) betegnet som \(z^*\) og er definert som \[z^*=a-ib.\] (Noen ganger brukes notasjonen \(\bar z\) i stedet for \(z^*\) for &#229; angi konjugasjonen).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        For example if \(z=2-3i\) then \(z^*=2+3i\).
+    </span>
+    <span class="multilang" lang="no">
+        For eksempel, hvis \(z=2-3i\), s&#229; er \(z^*=2+3i\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        If \(z\) is entirely real then \(z^*=z\) whereas if \(z\) is entirely imaginary then \(z^*=-z\). E.g. if \(z=17i\) then \(z^*=-17i\).
+    </span>
+    <span class="multilang" lang="no">
+        Hvis  \(z\)  er helt reell, s&#229; er  \(z^*=z\)  mens hvis  \(z\)  er helt imagin&#230;r, s&#229; er  \(z^*=-z\). F.eks. hvis  \(z=17i\), s&#229; er  \(z^*=-17i\) .
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In fact the following relationships are easily obtained: \[\qquad \text{Re}(z)={z+z^*\over 2}\qquad \text{and}\qquad \text{Im}(z)={i(z^*-z)\over {2}}\]
+    </span>
+    <span class="multilang" lang="no">
+        Faktisk kan f&#248;lgende relasjoner enkelt oppn&#229;s: \[\qquad \text{Re}(z)={z+z^*\over 2}\qquad \text{og}\qquad \text{Im}(z)={i(z^*-z)\over {2}}\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Complex numbers are added, subtracted, multiplied and divided in much the same way as these operations are carried out for real numbers.
+    </span>
+    <span class="multilang" lang="no">
+        Komplekse tall blir addert, subtrahert, multiplisert og delt p&#229; samme m&#229;te som disse operasjonene utf&#248;res for reelle tall.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

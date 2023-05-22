@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>4.3.1.7 Summary of trig identities</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    \[\begin{aligned} \tan (A+B) &amp;\equiv \dfrac{\tan A+\tan B}{1-\tan A\tan B} \\ \sin(A-B) &amp;\equiv \sin A\cos B-\cos A\sin B \\ \cos (A-B) &amp;\equiv \cos A\cos B+\sin A\sin B \\ \tan(A-B) &amp;\equiv \dfrac{\tan A-\tan B}{1+\tan A\tan B} \end{aligned}\]
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

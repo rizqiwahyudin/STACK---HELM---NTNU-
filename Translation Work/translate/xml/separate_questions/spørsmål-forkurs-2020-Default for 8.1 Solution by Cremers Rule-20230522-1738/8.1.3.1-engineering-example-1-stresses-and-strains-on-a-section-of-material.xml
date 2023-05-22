@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>8.1.3.1 Engineering Example 1 &#9472; Stresses and strains on a section of material</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Engineering Example -- Stresses and strains on a section of material
+    </span>
+    <span class="multilang" lang="no">
+        Stress og strain p&#229; et stykke materiale.
+    </span>
+</h4>
+<br/>
+<h5>
+    Introduction
+</h5>
+<p>
+    <span class="multilang" lang="en">
+        An important engineering problem is to determine the effect on materials of different types of loading. One way of measuring the effects is through the strain or fractional change in dimensions in the material which can be measured using a strain
+                gauge.
+    </span>
+    <span class="multilang" lang="no">
+        En viktig ingeni&#248;rutfordring er &#229; bestemme effekten p&#229; materialer av ulike typer belastninger. En m&#229;te &#229; m&#229;le effektene p&#229; er gjennom belastningsendringen eller br&#248;kendringen i dimensjoner i materialet, som kan m&#229;les ved hjelp av en belastningsensor.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        <strong>
+            Problem in words
+        </strong>
+    </span>
+    <span class="multilang" lang="no">
+        <strong>
+            Problemet i ord
+        </strong>
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In a homogeneous, isotropic and linearly elastic material, the strains (i.e. fractional displacements) on a section of the material, represented by \(\varepsilon_x, \ \varepsilon_y, \
+                                \varepsilon_z\) for the \(x\)-,&#160; \(y\)-,&#160;\(z\)-directions respectively, can be related to the stresses (i.e. force per unit area),
+                \(\sigma_x, \ \sigma_y, \ \sigma_z\) by the following system of equations.
+    </span>
+    <span class="multilang" lang="no">
+        I en homogen, isotrop og line&#230;r elastisk materiale, kan forskyvningene i et  avsnitt av materialet, representert ved \(\varepsilon_x, \ \varepsilon_y, \varepsilon_z\) for henholdsvis  \(x\)-, \(y\)- og  \(z\)-retningene, relateres til spenningene (dvs. kraft per enhetsomr&#229;de), \(\sigma_x, \ \sigma_y, \ \sigma_z\), ved hjelp av f&#248;lgende system av ligninger.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \[\begin{aligned}
+                                \varepsilon_x&amp;=&amp;\dfrac{1}{E}(\begin{array}{ccc}\sigma_x&amp;-v\sigma_y&amp;-v\sigma_z\end{array})\\
+                                \\
+                                \varepsilon_y&amp;=&amp;\dfrac{1}{E}(\begin{array}{ccc}-v\sigma_x&amp;+\sigma_y&amp;-v\sigma_z\end{array})\\
+                                \\
+                                \varepsilon_z&amp;=&amp;\dfrac{1}{E}(\begin{array}{ccc}-v\sigma_x&amp;-v\sigma_y&amp;+\sigma_z\end{array})\end{aligned}\]
+    </span>
+    <span class="multilang" lang="no">
+        \[\begin{aligned}
+                                \varepsilon_x&amp;=&amp;\dfrac{1}{E}(\begin{array}{ccc}\sigma_x&amp;-v\sigma_y&amp;-v\sigma_z\end{array})\\
+                                \\
+                                \varepsilon_y&amp;=&amp;\dfrac{1}{E}(\begin{array}{ccc}-v\sigma_x&amp;+\sigma_y&amp;-v\sigma_z\end{array})\\
+                                \\
+                                \varepsilon_z&amp;=&amp;\dfrac{1}{E}(\begin{array}{ccc}-v\sigma_x&amp;-v\sigma_y&amp;+\sigma_z\end{array})\end{aligned}\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        where \(E\) is the modulus of elasticity (also called Young&#226;&#8364;&#8482;s modulus) and \(v\) is Poisson&#226;&#8364;&#8482;s ratio which relates the lateral strain to the axial strain.
+    </span>
+    <span class="multilang" lang="no">
+        hvor  \(E\)  er elastisitetsmodulen (ogs&#229; kalt Youngs modul) og  \(v\)  er PoiSSons forhold som relaterer lateral deformasjon til aksial deformasjon.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Find expressions for the stresses \(\sigma_x, \ \sigma_y, \ \sigma_z,\) in terms of the strains \(\varepsilon_x,\
+                                \varepsilon_y,\) and \(\varepsilon_z.\)
+    </span>
+    <span class="multilang" lang="no">
+        Finn uttrykkene for spenningene  \(\sigma_x, \ \sigma_y, \ \sigma_z,\) basert p&#229; deformasjonene  \(\varepsilon_x,\
+                                \varepsilon_y,\)  og  \(\varepsilon_z.\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        <strong>
+            Mathematical statement of problem
+        </strong>
+    </span>
+    <span class="multilang" lang="no">
+        <strong>
+            Matematisk problemstilling
+        </strong>
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The given system of equations can be written as a matrix equation:
+    </span>
+    <span class="multilang" lang="no">
+        Det gitte ligningssystemet kan skrives som en matrise-ligning:
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad \left(\begin{array}{c}\varepsilon_x\\ \varepsilon_y\\ \varepsilon_z\end{array}\right)=\dfrac{1}{E}\
+                                \left(\begin{array}{rrr}1&amp;-v&amp;-v\\ -v&amp;1&amp;-v\\ -v&amp;-v&amp;1\end{array}\right)\
+                                \left(\begin{array}{c}\sigma_x\\ \sigma_y\\ \sigma_z\end{array}\right)\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad \left(\begin{array}{c}\varepsilon_x\\ \varepsilon_y\\ \varepsilon_z\end{array}\right)=\dfrac{1}{E}\
+                                \left(\begin{array}{rrr}1&amp;-v&amp;-v\\ -v&amp;1&amp;-v\\ -v&amp;-v&amp;1\end{array}\right)\
+                                \left(\begin{array}{c}\sigma_x\\ \sigma_y\\ \sigma_z\end{array}\right)\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We can write this equation as
+    </span>
+    <span class="multilang" lang="no">
+        Vi kan skrive denne likningen som
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad \varepsilon=\dfrac{1}{E}{\pmb A}\pmb{\sigma}\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad \varepsilon=\dfrac{1}{E}{\pmb A}\pmb{\sigma}\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        where \(\varepsilon=\left(\begin{array}{c}\varepsilon_x\\ \varepsilon_y\\ \varepsilon_z\end{array}\right),\ {\pmb A}=\left(\begin{array}{rrr}1&amp;-v&amp;-v\\
+                                -v&amp;1&amp;-v\\ -v&amp;-v&amp;1\end{array}\right)\) and \(\pmb{\sigma}=\left(\begin{array}{c}\sigma_x\\ \sigma_y\\ \sigma_z\end{array}\right)\)
+    </span>
+    <span class="multilang" lang="no">
+        hvor  \(\varepsilon=\left(\begin{array}{c}\varepsilon_x\\ \varepsilon_y\\ \varepsilon_z\end{array}\right),\ {\pmb A}=\left(\begin{array}{rrr}1&amp;-v&amp;-v\\
+                                -v&amp;1&amp;-v\\ -v&amp;-v&amp;1\end{array}\right)\)  og  \(\pmb{\sigma}=\left(\begin{array}{c}\sigma_x\\ \sigma_y\\ \sigma_z\end{array}\right)\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        This matrix equation must be solved to find the vector \(\pmb{\sigma}\) in terms of the vector \(\varepsilon\) and the inverse of the matrix \({\pmb A}\).
+    </span>
+    <span class="multilang" lang="no">
+        Denne ligningen med matriser m&#229; l&#248;ses for &#229; finne vektoren \(\pmb{\sigma}\) i form av vektoren \(\varepsilon\) og inversen av matrisen \(\pmb A\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        <strong>
+            Mathematical analysis
+        </strong>
+    </span>
+    <span class="multilang" lang="no">
+        Matematisk analyse
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad \varepsilon=\dfrac{1}{E}{\pmb A}\pmb{\sigma}\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad \varepsilon=\dfrac{1}{E}{\pmb A}\pmb{\sigma}\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Multiplying both sides of the expression by \(E\) we get
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; multiplisere begge sider av uttrykket med \(E\), f&#229;r vi
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad E\varepsilon={\pmb A}\pmb{\sigma}\)
+    </span>
+    <span class="multilang" lang="no">
+        Epsilon equals A times sigma.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Multiplying both sides by \({\pmb A}^{-1}\) we find that:
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; multiplisere begge sider med \({\pmb A}^{-1}\) finner vi at:
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad {\pmb A}^{-1}E\varepsilon={\pmb A}^{-1}{\pmb A}\pmb{\sigma}\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad {\pmb A}^{-1}E\varepsilon={\pmb A}^{-1}{\pmb A}\pmb{\sigma}\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        But \({\pmb A}^{-1}{\pmb A} = {\bf I}\) so this becomes
+    </span>
+    <span class="multilang" lang="no">
+        Men \({\pmb A}^{-1}{\pmb A} = {\bf I}\), s&#229; dette blir
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad \pmb{\sigma}=E{\pmb A}^{-1}\varepsilon\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad \pmb{\sigma}=E{\pmb A}^{-1}\varepsilon\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        To find expressions for the stresses \(\sigma_x, \ \sigma_y, \ \sigma_z\), in terms of the strains \(\varepsilon_x,\
+                                \varepsilon_y\) and \(\varepsilon_z\), we must find the inverse of the matrix \({\pmb A}\).
+    </span>
+    <span class="multilang" lang="no">
+        For &#229; finne uttrykkene for spenningene \(\sigma_x, \ \sigma_y, \ \sigma_z\) , i form av t&#248;yningsverdiene \(\varepsilon_x,\ \varepsilon_y\) og \(\varepsilon_z\), m&#229; vi finne den inverse matrisen til \({\pmb A}\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        To find the inverse of \(\left(\begin{array}{rrr}1&amp;-v&amp;-v\\ -v&amp;1&amp;-v\\ -v&amp;-v&amp;1\end{array}\right)\) we first find the matrix of minors which is:
+    </span>
+    <span class="multilang" lang="no">
+        For &#229; finne inversen til \(\left(\begin{array}{rrr}1&amp;-v&amp;-v\\ -v&amp;1&amp;-v\\ -v&amp;-v&amp;1\end{array}\right)\) finner vi f&#248;rst matrisen av minorer som er:
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad\left(\begin{array}{ccc}\left|\begin{array}{rr}1&amp;-v\\-v&amp;1\end{array}\right|&amp;\left|\begin{array}{rr}-v&amp;-v\\-v&amp;1\end{array}\right|&amp;\left|\begin{array}{rr}-v&amp;1\\-v&amp;-v\end{array}\right|\\
+                                \\
+                                \left|\begin{array}{rr}-v&amp;-v\\
+                                -v&amp;1\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-v\\-v&amp;1\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-v\\-v&amp;-v\end{array}\right|\\
+                                \\
+                                \left|\begin{array}{rr}-v&amp;-v\\ 1&amp;-v\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-v\\
+                                -v&amp;-v\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-v\\-v&amp;1\end{array}\right|\end{array}\right)=\left(\begin{array}{ccc}1-v^2&amp;-v-v^2&amp;v^2+v\\
+                                -v-v^2&amp;1-v^2&amp;-v-v^2\\ v^2+v&amp;-v-v^2&amp;1-v^2\end{array}\right).\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad\left(\begin{array}{ccc}\left|\begin{array}{rr}1&amp;-v\\-v&amp;1\end{array}\right|&amp;\left|\begin{array}{rr}-v&amp;-v\\-v&amp;1\end{array}\right|&amp;\left|\begin{array}{rr}-v&amp;1\\-v&amp;-v\end{array}\right|\\
+                \\
+                \left|\begin{array}{rr}-v&amp;-v\\
+                -v&amp;1\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-v\\-v&amp;1\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-v\\-v&amp;-v\end{array}\right|\\
+                \\
+                \left|\begin{array}{rr}-v&amp;-v\\ 1&amp;-v\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-v\\
+                -v&amp;-v\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-v\\-v&amp;1\end{array}\right|\end{array}\right)=\left(\begin{array}{ccc}1-v^2&amp;-v-v^2&amp;v^2+v\\
+                -v-v^2&amp;1-v^2&amp;-v-v^2\\ v^2+v&amp;-v-v^2&amp;1-v^2\end{array}\right).\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We then apply the pattern of signs:
+    </span>
+    <span class="multilang" lang="no">
+        Vi bruker s&#229; m&#248;nsteret til tegnene:
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad \left(\begin{matrix} +&amp;-&amp;+\\
+                                -&amp;+&amp;-\\
+                                +&amp;-&amp;+
+                                \end{matrix}\right)\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad \left(\begin{matrix} +&amp;-&amp;+\\
+                                -&amp;+&amp;-\\
+                                +&amp;-&amp;+
+                                \end{matrix}\right)\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        to obtain the matrix of cofactors
+    </span>
+    <span class="multilang" lang="no">
+        &#229; f&#229; matrisen av cofaktorer
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad \left(\begin{array}{ccc}1-v^2&amp;v+v^2&amp;v^2+v\\ v+v^2&amp;1-v^2&amp;v+v^2\\ v^2+v&amp;v+v^2&amp;1-v^2\end{array}\right).\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad \left(\begin{array}{ccc}1-v^2&amp;v+v^2&amp;v^2+v\\ v+v^2&amp;1-v^2&amp;v+v^2\\ v^2+v&amp;v+v^2&amp;1-v^2\end{array}\right)\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        To find the adjoint we take the transpose of the above, (which is the same as the original matrix since the matrix is symmetric)
+    </span>
+    <span class="multilang" lang="no">
+        For &#229; finne den adjungerende, tar vi transponatet av det ovennevnte (som er det samme som den opprinnelige matrisen, ettersom matrisen er symmetrisk).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad \left(\begin{array}{ccc}1-v^2&amp;v+v^2&amp;v^2+v\\ v+v^2&amp;1-v^2&amp;v+v^2\\ v^2+v&amp;v+v^2&amp;1-v^2\end{array}\right).\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad \left(\begin{array}{ccc}1-v^2&amp;v+v^2&amp;v^2+v\\ v+v^2&amp;1-v^2&amp;v+v^2\\ v^2+v&amp;v+v^2&amp;1-v^2\end{array}\right).\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The determinant of the original matrix is
+    </span>
+    <span class="multilang" lang="no">
+        Determinanten av den opprinnelige matrisen er
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad 1\times (1-v^2)-v(v+v^2)-v(v^2+v)=1-3v^2-2v^3.\) Finally we divide the adjoint by the determinant to find the inverse, giving
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad 1\times (1-v^2)-v(v+v^2)-v(v^2+v)=1-3v^2-2v^3.\) Til slutt deler vi adjunktet med determinanten for &#229; finne den inverse, som gir
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad \dfrac{1}{1-3v^2-2v^3}\left(\begin{array}{ccc}1-v^2&amp;v+v^2&amp;v+v^2\\ v+v^2&amp;1-v^2&amp;v+v^2\\
+                                v+v^2&amp;v+v^2&amp;1-v^2\end{array}\right).\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\dfrac{1}{1-3v^2-2v^3}\left(\begin{array}{ccc}1-v^2&amp;v+v^2&amp;v+v^2\\ v+v^2&amp;1-v^2&amp;v+v^2\\
+                                v+v^2&amp;v+v^2&amp;1-v^2\end{array}\right)\)
+    </span>
+</p>
+<br/>
+<p>
+    <span class="multilang" lang="en">
+        Now we found that \(\pmb{\sigma}=E{\pmb A}^{-1}\varepsilon\) so \(\left(\begin{array}{c}\sigma_x\\ \sigma_y\\
+                                \sigma_z\end{array}\right)=\dfrac{E}{1-3v^2-2v^3}\left(\begin{array}{ccc}1-v^2&amp;v+v^2&amp;v+v^2\\ v+v^2&amp;1-v^2&amp;v+v^2\\
+                                v+v^2&amp;v+v^2&amp;1-v^2\end{array}\right)\left(\begin{array}{c}\varepsilon_x\\ \varepsilon_y\\
+                                \varepsilon_z\end{array}\right)\)
+    </span>
+    <span class="multilang" lang="no">
+        N&#229; har vi funnet at  \(\pmb{\sigma}=E{\pmb A}^{-1}\varepsilon\)  s&#229;  \(\left(\begin{array}{c}\sigma_x\\ \sigma_y\\
+                                \sigma_z\end{array}\right)=\dfrac{E}{1-3v^2-2v^3}\left(\begin{array}{ccc}1-v^2&amp;v+v^2&amp;v+v^2\\ v+v^2&amp;1-v^2&amp;v+v^2\\
+                                v+v^2&amp;v+v^2&amp;1-v^2\end{array}\right)\left(\begin{array}{c}\varepsilon_x\\ \varepsilon_y\\
+                                \varepsilon_z\end{array}\right)\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We can write this matrix equation as 3 equations relating the stresses \(\sigma_x,\ \sigma_y,\ \sigma_z,\) in terms of the strains \(\varepsilon_x,\
+                                \varepsilon_y\) and \(\varepsilon_z\), by multiplying out this matrix expression, giving: \[\begin{aligned}
+                                \sigma_x&amp;=&amp;\dfrac{E}{1-3v^2-2v^3}\
+                                \left((1-v^2)\varepsilon_x+(v+v^2)\varepsilon_y+(v+v^2)\varepsilon_z\right)\\
+                                \\
+                                \sigma_y&amp;=&amp;\dfrac{E}{1-3v^2-2v^3}\ \left((v+v^2)\varepsilon_x+(1-v^2)\varepsilon_y+(v+v^2)\varepsilon_z\right)\\
+                                \\
+                                \sigma_z&amp;=&amp;\dfrac{E}{1-3v^2-2v^3}\
+                                \left((v+v^2)\varepsilon_x+(v+v^2)\varepsilon_y+(1-v^2)\varepsilon_z\right)\end{aligned}\]
+    </span>
+    <span class="multilang" lang="no">
+        Vi kan skrive denne matrise-likningen som 3 ligninger som angir spenningene \(\sigma_x,\ \sigma_y,\ \sigma_z,\) i form av deformasjonene \(\varepsilon_x, \varepsilon_y\) og \(\varepsilon_z\) ved &#229; multiplisere dette matriseuttrykket, slik at vi f&#229;r: \[\begin{aligned}
+                                \sigma_x&amp;=&amp;\dfrac{E}{1-3v^2-2v^3}\
+                                \left((1-v^2)\varepsilon_x+(v+v^2)\varepsilon_y+(v+v^2)\varepsilon_z\right)\\
+                                \\
+                                \sigma_y&amp;=&amp;\dfrac{E}{1-3v^2-2v^3}\ \left((v+v^2)\varepsilon_x+(1-v^2)\varepsilon_y+(v+v^2)\varepsilon_z\right)\\
+                                \\
+                                \sigma_z&amp;=&amp;\dfrac{E}{1-3v^2-2v^3}\
+                                \left((v+v^2)\varepsilon_x+(v+v^2)\varepsilon_y+(1-v^2)\varepsilon_z\right)\end{aligned}\]
+    </span>
+</p>
+<br/>
+<p>
+    <span class="multilang" lang="en">
+        <strong>
+            Interpretation
+        </strong>
+    </span>
+    <span class="multilang" lang="no">
+        <strong>
+            Tolkning
+        </strong>
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Matrix manipulation has been used to transform three simultaneous equations relating strain to stress into simultaneous equations relating stress to strain in terms of the elastic constants. These would be useful for deducing the applied stress if
+                the strains are known. The original equations enable calculation of strains if the applied stresses are known.
+    </span>
+    <span class="multilang" lang="no">
+        Matrisemanipulering har blitt brukt for &#229; transformere tre samtidige ligninger som beskriver forholdet mellom deformasjon og spenning til samtidige ligninger som beskriver forholdet mellom spenning og deformasjon med hensyn til de elastiske konstantene. Disse ville v&#230;re nyttige for &#229; beregne den p&#229;f&#248;rte spenningen dersom deformasjonene er kjent. De opprinnelige ligningene gj&#248;r det mulig &#229; beregne deformasjonene hvis p&#229;f&#248;rt spenning er kjent.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

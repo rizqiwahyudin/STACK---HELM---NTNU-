@@ -1,0 +1,2947 @@
+<quiz>
+    <!-- question: 0  -->
+    <question type="category">
+        <category>
+            <text>$module$/top/Default for 10.3 The Exponential Form of a Complex Number</text>
+        </category>
+        <info format="moodle_auto_format">
+            <text>The default category for questions shared in context '10.3 The Exponential Form of a Complex Number'.</text>
+        </info>
+        <idnumber></idnumber>
+    </question>
+    <!-- question: 9277  -->
+    <question type="description">
+        <name>
+            <text>10.3.1.1 Series expansions for exponential and trigonometric functions</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Series expansions for exponential and trigonometric functions
+    </span>
+    <span class="multilang" lang="no">
+        Rekkeutvikling for eksponensielle og trigonometriske funksjoner.
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        We have, so far, considered two ways of representing a complex number: \[\qquad z=a+i b\qquad \text{Cartesian form}\]or \[\qquad z=r(\cos\theta +i\sin\theta)\qquad \text{polar form}\]In this quiz we introduce a third way of denoting a complex number: the exponential form.
+    </span>
+    <span class="multilang" lang="no">
+        Hittil har vi vurdert to måter å representere et komplekst tall på: \[\qquad z=a+i b\qquad \text{Kartesisk form}\] eller \[\qquad z=r(\cos\theta +i\sin\theta)\qquad \text{polar form}\] I denne quizen introduserer vi en tredje måte å representere et komplekst tall på: den eksponentielle formen.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        If \(x\) is a real number then, as we shall verify in a later quiz, the exponential number \(e\) raised to the power \(x\) can be written as a series of powers of \(x\):\[\qquad e^x=1+x+{x^2\over {2!}}+{x^3\over {3!}}+{x^4\over {4!}}+\cdots\]in which \(n!=n(n-1)(n-2)\dots (3)(2)(1)\) is the factorial of the integer \(n\). Although there are an infinite number of terms on the right-hand side, in any practical calculation we could only use a finite number. For example if we choose \(x=1\) (and taking only six terms) then\[\begin{aligned}
+                e^1 &amp;\approx 1+1+{1\over {2!}}+{1\over {3!}}+{1\over {4!}}+{1\over {5!}}\\&amp;= 2+0.5+0.16666+0.04166+0.00833\\&amp;=2.71666\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\end{aligned}\] which is fairly close to the accurate value of \(e=2.71828\) (to 5 d.p.)
+    </span>
+    <span class="multilang" lang="no">
+        Hvis \(x\) er et reelt tall, kan eksponentialtallet \(e\) opphøyd i \(x\) skrives som en rekke polynomer av \(x\), noe vi vil verifisere senere i en quiz: \[\qquad e^x=1+x+{x^2\over {2!}}+{x^3\over {3!}}+{x^4\over {4!}}+\cdots\] der \(n!=n(n-1)(n-2)\dots(3)(2)(1)\) er falkultet av tallet \textit{n}. Selv om det er et uendelig antall ledd på høyresiden, vil vi i praksis kun bruke et endelig antall ledd. For eksempel, hvis vi velger \(x=1\) (og tar kun med seks ledd), så vil \[\begin{aligned}
+                e^1 &amp;\approx 1+1+{1\over {2!}}+{1\over {3!}}+{1\over {4!}}+{1\over {5!}}\\&amp;= 2+0.5+0.16666+0.04166+0.00833\\&amp;=2.71666\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\end{aligned}\] som er ganske nær den nøyaktige verdien av \(e=2.71828\) (med 5 desimaler).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We ask you to accept that \(e^x\), for any real value of \(x\), is the  same as \(\displaystyle{1+x+{x^2\over {2!}}+{x^3\over {3!}}+\cdots }\) and that if we wish to calculate \(e^x\) for a particular value of \(x\) we will only take a finite number of terms in the series. Obviously the more terms we take in any particular calculation the more accurate will be our calculation.
+    </span>
+    <span class="multilang" lang="no">
+        Vi ber deg om å akseptere at \(e^x\), for hvilken som helst reell verdi av \(x\), er det samme som \(\displaystyle{1+x+{x^2\over {2!}}+{x^3\over {3!}}+\cdots}\) og at hvis vi ønsker å beregne \(e^x\) for en bestemt verdi av \(x\), vil vi bare ta et endelig antall ledd i serien. Åpenbart vil jo flere ledd vi tar med i en beregning, jo være mer presis vil vår beregning være.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        As we shall also see later, similar series expansions exist for the trigonometric functions \(\sin x\) and \(\cos x\): \[\qquad \sin x=x-{x^3\over {3!}}+{x^5\over {5!}}-{x^7\over
+                                {7!}}+\cdots\]\[\qquad \cos x=1-{x^2\over {2!}}+{x^4\over {4!}}-{x^6\over
+                                {6!}}+\cdots\]in which \(x\)
+                is measured in radians.
+    </span>
+    <span class="multilang" lang="no">
+        Som vi også senere skal se, finnes det tilsvarende rekkeutviklinger for de trigonometriske funksjonene \(\sin x\) og \(\cos x\): \[\qquad \sin x=x-{x^3\over {3!}}+{x^5\over {5!}}-{x^7\over
+                                {7!}}+\cdots\]\[\qquad \cos x=1-{x^2\over {2!}}+{x^4\over {4!}}-{x^6\over
+                                {6!}}+\cdots\]der \(x\) måles i radianer.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The observant reader will see that these two series for \(\sin x\) and \(\cos x\) are similar to the series for \(e^x\). Through the use of the symbol \(i\) (where \(i^2=-1)\) we will examine this close correspondence.
+    </span>
+    <span class="multilang" lang="no">
+        Den observante leseren vil se at disse to rekkefølger for \(\sin x\) og \(\cos x\) ligner på rekkefølgen for \(e^x\). Ved bruk av symbolet \(i\) (hvor \(i^2=-1)\) vil vi undersøke denne nære sammenhengen.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In the series for \(e^x\) replace \(x\) on both left-hand and right-hand sides by \(i\theta\) to give: \[\qquad e^{i\theta}=1+(i\theta)+{(i\theta)^2\over {2!}}+{(i\theta)^3\over
+                                {3!}}+{(i\theta)^4\over {4!}}+{(i\theta)^5\over {5!}}+\cdots\]Then, as usual, replace every occurrence of \(i^2\) by \(-1\) to give \[\qquad e^{i\theta}=1+i\theta-{\theta^2\over {2!}}-i{\theta^3\over
+                                {3!}}+{\theta^4\over {4!}}+i{\theta^5\over {5!}}+\cdots\]
+    </span>
+    <span class="multilang" lang="no">
+        I serien for \(e^x\), erstatt \(x\) på både venstre- og høyre side med \(i\theta\) for å få: \[\qquad e^{i\theta}=1+(i\theta)+{(i\theta)^2\over {2!}}+{(i\theta)^3\over
+                                {3!}}+{(i\theta)^4\over {4!}}+{(i\theta)^5\over {5!}}+\cdots\]Deretter, som vanlig, bytt ut hver forekomst av \(i^2\) med \(-1\) for å få \[\qquad e^{i\theta}=1+i\theta-{\theta^2\over {2!}}-i{\theta^3\over
+                                {3!}}+{\theta^4\over {4!}}+i{\theta^5\over {5!}}+\cdots\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        which, when re-organised into real and imaginary terms gives, finally: \[\begin{aligned}
+                                e^{i\theta}&amp;=\left[1-{\theta^2\over {2!}}+{\theta^4\over
+                                {4!}}-\cdots \right]+i\left[
+                                \theta-{\theta^3\over
+                                {3!}}+{\theta^5\over {5!}}-\cdots \right]\\
+                                &amp;=\cos\theta +i\sin\theta.\end{aligned}\]
+    </span>
+    <span class="multilang" lang="no">
+        som, når den er reorganisert i reelle og imaginære termer, endelig gir: \[\begin{aligned}
+                                e^{i\theta}&amp;=\left[1-{\theta^2\over {2!}}+{\theta^4\over
+                                {4!}}-\cdots \right]+i\left[
+                                \theta-{\theta^3\over
+                                {3!}}+{\theta^5\over {5!}}-\cdots \right]\\
+                                &amp;=\cos\theta +i\sin\theta.\end{aligned}\]
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            Nøkkelpunkt.
+        </span>
+    </h4>
+    <p>
+        \(e^{i\theta} = \cos\theta+i\sin\theta\) .
+    </p>
+</div>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Find complex number expressions, in Cartesian form, for
+    </span>
+    <span class="multilang" lang="no">
+        Finn uttrykkene for komplekse tall, i kartesisk form, for
+    </span>
+</p>
+<p>
+</p>
+<ol class="HELM_parts_inline">
+    <li>
+        \({e^{i\pi /4}}\qquad\)
+    </li>
+    <li>
+        \(e^{-i}\qquad\)
+    </li>
+    <li>
+        \(e^{i\pi}\)
+    </li>
+    <p>
+    </p>
+</ol>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        Løsning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        We use the above Key Point:
+    </span>
+    <span class="multilang" lang="no">
+        Vi bruker det overstående nøkkelpunktet:
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        \(\displaystyle{e^{i\pi/4} = \cos\frac{\pi}{4} + i\sin\frac{\pi}{4} = \frac{1}{\sqrt{2}} + i\frac{1}{\sqrt{2}}}\)
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            \(e^{-i} = \cos{(-1)} + i\sin{(-1)} \approx 0.540 - i(0.841)\). Don't forget: use
+            <strong>
+                radians
+            </strong>
+            .
+        </span>
+        <span class="multilang" lang="no">
+            \(e^{-i} = \cos{(-1)} + i\sin{(-1)} \approx 0.540 - i(0.841)\). Ikke glem: bruk
+            <strong>
+                radianer
+            </strong>
+            .
+        </span>
+    </li>
+    <li>
+    </li>
+    <li>
+        \(e^{i\pi} = \cos\pi + i\sin\pi = -1+i(0) = -1\)
+    </li>
+</ol>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+    </question>
+    <!-- question: 9288  -->
+    <question type="description">
+        <name>
+            <text>10.3.2.1 The exponential form</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        The exponential form
+    </span>
+    <span class="multilang" lang="no">
+        Den eksponentielle formen
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        Since \(z=r(\cos\theta +i\sin\theta )\) and since \(e^{i\theta}=\cos\theta
+                                +i\sin\theta\) we therefore obtain another way in which to denote a complex number: \(z=re^{i\theta}\), called the exponential form.
+    </span>
+    <span class="multilang" lang="no">
+        Siden \(z=r(\cos\theta +i\sin\theta )\) og siden \(e^{i\theta}=\cos\theta
++i\sin\theta\), får vi en annen måte å betegne et komplekst tall på: \(z=re^{i\theta}\), kalt den eksponentielle formen.
+    </span>
+</p>
+<p>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            Nøkkelpunkt
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            The exponential form of a complex number is \[z = re^{i\theta}\quad\text{in which}\quad r=|z|\quad\text{and}\quad\theta=\text{arg}(z)\] so \[z=re^{i\theta}=r(\cos\theta + i\sin\theta)\]
+        </span>
+        <span class="multilang" lang="no">
+            Den eksponentielle formen til et komplekst tall er \[z = re^{i\theta}\quad\text{der}\quad r=|z|\quad\text{og}\quad\theta=\text{arg}(z)\] så \[z=re^{i\theta}=r(\cos\theta + i\sin\theta)\]
+        </span>
+    </p>
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+    </question>
+    <!-- question: 9279  -->
+    <question type="description">
+        <name>
+            <text>10.3.2.3 Operations with the exponential form</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<br/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        If \(z = re^{i\theta}\) and \(w = te^{i\phi}\) then find expressions for
+    </span>
+    <span class="multilang" lang="no">
+        Hvis \(z = re^{i\theta}\) og \(w = te^{i\phi}\), finn uttrykk for
+    </span>
+</p>
+<ol class="HELM_parts_inline">
+    <li>
+        \(z^{-1}\)
+    </li>
+    <li>
+        \(z^*\)
+    </li>
+    <li>
+        \(zw\)
+    </li>
+</ol>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        Løsning
+    </span>
+</h4>
+<ol class="HELM_parts">
+    <li>
+        <span class="multilang" lang="en">
+            If \(z = re^{i\theta}\) then \[z^{-1} = \frac{1}{re^{i\theta}} = \frac{1}{r}e^{-i\theta}\] using the normal rules for indices.
+        </span>
+        <span class="multilang" lang="no">
+            Hvis \(z = re^{i\theta}\) så er \[z^{-1} = \frac{1}{re^{i\theta}} = \frac{1}{r}e^{-i\theta}\] ved å bruke de normale reglene for eksponenter.
+        </span>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            Working in polar form: if \(z = re^{i\theta} = r(\cos\theta + i\sin\theta) \) then \[z^* = r(\cos\theta - i\sin\theta) = r(cos(-\theta) + i\sin(-\theta)) = re^{-i\theta}\] since \(\cos(-\theta) = \cos{\theta}\) and \(\sin(-\theta) = -\sin{\theta}\).
+                                In fact this reflects the general rule: to find the complex conjugate of any expression simply replace the \(i\) by \(-i\) wherever it occurs in the expression.
+        </span>
+        <span class="multilang" lang="no">
+            I polar form: hvis \(z = re^{i\theta} = r(\cos\theta + i\sin\theta) \) så er \[z^* = r(\cos\theta - i\sin\theta) = r(cos(-\theta) + i\sin(-\theta)) = re^{-i\theta}\] siden \(\cos(-\theta) = \cos{\theta}\) og \(\sin(-\theta) = -\sin{\theta}\).
+        </span>
+        <br/>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            \( zw = (re^{i\theta})(te^{i\phi}) = rte^{i\theta}e^{i\phi} = rte^{i\theta + i\phi} = rte^{i(\theta + \phi)} \) which is again the result we are familiar with: when complex numbers are multiplied their moduli multiply and their arguments add.
+        </span>
+        <span class="multilang" lang="no">
+            \( zw = (re^{i\theta})(te^{i\phi}) = rte^{i\theta}e^{i\phi} = rte^{i\theta + i\phi} = rte^{i(\theta + \phi)} \) som igjen er resultatet vi er kjent med: når komplekse tall multipliseres så multipliseres deres modulus og deres argumenter adderes.
+        </span>
+    </li>
+</ol>
+<hr/>
+<p>
+    <span class="multilang" lang="en">
+        We see that in some circumstances the exponential form is even more convenient than the polar form since we need not worry about cumbersome trigonometric relations.
+    </span>
+    <span class="multilang" lang="no">
+        Vi ser at i noen situasjoner er den eksponentielle formen enda mer praktisk enn den polare formen siden vi ikke trenger å bekymre oss for vanskelige trigonometriske forhold.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+    </question>
+    <!-- question: 9281  -->
+    <question type="description">
+        <name>
+            <text>10.3.3.1 Hyperbolic and trigonometric functions</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Hyperbolic and trigonometric functions
+    </span>
+    <span class="multilang" lang="no">
+        Hyperbolske og trigonometriske funksjoner
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        We have seen previously that \[\qquad e^{i\theta}=\cos\theta +i\sin\theta\] It follows from this that \[\qquad e^{-i\theta}=\cos (-\theta)+i\sin (-\theta)=\cos\theta -i\sin\theta\] Now if we add these two relations together we obtain \[\qquad \cos\theta ={e^{i\theta}+e^{-i\theta}\over {2}}\] whereas if we subtract the second from the first we have\[\qquad \sin\theta ={e^{i\theta}-e^{-i\theta}\over {2i}}\] These new relations are reminiscent of the hyperbolic functions introduced in a previous quiz. There we defined \(\cosh x\) and \(\sinh x\) in terms of the exponential function: \[\qquad \cosh x ={e^{x}+e^{-x}\over {2}}\qquad \sinh x ={e^{x}-e^{-x}\over {2}}\] In fact, if we replace \(x\) by \(i\theta\) in these last two equations we obtain \[\qquad \cosh (i\theta) ={e^{i\theta } +e^{-i\theta}\over 2}\equiv \cos \theta\qquad \text{and}\qquad \sinh (i\theta) ={e^{i\theta } -e^{-i\theta}\over 2}\equiv i\sin \theta\] Although, by our notation, we have implied that both \(x\) and \(\theta\) are real quantities in fact these expressions for \(\cosh\) and \(\sinh\) in terms of \(\cos\) and \(\sin\) are quite general.
+    </span>
+    <span class="multilang" lang="no">
+        Vi har tidligere sett at \[\qquad e^{i\theta}=\cos\theta +i\sin\theta\] Dermed følger det at \[\qquad e^{-i\theta}=\cos (-\theta)+i\sin (-\theta)=\cos\theta -i\sin\theta\] Hvis vi nå legger disse to sammen, får vi \[\qquad \cos\theta ={e^{i\theta}+e^{-i\theta}\over {2}}\] Hvis vi derimot trekker den andre fra den første, får vi\[\qquad \sin\theta ={e^{i\theta}-e^{-i\theta}\over {2i}}\] Disse nye forholdene minner om de hyperbolske funksjonene som ble introdusert i en tidligere quiz. Der definerte vi \(\cosh x\) og \(\sinh x\) i forhold til eksponentialfunksjonen:  \[\qquad \cosh x ={e^{x}+e^{-x}\over {2}}\qquad \sinh x ={e^{x}-e^{-x}\over {2}}\] Faktisk, hvis vi erstatter \(x\) med \(i\theta\) i de siste to likningene, får vi \[\qquad \cosh (i\theta) ={e^{i\theta } +e^{-i\theta}\over 2}\equiv \cos \theta\qquad \text{og}\qquad \sinh (i\theta) ={e^{i\theta } -e^{-i\theta}\over 2}\equiv i\sin \theta\] Selv om vi ved vår notasjon har antydet at både \(x\) og \(\theta\) er reelle størrelser, er disse uttrykkene for \(\cosh\) og \(\sinh\) i forhold til \(\cos\) og \(\sin\) ganske generelle.
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            Nøkkelpunkt
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            If \(z\) is any complex number then \[\cosh(iz) \equiv \cos z\quad\text{and}\quad\sinh(iz) \equiv i\sin z\] Equivalently, replacing \(z\) by \(iz\): \[\cosh z \equiv \cos(iz) \quad\text{and}\quad i\sinh z \equiv \sin(iz)\]
+        </span>
+        <span class="multilang" lang="no">
+            Hvis \(z\) er et komplekst tall så gjelder følgende: \[\cosh(iz) \equiv \cos z\quad\text{og}\quad\sinh(iz) \equiv i\sin z\] Ekvivalent kan man erstatte \(z\) med \(iz\) og få: \[\cosh z \equiv \cos(iz) \quad\text{og}\quad i\sinh z \equiv \sin(iz)\]
+        </span>
+    </p>
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+    </question>
+    <!-- question: 9283  -->
+    <question type="description">
+        <name>
+            <text>10.3.3.3 Osborne's Rule</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        Further analysis similar to that in Exercise 3 leads to Osborne's rule.
+    </span>
+    <span class="multilang" lang="no">
+        Videre analyse lignende den i øving 3 leder oss til Osbornes regel.
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            Nøkkelpunkt.
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            Hyperbolic function identities are obtained from trigonometric function
+                                identities by replacing \(\sin\theta\) by \(\sinh\theta\) and \(\cos\theta\) by \(\cosh\theta\) except that
+                                every occurrence of \(\sin^2\theta\) is replaced by \(-\sinh^2\theta\). This is known as Osborne's Rule.
+        </span>
+        <span class="multilang" lang="no">
+            Hyperbolske funksjonsidentiteter blir funnet fra trigonometriske funksjonsidentiteter ved å erstatte \(\sin\theta\) med \(\sinh\theta\) og \(\cos\theta\) med \(\cosh\theta\), unntatt at hver forekomst av \(\sin^2\theta\) blir erstattet med \(-\sinh^2\theta\). Dette kalles Osborne's regel.
+        </span>
+    </p>
+</div>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Use Osborne's rule to obtain the hyperbolic identity equivalent to \(1 + \tan^2\theta \equiv \sec^2\theta\).
+    </span>
+    <span class="multilang" lang="no">
+        Bruk Osbornes regel for å få den hyperbolske identiteten som tilsvarer \(1 + \tan^2\theta \equiv \sec^2\theta\).
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        Løsning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Here \(1 + \tan^2\theta \equiv \sec^2\theta\) is equivalent to \(\displaystyle{1 + \frac{\sin^2\theta}{\cos^2\theta} \equiv \frac{1}{\cos^2\theta}}\) . Hence if \[\sin^2\theta \mapsto -\sinh^2\theta\qquad\text{and}\qquad \cos^2\theta \mapsto \cosh^2\theta\] then we obtain \[1 - \frac{\sinh^2\theta}{\cosh^2\theta} \equiv \frac{1}{\cosh^2\theta}\qquad\text{or, equivalently,}\qquad 1 - \tanh^2\theta \equiv \text{sech}^2\theta.\]
+    </span>
+    <span class="multilang" lang="no">
+        Her er \(1 + \tan^2\theta \equiv \sec^2\theta\) lik \(\displaystyle{1 + \frac{\sin^2\theta}{\cos^2\theta} \equiv \frac{1}{\cos^2\theta}}\). Dermed, hvis \[\sin^2\theta \mapsto -\sinh^2\theta\qquad\text{og}\qquad \cos^2\theta \mapsto \cosh^2\theta\], så får vi \[1 - \frac{\sinh^2\theta}{\cosh^2\theta} \equiv \frac{1}{\cosh^2\theta}\qquad\text{eller, tilsvarende,}\qquad 1 - \tanh^2\theta \equiv \text{sech}^2\theta.\]
+    </span>
+</p>
+]]></text>
+            <file name="loop-1 (1).svg" path="/" encoding="base64">PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzY5LjQ1MiIgaGVpZ2h0PSIxNzYuMzc3IiB2aWV3Qm94PSIwIDAgMjc3LjA4OSAxMzIuMjgzIj48ZyBkYXRhLW5hbWU9IkRvY3VtZW50Ij48cGF0aCBkPSJNMTA5IC43ODN2NTZsNTYtMzAtNTYtMjYiIGZpbGw9IiNmZmYiLz48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiMyMzFmMjAiIGQ9Ik0xMDkgLjc4M3Y1Nmw1Ni0zMC01Ni0yNnpNMjggMjkuNzgzaDgwIi8+PGNsaXBQYXRoIGlkPSJhIj48cGF0aCB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAwIDEzMi4yODMpIiBkPSJNLjA2IDEzMi4yODNoMjc3LjAyOVYuMDZILjA2eiIvPjwvY2xpcFBhdGg+PGcgY2xpcC1wYXRoPSJ1cmwoI2EpIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiMyMzFmMjAiIGQ9Ik0wIDI5Ljc4M2gyOCIvPjwvZz48cGF0aCBkPSJNMzAuMzYyIDI4Ljc1OGMtMS42NTMtLjQ5OS0yLjcyOC0uOTU5LTQuMDU0LTEuNDkxdjUuMDQ0Yy40NzQtLjIyNiAyLjQwMS0uOTkzIDQuMDU0LTEuNDkyIDEuNzY5LS41MzQgMy4zNzQtLjkgNC40MTQtMS4wMy0xLjA0LS4xMzEtMi42NDUtLjQ5Ni00LjQxNC0xLjAzMSIgZmlsbD0iIzIzMWYyMCIvPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzIzMWYyMCIgZD0iTTI0OSAyNi43ODNoMjAiLz48cGF0aCBkPSJNMjcxLjM2MSAyNS43NThjLTEuNjUyLS40OTktMi43MjctLjk1OS00LjA1My0xLjQ5MXY1LjA0NGMuNDc0LS4yMjYgMi40MDEtLjk5MyA0LjA1My0xLjQ5MiAxLjc3LS41MzQgMy4zNzUtLjkgNC40MTUtMS4wMy0xLjA0LS4xMzEtMi42NDUtLjQ5Ni00LjQxNS0xLjAzMSIgZmlsbD0iIzIzMWYyMCIvPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzIzMWYyMCIgZD0iTTE2NSAyNi43ODNoODRtLTE5NSA0djgwaDEzOHYtODQiLz48cGF0aCBkPSJNNzguMDA5IDcyLjM1MkExNi45MjUgMTYuOTI1IDAgMDE4NyA2OS43ODNjOS4zODkgMCAxNyA3LjYxMiAxNyAxNyAwIDkuMzg5LTcuNjExIDE3LTE3IDE3LTYuNjU2IDAtMTIuNDE5LTMuODI2LTE1LjIxLTkuMzk5IiBmaWxsPSIjZmZmIi8+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjMxZjIwIiBkPSJNNzguMDA5IDcyLjM1MkExNi45MjUgMTYuOTI1IDAgMDE4NyA2OS43ODNjOS4zODkgMCAxNyA3LjYxMiAxNyAxNyAwIDkuMzg5LTcuNjExIDE3LTE3IDE3LTYuNjU2IDAtMTIuNDE5LTMuODI2LTE1LjIxLTkuMzk5Ii8+PHBhdGggZD0iTTY5LjgxNiA5Mi43MzFjLjI5NCAxLjcwMy4zNjQgMi44NjkuNDgxIDQuMjkzbDQuNTExLTIuMjU4Yy0uNDE0LS4zMjQtMS45NjItMS43MDItMy4xNDktMi45NTctMS4yNy0xLjM0My0yLjMxNi0yLjYxNC0yLjg5OC0zLjQ4Ni4zNDkuOTg5Ljc0MSAyLjU4NyAxLjA1NSA0LjQwOCIgZmlsbD0iIzIzMWYyMCIvPjxwYXRoIGQ9Ik0xMTMgMTMxLjc4M2g0NXYtNDJoLTQ1eiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzIzMWYyMCIgZD0iTTE1OCAxMzEuNzgzaC00NXYtNDJoNDV6Ii8+PHN5bWJvbCBpZD0iYiI+PHBhdGggZD0iTS41NjUuNTkzQy41OTkuNjQ3LjYzLjY3MS42ODEuNjc1Yy4wMS4wMDEuMDE4LjAwMS4wMTguMDE5IDAgLjAwNC0uMDAyLjAxLS4wMTEuMDFMLjYwOS43MDIuNTIyLjcwNGMtLjAwOCAwLS4wMTggMC0uMDE4LS4wMTkgMC0uMDA5LjAwOS0uMDEuMDEzLS4wMUMuNTU0LjY3Mi41NTguNjU0LjU1OC42NDJBLjA5NC4wOTQgMCAwMC41NDMuNjAzTC4yMjkuMTA1bC0uMDcuNTM5YzAgLjAyOS4wNTIuMDMxLjA2My4wMzEuMDE1IDAgLjAyNCAwIC4wMjQuMDE5IDAgLjAxLS4wMTEuMDEtLjAxNC4wMUwuMTc4LjcwMkguMTIyQy4wNDkuNzAyLjAxOS43MDQuMDE4LjcwNC4wMTIuNzA0IDAgLjcwNCAwIC42ODYgMCAuNjc1LjAwNy42NzUuMDIzLjY3NS4wNzQuNjc1LjA3Ny42NjYuMDguNjQxTC4xNi4wMjRDLjE2My4wMDMuMTYzIDAgLjE3NyAwYy4wMTIgMCAuMDE3LjAwMy4wMjcuMDE5bC4zNjEuNTc0eiIvPjwvc3ltYm9sPjx1c2UgeGxpbms6aHJlZj0iI2IiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAyLjgyIDI0LjI0MSkiIGZpbGw9IiMyMzFmMjAiLz48c3ltYm9sIGlkPSJjIj48cGF0aCBkPSJNLjI2OC42MzRjMCAuMDIyLS4wMTYuMDM4LS4wMzkuMDM4Qy4yMDMuNjcyLjE3NC42NDguMTc0LjYxOC4xNzQuNTk2LjE5LjU4LjIxMy41OGMuMDI2IDAgLjA1NS4wMjQuMDU1LjA1NE0uMTIyLjI2N0MuMDk1LjIwMS4wOTUuMTk5LjA2OC4xMjkuMDYzLjExNC4wNTguMTAyLjA1OC4wODUuMDU4LjAzNi4wOTYgMCAuMTQ5IDBjLjA5NyAwIC4xMzguMTQuMTM4LjE1MyAwIC4wMS0uMDA4LjAxMy0uMDE1LjAxM0MuMjYuMTY2LjI1OC4xNTkuMjU1LjE0OS4yMzIuMDY5LjE5MS4wMjguMTUxLjAyOC4xMzkuMDI4LjEyNy4wMzMuMTI3LjA2YzAgLjAyNC4wMDcuMDQyLjAyLjA3M2wuMDMxLjA4MS4wMzEuMDgxQS4yNjMuMjYzIDAgMDEuMjMuMzY2YzAgLjA1LS4wNC4wODUtLjA5MS4wODVDLjA0Mi40NTEgMCAuMzExIDAgLjI5OCAwIC4yODkuMDA3LjI4NS4wMTUuMjg1Yy4wMTMgMCAuMDE0LjAwNi4wMTcuMDE2LjAyOC4wOTUuMDc0LjEyMi4xMDQuMTIyQy4xNS40MjMuMTYuNDE4LjE2LjM5QS4xNi4xNiAwIDAwLjE0OS4zMzZMLjEyMi4yNjd6Ii8+PC9zeW1ib2w+PHVzZSB4bGluazpocmVmPSIjYyIgdHJhbnNmb3JtPSJtYXRyaXgoNy45NyAwIDAgLTcuOTcgOS4yNCAyNS44NjMpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjYiIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDI2Ni44MjIgMjAuMjQxKSIgZmlsbD0iIzIzMWYyMCIvPjxzeW1ib2wgaWQ9ImQiPjxwYXRoIGQ9Ik0uNDU0LjI3OGMwIC4wOTgtLjA3LjE3My0uMTc0LjE3M0EuMjk4LjI5OCAwIDAxMCAuMTczQzAgLjA3MS4wNzIgMCAuMTc0IDBjLjE0MyAwIC4yOC4xNC4yOC4yNzhNLjE3NS4wMjhDLjE0LjAyOC4wODEuMDQ2LjA4MS4xMzhjMCAuMDQxLjAxOS4xNDkuMDY3LjIxMS4wNDkuMDYzLjEwNC4wNzQuMTMxLjA3NEMuMzIuNDIzLjM3My4zOTguMzczLjMxNEEuNDQzLjQ0MyAwIDAwLjMxNy4xMTlDLjI4LjA2Mi4yMjUuMDI4LjE3NS4wMjh6Ii8+PC9zeW1ib2w+PHVzZSB4bGluazpocmVmPSIjZCIgdHJhbnNmb3JtPSJtYXRyaXgoNy45NyAwIDAgLTcuOTcgMjczLjM1IDIxLjg2MykiIGZpbGw9IiMyMzFmMjAiLz48c3ltYm9sIGlkPSJlIj48cGF0aCBkPSJNLjQ0OC41OTlhLjIxMy4yMTMgMCAwMS4xMDkuMTczYzAgLjA3Mi0uMDUyLjEyNi0uMTMuMTI2Qy4yOTkuODk4LjE4OC43NjMuMTU1LjYzTC4wMDMuMDIzQS4wNzQuMDc0IDAgMDEwIC4wMDhDMCAuMDA2IDAgMCAuMDEgMGMuMDA4IDAgLjAwOS4wMDEuMDE0LjAxOWwuMDcxLjI4NGEuMTc2LjE3NiAwIDAxLjA1LS4wODJDLjE4OS4xODIuMjM4LjE4Mi4yNTIuMTgyYy4xMzUgMCAuMjYyLjE0My4yNjIuMjc4IDAgLjA2MS0uMDI2LjExLS4wNjYuMTM5bS0uMDMuMDE1Qy4zOTEuNjI1LjM3LjYyNS4zNTEuNjI1Yy0uMDIyIDAtLjA3MyAwLS4wNzMtLjAzIDAtLjAyMy4wMzYtLjAyNC4wNjQtLjAyNGEuMi4yIDAgMDEuMDczLjAxMkMuNDQ2LjU1NC40NDYuNTE2LjQ0Ni40OTVBLjQ1LjQ1IDAgMDAuMzgyLjI4MkMuMzU0LjI0MS4zMDYuMjAyLjI1Mi4yMDIuMTY3LjIwMi4xMTMuMjY1LjExMy4zNDljMCAuMDI1LjAwNC4wNDIuMDE3LjA5NGwuMDQuMTU4Yy4wMDkuMDM2LjAzMy4xMzMuMTAxLjIwMS4wMi4wMTkuMDc3LjA3Ni4xNTMuMDc2LjA0OSAwIC4wNzUtLjAzMy4wNzUtLjA4MUMuNDk5Ljc4My40ODkuNjY0LjQxOC42MTRNLjMuNTk2bC4wMDkuMDA1YS4xNy4xNyAwIDAwLjA0LjAwNGMuMDE2IDAgLjAyNiAwIC4wNC0uMDA2Qy4zNy41OTEuMzU1LjU5MS4zNDIuNTkxQS4xMDcuMTA3IDAgMDAuMy41OTZ6Ii8+PC9zeW1ib2w+PHN5bWJvbCBpZD0iZiI+PHBhdGggZD0iTS4xMzYuMTExQy4xMDEuMDUyLjA2Ny4wMzIuMDE5LjAyOS4wMDguMDI4IDAgLjAyOCAwIC4wMSAwIC4wMDQuMDA1IDAgLjAxMiAwbC4wODEuMDAyTC4xODIgMEMuMTg4IDAgLjIgMCAuMi4wMTljMCAuMDA5LS4wMDguMDEtLjAxNC4wMUMuMTYzLjAzMS4xNDQuMDM5LjE0NC4wNjNjMCAuMDE0LjAwNi4wMjUuMDE5LjA0N2wuMDc2LjEyNmguMjU1TC40OTYuMjFBMy4yNyAzLjI3IDAgMDAuNTExLjA2MUMuNTExLjAzMS40Ni4wMjkuNDQ0LjAyOWMtLjAxMSAwLS4wMjIgMC0uMDIyLS4wMThDLjQyMiAwIC40MzEgMCAuNDM3IDBsLjA1NC4wMDJoLjA1N0MuNjA5LjAwMi42NTMgMCAuNjU0IDBjLjAwNyAwIC4wMTggMCAuMDE4LjAxOSAwIC4wMS0uMDA5LjAxLS4wMjQuMDEtLjA1NSAwLS4wNTYuMDA5LS4wNTkuMDM5TC41MjguNjkyQy41MjYuNzEyLjUyMi43MTQuNTExLjcxNC41MDEuNzE0LjQ5NS43MTIuNDg2LjY5N0wuMTM2LjExMW0uMTIuMTU0bC4yMDEuMzM2LjAzNC0uMzM2SC4yNTZ6Ii8+PC9zeW1ib2w+PHVzZSB4bGluazpocmVmPSIjZSIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDEzMS41MTMgMTE3LjY3OCkiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNmIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMTE2LjgxOCAzOC4zNikiIGZpbGw9IiMyMzFmMjAiLz48c3ltYm9sIGlkPSJnIj48cGF0aCBkPSJNLjUyMS4zMjNILjMxNHYtLjA2aC4xMzF2LS4xOEEuNDIyLjQyMiAwIDAwLjMxOC4wNjJDLjE4NS4wNjIuMDg2LjIwMS4wODYuMzY4YzAgLjE2Ny4wOTguMzA2LjIzMi4zMDZhLjI1OC4yNTggMCAwMC4xOC0uMDY4bC4wMTUuMDgxYS4zOTMuMzkzIDAgMDEtLjE5NC4wNDlDLjEzNS43MzYgMCAuNTY3IDAgLjM2OCAwIC4xNjUuMTQgMCAuMzE3IDBjLjA1NSAwIC4xMy4wMTIuMjA0LjA0OXYuMjc0eiIvPjwvc3ltYm9sPjxzeW1ib2wgaWQ9ImgiPjxwYXRoIGQ9Ik0uMzQ3LjMwM2EuMTYuMTYgMCAwMS0uMTYyLjE2Ni4yOS4yOSAwIDAxLS4xNTQtLjA0MkwuMDM3LjM2MWEuMjQuMjQgMCAwMC4xNDguMDVjLjA0NiAwIC4wODYtLjAzNy4wODYtLjExVi4yNkEuNTk2LjU5NiAwIDAxLjEwNi4yMzVDLjAzOS4yMTIgMCAuMTc1IDAgLjEyNSAwIC4wODEuMDI2IDAgLjExMSAwYy4wNTUgMCAuMTI1LjAxNi4xNjIuMDQ3Vi4wMWguMDc0di4yOTNNLjI3MS4xNDRDLjI3MS4xMjQuMjcxLjEuMjM4LjA4QS4xNTMuMTUzIDAgMDAuMTYyLjA2Qy4xMDguMDYuMDcxLjA4OS4wNzEuMTI2YzAgLjA2OC4xMzkuMDgzLjIuMDgzVi4xNDR6Ii8+PC9zeW1ib2w+PHN5bWJvbCBpZD0iaSI+PHBhdGggZD0iTS4wODYuNjc5SDBWLjU5M2guMDg2di4wODZNLjA4LjQ0NEguMDA2VjBILjA4di40NDR6Ii8+PC9zeW1ib2w+PHN5bWJvbCBpZD0iaiI+PHBhdGggZD0iTS4zNDcuMzAxYzAgLjA2MS0uMDEzLjE1My0uMTM0LjE1M0EuMTc2LjE3NiAwIDAxLjA3MS4zODF2LjA2OEgwVjBoLjA3NnYuMjQ5YzAgLjA2Mi4wMjMuMTQ1LjA5OS4xNDUuMDkzIDAgLjA5Ni0uMDY1LjA5Ni0uMVYwaC4wNzZ2LjMwMXoiLz48L3N5bWJvbD48c3ltYm9sIGlkPSJrIj48cGF0aCBkPSJNLjM4My4zMTZ2LjA2SC4wODZWLjYzaC4xMjlMLjI1MS42MjloLjE3M3YuMDYzSDBWMGguMDg2di4zMTZoLjI5N3oiLz48L3N5bWJvbD48c3ltYm9sIGlkPSJsIj48cGF0aCBkPSJNLjM3NC4yMzVhLjMwMi4zMDIgMCAwMS0uMDM2LjE1Ny4xNi4xNiAwIDAxLS4xNC4wNzdDLjA5LjQ2OSAwIC4zNjUgMCAuMjM1IDAgLjEwMy4wOTYgMCAuMjEyIDBjLjA0NiAwIC4xMDEuMDEzLjE1Ni4wNTNMLjM2NS4wOWEuMTg1LjE4NSAwIDAwLS4wMDMuMDI3QS4yMjguMjI4IDAgMDAuMjE0LjA2Qy4xMzcuMDYuMDcxLjEyOS4wNjkuMjM1aC4zMDVNLjA3NS4yODljLjAxNy4wNjcuMDY0LjEyLjEyMy4xMi4wMzEgMCAuMS0uMDE0LjExNy0uMTJoLS4yNHoiLz48L3N5bWJvbD48c3ltYm9sIGlkPSJtIj48cGF0aCBkPSJNLjM4OC43MDRILjMxNFYuNDEyYS4yMjMuMjIzIDAgMDEtLjE0MS4wNTJDLjA3OC40NjQgMCAuMzYyIDAgLjIzMiAwIC4xMDMuMDc0IDAgLjE2OSAwYy4wMzcgMCAuMDkzLjAxMi4xNDMuMDYxVi4wMWguMDc2di42OTRNLjMxMi4xMjhDLjI4OC4wODUuMjUzLjA2LjIwOS4wNi4xNDguMDYuMDc2LjEwNy4wNzYuMjMxYzAgLjEzMy4wODUuMTczLjE0My4xNzNBLjExLjExIDAgMDAuMzEyLjM1MVYuMTI4eiIvPjwvc3ltYm9sPjxzeW1ib2wgaWQ9Im4iPjxwYXRoIGQ9Ik0uMDc0LjcwNEgwVi4wMWguMDc2di4wNDVBLjE4Ny4xODcgMCAwMS4yMDYgMGMuMDk1IDAgLjE4Mi4wOTcuMTgyLjIzMyAwIC4xMjMtLjA2Ni4yMzEtLjE1OS4yMzFBLjI0OC4yNDggMCAwMS4wNzQuNDA4di4yOTZNLjA3Ni4zNDdhLjEyNC4xMjQgMCAwMC4xMDMuMDU3Qy4yNC40MDQuMzEyLjM1OC4zMTIuMjMzLjMxMi4xMDMuMjMuMDYuMTY5LjA2YS4xLjEgMCAwMC0uMDY1LjAyNEMuMDguMTA1LjA3Ni4xMjMuMDc2LjE0di4yMDd6Ii8+PC9zeW1ib2w+PHN5bWJvbCBpZD0ibyI+PHBhdGggZD0iTS4zNjYuMTE4QS4yMzkuMjM5IDAgMDAuMjEzLjA2MkMuMTMuMDYyLjA3Ni4xMzYuMDc2LjIzM2MwIC4wODMuMDQuMTc0LjE0LjE3NEEuMjA2LjIwNiAwIDAwLjM1NC4zNjJsLjAxMi4wNjVhLjI1LjI1IDAgMDEtLjE1LjA0MkMuMDc4LjQ2OSAwIC4zNDcgMCAuMjMzIDAgLjEwNS4wOTIgMCAuMjEyIDBjLjA0OSAwIC4xMDUuMDEyLjE2LjA1MkEuNTQ3LjU0NyAwIDAxLjM2OC4wOUwuMzY2LjExOHoiLz48L3N5bWJvbD48c3ltYm9sIGlkPSJwIj48cGF0aCBkPSJNLjE5NC4yNzNsLjE2NC4xNzFILjI2NkwuMDczLjI0M3YuNDUxSDBWMGguMDd2LjE0NGwuMDc2LjA3OUwuMjk4IDBILjM4TC4xOTQuMjczeiIvPjwvc3ltYm9sPjxzeW1ib2wgaWQ9InEiPjxwYXRoIGQ9Ik0uMDc0LjY5NEgwVjBoLjA3NHYuNjk0eiIvPjwvc3ltYm9sPjxzeW1ib2wgaWQ9InIiPjxwYXRoIGQ9Ik0uNDI5LjIzQy40MjkuMzY1LjMzLjQ2OS4yMTUuNDY5LjA5Ny40NjkgMCAuMzYzIDAgLjIzIDAgLjA5OS4xIDAgLjIxNCAwYy4xMTggMCAuMjE1LjEwMS4yMTUuMjNNLjIxNS4wNjJDLjE0My4wNjIuMDc2LjEyMi4wNzYuMjRjMCAuMTIxLjA3NS4xNjkuMTM4LjE2OUMuMjgzLjQwOS4zNTMuMzU3LjM1My4yNC4zNTMuMTE3LjI4Mi4wNjIuMjE1LjA2MnoiLz48L3N5bWJvbD48c3ltYm9sIGlkPSJzIj48cGF0aCBkPSJNLjA3Ni4yMzlhLjE5LjE5IDAgMDEuMTMtLjA1NWMuMDk2IDAgLjE4Mi4wOTcuMTgyLjIzMyAwIC4xMjEtLjA2NC4yMzEtLjE1Ny4yMzFBLjI1MS4yNTEgMCAwMS4wNzQuNTkxdi4wNDdIMFYwaC4wNzZ2LjIzOW0wIC4yOTFhLjEyNS4xMjUgMCAwMC4xMDIuMDU2Yy4wNzQgMCAuMTM0LS4wNzUuMTM0LS4xNyAwLS4xLS4wNjktLjE3Mi0uMTQzLS4xNzJhLjEuMSAwIDAwLS4wNjUuMDI0Qy4wNzkuMjkuMDc2LjMwOC4wNzYuMzI0Vi41M3oiLz48L3N5bWJvbD48dXNlIHhsaW5rOmhyZWY9IiNnIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMTE2LjI4OCAyNi41MzIpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjaCIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDEyMy44MiAyNi40KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2kiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAxMjkuNzUgMjYuMjgxKSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2oiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAxMzIuNTU5IDI2LjI4MSkiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNrIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMTEwLjY0NCA3NC4yODIpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjbCIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDExNi4yODYgNzQuNDAxKSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2wiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAxMjEuNDg2IDc0LjQwMSkiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNtIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMTI2LjcxIDc0LjQwMSkiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNuIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMTMzLjIyNiA3NC40MDEpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjaCIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDEzOC44MjEgNzQuNDAxKSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI28iIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAxNDQuMzA4IDc0LjQwMSkiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNwIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMTUwLjAyMyA3NC4yODIpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjcSIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDE1OS42MjggNzQuMjgyKSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI3IiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAxNjEuODAzIDc0LjQwMSkiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNyIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMTY3Ljk4NSA3NC40MDEpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjcyIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDE3NC40MDUgNzYuNikiIGZpbGw9IiMyMzFmMjAiLz48L2c+PC9zdmc+</file>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+    </question>
+    <!-- question: 9289  -->
+    <question type="description">
+        <name>
+            <text>10.3.3.4 Osborne example</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Feedback applied to an amplifier
+    </span>
+    <span class="multilang" lang="no">
+        Tilbakekobling på en forsterker.
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Feedback is applied to an amplifier such that \[\qquad A'=\dfrac{A}{1-\beta A}\] where
+
+    
+    
+    
+    \(A', A\) and \(\beta\) are complex quantities.
+
+    
+    
+    
+    \(A\) is the amplifier gain, \(A'\) is the gain with feedback and
+
+    
+    
+    
+    \(\beta\) is the proportion of the output which has been fed back.
+    </span>
+    <span class="multilang" lang="no">
+        Tilbakekobling på en forsterker blir anvendt slik at \[\qquad A'=\dfrac{A}{1-\beta A}\] hvor
+
+    
+    
+    
+    \(A', A\) og \(\beta\) er komplekse størrelser.
+
+    
+    
+    
+    \(A\) er amplifikasjonen til forsterken, \(A'\) er forsterkningen med tilbakekobling og
+
+    
+    
+    
+    \(\beta\) er andelen av utgangssignalet som har blitt sendt tilbake.
+    </span>
+</p>
+<figure class="HELM_figure">
+    <img alt="Diagram of amplifier with feedback" class="img-responsive atto_image_button_text-bottom" height="176" role="presentation" src="@@PLUGINFILE@@/look%20svg.svg" width="369"/>
+    <figcaption>
+        <span class="multilang" lang="en">
+            An amplifier with feedback
+        </span>
+        <span class="multilang" lang="no">
+            En forsterker med tilbakekobling
+        </span>
+    </figcaption>
+</figure>
+<ol class="HELM_parts">
+    <li>
+        <span class="multilang" lang="en">
+            If at 30 Hz, \(A=-500\) and \(\beta=0.005e^{8\pi i /9}\), calculate \(A'\) in exponential form.
+        </span>
+        <span class="multilang" lang="no">
+            Hvis ved 30 Hz, \(A=-500\) og \(\beta=0.005e^{8\pi i /9}\), beregn \(A'\) i eksponentiell form.
+        </span>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            At a particular frequency it is desired to have \(A'=300e^{5\pi i /9}\) where it is known that \(A=400e^{11\pi i /18}\). Find the value of \(\beta\) necessary to achieve this gain modification.
+        </span>
+        <span class="multilang" lang="no">
+            På en bestemt frekvens er det ønskelig å ha \(A'=300e^{5\pi i /9}\) hvor det er kjent at \(A=400e^{11\pi i /18}\). Finn verdien av \(\beta\) som er nødvendig for å oppnå denne forsterkningsmodifikasjonen.
+        </span>
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        Mathematical statement of the problem
+    </span>
+    <span class="multilang" lang="no">
+        Matematisk uttalelse av problemet.
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <span class="multilang" lang="en">
+            Substitute
+
+        
+        
+        
+        \(A=-500\) and \(\beta=0.005e^{8\pi i /9}\) into
+
+        
+        
+        
+        \(A'=\dfrac{A}{1-\beta A}\) in order to find \(A'\).
+        </span>
+        <span class="multilang" lang="no">
+            Sett \(A=-500\) og \(\beta=0.005e^{8\pi i /9}\) inn i \(A'=\dfrac{A}{1-\beta A}\) for å finne \(A'\).
+        </span>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            We need to solve for \(\beta\) when \(A'=300e^{5\pi i /9}\) and
+
+        
+        
+        
+        \(A=400e^{11\pi i /18}\).
+        </span>
+        <span class="multilang" lang="no">
+            Vi må løse for \(\beta\) når \(A'=300e^{5\pi i /9}\) og \(A=400e^{11\pi i /18}\).
+        </span>
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        Mathematical analysis
+    </span>
+    <span class="multilang" lang="no">
+        Matematisk analyse
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <span class="multilang" lang="en">
+            We have \[A'=\dfrac{A}{1-\beta A}=\dfrac{-500}{1-0.005e^{8\pi i /9}\times (-500)}=\dfrac{-500}{1+2.5e^{8\pi i /9}}\] Expressing the bottom line of this expression in Cartesian form this becomes:
+
+        
+        
+        
+        \[\qquad A'=\dfrac{-500}{1+2.5\cos\left(\dfrac{8\pi}{9}\right)+2.5i\sin\left(\dfrac{8\pi}{9}\right)}\approx \dfrac{-500}{-1.349+0.855i}\] Expressing both the top and bottom lines in exponential form we get:
+
+        
+        
+        
+        \[\qquad A'\approx\dfrac{500e^{i\pi}}{1.597e^{i 2.576}}\approx 313e^{0.566i}\]
+        </span>
+        <span class="multilang" lang="no">
+            Vi har \[A'=\dfrac{A}{1-\beta A}=\dfrac{-500}{1-0.005e^{8\pi i /9}\times (-500)}=\dfrac{-500}{1+2.5e^{8\pi i /9}}\] Ved å uttrykke nevneren av dette uttrykket i kartesisk form blir dette:
+        
+                
+                
+                
+        \[\qquad A'=\dfrac{-500}{1+2.5\cos\left(\dfrac{8\pi}{9}\right)+2.5i\sin\left(\dfrac{8\pi}{9}\right)}\approx \dfrac{-500}{-1.349+0.855i}\] Ved å uttrykke både teller og nevner i eksponentiell form får vi:
+
+        
+        
+        
+        \[\qquad A'\approx\dfrac{500e^{i\pi}}{1.597e^{i 2.576}}\approx 313e^{0.566i}\]
+        </span>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            We have \[A'=\dfrac{A}{1-\beta A}\rightarrow A'(1-\beta A)=A\rightarrow
+
+        
+        
+        
+        -\beta AA'=A-A'\] and \[\text{i.e.}\qquad \beta=\dfrac{A'-A}{AA'}\rightarrow\beta=\dfrac{1}{A}-\dfrac{1}{A'}\] So
+
+    
+    
+    
+    \[\beta=\dfrac{1}{A}-\dfrac{1}{A'}=\dfrac{1}{400e^{11\pi i /18}}-\dfrac{1}{300e^{5\pi i /9}}\approx 0.0025e^{-11\pi i/18}-0.00333e^{-5\pi i /9}\] Expressing both complex numbers in Cartesian form gives
+
+    
+    
+    
+    \[\beta = 0.0025\cos\left(-\dfrac{11\pi}{18}\right)+0.0025i\sin \left(-\dfrac{11\pi}{18}\right)\] \[\qquad-0.00333\cos \left(-\dfrac{5\pi}{9}\right)-0.00333i\sin \left(-\dfrac{5\pi}{9}\right)\] \[=-2.768\times 10^{-4}+9.3017\times 10^{-4}i=9.7048\times 10^{-4}e^{1.86i}\] So
+                to 3 significant figures \(\beta=9.70\times 10^{-4}e^{1.86i}\)
+        </span>
+        <span class="multilang" lang="no">
+            Vi har \[A'=\dfrac{A}{1-\beta A}\rightarrow A'(1-\beta A)=A\rightarrow
+        
+                        
+                        
+                        
+                -\beta AA'=A-A'\] og \[\text{i.e.}\qquad \beta=\dfrac{A'-A}{AA'}\rightarrow\beta=\dfrac{1}{A}-\dfrac{1}{A'}\] Så
+
+        
+        
+        
+        \[\beta=\dfrac{1}{A}-\dfrac{1}{A'}=\dfrac{1}{400e^{11\pi i /18}}-\dfrac{1}{300e^{5\pi i /9}}\approx 0.0025e^{-11\pi i/18}-0.00333e^{-5\pi i /9}\] Ved å uttrykke begge komplekse tallene i kartesisk form får vi
+
+        
+        
+        
+        \[\beta = 0.0025\cos\left(-\dfrac{11\pi}{18}\right)+0.0025i\sin \left(-\dfrac{11\pi}{18}\right)\] \[\qquad-0.00333\cos \left(-\dfrac{5\pi}{9}\right)-0.00333i\sin \left(-\dfrac{5\pi}{9}\right)\] \[=-2.768\times 10^{-4}+9.3017\times 10^{-4}i=9.7048\times 10^{-4}e^{1.86i}\] Så
+
+        
+        
+        
+        til 3 signifikante siffer blir det \(\beta=9.70\times 10^{-4}e^{1.86i}\)
+        </span>
+    </li>
+</ol>
+]]></text>
+            <file name="look svg.svg" path="/" encoding="base64">PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMzY5LjQ1MiIgaGVpZ2h0PSIxNzYuMzc3IiB2aWV3Qm94PSIwIDAgMjc3LjA4OSAxMzIuMjgzIj48ZyBkYXRhLW5hbWU9IkRvY3VtZW50Ij48cGF0aCBkPSJNMTA5IC43ODN2NTZsNTYtMzAtNTYtMjYiIGZpbGw9IiNmZmYiLz48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiMyMzFmMjAiIGQ9Ik0xMDkgLjc4M3Y1Nmw1Ni0zMC01Ni0yNnpNMjggMjkuNzgzaDgwIi8+PGNsaXBQYXRoIGlkPSJhIj48cGF0aCB0cmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAtMSAwIDEzMi4yODMpIiBkPSJNLjA2IDEzMi4yODNoMjc3LjAyOVYuMDZILjA2eiIvPjwvY2xpcFBhdGg+PGcgY2xpcC1wYXRoPSJ1cmwoI2EpIj48cGF0aCBmaWxsPSJub25lIiBzdHJva2U9IiMyMzFmMjAiIGQ9Ik0wIDI5Ljc4M2gyOCIvPjwvZz48cGF0aCBkPSJNMzAuMzYyIDI4Ljc1OGMtMS42NTMtLjQ5OS0yLjcyOC0uOTU5LTQuMDU0LTEuNDkxdjUuMDQ0Yy40NzQtLjIyNiAyLjQwMS0uOTkzIDQuMDU0LTEuNDkyIDEuNzY5LS41MzQgMy4zNzQtLjkgNC40MTQtMS4wMy0xLjA0LS4xMzEtMi42NDUtLjQ5Ni00LjQxNC0xLjAzMSIgZmlsbD0iIzIzMWYyMCIvPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzIzMWYyMCIgZD0iTTI0OSAyNi43ODNoMjAiLz48cGF0aCBkPSJNMjcxLjM2MSAyNS43NThjLTEuNjUyLS40OTktMi43MjctLjk1OS00LjA1My0xLjQ5MXY1LjA0NGMuNDc0LS4yMjYgMi40MDEtLjk5MyA0LjA1My0xLjQ5MiAxLjc3LS41MzQgMy4zNzUtLjkgNC40MTUtMS4wMy0xLjA0LS4xMzEtMi42NDUtLjQ5Ni00LjQxNS0xLjAzMSIgZmlsbD0iIzIzMWYyMCIvPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzIzMWYyMCIgZD0iTTE2NSAyNi43ODNoODRtLTE5NSA0djgwaDEzOHYtODQiLz48cGF0aCBkPSJNNzguMDA5IDcyLjM1MkExNi45MjUgMTYuOTI1IDAgMDE4NyA2OS43ODNjOS4zODkgMCAxNyA3LjYxMiAxNyAxNyAwIDkuMzg5LTcuNjExIDE3LTE3IDE3LTYuNjU2IDAtMTIuNDE5LTMuODI2LTE1LjIxLTkuMzk5IiBmaWxsPSIjZmZmIi8+PHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjMxZjIwIiBkPSJNNzguMDA5IDcyLjM1MkExNi45MjUgMTYuOTI1IDAgMDE4NyA2OS43ODNjOS4zODkgMCAxNyA3LjYxMiAxNyAxNyAwIDkuMzg5LTcuNjExIDE3LTE3IDE3LTYuNjU2IDAtMTIuNDE5LTMuODI2LTE1LjIxLTkuMzk5Ii8+PHBhdGggZD0iTTY5LjgxNiA5Mi43MzFjLjI5NCAxLjcwMy4zNjQgMi44NjkuNDgxIDQuMjkzbDQuNTExLTIuMjU4Yy0uNDE0LS4zMjQtMS45NjItMS43MDItMy4xNDktMi45NTctMS4yNy0xLjM0My0yLjMxNi0yLjYxNC0yLjg5OC0zLjQ4Ni4zNDkuOTg5Ljc0MSAyLjU4NyAxLjA1NSA0LjQwOCIgZmlsbD0iIzIzMWYyMCIvPjxwYXRoIGQ9Ik0xMTMgMTMxLjc4M2g0NXYtNDJoLTQ1eiIgZmlsbD0iI2ZmZiIvPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzIzMWYyMCIgZD0iTTE1OCAxMzEuNzgzaC00NXYtNDJoNDV6Ii8+PHN5bWJvbCBpZD0iYiI+PHBhdGggZD0iTS41NjUuNTkzQy41OTkuNjQ3LjYzLjY3MS42ODEuNjc1Yy4wMS4wMDEuMDE4LjAwMS4wMTguMDE5IDAgLjAwNC0uMDAyLjAxLS4wMTEuMDFMLjYwOS43MDIuNTIyLjcwNGMtLjAwOCAwLS4wMTggMC0uMDE4LS4wMTkgMC0uMDA5LjAwOS0uMDEuMDEzLS4wMUMuNTU0LjY3Mi41NTguNjU0LjU1OC42NDJBLjA5NC4wOTQgMCAwMC41NDMuNjAzTC4yMjkuMTA1bC0uMDcuNTM5YzAgLjAyOS4wNTIuMDMxLjA2My4wMzEuMDE1IDAgLjAyNCAwIC4wMjQuMDE5IDAgLjAxLS4wMTEuMDEtLjAxNC4wMUwuMTc4LjcwMkguMTIyQy4wNDkuNzAyLjAxOS43MDQuMDE4LjcwNC4wMTIuNzA0IDAgLjcwNCAwIC42ODYgMCAuNjc1LjAwNy42NzUuMDIzLjY3NS4wNzQuNjc1LjA3Ny42NjYuMDguNjQxTC4xNi4wMjRDLjE2My4wMDMuMTYzIDAgLjE3NyAwYy4wMTIgMCAuMDE3LjAwMy4wMjcuMDE5bC4zNjEuNTc0eiIvPjwvc3ltYm9sPjx1c2UgeGxpbms6aHJlZj0iI2IiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAyLjgyIDI0LjI0MSkiIGZpbGw9IiMyMzFmMjAiLz48c3ltYm9sIGlkPSJjIj48cGF0aCBkPSJNLjI2OC42MzRjMCAuMDIyLS4wMTYuMDM4LS4wMzkuMDM4Qy4yMDMuNjcyLjE3NC42NDguMTc0LjYxOC4xNzQuNTk2LjE5LjU4LjIxMy41OGMuMDI2IDAgLjA1NS4wMjQuMDU1LjA1NE0uMTIyLjI2N0MuMDk1LjIwMS4wOTUuMTk5LjA2OC4xMjkuMDYzLjExNC4wNTguMTAyLjA1OC4wODUuMDU4LjAzNi4wOTYgMCAuMTQ5IDBjLjA5NyAwIC4xMzguMTQuMTM4LjE1MyAwIC4wMS0uMDA4LjAxMy0uMDE1LjAxM0MuMjYuMTY2LjI1OC4xNTkuMjU1LjE0OS4yMzIuMDY5LjE5MS4wMjguMTUxLjAyOC4xMzkuMDI4LjEyNy4wMzMuMTI3LjA2YzAgLjAyNC4wMDcuMDQyLjAyLjA3M2wuMDMxLjA4MS4wMzEuMDgxQS4yNjMuMjYzIDAgMDEuMjMuMzY2YzAgLjA1LS4wNC4wODUtLjA5MS4wODVDLjA0Mi40NTEgMCAuMzExIDAgLjI5OCAwIC4yODkuMDA3LjI4NS4wMTUuMjg1Yy4wMTMgMCAuMDE0LjAwNi4wMTcuMDE2LjAyOC4wOTUuMDc0LjEyMi4xMDQuMTIyQy4xNS40MjMuMTYuNDE4LjE2LjM5QS4xNi4xNiAwIDAwLjE0OS4zMzZMLjEyMi4yNjd6Ii8+PC9zeW1ib2w+PHVzZSB4bGluazpocmVmPSIjYyIgdHJhbnNmb3JtPSJtYXRyaXgoNy45NyAwIDAgLTcuOTcgOS4yNCAyNS44NjMpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjYiIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDI2Ni44MjIgMjAuMjQxKSIgZmlsbD0iIzIzMWYyMCIvPjxzeW1ib2wgaWQ9ImQiPjxwYXRoIGQ9Ik0uNDU0LjI3OGMwIC4wOTgtLjA3LjE3My0uMTc0LjE3M0EuMjk4LjI5OCAwIDAxMCAuMTczQzAgLjA3MS4wNzIgMCAuMTc0IDBjLjE0MyAwIC4yOC4xNC4yOC4yNzhNLjE3NS4wMjhDLjE0LjAyOC4wODEuMDQ2LjA4MS4xMzhjMCAuMDQxLjAxOS4xNDkuMDY3LjIxMS4wNDkuMDYzLjEwNC4wNzQuMTMxLjA3NEMuMzIuNDIzLjM3My4zOTguMzczLjMxNEEuNDQzLjQ0MyAwIDAwLjMxNy4xMTlDLjI4LjA2Mi4yMjUuMDI4LjE3NS4wMjh6Ii8+PC9zeW1ib2w+PHVzZSB4bGluazpocmVmPSIjZCIgdHJhbnNmb3JtPSJtYXRyaXgoNy45NyAwIDAgLTcuOTcgMjczLjM1IDIxLjg2MykiIGZpbGw9IiMyMzFmMjAiLz48c3ltYm9sIGlkPSJlIj48cGF0aCBkPSJNLjQ0OC41OTlhLjIxMy4yMTMgMCAwMS4xMDkuMTczYzAgLjA3Mi0uMDUyLjEyNi0uMTMuMTI2Qy4yOTkuODk4LjE4OC43NjMuMTU1LjYzTC4wMDMuMDIzQS4wNzQuMDc0IDAgMDEwIC4wMDhDMCAuMDA2IDAgMCAuMDEgMGMuMDA4IDAgLjAwOS4wMDEuMDE0LjAxOWwuMDcxLjI4NGEuMTc2LjE3NiAwIDAxLjA1LS4wODJDLjE4OS4xODIuMjM4LjE4Mi4yNTIuMTgyYy4xMzUgMCAuMjYyLjE0My4yNjIuMjc4IDAgLjA2MS0uMDI2LjExLS4wNjYuMTM5bS0uMDMuMDE1Qy4zOTEuNjI1LjM3LjYyNS4zNTEuNjI1Yy0uMDIyIDAtLjA3MyAwLS4wNzMtLjAzIDAtLjAyMy4wMzYtLjAyNC4wNjQtLjAyNGEuMi4yIDAgMDEuMDczLjAxMkMuNDQ2LjU1NC40NDYuNTE2LjQ0Ni40OTVBLjQ1LjQ1IDAgMDAuMzgyLjI4MkMuMzU0LjI0MS4zMDYuMjAyLjI1Mi4yMDIuMTY3LjIwMi4xMTMuMjY1LjExMy4zNDljMCAuMDI1LjAwNC4wNDIuMDE3LjA5NGwuMDQuMTU4Yy4wMDkuMDM2LjAzMy4xMzMuMTAxLjIwMS4wMi4wMTkuMDc3LjA3Ni4xNTMuMDc2LjA0OSAwIC4wNzUtLjAzMy4wNzUtLjA4MUMuNDk5Ljc4My40ODkuNjY0LjQxOC42MTRNLjMuNTk2bC4wMDkuMDA1YS4xNy4xNyAwIDAwLjA0LjAwNGMuMDE2IDAgLjAyNiAwIC4wNC0uMDA2Qy4zNy41OTEuMzU1LjU5MS4zNDIuNTkxQS4xMDcuMTA3IDAgMDAuMy41OTZ6Ii8+PC9zeW1ib2w+PHN5bWJvbCBpZD0iZiI+PHBhdGggZD0iTS4xMzYuMTExQy4xMDEuMDUyLjA2Ny4wMzIuMDE5LjAyOS4wMDguMDI4IDAgLjAyOCAwIC4wMSAwIC4wMDQuMDA1IDAgLjAxMiAwbC4wODEuMDAyTC4xODIgMEMuMTg4IDAgLjIgMCAuMi4wMTljMCAuMDA5LS4wMDguMDEtLjAxNC4wMUMuMTYzLjAzMS4xNDQuMDM5LjE0NC4wNjNjMCAuMDE0LjAwNi4wMjUuMDE5LjA0N2wuMDc2LjEyNmguMjU1TC40OTYuMjFBMy4yNyAzLjI3IDAgMDAuNTExLjA2MUMuNTExLjAzMS40Ni4wMjkuNDQ0LjAyOWMtLjAxMSAwLS4wMjIgMC0uMDIyLS4wMThDLjQyMiAwIC40MzEgMCAuNDM3IDBsLjA1NC4wMDJoLjA1N0MuNjA5LjAwMi42NTMgMCAuNjU0IDBjLjAwNyAwIC4wMTggMCAuMDE4LjAxOSAwIC4wMS0uMDA5LjAxLS4wMjQuMDEtLjA1NSAwLS4wNTYuMDA5LS4wNTkuMDM5TC41MjguNjkyQy41MjYuNzEyLjUyMi43MTQuNTExLjcxNC41MDEuNzE0LjQ5NS43MTIuNDg2LjY5N0wuMTM2LjExMW0uMTIuMTU0bC4yMDEuMzM2LjAzNC0uMzM2SC4yNTZ6Ii8+PC9zeW1ib2w+PHVzZSB4bGluazpocmVmPSIjZSIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDEzMS41MTMgMTE3LjY3OCkiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNmIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMTE2LjgxOCAzOC4zNikiIGZpbGw9IiMyMzFmMjAiLz48c3ltYm9sIGlkPSJnIj48cGF0aCBkPSJNLjUyMS4zMjNILjMxNHYtLjA2aC4xMzF2LS4xOEEuNDIyLjQyMiAwIDAwLjMxOC4wNjJDLjE4NS4wNjIuMDg2LjIwMS4wODYuMzY4YzAgLjE2Ny4wOTguMzA2LjIzMi4zMDZhLjI1OC4yNTggMCAwMC4xOC0uMDY4bC4wMTUuMDgxYS4zOTMuMzkzIDAgMDEtLjE5NC4wNDlDLjEzNS43MzYgMCAuNTY3IDAgLjM2OCAwIC4xNjUuMTQgMCAuMzE3IDBjLjA1NSAwIC4xMy4wMTIuMjA0LjA0OXYuMjc0eiIvPjwvc3ltYm9sPjxzeW1ib2wgaWQ9ImgiPjxwYXRoIGQ9Ik0uMzQ3LjMwM2EuMTYuMTYgMCAwMS0uMTYyLjE2Ni4yOS4yOSAwIDAxLS4xNTQtLjA0MkwuMDM3LjM2MWEuMjQuMjQgMCAwMC4xNDguMDVjLjA0NiAwIC4wODYtLjAzNy4wODYtLjExVi4yNkEuNTk2LjU5NiAwIDAxLjEwNi4yMzVDLjAzOS4yMTIgMCAuMTc1IDAgLjEyNSAwIC4wODEuMDI2IDAgLjExMSAwYy4wNTUgMCAuMTI1LjAxNi4xNjIuMDQ3Vi4wMWguMDc0di4yOTNNLjI3MS4xNDRDLjI3MS4xMjQuMjcxLjEuMjM4LjA4QS4xNTMuMTUzIDAgMDAuMTYyLjA2Qy4xMDguMDYuMDcxLjA4OS4wNzEuMTI2YzAgLjA2OC4xMzkuMDgzLjIuMDgzVi4xNDR6Ii8+PC9zeW1ib2w+PHN5bWJvbCBpZD0iaSI+PHBhdGggZD0iTS4wODYuNjc5SDBWLjU5M2guMDg2di4wODZNLjA4LjQ0NEguMDA2VjBILjA4di40NDR6Ii8+PC9zeW1ib2w+PHN5bWJvbCBpZD0iaiI+PHBhdGggZD0iTS4zNDcuMzAxYzAgLjA2MS0uMDEzLjE1My0uMTM0LjE1M0EuMTc2LjE3NiAwIDAxLjA3MS4zODF2LjA2OEgwVjBoLjA3NnYuMjQ5YzAgLjA2Mi4wMjMuMTQ1LjA5OS4xNDUuMDkzIDAgLjA5Ni0uMDY1LjA5Ni0uMVYwaC4wNzZ2LjMwMXoiLz48L3N5bWJvbD48c3ltYm9sIGlkPSJrIj48cGF0aCBkPSJNLjM4My4zMTZ2LjA2SC4wODZWLjYzaC4xMjlMLjI1MS42MjloLjE3M3YuMDYzSDBWMGguMDg2di4zMTZoLjI5N3oiLz48L3N5bWJvbD48c3ltYm9sIGlkPSJsIj48cGF0aCBkPSJNLjM3NC4yMzVhLjMwMi4zMDIgMCAwMS0uMDM2LjE1Ny4xNi4xNiAwIDAxLS4xNC4wNzdDLjA5LjQ2OSAwIC4zNjUgMCAuMjM1IDAgLjEwMy4wOTYgMCAuMjEyIDBjLjA0NiAwIC4xMDEuMDEzLjE1Ni4wNTNMLjM2NS4wOWEuMTg1LjE4NSAwIDAwLS4wMDMuMDI3QS4yMjguMjI4IDAgMDAuMjE0LjA2Qy4xMzcuMDYuMDcxLjEyOS4wNjkuMjM1aC4zMDVNLjA3NS4yODljLjAxNy4wNjcuMDY0LjEyLjEyMy4xMi4wMzEgMCAuMS0uMDE0LjExNy0uMTJoLS4yNHoiLz48L3N5bWJvbD48c3ltYm9sIGlkPSJtIj48cGF0aCBkPSJNLjM4OC43MDRILjMxNFYuNDEyYS4yMjMuMjIzIDAgMDEtLjE0MS4wNTJDLjA3OC40NjQgMCAuMzYyIDAgLjIzMiAwIC4xMDMuMDc0IDAgLjE2OSAwYy4wMzcgMCAuMDkzLjAxMi4xNDMuMDYxVi4wMWguMDc2di42OTRNLjMxMi4xMjhDLjI4OC4wODUuMjUzLjA2LjIwOS4wNi4xNDguMDYuMDc2LjEwNy4wNzYuMjMxYzAgLjEzMy4wODUuMTczLjE0My4xNzNBLjExLjExIDAgMDAuMzEyLjM1MVYuMTI4eiIvPjwvc3ltYm9sPjxzeW1ib2wgaWQ9Im4iPjxwYXRoIGQ9Ik0uMDc0LjcwNEgwVi4wMWguMDc2di4wNDVBLjE4Ny4xODcgMCAwMS4yMDYgMGMuMDk1IDAgLjE4Mi4wOTcuMTgyLjIzMyAwIC4xMjMtLjA2Ni4yMzEtLjE1OS4yMzFBLjI0OC4yNDggMCAwMS4wNzQuNDA4di4yOTZNLjA3Ni4zNDdhLjEyNC4xMjQgMCAwMC4xMDMuMDU3Qy4yNC40MDQuMzEyLjM1OC4zMTIuMjMzLjMxMi4xMDMuMjMuMDYuMTY5LjA2YS4xLjEgMCAwMC0uMDY1LjAyNEMuMDguMTA1LjA3Ni4xMjMuMDc2LjE0di4yMDd6Ii8+PC9zeW1ib2w+PHN5bWJvbCBpZD0ibyI+PHBhdGggZD0iTS4zNjYuMTE4QS4yMzkuMjM5IDAgMDAuMjEzLjA2MkMuMTMuMDYyLjA3Ni4xMzYuMDc2LjIzM2MwIC4wODMuMDQuMTc0LjE0LjE3NEEuMjA2LjIwNiAwIDAwLjM1NC4zNjJsLjAxMi4wNjVhLjI1LjI1IDAgMDEtLjE1LjA0MkMuMDc4LjQ2OSAwIC4zNDcgMCAuMjMzIDAgLjEwNS4wOTIgMCAuMjEyIDBjLjA0OSAwIC4xMDUuMDEyLjE2LjA1MkEuNTQ3LjU0NyAwIDAxLjM2OC4wOUwuMzY2LjExOHoiLz48L3N5bWJvbD48c3ltYm9sIGlkPSJwIj48cGF0aCBkPSJNLjE5NC4yNzNsLjE2NC4xNzFILjI2NkwuMDczLjI0M3YuNDUxSDBWMGguMDd2LjE0NGwuMDc2LjA3OUwuMjk4IDBILjM4TC4xOTQuMjczeiIvPjwvc3ltYm9sPjxzeW1ib2wgaWQ9InEiPjxwYXRoIGQ9Ik0uMDc0LjY5NEgwVjBoLjA3NHYuNjk0eiIvPjwvc3ltYm9sPjxzeW1ib2wgaWQ9InIiPjxwYXRoIGQ9Ik0uNDI5LjIzQy40MjkuMzY1LjMzLjQ2OS4yMTUuNDY5LjA5Ny40NjkgMCAuMzYzIDAgLjIzIDAgLjA5OS4xIDAgLjIxNCAwYy4xMTggMCAuMjE1LjEwMS4yMTUuMjNNLjIxNS4wNjJDLjE0My4wNjIuMDc2LjEyMi4wNzYuMjRjMCAuMTIxLjA3NS4xNjkuMTM4LjE2OUMuMjgzLjQwOS4zNTMuMzU3LjM1My4yNC4zNTMuMTE3LjI4Mi4wNjIuMjE1LjA2MnoiLz48L3N5bWJvbD48c3ltYm9sIGlkPSJzIj48cGF0aCBkPSJNLjA3Ni4yMzlhLjE5LjE5IDAgMDEuMTMtLjA1NWMuMDk2IDAgLjE4Mi4wOTcuMTgyLjIzMyAwIC4xMjEtLjA2NC4yMzEtLjE1Ny4yMzFBLjI1MS4yNTEgMCAwMS4wNzQuNTkxdi4wNDdIMFYwaC4wNzZ2LjIzOW0wIC4yOTFhLjEyNS4xMjUgMCAwMC4xMDIuMDU2Yy4wNzQgMCAuMTM0LS4wNzUuMTM0LS4xNyAwLS4xLS4wNjktLjE3Mi0uMTQzLS4xNzJhLjEuMSAwIDAwLS4wNjUuMDI0Qy4wNzkuMjkuMDc2LjMwOC4wNzYuMzI0Vi41M3oiLz48L3N5bWJvbD48dXNlIHhsaW5rOmhyZWY9IiNnIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMTE2LjI4OCAyNi41MzIpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjaCIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDEyMy44MiAyNi40KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2kiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAxMjkuNzUgMjYuMjgxKSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2oiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAxMzIuNTU5IDI2LjI4MSkiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNrIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMTEwLjY0NCA3NC4yODIpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjbCIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDExNi4yODYgNzQuNDAxKSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2wiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAxMjEuNDg2IDc0LjQwMSkiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNtIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMTI2LjcxIDc0LjQwMSkiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNuIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMTMzLjIyNiA3NC40MDEpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjaCIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDEzOC44MjEgNzQuNDAxKSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI28iIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAxNDQuMzA4IDc0LjQwMSkiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNwIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMTUwLjAyMyA3NC4yODIpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjcSIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDE1OS42MjggNzQuMjgyKSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI3IiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAxNjEuODAzIDc0LjQwMSkiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNyIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMTY3Ljk4NSA3NC40MDEpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjcyIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDE3NC40MDUgNzYuNikiIGZpbGw9IiMyMzFmMjAiLz48L2c+PC9zdmc+</file>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+    </question>
+    <!-- question: 9278  -->
+    <question type="stack">
+        <name>
+            <text>10.3.2.2 The exponential form to Cartesian form</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        Øving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Express \( \displaystyle{z= {@arr@}e^{i{@th@}}} \) in Cartesian form. Give your answer in decimal form, rounding to two decimal places where appropriate:
+    </span>
+    <span class="multilang" lang="no">
+        Uttrykk \( \displaystyle{z= {@arr@}e^{i{@th@}}} \) i kartesisk form. Gi svaret ditt i desimal form, avrundet til to desimaler der det er hensiktsmessig:
+    </span>
+</p>
+<p>
+    \(z=\quad\)[[input:ans1]][[validation:ans1]]\(\quad+\quad i\) [[input:ans2]][[validation:ans2]] [[feedback:prt1]]
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="en">
+    We use the previous key point Key Point: \[ z = {@arr@}e^{i{@th@}} = {@arr@}\left(\cos{@th@} + i\sin{@th@}\right) = {@ta1@} + {@ta2@}i \]
+</span>
+<span class="multilang" lang="no">
+    Vi bruker det forrige nøkkelpunktet: \[ z = {@arr@}e^{i{@th@}} = {@arr@}\left(\cos{@th@} + i\sin{@th@}\right) = {@ta1@} + {@ta2@}i \]
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text>fpprec: 3
+den: 3+rand(10)
+arr: 1+rand(10)
+th: %pi / den;
+re: 0.01*round(100*arr*cos(th));
+im: 0.01*round(100*arr*sin(th));
+ta1: re;
+ta2: im;</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text></text>
+        </specificfeedback>
+        <questionnote>
+            <text>\[ {@arr@}e^{i{@th@}} = {@arr@}(\cos({@th@}) + i\sin({@th@})) = {@ta1@} + {@ta2@}i \]</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: green; --darkreader-inline-color:#7fff7f;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: orange; --darkreader-inline-color:#ffb733;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: red; --darkreader-inline-color:#ff3333;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed></variantsselectionseed>
+        <input>
+            <name>ans1</name>
+            <type>numerical</type>
+            <tans>ta1</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords>i,j</forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options>maxdp:2</options>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>numerical</type>
+            <tans>ta2</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords>i,j</forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options>maxdp:2</options>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions>2</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>ta2</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>294777463</deployedseed>
+        <deployedseed>1316583837</deployedseed>
+        <deployedseed>1589834710</deployedseed>
+        <deployedseed>1912537719</deployedseed>
+        <deployedseed>1545575272</deployedseed>
+        <deployedseed>1465825722</deployedseed>
+        <deployedseed>1386642914</deployedseed>
+        <deployedseed>1382787407</deployedseed>
+        <deployedseed>1306166236</deployedseed>
+        <deployedseed>1624721735</deployedseed>
+        <deployedseed>479007511</deployedseed>
+        <deployedseed>745028119</deployedseed>
+        <deployedseed>758199865</deployedseed>
+        <deployedseed>1966216144</deployedseed>
+        <deployedseed>2078781584</deployedseed>
+        <deployedseed>61478448</deployedseed>
+        <deployedseed>11399745</deployedseed>
+        <deployedseed>131749745</deployedseed>
+        <deployedseed>38447556</deployedseed>
+        <deployedseed>112577077</deployedseed>
+        <deployedseed>1231428857</deployedseed>
+        <deployedseed>739242924</deployedseed>
+        <deployedseed>1878867735</deployedseed>
+        <deployedseed>881113095</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta1</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta2</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-2-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>0</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ev(ta2+1,simp)</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt1-2-F</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    <!-- question: 9280  -->
+    <question type="stack">
+        <name>
+            <text>10.3.2.4 Finding the exponential form</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        Øving
+    </span>
+</p>
+<span class="multilang" lang="en">
+    Express the complex number \(z = \displaystyle{@zed@}\)  in exponential form. The argument of \(z\) should be given precisely in terms of \(\pi\), i.e. do not give your answer in decimal form:
+</span>
+<span class="multilang" lang="no">
+    Uttrykk det komplekse tallet \(z = \displaystyle{@zed@}\)  i eksponentiell form. Argumentet til \(z\) skal gis presist i form av \(\pi\), dvs. ikke gi svaret ditt i desimal form:
+</span>
+<p>
+    \(z=\quad\)[[input:ans1]][[validation:ans1]] [[feedback:prt1]]
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        We want to express \(z\) in the form \(re^{i\theta}\).
+    </span>
+    <span class="multilang" lang="no">
+        Vi ønsker å uttrykke \(z\) i formen \(re^{i\theta}\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We calculate \(r = \sqrt{({@re@})^2 + ({@im@})^2} = {@arr@}\) and \(\theta = \tan^{-1}\left({@im@}/{@re@}\right) = {@th@}\).
+    </span>
+    <span class="multilang" lang="no">
+        Vi beregner \(r = \sqrt{({@re@})^2 + ({@im@})^2} = {@arr@}\) og \(\theta = \tan^{-1}\left({@im@}/{@re@}\right) = {@th@}\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Therefore: \[z = {@arr@}e^{{@th@}i}.\]
+    </span>
+    <span class="multilang" lang="no">
+        Derfor: \[z = {@arr@}e^{{@th@}i}.\]
+    </span>
+</p>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text>th: rand([%pi/3,%pi/4,-%pi/3,-%pi/4])
+arr: 2 + rand(10);
+re: arr*cos(th);
+im: arr*sin(th);
+simp:false;
+ta: arr*e^(th*%i);
+zed: re + im*%i;</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text></text>
+        </specificfeedback>
+        <questionnote>
+            <text>\[ {@ta@} = {@zed@}\]</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: green; --darkreader-inline-color:#7fff7f;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: orange; --darkreader-inline-color:#ffb733;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: red; --darkreader-inline-color:#ff3333;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed></variantsselectionseed>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>ta</tans>
+            <boxsize>13</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>EqualComAss</answertest>
+                <sans>ans1</sans>
+                <tans>ta</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1901606859</deployedseed>
+        <deployedseed>602818603</deployedseed>
+        <deployedseed>894327509</deployedseed>
+        <deployedseed>1479722686</deployedseed>
+        <deployedseed>1994926504</deployedseed>
+        <deployedseed>1023542860</deployedseed>
+        <deployedseed>603625680</deployedseed>
+        <deployedseed>1866674831</deployedseed>
+        <deployedseed>1786551608</deployedseed>
+        <deployedseed>1910411624</deployedseed>
+        <deployedseed>1013862141</deployedseed>
+        <deployedseed>583681724</deployedseed>
+        <deployedseed>572819719</deployedseed>
+        <deployedseed>686289728</deployedseed>
+        <deployedseed>1394133457</deployedseed>
+        <deployedseed>1380486129</deployedseed>
+        <deployedseed>1750255028</deployedseed>
+        <deployedseed>1893038075</deployedseed>
+        <deployedseed>1857467541</deployedseed>
+        <deployedseed>1886071763</deployedseed>
+        <deployedseed>963949412</deployedseed>
+        <deployedseed>1523582033</deployedseed>
+        <deployedseed>1901542382</deployedseed>
+        <deployedseed>1322232985</deployedseed>
+        <deployedseed>1511949970</deployedseed>
+        <deployedseed>233523471</deployedseed>
+        <deployedseed>1198274324</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>0 + 2*%i</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt1-1-F</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    <!-- question: 9282  -->
+    <question type="stack">
+        <name>
+            <text>10.3.3.2 Analogous trigonometric and hyperbolic function idenities</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        Øving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Given that \(\cos^2z + \sin^2z \equiv 1\) for all \(z\) then, utilising complex numbers, obtain
+                the equivalent identity for hyperbolic functions:
+    </span>
+    <span class="multilang" lang="no">
+        Gitt at \(\cos^2z + \sin^2z \equiv 1\) for alle \(z\) så, ved hjelp av komplekse tall, finn den tilsvarende
+                                identiteten for hyperbolske funksjoner:
+    </span>
+    <br/>
+</p>
+<p>
+    [[input:ans1]] [[validation:ans1]] \(\quad\equiv1\) [[feedback:prt1]]
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        You should obtain \(\cosh^2z - \sinh^2z \equiv 1\) since, if we replace \(z\) by \(iz\) in the given identity then \(\cos^2(iz) + \sin^2(iz) \equiv 1\). But as noted in the previous Key Point \(\cos(iz) \equiv \cosh z\) and \(\sin(iz) \equiv i\sinh z\) so the result
+                follows.
+    </span>
+    <span class="multilang" lang="no">
+        Du bør få \(\cosh^2z - \sinh^2z \equiv 1\) siden, hvis vi erstatter \(z\) med \(iz\) i den gitte identiteten, så er \(\cos^2(iz) + \sin^2(iz) \equiv 1\). Men som nevnt i forrige nøkkelpunkt er \(\cos(iz) \equiv \cosh z\) og \(\sin(iz) \equiv i\sinh z\) slik at resultatet følger.
+    </span>
+    <br/>
+</p>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text>ta: (cosh(z))^2 - (sinh(z))^2;</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text></text>
+        </specificfeedback>
+        <questionnote>
+            <text></text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: green; --darkreader-inline-color:#7fff7f;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: orange; --darkreader-inline-color:#ffb733;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: red; --darkreader-inline-color:#ff3333;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed></variantsselectionseed>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>ta</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>EqualComAss</answertest>
+                <sans>ans1</sans>
+                <tans>ta</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>cosh(z)^2 + sinh(z)^2</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt1-1-F</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    <!-- question: 9284  -->
+    <question type="stack">
+        <name>
+            <text>10.3.4.1 Applying Osborne's rule</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        Øving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Two standard identities in trigonometry are
+    </span>
+    <span class="multilang" lang="no">
+        To standard identiteter i trigonometri er
+    </span>
+</p>
+<ol class="HELM_parts_inline">
+    <li>
+        \(\sin2z\equiv2\sin z\cos z\)
+    </li>
+    <li>
+        \(\cos2z\equiv\cos^2z-\sin^2z\)
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        Use Osborne's rule to obtain the corresponding identities for hyperbolic functions.
+    </span>
+    <span class="multilang" lang="no">
+        Bruk Osbornes regel for å få de tilsvarende identitetene for hyperbolske funksjoner.
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        \(\sinh2z\quad\equiv\quad\)[[input:ans1]][[validation:ans1]][[feedback:prt1]]
+    </li>
+    <li>
+        \(\cosh2z\quad\equiv\quad\)[[input:ans2]][[validation:ans2]][[feedback:prt2]]
+    </li>
+</ol>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        This is a direct application of Osborne's rule.
+    </span>
+    <span class="multilang" lang="no">
+        Dette er en direkte anvendelse av Osbornes regel.
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        \(\sinh2z\equiv2\sinh z\cosh z\)
+    </li>
+    <li>
+        \(\cosh2z\equiv\cosh^2z+\sinh^2z\)
+    </li>
+</ol>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>4.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text>ta1: 2*sinh(z)*cosh(z)
+ta2: cosh(z)^2 + sinh(z)^2</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text></text>
+        </specificfeedback>
+        <questionnote>
+            <text></text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: green; --darkreader-inline-color:#7fff7f;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: orange; --darkreader-inline-color:#ffb733;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: red; --darkreader-inline-color:#ff3333;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed></variantsselectionseed>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>ta1</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>ta2</tans>
+            <boxsize>12</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>EqualComAss</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>EqualComAss</answertest>
+                <sans>ans2</sans>
+                <tans>ta2</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta1</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta2</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta2</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta1</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt1-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt2-1-F</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    <!-- question: 9285  -->
+    <question type="stack">
+        <name>
+            <text>10.3.4.2 Hyperbolic function of a complex number</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        Øving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Express \(z={@exp@}(a+ib)\) in Cartesian form:
+    </span>
+    <span class="multilang" lang="no">
+        Uttrykk \(z={@exp@}(a+ib)\) i kartesisk form:
+    </span>
+</p>
+<p>
+    \(z=\quad\)[[input:ans1]][[validation:ans1]] \(\quad+\quad\) [[input:ans2]][[validation:ans2]]\(\ \ i\)    [[feedback:prt1]]  [[feedback:prt2]]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        <strong>
+            Hint:
+        </strong>
+        the imaginary unit, \(i\), should not appear in your final expressions.
+    </span>
+    <span class="multilang" lang="no">
+        <strong>
+            Hint:
+        </strong>
+        den imaginære enheten, \(i\), skal ikke være i ditt endelige uttrykk.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Therefore find the real and imaginary parts of \(z = {@exp@}(1 + {@im@}i)\). Express your answers in decimal form, rounding to 3 decimal places if necessary:
+    </span>
+    <span class="multilang" lang="no">
+        Finn dermed de reelle og imaginære delene av \(z = {@exp@}(1 + {@im@}i)\). Uttrykk svarene dine i desimal form, avrund til 3 desimaler om nødvendig:
+    </span>
+</p>
+<ul>
+    <li>
+        \(\text{Re}(z)=\quad\)[[input:ans3]][[validation:ans3]][[feedback:prt3]]
+    </li>
+    <li>
+        \(\text{Im}(z)=\quad\)[[input:ans4]][[validation:ans4]][[feedback:prt4]]
+    </li>
+</ul>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        We use the hyperbolic sum-angle identity, followed by Osborne's rule:\[{@expr[1]@}(a+ib) \equiv {@expr[1]@}(a)\cosh(ib) +{@expr[6]@}(a)\sinh(ib) \equiv {@ta1@} + i\,{@ta2@}.\]
+    </span>
+    <span class="multilang" lang="no">
+        Vi bruker den hyperbolske sum-vinkel identiteten, etterfulgt av Osbornes regel:\[{@expr[1]@}(a+ib) \equiv {@expr[1]@}(a)\cosh(ib) +{@expr[6]@}(a)\sinh(ib) \equiv {@ta1@} + i\,{@ta2@}.\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We then plug in \(a=1\) and \(b={@im@}\) to get:\[{@expr[1]@}(1+{@im@}i) = {@ta3@} + {@ta4@}i.\]
+    </span>
+    <span class="multilang" lang="no">
+        Vi setter så inn \(a=1\) og \(b={@im@}\) for å få:\[{@expr[1]@}(1+{@im@}i) = {@ta3@} + {@ta4@}i.\]
+    </span>
+</p>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+        <stackversion>
+            <text>2023010400</text>
+        </stackversion>
+        <questionvariables>
+            <text>den: rand([2,3,4,5,6]);
+im: %pi/den;
+/*Two lists, each corresponding to identity for sinh or cosh*/
+expr: rand([[sinh,sinh(a),cos(b),cosh(a),sin(b),cosh,sinh(1),cos(im),cosh(1),sin(im)],[cosh,cosh(a),cos(b),sinh(a),sin(b),sinh,cosh(1),cos(im),sinh(1),sin(im)]]);
+/*exp is for the question text*/
+exp: expr[1];
+ta1: expr[2]*expr[3];
+ta2: expr[4]*expr[5];
+ta3: ev(0.001*round(1000*expr[7]*expr[8]),simp);
+ta4: ev(0.001*round(1000*expr[9]*expr[10]),simp);</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text></text>
+        </specificfeedback>
+        <questionnote>
+            <text>\[ {@expr[1]@}(a+ib) = {@ta1@} + i{@ta2@} \]
+\[ \text{for }{@im@}: \]
+\[ \text{Im}(z) = {@ta3@} \]
+\[ \text{Re}(z) = {@ta4@} \]</text>
+        </questionnote>
+        <questionsimplify>0</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: green; --darkreader-inline-color:#7fff7f;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: orange; --darkreader-inline-color:#ffb733;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: red; --darkreader-inline-color:#ff3333;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed></variantsselectionseed>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>ta1</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords>i,j</forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>ta2</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords>i,j</forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>numerical</type>
+            <tans>ta3</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords>sin, cos, sinh, cosh,i,j</forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>numerical</type>
+            <tans>ta4</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords>sin, cos, sinh, cosh,i,j</forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>ta2</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>ta3</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>ta4</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1100617157</deployedseed>
+        <deployedseed>201185391</deployedseed>
+        <deployedseed>697991331</deployedseed>
+        <deployedseed>1637559413</deployedseed>
+        <deployedseed>728881762</deployedseed>
+        <deployedseed>279872229</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta1</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta2</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>ta3</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>ta4</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt3-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt4-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>a</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>b</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>1</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>0</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt1-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt2-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt3-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt4-1-F</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    <!-- question: 9286  -->
+    <question type="stack">
+        <name>
+            <text>10.3.4.3 Exponential form to Cartesian form (NOT IN QUIZ)</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    Exercise
+</p>
+<p>
+    Express the following complex numbers in Cartesian form
+</p>
+<ol class="HELM_parts_inline">
+    <li>
+        <span class="math inline">
+            \({@3*mult@}e^{i\pi /3}\)
+        </span>
+    </li>
+    <li>
+        <span class="math inline">
+            \(e^{-{@2*mult@}\pi i}\)
+        </span>
+    </li>
+    <li>
+        <span class="math inline">
+            \(e^{i\pi/ {@2*mult@} }e^{i\pi / {@4*mult@} }\)
+        </span>
+    </li>
+</ol>
+<p>
+    Your answers to (a) and (c) should be given in decimal form, rounding to 3 decimal places where appropriate:
+</p>
+<p>
+</p>
+<ol class="HELM_parts">
+    <li>
+        [[input:ans1]] [[validation:ans1]]\(\quad+\quad i\) [[input:ans2]] [[validation:ans2]]
+    </li>
+    [[feedback:prt1]]
+    <li>
+        [[input:ans3]] [[validation:ans3]][[feedback:prt3]]\(\quad+\quad i\) [[input:ans4]] [[validation:ans4]][[feedback:prt4]]
+    </li>
+    <li>
+        [[input:ans5]] [[validation:ans5]][[feedback:prt5]]\(\quad+\quad i\) [[input:ans6]] [[validation:ans6]][[feedback:prt6]]
+    </li>
+</ol>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<p>
+    The answers here are a direct application of the formula, \(e^{i\theta}\equiv\cos\theta+i\sin\theta\):
+</p>
+<ol class="HELM_parts">
+    <li>
+        To 3 d.p.: \( {@sol1@}e^{i\pi/3} = {@sol1@}(\cos(i\pi/3) + i\sin(i\pi/3)) = {@sol1@}(0.5 + i(0.866)) = {@ta1@} + i{@ta2@} \)
+    </li>
+    <li>
+        \(e^{-{@2*mult@}\pi i} = \cos(-{@2*mult@}\pi) + i\sin(-{@2*mult@}\pi) = \cos({@2*mult@}\pi) - i\sin({@2*mult@}\pi) = \cos(2\pi) + i\sin(2\pi) = 1\)
+    </li>
+    <li>
+        First we need to collect the indices, \[e^{i\pi/{@2*mult@}}e^{i\pi/{@4*mult@}} = e^{i\pi/{@2*mult@} + i\pi/{@4*mult@}} = e^{i\pi(1/{@2*mult@} + 1/{@4*mult@})} = e^{i{@pow@}}.\] We then apply the aforementioned formula to this expression:
+                                \[e^{i{@pow@}} = \cos({@pow@}) + i\sin({@pow@}) = {@ta5@} + {@ta6@}i.\]
+    </li>
+</ol>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>3.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text>mult: 10 - rand(10)
+
+/* real and im parts of first number */
+ta1: 0.001*round(1000*mult*1.500);
+ta2: 0.001*round(1000*mult*2.598);
+/* Solution quantities (general feedback) */
+sol1: mult*3
+
+/* real and im parts of second number */
+ta3: 1;
+ta4: 0;
+
+/* real and im parts of third number */
+pow: 3*%pi / (mult*4);
+ta5: 0.001*round(1000*cos(pow));
+ta6: 0.001*round(1000*sin(pow));
+/* Solution quantities (general feedback) */</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text></text>
+        </specificfeedback>
+        <questionnote>
+            <text>\[ {@3*mult@}e^{i\pi /3} = {@ta1@} + i{@ta2@} \]
+\[ e^{-{@2*mult@}\pi i} = {@ta3@} + i{@ta4@} \]
+\[ e^{i\pi/ {@2*mult@} }e^{i\pi / {@4*mult@} } = {@ta5@} + i{@ta6@} \]
+</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: green; --darkreader-inline-color:#7fff7f;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: orange; --darkreader-inline-color:#ffb733;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: red; --darkreader-inline-color:#ff3333;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed></variantsselectionseed>
+        <input>
+            <name>ans1</name>
+            <type>numerical</type>
+            <tans>ta1</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords>sin, cos,i,j</forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>numerical</type>
+            <tans>ta2</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords>sin, cos,i,j</forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>numerical</type>
+            <tans>ta3</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords>sin, cos,i,j</forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>numerical</type>
+            <tans>ta4</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords>sin, cos,i,j</forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans5</name>
+            <type>numerical</type>
+            <tans>ta5</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords>sin, cos,i,j</forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans6</name>
+            <type>numerical</type>
+            <tans>ta6</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords>sin, cos,i,j</forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>ta2</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>ta3</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>ta4</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt5</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans5</sans>
+                <tans>ta5</tans>
+                <testoptions>3</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt5-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt6</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans6</sans>
+                <tans>ta6</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt6-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt6-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1674782929</deployedseed>
+        <deployedseed>1272153183</deployedseed>
+        <deployedseed>146867618</deployedseed>
+        <deployedseed>2113285426</deployedseed>
+        <deployedseed>26532262</deployedseed>
+        <deployedseed>939473279</deployedseed>
+        <deployedseed>1329550532</deployedseed>
+        <deployedseed>1258361704</deployedseed>
+        <deployedseed>318558769</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta1</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta2</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>ta3</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>ta4</value>
+            </testinput>
+            <testinput>
+                <name>ans5</name>
+                <value>ta5</value>
+            </testinput>
+            <testinput>
+                <name>ans6</name>
+                <value>ta6</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-2-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt3-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt4-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt5</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt5-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt6</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt6-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta2</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta1</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>2</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>1</value>
+            </testinput>
+            <testinput>
+                <name>ans5</name>
+                <value>ev(ta5+1,simp)</value>
+            </testinput>
+            <testinput>
+                <name>ans6</name>
+                <value>ev(ta6+1,simp)</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt1-2-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt3-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt4-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt5</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt5-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt6</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt6-1-F</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    <!-- question: 9287  -->
+    <question type="stack">
+        <name>
+            <text>10.3.4.4 Cartesian form to exponential form (NOT IN QUIZ)</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    Exercise
+</p>
+<p>
+    Find the exponential form of the complex number \(z = \displaystyle {@re@} + \displaystyle \left({@im@}\right)i\). Give the argument of \(z\) in terms of \(\pi\), i.e. not in decimal form.
+</p>
+<p>
+    \(z =\quad\)[[input:ans1]][[validation:ans1]][[feedback:prt1]]
+</p>
+<p>
+    Therefore, find the Cartesian form of \(z^{-1}\). Give your answers in decimal form, rounding to 3 decimal places if necessary:
+</p>
+<p>
+    \(z^{-1} =\quad\)[[input:ans2]][[validation:ans2]]\(\quad+\quad i\) [[input:ans3]][[validation:ans3]]
+</p>
+[[feedback:prt2]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<p>
+    We want to calculate \(z\) in the form \(re^{i\theta}\). We calculate \(\displaystyle{r = \sqrt{\left({@re@}\right)^2 + \left({@im@}\right)^2} = {@arr@}}\) and \(\displaystyle{ \theta = \tan^{-1}\left({@im@}/{@re@}\right) = {@th@} }\). Therefore \[z = {@arr@}e^{{@th@}i}.\] To calculate the inverse, \(z^{-1}\),
+                in Cartesian form we use laws of indices and then apply a Key Point from this workbook: \[z^{-1} = {@ta1@}^{-1} = {@arr@}^{-1}e^{-i({@th@})} = \dfrac{1}{{@arr@}}\left(\cos\left(-{@th@}\right) + i\sin\left(-{@th@}\right)\right) = {@ta2@} + {@ta3@}i.\]
+</p>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text>th: rand([%pi/3,%pi/4,-%pi/3,-%pi/4]);
+arr: 10 - rand(9);
+re: arr*cos(th);
+im: arr*sin(th);
+ta2: 0.001*round(1000*cos(-th)/arr);
+ta3: 0.001*round(1000*sin(-th)/arr);
+simp:false;
+ta1: arr*e^(%i*th);</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text></text>
+        </specificfeedback>
+        <questionnote>
+            <text>\[ z = {@re@} + ({@im@})i = {@ta1@}  \]
+\[ z^{-1} = {@ta2@} + ({@ta3@})i \]</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: green; --darkreader-inline-color:#7fff7f;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: orange; --darkreader-inline-color:#ffb733;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span data-darkreader-inline-color="" style="font-size: 1.5em; color: red; --darkreader-inline-color:#ff3333;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed></variantsselectionseed>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>ta1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>numerical</type>
+            <tans>ta2</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords>sin, cos,i,j</forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>numerical</type>
+            <tans>ta3</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords>sin, cos,i,j</forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>EqualComAss</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>ta2</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>ta3</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1275038487</deployedseed>
+        <deployedseed>1388962618</deployedseed>
+        <deployedseed>1789275827</deployedseed>
+        <deployedseed>1633928755</deployedseed>
+        <deployedseed>1071784778</deployedseed>
+        <deployedseed>912650168</deployedseed>
+        <deployedseed>53741644</deployedseed>
+        <deployedseed>1126263257</deployedseed>
+        <deployedseed>1908153218</deployedseed>
+        <deployedseed>357102747</deployedseed>
+        <deployedseed>1509718180</deployedseed>
+        <deployedseed>480204947</deployedseed>
+        <deployedseed>1187113143</deployedseed>
+        <deployedseed>1768567754</deployedseed>
+        <deployedseed>1137422233</deployedseed>
+        <deployedseed>299996388</deployedseed>
+        <deployedseed>467319976</deployedseed>
+        <deployedseed>374724772</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta1</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta2</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>ta3</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-2-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>e^(%i*arr)</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>0</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>0</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-2-F</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>3</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value> ev(re + im*i,simp)</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value></value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value></value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore></expectedscore>
+                <expectedpenalty></expectedpenalty>
+                <expectedanswernote>NULL</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+</quiz>

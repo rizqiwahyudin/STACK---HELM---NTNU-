@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>Separable differensialligninger</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    Separable differensialligninger
+</h3>
+<p>
+    Differensialligninger er typisk ligninger der den ukjente er en funksjon (istedenfor en variabel) og ligningen uttrykker en sammenheng mellom denne funksjonen og dens deriverte. Eksempler p&#229; differensialligninger er: \(y'+2y=6\), \(y''-16y=0\) og \(y''-5y'+6y=0\).
+</p>
+<p>
+    Ligninger p&#229; formen \(p(y)y'=q(x)\) kalles separable differensialligninger. (PS: Husk at \(y\) fortsatt er en funksjon av \(x\) i separable differensialligninger). \(y\cdot y' = -x\), \(y'=x\) og \(\frac{1}{y}y'-\frac{1}{x}=0\) er eksempler p&#229; separable differensialligninger.
+</p>
+<p>
+    For &#229; l&#248;se separable differensialligninger husker vi at \(y'=dy/dx\). En mer verbos fremstilling av den generelle ligningen blir:
+</p>
+<p>
+    \(p(y)\frac{dy}{dx}=q(x)\)
+</p>
+<p>
+    Ved &#229; antiderivere med \(dx\) p&#229; begge sider f&#229;r vi:
+</p>
+<p>
+    \( \int p(y)\frac{dy}{ dx }dx=\int q(x) dx \implies \)
+</p>
+<p>
+    \( \int p(y) dy=\int q(x) dx \)
+</p>
+<p>
+    Etter at venstre og h&#248;yre side er ferdig integrert har vi en ligning som avhenger \(y\) p&#229; venstre side og en ligning som avhenger av \(x\) p&#229; venstre side. Det eneste som mangler da er &#229; l&#248;se uttrykket for \(y\)
+</p>
+<br/>
+<h4 class="HELM_example">
+    Eksempel
+</h4>
+<p>
+    L&#248;s \(\frac{1}{y}y'-\frac{1}{x}=0\)
+</p>
+<h4 class="HELM_solution">
+    L&#248;sning
+</h4>
+<p>
+    F&#248;rst er det best &#229; flytte ting rundt i uttrykket s&#229; det er p&#229; formen \(p(y)y'=q(x)\). I denne oppgaven er det bare n&#248;dvendig &#229; flytte bytte \(\frac{1}{x}\), som gir:
+</p>
+<p>
+    \(\frac{1}{y}y'=\frac{1}{x}\)
+</p>
+<p>
+    Her er \(p(y) = \frac{1}{y}\) og \(q(x) = \frac{1}{x}\)
+</p>
+<p>
+    Som forklart tidligere integrerer vi med hensyn p&#229; \(x\) p&#229; begge sider
+</p>
+<p>
+    \( \int \frac{1}{y}\frac{dy}{ dx }dx=\int \frac{1}{x} dx \implies \)
+</p>
+<p>
+    \( \int \frac{1}{y} dy=\int \frac{1}{x} dx \implies \)
+</p>
+<p>
+    \( \ln|y| +C_1= \ln|x| + C_2 \implies \)
+</p>
+<p>
+    \( \ln|y| = \ln|x| + C_3 \quad (C_3=C_1+C_2) \implies \)
+</p>
+<p>
+    \(e^{\ln|y|} = e^{\ln|x| + C_3}\implies \)
+</p>
+<p>
+    \(e^{\ln|y|} = e^{\ln|x|}\cdot C \quad (C=e^{C_3}) \implies \)
+</p>
+<p>
+    \(y = C\cdot x \)
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

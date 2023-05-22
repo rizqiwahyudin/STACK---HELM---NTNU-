@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>1.330</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+</p>
+<p>
+    Et legeme har en konstant akselerasjon p&#229; \({@aks@}\frac{m}{s^2}\). I et bestemt &#248;yeblikk har legemet farten \({@fart@}m/s\).
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <strong>
+        a)
+    </strong>
+    Hva er farten \({@tid@}s\) seinere?&#160;[[input:ans1]] [[validation:ans1]]
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <strong>
+        b)
+    </strong>
+    Hva blir farten hvis akselerasjonen har motsatt retning av den oppgitte farten?
+    <span style="font-size: 0.9375rem;">
+        [[input:ans2]] [[validation:ans2]]
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020070100</text>
+        </stackversion>
+        <questionvariables>
+            <text>aks:rand_with_step(1.8,3.1,0.1);
+fart:8+rand(11);
+tid:rand_with_step(2,5,0.5);
+
+ta1:fart+aks*tid;
+ta2:fart-aks*tid;
+ta1:significantfigures(ta1,3);
+ta2:significantfigures(ta2,3);
+ta1:ta1*m/s;
+ta2:ta2*m/s;</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text><![CDATA[
+[[feedback:prt1]]
+<br/>
+[[feedback:prt2]]
+<br/>
+]]></text>
+        </specificfeedback>
+        <questionnote>
+            <text>\({@ta1@}\),  \({@ta2@}\)</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>units</type>
+            <tans>ta1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>1</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options>maxsf:3</options>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>units</type>
+            <tans>ta2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>1</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options>maxsf:3</options>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>UnitsAbsolute</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions>0.05</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    \(a)\) Hint: Her kan vi bruke en bevegelseslikning som inneholder \(v, v_0, a \) og \(t\).
+</p>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>UnitsAbsolute</answertest>
+                <sans>ans2</sans>
+                <tans>ta2</tans>
+                <testoptions>0.05</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    \(b)\) Hint: Dersom akselerasjonen virker motsatt vei, vil den bli negativ.
+</p>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1456240273</deployedseed>
+        <deployedseed>1295455669</deployedseed>
+        <deployedseed>1404522332</deployedseed>
+        <deployedseed>1748806896</deployedseed>
+        <deployedseed>2125540919</deployedseed>
+        <deployedseed>445293765</deployedseed>
+        <deployedseed>251781830</deployedseed>
+        <deployedseed>461896328</deployedseed>
+        <deployedseed>892118477</deployedseed>
+        <deployedseed>258318136</deployedseed>
+        <deployedseed>1572694010</deployedseed>
+        <deployedseed>836934761</deployedseed>
+        <deployedseed>2055597916</deployedseed>
+        <deployedseed>205437800</deployedseed>
+        <deployedseed>117208162</deployedseed>
+        <deployedseed>1784046190</deployedseed>
+        <deployedseed>452609326</deployedseed>
+        <deployedseed>1902740</deployedseed>
+        <deployedseed>766414285</deployedseed>
+    </question>
+    
+
+</quiz>

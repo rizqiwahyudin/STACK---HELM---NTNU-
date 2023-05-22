@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>Logaritmeregler</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    Som vi har sett, er \(\lg a\) det tallet vi m&#229; opph&#248;ye 10 i for &#229; f&#229; a.
+</p>
+<p dir="ltr" style="text-align: left;">
+    Alts&#229;: \(10^{\lg a}=a\).
+</p>
+<p dir="ltr" style="text-align: left;">
+    Ved hjelp av dette kan vi vise f&#248;lgende tre logaritmeregler:
+</p>
+<p dir="ltr" style="text-align: left;">
+    1) \(\lg a^x=x\cdot \lg a\)
+</p>
+<p dir="ltr" style="text-align: left;">
+    2) \(\lg(a\cdot b)=\lg a+\lg b\)
+</p>
+<p dir="ltr" style="text-align: left;">
+    3)&#160;\(\lg\frac{a}{b}=\lg a-\lg b\)
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

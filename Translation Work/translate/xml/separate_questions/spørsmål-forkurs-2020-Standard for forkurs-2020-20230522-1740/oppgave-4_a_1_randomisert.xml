@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Oppgave 4_a_1_randomisert</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+</p>
+<p>
+    L&#248;s \({@exp@}\). Oppgi l&#248;sningen(e) som en mengde.
+</p>
+<p>
+    \(x=\) [[input:ans1]] [[validation:ans1]]
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020061000</text>
+        </stackversion>
+        <questionvariables>
+            <text>simp:false;
+a1:1+rand(8);
+a2:a1+rand(9);
+exp:a1*ln(x^2)+a2=0;
+ta: solve(exp,x);
+ta:setify(maplist(rhs,ta));
+simp:true;
+</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text>[[feedback:prt1]]</text>
+        </specificfeedback>
+        <questionnote>
+            <text><![CDATA[\({@exp@}=>x={@ta@}\)]]></text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>ta</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint>{x1,x2,...}</syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>ta</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>105090826</deployedseed>
+        <deployedseed>52356928</deployedseed>
+        <deployedseed>886641939</deployedseed>
+        <deployedseed>550267547</deployedseed>
+        <deployedseed>390867601</deployedseed>
+        <deployedseed>1357996275</deployedseed>
+        <deployedseed>909901557</deployedseed>
+        <deployedseed>570675406</deployedseed>
+        <deployedseed>553359087</deployedseed>
+        <deployedseed>1560905338</deployedseed>
+        <deployedseed>1754396175</deployedseed>
+        <deployedseed>452224514</deployedseed>
+        <deployedseed>1381676690</deployedseed>
+        <deployedseed>1382701639</deployedseed>
+        <deployedseed>1562932009</deployedseed>
+        <deployedseed>1202894981</deployedseed>
+        <deployedseed>251365640</deployedseed>
+        <deployedseed>2097058718</deployedseed>
+        <deployedseed>850909984</deployedseed>
+        <deployedseed>633269774</deployedseed>
+        <deployedseed>426591244</deployedseed>
+        <deployedseed>1368166201</deployedseed>
+        <deployedseed>1161118109</deployedseed>
+        <deployedseed>1457627208</deployedseed>
+        <deployedseed>439470474</deployedseed>
+        <deployedseed>33643007</deployedseed>
+        <deployedseed>435878569</deployedseed>
+        <deployedseed>1861724784</deployedseed>
+        <deployedseed>842081911</deployedseed>
+        <deployedseed>1718989428</deployedseed>
+        <deployedseed>1181926603</deployedseed>
+        <deployedseed>260385289</deployedseed>
+        <deployedseed>480911804</deployedseed>
+        <deployedseed>685284637</deployedseed>
+        <deployedseed>2095526380</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

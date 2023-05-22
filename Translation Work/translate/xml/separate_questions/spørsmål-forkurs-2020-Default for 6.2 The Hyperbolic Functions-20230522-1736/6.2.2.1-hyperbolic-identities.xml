@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>6.2.2.1 Hyperbolic Identities</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Hyperbolic Identities
+    </span>
+    <span class="multilang" lang="no">
+        Hyperbolske identiteter
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        The hyperbolic functions \(\cosh x\) and \(\sinh x\) satisfy similar (but not exactly equivalent) identities to those satisfied by \(\cos x\) and \(\sin x\). We note first some basic notation similar to that employed with trigonometric functions: \(\cosh^nx\)&#160;means&#160;\((\cosh x)^n\), \(\sinh^nx\)&#160;means&#160;\((\sinh x)^n\) for \(n\ne -1\).
+    </span>
+    <span class="multilang" lang="no">
+        De hyperbolske funksjonene \(\cosh x\) og \(\sinh x\) tilfredsstiller lignende (men ikke akkurat tilsvarende) identiteter som de fylt av \(\cos x\) og \(\sin x\). Vi noterer f&#248;rst noen grunnleggende notasjoner som ligner p&#229; den brukt med trigonometriske funksjoner: \(\cosh^nx\)&#160; betyr \((\cosh x)^n\), \(\sinh^nx\)&#160; betyr \((\sinh x)^n\) for \(n\ne -1\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In&#160;the special case that \(n=-1\) we
+        <strong>
+            do not
+        </strong>
+        use \(\cosh^{-1}x\) and \(\sinh^{-1}x\) to mean the reciprocals of the expressions. The notation \(\cosh^{-1}x\) and \(\sinh^{-1}x\) is reserved for the
+        <strong>
+            inverse functions
+        </strong>
+        of \(\cosh x\) and \(\sinh x\) respectively.
+    </span>
+    <span class="multilang" lang="no">
+        I det spesielle tilfellet \(n=-1\) bruker vi
+        <strong>
+            ikke
+        </strong>
+        \(\cosh^{-1}x\) og \(\sinh^{-1}x\) til &#229; symbolere det resiproke til uttrykkene. Notasjonen \(\cosh^{-1}x\) og \(\sinh^{-1}x\) er de
+        <strong>
+            inverse funksjonene
+        </strong>
+        til \(\cosh x\) og \(\sinh x\) henholdsvis.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

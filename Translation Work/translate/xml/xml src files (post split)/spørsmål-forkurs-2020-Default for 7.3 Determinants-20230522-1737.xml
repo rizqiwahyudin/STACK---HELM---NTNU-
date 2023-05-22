@@ -1,0 +1,3704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$module$/top/Default for 7.3 Determinants</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text>The default category for questions shared in context '7.3 Determinants'.</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9088  -->
+  <question type="description">
+    <name>
+      <text>7.3.1.1 Determinant of a 2x2 matrix</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h4><span class="multilang" lang="en">Determinant of a \(2\times2\) matrix</span>
+    <span class="multilang" lang="no">Determinant for en \ (2 \ Times2 \) matrise </span>
+</h4>
+<p><span class="multilang" lang="en">The <b>determinant</b> of the matrix \(A=\begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix}\) is denoted by \(\begin{vmatrix} a &amp; b \\ c &amp; d \end{vmatrix}\) (note the change from square brackets to vertical lines) and is defined to be the number \(ad-bc\). That is: \[\begin{vmatrix} a &amp; b \\ c &amp; d \end{vmatrix} = ad-bc.\] </span>
+    <span class="multilang" lang="no"><b> Determinanten </b> av matrisen \(a = \begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix}\) er betegnet med \(\begin{vmatrix} a &amp; b \\ c &amp; d \end{vmatrix}\) (Legg merke til endringen fra firkantede parenteser til vertikale linjer) og er definert til å være tallet \(ad-bc\). Det vil si: \[\begin{vmatrix} a &amp; b \\ c &amp; d \end{vmatrix} = ad-bc.\] </span>
+</p>
+<p><span class="multilang" lang="en">We can use the notation \(\det(A)\) or \(\lvert A \rvert\) to denote the determinant of \(A\). A common symbol used to represent the determinant of a given matrix is \(\Delta.\)</span>
+    <span class="multilang" lang="no">Vi kan bruke notasjonen \(\det(A)\) or \(\lvert A \rvert\) for å betegne determinanten for \(A\). Et vanlig symbol som brukes til å representere determinanten for en gitt matrise er \(\Delta.\) </span>
+</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9090  -->
+  <question type="description">
+    <name>
+      <text>7.3.2.1 Laplace expansion along the top row, minors</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h4><span class="multilang" lang="en">Laplace expansion along the top row</span>
+    <span class="multilang" lang="no">Laplace-utvidelse langs den øverste raden </span>
+</h4>
+<p><span class="multilang" lang="en">This is a technique which can be used to evaluate determinants of any order.
+        In principle, this method can use any row or any column as its starting point. We
+        quote one example: using the top row.</span>
+    <span class="multilang" lang="no">Dette er en teknikk som kan brukes til å evaluere determinanter for enhver rekkefølge.
+        I prinsippet kan denne metoden bruke hvilken som helst rad eller hvilken som helst kolonne som utgangspunkt. Vi
+        ser nå et eksempel: ved bruk av den øverste raden. </span>
+</p>
+<p><span class="multilang" lang="en">Consider \(\Delta=\begin{vmatrix} 4 &amp; 1 &amp; 1 \\ 1 &amp; 2 &amp; 3 \\ 3 &amp; 1 &amp; 2 \end{vmatrix}\).</span>
+    <span class="multilang" lang="no">Se på \(\Delta=\begin{vmatrix} 4 &amp; 1 &amp; 1 \\ 1 &amp; 2 &amp; 3 \\ 3 &amp; 1 &amp; 2 \end{vmatrix}\). </span>
+</p>
+<p><span class="multilang" lang="en">First we introduce the idea of a <b>minor</b>. Each element in this array of numbers has
+        an associated number called its minor, calculated by removing the column and row in which the element
+        lies and taking the determinant of the remainder. For example consider entry \(a_{23}=3\). To calculate the minor associated with this entry, we strike out the second row and the third column:</span>
+    <span class="multilang" lang="no">Først introduserer vi ideen om en <b> 'minor' </b> . Hvert element i denne rekke tall har et tilknyttet antall kalt for en 'minor', beregnet ved å fjerne kolonnen og raden der elementet ligger og tar determinanten for resten. Vi ser på et eksempel: \(a_ {23} = 3\). For å beregne den 'minor' tilknyttet denne eksempelen, slår vi ut den andre raden og den tredje kolonnen: </span>
+</p>
+<p><span class="multilang" lang="en"><img alt="The matrix with rows [4, 1, 1], [1, 2, 3], [3, 1, 2], with a horizontal line crossing out the second row, and a vertical line crossing out column 3." class="img-responsive atto_image_button_text-bottom" height="63" src="@@PLUGINFILE@@/7-3-fig-1-laplace-1.svg" width="68"><br></span>
+    <span class="multilang" lang="no"><img alt="The matrix with rows [4, 1, 1], [1, 2, 3], [3, 1, 2], with a horizontal line crossing out the second row, and a vertical line crossing out column 3." class="img-responsive atto_image_button_text-bottom" height="63" src="@@PLUGINFILE@@/7-3-fig-1-laplace-1.svg" width="68"><br></span>
+</p>
+<p><span class="multilang" lang="en">which leaves \(\begin{vmatrix} 4 &amp; 1 \\ 3 &amp; 1 \end{vmatrix} = 4 - 3 = 1.\) For the index \(a_{31}=3\) we strike out the third row and first
+        column:</span>
+    <span class="multilang" lang="no">som forlater \(\begin{vmatrix} 4 &amp; 1 \\ 3 &amp; 1 \end{vmatrix} = 4 - 3 = 1.\). For index \(a_{31}=3\) slår vi ut den tredje raden. Og først
+        kolonne: </span>
+</p>
+<p><span class="multilang" lang="en"><img alt="The matrix with rows [4, 1, 1], [1, 2, 3], [3, 1, 2], with a horizontal line crossing out row 3, and a vertical line crossing out column 1." class="img-responsive atto_image_button_text-bottom" height="63" src="@@PLUGINFILE@@/7-3-fig-2-laplace-2.svg" width="69"><br></span>
+    <span class="multilang" lang="en"><img alt="The matrix with rows [4, 1, 1], [1, 2, 3], [3, 1, 2], with a horizontal line crossing out row 3, and a vertical line crossing out column 1." class="img-responsive atto_image_button_text-bottom" height="63" src="@@PLUGINFILE@@/7-3-fig-2-laplace-2.svg" width="69"><br></span>
+</p>
+<p><span class="multilang" lang="en">which leaves \(\begin{vmatrix} 1 &amp; 1 \\ 2 &amp; 3 \end{vmatrix} = 3 - 2 = 1.\)</span>
+    <span class="multilang" lang="no">som forlater \(\begin{vmatrix} 1 &amp; 1 \\ 2 &amp; 3 \end{vmatrix} = 3 - 2 = 1.\) </span>
+</p>]]></text>
+<file name="7-3-fig-1-laplace-1.svg" path="/" encoding="base64">PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjgiIGhlaWdodD0iNDdwdCIgdmlld0JveD0iMCAwIDUxIDQ3Ij48Y2xpcFBhdGggaWQ9ImEiPjxwYXRoIHRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIC0xIDAgNDcpIiBkPSJNMCAwaDUxdjQ3SDB6Ii8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjYSkiPjxzeW1ib2wgaWQ9ImIiPjxwYXRoIGQ9Ik0uMzM0LjY1MWMwIC4wMTkgMCAuMDI0LS4wMTQuMDI0LS4wMDggMC0uMDExIDAtLjAxOS0uMDEyTDAgLjE5NlYuMTY3aC4yNjNWLjA3NkMuMjYzLjAzOS4yNjEuMDI5LjE4OC4wMjloLS4wMlYwYy4wMjMuMDAyLjEwMi4wMDIuMTMuMDAyLjAyOCAwIC4xMDggMCAuMTMxLS4wMDJ2LjAyOWgtLjAyYy0uMDcyIDAtLjA3NS4wMS0uMDc1LjA0N3YuMDkxaC4xMDF2LjAyOUguMzM0di40NTVNLjI2OC41NzNWLjE5NkguMDI1bC4yNDMuMzc3eiIvPjwvc3ltYm9sPjxzeW1ib2wgaWQ9ImMiPjxwYXRoIGQ9Ik0uMTk3LjY0MWMwIC4wMjMgMCAuMDI0LS4wMi4wMjRDLjE1My42MzguMTAzLjYwMSAwIC42MDFWLjU3MmMuMDIzIDAgLjA3MyAwIC4xMjguMDI2Vi4wNzdDLjEyOC4wNDEuMTI1LjAyOS4wMzcuMDI5SC4wMDZWMEMuMDMzLjAwMi4xMy4wMDIuMTYzLjAwMlMuMjkyLjAwMi4zMTkgMHYuMDI5SC4yODhDLjIuMDI5LjE5Ny4wNDEuMTk3LjA3N3YuNTY0eiIvPjwvc3ltYm9sPjx1c2UgeGxpbms6aHJlZj0iI2IiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSA2LjI2MiAxNC4wOSkiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNjIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMjIuODQ5IDE0LjA5KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2MiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAzOC42NyAxNC4wOSkiIGZpbGw9IiMyMzFmMjAiLz48c3ltYm9sIGlkPSJkIj48cGF0aCBkPSJNLjM5MS4xNjhILjM2OUMuMzY2LjE1MS4zNTguMDk2LjM0OC4wOC4zNDEuMDcxLjI4NC4wNzEuMjU0LjA3MUguMDY5Yy4wMjcuMDIzLjA4OC4wODcuMTE0LjExMS4xNTIuMTQuMjA4LjE5Mi4yMDguMjkxQy4zOTEuNTg4LjMuNjY1LjE4NC42NjVBLjE4NS4xODUgMCAwMTAgLjQ4QzAgLjQyOS4wNDQuNDI5LjA0Ny40MjljLjAyMSAwIC4wNDcuMDE1LjA0Ny4wNDdhLjA0NS4wNDUgMCAwMS0uMDQ3LjA0N0wuMDMzLjUyMkMuMDUyLjU5LjEwNi42MzYuMTcxLjYzNi4yNTYuNjM2LjMwOC41NjUuMzA4LjQ3My4zMDguMzg4LjI1OS4zMTQuMjAyLjI1TDAgLjAyNFYwaC4zNjVsLjAyNi4xNjh6Ii8+PC9zeW1ib2w+PHN5bWJvbCBpZD0iZSI+PHBhdGggZD0iTS4xNDMuMzhDLjEyNi4zNzkuMTIyLjM3OC4xMjIuMzY5YzAtLjAxLjAwNS0uMDEuMDIzLS4wMWguMDQ2Yy4wODUgMCAuMTIzLS4wNy4xMjMtLjE2NkMuMzE0LjA2Mi4yNDYuMDI3LjE5Ny4wMjcuMTQ5LjAyNy4wNjcuMDUuMDM4LjExNi4wNy4xMTEuMDk5LjEyOS4wOTkuMTY1QS4wNDcuMDQ3IDAgMDEuMDUuMjE0Qy4wMjYuMjE0IDAgLjIgMCAuMTYyIDAgLjA3My4wODkgMCAuMiAwYy4xMTkgMCAuMjA3LjA5MS4yMDcuMTkyIDAgLjA5Mi0uMDc0LjE2NC0uMTcuMTgxQS4xODguMTg4IDAgMDEuMzguNTQ5Qy4zOC42MjguMjk4LjY4Ni4yMDEuNjg2LjEwMS42ODYuMDI3LjYyNS4wMjcuNTUyYzAtLjA0LjAzMS0uMDQ4LjA0Ni0uMDQ4LjAyMSAwIC4wNDUuMDE1LjA0NS4wNDUgMCAuMDMyLS4wMjQuMDQ2LS4wNDYuMDQ2TC4wNjEuNTk0Yy4wMzguMDY4LjEzMi4wNjguMTM3LjA2OC4wMzMgMCAuMDk4LS4wMTUuMDk4LS4xMTNBLjIyNi4yMjYgMCAwMC4yNjQuNDMxQy4yMzQuMzg3LjIuMzg0LjE3My4zODNMLjE0My4zOHoiLz48L3N5bWJvbD48dXNlIHhsaW5rOmhyZWY9IiNjIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgNy4wMjggMjguNTM3KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2QiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAyMi4zNDcgMjguNTM3KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2UiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAzOC4wNzIgMjguNzg4KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2UiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSA2LjQzIDQzLjIzNCkiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNjIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMjIuODQ5IDQyLjk4MykiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNkIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMzguMTY4IDQyLjk4MykiIGZpbGw9IiMyMzFmMjAiLz48cGF0aCBzdHJva2Utd2lkdGg9Ii41IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIGQ9Ik0wIDI1aDUxTTQwLjUgNDdWMCIvPjwvZz48L3N2Zz4=</file>
+<file name="7-3-fig-2-laplace-2.svg" path="/" encoding="base64">PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNTJwdCIgaGVpZ2h0PSI0N3B0IiB2aWV3Qm94PSIwIDAgNTIgNDciPjxjbGlwUGF0aCBpZD0iYSI+PHBhdGggdHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLTEgMCA0NykiIGQ9Ik0wIDBoNTJ2NDdIMHoiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNhKSI+PHN5bWJvbCBpZD0iYiI+PHBhdGggZD0iTS4zMzQuNjUxYzAgLjAxOSAwIC4wMjQtLjAxNC4wMjQtLjAwOCAwLS4wMTEgMC0uMDE5LS4wMTJMMCAuMTk2Vi4xNjdoLjI2M1YuMDc2Qy4yNjMuMDM5LjI2MS4wMjkuMTg4LjAyOWgtLjAyVjBjLjAyMy4wMDIuMTAyLjAwMi4xMy4wMDIuMDI4IDAgLjEwOCAwIC4xMzEtLjAwMnYuMDI5aC0uMDJjLS4wNzIgMC0uMDc1LjAxLS4wNzUuMDQ3di4wOTFoLjEwMXYuMDI5SC4zMzR2LjQ1NU0uMjY4LjU3M1YuMTk2SC4wMjVsLjI0My4zNzd6Ii8+PC9zeW1ib2w+PHN5bWJvbCBpZD0iYyI+PHBhdGggZD0iTS4xOTcuNjQxYzAgLjAyMyAwIC4wMjQtLjAyLjAyNEMuMTUzLjYzOC4xMDMuNjAxIDAgLjYwMVYuNTcyYy4wMjMgMCAuMDczIDAgLjEyOC4wMjZWLjA3N0MuMTI4LjA0MS4xMjUuMDI5LjAzNy4wMjlILjAwNlYwQy4wMzMuMDAyLjEzLjAwMi4xNjMuMDAyUy4yOTIuMDAyLjMxOSAwdi4wMjlILjI4OEMuMi4wMjkuMTk3LjA0MS4xOTcuMDc3di41NjR6Ii8+PC9zeW1ib2w+PHVzZSB4bGluazpocmVmPSIjYiIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDcuMjYyIDE0LjA5KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2MiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAyMy44NDkgMTQuMDkpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjYyIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDM5LjY3IDE0LjA5KSIgZmlsbD0iIzIzMWYyMCIvPjxzeW1ib2wgaWQ9ImQiPjxwYXRoIGQ9Ik0uMzkxLjE2OEguMzY5Qy4zNjYuMTUxLjM1OC4wOTYuMzQ4LjA4LjM0MS4wNzEuMjg0LjA3MS4yNTQuMDcxSC4wNjljLjAyNy4wMjMuMDg4LjA4Ny4xMTQuMTExLjE1Mi4xNC4yMDguMTkyLjIwOC4yOTFDLjM5MS41ODguMy42NjUuMTg0LjY2NUEuMTg1LjE4NSAwIDAxMCAuNDhDMCAuNDI5LjA0NC40MjkuMDQ3LjQyOWMuMDIxIDAgLjA0Ny4wMTUuMDQ3LjA0N2EuMDQ1LjA0NSAwIDAxLS4wNDcuMDQ3TC4wMzMuNTIyQy4wNTIuNTkuMTA2LjYzNi4xNzEuNjM2LjI1Ni42MzYuMzA4LjU2NS4zMDguNDczLjMwOC4zODguMjU5LjMxNC4yMDIuMjVMMCAuMDI0VjBoLjM2NWwuMDI2LjE2OHoiLz48L3N5bWJvbD48c3ltYm9sIGlkPSJlIj48cGF0aCBkPSJNLjE0My4zOEMuMTI2LjM3OS4xMjIuMzc4LjEyMi4zNjljMC0uMDEuMDA1LS4wMS4wMjMtLjAxaC4wNDZjLjA4NSAwIC4xMjMtLjA3LjEyMy0uMTY2Qy4zMTQuMDYyLjI0Ni4wMjcuMTk3LjAyNy4xNDkuMDI3LjA2Ny4wNS4wMzguMTE2LjA3LjExMS4wOTkuMTI5LjA5OS4xNjVBLjA0Ny4wNDcgMCAwMS4wNS4yMTRDLjAyNi4yMTQgMCAuMiAwIC4xNjIgMCAuMDczLjA4OSAwIC4yIDBjLjExOSAwIC4yMDcuMDkxLjIwNy4xOTIgMCAuMDkyLS4wNzQuMTY0LS4xNy4xODFBLjE4OC4xODggMCAwMS4zOC41NDlDLjM4LjYyOC4yOTguNjg2LjIwMS42ODYuMTAxLjY4Ni4wMjcuNjI1LjAyNy41NTJjMC0uMDQuMDMxLS4wNDguMDQ2LS4wNDguMDIxIDAgLjA0NS4wMTUuMDQ1LjA0NSAwIC4wMzItLjAyNC4wNDYtLjA0Ni4wNDZMLjA2MS41OTRjLjAzOC4wNjguMTMyLjA2OC4xMzcuMDY4LjAzMyAwIC4wOTgtLjAxNS4wOTgtLjExM0EuMjI2LjIyNiAwIDAwLjI2NC40MzFDLjIzNC4zODcuMi4zODQuMTczLjM4M0wuMTQzLjM4eiIvPjwvc3ltYm9sPjx1c2UgeGxpbms6aHJlZj0iI2MiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSA4LjAyOCAyOC41MzcpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjZCIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDIzLjM0NyAyOC41MzcpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjZSIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDM5LjA3MiAyOC43ODgpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjZSIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDcuNDMgNDMuMjM0KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2MiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAyMy44NDkgNDIuOTgzKSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2QiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAzOS4xNjggNDIuOTgzKSIgZmlsbD0iIzIzMWYyMCIvPjxwYXRoIHN0cm9rZS13aWR0aD0iLjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMCIgZD0iTS41IDM5aDUxTTkuNSA0N1YwIi8+PC9nPjwvc3ZnPg==</file>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9092  -->
+  <question type="description">
+    <name>
+      <text>7.3.2.3 Introducing cofactors</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h4><span class="multilang" lang="en"> Cofactors </span>
+    <span class="multilang" lang="no"> Kofaktorer </span>
+</h4>
+<p><span class="multilang" lang="en"> A cofactor is a minor with a sign attached. The appropriate sign comes from the pattern of signs appropriate to a
+        \(3 \times 3\) array: \[\begin{bmatrix}+&amp;-&amp;+\\ -&amp;+&amp;-\\ +&amp;-&amp;+\end{bmatrix}\]
+        (i.e. positive signs on the leading diagonal and the signs "alternate" everywhere else.)</span>
+    <span class="multilang" lang="no">En kofaktor er en 'minor' med et skilt festet. Det aktuelle tegnet kommer fra mønsteret av tegn som er passende for en
+        \(3\times 3\) array: \[\begin{bmatrix}+&amp;-&amp;+\\ -&amp;+&amp;-\\ +&amp;-&amp;+\end{bmatrix}\]
+        (dvs. positive tegn på den ledende diagonalen og skiltene "veksler" overalt ellers.) </span>
+</p>
+<p><span class="multilang" lang="en">Each entry of a matrix \(A\) has a cofactor associated with it. The cofactor of entry \(a_{11}\)
+        is denoted by \(A_{11}\), that of \(a_{23}\) by \(A_{23}\) and so on.</span>
+    <span class="multilang" lang="no">Hver oppføring av en matrise \(a\) har en kofaktor tilknyttet den. Kofaktoren til elementet \(a_{11}\)
+        er betegnet av \(a_ {11}\), det av \(a_{23}\) av \(a_{23} \) og så videre. </span>
+</p>
+<p><span class="multilang" lang="en">To obtain the cofactor of an element of a \(3\times 3\) matrix we simply multiply the minor of that element by the corresponding sign from the \(3\times 3\) array of signs.</span>
+    <span class="multilang" lang="no">For å få kofaktoren til et element i en \(3 \times 3\) matrise, multipliserer vi ganske enkelt det mindre av det elementet med det tilsvarende tegnet fra \(3 \times 3 \) utvalg av skilt. </span>
+</p>
+<p><span class="multilang" lang="en">Hence, for the matrix \(A = \begin{bmatrix} 4 &amp; 1 &amp; 1 \\ 1 &amp; 2 &amp; 3 \\ 3 &amp; 1 &amp; 2 \end{bmatrix}\), the cofactor corresponding to \(a_{23}\) is
+        \[A_{23} = - \begin{vmatrix} 4 &amp; 1 \\ 3 &amp; 1 \end{vmatrix} = -1\]
+        and the cofactor corresponding to \(a_{31}\) is
+        \[A_{31} = + \begin{vmatrix} 1 &amp; 1 \\ 2 &amp; 3 \end{vmatrix}=1.\]</span>
+    <span class="multilang" lang="no">Derfor, for matrisen \(a = \begin{bmatrix} 4 &amp; 1 &amp; 1 \\ 1 &amp; 2 &amp; 3 \\ 3 &amp; 1 &amp; 2 \end{bmatrix} \), kofaktoren som tilsvarer \(a_ {23}\) er
+        \[A_ {23} = - \begin{vmatrix} 4 &amp; 1 \\ 3 &amp; 1 \end{vmatrix} = -1 \]
+        og kofaktoren som tilsvarer \(a_ {31} \) er
+        \[A_ {31} = + \begin {vmatrix} 1 &amp; 1 \\ 2 &amp; 3 \end{vmatrix} = 1. \] </span>
+</p>]]></text>
+<file name="7-3-fig-1-laplace-1.svg" path="/" encoding="base64">PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjgiIGhlaWdodD0iNDdwdCIgdmlld0JveD0iMCAwIDUxIDQ3Ij48Y2xpcFBhdGggaWQ9ImEiPjxwYXRoIHRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIC0xIDAgNDcpIiBkPSJNMCAwaDUxdjQ3SDB6Ii8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjYSkiPjxzeW1ib2wgaWQ9ImIiPjxwYXRoIGQ9Ik0uMzM0LjY1MWMwIC4wMTkgMCAuMDI0LS4wMTQuMDI0LS4wMDggMC0uMDExIDAtLjAxOS0uMDEyTDAgLjE5NlYuMTY3aC4yNjNWLjA3NkMuMjYzLjAzOS4yNjEuMDI5LjE4OC4wMjloLS4wMlYwYy4wMjMuMDAyLjEwMi4wMDIuMTMuMDAyLjAyOCAwIC4xMDggMCAuMTMxLS4wMDJ2LjAyOWgtLjAyYy0uMDcyIDAtLjA3NS4wMS0uMDc1LjA0N3YuMDkxaC4xMDF2LjAyOUguMzM0di40NTVNLjI2OC41NzNWLjE5NkguMDI1bC4yNDMuMzc3eiIvPjwvc3ltYm9sPjxzeW1ib2wgaWQ9ImMiPjxwYXRoIGQ9Ik0uMTk3LjY0MWMwIC4wMjMgMCAuMDI0LS4wMi4wMjRDLjE1My42MzguMTAzLjYwMSAwIC42MDFWLjU3MmMuMDIzIDAgLjA3MyAwIC4xMjguMDI2Vi4wNzdDLjEyOC4wNDEuMTI1LjAyOS4wMzcuMDI5SC4wMDZWMEMuMDMzLjAwMi4xMy4wMDIuMTYzLjAwMlMuMjkyLjAwMi4zMTkgMHYuMDI5SC4yODhDLjIuMDI5LjE5Ny4wNDEuMTk3LjA3N3YuNTY0eiIvPjwvc3ltYm9sPjx1c2UgeGxpbms6aHJlZj0iI2IiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSA2LjI2MiAxNC4wOSkiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNjIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMjIuODQ5IDE0LjA5KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2MiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAzOC42NyAxNC4wOSkiIGZpbGw9IiMyMzFmMjAiLz48c3ltYm9sIGlkPSJkIj48cGF0aCBkPSJNLjM5MS4xNjhILjM2OUMuMzY2LjE1MS4zNTguMDk2LjM0OC4wOC4zNDEuMDcxLjI4NC4wNzEuMjU0LjA3MUguMDY5Yy4wMjcuMDIzLjA4OC4wODcuMTE0LjExMS4xNTIuMTQuMjA4LjE5Mi4yMDguMjkxQy4zOTEuNTg4LjMuNjY1LjE4NC42NjVBLjE4NS4xODUgMCAwMTAgLjQ4QzAgLjQyOS4wNDQuNDI5LjA0Ny40MjljLjAyMSAwIC4wNDcuMDE1LjA0Ny4wNDdhLjA0NS4wNDUgMCAwMS0uMDQ3LjA0N0wuMDMzLjUyMkMuMDUyLjU5LjEwNi42MzYuMTcxLjYzNi4yNTYuNjM2LjMwOC41NjUuMzA4LjQ3My4zMDguMzg4LjI1OS4zMTQuMjAyLjI1TDAgLjAyNFYwaC4zNjVsLjAyNi4xNjh6Ii8+PC9zeW1ib2w+PHN5bWJvbCBpZD0iZSI+PHBhdGggZD0iTS4xNDMuMzhDLjEyNi4zNzkuMTIyLjM3OC4xMjIuMzY5YzAtLjAxLjAwNS0uMDEuMDIzLS4wMWguMDQ2Yy4wODUgMCAuMTIzLS4wNy4xMjMtLjE2NkMuMzE0LjA2Mi4yNDYuMDI3LjE5Ny4wMjcuMTQ5LjAyNy4wNjcuMDUuMDM4LjExNi4wNy4xMTEuMDk5LjEyOS4wOTkuMTY1QS4wNDcuMDQ3IDAgMDEuMDUuMjE0Qy4wMjYuMjE0IDAgLjIgMCAuMTYyIDAgLjA3My4wODkgMCAuMiAwYy4xMTkgMCAuMjA3LjA5MS4yMDcuMTkyIDAgLjA5Mi0uMDc0LjE2NC0uMTcuMTgxQS4xODguMTg4IDAgMDEuMzguNTQ5Qy4zOC42MjguMjk4LjY4Ni4yMDEuNjg2LjEwMS42ODYuMDI3LjYyNS4wMjcuNTUyYzAtLjA0LjAzMS0uMDQ4LjA0Ni0uMDQ4LjAyMSAwIC4wNDUuMDE1LjA0NS4wNDUgMCAuMDMyLS4wMjQuMDQ2LS4wNDYuMDQ2TC4wNjEuNTk0Yy4wMzguMDY4LjEzMi4wNjguMTM3LjA2OC4wMzMgMCAuMDk4LS4wMTUuMDk4LS4xMTNBLjIyNi4yMjYgMCAwMC4yNjQuNDMxQy4yMzQuMzg3LjIuMzg0LjE3My4zODNMLjE0My4zOHoiLz48L3N5bWJvbD48dXNlIHhsaW5rOmhyZWY9IiNjIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgNy4wMjggMjguNTM3KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2QiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAyMi4zNDcgMjguNTM3KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2UiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAzOC4wNzIgMjguNzg4KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2UiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSA2LjQzIDQzLjIzNCkiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNjIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMjIuODQ5IDQyLjk4MykiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNkIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMzguMTY4IDQyLjk4MykiIGZpbGw9IiMyMzFmMjAiLz48cGF0aCBzdHJva2Utd2lkdGg9Ii41IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIGQ9Ik0wIDI1aDUxTTQwLjUgNDdWMCIvPjwvZz48L3N2Zz4=</file>
+<file name="7-3-fig-2-laplace-2.svg" path="/" encoding="base64">PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNTJwdCIgaGVpZ2h0PSI0N3B0IiB2aWV3Qm94PSIwIDAgNTIgNDciPjxjbGlwUGF0aCBpZD0iYSI+PHBhdGggdHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLTEgMCA0NykiIGQ9Ik0wIDBoNTJ2NDdIMHoiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNhKSI+PHN5bWJvbCBpZD0iYiI+PHBhdGggZD0iTS4zMzQuNjUxYzAgLjAxOSAwIC4wMjQtLjAxNC4wMjQtLjAwOCAwLS4wMTEgMC0uMDE5LS4wMTJMMCAuMTk2Vi4xNjdoLjI2M1YuMDc2Qy4yNjMuMDM5LjI2MS4wMjkuMTg4LjAyOWgtLjAyVjBjLjAyMy4wMDIuMTAyLjAwMi4xMy4wMDIuMDI4IDAgLjEwOCAwIC4xMzEtLjAwMnYuMDI5aC0uMDJjLS4wNzIgMC0uMDc1LjAxLS4wNzUuMDQ3di4wOTFoLjEwMXYuMDI5SC4zMzR2LjQ1NU0uMjY4LjU3M1YuMTk2SC4wMjVsLjI0My4zNzd6Ii8+PC9zeW1ib2w+PHN5bWJvbCBpZD0iYyI+PHBhdGggZD0iTS4xOTcuNjQxYzAgLjAyMyAwIC4wMjQtLjAyLjAyNEMuMTUzLjYzOC4xMDMuNjAxIDAgLjYwMVYuNTcyYy4wMjMgMCAuMDczIDAgLjEyOC4wMjZWLjA3N0MuMTI4LjA0MS4xMjUuMDI5LjAzNy4wMjlILjAwNlYwQy4wMzMuMDAyLjEzLjAwMi4xNjMuMDAyUy4yOTIuMDAyLjMxOSAwdi4wMjlILjI4OEMuMi4wMjkuMTk3LjA0MS4xOTcuMDc3di41NjR6Ii8+PC9zeW1ib2w+PHVzZSB4bGluazpocmVmPSIjYiIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDcuMjYyIDE0LjA5KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2MiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAyMy44NDkgMTQuMDkpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjYyIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDM5LjY3IDE0LjA5KSIgZmlsbD0iIzIzMWYyMCIvPjxzeW1ib2wgaWQ9ImQiPjxwYXRoIGQ9Ik0uMzkxLjE2OEguMzY5Qy4zNjYuMTUxLjM1OC4wOTYuMzQ4LjA4LjM0MS4wNzEuMjg0LjA3MS4yNTQuMDcxSC4wNjljLjAyNy4wMjMuMDg4LjA4Ny4xMTQuMTExLjE1Mi4xNC4yMDguMTkyLjIwOC4yOTFDLjM5MS41ODguMy42NjUuMTg0LjY2NUEuMTg1LjE4NSAwIDAxMCAuNDhDMCAuNDI5LjA0NC40MjkuMDQ3LjQyOWMuMDIxIDAgLjA0Ny4wMTUuMDQ3LjA0N2EuMDQ1LjA0NSAwIDAxLS4wNDcuMDQ3TC4wMzMuNTIyQy4wNTIuNTkuMTA2LjYzNi4xNzEuNjM2LjI1Ni42MzYuMzA4LjU2NS4zMDguNDczLjMwOC4zODguMjU5LjMxNC4yMDIuMjVMMCAuMDI0VjBoLjM2NWwuMDI2LjE2OHoiLz48L3N5bWJvbD48c3ltYm9sIGlkPSJlIj48cGF0aCBkPSJNLjE0My4zOEMuMTI2LjM3OS4xMjIuMzc4LjEyMi4zNjljMC0uMDEuMDA1LS4wMS4wMjMtLjAxaC4wNDZjLjA4NSAwIC4xMjMtLjA3LjEyMy0uMTY2Qy4zMTQuMDYyLjI0Ni4wMjcuMTk3LjAyNy4xNDkuMDI3LjA2Ny4wNS4wMzguMTE2LjA3LjExMS4wOTkuMTI5LjA5OS4xNjVBLjA0Ny4wNDcgMCAwMS4wNS4yMTRDLjAyNi4yMTQgMCAuMiAwIC4xNjIgMCAuMDczLjA4OSAwIC4yIDBjLjExOSAwIC4yMDcuMDkxLjIwNy4xOTIgMCAuMDkyLS4wNzQuMTY0LS4xNy4xODFBLjE4OC4xODggMCAwMS4zOC41NDlDLjM4LjYyOC4yOTguNjg2LjIwMS42ODYuMTAxLjY4Ni4wMjcuNjI1LjAyNy41NTJjMC0uMDQuMDMxLS4wNDguMDQ2LS4wNDguMDIxIDAgLjA0NS4wMTUuMDQ1LjA0NSAwIC4wMzItLjAyNC4wNDYtLjA0Ni4wNDZMLjA2MS41OTRjLjAzOC4wNjguMTMyLjA2OC4xMzcuMDY4LjAzMyAwIC4wOTgtLjAxNS4wOTgtLjExM0EuMjI2LjIyNiAwIDAwLjI2NC40MzFDLjIzNC4zODcuMi4zODQuMTczLjM4M0wuMTQzLjM4eiIvPjwvc3ltYm9sPjx1c2UgeGxpbms6aHJlZj0iI2MiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSA4LjAyOCAyOC41MzcpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjZCIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDIzLjM0NyAyOC41MzcpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjZSIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDM5LjA3MiAyOC43ODgpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjZSIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDcuNDMgNDMuMjM0KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2MiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAyMy44NDkgNDIuOTgzKSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2QiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAzOS4xNjggNDIuOTgzKSIgZmlsbD0iIzIzMWYyMCIvPjxwYXRoIHN0cm9rZS13aWR0aD0iLjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMCIgZD0iTS41IDM5aDUxTTkuNSA0N1YwIi8+PC9nPjwvc3ZnPg==</file>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9094  -->
+  <question type="description">
+    <name>
+      <text>7.3.2.5 Evaluating general determinants</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h4><span class="multilang" lang="en"> Evaluating general determinants</span>
+    <span class="multilang" lang="no">Evaluering av generelle determinanter </span>
+</h4>
+<p><span class="multilang" lang="en">Cofactors are important as it can be shown that the value of the determinant \(\Delta\) of a \(3\times 3\) matrix \(A\) can be found from the formula \(\Delta=a_{11}A_{11}+a_{12}A_{12}+a_{13}A_{13}.\)</span>
+    <span class="multilang" lang="no">Kofaktorer er viktige, da det kan vises at verdien av determinanten \(\delta \) for en \(3 \times 3 \) matrise \(a \) finner du fra formelen \(\Delta = A_{11} A_{11}+a_{12} a_{12}+a_{13} a_{13}. \) </span>
+</p>
+<p><span class="multilang" lang="en">In words, "the determinant of a \(3\times 3\) matrix is obtained by multiplying each element of the first row by its corresponding cofactor and then adding the three together". (In fact this rule can be extended to apply to <b>any</b> row or <b>any</b> column and to <b>any</b> order square matrix.)</span>
+    <span class="multilang" lang="no">Med andre ord, "er determinanten for en \(3 \times 3 \) matrise oppnådd ved å multiplisere hvert element i den første raden med den tilsvarende kofaktoren og deretter legge til de tre sammen". (Faktisk kan denne regelen utvides til å gjelde for <b> hvilken som helst </b> rad eller <b> hvilken som helst </b> kolonne og til <b> hvilken som helst </b> ordnet firkantet matrise.) </span>
+</p>
+<div class="HELM_keypoint">
+    <h4><span class="multilang" lang="en">Key Point</span>
+        <span class="multilang" lang="no">Sentralt punkt </span>
+    </h4>
+    <h5><span class="multilang" lang="en">Evaluating General Determinants</span>
+        <span class="multilang" lang="no">Evaluering av Generelle Determinanter </span>
+    </h5>
+    <p><span class="multilang" lang="en">If \(A\) is an \(n\times n\) square matrix then: \(\displaystyle{\operatorname{det}(A) = \sum_{j=1}^{n}a_{ij}A_{ij}}\).</span>
+        <span class="multilang" lang="no">Hvis \(a \) er en \(n \times n \) firkantet matrise da: \(\displaystyle{\operatorname{det}(A) = \sum_{j=1}^{n}a_{ij}A_{ij}}\). </span>
+    </p>
+  <p><span class="multilang" lang="en"> In words: The determinant of a square matrix is obtained by multiplying each element
+    of row \(i\) by its corresponding cofactor and then adding these products together.</span>
+        <span class="multilang" lang="no">Med andre ord: "Determinanten til en firkantet matrise fåes ved å multiplisere hvert element av råd \(i\) med sin korresponderende kofaktor og da legger til de produktene sammen.</span>
+    </p>
+</div>
+<hr>
+<h4 class="HELM_example"><span class="multilang" lang="en">Example</span>
+    <span class="multilang" lang="no">Eksempel </span>
+</h4>
+<p><span class="multilang" lang="en">In the case of \(\Delta=\begin{vmatrix} 4 &amp; 1 &amp; 1 \\ 1 &amp; 2 &amp; 3 \\ 3 &amp; 1 &amp; 2 \end{vmatrix}\) we have \(a_{11}=4, a_{12}=1, a_{13}=1,\) and \begin{align*} A_{11} &amp; = + \begin{vmatrix} 2 &amp; 3 \\ 1 &amp; 2 \end{vmatrix} = 4 - 3 = 1, \\ A_{12} &amp; = - \begin{vmatrix} 1 &amp; 3 \\ 3 &amp; 2 \end{vmatrix} = - ( 2 - 9 ) = 7, \\ A_{13} &amp; = + \begin{vmatrix} 1 &amp; 2 \\ 3 &amp; 1 \end{vmatrix} = 1 - 6 = - 5.\end{align*}</span>
+    <span class="multilang" lang="no">Når det, \(a_{12} = 1, a_{13} = 1, \) og \begin{align*} a_ {11} &amp; = + \begin{vmatrix} 2 &amp; 3 \\ 1 &amp; 2 \end{vmatrix} =4 - 3 = 1, \\ a_{12} &amp; = - \begin{vmatrix} 1 &amp; 3 \\ 3 &amp; 2 \end{vmatrix} = - (2 - 9) = 7, \\ a_{13} &amp;= + \begin{vmatrix} 1 &amp; 2 \\ 3 &amp; 1 \end{vmatrix} = 1 - 6 = - 5. \end{align*} </span>
+</p>
+<p><span class="multilang" lang="en">Hence, \(\Delta=4\times 1 + 1\times 7 + 1\times -5 = 6\).</span>
+    <span class="multilang" lang="no">Derfor, \(\Delta = 4 \times 1 + 1 \times 7 + 1 \times -5 = 6 \). </span>
+</p>
+<p><span class="multilang" lang="en">Alternatively, choosing to expand along the second row:
+        \begin{align*}\Delta &amp; = a_{21} A_{21} + a_{22} A_{22} + a_{23} A_{23} \\ &amp; = 1 \left( - \begin{vmatrix} 1 &amp; 1 \\ 1 &amp; 2 \end{vmatrix} \right) + 2 \left( \begin{vmatrix} 4 &amp; 1 \\ 3 &amp; 2 \end{vmatrix} \right) + 3 \left( - \begin{vmatrix} 4 &amp; 1 \\ 3 &amp; 1 \end{vmatrix} \right) \\ &amp; = 6\end{align*}
+        as before.</span>
+    <span class="multilang" lang="no">Alternativt å velge å utvide langs den andre raden:
+        \begin{align*}\Delta &amp; = a_{21} A_{21} + a_{22} A_{22} + a_{23} A_{23} \\ &amp; = 1 \left( - \begin{vmatrix} 1 &amp; 1 \\ 1 &amp; 2 \end{vmatrix} \right) + 2 \left( \begin{vmatrix} 4 &amp; 1 \\ 3 &amp; 2 \end{vmatrix} \right) + 3 \left( - \begin{vmatrix} 4 &amp; 1 \\ 3 &amp; 1 \end{vmatrix} \right) \\ &amp; = 6\end{align*}
+        som før. </span>
+</p>]]></text>
+<file name="7-3-fig-1-laplace-1.svg" path="/" encoding="base64">PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNjgiIGhlaWdodD0iNDdwdCIgdmlld0JveD0iMCAwIDUxIDQ3Ij48Y2xpcFBhdGggaWQ9ImEiPjxwYXRoIHRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIC0xIDAgNDcpIiBkPSJNMCAwaDUxdjQ3SDB6Ii8+PC9jbGlwUGF0aD48ZyBjbGlwLXBhdGg9InVybCgjYSkiPjxzeW1ib2wgaWQ9ImIiPjxwYXRoIGQ9Ik0uMzM0LjY1MWMwIC4wMTkgMCAuMDI0LS4wMTQuMDI0LS4wMDggMC0uMDExIDAtLjAxOS0uMDEyTDAgLjE5NlYuMTY3aC4yNjNWLjA3NkMuMjYzLjAzOS4yNjEuMDI5LjE4OC4wMjloLS4wMlYwYy4wMjMuMDAyLjEwMi4wMDIuMTMuMDAyLjAyOCAwIC4xMDggMCAuMTMxLS4wMDJ2LjAyOWgtLjAyYy0uMDcyIDAtLjA3NS4wMS0uMDc1LjA0N3YuMDkxaC4xMDF2LjAyOUguMzM0di40NTVNLjI2OC41NzNWLjE5NkguMDI1bC4yNDMuMzc3eiIvPjwvc3ltYm9sPjxzeW1ib2wgaWQ9ImMiPjxwYXRoIGQ9Ik0uMTk3LjY0MWMwIC4wMjMgMCAuMDI0LS4wMi4wMjRDLjE1My42MzguMTAzLjYwMSAwIC42MDFWLjU3MmMuMDIzIDAgLjA3MyAwIC4xMjguMDI2Vi4wNzdDLjEyOC4wNDEuMTI1LjAyOS4wMzcuMDI5SC4wMDZWMEMuMDMzLjAwMi4xMy4wMDIuMTYzLjAwMlMuMjkyLjAwMi4zMTkgMHYuMDI5SC4yODhDLjIuMDI5LjE5Ny4wNDEuMTk3LjA3N3YuNTY0eiIvPjwvc3ltYm9sPjx1c2UgeGxpbms6aHJlZj0iI2IiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSA2LjI2MiAxNC4wOSkiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNjIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMjIuODQ5IDE0LjA5KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2MiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAzOC42NyAxNC4wOSkiIGZpbGw9IiMyMzFmMjAiLz48c3ltYm9sIGlkPSJkIj48cGF0aCBkPSJNLjM5MS4xNjhILjM2OUMuMzY2LjE1MS4zNTguMDk2LjM0OC4wOC4zNDEuMDcxLjI4NC4wNzEuMjU0LjA3MUguMDY5Yy4wMjcuMDIzLjA4OC4wODcuMTE0LjExMS4xNTIuMTQuMjA4LjE5Mi4yMDguMjkxQy4zOTEuNTg4LjMuNjY1LjE4NC42NjVBLjE4NS4xODUgMCAwMTAgLjQ4QzAgLjQyOS4wNDQuNDI5LjA0Ny40MjljLjAyMSAwIC4wNDcuMDE1LjA0Ny4wNDdhLjA0NS4wNDUgMCAwMS0uMDQ3LjA0N0wuMDMzLjUyMkMuMDUyLjU5LjEwNi42MzYuMTcxLjYzNi4yNTYuNjM2LjMwOC41NjUuMzA4LjQ3My4zMDguMzg4LjI1OS4zMTQuMjAyLjI1TDAgLjAyNFYwaC4zNjVsLjAyNi4xNjh6Ii8+PC9zeW1ib2w+PHN5bWJvbCBpZD0iZSI+PHBhdGggZD0iTS4xNDMuMzhDLjEyNi4zNzkuMTIyLjM3OC4xMjIuMzY5YzAtLjAxLjAwNS0uMDEuMDIzLS4wMWguMDQ2Yy4wODUgMCAuMTIzLS4wNy4xMjMtLjE2NkMuMzE0LjA2Mi4yNDYuMDI3LjE5Ny4wMjcuMTQ5LjAyNy4wNjcuMDUuMDM4LjExNi4wNy4xMTEuMDk5LjEyOS4wOTkuMTY1QS4wNDcuMDQ3IDAgMDEuMDUuMjE0Qy4wMjYuMjE0IDAgLjIgMCAuMTYyIDAgLjA3My4wODkgMCAuMiAwYy4xMTkgMCAuMjA3LjA5MS4yMDcuMTkyIDAgLjA5Mi0uMDc0LjE2NC0uMTcuMTgxQS4xODguMTg4IDAgMDEuMzguNTQ5Qy4zOC42MjguMjk4LjY4Ni4yMDEuNjg2LjEwMS42ODYuMDI3LjYyNS4wMjcuNTUyYzAtLjA0LjAzMS0uMDQ4LjA0Ni0uMDQ4LjAyMSAwIC4wNDUuMDE1LjA0NS4wNDUgMCAuMDMyLS4wMjQuMDQ2LS4wNDYuMDQ2TC4wNjEuNTk0Yy4wMzguMDY4LjEzMi4wNjguMTM3LjA2OC4wMzMgMCAuMDk4LS4wMTUuMDk4LS4xMTNBLjIyNi4yMjYgMCAwMC4yNjQuNDMxQy4yMzQuMzg3LjIuMzg0LjE3My4zODNMLjE0My4zOHoiLz48L3N5bWJvbD48dXNlIHhsaW5rOmhyZWY9IiNjIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgNy4wMjggMjguNTM3KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2QiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAyMi4zNDcgMjguNTM3KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2UiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAzOC4wNzIgMjguNzg4KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2UiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSA2LjQzIDQzLjIzNCkiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNjIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMjIuODQ5IDQyLjk4MykiIGZpbGw9IiMyMzFmMjAiLz48dXNlIHhsaW5rOmhyZWY9IiNkIiB0cmFuc2Zvcm09Im1hdHJpeCgxMS45NTUgMCAwIC0xMS45NTUgMzguMTY4IDQyLjk4MykiIGZpbGw9IiMyMzFmMjAiLz48cGF0aCBzdHJva2Utd2lkdGg9Ii41IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIGQ9Ik0wIDI1aDUxTTQwLjUgNDdWMCIvPjwvZz48L3N2Zz4=</file>
+<file name="7-3-fig-2-laplace-2.svg" path="/" encoding="base64">PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNTJwdCIgaGVpZ2h0PSI0N3B0IiB2aWV3Qm94PSIwIDAgNTIgNDciPjxjbGlwUGF0aCBpZD0iYSI+PHBhdGggdHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLTEgMCA0NykiIGQ9Ik0wIDBoNTJ2NDdIMHoiLz48L2NsaXBQYXRoPjxnIGNsaXAtcGF0aD0idXJsKCNhKSI+PHN5bWJvbCBpZD0iYiI+PHBhdGggZD0iTS4zMzQuNjUxYzAgLjAxOSAwIC4wMjQtLjAxNC4wMjQtLjAwOCAwLS4wMTEgMC0uMDE5LS4wMTJMMCAuMTk2Vi4xNjdoLjI2M1YuMDc2Qy4yNjMuMDM5LjI2MS4wMjkuMTg4LjAyOWgtLjAyVjBjLjAyMy4wMDIuMTAyLjAwMi4xMy4wMDIuMDI4IDAgLjEwOCAwIC4xMzEtLjAwMnYuMDI5aC0uMDJjLS4wNzIgMC0uMDc1LjAxLS4wNzUuMDQ3di4wOTFoLjEwMXYuMDI5SC4zMzR2LjQ1NU0uMjY4LjU3M1YuMTk2SC4wMjVsLjI0My4zNzd6Ii8+PC9zeW1ib2w+PHN5bWJvbCBpZD0iYyI+PHBhdGggZD0iTS4xOTcuNjQxYzAgLjAyMyAwIC4wMjQtLjAyLjAyNEMuMTUzLjYzOC4xMDMuNjAxIDAgLjYwMVYuNTcyYy4wMjMgMCAuMDczIDAgLjEyOC4wMjZWLjA3N0MuMTI4LjA0MS4xMjUuMDI5LjAzNy4wMjlILjAwNlYwQy4wMzMuMDAyLjEzLjAwMi4xNjMuMDAyUy4yOTIuMDAyLjMxOSAwdi4wMjlILjI4OEMuMi4wMjkuMTk3LjA0MS4xOTcuMDc3di41NjR6Ii8+PC9zeW1ib2w+PHVzZSB4bGluazpocmVmPSIjYiIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDcuMjYyIDE0LjA5KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2MiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAyMy44NDkgMTQuMDkpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjYyIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDM5LjY3IDE0LjA5KSIgZmlsbD0iIzIzMWYyMCIvPjxzeW1ib2wgaWQ9ImQiPjxwYXRoIGQ9Ik0uMzkxLjE2OEguMzY5Qy4zNjYuMTUxLjM1OC4wOTYuMzQ4LjA4LjM0MS4wNzEuMjg0LjA3MS4yNTQuMDcxSC4wNjljLjAyNy4wMjMuMDg4LjA4Ny4xMTQuMTExLjE1Mi4xNC4yMDguMTkyLjIwOC4yOTFDLjM5MS41ODguMy42NjUuMTg0LjY2NUEuMTg1LjE4NSAwIDAxMCAuNDhDMCAuNDI5LjA0NC40MjkuMDQ3LjQyOWMuMDIxIDAgLjA0Ny4wMTUuMDQ3LjA0N2EuMDQ1LjA0NSAwIDAxLS4wNDcuMDQ3TC4wMzMuNTIyQy4wNTIuNTkuMTA2LjYzNi4xNzEuNjM2LjI1Ni42MzYuMzA4LjU2NS4zMDguNDczLjMwOC4zODguMjU5LjMxNC4yMDIuMjVMMCAuMDI0VjBoLjM2NWwuMDI2LjE2OHoiLz48L3N5bWJvbD48c3ltYm9sIGlkPSJlIj48cGF0aCBkPSJNLjE0My4zOEMuMTI2LjM3OS4xMjIuMzc4LjEyMi4zNjljMC0uMDEuMDA1LS4wMS4wMjMtLjAxaC4wNDZjLjA4NSAwIC4xMjMtLjA3LjEyMy0uMTY2Qy4zMTQuMDYyLjI0Ni4wMjcuMTk3LjAyNy4xNDkuMDI3LjA2Ny4wNS4wMzguMTE2LjA3LjExMS4wOTkuMTI5LjA5OS4xNjVBLjA0Ny4wNDcgMCAwMS4wNS4yMTRDLjAyNi4yMTQgMCAuMiAwIC4xNjIgMCAuMDczLjA4OSAwIC4yIDBjLjExOSAwIC4yMDcuMDkxLjIwNy4xOTIgMCAuMDkyLS4wNzQuMTY0LS4xNy4xODFBLjE4OC4xODggMCAwMS4zOC41NDlDLjM4LjYyOC4yOTguNjg2LjIwMS42ODYuMTAxLjY4Ni4wMjcuNjI1LjAyNy41NTJjMC0uMDQuMDMxLS4wNDguMDQ2LS4wNDguMDIxIDAgLjA0NS4wMTUuMDQ1LjA0NSAwIC4wMzItLjAyNC4wNDYtLjA0Ni4wNDZMLjA2MS41OTRjLjAzOC4wNjguMTMyLjA2OC4xMzcuMDY4LjAzMyAwIC4wOTgtLjAxNS4wOTgtLjExM0EuMjI2LjIyNiAwIDAwLjI2NC40MzFDLjIzNC4zODcuMi4zODQuMTczLjM4M0wuMTQzLjM4eiIvPjwvc3ltYm9sPjx1c2UgeGxpbms6aHJlZj0iI2MiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSA4LjAyOCAyOC41MzcpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjZCIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDIzLjM0NyAyOC41MzcpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjZSIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDM5LjA3MiAyOC43ODgpIiBmaWxsPSIjMjMxZjIwIi8+PHVzZSB4bGluazpocmVmPSIjZSIgdHJhbnNmb3JtPSJtYXRyaXgoMTEuOTU1IDAgMCAtMTEuOTU1IDcuNDMgNDMuMjM0KSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2MiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAyMy44NDkgNDIuOTgzKSIgZmlsbD0iIzIzMWYyMCIvPjx1c2UgeGxpbms6aHJlZj0iI2QiIHRyYW5zZm9ybT0ibWF0cml4KDExLjk1NSAwIDAgLTExLjk1NSAzOS4xNjggNDIuOTgzKSIgZmlsbD0iIzIzMWYyMCIvPjxwYXRoIHN0cm9rZS13aWR0aD0iLjUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMCIgZD0iTS41IDM5aDUxTTkuNSA0N1YwIi8+PC9nPjwvc3ZnPg==</file>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9102  -->
+  <question type="description">
+    <name>
+      <text>7.3.2.6 Evaluating general determinants Key Point</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<div class="HELM_keypoint">
+<h4>Key Point</h4>
+<h5>Evaluating General Determinants</h5>
+<p>If \(A\) is an \(n\times n\) square matrix then: \(\displaystyle{\operatorname{det}(A) = \sum_{j=1}^{n}a_{ij}A_{ij}}\).</p>
+In words: The determinant of a square matrix is obtained by multiplying each element
+of row \(i\) by its corresponding cofactor and then adding these products together.<p></p></div>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9103  -->
+  <question type="description">
+    <name>
+      <text>7.3.2.7 Evaluating general determinants example</text>
+    </name>
+    <questiontext format="moodle_auto_format">
+      <text><![CDATA[<p>In the case of \(\Delta=\begin{vmatrix} 4 & 1 & 1 \\ 1 & 2 & 3 \\ 3 & 1 & 2 \end{vmatrix}\) we have \(a_{11}=4, a_{12}=1, a_{13}=1,\) and \begin{align*} A_{11} & = + \begin{vmatrix} 2 & 3 \\ 1 & 2 \end{vmatrix} = 4 - 3 = 1, \\ A_{12} & = - \begin{vmatrix} 1 & 3 \\ 3 & 2 \end{vmatrix} = - ( 2 - 9 ) = 7, \\ A_{13} & = + \begin{vmatrix} 1 & 2 \\ 3 & 1 \end{vmatrix} = 1 - 6 = - 5.\end{align*}</p> 
+
+<p>Hence, \(\Delta=4\times 1 + 1\times 7 + 1\times -5 = 6\).</p>
+
+<p>Alternatively, choosing to expand along the second row:
+\begin{align*}\Delta & = a_{21} A_{21} + a_{22} A_{22} + a_{23} A_{23} \\ & = 1 \left( - \begin{vmatrix} 1 & 1 \\ 1 & 2 \end{vmatrix} \right) + 2 \left( \begin{vmatrix} 4 & 1 \\ 3 & 2 \end{vmatrix} \right) + 3 \left( - \begin{vmatrix} 4 & 1 \\ 3 & 1 \end{vmatrix} \right) \\ & = 6\end{align*}
+as before.</p>]]></text>
+    </questiontext>
+    <generalfeedback format="moodle_auto_format">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9096  -->
+  <question type="description">
+    <name>
+      <text>7.3.3.1 Properties of determinants 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<span class="multilang" lang="en"><h3>Properties of determinants</h3>
+<p>Often, especially with determinants of large order, we can simplify the evaluation rules. Let's discuss some useful
+    properties of determinants in general.</p>
+
+<ol type="1">
+    <li>
+        <p><b>If two rows (or two columns) of a determinant are interchanged then the value of the determinant is
+                multiplied by \(-1\).</b></p>
+        <p>For example, \(\begin{vmatrix}4&amp;3\\ 1&amp;2\end{vmatrix}=8-3=5\), but (interchanging columns) \(\begin{vmatrix}3&amp;4\\2&amp;1\end{vmatrix}=3-8=-5\) and (interchanging rows) \(\begin{vmatrix}1&amp;2\\ 4&amp;3\end{vmatrix}=3-8=-5\).</p>
+    </li>
+    <li>
+        <p><b>The determinant of a matrix \(A\) and the determinant of its transpose \(A^T\) are equal.</b></p>
+        <p>\[ \begin{vmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{vmatrix} = 4 - 6 = -2 = \begin{vmatrix} 1 &amp; 3 \\ 2 &amp; 4 \end{vmatrix} \]</p>
+    </li>
+    <li>
+        <p><b>If two rows (or two columns) of a matrix \(A\) are equal, then it has zero determinant.</b></p>
+        <p>For example, the following determinant has two identical rows:</p>
+        <p>
+            \[\begin{aligned}
+            \begin{vmatrix} 1 &amp; 2 &amp; 3 \\ 1 &amp; 2 &amp; 3 \\ 4 &amp; 5 &amp; 6 \end{vmatrix}
+            &amp;= 1 \times \begin{vmatrix} 2 &amp; 3 \\ 5 &amp; 6 \end{vmatrix} + 2 \times \left(- \begin{vmatrix} 1 &amp; 3 \\ 4 &amp; 6 \end{vmatrix} \right) + 3 \times \begin{vmatrix} 1 &amp; 2 \\ 4 &amp; 5 \end{vmatrix} \\
+            &amp; = -3 + 2 \times 6 + 3 \times (-3) = 0.
+            \end{aligned}\]
+        </p>
+    </li>
+    <li>
+        <p><b>If the elements of one row (or one column) of a determinant are multiplied by \(k\), then the resulting determinant is \(k\) times the given determinant.</b></p>
+        <p>\[\begin{vmatrix} 1 &amp; 2 &amp; 3 \\ 4 &amp; 8 &amp; 6 \\ 7 &amp; 8 &amp;&nbsp; 9 \end{vmatrix} = 2 \begin{vmatrix}
+            1 &amp; 2 &amp; 3 \\ 2 &amp; 4 &amp; 3 \\ 7 &amp; 8 &amp; 9 \end{vmatrix}.\]</p>
+        <p>Note that if one row (or column) of a determinant is a multiple of another row (or column) then the value of the determinant is zero. (This follows from properties 3 and 4.)</p>
+        <p>For example:</p>
+        <p>\[\begin{aligned}
+            \begin{vmatrix} 2 &amp; 4 &amp; -1 \\ 4 &amp; 2 &amp; 1 \\ -4 &amp; -8 &amp; 2 \end{vmatrix} &amp; = 2
+            \times \begin{vmatrix} 2 &amp; 1 \\ -8 &amp; 2 \end{vmatrix} +4 \times \left( -\begin{vmatrix} 4 &amp; 1 \\ -4 &amp;
+            2 \end{vmatrix} \right) - 1 \times \begin{vmatrix} 4 &amp; 2 \\ -4 &amp; -8 \end{vmatrix} \\ &amp; =
+            2(12)+4(-12)-(-24)=0.
+            \end{aligned}\]</p>
+        <p>This is predictable as the 3rd row is \(-2\) times the first row.</p>
+    </li>
+    <li>
+        <p><b>If we add (or subtract) a multiple of one row (or column) to another, the value of the determinant is unchanged.</b></p>
+        <p>Given \(\begin{vmatrix}1&amp;2\\ 4&amp;5\end{vmatrix}\), adding (2 \(\times\) row 1) to (row 2) gives</p>
+        <p>
+            \[\begin{vmatrix} 1 &amp; 2 \\ 4 + 2 \times 1 &amp; 5 + 2 \times 2 \end{vmatrix} = \begin{vmatrix} 1 &amp; 2 \\ 6
+            &amp; 9 \end{vmatrix} = 9 - 12 = -3 = \begin{vmatrix} 1 &amp; 2 \\ 4 &amp; 5 \end{vmatrix} \]
+        </p>
+    </li>
+    <li>
+        <p><b>The determinant of a lower triangular matrix, an upper triangular matrix
+                or a diagonal matrix is the product of the elements on the leading
+                diagonal.</b></p>
+        <p>As an example, it is easily confirmed that each of the following determinants has the same value \(1 \times 4 \times 6 = 24\).</p>
+        <p>\[
+            \begin{vmatrix} 1 &amp; 2 &amp; 3 \\ 0 &amp; 4 &amp; 5 \\ 0 &amp; 0 &amp; 6 \end{vmatrix},\qquad
+            \begin{vmatrix} 1 &amp; 0 &amp; 0 \\ 2 &amp; 4 &amp; 0 \\ 3 &amp; 5 &amp; 6 \end{vmatrix},\qquad
+            \begin{vmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 4 &amp; 0 \\ 0 &amp; 0 &amp; 6 \end{vmatrix},\qquad
+            \begin{vmatrix} 4 &amp; 2 &amp; 3 \\ 0 &amp; 1 &amp; 5 \\ 0 &amp; 0 &amp; 6 \end{vmatrix}
+            \]</p>
+    </li>
+</ol>
+  </span>
+
+<span class="multilang" lang="no"><h3>Egenskaper til determinanter</h3>
+<p>Ofte, spesielt med determinanter av stor størrelse, kan vi forenkle evalueringsreglene. La oss diskutere noen nyttige
+     egenskaper til determinanter generelt.</p>
+
+<ol type="1">
+     <li>
+         <p><b>Hvis to rader (eller to kolonner) av en determinant byttes ut, er verdien til determinanten
+                 multiplisert med \(-1\).</b></p>
+         <p>For eksempel, \(\begin{vmatrix}4&amp;3\\ 1&amp;2\end{vmatrix}=8-3=5\), men (bytter kolonner) \(\begin{vmatrix}3&amp;4 \\2&amp;1\end{vmatrix}=3-8=-5\) og (bytte rader) \(\begin{vmatrix}1&amp;2\\ 4&amp;3\end{vmatrix}=3-8=- 5\).</p>
+     </li>
+     <li>
+         <p><b>Determinanten til en matrise \(A\) og determinanten for dens transponering \(A^T\) er like.</b></p>
+         <p>\[ \begin{vmatrix} 1 &amp; 2 \\ 3 &amp; 4 \end{vmatrix} = 4 - 6 = -2 = \begin{vmatrix} 1 &amp; 3 \\ 2 &amp; 4 \end{vmatrix} \]</p>
+     </li>
+     <li>
+         <p><b>Hvis to rader (eller to kolonner) i en matrise \(A\) er like, har den null determinant.</b></p>
+         <p>For eksempel har følgende determinant to identiske rader:</p>
+         <p>
+             \[\begin{aligned}
+             \begin{vmatrix} 1 &amp; 2 &amp; 3 \\ 1 &amp; 2 &amp; 3 \\ 4 &amp; 5 &amp; 6 \end{vmatrix}
+             &amp;= 1 \times \begin{vmatrix} 2 &amp; 3 \\ 5 &amp; 6 \end{vmatrix} + 2 \times \left(- \begin{vmatrix} 1 &amp; 3 \\ 4 &amp; 6 \end{vmatrix} \right) + 3 \times \begin{vmatrix} 1 &amp; 2 \\ 4 &amp; 5 \end{vmatrix} \\
+             &amp; = -3 + 2 \times 6 + 3 \times (-3) = 0.
+             \end{aligned}\]
+         </p>
+     </li>
+     <li>
+         <p><b>Hvis elementene i én rad (eller én kolonne) i en determinant multipliseres med \(k\), er den resulterende determinanten \(k\) ganger den gitte determinanten.</b><!-- p-->
+         </p><p>\[\begin{vmatrix} 1 &amp; 2 &amp; 3 \\ 4 &amp; 8 &amp; 6 \\ 7 &amp; 8 &amp;&nbsp; 9 \end{vmatrix} = 2 \begin{vmatrix}
+             1 &amp; 2 &amp; 3 \\ 2 &amp; 4 &amp; 3 \\ 7 &amp; 8 &amp; 9 \end{vmatrix}.\]</p>
+         <p>Merk at hvis en rad (eller kolonne) av en determinant er et multiplum av en annen rad (eller kolonne), så er verdien av determinanten null. (Dette følger av egenskap 3 og 4.)</p>
+         <p>For eksempel:</p>
+         <p>\[\begin{aligned}
+             \begin{vmatrix} 2 &amp; 4 &amp; -1 \\ 4 &amp; 2 &amp; 1 \\ -4 &amp; -8 &amp; 2 \end{vmatrix} &amp; = 2
+             \times \begin{vmatrix} 2 &amp; 1 \\ -8 &amp; 2 \end{vmatrix} +4 \times \left( -\begin{vmatrix} 4 &amp; 1 \\ -4 &amp;
+             2 \end{vmatrix} \right) - 1 \times \begin{vmatrix} 4 &amp; 2 \\ -4 &amp; -8 \end{vmatrix} \\ &amp; =
+             2(12)+4(-12)-(-24)=0.
+             \end{aligned}\]</p>
+         <p>Dette er forutsigbart ettersom den tredje raden er \(-2\) ganger den første raden.</p>
+     </li>
+     <li>
+         <p><b>Hvis vi legger til (eller trekker fra) et multiplum av en rad (eller kolonne) til en annen, er verdien av determinanten uendret.</b></p>
+         <p>Gitt \(\begin{vmatrix}1&amp;2\\ 4&amp;5\end{vmatrix}\), gir å legge til (2 \(\times\) rad 1) til (rad 2)</p>
+         <p>
+             \[\begin{vmatrix} 1 &amp; 2 \\ 4 + 2 \times 1 &amp; 5 + 2 \times 2 \end{vmatrix} = \begin{vmatrix} 1 &amp; 2 \\ 6
+             &amp; 9 \end{vmatrix} = 9 - 12 = -3 = \begin{vmatrix} 1 &amp; 2 \\ 4 &amp; 5 \end{vmatrix} \]
+         </p>
+     </li>
+     <li>
+         <p><b>Determinanten for en nedre trekantet matrise, en øvre trekantet matrise
+                 eller en diagonal matrise er produktet av elementene på ledende
+                 diagonal.</b></p>
+         <p>Som et eksempel er det lett å bekrefte at hver av de følgende determinantene har samme verdi \(1 \times 4 \times 6 = 24\).</p>
+         <p>\[
+             \begin{vmatrix} 1 &amp; 2 &amp; 3 \\ 0 &amp; 4 &amp; 5 \\ 0 &amp; 0 &amp; 6 \end{vmatrix},\qquad
+             \begin{vmatrix} 1 &amp; 0 &amp; 0 \\ 2 &amp; 4 &amp; 0 \\ 3 &amp; 5 &amp; 6 \end{vmatrix},\qquad
+             \begin{vmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 4 &amp; 0 \\ 0 &amp; 0 &amp; 6 \end{vmatrix},\qquad
+             \begin{vmatrix} 4 &amp; 2 &amp; 3 \\ 0 &amp; 1 &amp; 5 \\ 0 &amp; 0 &amp; 6 \end{vmatrix}
+             \]</p>
+     </li>
+</ol>
+   </span>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9089  -->
+  <question type="stack">
+    <name>
+      <text>7.3.1.2 Task: compute these 2x2 determinants</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise</span>
+    <span class="multilang" lang="no">Trening </span>
+</p>
+<p><span class="multilang" lang="en">Evaluate the determinants of the following matrices.</span>
+    <span class="multilang" lang="no">Evaluer determinantene for følgende matriser. </span>
+</p>
+<ol class="HELM_parts_inline">
+    <li><span class="multilang" lang="en">\(A={@matrixa@}\)</span>
+    </li>
+    <li><span class="multilang" lang="en">\(B={@matrixb@}\)</span>
+    </li>
+    <li><span class="multilang" lang="en">\(C={@matrixc@}\)</span>
+    </li>
+</ol>
+
+<ol class="HELM_parts">
+
+    <li>
+        <p>\(\det{A}=\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</p>
+    </li>
+
+    <li>
+        <p>\(\det{B}=\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]</p>
+    </li>
+
+    <li>
+        <p>\(\det{C}=\) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]</p>
+    </li>
+
+</ol>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><span class="multilang" lang="en">We use the definition to find the determinant of the following matrices.</span>
+<span class="multilang" lang="no">Vi bruker definisjonen for å finne determinanten for følgende matriser. </span></p>
+<ol class="HELM_parts">
+    <li>
+        <p>For \(A={@matrixa@},\)</p>
+        <p>\(\det(A) = {@detAA@} = {@ta1@}.\)</p>
+    </li>
+    <li>
+        <p>For \(B={@matrixb@},\)</p>
+        <p>\(\det(B) = {@detBB@} = {@ta2@}.\)</p>
+    </li>
+    <li>
+        <p>For \(C={@matrixc@},\)</p>
+        <p>\(\det(C) = {@detCC@} = {@ta3@}.\)</p>
+    </li>
+</ol>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text>matrixa: matrix([rand_with_step(-5,5,1),rand_with_step(-5,5,1)],[rand_with_step(-5,5,1),rand_with_step(-5,5,1)]);
+matrixb: ev(matrixa,simp);
+matrixb: matrix([rand_with_step(-5,5,1),0],[rand_with_step(-5,5,1),rand_with_step(-5,5,1)]);
+matrixb: ev(matrixb,simp);
+c1 : rand_with_step(-5,5,1);
+c2 : rand_with_step(-5,5,1);
+co1 : 2+rand(4);
+co2 : rand_with_step(-5,5,1);
+matrixc: matrix([co1*c1,co2*c1],[co1*c2,co2*c2]);
+matrixc: ev(matrixc,simp);
+ta1: ev(determinant(matrixa),simp);
+ta2: ev(determinant(matrixb),simp);
+ta3: ev(determinant(matrixc),simp);
+AA: matrixa;
+BB: matrixb;
+CC: matrixc;
+detAA: unary_minus_sort(AA[1,1]*AA[2,2]-AA[1,2]*AA[2,1]);
+detBB: unary_minus_sort(BB[1,1]*BB[2,2]-BB[1,2]*BB[2,1]);
+detCC: unary_minus_sort(CC[1,1]*CC[2,2]-CC[1,2]*CC[2,1]);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\(A = {@matrixa@}\),\(B = {@matrixb@}\),\(C = {@matrixc@}\)</text>
+    </questionnote>
+    <questionsimplify>0</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta3</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans3</sans>
+        <tans>ta3</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>466424202</deployedseed>
+    <deployedseed>1777813533</deployedseed>
+    <deployedseed>843783569</deployedseed>
+    <deployedseed>1106046459</deployedseed>
+    <deployedseed>1774083428</deployedseed>
+    <deployedseed>889156642</deployedseed>
+    <deployedseed>1653393095</deployedseed>
+    <deployedseed>806336047</deployedseed>
+    <deployedseed>233433725</deployedseed>
+    <deployedseed>2139012953</deployedseed>
+    <deployedseed>1128825046</deployedseed>
+    <deployedseed>345756603</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1+1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2+1</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3+1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-1-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-1-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt3-1-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9104  -->
+  <question type="stack">
+    <name>
+      <text>7.3.1.2 Task: compute these 2x2 determinants (copy)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Evaluate the determinants of the following matrices.</p>
+<ol class="HELM_parts_inline">
+<li>\(A={@matrixa@}\)</li>
+<li>\(B={@matrixb@}\)</li>
+<li>\(C={@matrixc@}\)</li>
+<li>\(D={@matrixd@}\)</li>
+<li>\(E={@matrixe@}\)</li>
+<li>\(F={@matrixf@}\)</li>
+<li>\(G={@matrixg@}\)</li>
+</ol>
+
+<ol class="HELM_parts">
+
+<li><p>\(\det{A}=\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</p></li>
+
+<li><p>\(\det{B}=\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]</p></li>
+
+<li><p>\(\det{C}=\) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]</p></li>
+
+<li><p>\(\det{D}=\) [[input:ans4]] [[validation:ans4]] [[feedback:prt4]]</p></li>
+
+<li><p>\(\det{E}=\) [[input:ans5]] [[validation:ans5]] [[feedback:prt5]]</p></li>
+
+<li><p>\(\det{F}=\) [[input:ans6]] [[validation:ans6]] [[feedback:prt6]]</p></li>
+
+<li><p>\(\det{G}=\) [[input:ans7]] [[validation:ans7]] [[feedback:prt7]]</p></li>
+
+</ol>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text>\[\det(A) = {@detAA@} = {@ta1@}\]
+\[\det(B) = {@detBB@} = {@ta2@}\]
+\[\det(C) = {@detCC@} = {@ta3@}\]
+\[\det(D) = {@detDD@} = {@ta4@}\]
+\[\det(E) = {@detEE@} = {@ta5@}\]
+\[\det(F) = {@detFF@} = {@ta6@}\]
+\[\det(G) = {@detGG@} = {@ta7@}\]</text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2020070100</text>
+    </stackversion>
+    <questionvariables>
+      <text>matrixa: matrix([rand_with_step(-5,5,1),rand_with_step(-5,5,1)],[rand_with_step(-5,5,1),rand_with_step(-5,5,1)]);
+matrixb: ev(matrixa,simp);
+matrixb: matrix([rand_with_step(-5,5,1),rand_with_step(-5,5,1)],[rand_with_step(-5,5,1),rand_with_step(-5,5,1)]);
+matrixb: ev(matrixb,simp);
+matrixc: matrix([rand_with_step(-5,5,1),rand_with_step(-5,5,1)],[rand_with_step(-5,5,1),rand_with_step(-5,5,1)]);
+matrixc: ev(matrixc,simp);
+matrixd: matrix([rand_with_step(-5,5,1),rand_with_step(-5,5,1)],[rand_with_step(-5,5,1),rand_with_step(-5,5,1)]);
+matrixd: ev(matrixd,simp);
+matrixe: matrix([rand_with_step(-5,5,1),rand_with_step(-5,5,1)],[rand_with_step(-5,5,1),rand_with_step(-5,5,1)]);
+matrixe: ev(matrixe,simp);
+matrixf: matrix([rand_with_step(-5,5,1),rand_with_step(-5,5,1)],[rand_with_step(-5,5,1),rand_with_step(-5,5,1)]);
+matrixf: ev(matrixf,simp);
+matrixg: matrix([rand_with_step(-5,5,1),rand_with_step(-5,5,1)],[rand_with_step(-5,5,1),rand_with_step(-5,5,1)]);
+matrixg: ev(matrixg,simp);
+
+ta1: ev(determinant(matrixa),simp);
+ta2: ev(determinant(matrixb),simp);
+ta3: ev(determinant(matrixc),simp);
+ta4: ev(determinant(matrixd),simp);
+ta5: ev(determinant(matrixe),simp);
+ta6: ev(determinant(matrixf),simp);
+ta7: ev(determinant(matrixg),simp);
+
+AA: matrixa;
+BB: matrixb;
+CC: matrixc;
+DD: matrixd;
+EE: matrixe;
+FF: matrixf;
+GG: matrixg;
+
+detAA: unary_minus_sort(AA[1,1]*AA[2,2]-AA[1,2]*AA[2,1]);
+detBB: unary_minus_sort(BB[1,1]*BB[2,2]-BB[1,2]*BB[2,1]);
+detCC: unary_minus_sort(CC[1,1]*CC[2,2]-CC[1,2]*CC[2,1]);
+detDD: unary_minus_sort(DD[1,1]*DD[2,2]-DD[1,2]*DD[2,1]);
+detEE: unary_minus_sort(EE[1,1]*EE[2,2]-EE[1,2]*EE[2,1]);
+detFF: unary_minus_sort(FF[1,1]*FF[2,2]-FF[1,2]*FF[2,1]);
+detGG: unary_minus_sort(GG[1,1]*GG[2,2]-GG[1,2]*GG[2,1]);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\(A = {@matrixa@}\) Answers: \({@ta1@}, {@ta2@}, {@ta3@}, {@ta4@}, {@ta5@}, {@ta6@}, {@ta7@}\)</text>
+    </questionnote>
+    <questionsimplify>0</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta3</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>algebraic</type>
+      <tans>ta4</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans5</name>
+      <type>algebraic</type>
+      <tans>ta5</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans6</name>
+      <type>algebraic</type>
+      <tans>ta6</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans7</name>
+      <type>algebraic</type>
+      <tans>ta7</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans3</sans>
+        <tans>ta3</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans4</sans>
+        <tans>ta4</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt5</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans5</sans>
+        <tans>ta5</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt5-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt5-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt6</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans6</sans>
+        <tans>ta6</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt6-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt6-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt7</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans7</sans>
+        <tans>ta7</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt7-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt7-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>52552522</deployedseed>
+    <deployedseed>1285072590</deployedseed>
+    <deployedseed>1378037732</deployedseed>
+    <deployedseed>466424202</deployedseed>
+    <deployedseed>1777813533</deployedseed>
+    <deployedseed>1301394773</deployedseed>
+    <deployedseed>843783569</deployedseed>
+    <deployedseed>788136584</deployedseed>
+    <deployedseed>1106046459</deployedseed>
+    <deployedseed>1774083428</deployedseed>
+    <deployedseed>889156642</deployedseed>
+    <deployedseed>1653393095</deployedseed>
+    <deployedseed>806336047</deployedseed>
+    <deployedseed>1416118177</deployedseed>
+    <deployedseed>233433725</deployedseed>
+    <deployedseed>2139012953</deployedseed>
+    <deployedseed>1128825046</deployedseed>
+    <deployedseed>1764327515</deployedseed>
+    <deployedseed>1290790620</deployedseed>
+    <deployedseed>345756603</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>ta5</value>
+      </testinput>
+      <testinput>
+        <name>ans6</name>
+        <value>ta6</value>
+      </testinput>
+      <testinput>
+        <name>ans7</name>
+        <value>ta7</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt5</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt5-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt6</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt6-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt7</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt7-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9091  -->
+  <question type="stack">
+    <name>
+      <text>7.3.2.2 Compute a 2x2 minor</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise</span>
+    <span class="multilang" lang="no">Trening </span>
+</p>
+<p><span class="multilang" lang="en">Consider the matrix \(A = {@matrixa@}\). What is the minor of the index \(a_{22}\)?</span>
+    <span class="multilang" lang="no">Tenk på matrisen \(A = {@matrixa@}\). Hva er den 'minor' av indeksen \(a_{22}\)? </span>
+</p>
+<p><span class="multilang" lang="en">The minor of \(a_{22}\) is:</span>
+    <span class="multilang" lang="no">Den 'minor' av \(a_{22}\) er:</span>
+    [[input:ans1]][[validation:ans1]][[feedback:prt1]]
+</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><span class="multilang" lang="en">The minor of \(a_{22}\) is the \(2\times2\) determinant \(\begin{vmatrix}a_{11} &amp; a_{13} \\ a_{31} &amp; a_{33}\end{vmatrix}=a_{11}a_{33}-a_{31}a_{13}\).</span>
+<span class="multilang" lang="no">Den mindreårige av \(A_ {22} \) er \(2 \times 2\) determinant \(\begin{vmatrix} a_ {11} &amp; a_ {13} \\ a_ {31} &amp; a_ {33} \end{vmatrix} = a_ {11} a_ {33}-a_ {31} a_ {13}\). </span></p>
+<p><span class="multilang" lang="en">For the matrix \(A = {@matrixa@}\) the minor is:</span>
+<span class="multilang" lang="no">For matrisen \(a = {@matrixa@}\) er den mindreårige: </span></p>
+<p><span class="multilang" lang="en">\(\begin{vmatrix}{@AA[1,1]@} &amp; {@AA[1,3]@} \\ {@AA[3,1]@} &amp; {@AA[3,3]@}\end{vmatrix} = {@CC@} = {@ta1@}.\)</span>
+<span class="multilang" lang="no">\(\begin{vmatrix}{@AA[1,1]@} &amp; {@AA[1,3]@} \\ {@AA[3,1]@} &amp; {@AA[3,3]@}\end{vmatrix} = {@CC@} = {@ta1@}.\) </span></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text>matrixa: matrix([rand_with_step(-5,5,1),rand_with_step(-5,5,1),rand_with_step(-5,5,1)],[rand_with_step(-5,5,1),rand_with_step(-5,5,1),rand_with_step(-5,5,1)],[rand_with_step(-5,5,1),rand_with_step(-5,5,1),rand_with_step(-5,5,1)]);
+matrixa: ev(matrixa,simp);
+
+AA: matrixa;
+relevantminor: matrix([AA[1,1], AA[1,3]], [AA[3,1], AA[3,3]]);
+
+ta1: ev(determinant(relevantminor),simp);
+
+simp: false;
+CC: determinant(relevantminor);
+
+</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\(A = {@matrixa@}, {@ta1@}\)</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed>MinorAndCofactor</variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant, minor</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>401428587</deployedseed>
+    <deployedseed>256470495</deployedseed>
+    <deployedseed>1580423024</deployedseed>
+    <deployedseed>311223496</deployedseed>
+    <deployedseed>717670310</deployedseed>
+    <deployedseed>478689502</deployedseed>
+    <deployedseed>1948238459</deployedseed>
+    <deployedseed>975517033</deployedseed>
+    <deployedseed>491816791</deployedseed>
+    <deployedseed>1330136640</deployedseed>
+    <deployedseed>67200360</deployedseed>
+    <deployedseed>1294055332</deployedseed>
+    <deployedseed>1284459475</deployedseed>
+    <deployedseed>1969144389</deployedseed>
+    <deployedseed>2131644959</deployedseed>
+    <deployedseed>2131917626</deployedseed>
+    <deployedseed>691664144</deployedseed>
+    <deployedseed>138140317</deployedseed>
+    <deployedseed>1729697927</deployedseed>
+    <deployedseed>1066017578</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>-ta1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-1-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9093  -->
+  <question type="stack">
+    <name>
+      <text>7.3.2.4 Compute a cofactor</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise</span>
+<span class="multilang" lang="no">Trening </span></p>
+<p><span class="multilang" lang="en">Consider the matrix \(A = {@matrixa@}\). Compute the cofactors of the following entries:
+</span>
+<span class="multilang" lang="no">Tenk på matrisen \(a = {@matrixa@} \). Beregn kofaktorene for følgende oppføringer: </span></p>
+<ol class="HELM_parts">
+<li><span class="multilang" lang="en">The cofactor of \(a_{22}\) is:
+    </span>
+<span class="multilang" lang="no">Kofaktoren til \(a_{22}\) er:  [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</span></li>
+<li><span class="multilang" lang="en">The cofactor of \(a_{23}\) is: </span>
+<span class="multilang" lang="no">Kofaktoren til \(a_{23}\) er: [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]</span></li>
+</ol>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><span class="multilang" lang="en">We are given the matrix \(A = {@matrixa@}.\)</span>
+    <span class="multilang" lang="no">Vi får matrisen \ (a = {@matrixa@}. \) </span>
+</p>
+<ol class="HELM_parts">
+    <li><span class="multilang" lang="en">The minor of \(a_{22}\) is the \(2\times2\) determinant \(\begin{vmatrix}a_{11} &amp; a_{13} \\ a_{31} &amp; a_{33}\end{vmatrix}=a_{11}a_{33}-a_{31}a_{13}\). In this case, the minor is: \[\begin{vmatrix}{@AA[1,1]@} &amp; {@AA[1,3]@} \\ {@AA[3,1]@}
+            &amp; {@AA[3,3]@}\end{vmatrix} = {@minorA22@} = {@ta1@}\]
+            <p><span class="multilang" lang="en"></span>
+                <span class="multilang" lang="no"></span>
+            </p>
+            <p><span class="multilang" lang="en">The sign in the position of \(a_{22}\) in the array of signs is \(+\), the cofactor of \(a_{22}\) is \(A_{22}=+{@ta1@}\).</span>
+                <span class="multilang" lang="no">Legnet i posisjonen til \(a_ {22} \) i rekke skilter er \(+\), kofaktoren til \(a_ {22} \) er \(a_ {22} =+{@ta1@} \). </span>
+            </p>
+        </span>
+        <span class="multilang" lang="no">Den mindreårige av \(A_ {22} \) er \(2 \times2 \) determinant \(\begin{vmatrix} a_{11} &amp; a_{13} \\ a_{31} &amp; a_{33} \end{vmatrix} = a_{11} a_{33} - a_{31} a_{13} \).I dette tilfellet er den minor: \[\begin{vmatrix}{@aa [1,1]@} &amp; {@aa [1,3]@} \\ {@aa [3,1]@}
+            &amp; {@Aa [3,3]@} \end{vmatrix} = {@minora22@} = {@ta1@}\] <p> <span class="multilang" lang="en"> </span>
+                <span class="multilang" lang="no"> </span>
+            </p>
+            <p> <span class="multilang" lang="en"> skiltet i posisjonen til \(a_{22} \) i utvalget av skilt er \(+\), kofaktoren til \(a_{22} \) er \(a_{22} =+{@ta1@} \). </span>
+                <span class="multilang" lang="no"> legnet i posisJonen til \(a_{22} \) i rekke Skilter er \(+\), Kofaktoren til \(a_{22} \) er \(a_{22} =+{@ta1@} \).</span>
+            </p>
+        </span>
+    </li>
+    <li><span class="multilang" lang="en">The minor of \(a_{22}\) is the \(2\times2\) determinant \(\begin{vmatrix}a_{11} &amp; a_{12} \\ a_{31} &amp; a_{32}\end{vmatrix}=a_{11}a_{32}-a_{31}a_{12}\). In this case, the minor is: \[\begin{vmatrix}{@AA[1,1]@} &amp; {@AA[1,2]@} \\ {@AA[3,1]@}
+            &amp; {@AA[3,2]@}\end{vmatrix} = {@minorA23@} = {@minorA23s@}\]
+            <p><span class="multilang" lang="en"></span>
+                <span class="multilang" lang="no"></span>
+            </p>
+            <p><span class="multilang" lang="en">
+                    The sign in the position of \(a_{23}\) in the array of signs is \(-\), so the cofactor of \(a_{23}\) is \(A_{23}={@cofA23@}\).
+                </span>
+                <span class="multilang" lang="no">Legnet i plasseringen av \(a_{23} \) i rekke skilter er \(-\), så kofaktoren til \(a_{23} \) er \(a_ {23} = {@cofa23@} \). </span>
+            </p>
+        </span>
+        <span class="multilang" lang="no">Den mindreårige av \(a_{22} \) er \(2 \times2 \) determinant \(\begin{VMatrix} a_{11} &amp; a_{12} \\ a_{31} &amp; a_{32} \end{vmatrix} = a_{11} a_{32} -a_{31} a_{12} \).I dette tilfellet er den mindreårige: \[\begin{vmatrix}{@aa [1,1]@} &amp; {@aa [1,2]@} \\ {@aa [3,1]@}
+            &amp; {@Aa [3,2]@} \end{vmatrix} = {@minora23@} = {@minora23s@} \] <p> <span class="multilang" lang="en"> </span>
+                <span class="multilang" lang="no"> </span>
+            </p>
+            <p> <span class="multilang" lang="en">
+                    Legnet i plasseringen av \(a_{23}\) i rekke skilter er \(-\), så kofaktoren til \(a_{23} \) er \(a_{23} = {@cofa23@} \).
+                </span>
+                <span class="multilang" lang="no"> legnet i plasseringen av \(a_{23} \) i rekke Skilter er \(-\), sjofaktoren til \(a_{23} \) er \(a_{23} = {@cofa23@} \).</span>
+            </p>
+        </span>
+    </li>
+</ol>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text>matrixa: matrix([rand_with_step(-5,5,1),rand_with_step(-5,5,1),rand_with_step(-5,5,1)],[rand_with_step(-5,5,1),rand_with_step(-5,5,1),rand_with_step(-5,5,1)],[rand_with_step(-5,5,1),rand_with_step(-5,5,1),rand_with_step(-5,5,1)]);
+matrixa: ev(matrixa,simp);
+AA: matrixa;
+ta1: ev(AA[1,1]*AA[3,3]-AA[1,3]*AA[3,1],simp);
+minorA22: unary_minus_sort(AA[1,1]*AA[3,3]-AA[1,3]*AA[3,1]);
+minorA23s: ev(AA[1,1]*AA[3,2]-AA[1,2]*AA[3,1],simp);
+minorA23: unary_minus_sort(AA[1,1]*AA[3,2]-AA[1,2]*AA[3,1]);
+cofA23 : ev(-minorA23s,simp);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\(A = {@matrixa@},\quad A_{22} ={@ta1@}, \quad A_{23}= {@cofA23@}\)</text>
+    </questionnote>
+    <questionsimplify>0</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed>MinorAndCofactor</variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant, minor</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>cofA23</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>cofA23</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>2047965195</deployedseed>
+    <deployedseed>2131635051</deployedseed>
+    <deployedseed>1274060207</deployedseed>
+    <deployedseed>2067862505</deployedseed>
+    <deployedseed>1072463999</deployedseed>
+    <deployedseed>470144349</deployedseed>
+    <deployedseed>1889680758</deployedseed>
+    <deployedseed>2043294690</deployedseed>
+    <deployedseed>2081408866</deployedseed>
+    <deployedseed>1561557479</deployedseed>
+    <deployedseed>1983783838</deployedseed>
+    <deployedseed>977011922</deployedseed>
+    <deployedseed>860642649</deployedseed>
+    <deployedseed>2108460331</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>cofA23</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>-ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>minorA23s</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-1-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-1-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9095  -->
+  <question type="stack">
+    <name>
+      <text>7.3.2.6 Compute a 3x3 determinant</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise</span>
+<span class="multilang" lang="no">Trening </span></p>
+<p><span class="multilang" lang="en">By expanding along the first row, compute the determinant of the matrix \(A = {@matrixa@}\).</span>
+<span class="multilang" lang="no">Ved å utvide langs den første raden, beregne determinanten for matrisen \(a = {@matrixa@} \). </span></p>
+<p><span class="multilang" lang="en">The determinant \(\Delta\) is: </span>
+<span class="multilang" lang="no">Determinanten \(\Delta\) er: </span></p>[[input:ans1]][[validation:ans1]][[feedback:prt1]]]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<span class="multilang" lang="en">
+<p>For \(A={@matrixa@}\), we have: \begin{align*} a_{11} &amp; = {@matrixa[1,1]@}, &amp; a_{12} &amp; = {@matrixa[1,2]@}, &amp; a_{13} &amp; = {@matrixa[1,3]@}, \\ A_{11} &amp; = \det{{@AA11@}} = {@determinant(AA11)@}, &amp; A_{12} &amp; = \det{{@AA12@}} = {@determinant(AA12)@}, &amp; A_{13} &amp; = \det{{@AA13@}} = {@determinant(AA13)@}. \end{align*}</p>
+  <p>Therefore \[\Delta = a_{11}A_{11}+a_{12}A_{12}+a_{13}A_{13} = {@ta1@}.\]</p></span>
+<span class="multilang" lang="no">
+<p>For \(A={@matrixa@}\), vi har: \begin{align*} a_{11} &amp; = {@matrixa[1,1]@}, &amp; a_{12} &amp; = {@matrixa[1,2]@}, &amp; a_{13} &amp; = {@matrixa[1,3]@}, \\ A_{11} &amp; = \det{{@AA11@}} = {@determinant(AA11)@}, &amp; A_{12} &amp; = \det{{@AA12@}} = {@determinant(AA12)@}, &amp; A_{13} &amp; = \det{{@AA13@}} = {@determinant(AA13)@}. \end{align*}</p>
+  <p>Derfor \[\Delta = a_{11}A_{11}+a_{12}A_{12}+a_{13}A_{13} = {@ta1@}.\]</p></span>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text>matrixa: matrix([rand_with_step(-5,5,1),rand_with_step(-5,5,1),rand_with_step(-5,5,1)],[rand_with_step(-5,5,1),rand_with_step(-5,5,1),rand_with_step(-5,5,1)],[rand_with_step(-5,5,1),rand_with_step(-5,5,1),rand_with_step(-5,5,1)]);
+matrixa: ev(matrixa,simp);
+
+AA11: matrix([matrixa[2,2],matrixa[2,3]],[matrixa[3,2],matrixa[3,3]]);
+AA11: ev(AA11,simp);
+AA12: matrix([matrixa[2,1],matrixa[2,3]],[matrixa[3,1],matrixa[3,3]]);
+AA12: ev(AA12,simp);
+AA13: matrix([matrixa[2,1],matrixa[2,2]],[matrixa[3,1],matrixa[3,2]]);
+AA13: ev(AA13,simp);
+
+ta1: ev(determinant(matrixa),simp);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\(A = {@matrixa@}, D = {@ta1@}\)</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed>MinorAndCofactor</variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant, minor</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>401428587</deployedseed>
+    <deployedseed>256470495</deployedseed>
+    <deployedseed>1580423024</deployedseed>
+    <deployedseed>311223496</deployedseed>
+    <deployedseed>717670310</deployedseed>
+    <deployedseed>478689502</deployedseed>
+    <deployedseed>1948238459</deployedseed>
+    <deployedseed>975517033</deployedseed>
+    <deployedseed>491816791</deployedseed>
+    <deployedseed>67200360</deployedseed>
+    <deployedseed>1294055332</deployedseed>
+    <deployedseed>1284459475</deployedseed>
+    <deployedseed>1969144389</deployedseed>
+    <deployedseed>2131917626</deployedseed>
+    <deployedseed>691664144</deployedseed>
+    <deployedseed>138140317</deployedseed>
+    <deployedseed>1729697927</deployedseed>
+    <deployedseed>1066017578</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>-ta1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-1-F</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>matrixa[1,1]*determinant(AA11)+matrixa[1,2]*determinant(AA12)+matrixa[1,3]*determinant(AA13)</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-1-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9097  -->
+  <question type="stack">
+    <name>
+      <text>7.3.3.2 Evaluate a 4x4 determinant</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<span class="multilang" lang="en"><h4 class="HELM_example">Example</h4>
+<p>This exercise is in five parts. Consider the determinant \[\Delta = \det{@matrixa@}\]</p>
+
+<ol class="HELM_parts">
+
+    <li>
+        <p>Use property 2 to find another matrix whose determinant is equal to \(\Delta\):</p>
+        <div>[[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</div>
+        <div><br></div>
+    </li>
+
+    <li>
+        <p>Now expand along the top row to express \(\Delta\) as the difference of two products, each of a number and a \(3\times 3\) determinant:
+        </p>
+        <div>\(\Delta=\) [[input:ans21]] [[validation:ans21]]\(\times\det\)[[input:ans22]] [[validation:ans22]] \(-\) [[input:ans23]] [[validation:ans23]] \(\times\det\) [[input:ans24]] [[validation:ans24]] [[feedback:prt2]]<p></p>
+        </div>
+    </li>
+
+    <li>
+        <p>Use property 4 to evaluate the first \(3\times3\) determinant: [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]
+        </p>
+    </li>
+
+    <li>
+        <p>Use property 4 to evaluate the second \(3\times3\) determinant: [[input:ans4]] [[validation:ans4]] [[feedback:prt4]]
+        </p>
+    </li>
+
+    <li>
+        <p>Deduce the value of \(\Delta\): [[input:ans5]] [[validation:ans5]] [[feedback:prt5]]
+        </p>
+    </li>
+
+</ol>
+  </span>
+
+<span class="multilang" lang="no"><h4 class="HELM_example">Eksempel</h4>
+<p>Denne øvelsen er i fem deler. Tenk på determinanten \[\Delta = \det{@matrixa@}\]</p>
+
+<ol class="HELM_parts">
+
+     <li>
+         <p>Bruk egenskap 2 for å finne en annen matrise hvis determinant er lik \(\Delta\):</p>
+         <div><br></div>
+     </li>
+
+     <li>
+         <p>Utvid nå langs den øverste raden for å uttrykke \(\Delta\) som forskjellen mellom to produkter, hver av et tall og en \(3\times 3\) determinant:
+         </p>
+         <div>\(\Delta=\) <p></p>
+         </div>
+     </li>
+
+     <li>
+         <p>Bruk egenskap 4 til å evaluere den første \(3\times 3\) determinanten:
+         </p>
+     </li>
+
+     <li>
+         <p>Bruk egenskap 4 til å evaluere den andre \(3\times 3\) determinanten:
+         </p>
+     </li>
+
+     <li>
+         <p>Deduser verdien av \(\Delta\):
+         </p>
+     </li>
+
+</ol>
+   </span>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<span class="multilang" lang="en"> Property 2 states that the determinant of a matrix is equal to the determinant of its transpose. So the other matrix is just the transpose of the matrix in the question:
+\[{@AA@}^{T} = {@AAT@}\]
+
+Expanding along the top row is easiest, because of the two zeros in the row. The formula for the determinant in terms of cofactors tells us:
+\[\det{@AA@} = ({@ta21@}){@ta22@}-({@ta23@}){@ta24@}\]
+Note the minus sign, which comes from the \(4\times4\) pattern of signs.
+
+In the second of the two \(3\times3\) determinants, the second row is double the first row. Hence the determinant is zero, by Property 4.
+
+In the first of the two \(3\times3\) determinants, the third column is \({@cc/bb@}\) times the second column. Hence this determinant is also zero.
+
+Therefore \(\Delta=0\). &lt;\span&gt;
+ 
+<span class="multilang" lang="no"> Egenskap 2 sier at determinanten til en matrise er lik determinanten for dens transponering. Så den andre matrisen er bare transponeringen av matrisen i spørsmålet:
+\[{@AA@}^{T} = {@AAT@}\]
+
+Det er lettest å utvide langs den øverste raden på grunn av de to nullene i raden. Formelen for determinanten i form av kofaktorer forteller oss:
+\[\det{@AA@} = ({@ta21@}){@ta22@}-({@ta23@}){@ta24@}\]
+Legg merke til minustegnet, som kommer fra \(4\times 4\) mønsteret av tegn.
+
+I den andre av de to \(3\times 3\) determinantene, er den andre raden dobbel av den første raden. Derfor er determinanten null, ved egenskap 4.
+
+I den første av de to \(3\times3\) determinantene, er den tredje kolonnen \({@cc/bb@}\) ganger den andre kolonnen. Derfor er denne determinanten også null.
+
+Derfor \(\Delta=0\). &lt;\span&gt;</span></span>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text>aa: rand([-5,-4,-3,-2,2,3,4,5]);
+bb: rand([-5,-4,-3,-2,2,3,4,5]);
+cc: rand([-5,-4,-3,-2,2,3,4,5]);
+dd: rand([-5,-4,-3,-2,2,3,4,5]);
+
+matrixa: matrix([rand([-5,-4,-3,-2,2,3,4,5]), aa, 2*aa, rand_with_step(-5,5,1)], [rand([-5,-4,-3,-2,2,3,4,5]), rand_with_step(-5,5,1), rand_with_step(-5,5,1), rand_with_step(-5,5,1)], [0, bb, 2*bb, bb*dd], [0, cc, 2*cc, cc*dd]);
+matrixa: ev(matrixa,simp);
+matrixat: ev(transpose(matrixa),simp);
+
+AA: matrixa;
+AAT: matrixat;
+
+ta: ev(determinant(matrixa),simp);
+ta1: AAT;
+ta21: AAT[1,1];
+ta22: ev(matrix([AAT[2,2], AAT[2,3], AAT[2,4]], [AAT[3,2], AAT[3,3], AAT[3,4]], [AAT[4,2], AAT[4,3], AAT[4,4]]),simp)
+ta23: AAT[1,2];
+ta24: ev(matrix([AAT[2,1], AAT[2,3], AAT[2,4]], [AAT[3,1], AAT[3,3], AAT[3,4]], [AAT[4,1], AAT[4,3], AAT[4,4]]),simp)
+ta3: ev(determinant(ta22),simp);
+ta4: ev(determinant(ta24),simp);
+ta5: ta;</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\({@AA@}\)</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>AAT</tans>
+      <boxsize>2</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans21</name>
+      <type>algebraic</type>
+      <tans>ta21</tans>
+      <boxsize>2</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans22</name>
+      <type>matrix</type>
+      <tans>ta22</tans>
+      <boxsize>2</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>minor</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans23</name>
+      <type>algebraic</type>
+      <tans>ta23</tans>
+      <boxsize>2</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans24</name>
+      <type>matrix</type>
+      <tans>ta24</tans>
+      <boxsize>2</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>minor</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta3</tans>
+      <boxsize>2</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>algebraic</type>
+      <tans>ta4</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans5</name>
+      <type>algebraic</type>
+      <tans>ta5</tans>
+      <boxsize>2</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>[ans21,ans22,ans23,ans24]</sans>
+        <tans>[ta21,ta22,ta23,ta24]</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>ta3</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>ta4</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt5</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans5</sans>
+        <tans>ta5</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt5-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt5-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1739000014</deployedseed>
+    <deployedseed>1040523509</deployedseed>
+    <deployedseed>383214816</deployedseed>
+    <deployedseed>788263319</deployedseed>
+    <deployedseed>1251177985</deployedseed>
+    <deployedseed>30243275</deployedseed>
+    <deployedseed>336164335</deployedseed>
+    <deployedseed>648338251</deployedseed>
+    <deployedseed>2094046336</deployedseed>
+    <deployedseed>2014318189</deployedseed>
+    <deployedseed>417148975</deployedseed>
+    <deployedseed>589195366</deployedseed>
+    <deployedseed>671498101</deployedseed>
+    <deployedseed>1168318196</deployedseed>
+    <deployedseed>352546611</deployedseed>
+    <deployedseed>504212919</deployedseed>
+    <deployedseed>732851237</deployedseed>
+    <deployedseed>1453878120</deployedseed>
+    <deployedseed>1613831681</deployedseed>
+    <deployedseed>108312719</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans21</name>
+        <value>ta21</value>
+      </testinput>
+      <testinput>
+        <name>ans22</name>
+        <value>ta22</value>
+      </testinput>
+      <testinput>
+        <name>ans23</name>
+        <value>ta23</value>
+      </testinput>
+      <testinput>
+        <name>ans24</name>
+        <value>ta24</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>ta5</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt5</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt5-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans21</name>
+        <value>ta21</value>
+      </testinput>
+      <testinput>
+        <name>ans22</name>
+        <value>ta22</value>
+      </testinput>
+      <testinput>
+        <name>ans23</name>
+        <value>-ta23</value>
+      </testinput>
+      <testinput>
+        <name>ans24</name>
+        <value>ta24</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>ta5</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-1-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt5</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt5-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9098  -->
+  <question type="stack">
+    <name>
+      <text>7.3.4.1 Exercise 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise</span>
+    <span class="multilang" lang="no">Øvelse</span>
+</p>
+
+<p><span class="multilang" lang="en">In this exercise you will use Laplace expansion along the 1st row to determine the determinant of the following matrix:</span><span class="multilang" lang="no"> I denne øvelsen skal du bruke Laplace utvidelsen langs 1st råden til å bestemme determinanten av den følgende matrise</span></p>
+<div>\(A={@matrixa@}\)</div>
+
+<p><span class="multilang" lang="en"> Let the entries in the first row be denoted \(a_{1,1}\), \(a_{1,2}\) and \(a_{1,3}\) in the usual way. First list the cofactors \(A_{i,j}\) of these entries:</span>
+    <span class="multilang" lang="no"> La elementene i den første råden bli \(a_{1,1}\), \(a_{1,2}\) og \(a_{1,3}\) i den vanlige måten. Liste de kofaktorene\(A_{i,j}\) av disse elementene:</span>
+</p>
+
+
+<p>\(A_{1,1}=\)[[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</p>
+<p>\(A_{1,2}=\)[[input:ans2]] [[validation:ans2]] [[feedback:prt2]]</p>
+<p>\(A_{1,3}=\)[[input:ans3]] [[validation:ans3]] [[feedback:prt3]]</p>
+
+<p><span class="multilang" lang="en"> Use these values to evaluate the determinant of \(A\): </span>
+<span class="multilang" lang="no"> Bruk de verdiene til å evaluere determinanten til \(A\): </span></p>
+[[input:ans4]] [[validation:ans4]] [[feedback:prt4]]]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><span class="multilang" lang="en">To obtain the cofactor of an element of a \(3 \times 3\) matrix we multiply the minor of that element by the corresponding sign from the \(3 \times 3\) array of signs.</span>
+  <span class="multilang" lang="no">For å få kofaktoren av en element til en \(3 \times 3\) matrise vi multipliserer den 'minor'-en av elementen ved den korresponderende tegn fra den \(3 \times 3\) array av tegnene.</span>
+</p> 
+
+<p><span class="multilang" lang="en">For \(a_{1,1}\), the sign is \(+\), and the minor is \(\det{@matrix([AA[2,2], AA[2,3]], [AA[3,2], AA[3,3]])@}\). Hence the cofactor is \({@ta1@}.\)
+  </span>
+  <span class="multilang" lang="no">For \(a_{1,1}\), tegnet er \(+\), og 'minor'-en til dette er \(\det{@matrix([AA[2,2], AA[2,3]], [AA[3,2], AA[3,3]])@}\). Herved er kofaktoren: \({@ta1@}.\)
+  </span>
+ </p>
+
+<p><span class="multilang" lang="en"> For \(a_{1,2}\), the sign is \(-\), and the minor is \(\det{@matrix([AA[2,1], AA[2,3]], [AA[3,1], AA[3,3]])@}\). Hence the cofactor is \({@ta2@}.\)</span>
+  <span class="multilang" lang="no"> For \(a_{1,2}\), tegnet er \(-\), og 'minor'-en til dette er \(\det{@matrix([AA[2,1], AA[2,3]], [AA[3,1], AA[3,3]])@}\). Da er kofaktoren: \({@ta2@}.\)</span>
+  </p>
+
+
+
+<p><span class="multilang" lang="en">
+  For \(a_{1,3}\), the sign is \(+\) again, and the minor is \(\det{@matrix([AA[2,1], AA[2,2]], [AA[3,1], AA[3,2]])@}\). Hence the cofactor is \({@ta3@}.\)
+  </span>
+  <span class="multilang" lang="no">
+  For \(a_{1,3}\), tegnet er \(+\), og 'minor'-en til dette er \(\det{@matrix([AA[2,1], AA[2,2]], [AA[3,1], AA[3,2]])@}\). Da er kofaktoren: \({@ta3@}.\)
+  </span>
+  </p>
+
+<p><span class="multilang" lang="en">The determinant of \(A\) is now given by the formula:
+\[\det(A) = {@CC@} = {@DD@}\]
+  </span>
+  <span class="multilang" lang="no">Determinanten \(A\) kan beregnes da ved bruk av formelen:
+\[\det(A) = {@CC@} = {@DD@}\]
+  </span>
+  </p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[matrixa: matrix([rand([-5,-4,-3,-2,-1,1,2,3,4,5]), rand([-5,-4,-3,-2,-1,1,2,3,4,5]), rand([-5,-4,-3,-2,-1,1,2,3,4,5])], [rand([-5,-4,-3,-2,-1,1,2,3,4,5]), rand([-5,-4,-3,-2,-1,1,2,3,4,5]), rand([-5,-4,-3,-2,-1,1,2,3,4,5])], [rand([-5,-4,-3,-2,-1,1,2,3,4,5]), rand([-5,-4,-3,-2,-1,1,2,3,4,5]), rand([-5,-4,-3,-2,-1,1,2,3,4,5])]);
+matrixa: ev(matrixa,simp);
+
+AA: matrixa;
+MM11: matrix([AA[2,2], AA[2,3]], [AA[3,2], AA[3,3]]);
+MM12: matrix([AA[2,1], AA[2,3]], [AA[3,1], AA[3,3]]);
+MM13: matrix([AA[2,1], AA[2,2]], [AA[3,1], AA[3,2]]);
+
+ta1: ev(determinant(MM11),simp)
+ta2: ev(-determinant(MM12),simp)
+ta3: ev(determinant(MM13),simp)
+ta4: ev(determinant(matrixa),simp);
+
+minorlist: [determinant(MM11),-determinant(MM12),determinant(MM13)];
+simp: false;
+CC: apply("+",zip_with("*",AA[1],minorlist));
+DD: ev(CC,simp);]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\( A = {@AA@}, \, A_{1,1} ={@ta1@}, \, A_{1,2} = {@ta2@}, \, A_{1,3}={@ta3@}, \, detA=  {@ta4@} \)</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta3</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>algebraic</type>
+      <tans>ta4</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>ans3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans></sans>
+        <tans></tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>ans3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>ans3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans3</sans>
+        <tans>ta3</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans4</sans>
+        <tans>ta4</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>815348399</deployedseed>
+    <deployedseed>807206414</deployedseed>
+    <deployedseed>1359982381</deployedseed>
+    <deployedseed>415533922</deployedseed>
+    <deployedseed>1666427994</deployedseed>
+    <deployedseed>1519906486</deployedseed>
+    <deployedseed>1881655594</deployedseed>
+    <deployedseed>1203042910</deployedseed>
+    <deployedseed>240042115</deployedseed>
+    <deployedseed>770303117</deployedseed>
+    <deployedseed>736720263</deployedseed>
+    <deployedseed>101230784</deployedseed>
+    <deployedseed>1543056679</deployedseed>
+    <deployedseed>53117613</deployedseed>
+    <deployedseed>938344926</deployedseed>
+    <deployedseed>1208117384</deployedseed>
+    <deployedseed>283144539</deployedseed>
+    <deployedseed>392739448</deployedseed>
+    <deployedseed>1733957553</deployedseed>
+    <deployedseed>250556807</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>-ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-1-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9099  -->
+  <question type="stack">
+    <name>
+      <text>7.3.4.2 Exercise 2 (NOT IN QUIZ)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise">Exercise</p>
+
+<p>Using any of the properties of determinants to minimise the arithmetic, evaluate the determinants of the following matrices:
+\[A = {@matrixa@}, \qquad B={@matrixb@}\]
+</p><ol class="HELM_parts">
+
+<li>
+<div>\(\det(A)=\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</div>
+</li>
+<li>
+<div>\(\det(B)=\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]</div>
+</li>
+</ol>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<ol class="HELM_parts">
+<li>Use Property 4 to take out common factors in the rows and the columns of \(A\):
+\[\det(A)=720\det{@reducedAA@}\]
+Note that the first entry in column 3 is a \(1\). This is very useful: use Property 5 to simplify the matrix by adding/subtracting an appropriate multiple of column 3 from columns 1 and 2:
+\[\det(A)=720\det{@veryreducedAA@}\]
+The value of this determinant is most easily found by expanding along the top row. Since two of the entries are \(0\) and the third is \(1\), and the sign associated to the \(1\) is \(+\), the value is just the determinant of \({@relevantminor@}\), which is {@DD@}.<p>Therefore the determinant of \(A\) is \({@DD@}\cdot720={@ta1@}.\)
+</p></li><li>The determinant of \(B\) is \(0\) because row 4 is \(2\) times row 1.<p></p></li></ol>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2021072200</text>
+    </stackversion>
+    <questionvariables>
+      <text>aa: rand([-5, -4, -3, -2, 2, 3, 4, 5]);
+bb: rand([-5, -4, -3, -2, 2, 3, 4, 5]);
+cc: rand([-3, -2, 2, 3]);
+dd: rand([-5, -4, -3, -2, 2, 3, 4, 5]);
+ee: rand([-5, -4, -3, -2, 2, 3, 4, 5]);
+ff: rand([-3, -2, 2, 3]);
+gg: rand([-3, -2, 2, 3]);
+hh: rand([-3, -2, 2, 3]);
+
+matrixa: matrix([6*gg, 9*hh, 12], [4*(aa+gg*cc), 6*(bb+hh*cc), 8*cc], [10*(dd+gg*ff), 15*(ee+hh*ff), 20*ff]);
+matrixa: ev(matrixa,simp);
+
+BBent11: ev(rand_with_step(-5,5,1),simp);
+BBent12: ev(rand_with_step(-5,5,1),simp);
+BBent13: ev(rand_with_step(-5,5,1),simp);
+BBent14: ev(rand_with_step(-5,5,1),simp);
+matrixb: matrix([BBent11, BBent12, BBent13, BBent14], [rand_with_step(-5,5,1), rand_with_step(-5,5,1), rand_with_step(-5,5,1), rand_with_step(-5,5,1)], [rand_with_step(-5,5,1), rand_with_step(-5,5,1), rand_with_step(-5,5,1), rand_with_step(-5,5,1)], [2*BBent11, 2*BBent12, 2*BBent13, 2*BBent14])
+
+AA: matrixa;
+reducedAA: matrix([gg, hh, 1], [aa+gg*cc, bb+hh*cc, cc], [dd+gg*ff, ee+hh*ff, ff]);
+veryreducedAA: matrix([0,0,1],[aa,bb,cc],[dd,ee,ff]);
+relevantminor: matrix([aa,bb],[dd,ee]);
+
+ta1: ev(determinant(matrixa),simp);
+ta2: ev(determinant(matrixb),simp);
+
+simp: false;
+CC: determinant(relevantminor);
+DD: ev(CC,simp);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\( A = {@AA@}, detA= {@ta1@}, \, B={@matrixb@}, detB={@ta2@}\)</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>815348399</deployedseed>
+    <deployedseed>807206414</deployedseed>
+    <deployedseed>1359982381</deployedseed>
+    <deployedseed>415533922</deployedseed>
+    <deployedseed>1666427994</deployedseed>
+    <deployedseed>1519906486</deployedseed>
+    <deployedseed>1881655594</deployedseed>
+    <deployedseed>1203042910</deployedseed>
+    <deployedseed>240042115</deployedseed>
+    <deployedseed>770303117</deployedseed>
+    <deployedseed>736720263</deployedseed>
+    <deployedseed>101230784</deployedseed>
+    <deployedseed>1543056679</deployedseed>
+    <deployedseed>53117613</deployedseed>
+    <deployedseed>938344926</deployedseed>
+    <deployedseed>1208117384</deployedseed>
+    <deployedseed>283144539</deployedseed>
+    <deployedseed>392739448</deployedseed>
+    <deployedseed>1733957553</deployedseed>
+    <deployedseed>250556807</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1+1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2+1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-1-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-1-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9100  -->
+  <question type="stack">
+    <name>
+      <text>7.3.4.3 Exercise 3</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise</span>
+    <span class="multilang" lang="no">Øvelse</span>
+</p>
+<p><span class="multilang" lang="en">Find the cofactors of \(x,y,z\) in the following determinant:</span>
+    <span class="multilang" lang="no">Finn kofaktorene til \(x,y,z\) i følgende determinanten:</span>
+</p>
+\[\begin{vmatrix} {@AA[1,1]@} &amp; {@AA[1,2]@} &amp; {@AA[1,3]@} \\ {@AA[2,1]@} &amp; {@AA[2,2]@} &amp; {@AA[2,3]@} \\ x &amp; y &amp; z \end{vmatrix}\]
+
+<p><span class="multilang" lang="en">Cofactor of \(x\):</span>
+    <span class="multilang" lang="no">Kofaktor av \(x\):</span>
+</p>
+[[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+<p><span class="multilang" lang="en">Cofactor of \(y\):</span>
+    <span class="multilang" lang="no">Kofaktor av \(y\):</span>
+</p>
+[[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
+<p><span class="multilang" lang="en">Cofactor of \(z\):</span>
+    <span class="multilang" lang="no">Kofaktor av \(z\):</span>
+</p>
+[[input:ans3]] [[validation:ans3]] [[feedback:prt3]]]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><span class="multilang" lang="en">To obtain the cofactor of an element of a \(3 \times 3\) matrix we multiply the minor of that element by the corresponding sign from the \(3 \times 3\) array of signs.
+</span>
+
+<span class="multilang" lang="no">For å finne kofaktoren til et element i en \(3 \times 3\) matrise, multipliserer vi minoren til dette elementet med det tilsvarende fortegnet fra matrisen med fortegn på \(3 \times 3\).</span></p>
+
+<br><p><span class="multilang" lang="en">We are given the determinant: \(\begin{vmatrix} {@AA[1,1]@} &amp; {@AA[1,2]@} &amp; {@AA[1,3]@} \\ {@AA[2,1]@} &amp; {@AA[2,2]@} &amp; {@AA[2,3]@} \\ x &amp; y &amp; z \end{vmatrix}.\)</span>
+<span class="multilang" lang="no">Vi har gitt determinanten: \(\begin{vmatrix} {@AA[1,1]@} &amp; {@AA[1,2]@} &amp; {@AA[1,3]@} \\ {@AA[2,1]@} &amp; {@AA[2,2]@} &amp; {@AA[2,3]@} \\ x &amp; y &amp; z \end{vmatrix}.\)</span></p><br>
+
+<p><span class="multilang" lang="en">For \(x\), the sign is \(+\), and the minor is \(\det {@MMx@}\). Hence the cofactor is \({@ta1@}.\)</span>
+<span class="multilang" lang="no">For \(x\), tegnet er \(+\), og minoren er \(\det{@MMx@}\). Derfor er cofaktoren \({@ta1@}.\)</span></p>
+<p><span class="multilang" lang="en">For \(y\), the sign is \(-\), and the minor is \(\det {@MMy@}\). Hence the cofactor is \({@ta2@}.\)</span>
+<span class="multilang" lang="no">For \(y\), the sign is \(-\), and the minor is \(\det {@MMy@}\). Hence the cofactor is \({@ta2@}.\)</span></p>
+<p><span class="multilang" lang="en">For \(z\), the sign is \(+\) again, and the minor is \(\det {@MMz@}\). Hence the cofactor is \({@ta3@}.\)</span>
+<span class="multilang" lang="no">For \(z\), tegnet er igjen \(+\), og den mindre verdien er \(\det {@MMz@}\). Dermed er cofaktoren \({@ta3@}.\)</span></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text>matrixa: matrix([rand_with_step(-5,5,1), rand_with_step(-5,5,1), rand_with_step(-5,5,1)],[rand_with_step(-5,5,1), rand_with_step(-5,5,1), rand_with_step(-5,5,1)])
+matrixa: ev(matrixa,simp);
+
+AA: matrixa;
+MMx: matrix([AA[1,2], AA[1,3]], [AA[2,2], AA[2,3]]);
+MMy: matrix([AA[1,1], AA[1,3]], [AA[2,1], AA[2,3]]);
+MMz: matrix([AA[1,1], AA[1,2]], [AA[2,1], AA[2,2]]);
+
+ta1: ev(determinant(MMx),simp)
+ta2: ev(-determinant(MMy),simp)
+ta3: ev(determinant(MMz),simp)</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\({@AA@}, \, x:{@ta1@}, \, y:{@ta2@}, \, z:{@ta3@}\)</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>ta1</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>ta2</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>ta3</tans>
+      <boxsize>4</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans3</sans>
+        <tans>ta3</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>815348399</deployedseed>
+    <deployedseed>807206414</deployedseed>
+    <deployedseed>1359982381</deployedseed>
+    <deployedseed>415533922</deployedseed>
+    <deployedseed>1666427994</deployedseed>
+    <deployedseed>1519906486</deployedseed>
+    <deployedseed>1881655594</deployedseed>
+    <deployedseed>1203042910</deployedseed>
+    <deployedseed>240042115</deployedseed>
+    <deployedseed>770303117</deployedseed>
+    <deployedseed>736720263</deployedseed>
+    <deployedseed>101230784</deployedseed>
+    <deployedseed>1543056679</deployedseed>
+    <deployedseed>53117613</deployedseed>
+    <deployedseed>938344926</deployedseed>
+    <deployedseed>1208117384</deployedseed>
+    <deployedseed>283144539</deployedseed>
+    <deployedseed>392739448</deployedseed>
+    <deployedseed>1733957553</deployedseed>
+    <deployedseed>250556807</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ev(ta1+1,simp)</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ev(ta2+1,simp)</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ev(ta3+1,simp)</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-1-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-1-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt3-1-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9101  -->
+  <question type="stack">
+    <name>
+      <text>7.3.4.4 Exercise 4</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise</span>
+    <span class="multilang" lang="no">Oppgave.</span>
+</p>
+<p><span class="multilang" lang="en">Using any of the properties of determinants to minimise the arithmetic, evaluate the following determinant:</span>
+    <span class="multilang" lang="no">Ved å bruke egenskapene til determinanter for å minimere aritmetikken, evaluer determinanten:</span>
+</p>
+ \[\Delta=\begin{vmatrix} 2 &amp; -3 &amp; 1 \\ 4 &amp; 2 &amp; -1 \\ -2 &amp; 5 &amp; 3 \end{vmatrix}\]
+<p>\(\Delta=\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><span class="multilang" lang="en">We are given the determinant: \(\Delta=\begin{vmatrix} y+z &amp; x+z &amp; x+y \\ x &amp; y &amp; z \\ 1 &amp; 1 &amp; 1 \end{vmatrix}.\)</span>&nbsp;<span class="multilang" lang="no">Vi har determinanten: \[\Delta=\begin{vmatrix} y+z &amp; x+z &amp; x+y \\ x &amp; y &amp; z \\ 1 &amp; 1 &amp; 1 \end{vmatrix}.\]</span></p><br>
+<p><span class="multilang" lang="en">The sum of the first and second rows is the row matrix \(\begin{bmatrix}x+y+z &amp; x+y+z &amp; x+y+z\end{bmatrix}\), which is \(x+y+z\) times the third row. Therefore the determinant is zero, by Properties 4 and 5.</span>
+<span class="multilang" lang="no">Summen av første og andre rad er radmatrisen \(\begin{bmatrix}x+y+z &amp; x+y+z &amp; x+y+z\end{bmatrix}\), som er \(x+y+z\) ganger tredje rad. Derfor blir determinanten null, ved egenskap 4 og 5.</span></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\(0\)</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>0</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans1</sans>
+        <tans>0</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>0</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>2*x^2-2*z^2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-1-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+</quiz>

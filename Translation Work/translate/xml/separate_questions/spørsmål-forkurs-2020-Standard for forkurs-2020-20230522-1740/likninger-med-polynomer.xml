@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>Likninger med polynomer</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    &#197; multiplisere polynomer
+</h3>
+<div class="HELM_keypoint">
+    <h4>
+        Kort fortalt
+    </h4>
+    <p>
+        Et
+        <strong>
+            polynom
+        </strong>
+        er et uttrykk p&#229; formen
+    </p>
+    <p>
+        \[a_nx^n + a_{n-1}x^{n-1} + \ldots +a_2x^2+a_1x+a_0\]
+    </p>
+    <p>
+        der \(a_0\), \(a_1\),\(\ldots\) og \(a_n\) er kjente koeffisienter (tall), \(a_n \ne 0\), og \(x\) er en variabel.
+    </p>
+    <p>
+        \(n\) m&#229; v&#230;re et positivt heltall.
+    </p>
+</div>
+<p>
+    <br/>
+</p>
+<p>
+    For eksempel er \(x^3-17x^2+54x-8\) et polynom med \(x\) som variabel. Variabelen kan ogs&#229; v&#230;re noe annet enn \(x\), s&#229; disse er ogs&#229; polynomer:
+</p>
+<p>
+    \(\qquad t^3-t^2+t-3\qquad z^5-1\qquad w^4+10w^2-12\qquad s+1. \)
+</p>
+<p>
+    I denne delen skal vi faktorisere enkle polynomer og l&#248;se noen polynomlikninger.
+</p>
+<p>
+    <strong>
+        Graden
+    </strong>
+    til et polynom er den h&#248;yeste eksponenten. For eksempel er \(x^3+6x+2\) et polynom av tredje grad, mens \(t^6-6t^4+2t\) har grad \(6\). Uttrykket \(5x+2\), som har grad \(1\), kaller vi ogs&#229; for et
+    <strong>
+        line&#230;rt
+    </strong>
+    polynom.
+</p>
+<p>
+    Vi skal n&#229; se p&#229; hva som skjer n&#229;r to polynomer multipliseres. For eksempel er
+</p>
+<p>
+    \(\qquad (x+1)(3x-2) \)
+</p>
+<p>
+    produktet av to polynomer av f&#248;rste grad. Vi kan multiplisere parentesene og f&#229;r
+</p>
+<p>
+    \(\qquad (x+1)(3x-2)= 3x^2+x-2 \)
+</p>
+<p>
+    som er et polynom av andre grad.
+</p>
+<p>
+    Hvis et andregradspolynom kan faktoriseres, kan det skrives som produktet av to f&#248;rstegradspolynomer. Hva med tredjegradspolynomer?
+</p>
+<p>
+    \(\qquad (x-1)(x^2+3x-7) = x^3+2x^2-10x+7 \)
+</p>
+<p>
+    er et polynom av tredje grad. Vi ser at&#160;dette uttrykket er skrevet som produktet av to polynomer.
+</p>
+<p>
+    Et tredjegradspolynom kan alltid skrives som ett polynom av f&#248;rste og ett av andre grad. Videre, hvis andregradspolynomet kan faktoriseres, f&#229;r vi til sammen tre f&#248;rste grads polynomer. Dette blir viktig &#229; huske p&#229; n&#229;r vi snart
+                skal faktorisere tredjegradspolynomer.
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        Kort fortalt
+    </h4>
+    <p>
+        Et tredjegradspolynom kan alltid skrives som et line&#230;rt polynom ganger et andregradspolynom.
+    </p>
+</div>
+<p>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

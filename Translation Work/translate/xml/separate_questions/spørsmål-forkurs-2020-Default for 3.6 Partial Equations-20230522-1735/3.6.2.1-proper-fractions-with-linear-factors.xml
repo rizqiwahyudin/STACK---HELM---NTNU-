@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>3.6.2.1 Proper Fractions with Linear Factors</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Proper Fractions with Linear Factors
+    </span>
+    <span class="multilang" lang="no">
+        Ekte br&#248;ker med line&#230;re faktorer
+    </span>
+</h4>
+<br/>
+<p>
+    <span class="multilang" lang="en">
+        Firstly we describe how to calculate partial fractions for proper fractions where the denominator may be written as a product of linear factors. The steps are as follows:
+    </span>
+    <span class="multilang" lang="no">
+        F&#248;rst beskriver vi hvordan man beregner delbr&#248;ker for ekte br&#248;ker der nevneren kan skrives som et produkt av line&#230;re faktorer. Trinnene er som f&#248;lger:
+    </span>
+</p>
+<ul>
+    <li>
+        <span class="multilang" lang="en">
+            Factorise the denominator.
+        </span>
+        <span class="multilang" lang="no">
+            Faktoriser nevneren.
+        </span>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            Each factor will produce a partial fraction. A factor such as
+            <span class="math inline">
+                \(3x+2\)
+            </span>
+            will produce a partial fraction of the form
+            <span class="math inline">
+                \(\dfrac{A}{3x+2}\)
+            </span>
+            where
+            <span class="math inline">
+                \(A\)
+            </span>
+            is an unknown constant. In general a linear factor
+            <span class="math inline">
+                \(ax+b\)
+            </span>
+            will produce a partial fraction
+            <span class="math inline">
+                \(\dfrac{A}{ax+b}\)
+            </span>
+            . The unknown constants for
+                                each partial fraction may be different and so we will call them
+            <span class="math inline">
+                \(A\)
+            </span>
+            ,
+            <span class="math inline">
+                \(B\)
+            </span>
+            ,
+            <span class="math inline">
+                \(C\)
+            </span>
+            and so on.
+        </span>
+        <span class="multilang" lang="no">
+            Hver faktor vil produsere en delbr&#248;k. En faktor som
+            <span class="math inline">
+                \(3x+2\)
+            </span>
+            vil produsere en delbr&#248;k p&#229; formen
+            <span class="math inline">
+                \(\dfrac{A}{3x +2}\)
+            </span>
+            der
+            <span class="math inline">
+                \(A\)
+            </span>
+            er en ukjent konstant. Generelt vil en line&#230;r faktor
+            <span class="math inline">
+                \(ax+b\)
+            </span>
+            alts&#229; produsere en delbr&#248;k
+            <span class="math inline">
+                \(\dfrac{A}{ax+b }\)
+            </span>
+            . De ukjente konstantene for hver delbr&#248;k kan v&#230;re forskjellige, og
+                                derfor vil vi kalle dem
+            <span class="math inline">
+                \(A\)
+            </span>
+            ,
+            <span class="math inline">
+                \(B\)
+            </span>
+            ,
+            <span class="math inline">
+                \(C\)
+            </span>
+            og s&#229; videre.
+        </span>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            Evaluate the unknown constants by equating coefficients or using specific values of
+            <span class="math inline">
+                \(x\)
+            </span>
+            .
+        </span>
+        <span class="multilang" lang="no">
+            Finn de ukjente konstantene ved &#229; likestille koeffisienter eller bruke spesifikke verdier av
+            <span class="math inline">
+                \(x\)
+            </span>
+            .
+        </span>
+    </li>
+</ul>
+<p>
+    <span class="multilang" lang="en">
+        The sum of the partial fractions is identical to the original algebraic fraction for all values of
+        <span class="math inline">
+            \(x\)
+        </span>
+        .
+    </span>
+    <span class="multilang" lang="no">
+        Summen av delbr&#248;kene er identisk med den opprinnelige algebraiske br&#248;ken for alle verdier av
+        <span class="math inline">
+            \(x\)
+        </span>
+        .
+    </span>
+</p>
+<br/>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            A linear factor
+            <span class="math inline">
+                \(ax+b\)
+            </span>
+            in the denominator gives rise to a single partial fraction of the form
+            <span class="math inline">
+                \(\dfrac{A}{ax+b}\)
+            </span>
+            .
+        </span>
+        <span class="multilang" lang="no">
+            En line&#230;r faktor
+            <span class="math inline">
+                \(ax+b\)
+            </span>
+            i nevneren gir opphav til en enkel delbr&#248;k p&#229; formen
+            <span class="math inline">
+                \(\dfrac{ A}{ax+b}\)
+            </span>
+            .
+        </span>
+    </p>
+</div>
+<br/>
+<p>
+    <span class="multilang" lang="en">
+        The steps involved in expressing a proper fraction as partial fractions are illustrated in the following Example.
+    </span>
+    <span class="multilang" lang="no">
+        Trinnene involvert i &#229; uttrykke en ekte br&#248;k som en delbr&#248;k er illustrert i f&#248;lgende eksempel.
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Express \(\dfrac{7x+10}{ 2x^2+5x+3}\) in terms of partial fractions.
+    </span>
+    <span class="multilang" lang="no">
+        Uttrykk \(\dfrac{7x+10}{ 2x^2+5x+3}\) i form av delbr&#248;ker.
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Note that this fraction is proper. The denominator is factorised to give
+        <span class="math inline">
+            \((2x+3)(x+1)\)
+        </span>
+        . Each of the linear factors produces a partial fraction. The factor
+        <span class="math inline">
+            \(2x+3\)
+        </span>
+        produces a partial fraction of the form
+        <span class="math inline">
+            \(\dfrac{A}{2x+3}\)
+        </span>
+        and the factor
+        <span class="math inline">
+            \(x+1\)
+        </span>
+        produces a partial fraction
+        <span class="math inline">
+            \(\dfrac{B}{x+1}\)
+        </span>
+        , where
+        <span class="math inline">
+            \(A\)
+        </span>
+        and
+        <span class="math inline">
+            \(B\)
+        </span>
+        are constants which we need to find. We write
+    </span>
+    <span class="multilang" lang="no">
+        Merk at denne br&#248;ken er ekte. Nevneren er faktorisert slik at vi har
+        <span class="math inline">
+            \((2x+3)(x+1)\)
+        </span>
+        . Hver av de line&#230;re faktorene produserer en delbr&#248;k. Faktoren
+        <span class="math inline">
+            \(2x+3\)
+        </span>
+        produserer en delbr&#248;k p&#229; formen
+        <span class="math inline">
+            \(\dfrac{A}{2x+3} \)
+        </span>
+        og faktoren
+        <span class="math inline">
+            \(x+1\)
+        </span>
+        produserer en delbr&#248;k
+        <span class="math inline">
+            \(\dfrac{B}{ x+1}\)
+        </span>
+        , der
+        <span class="math inline">
+            \(A\)
+        </span>
+        og
+        <span class="math inline">
+            \(B\)
+        </span>
+        er konstanter som vi trenger &#229; finne. Vi skriver
+    </span>
+</p>
+<p>
+    \[\dfrac{7x+10}{(2x+3)(x+1)} = \dfrac{A}{2x+3} + \dfrac{B}{x+1}\]
+</p>
+<span class="multilang" lang="en">
+    By multiplying both sides by
+    <span class="math inline">
+        \((2x+3)(x+1)\)
+    </span>
+    we obtain
+</span>
+<span class="multilang" lang="no">
+    Ved &#229; multiplisere begge sider med
+    <span class="math inline">
+        \((2x+3)(x+1)\)
+    </span>
+    f&#229;r vi
+</span>
+<p>
+</p>
+<p>
+    \[7x+10 = A(x+1) + B(2x+3)\qquad(*)\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We may now let
+        <span class="math inline">
+            \(x\)
+        </span>
+        take
+        <b>
+            any value we choose
+        </b>
+        . By an appropriate choice we can simplify the right-hand side. Let
+        <span class="math inline">
+            \(x=-1\)
+        </span>
+        because this choice eliminates
+    </span>
+    <span class="multilang" lang="no">
+        Vi kan n&#229; la
+        <span class="math inline">
+            \(x\)
+        </span>
+        ta
+        <b>
+            en hvilken som helst verdi vi velger
+        </b>
+        . Ved et passende valg kan vi forenkle h&#248;yre side. La
+        <span class="math inline">
+            \(x=-1\)
+        </span>
+        fordi dette valget
+                eliminerer
+    </span>
+    <span class="math inline">
+        \(A\)
+    </span>
+    .
+    <span class="multilang" lang="en">
+        We find
+    </span>
+    <span class="multilang" lang="no">
+        Vi f&#229;r
+    </span>
+    <span class="math display">
+        \[\begin{aligned}
+7(-1) + 10 &amp;= A(0) + B(-2+3)\\
+3&amp;=B
+\end{aligned}\]
+    </span>
+    <span class="multilang" lang="en">
+        so that the constant
+        <span class="math inline">
+            \(B\)
+        </span>
+        must equal 3. The constant
+        <span class="math inline">
+            \(A\)
+        </span>
+        can be found either by substituting some other value for
+        <span class="math inline">
+            \(x\)
+        </span>
+        or alternatively by &#8216;equating coefficients&#8217;. Observe that, by rearranging the right-hand side, Equation
+        <b>
+            (*)
+        </b>
+        can be written as
+    </span>
+    <span class="multilang" lang="no">
+        slik at konstanten
+        <span class="math inline">
+            \(B\)
+        </span>
+        m&#229; v&#230;re lik 3. Konstanten
+        <span class="math inline">
+            \(A\)
+        </span>
+        kan finnes enten ved &#229; erstatte
+        <span class="math inline">
+            \(x\)
+        </span>
+        med en annen verdi
+                eller alternativt ved &#229; &#171;likstille koeffisienter&#187;. Legg merke til at ved &#229; omorganisere h&#248;yre side, kan ligning
+        <b>
+            (*)
+        </b>
+        skrives som
+    </span>
+</p>
+<p>
+    \[7x+10 = (A+2B)x + (A+3B)\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Comparing the coefficients of
+        <span class="math inline">
+            \(x\)
+        </span>
+        on both sides we see that
+        <span class="math inline">
+            \(7=A+2B\)
+        </span>
+        . We already know
+        <span class="math inline">
+            \(B=3\)
+        </span>
+        and so
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; sammenligne koeffisientene til
+        <span class="math inline">
+            \(x\)
+        </span>
+        p&#229; begge sider ser vi at
+        <span class="math inline">
+            \(7=A+2B\)
+        </span>
+        . Vi vet allerede at
+        <span class="math inline">
+            \(B=3\)
+        </span>
+        s&#229;
+    </span>
+    <span class="math display">
+        \[\begin{aligned} 7&amp;=A + 2(3)\\ &amp;= A+ 6\end{aligned}\]
+    </span>
+    <span class="multilang" lang="en">
+        from which
+    </span>
+    <span class="multilang" lang="no">
+        som gir
+    </span>
+    <span class="math inline">
+        \(A=1\)
+    </span>
+    .
+    <span class="multilang" lang="en">
+        We can therefore write
+    </span>
+    <span class="multilang" lang="no">
+        Vi kan dermed skrive
+    </span>
+</p>
+<p>
+    \[\dfrac{7x+10}{2x^2+5x+3} = \dfrac{1}{2x+3} + \dfrac{3}{x+1}\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We have succeeded in expressing the given fraction as the sum of its partial fractions. The result can always be checked by adding the fractions on the right.
+    </span>
+    <span class="multilang" lang="no">
+        Vi har lyktes med &#229; uttrykke den gitte br&#248;ken som summen av dens delbr&#248;ker. Resultatet kan alltid kontrolleres ved &#229; legge sammen br&#248;kene til h&#248;yre.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="multichoice">
+        <name>
+            <text>6.2.3.2 tanh^2</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        &#216;ving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Which of the following identities are correct?
+    </span>
+    <span class="multilang" lang="no">
+        Hvilke av f&#248;lgende identiteter er riktige?
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        Note the following
+    </span>
+    <span class="multilang" lang="no">
+        Merk f&#248;lgende
+    </span>
+</p>
+<p>
+    \( 1 - \tanh^2 x = 1 - \dfrac{\sinh^2 x}{\cosh^2 x} = \dfrac{\cosh^2 x - \sinh^2 x}{\cosh^2 x} = \dfrac{1}{\cosh^2 x} = \) \( \rm{sech}^2 \) \(x\).
+</p>
+<p>
+    <span class="multilang" lang="en">
+        To see that each of the other identities is incorrect, specify a particular value for \(x\) for which the identity is wrong. Also note that they are inconsistent with the above correct identities.
+    </span>
+    <span class="multilang" lang="no">
+        For &#229; se at hver av de andre identitetene er feil, spesifiser en bestemt verdi for \(x \) som gj&#248;r at identiteten er feil. Legg ogs&#229; merke til at de er i strid med de overnevnte riktige identitetene.
+    </span>
+</p>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <single>false</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>abc</answernumbering>
+        <showstandardinstruction>1</showstandardinstruction>
+        <correctfeedback format="html">
+            <text>Your answer is correct.</text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text>Your answer is partially correct.</text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text>Your answer is incorrect.</text>
+        </incorrectfeedback>
+        <shownumcorrect/>
+        <answer fraction="33.33333" format="html">
+            <text><![CDATA[
+<p>
+    \( 1 - \tanh^2x \equiv \sec{\rm h}^2x \)
+</p>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[
+<p>
+    \( 1 - \tanh^2x \equiv \sinh^2x \)
+    <br/>
+</p>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[
+<p>
+    \( 1 - \tanh^2x \equiv \cosh^2x \)
+    <br/>
+</p>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[
+<p>
+    \( 1 - \tanh^2x \equiv \dfrac{1}{\sinh^2x} \)
+    <br/>
+</p>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <answer fraction="33.33333" format="html">
+            <text><![CDATA[
+<p>
+    \( 1 - \tanh^2x \equiv \dfrac{1}{\cosh^2x} \)
+    <br/>
+</p>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <answer fraction="33.33333" format="html">
+            <text><![CDATA[
+<p>
+    \( 1 - \tanh^2x \equiv \dfrac{\cosh^2x - \sinh^2x}{\cosh^2x}\)
+</p>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[
+<p>
+    \(1 - \tanh^2x \equiv \dfrac{\sinh^2x - \cosh^2x}{\sinh^2x}\)
+    <br/>
+</p>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+    </question>
+    
+
+</quiz>

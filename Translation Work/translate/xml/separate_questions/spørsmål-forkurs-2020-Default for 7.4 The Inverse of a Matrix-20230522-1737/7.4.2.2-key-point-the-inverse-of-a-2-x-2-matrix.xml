@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>7.4.2.2 Key point &#9472; The inverse of a 2 x 2 matrix</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        You will see that, had we chosen
+    </span>
+    <span class="multilang" lang="no">
+        Du vil se at hvis vi hadde valgt
+    </span>
+</p>
+\[C = \frac{1}{ad - bc} \begin{bmatrix}d &amp; -b \\ -c &amp; a\end{bmatrix}\]
+<p>
+    <span class="multilang" lang="en">
+        instead of \(B\), then both products \(AC\) and \(CA\) will be equal to \(I\). This requires \(ad - bc \neq 0\). Hence this matrix \(C\) is the inverse of \(A\). However, if \(ad - bc = 0\) then \(A\) has
+        <b>
+            no inverse
+        </b>
+        .
+    </span>
+    <span class="multilang" lang="no">
+        I stedet for \(B\), vil begge produktene \(AC\) og \(CA\) v&#230;re lik \(I\). Dette krever at \(ad-bc \neq 0\). Derfor vil matrisen \(C\) v&#230;re inversen til \(A\). Men hvis \(ad-bc=0\), s&#229; har \(A\)
+        <b>
+            ingen invers
+        </b>
+        .
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Note that for the matrix
+    </span>
+    <span class="multilang" lang="no">
+        Merk at for matrisen
+    </span>
+</p>
+\[A = \begin{bmatrix}1 &amp; 0 \\ 2 &amp; 0\end{bmatrix},\]
+<p>
+    <span class="multilang" lang="en">
+        which occurred in the last question, \(ad - bc = 1 \times 0 - 0 \times 2 = 0\), confirming as we found that \(A\) has no inverse.
+    </span>
+    <span class="multilang" lang="no">
+        som skjedde i forrige sp&#248;rsm&#229;l, \(ad - bc = 1 \times 0 - 0 \times 2 = 0\), bekrefter som vi fant ut at \(A\) ikke har noen invers.
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+            <br/>
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            If \(ad-bc\neq 0\) then the \(2\times 2\) matrix \(A=\left[\begin{array}{cc}a&amp;b\\ c&amp;d\end{array}\right]\) has a (unique) inverse given by
+        </span>
+        <span class="multilang" lang="no">
+            Hvis \(ad-bc\neq 0\) s&#229; har matrisen \(2\times 2\) \(A=\left[\begin{array}{cc}a&amp;b\\ c&amp;d\end{array}\right]\) en (unik) invers gitt ved
+        </span>
+    </p>
+    \[A^{-1}=\frac{1}{ad-bc}\left[\begin{array}{cc}d&amp; -b\\ -c &amp; a \end{array}\right]\]
+    <p>
+        <span class="multilang" lang="en">
+            Note that \(ad-bc=|A|\), the determinant of the matrix \(A\).
+        </span>
+        <span class="multilang" lang="no">
+            Merk at \(ad-bc=|A|\), determinanten til matrisen \(A\).
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            In words: To find the inverse of a \(2\times 2\) matrix \(A\) we interchange the diagonal elements, change the sign of the other two elements, and then divide by the determinant of \(A\).
+        </span>
+        <span class="multilang" lang="no">
+            For &#229; finne inversen av en \(2\times 2\) matrise \(A\), bytter vi diagonal elementene, endrer fortegnet til de andre to elementene, og deretter deler med determinanten til \(A\).
+        </span>
+    </p>
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

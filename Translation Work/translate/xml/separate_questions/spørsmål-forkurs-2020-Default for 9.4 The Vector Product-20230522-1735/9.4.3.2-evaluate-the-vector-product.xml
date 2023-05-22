@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>9.4.3.2 Evaluate the vector product</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    Exercise
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Use the key point of this section to find the vector product of
+    </span>
+    <span class="multilang" lang="no">
+        Bruk forrige n&#248;kkelpunkt til &#229; finne vektorproduktet til
+    </span>
+    <br/>
+    \(\underline{ p}={@p1@}\underline{ i}+{@p2@}\underline{ j}\)
+    <span class="multilang" lang="en">
+        and
+    </span>
+    <span class="multilang" lang="no">
+        og
+    </span>
+    \(\underline{ q}={@q1@}\underline{ i}-{@q2@}\underline{ j}\).
+</p>
+<p>
+    <span class="multilang" lang="en">
+        (Note that in this case there are no \(\underline{k}\) components so \(a_3\) and \(b_3\) are both zero).
+    </span>
+    <span class="multilang" lang="no">
+        (Merk at i dette tilfellet er det ingen \(\underline{k}\)-komponenter, s&#229; \(a_3\) og \(b_3\) er lik null).
+    </span>
+</p>
+<p>
+</p>
+<p>
+    \(\qquad \underline{ p}\times\underline{ q}=\) [[input:ans1]] [[validation:ans1]] \(\underline{k}\) [[feedback:prt1]]
+</p>
+<p>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        We are given the vectors:
+    </span>
+    <span class="multilang" lang="no">
+        Vi har vektorene:
+    </span>
+    \[ \underline{ p}={@p1@}\underline{ i}+{@p2@}\underline{ j} \, \text{ and } \, \underline{ q}={@q1@}\underline{ i}-{@q2@}\underline{ j}.\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Identifying \(a_1={@p1@}\), \(a_2={@p2@}\), \(a_3=0\), \(b_1={@q1@}\), \(b_2=-{@q2@}\), \(b_3=0\) we find
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; identifisere \(a_1={@p1@}\), \(a_2={@p2@}\), \(a_3=0\), \(b_1={@q1@}\), \(b_2=-{@ q2@}\), \(b_3=0\) finner vi
+    </span>
+</p>
+<p>
+    \[\begin{aligned}
+                \underline{a}\times \underline{b}&amp;= (({@p2@})(0)-(0)(-{@q2@}))\underline{i}-(({@p1@})(0)-(0)({@q1@}))\underline{j}+(({@p1@})(-{@q2@})-({@p2@})({@q1@}))\underline{k}\\
+                &amp;= {@ta@}\underline{k}\end{aligned}.\]
+</p>
+<p>
+    <br/>
+</p>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2022082900</text>
+        </stackversion>
+        <questionvariables>
+            <text>p1: 2+rand(3)
+p2: 2+rand(4)
+q1: 2+rand(5)
+q2: 2+rand(6)
+ta: -p1*q2 -p2*q1</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote>
+            <text>\(({@p1@}\underline{ i}+{@p2@}\underline{ j}) \times ({@q1@}\underline{ i}-{@q2@}\underline{ j}) = {@ta@}\underline{ k} \)</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>numerical</type>
+            <tans>ta</tans>
+            <boxsize>4</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>ta</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>2035175511</deployedseed>
+        <deployedseed>755940633</deployedseed>
+        <deployedseed>121058625</deployedseed>
+        <deployedseed>372506200</deployedseed>
+        <deployedseed>2145459699</deployedseed>
+        <deployedseed>1550917835</deployedseed>
+        <deployedseed>809479233</deployedseed>
+        <deployedseed>897124644</deployedseed>
+        <deployedseed>1076608172</deployedseed>
+        <deployedseed>19453885</deployedseed>
+        <deployedseed>228579085</deployedseed>
+        <deployedseed>2021917302</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>2</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-F</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

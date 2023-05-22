@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>8.3.2.2 Row echelon form</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        We say a matrix is in row echelon form if it has the shape resulting from Gaussian elimination, where Gaussian elimination has operated on the rows. Furthermore, we say a matrix is in reduced row echelon form if it satisfies the following conditions:
+    </span>
+    <span class="multilang" lang="no">
+        Vi sier at en matrise er i trappeform form dersom den har formen som f&#248;lger av Gauss-eliminering, hvor Gauss-eliminering er brukt p&#229; radene. Videre sier vi at en matrise er p&#229; redusert trappeform form dersom den oppfyller f&#248;lgende betingelser:
+    </span>
+</p>
+<ol>
+    <li>
+        <span class="multilang" lang="en">
+            It is in row echelon form.
+        </span>
+        <span class="multilang" lang="no">
+            Den er p&#229; trappeform form.
+        </span>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            The leading entry in each nonzero row is a \(1 \) (called a leading \( 1 \)).
+        </span>
+        <span class="multilang" lang="no">
+            Det ledende elementet i hver ikke-null rad er \(1 \) (kalt en ledende \( 1 \)).
+        </span>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            Each column containing a leading \( 1 \) has zeros in all its other entries.
+        </span>
+        <span class="multilang" lang="no">
+            Hver kolonne som inneholder en ledende \( 1 \) har nuller i alle sine andre elementer.
+        </span>
+    </li>
+</ol>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        The matrix
+                \[ \left [ \begin{matrix}
+                                2 &amp; -1 &amp; 2 &amp; 0 \\
+                                0 &amp; 1 &amp; 4 &amp; -2 \\
+                                0 &amp; 0 &amp; -2 &amp; 3 \\
+                                \end{matrix} \right ] \]
+    </span>
+    <span class="multilang" lang="no">
+        Matrisen
+\[ \left [ \begin{matrix}
+                2 &amp; -1 &amp; 2 &amp; 0 \\
+                0 &amp; 1 &amp; 4 &amp; -2 \\
+                0 &amp; 0 &amp; -2 &amp; 3 \\
+                \end{matrix} \right ] \]
+    </span>
+</p>
+<span class="multilang" lang="en">
+    is in row echelon form, but not reduced row echelon form. The matrices
+</span>
+<span class="multilang" lang="no">
+    er i trappeform, men ikke redusert trappeform. Matrisene
+</span>
+<p>
+    <span class="multilang" lang="en">
+        \[\left [ \begin{matrix}
+                                1 &amp; 0 &amp; 0 &amp; -1 \\
+                                0 &amp; 1 &amp; 0 &amp; 2 \\
+                                0 &amp; 0 &amp; 1 &amp; -5\\
+                                \end{matrix} \right], \hspace{3mm}
+                                \left [ \begin{matrix}
+                                1 &amp; 3 &amp; 0 &amp; 0 \\
+                                0 &amp; 0 &amp; 1 &amp; 0 \\
+                                0 &amp; 0 &amp; 0 &amp; 1 \\
+                                \end{matrix} \right]\]
+    </span>
+    <span class="multilang" lang="no">
+        \[\left [ \begin{matrix}
+                                1 &amp; 0 &amp; 0 &amp; -1 \\
+                                0 &amp; 1 &amp; 0 &amp; 2 \\
+                                0 &amp; 0 &amp; 1 &amp; -5\\
+                                \end{matrix} \right], \hspace{3mm}
+                                \left [ \begin{matrix}
+                                1 &amp; 3 &amp; 0 &amp; 0 \\
+                                0 &amp; 0 &amp; 1 &amp; 0 \\
+                                0 &amp; 0 &amp; 0 &amp; 1 \\
+                                \end{matrix} \right]\]
+    </span>
+</p>
+<span class="multilang" lang="en">
+    are in reduced row echelon form.
+</span>
+<span class="multilang" lang="no">
+    er p&#229; redusert trappeform.
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

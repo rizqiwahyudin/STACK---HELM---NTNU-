@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>8.1.1.4 Exercise: Cramer's rule for solving simultaneous equations</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise 1 (paper exercise)
+        <br/>
+    </span>
+    <span class="multilang" lang="no">
+        Oppgave 1 (skriftlig oppgave)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Use Cramer&#226;&#8364;&#8482;s rule to determine any and all solutions to the equations
+    </span>
+    <span class="multilang" lang="no">
+        Bruk Cramers regel for &#229; finne alle l&#248;sninger til ligningene.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \[\text{(a)}\ \ \ \ \begin{array}{rrrrr}2x-3y&amp;=&amp;6\\ 4x-6y&amp;=&amp;12\end{array}
+                                \qquad\ \ \ \text{(b)}\ \ \begin{array}{rrrrr}2x-3y&amp;=&amp;6\\
+                                4x-6y&amp;=&amp;10\end{array}\]
+    </span>
+    <span class="multilang" lang="no">
+        \[\text{(a)}\ \ \ \ \begin{array}{rrrrr}2x-3y&amp;=&amp;6\\ 4x-6y&amp;=&amp;12\end{array}
+                                \qquad\ \ \ \text{(b)}\ \ \begin{array}{rrrrr}2x-3y&amp;=&amp;6\\
+                                4x-6y&amp;=&amp;10\end{array}\]
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

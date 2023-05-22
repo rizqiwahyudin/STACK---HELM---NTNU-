@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>7.1.2.2 Classifying matrices</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        &#216;ving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Give the size of the following matrices:
+    </span>
+    <span class="multilang" lang="no">
+        Gi st&#248;rrelsen p&#229; f&#248;lgende matriser:
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            \({@mat1@}\) [[input:ans1]] [[validation:ans1]] \(\times\) [[input:ans2]] [[validation:ans2]]
+        </p>
+        <p>
+            [[feedback:prt1]] [[feedback:prt2]]
+        </p>
+    </li>
+    <li>
+        <p>
+            \({@mat2@}\) [[input:ans3]] [[validation:ans3]] \(\times\) [[input:ans4]] [[validation:ans4]]
+        </p>
+        <p>
+            [[feedback:prt3]] [[feedback:prt4]]
+        </p>
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        Find the trace of the following matrices:
+    </span>
+    <span class="multilang" lang="no">
+        Finn sporene til f&#248;lgende matriser:
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            \(A={@mat3@}\), \(\text{tr}(A) = \) [[input:ans5]][[validation:ans5]][[feedback:prt5]]
+        </p>
+    </li>
+    <li>
+        <p>
+            \(B={@mat4@}\), \(\text{tr}(B) = \) [[input:ans6]][[validation:ans6]][[feedback:prt6]]
+        </p>
+    </li>
+</ol>
+]]></text>
+            <file name="workbook7bl11.svg" path="/" encoding="base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMCAoNDAzNWE0ZmI0OSwgMjAyMC0wNS0wMSkiCiAgIHNvZGlwb2RpOmRvY25hbWU9Indvcmtib29rN2JsMTEuc3ZnIgogICBpZD0ic3ZnMTg3IgogICB2ZXJzaW9uPSIxLjIiCiAgIHZpZXdCb3g9IjAgMCAxMDYgNTQiCiAgIGhlaWdodD0iNTRwdCIKICAgd2lkdGg9IjEwNnB0Ij4KICA8bWV0YWRhdGEKICAgICBpZD0ibWV0YWRhdGExOTEiPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJzdmcxODciCiAgICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMCIKICAgICBpbmtzY2FwZTp3aW5kb3cteT0iMCIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iMCIKICAgICBpbmtzY2FwZTpjeT0iMzYiCiAgICAgaW5rc2NhcGU6Y3g9IjcwLjY2NjY2NyIKICAgICBpbmtzY2FwZTp6b29tPSI5Ljk1NTE4ODciCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlkPSJuYW1lZHZpZXcxODkiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNDgwIgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iNzgyIgogICAgIGlua3NjYXBlOnBhZ2VzaGFkb3c9IjIiCiAgICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAiCiAgICAgZ3VpZGV0b2xlcmFuY2U9IjEwIgogICAgIGdyaWR0b2xlcmFuY2U9IjEwIgogICAgIG9iamVjdHRvbGVyYW5jZT0iMTAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMSIKICAgICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiIC8+CiAgPGRlZnMKICAgICBpZD0iZGVmczE1OCI+CiAgICA8ZwogICAgICAgaWQ9ImcxNTYiPgogICAgICA8c3ltYm9sCiAgICAgICAgIGlkPSJnbHlwaDAtMCIKICAgICAgICAgb3ZlcmZsb3c9InZpc2libGUiPgogICAgICAgIDxwYXRoCiAgICAgICAgICAgaWQ9InBhdGgxNDEiCiAgICAgICAgICAgZD0iIgogICAgICAgICAgIHN0eWxlPSJzdHJva2U6bm9uZTsiIC8+CiAgICAgIDwvc3ltYm9sPgogICAgICA8c3ltYm9sCiAgICAgICAgIGlkPSJnbHlwaDAtMSIKICAgICAgICAgb3ZlcmZsb3c9InZpc2libGUiPgogICAgICAgIDxwYXRoCiAgICAgICAgICAgaWQ9InBhdGgxNDQiCiAgICAgICAgICAgZD0iTSAzLjU5Mzc1IC0xLjQyMTg3NSBDIDMuNTMxMjUgLTEuMjE4NzUgMy41MzEyNSAtMS4xODc1IDMuMzc1IC0wLjk2ODc1IEMgMy4xMDkzNzUgLTAuNjQwNjI1IDIuNTc4MTI1IC0wLjEyNSAyLjAxNTYyNSAtMC4xMjUgQyAxLjUzMTI1IC0wLjEyNSAxLjI1IC0wLjU2MjUgMS4yNSAtMS4yNjU2MjUgQyAxLjI1IC0xLjkyMTg3NSAxLjYyNSAtMy4yNjU2MjUgMS44NTkzNzUgLTMuNzY1NjI1IEMgMi4yNjU2MjUgLTQuNjA5Mzc1IDIuODI4MTI1IC01LjAzMTI1IDMuMjgxMjUgLTUuMDMxMjUgQyA0LjA3ODEyNSAtNS4wMzEyNSA0LjIzNDM3NSAtNC4wNDY4NzUgNC4yMzQzNzUgLTMuOTUzMTI1IEMgNC4yMzQzNzUgLTMuOTM3NSA0LjIwMzEyNSAtMy43OTY4NzUgNC4xODc1IC0zLjc2NTYyNSBaIE0gNC4zNTkzNzUgLTQuNDg0Mzc1IEMgNC4yMzQzNzUgLTQuNzk2ODc1IDMuOTA2MjUgLTUuMjY1NjI1IDMuMjgxMjUgLTUuMjY1NjI1IEMgMS45Mzc1IC01LjI2NTYyNSAwLjQ4NDM3NSAtMy41MzEyNSAwLjQ4NDM3NSAtMS43NSBDIDAuNDg0Mzc1IC0wLjU3ODEyNSAxLjE3MTg3NSAwLjEyNSAxLjk4NDM3NSAwLjEyNSBDIDIuNjQwNjI1IDAuMTI1IDMuMjAzMTI1IC0wLjM5MDYyNSAzLjUzMTI1IC0wLjc4MTI1IEMgMy42NTYyNSAtMC4wNzgxMjUgNC4yMTg3NSAwLjEyNSA0LjU3ODEyNSAwLjEyNSBDIDQuOTM3NSAwLjEyNSA1LjIxODc1IC0wLjA5Mzc1IDUuNDM3NSAtMC41MzEyNSBDIDUuNjI1IC0wLjkzNzUgNS43OTY4NzUgLTEuNjU2MjUgNS43OTY4NzUgLTEuNzAzMTI1IEMgNS43OTY4NzUgLTEuNzY1NjI1IDUuNzUgLTEuODEyNSA1LjY3MTg3NSAtMS44MTI1IEMgNS41NjI1IC0xLjgxMjUgNS41NjI1IC0xLjc1IDUuNTE1NjI1IC0xLjU3ODEyNSBDIDUuMzI4MTI1IC0wLjg3NSA1LjEwOTM3NSAtMC4xMjUgNC42MDkzNzUgLTAuMTI1IEMgNC4yNjU2MjUgLTAuMTI1IDQuMjUgLTAuNDM3NSA0LjI1IC0wLjY3MTg3NSBDIDQuMjUgLTAuOTM3NSA0LjI4MTI1IC0xLjA3ODEyNSA0LjM5MDYyNSAtMS41NDY4NzUgQyA0LjQ2ODc1IC0xLjg0Mzc1IDQuNTMxMjUgLTIuMTA5Mzc1IDQuNjI1IC0yLjQ1MzEyNSBDIDUuMDYyNSAtNC4yNSA1LjE3MTg3NSAtNC42NzE4NzUgNS4xNzE4NzUgLTQuNzUgQyA1LjE3MTg3NSAtNC45MDYyNSA1LjA0Njg3NSAtNS4wNDY4NzUgNC44NTkzNzUgLTUuMDQ2ODc1IEMgNC40ODQzNzUgLTUuMDQ2ODc1IDQuMzkwNjI1IC00LjYyNSA0LjM1OTM3NSAtNC40ODQzNzUgWiBNIDQuMzU5Mzc1IC00LjQ4NDM3NSAiCiAgICAgICAgICAgc3R5bGU9InN0cm9rZTpub25lOyIgLz4KICAgICAgPC9zeW1ib2w+CiAgICAgIDxzeW1ib2wKICAgICAgICAgaWQ9ImdseXBoMC0yIgogICAgICAgICBvdmVyZmxvdz0idmlzaWJsZSI+CiAgICAgICAgPHBhdGgKICAgICAgICAgICBpZD0icGF0aDE0NyIKICAgICAgICAgICBkPSJNIDIuNzY1NjI1IC04IEMgMi43NjU2MjUgLTguMDQ2ODc1IDIuNzk2ODc1IC04LjEwOTM3NSAyLjc5Njg3NSAtOC4xNzE4NzUgQyAyLjc5Njg3NSAtOC4yOTY4NzUgMi42NzE4NzUgLTguMjk2ODc1IDIuNjU2MjUgLTguMjk2ODc1IEMgMi42NDA2MjUgLTguMjk2ODc1IDIuMjE4NzUgLTguMjY1NjI1IDIgLTguMjM0Mzc1IEMgMS43OTY4NzUgLTguMjE4NzUgMS42MDkzNzUgLTguMjAzMTI1IDEuNDA2MjUgLTguMTg3NSBDIDEuMTA5Mzc1IC04LjE1NjI1IDEuMDMxMjUgLTguMTU2MjUgMS4wMzEyNSAtNy45Mzc1IEMgMS4wMzEyNSAtNy44MTI1IDEuMTQwNjI1IC03LjgxMjUgMS4yNjU2MjUgLTcuODEyNSBDIDEuODc1IC03LjgxMjUgMS44NzUgLTcuNzAzMTI1IDEuODc1IC03LjU5Mzc1IEMgMS44NzUgLTcuNSAxLjc4MTI1IC03LjE1NjI1IDEuNzM0Mzc1IC02LjkzNzUgTCAxLjQ1MzEyNSAtNS43OTY4NzUgQyAxLjMyODEyNSAtNS4zMTI1IDAuNjQwNjI1IC0yLjYwOTM3NSAwLjU5Mzc1IC0yLjM5MDYyNSBDIDAuNTMxMjUgLTIuMDkzNzUgMC41MzEyNSAtMS44OTA2MjUgMC41MzEyNSAtMS43MzQzNzUgQyAwLjUzMTI1IC0wLjUxNTYyNSAxLjIxODc1IDAuMTI1IDIgMC4xMjUgQyAzLjM3NSAwLjEyNSA0LjgxMjUgLTEuNjU2MjUgNC44MTI1IC0zLjM5MDYyNSBDIDQuODEyNSAtNC41IDQuMjAzMTI1IC01LjI2NTYyNSAzLjI5Njg3NSAtNS4yNjU2MjUgQyAyLjY3MTg3NSAtNS4yNjU2MjUgMi4xMDkzNzUgLTQuNzUgMS44OTA2MjUgLTQuNTE1NjI1IFogTSAyLjAxNTYyNSAtMC4xMjUgQyAxLjYyNSAtMC4xMjUgMS4yMDMxMjUgLTAuNDA2MjUgMS4yMDMxMjUgLTEuMzQzNzUgQyAxLjIwMzEyNSAtMS43MzQzNzUgMS4yNSAtMS45NTMxMjUgMS40NTMxMjUgLTIuNzk2ODc1IEMgMS41IC0yLjk1MzEyNSAxLjY4NzUgLTMuNzE4NzUgMS43MzQzNzUgLTMuODc1IEMgMS43NSAtMy45Njg3NSAyLjQ2ODc1IC01LjAzMTI1IDMuMjgxMjUgLTUuMDMxMjUgQyAzLjc5Njg3NSAtNS4wMzEyNSA0LjA0Njg3NSAtNC41IDQuMDQ2ODc1IC0zLjg5MDYyNSBDIDQuMDQ2ODc1IC0zLjMxMjUgMy43MDMxMjUgLTEuOTUzMTI1IDMuNDA2MjUgLTEuMzQzNzUgQyAzLjEwOTM3NSAtMC42ODc1IDIuNTYyNSAtMC4xMjUgMi4wMTU2MjUgLTAuMTI1IFogTSAyLjAxNTYyNSAtMC4xMjUgIgogICAgICAgICAgIHN0eWxlPSJzdHJva2U6bm9uZTsiIC8+CiAgICAgIDwvc3ltYm9sPgogICAgICA8c3ltYm9sCiAgICAgICAgIGlkPSJnbHlwaDAtMyIKICAgICAgICAgb3ZlcmZsb3c9InZpc2libGUiPgogICAgICAgIDxwYXRoCiAgICAgICAgICAgaWQ9InBhdGgxNTAiCiAgICAgICAgICAgZD0iTSA0LjY3MTg3NSAtNC41IEMgNC40NTMxMjUgLTQuNSA0LjM0Mzc1IC00LjUgNC4xNzE4NzUgLTQuMzQzNzUgQyA0LjA5Mzc1IC00LjI5Njg3NSAzLjk2ODc1IC00LjEwOTM3NSAzLjk2ODc1IC0zLjkyMTg3NSBDIDMuOTY4NzUgLTMuNjg3NSA0LjE0MDYyNSAtMy41MzEyNSA0LjM3NSAtMy41MzEyNSBDIDQuNjU2MjUgLTMuNTMxMjUgNC45ODQzNzUgLTMuNzgxMjUgNC45ODQzNzUgLTQuMjUgQyA0Ljk4NDM3NSAtNC44MjgxMjUgNC40Mzc1IC01LjI2NTYyNSAzLjYwOTM3NSAtNS4yNjU2MjUgQyAyLjA0Njg3NSAtNS4yNjU2MjUgMC40ODQzNzUgLTMuNTYyNSAwLjQ4NDM3NSAtMS44NTkzNzUgQyAwLjQ4NDM3NSAtMC44MjgxMjUgMS4xMjUgMC4xMjUgMi4zNDM3NSAwLjEyNSBDIDMuOTY4NzUgMC4xMjUgNSAtMS4xNDA2MjUgNSAtMS4yOTY4NzUgQyA1IC0xLjM3NSA0LjkyMTg3NSAtMS40Mzc1IDQuODc1IC0xLjQzNzUgQyA0Ljg0Mzc1IC0xLjQzNzUgNC44MjgxMjUgLTEuNDIxODc1IDQuNzE4NzUgLTEuMzEyNSBDIDMuOTUzMTI1IC0wLjI5Njg3NSAyLjgyODEyNSAtMC4xMjUgMi4zNTkzNzUgLTAuMTI1IEMgMS41NDY4NzUgLTAuMTI1IDEuMjgxMjUgLTAuODQzNzUgMS4yODEyNSAtMS40Mzc1IEMgMS4yODEyNSAtMS44NTkzNzUgMS40ODQzNzUgLTMuMDE1NjI1IDEuOTA2MjUgLTMuODI4MTI1IEMgMi4yMTg3NSAtNC4zOTA2MjUgMi44NzUgLTUuMDMxMjUgMy42MjUgLTUuMDMxMjUgQyAzLjc4MTI1IC01LjAzMTI1IDQuNDM3NSAtNS4wMTU2MjUgNC42NzE4NzUgLTQuNSBaIE0gNC42NzE4NzUgLTQuNSAiCiAgICAgICAgICAgc3R5bGU9InN0cm9rZTpub25lOyIgLz4KICAgICAgPC9zeW1ib2w+CiAgICAgIDxzeW1ib2wKICAgICAgICAgaWQ9ImdseXBoMC00IgogICAgICAgICBvdmVyZmxvdz0idmlzaWJsZSI+CiAgICAgICAgPHBhdGgKICAgICAgICAgICBpZD0icGF0aDE1MyIKICAgICAgICAgICBkPSJNIDYuMDE1NjI1IC04IEMgNi4wMzEyNSAtOC4wNDY4NzUgNi4wNDY4NzUgLTguMTA5Mzc1IDYuMDQ2ODc1IC04LjE3MTg3NSBDIDYuMDQ2ODc1IC04LjI5Njg3NSA1LjkyMTg3NSAtOC4yOTY4NzUgNS45MDYyNSAtOC4yOTY4NzUgQyA1Ljg5MDYyNSAtOC4yOTY4NzUgNS4zMTI1IC04LjI1IDUuMjUgLTguMjM0Mzc1IEMgNS4wNDY4NzUgLTguMjE4NzUgNC44NTkzNzUgLTguMjAzMTI1IDQuNjU2MjUgLTguMTg3NSBDIDQuMzQzNzUgLTguMTU2MjUgNC4yNjU2MjUgLTguMTU2MjUgNC4yNjU2MjUgLTcuOTM3NSBDIDQuMjY1NjI1IC03LjgxMjUgNC4zNTkzNzUgLTcuODEyNSA0LjUzMTI1IC03LjgxMjUgQyA1LjEwOTM3NSAtNy44MTI1IDUuMTI1IC03LjcwMzEyNSA1LjEyNSAtNy41OTM3NSBDIDUuMTI1IC03LjUxNTYyNSA1LjEwOTM3NSAtNy40MjE4NzUgNS4wOTM3NSAtNy4zOTA2MjUgTCA0LjM1OTM3NSAtNC40ODQzNzUgQyA0LjIzNDM3NSAtNC43OTY4NzUgMy45MDYyNSAtNS4yNjU2MjUgMy4yODEyNSAtNS4yNjU2MjUgQyAxLjkzNzUgLTUuMjY1NjI1IDAuNDg0Mzc1IC0zLjUzMTI1IDAuNDg0Mzc1IC0xLjc1IEMgMC40ODQzNzUgLTAuNTc4MTI1IDEuMTcxODc1IDAuMTI1IDEuOTg0Mzc1IDAuMTI1IEMgMi42NDA2MjUgMC4xMjUgMy4yMDMxMjUgLTAuMzkwNjI1IDMuNTMxMjUgLTAuNzgxMjUgQyAzLjY1NjI1IC0wLjA3ODEyNSA0LjIxODc1IDAuMTI1IDQuNTc4MTI1IDAuMTI1IEMgNC45Mzc1IDAuMTI1IDUuMjE4NzUgLTAuMDkzNzUgNS40Mzc1IC0wLjUzMTI1IEMgNS42MjUgLTAuOTM3NSA1Ljc5Njg3NSAtMS42NTYyNSA1Ljc5Njg3NSAtMS43MDMxMjUgQyA1Ljc5Njg3NSAtMS43NjU2MjUgNS43NSAtMS44MTI1IDUuNjcxODc1IC0xLjgxMjUgQyA1LjU2MjUgLTEuODEyNSA1LjU2MjUgLTEuNzUgNS41MTU2MjUgLTEuNTc4MTI1IEMgNS4zMjgxMjUgLTAuODc1IDUuMTA5Mzc1IC0wLjEyNSA0LjYwOTM3NSAtMC4xMjUgQyA0LjI2NTYyNSAtMC4xMjUgNC4yNSAtMC40Mzc1IDQuMjUgLTAuNjcxODc1IEMgNC4yNSAtMC43MTg3NSA0LjI1IC0wLjk2ODc1IDQuMzI4MTI1IC0xLjI5Njg3NSBaIE0gMy41OTM3NSAtMS40MjE4NzUgQyAzLjUzMTI1IC0xLjIxODc1IDMuNTMxMjUgLTEuMTg3NSAzLjM3NSAtMC45Njg3NSBDIDMuMTA5Mzc1IC0wLjY0MDYyNSAyLjU3ODEyNSAtMC4xMjUgMi4wMTU2MjUgLTAuMTI1IEMgMS41MzEyNSAtMC4xMjUgMS4yNSAtMC41NjI1IDEuMjUgLTEuMjY1NjI1IEMgMS4yNSAtMS45MjE4NzUgMS42MjUgLTMuMjY1NjI1IDEuODU5Mzc1IC0zLjc2NTYyNSBDIDIuMjY1NjI1IC00LjYwOTM3NSAyLjgyODEyNSAtNS4wMzEyNSAzLjI4MTI1IC01LjAzMTI1IEMgNC4wNzgxMjUgLTUuMDMxMjUgNC4yMzQzNzUgLTQuMDQ2ODc1IDQuMjM0Mzc1IC0zLjk1MzEyNSBDIDQuMjM0Mzc1IC0zLjkzNzUgNC4yMDMxMjUgLTMuNzk2ODc1IDQuMTg3NSAtMy43NjU2MjUgWiBNIDMuNTkzNzUgLTEuNDIxODc1ICIKICAgICAgICAgICBzdHlsZT0ic3Ryb2tlOm5vbmU7IiAvPgogICAgICA8L3N5bWJvbD4KICAgIDwvZz4KICA8L2RlZnM+CiAgPGcKICAgICBpZD0ic3VyZmFjZTk2NjI0Ij4KICAgIDxnCiAgICAgICBpZD0iZzE2MiIKICAgICAgIHN0eWxlPSJmaWxsOnJnYigxMy43Mjk4NTglLDEyLjE1OTcyOSUsMTIuNTQ4ODI4JSk7ZmlsbC1vcGFjaXR5OjE7Ij4KICAgICAgPHVzZQogICAgICAgICBpZD0idXNlMTYwIgogICAgICAgICB5PSIxMi43Mzg3MDEiCiAgICAgICAgIHg9IjAuODE4MiIKICAgICAgICAgeGxpbms6aHJlZj0iI2dseXBoMC0xIiAvPgogICAgPC9nPgogICAgPGcKICAgICAgIGlkPSJnMTY2IgogICAgICAgc3R5bGU9ImZpbGw6cmdiKDEzLjcyOTg1OCUsMTIuMTU5NzI5JSwxMi41NDg4MjglKTtmaWxsLW9wYWNpdHk6MTsiPgogICAgICA8dXNlCiAgICAgICAgIGlkPSJ1c2UxNjQiCiAgICAgICAgIHk9IjkuNzM5MTkzIgogICAgICAgICB4PSI2Mi4xNjg4NjkiCiAgICAgICAgIHhsaW5rOmhyZWY9IiNnbHlwaDAtMiIgLz4KICAgIDwvZz4KICAgIDxnCiAgICAgICBpZD0iZzE3MCIKICAgICAgIHN0eWxlPSJmaWxsOnJnYigxMy43Mjk4NTglLDEyLjE1OTcyOSUsMTIuNTQ4ODI4JSk7ZmlsbC1vcGFjaXR5OjE7Ij4KICAgICAgPHVzZQogICAgICAgICBpZD0idXNlMTY4IgogICAgICAgICB5PSI0OC43Mzg3OTUiCiAgICAgICAgIHg9IjIxLjg1MTgyNiIKICAgICAgICAgeGxpbms6aHJlZj0iI2dseXBoMC0zIiAvPgogICAgPC9nPgogICAgPGcKICAgICAgIGlkPSJnMTc0IgogICAgICAgc3R5bGU9ImZpbGw6cmdiKDEzLjcyOTg1OCUsMTIuMTU5NzI5JSwxMi41NDg4MjglKTtmaWxsLW9wYWNpdHk6MTsiPgogICAgICA8dXNlCiAgICAgICAgIGlkPSJ1c2UxNzIiCiAgICAgICAgIHk9IjUwLjIzOTE0OCIKICAgICAgICAgeD0iOTguNTk1NzU3IgogICAgICAgICB4bGluazpocmVmPSIjZ2x5cGgwLTQiIC8+CiAgICA8L2c+CiAgICA8cGF0aAogICAgICAgaWQ9InBhdGgxNzYiCiAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwtMSwwLDU0KSIKICAgICAgIGQ9Ik0gMTEgNDUgTCA1NS41IDQ1IEwgMjQuNSAxNi41IEwgMTAzIDE2LjUgTCA1NS41IDQ1ICIKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjE7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlOnJnYigwJSwwJSwwJSk7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtbWl0ZXJsaW1pdDo0OyIgLz4KICAgIDxwYXRoCiAgICAgICBpZD0icGF0aDE3OCIKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLC0xLDAsNTQpIgogICAgICAgZD0iTSAxMS41IDQyLjUgQyAxMi42NzE4NzUgNDIuNSAxMy42MjEwOTQgNDMuNDQ5MjE5IDEzLjYyMTA5NCA0NC42MjEwOTQgQyAxMy42MjEwOTQgNDUuNzkyOTY5IDEyLjY3MTg3NSA0Ni43NDIxODggMTEuNSA0Ni43NDIxODggQyAxMC4zMjgxMjUgNDYuNzQyMTg4IDkuMzc4OTA2IDQ1Ljc5Mjk2OSA5LjM3ODkwNiA0NC42MjEwOTQgQyA5LjM3ODkwNiA0My40NDkyMTkgMTAuMzI4MTI1IDQyLjUgMTEuNSA0Mi41IFogTSAxMS41IDQyLjUgIgogICAgICAgc3R5bGU9ImZpbGwtcnVsZTpub256ZXJvO2ZpbGw6cmdiKDAlLDAlLDAlKTtmaWxsLW9wYWNpdHk6MTtzdHJva2Utd2lkdGg6MTtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2U6cmdiKDAlLDAlLDAlKTtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1taXRlcmxpbWl0OjQ7IiAvPgogICAgPHBhdGgKICAgICAgIGlkPSJwYXRoMTgwIgogICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsLTEsMCw1NCkiCiAgICAgICBkPSJNIDU1LjUgNDIuNSBDIDU2LjY3MTg3NSA0Mi41IDU3LjYyMTA5NCA0My40NDkyMTkgNTcuNjIxMDk0IDQ0LjYyMTA5NCBDIDU3LjYyMTA5NCA0NS43OTI5NjkgNTYuNjcxODc1IDQ2Ljc0MjE4OCA1NS41IDQ2Ljc0MjE4OCBDIDU0LjMyODEyNSA0Ni43NDIxODggNTMuMzc4OTA2IDQ1Ljc5Mjk2OSA1My4zNzg5MDYgNDQuNjIxMDk0IEMgNTMuMzc4OTA2IDQzLjQ0OTIxOSA1NC4zMjgxMjUgNDIuNSA1NS41IDQyLjUgWiBNIDU1LjUgNDIuNSAiCiAgICAgICBzdHlsZT0iZmlsbC1ydWxlOm5vbnplcm87ZmlsbDpyZ2IoMCUsMCUsMCUpO2ZpbGwtb3BhY2l0eToxO3N0cm9rZS13aWR0aDoxO3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZTpyZ2IoMCUsMCUsMCUpO3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLW1pdGVybGltaXQ6NDsiIC8+CiAgICA8cGF0aAogICAgICAgaWQ9InBhdGgxODIiCiAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwtMSwwLDU0KSIKICAgICAgIGQ9Ik0gMTAzIDE0LjUgQyAxMDQuMTcxODc1IDE0LjUgMTA1LjEyMTA5NCAxNS40NDkyMTkgMTA1LjEyMTA5NCAxNi42MjEwOTQgQyAxMDUuMTIxMDk0IDE3Ljc5Mjk2OSAxMDQuMTcxODc1IDE4Ljc0MjE4OCAxMDMgMTguNzQyMTg4IEMgMTAxLjgyODEyNSAxOC43NDIxODggMTAwLjg3ODkwNiAxNy43OTI5NjkgMTAwLjg3ODkwNiAxNi42MjEwOTQgQyAxMDAuODc4OTA2IDE1LjQ0OTIxOSAxMDEuODI4MTI1IDE0LjUgMTAzIDE0LjUgWiBNIDEwMyAxNC41ICIKICAgICAgIHN0eWxlPSJmaWxsLXJ1bGU6bm9uemVybztmaWxsOnJnYigwJSwwJSwwJSk7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlLXdpZHRoOjE7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlOnJnYigwJSwwJSwwJSk7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtbWl0ZXJsaW1pdDo0OyIgLz4KICAgIDxwYXRoCiAgICAgICBpZD0icGF0aDE4NCIKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLC0xLDAsNTQpIgogICAgICAgZD0iTSAyNC41IDE0LjUgQyAyNS42NzE4NzUgMTQuNSAyNi42MjEwOTQgMTUuNDQ5MjE5IDI2LjYyMTA5NCAxNi42MjEwOTQgQyAyNi42MjEwOTQgMTcuNzkyOTY5IDI1LjY3MTg3NSAxOC43NDIxODggMjQuNSAxOC43NDIxODggQyAyMy4zMjgxMjUgMTguNzQyMTg4IDIyLjM3ODkwNiAxNy43OTI5NjkgMjIuMzc4OTA2IDE2LjYyMTA5NCBDIDIyLjM3ODkwNiAxNS40NDkyMTkgMjMuMzI4MTI1IDE0LjUgMjQuNSAxNC41IFogTSAyNC41IDE0LjUgIgogICAgICAgc3R5bGU9ImZpbGwtcnVsZTpub256ZXJvO2ZpbGw6cmdiKDAlLDAlLDAlKTtmaWxsLW9wYWNpdHk6MTtzdHJva2Utd2lkdGg6MTtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2U6cmdiKDAlLDAlLDAlKTtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1taXRlcmxpbWl0OjQ7IiAvPgogIDwvZz4KPC9zdmc+Cg==</file>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        First, we find the size of the first two matrices.
+    </span>
+    <span class="multilang" lang="no">
+        F&#248;rst finner vi st&#248;rrelsen p&#229; de to f&#248;rste matriser.
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The matrix
+            </span>
+            <span class="multilang" lang="no">
+                Matrisen
+            </span>
+        </p>
+        \[{@mat1@}\]
+        <p>
+            <span class="multilang" lang="en">
+                has {@m1@} rows and {@n1@} columns. Therefore, it is a \({@m1@} \times {@n1@}\) matrix.
+            </span>
+            <span class="multilang" lang="no">
+                har {@m1@} rader og {@n1@} kolonner. Derfor er det en \({@m1@} \times {@n1@}\) matrise.
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The matrix
+            </span>
+            <span class="multilang" lang="no">
+                Matrisen
+            </span>
+        </p>
+        \[{@mat2@}\]
+        <p>
+            <span class="multilang" lang="en">
+                has {@m2@} rows and {@n2@} columns. Therefore, it is a \({@m2@} \times {@n2@}\) matrix.
+            </span>
+            <span class="multilang" lang="no">
+                har {@m2@} rader og {@n2@} kolonner. Derfor er det en \({@m2@} \times {@n2@}\) matrise.
+            </span>
+        </p>
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        Next, we find the trace of the given matrices. Recall that the trace of a square matrix is the sum of its diagonal entries.
+    </span>
+    <span class="multilang" lang="no">
+        Deretter finner vi sporene til de gitte matrisene. Husk at sporet av en kvadratisk matrise er summen av dens diagonale elementer.
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The matrix
+            </span>
+            <span class="multilang" lang="no">
+                Matrisen
+            </span>
+        </p>
+        \[A = {@mat3@}\]
+        <p>
+            <span class="multilang" lang="en">
+                has diagonal entries {@mat3[1][1]@} and {@mat3[2][2]@}. Therefore, its trace is \(\mathrm{tr}(A) = {@mat3[1][1]@} + {@mat3[2][2]@} = {@tamat3@}\).
+            </span>
+            <span class="multilang" lang="no">
+                har de diagonale elementene {@mat3[1][1]@} og {@mat3[2][2]@}. Derfor er sporet \(\mathrm{tr}(A) = {@mat3[1][1]@} + {@mat3[2][2]@} = {@tamat3@}\).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                Similarly, the matrix
+            </span>
+            <span class="multilang" lang="no">
+                Ligenede har matrisen
+            </span>
+        </p>
+        \[B = {@mat4@}\]
+        <p>
+            <span class="multilang" lang="en">
+                has trace \(\mathrm{tr}(B) = {@tamat4@}\).
+            </span>
+            <span class="multilang" lang="no">
+                sporet \(\mathrm{tr}(B) = {@tamat4@}\).
+            </span>
+        </p>
+    </li>
+</ol>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2022082900</text>
+        </stackversion>
+        <questionvariables>
+            <text>n1:2+ rand(4)
+m1:2+ rand(4)
+mat1 : rand(9+zeromatrix(m1,n1))
+n2:2+ rand(5)
+m2:2+ rand(5)
+mat2 : rand(9+zeromatrix(m2,n2))
+tamat11:m1
+tamat12:n1
+tamat21:m2
+tamat22:n2
+mat3 : rand(9+zeromatrix(2,2))
+mat4 : rand(9+zeromatrix(3,3))
+tamat3 : mat_trace(mat3)
+tamat4 : mat_trace(mat4)
+</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote>
+            <text>\[{@mat1@}, {@mat2@}, {@mat3@}, {@mat4@}\]</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>tamat11</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>tamat12</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>tamat21</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>algebraic</type>
+            <tans>tamat22</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans5</name>
+            <type>algebraic</type>
+            <tans>tamat3</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans6</name>
+            <type>algebraic</type>
+            <tans>tamat4</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>tamat11</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>tamat12</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>tamat21</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>tamat22</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt5</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans5</sans>
+                <tans>tamat3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt5-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt6</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans6</sans>
+                <tans>tamat4</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt6-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt6-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>58780941</deployedseed>
+        <deployedseed>337772847</deployedseed>
+        <deployedseed>634938105</deployedseed>
+        <deployedseed>1018074995</deployedseed>
+        <deployedseed>514566470</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>tamat11</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>tamat12</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>tamat21</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>tamat22</value>
+            </testinput>
+            <testinput>
+                <name>ans5</name>
+                <value>tamat3</value>
+            </testinput>
+            <testinput>
+                <name>ans6</name>
+                <value>tamat4</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt3-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt4-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt5</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt5-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt6</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt6-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>tamat11 +1</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>tamat12+2</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>tamat21+1</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>tamat22+2</value>
+            </testinput>
+            <testinput>
+                <name>ans5</name>
+                <value>tamat3+5</value>
+            </testinput>
+            <testinput>
+                <name>ans6</name>
+                <value>tamat4+6</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt1-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt2-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt3-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt4-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt5</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt5-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt6</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt6-1-F</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

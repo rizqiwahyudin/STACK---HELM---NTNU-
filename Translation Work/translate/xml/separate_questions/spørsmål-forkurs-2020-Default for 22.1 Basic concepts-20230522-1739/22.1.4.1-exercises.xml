@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>22.1.4.1 Exercises</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Paper Exercise
+    </span>
+    <span class="multilang" lang="no">
+        Papir &#248;ving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        If \(\lambda_1,\lambda_2,\ldots \lambda_n\) are the eigenvalues of a matrix \(A,\), get a piece of paper and prove the following:
+        <br/>
+    </span>
+    <span class="multilang" lang="no">
+        Hvis \(\lambda_1,\lambda_2,\ldots,\lambda_n\) er egenverdiene til en matrise \(A,\), bevis f&#248;lgende:
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                \(A^T\) has eigenvalues \(\lambda_1,\lambda_2,\ldots
+                                                                \lambda_n\).
+            </span>
+            <span class="multilang" lang="no">
+                \(A^T\) har egenverdier \(\lambda_1,\lambda_2,\ldots
+                                                                \lambda_n\).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                If \(A\) is upper triangular, then its eigenvalues are exactly the main diagonal entries.
+            </span>
+            <span class="multilang" lang="no">
+                Hvis \(A\) er &#248;vre triangul&#230;r, s&#229; er dens egenverdier akkurat lik hoveddiagonalelementene.
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The inverse matrix \(A^{-1}\) has eigenvalues \({{1\over
+\lambda_1}},\ {{1\over \lambda_2}},\ldots {{1\over
+\lambda_n}}\).
+            </span>
+            <span class="multilang" lang="no">
+                Den inverse matrisen \(A^{-1}\) har egenverdiene \({{1\over\lambda_1}},\ {{1\over\lambda_2}},\ldots {{1\over\lambda_n}}\).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The matrix \(A-kI\) has eigenvalues \(\lambda_1-k,\lambda_2-k,\ldots \lambda_n-k\).
+            </span>
+            <span class="multilang" lang="no">
+                Matrisen \(A-kI\) har egenverdiene \(\lambda_1-k,\lambda_2-k,\ldots \lambda_n-k\) .
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                (Harder) The matrix \(A^2\) has eigenvalues \(\lambda_1^2,\lambda_2^2,\ldots \lambda_n^2\).
+            </span>
+            <span class="multilang" lang="no">
+                (Vanskeligere) Matrisen \(A^2\) har egenverdiene \(\lambda_1^2,\lambda_2^2,\ldots \lambda_n^2\).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                (Harder) The matrix \(A^k\) (\(k\) a non-negative integer) has eigenvalues \(\lambda_1^k,\lambda_2^k,\ldots \lambda_n^k.\)
+            </span>
+            <span class="multilang" lang="no">
+                (Vanskeligere) Matrisen \(A^k\) (\(k\) et ikke-negativt tall) har egenv&#230;rdier \(\lambda_1^k,\lambda_2^k,\ldots \lambda_n^k.\)
+            </span>
+        </p>
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        N.B. Some of these results are useful in the numerical calculation of eigenvalues.
+    </span>
+    <span class="multilang" lang="no">
+        N.B. Noen av disse resultatene er nyttige i den numeriske beregningen av egenverdier.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        <b>
+            We give the solution on the next page. Please try to complete the problem before referencing the solution.
+        </b>
+    </span>
+    <span class="multilang" lang="no">
+        <b>
+            Vi gir l&#248;sningen p&#229; neste side. Vennligst pr&#248;v &#229; fullf&#248;re oppgaven f&#248;r du refererer til l&#248;sningen.
+        </b>
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

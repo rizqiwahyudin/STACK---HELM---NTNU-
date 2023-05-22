@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>8.2.1.3 Example 1 inverse matrix method</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel.
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Solve the system \(AX=B\) where \[A=\left[\begin{array}{rr}2&amp;3\\
+                                1&amp;-2\end{array}\right], \hspace{2mm}
+                                B = \left[\begin{array}{r}5\\ -1\end{array}\right].\]
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;s systemet \(AX=B\) der \[A=\left[\begin{array}{rr}2&amp;3\\
+                                1&amp;-2\end{array}\right], \hspace{2mm}
+                                B = \left[\begin{array}{r}5\\ -1\end{array}\right].\]
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        In the previous example, we checked that \(A\) has an inverse and computed it. Therefore,
+                \[X=A^{-1}B=\dfrac{1}{7}\left[\begin{array}{rr}2&amp;3\\
+                                1&amp;-2\end{array}\right]\left[\begin{array}{r} 5\\
+                                -1\end{array}\right]=\dfrac{1}{7}\left[\begin{array}{c}7\\
+                                7\end{array}\right]=\left[\begin{array}{c}1\\ 1\end{array}\right].\]
+    </span>
+    <span class="multilang" lang="no">
+        I det forrige eksempelet sjekket vi at \(A\) har en invers og beregnet den. Derfor er
+                \[X=A^{-1}B=\dfrac{1}{7}\left[\begin{array}{rr}2&amp;3\\
+                                1&amp;-2\end{array}\right]\left[\begin{array}{r} 5\\
+                                -1\end{array}\right]=\dfrac{1}{7}\left[\begin{array}{c}7\\
+                                7\end{array}\right]=\left[\begin{array}{c}1\\ 1\end{array}\right].\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Hence \(x_1=1,\ x_2=1.\)
+    </span>
+    <span class="multilang" lang="no">
+        Dermed er \(x_1=1,\ x_2=1.\)
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

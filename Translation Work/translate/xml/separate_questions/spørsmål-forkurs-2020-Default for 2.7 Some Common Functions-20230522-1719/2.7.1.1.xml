@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>2.7.1.1</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Polynomial functions
+    </span>
+    <span class="multilang" lang="no">
+        Polynomske funksjoner
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        The class of the
+        <b>
+            polynomial functions
+        </b>
+        plays a very important role. Polynomial functions are made up of multiples of non-negative whole number powers of a variable, such as \(3x^2\), \(7x^3\) and so on. You are already familiar with many such functions.
+        Other examples include:
+    </span>
+    <span class="multilang" lang="no">
+        <b>
+            Polynomfunksjon
+        </b>
+        klassen spiller en veldig viktig rolle. Polynomfunksjoner er bygd opp av multipler av ikke-negative heltallspotenser av en variabel, for eksempel \(3x^2\), \(7x^3\) og s&#229; videre. Du er allerede kjent med mange slike funksjoner.
+                    Andre eksempler inkluderer:
+    </span>
+</p>
+<ul>
+    <li>
+        \(P_0(t)=6\),
+        <br/>
+    </li>
+    <li>
+        \(P_1(t) = 3t+ 9\),
+        <br/>
+    </li>
+    <li>
+        \(P_2(x) = 3x^2&#8722;x+ 2\),
+        <br/>
+    </li>
+    <li>
+        \(P_4(z) = 7z^4+z^2&#8722;1\),
+        <br/>
+    </li>
+</ul>
+<p>
+    <span class="multilang" lang="en">
+        where \(t\), \(x\) and \(z\) are independent variables.
+    </span>
+    <span class="multilang" lang="no">
+        hvor \(t \), \(x \) og \(z \) er uavhengige variabler.
+    </span>
+</p>
+<br/>
+<p>
+    <span class="multilang" lang="en">
+        If the powers of the independent variable are fractional or negative, then the function does not represent a polynomial; i.e. \(f(x)=x^{-1}\) and \(g(x)=x^{3/2}\) are not polynomials. The function \(P_0(t)=6\) is a polynomial instead, in fact we can regard
+        it as \(P_0(t)=6 t^0\).
+    </span>
+    <span class="multilang" lang="no">
+        Hvis eksopnentene til den uavhengige variabelen er en br&#248;k eller negative, representerer funksjonen ikke et polynom; dvs. \(f(x)=x^{-1}\) og \(g(x)=x^{3/2}\) er ikke polynomer. Funksjonen \(P_0(t)=6\) er et polynom i stedet, vi kan faktisk betrakte
+                    det som \(P_0 (t) = 6 t^0 \).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        By convention, a polynomial is written with the powers either increasing or decreasing. For example the polynomial
+    </span>
+    <span class="multilang" lang="no">
+        Etter konvensjonen skrives et polynom med eksponentene enten &#248;kende eller synkende. For eksempel polynomet
+    </span>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        \(3x+ 9x^2&#8722;x^3+ 2\)
+    </p>
+</div>
+<p>
+    <span class="multilang" lang="en">
+        would be written as
+    </span>
+    <span class="multilang" lang="no">
+        vil bli skrevet som
+    </span>
+</p>
+<div class="editor-indent" style="margin-left: 30px;">
+    <p>
+        \(&#8722;x^3+ 9x^2+ 3x+ 2\)
+        <span class="multilang" lang="en">
+            or
+        </span>
+        <span class="multilang" lang="no">
+            eller
+        </span>
+        \(2 + 3x+ 9x^2&#8722;x^3\).
+    </p>
+</div>
+<p>
+    <span class="multilang" lang="en">
+        In general, we have the following definition:
+    </span>
+    <span class="multilang" lang="no">
+        Generelt har vi f&#248;lgende definisjon:
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpoeng
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            A
+            <b>
+                polynomial expression
+            </b>
+            has the form:
+        </span>
+        <span class="multilang" lang="no">
+            Et
+            <b>
+                polynomuttrykk
+            </b>
+            har formen:
+        </span>
+    </p>
+    <p>
+        \(a_n x^n+a_{n&#8722;1} x^{n&#8722;1}+a_{n&#8722;2} x^{n&#8722;2}+...+a_2 x^2+a_1 x+a_0\)
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            where \(n\) is a non-negative integer, a_n, a_{n&#8722;1}, ..., a_1, a_0 are constants and \(x\) is a variable.
+        </span>
+        <span class="multilang" lang="no">
+            hvor \(n \) er et ikke-negativt heltall, \(a_n, a_ {n &#8722; 1}, ..., a_1, a_0\) er konstanter og \(x \) er en variabel.
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            A
+            <b>
+                polynomial function
+            </b>
+            \(P(x)\) has the form
+        </span>
+        <span class="multilang" lang="no">
+            Et
+            <b>
+                polynomfunksjon
+            </b>
+            \(P (x) \) har formen
+        </span>
+    </p>
+    <p>
+        \(P_n(x)=a_n x^n+a_{n&#8722;1} x^{n&#8722;1}+a_{n&#8722;2} x^{n&#8722;2}+...+a_2 x^2+a_1 x+a_0.\)
+    </p>
+</div>
+<p>
+    <span class="multilang" lang="en">
+        The
+        <b>
+            degree
+        </b>
+        of a polynomial or polynomial function is the value of the highest power. Referring to the examples listed above, the polynomial \(P_2\) has degree \(2\), because the term with the highest power is \(3x^2\), \(P_4\) has degree \(4\), \(P_1\) has degree \(1\) and \(P_0\) has degree \(0\). Polynomials with low degrees have special names given in the following table. We assume that \(a \neq 0\) in each case.
+    </span>
+    <span class="multilang" lang="no">
+        <b>
+            Graden
+        </b>
+        til en polynomfunksjon er lik verdien av den h&#248;yeste eksponenten. I eksemplene ovenfor, har polynomet \(P_2 \) grad \(2 \), fordi leddet med den h&#248;yeste eksponent er \(3x^2 \), \(P_4 \) har grad \(4 \) , \(P_1\) har grad \(1\) og \(P_0\) har grad \(0\). Polynomer med lave grader har spesielle navn gitt i tabellen nedenfor. Vi antar at \(a \neq 0 \) i hvert tilfelle.
+    </span>
+</p>
+<p>
+    <br/>
+</p>
+<center>
+    <table border="1" frame="void" rules="all">
+        <thead>
+            <tr class="header">
+                <th style="text-align: center;">
+                </th>
+                <th style="text-align: center;">
+                    <span class="multilang" lang="en">
+                        degree
+                    </span>
+                    <span class="multilang" lang="no">
+                        grad
+                    </span>
+                    <br/>
+                </th>
+                <th style="text-align: center;">
+                    <span class="multilang" lang="en">
+                        name
+                    </span>
+                    <span class="multilang" lang="no">
+                        navn
+                    </span>
+                    <br/>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="odd">
+                <td style="text-align: center;">
+                    <span class="math inline">
+                        \(a\)
+                    </span>
+                </td>
+                <td style="text-align: center;">
+                    0
+                    <br/>
+                </td>
+                <td style="text-align: center;">
+                    <span class="multilang" lang="en">
+                        constant
+                    </span>
+                    <span class="multilang" lang="no">
+                        konstant
+                    </span>
+                    <br/>
+                </td>
+            </tr>
+            <tr class="odd">
+                <td style="text-align: center;">
+                    <span class="math inline">
+                        \(ax+b\)
+                    </span>
+                </td>
+                <td style="text-align: center;">
+                    1
+                    <br/>
+                </td>
+                <td style="text-align: center;">
+                    <span class="multilang" lang="en">
+                        linear
+                    </span>
+                    <span class="multilang" lang="no">
+                        line&#230;r
+                    </span>
+                    <br/>
+                </td>
+            </tr>
+            <tr class="odd">
+                <td style="text-align: center;">
+                    <span class="math inline">
+                        \(ax^2+bx+c\)
+                    </span>
+                </td>
+                <td style="text-align: center;">
+                    2
+                    <br/>
+                </td>
+                <td style="text-align: center;">
+                    <span class="multilang" lang="en">
+                        quadratic
+                    </span>
+                    <span class="multilang" lang="no">
+                        kvadratisk
+                    </span>
+                    <br/>
+                </td>
+            </tr>
+            <tr class="odd">
+                <td style="text-align: center;">
+                    <span class="math inline">
+                        \(ax^3+bx^2+cx+d\)
+                    </span>
+                </td>
+                <td style="text-align: center;">
+                    3
+                    <br/>
+                </td>
+                <td style="text-align: center;">
+                    <span class="multilang" lang="en">
+                        cubic
+                    </span>
+                    <span class="multilang" lang="no">
+                        kubisk
+                    </span>
+                    <br/>
+                </td>
+            </tr>
+            <tr class="odd">
+                <td style="text-align: center;">
+                    <span class="math inline">
+                        \(ax^4+bx^3+cx^2+dx+e\)
+                    </span>
+                </td>
+                <td style="text-align: center;">
+                    4
+                    <br/>
+                </td>
+                <td style="text-align: center;">
+                    <span class="multilang" lang="en">
+                        quartic
+                    </span>
+                    <span class="multilang" lang="no">
+                        4. grads
+                    </span>
+                    <br/>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</center>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

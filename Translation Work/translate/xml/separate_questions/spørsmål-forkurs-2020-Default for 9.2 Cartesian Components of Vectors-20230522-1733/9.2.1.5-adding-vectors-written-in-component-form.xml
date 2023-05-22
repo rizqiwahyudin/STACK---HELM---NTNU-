@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>9.2.1.5 Adding vectors written in component form</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        It is very important to note from the last task that vectors in Cartesian form can be added by simply adding their respective \(\underline{ i}\) and \(\underline{ j}\) components.
+    </span>
+    <span class="multilang" lang="no">
+        Det er veldig viktig &#229; merke seg fra den siste oppgaven at vektorer i kartesisk form kan legges til ganske enkelt ved &#229; legge til deres respektive \(\underline{ i}\)- og \(\underline{ j}\)-komponenter.
+    </span>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Thus, if \(\underline{ a}=a_x\underline{ i} + a_y\underline{ j}\) and \(\underline{ b}=b_x\underline{ i}+b_y\underline{ j}\) then \[\underline{ a}+\underline{ b}=(a_x+b_x)\underline{ i}+ (a_y+b_y)\underline{ j}.\] A similar, and obvious, rule applies when subtracting:
+    </span>
+    <span class="multilang" lang="no">
+        Dermed, hvis \(\underline{ a}=a_x\underline{ i} + a_y\underline{ j}\) og \(\underline{ b}=b_x\underline{ i}+b_y\underline{ j}\) er \[\underline{ a}+\underline{ b}=(a_x+b_x)\underline{ i}+ (a_y+b_y)\underline{ j}.\] En lignende og &#229;penbar regel gjelder n&#229;r man trekker fra:
+    </span>
+    \[\underline{ a}-\underline{ b}=(a_x-b_x)\underline{ i}+(a_y-b_y)\underline{ j}.\]
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

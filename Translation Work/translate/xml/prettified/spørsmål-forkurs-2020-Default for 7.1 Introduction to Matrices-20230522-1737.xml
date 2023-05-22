@@ -1,0 +1,4707 @@
+<quiz>
+    <!-- question: 0  -->
+    <question type="category">
+        <category>
+            <text>$module$/top/Default for 7.1 Introduction to Matrices</text>
+        </category>
+        <info format="moodle_auto_format">
+            <text>The default category for questions shared in context '7.1 Introduction to Matrices'.</text>
+        </info>
+        <idnumber></idnumber>
+    </question>
+    <!-- question: 9172  -->
+    <question type="description">
+        <name>
+            <text>7.1.1.1 Applications of Matrices</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Applications of Matrices
+    </span>
+    <span class="multilang" lang="no">
+        Matrisenes bruksområder
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        The solution of simultaneous linear equations is a task which frequently occurs in science and engineering. In electrical engineering the analysis of circuits provides a ready example.
+    </span>
+    <span class="multilang" lang="no">
+        Løsningen av simultane lineære ligninger er en oppgave som ofte forekommer i vitenskap og ingeniørfag. I elektroteknikk gir analysen av kretsløp et klart eksempel.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        However the simultaneous equations arise, we need to study two things:
+    </span>
+    <span class="multilang" lang="no">
+        Når simultane ligninger oppstår, vi må studere to ting:
+    </span>
+</p>
+<ol type="a">
+    <li>
+        <span class="multilang" lang="en">
+            how we can conveniently represent large systems of linear equations;
+        </span>
+        <span class="multilang" lang="no">
+            hvordan vi enkelt kan representere store systemer med lineære ligninger;
+        </span>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            how we might find the solution of such equations.
+        </span>
+        <span class="multilang" lang="no">
+            hvordan vi kan finne løsningen på slike ligninger.
+        </span>
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        We shall discover that knowledge of the theory of matrices is an essential mathematical tool in this area.
+    </span>
+    <span class="multilang" lang="no">
+        Vi skal oppdage at kunnskap om teorien om matriser er et essensielt matematisk verktøy i dette området.
+    </span>
+</p>
+<h4>
+    <span class="multilang" lang="en">
+        Representing simultaneous linear equations
+    </span>
+    <span class="multilang" lang="no">
+        Representerer simultane lineære ligninger
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Suppose that we wish to solve the following three equations in three unknowns \(x_1,x_2\) and \(x_3\):
+    </span>
+    <span class="multilang" lang="no">
+        Anta at vi ønsker å løse følgende tre ligninger med tre ukjente \(x_1,x_2\) og \(x_3\):
+    </span>
+</p>
+\[\begin{alignedat}{4}
+3x_1 &amp; {}+{} &amp; 2x_2 &amp; {}-{} &amp; x_3 &amp;= 3 \\
+x_1 &amp; {}-{} &amp; x_2 &amp; {}+{} &amp; x_3 &amp;= 4 \\
+2x_1 &amp; {}+{} &amp; 3x_2 &amp; {}+{} &amp; 4x_3 &amp;= 5
+\end{alignedat}\]
+<p>
+    <span class="multilang" lang="en">
+        We can isolate three facets of this system: the
+        <b>
+            coefficients
+        </b>
+        of \(x_1,x_2,x_3\); the
+        <b>
+            unknowns
+        </b>
+        \(x_1,x_2,x_3\); and the
+        <b>
+            numbers
+        </b>
+        on the right-hand sides.
+    </span>
+    <span class="multilang" lang="no">
+        Vi kan isolere tre grupper i dette systemet:
+        <b>
+            koeffisientene
+        </b>
+        til \(x_1,x_2,x_3\); de
+        <b>
+            ukjente
+        </b>
+        \(x_1,x_2,x_3\); og
+        <b>
+            tallene
+        </b>
+        på høyre side.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Notice that in the system
+    </span>
+    <span class="multilang" lang="no">
+        Merke at i systemet
+    </span>
+</p>
+\[\begin{alignedat}{4}
+3x &amp; {}+{} &amp; 2y &amp; {}-{} &amp; z &amp;= 3 \\
+x &amp; {}-{} &amp; y &amp; {}+{} &amp; z &amp;= 4 \\
+2x &amp; {}+{} &amp; 3y &amp; {}+{} &amp; 4z &amp;= 5
+\end{alignedat}\]
+<p>
+    <span class="multilang" lang="en">
+        the only difference from the first system is the names given to the unknowns. It can be checked that the first system has the solution \(x_1=2,\ x_2=-1,\ x_3=1.\)
+    </span>
+    <span class="multilang" lang="no">
+        er den eneste forskjellen fra det første systemet navnene som er gitt til de ukjente. Det kan kontrolleres at det første systemet har løsningen \(x_1=2,\ x_2=-1,\ x_3=1.\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The second system therefore has the solution \(x=2, y=-1, z=1.\)
+    </span>
+    <span class="multilang" lang="no">
+        Det andre systemet har derfor løsningen \(x=2, y=-1, z=1.\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We can isolate the three facets of the first system by using
+        <b>
+            arrays
+        </b>
+        of numbers and of unknowns:
+    </span>
+    <span class="multilang" lang="no">
+        Vi kan isolere de tre gruppene i det første systemet ved å bruke
+        <b>
+            matriser
+        </b>
+        av tall og ukjente:
+    </span>
+</p>
+<p>
+    \[\left[\begin{array}{rrr}3&amp;2&amp;-1\\1&amp;-1&amp;1\\2&amp;3&amp;4\end{array}\right]\left[\begin{array}{c}x_1\\ x_2\\x_3\end{array}\right]=\left[\begin{array}{c}3\\ 4\\ 5\end{array}\right].\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Even more conveniently, we can represent the arrays with letters (usually capital letters)
+    </span>
+    <span class="multilang" lang="no">
+        Enda mer praktisk kan vi representere matriser med bokstaver (vanligvis store bokstaver)
+    </span>
+</p>
+<p>
+    \[AX\ \ \ \ =\ \ \ \ B.\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Here, to be explicit, we write
+    </span>
+    <span class="multilang" lang="no">
+        Her, for å være eksplisitt, skriver vi
+    </span>
+</p>
+<p>
+    \[ A=\left[\begin{array}{rrr}3&amp;2&amp;-1\\ 1&amp;-1&amp;1\\2&amp;3&amp;4\end{array}\right],\qquad X=\left[\begin{array}{c}x_1\\ x_2\\x_3\end{array}\right],\qquad B=\left[\begin{array}{c}3\\ 4\\ 5\end{array}\right].\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Here \(A\) is called the
+        <b>
+            matrix of coefficients
+        </b>
+        , \(X\) is called the
+        <b>
+            matrix of unknowns
+        </b>
+        and \(B\) is called the
+        <b>
+            matrix of constants
+        </b>
+        .
+    </span>
+    <span class="multilang" lang="no">
+        Her kalles \(A\)
+        <b>
+            matrisen av koeffisienter
+        </b>
+        , \(X \) kalles
+        <b>
+            matrisen av ukjente
+        </b>
+        og \(B\) kalles
+        <b>
+            matrisen av konstanter
+        </b>
+        .
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        If we now append to \(A\) the column of right-hand sides we obtain the
+        <b>
+            augmented matrix
+        </b>
+        for the system:
+    </span>
+    <span class="multilang" lang="no">
+        Hvis vi nå legger kolonnen for høyre side med \(A\), får vi den
+        <b>
+            utvidede matrisen
+        </b>
+        til systemet:
+    </span>
+</p>
+<p>
+    \[ \left[\left.\begin{array}{rrr}3&amp;2&amp;-1\ \\ 1&amp;-1&amp;1\ \\ 2&amp;3&amp;4\ \end{array}\right|\right.\left.\begin{array}{c}3\\ 4\\ 5\end{array}\right].\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The order of the entries, or elements, is crucial.  For example, all the entries in the second row relate to the second equation, the entries in column 1 are the coefficients of the unknown \(x_1\), and those in the last column are the constants on the right-hand sides of the equations.
+    </span>
+    <span class="multilang" lang="no">
+        Rekkefølgen til elementene i matrisen er avgjørende. For eksempel er alle elementene i den andre raden relatert til den andre ligningen, elementene i kolonne 1 er koeffisientene til det ukjente \(x_1\), og de i den siste kolonnen er konstantene på høyre side av ligningene.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In particular, the entry in row 2 column 3 is the coefficient of \(x_3\) in equation 2.
+    </span>
+    <span class="multilang" lang="no">
+        Elementet i rad 2 kolonne 3 er spesifikt koeffisienten til \(x_3\) i ligning 2.
+    </span>
+</p>
+<h4>
+    <span class="multilang" lang="en">
+        Representing networks
+    </span>
+    <span class="multilang" lang="no">
+        Representerer nettverk
+    </span>
+</h4>
+<p style="text-align: left;">
+    <span class="multilang" lang="en">
+        Shortest-distance problems are important in communications study.  The figure below illustrates schematically a system of four towns connected by a set of roads.
+    </span>
+    <span class="multilang" lang="no">
+        Korteste avstandsproblemer er viktige i kommunikasjonsstudien. Figuren nedenfor illustrerer skjematisk et system med fire byer forbundet med et sett med veier.
+    </span>
+</p>
+<figure class="HELM_figure">
+    <img alt="7.1 A system of roads connecting towns" class="img-responsive atto_image_button_text-bottom" height="72" src="@@PLUGINFILE@@/workbook7bl11.svg" width="141"/>
+</figure>
+<p>
+    <span class="multilang" lang="en">
+        The system can be represented by the matrix
+    </span>
+    <span class="multilang" lang="no">
+        Systemet kan være representert av matrisen
+    </span>
+</p>
+<p>
+    \[ \ \ \ \ a\ \ \ \quad b\ \ \ \quad c\ \ \quad d\]
+</p>
+<p>
+    \[\begin{array}{c}a\\ b\\ c\\ d\end{array}\left[\begin{array}{cccccccc}0&amp;&amp;1&amp;&amp;0&amp;&amp;0\\ 1&amp;&amp;0&amp;&amp;1&amp;&amp;1\\ 0&amp;&amp;1&amp;&amp;0&amp;&amp;1\\ 0&amp;&amp;1&amp;&amp;1&amp;&amp;0\end{array}\right].\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The row refers to the town from which the road starts and the column refers to the town where the road ends.
+    </span>
+    <span class="multilang" lang="no">
+        Raden refererer til byen som veien starter fra og kolonnen refererer til byen der veien ender.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        An entry of 1 indicates that two towns are directly connected by a road (for example \(b\) and \(d\)) and an entry of zero indicates that there is no direct road (for example \(a\) and \(c\)). Of course, if there is a road from \(b\) to \(d\) (say) it is also a road from \(d\) to \(b\).
+    </span>
+    <span class="multilang" lang="no">
+        En oppføring av 1 indikerer at to byer er direkte forbundet med en vei (for eksempel \(b \) og \(d \)) men en oppføring på null indikerer at det ikke er noen direkte vei (for eksempel \(a \) og \(c \)). Hvis det er en vei fra \(b \) til \(d \) er det selvfølgelig også en vei fra \(d \) til \(b \).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In this quiz we shall develop some basic ideas about matrices.
+        <br/>
+    </span>
+    <span class="multilang" lang="no">
+        I denne quizen skal vi utvikle noen grunnleggende ideer om matriser.
+        <br/>
+    </span>
+</p>
+<p>
+    <br/>
+</p>
+]]></text>
+            <file name="workbook7bl11.svg" path="/" encoding="base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMCAoNDAzNWE0ZmI0OSwgMjAyMC0wNS0wMSkiCiAgIHNvZGlwb2RpOmRvY25hbWU9Indvcmtib29rN2JsMTEuc3ZnIgogICBpZD0ic3ZnMTg3IgogICB2ZXJzaW9uPSIxLjIiCiAgIHZpZXdCb3g9IjAgMCAxMDYgNTQiCiAgIGhlaWdodD0iNTRwdCIKICAgd2lkdGg9IjEwNnB0Ij4KICA8bWV0YWRhdGEKICAgICBpZD0ibWV0YWRhdGExOTEiPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJzdmcxODciCiAgICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMCIKICAgICBpbmtzY2FwZTp3aW5kb3cteT0iMCIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iMCIKICAgICBpbmtzY2FwZTpjeT0iMzYiCiAgICAgaW5rc2NhcGU6Y3g9IjcwLjY2NjY2NyIKICAgICBpbmtzY2FwZTp6b29tPSI5Ljk1NTE4ODciCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlkPSJuYW1lZHZpZXcxODkiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNDgwIgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iNzgyIgogICAgIGlua3NjYXBlOnBhZ2VzaGFkb3c9IjIiCiAgICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAiCiAgICAgZ3VpZGV0b2xlcmFuY2U9IjEwIgogICAgIGdyaWR0b2xlcmFuY2U9IjEwIgogICAgIG9iamVjdHRvbGVyYW5jZT0iMTAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMSIKICAgICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiIC8+CiAgPGRlZnMKICAgICBpZD0iZGVmczE1OCI+CiAgICA8ZwogICAgICAgaWQ9ImcxNTYiPgogICAgICA8c3ltYm9sCiAgICAgICAgIGlkPSJnbHlwaDAtMCIKICAgICAgICAgb3ZlcmZsb3c9InZpc2libGUiPgogICAgICAgIDxwYXRoCiAgICAgICAgICAgaWQ9InBhdGgxNDEiCiAgICAgICAgICAgZD0iIgogICAgICAgICAgIHN0eWxlPSJzdHJva2U6bm9uZTsiIC8+CiAgICAgIDwvc3ltYm9sPgogICAgICA8c3ltYm9sCiAgICAgICAgIGlkPSJnbHlwaDAtMSIKICAgICAgICAgb3ZlcmZsb3c9InZpc2libGUiPgogICAgICAgIDxwYXRoCiAgICAgICAgICAgaWQ9InBhdGgxNDQiCiAgICAgICAgICAgZD0iTSAzLjU5Mzc1IC0xLjQyMTg3NSBDIDMuNTMxMjUgLTEuMjE4NzUgMy41MzEyNSAtMS4xODc1IDMuMzc1IC0wLjk2ODc1IEMgMy4xMDkzNzUgLTAuNjQwNjI1IDIuNTc4MTI1IC0wLjEyNSAyLjAxNTYyNSAtMC4xMjUgQyAxLjUzMTI1IC0wLjEyNSAxLjI1IC0wLjU2MjUgMS4yNSAtMS4yNjU2MjUgQyAxLjI1IC0xLjkyMTg3NSAxLjYyNSAtMy4yNjU2MjUgMS44NTkzNzUgLTMuNzY1NjI1IEMgMi4yNjU2MjUgLTQuNjA5Mzc1IDIuODI4MTI1IC01LjAzMTI1IDMuMjgxMjUgLTUuMDMxMjUgQyA0LjA3ODEyNSAtNS4wMzEyNSA0LjIzNDM3NSAtNC4wNDY4NzUgNC4yMzQzNzUgLTMuOTUzMTI1IEMgNC4yMzQzNzUgLTMuOTM3NSA0LjIwMzEyNSAtMy43OTY4NzUgNC4xODc1IC0zLjc2NTYyNSBaIE0gNC4zNTkzNzUgLTQuNDg0Mzc1IEMgNC4yMzQzNzUgLTQuNzk2ODc1IDMuOTA2MjUgLTUuMjY1NjI1IDMuMjgxMjUgLTUuMjY1NjI1IEMgMS45Mzc1IC01LjI2NTYyNSAwLjQ4NDM3NSAtMy41MzEyNSAwLjQ4NDM3NSAtMS43NSBDIDAuNDg0Mzc1IC0wLjU3ODEyNSAxLjE3MTg3NSAwLjEyNSAxLjk4NDM3NSAwLjEyNSBDIDIuNjQwNjI1IDAuMTI1IDMuMjAzMTI1IC0wLjM5MDYyNSAzLjUzMTI1IC0wLjc4MTI1IEMgMy42NTYyNSAtMC4wNzgxMjUgNC4yMTg3NSAwLjEyNSA0LjU3ODEyNSAwLjEyNSBDIDQuOTM3NSAwLjEyNSA1LjIxODc1IC0wLjA5Mzc1IDUuNDM3NSAtMC41MzEyNSBDIDUuNjI1IC0wLjkzNzUgNS43OTY4NzUgLTEuNjU2MjUgNS43OTY4NzUgLTEuNzAzMTI1IEMgNS43OTY4NzUgLTEuNzY1NjI1IDUuNzUgLTEuODEyNSA1LjY3MTg3NSAtMS44MTI1IEMgNS41NjI1IC0xLjgxMjUgNS41NjI1IC0xLjc1IDUuNTE1NjI1IC0xLjU3ODEyNSBDIDUuMzI4MTI1IC0wLjg3NSA1LjEwOTM3NSAtMC4xMjUgNC42MDkzNzUgLTAuMTI1IEMgNC4yNjU2MjUgLTAuMTI1IDQuMjUgLTAuNDM3NSA0LjI1IC0wLjY3MTg3NSBDIDQuMjUgLTAuOTM3NSA0LjI4MTI1IC0xLjA3ODEyNSA0LjM5MDYyNSAtMS41NDY4NzUgQyA0LjQ2ODc1IC0xLjg0Mzc1IDQuNTMxMjUgLTIuMTA5Mzc1IDQuNjI1IC0yLjQ1MzEyNSBDIDUuMDYyNSAtNC4yNSA1LjE3MTg3NSAtNC42NzE4NzUgNS4xNzE4NzUgLTQuNzUgQyA1LjE3MTg3NSAtNC45MDYyNSA1LjA0Njg3NSAtNS4wNDY4NzUgNC44NTkzNzUgLTUuMDQ2ODc1IEMgNC40ODQzNzUgLTUuMDQ2ODc1IDQuMzkwNjI1IC00LjYyNSA0LjM1OTM3NSAtNC40ODQzNzUgWiBNIDQuMzU5Mzc1IC00LjQ4NDM3NSAiCiAgICAgICAgICAgc3R5bGU9InN0cm9rZTpub25lOyIgLz4KICAgICAgPC9zeW1ib2w+CiAgICAgIDxzeW1ib2wKICAgICAgICAgaWQ9ImdseXBoMC0yIgogICAgICAgICBvdmVyZmxvdz0idmlzaWJsZSI+CiAgICAgICAgPHBhdGgKICAgICAgICAgICBpZD0icGF0aDE0NyIKICAgICAgICAgICBkPSJNIDIuNzY1NjI1IC04IEMgMi43NjU2MjUgLTguMDQ2ODc1IDIuNzk2ODc1IC04LjEwOTM3NSAyLjc5Njg3NSAtOC4xNzE4NzUgQyAyLjc5Njg3NSAtOC4yOTY4NzUgMi42NzE4NzUgLTguMjk2ODc1IDIuNjU2MjUgLTguMjk2ODc1IEMgMi42NDA2MjUgLTguMjk2ODc1IDIuMjE4NzUgLTguMjY1NjI1IDIgLTguMjM0Mzc1IEMgMS43OTY4NzUgLTguMjE4NzUgMS42MDkzNzUgLTguMjAzMTI1IDEuNDA2MjUgLTguMTg3NSBDIDEuMTA5Mzc1IC04LjE1NjI1IDEuMDMxMjUgLTguMTU2MjUgMS4wMzEyNSAtNy45Mzc1IEMgMS4wMzEyNSAtNy44MTI1IDEuMTQwNjI1IC03LjgxMjUgMS4yNjU2MjUgLTcuODEyNSBDIDEuODc1IC03LjgxMjUgMS44NzUgLTcuNzAzMTI1IDEuODc1IC03LjU5Mzc1IEMgMS44NzUgLTcuNSAxLjc4MTI1IC03LjE1NjI1IDEuNzM0Mzc1IC02LjkzNzUgTCAxLjQ1MzEyNSAtNS43OTY4NzUgQyAxLjMyODEyNSAtNS4zMTI1IDAuNjQwNjI1IC0yLjYwOTM3NSAwLjU5Mzc1IC0yLjM5MDYyNSBDIDAuNTMxMjUgLTIuMDkzNzUgMC41MzEyNSAtMS44OTA2MjUgMC41MzEyNSAtMS43MzQzNzUgQyAwLjUzMTI1IC0wLjUxNTYyNSAxLjIxODc1IDAuMTI1IDIgMC4xMjUgQyAzLjM3NSAwLjEyNSA0LjgxMjUgLTEuNjU2MjUgNC44MTI1IC0zLjM5MDYyNSBDIDQuODEyNSAtNC41IDQuMjAzMTI1IC01LjI2NTYyNSAzLjI5Njg3NSAtNS4yNjU2MjUgQyAyLjY3MTg3NSAtNS4yNjU2MjUgMi4xMDkzNzUgLTQuNzUgMS44OTA2MjUgLTQuNTE1NjI1IFogTSAyLjAxNTYyNSAtMC4xMjUgQyAxLjYyNSAtMC4xMjUgMS4yMDMxMjUgLTAuNDA2MjUgMS4yMDMxMjUgLTEuMzQzNzUgQyAxLjIwMzEyNSAtMS43MzQzNzUgMS4yNSAtMS45NTMxMjUgMS40NTMxMjUgLTIuNzk2ODc1IEMgMS41IC0yLjk1MzEyNSAxLjY4NzUgLTMuNzE4NzUgMS43MzQzNzUgLTMuODc1IEMgMS43NSAtMy45Njg3NSAyLjQ2ODc1IC01LjAzMTI1IDMuMjgxMjUgLTUuMDMxMjUgQyAzLjc5Njg3NSAtNS4wMzEyNSA0LjA0Njg3NSAtNC41IDQuMDQ2ODc1IC0zLjg5MDYyNSBDIDQuMDQ2ODc1IC0zLjMxMjUgMy43MDMxMjUgLTEuOTUzMTI1IDMuNDA2MjUgLTEuMzQzNzUgQyAzLjEwOTM3NSAtMC42ODc1IDIuNTYyNSAtMC4xMjUgMi4wMTU2MjUgLTAuMTI1IFogTSAyLjAxNTYyNSAtMC4xMjUgIgogICAgICAgICAgIHN0eWxlPSJzdHJva2U6bm9uZTsiIC8+CiAgICAgIDwvc3ltYm9sPgogICAgICA8c3ltYm9sCiAgICAgICAgIGlkPSJnbHlwaDAtMyIKICAgICAgICAgb3ZlcmZsb3c9InZpc2libGUiPgogICAgICAgIDxwYXRoCiAgICAgICAgICAgaWQ9InBhdGgxNTAiCiAgICAgICAgICAgZD0iTSA0LjY3MTg3NSAtNC41IEMgNC40NTMxMjUgLTQuNSA0LjM0Mzc1IC00LjUgNC4xNzE4NzUgLTQuMzQzNzUgQyA0LjA5Mzc1IC00LjI5Njg3NSAzLjk2ODc1IC00LjEwOTM3NSAzLjk2ODc1IC0zLjkyMTg3NSBDIDMuOTY4NzUgLTMuNjg3NSA0LjE0MDYyNSAtMy41MzEyNSA0LjM3NSAtMy41MzEyNSBDIDQuNjU2MjUgLTMuNTMxMjUgNC45ODQzNzUgLTMuNzgxMjUgNC45ODQzNzUgLTQuMjUgQyA0Ljk4NDM3NSAtNC44MjgxMjUgNC40Mzc1IC01LjI2NTYyNSAzLjYwOTM3NSAtNS4yNjU2MjUgQyAyLjA0Njg3NSAtNS4yNjU2MjUgMC40ODQzNzUgLTMuNTYyNSAwLjQ4NDM3NSAtMS44NTkzNzUgQyAwLjQ4NDM3NSAtMC44MjgxMjUgMS4xMjUgMC4xMjUgMi4zNDM3NSAwLjEyNSBDIDMuOTY4NzUgMC4xMjUgNSAtMS4xNDA2MjUgNSAtMS4yOTY4NzUgQyA1IC0xLjM3NSA0LjkyMTg3NSAtMS40Mzc1IDQuODc1IC0xLjQzNzUgQyA0Ljg0Mzc1IC0xLjQzNzUgNC44MjgxMjUgLTEuNDIxODc1IDQuNzE4NzUgLTEuMzEyNSBDIDMuOTUzMTI1IC0wLjI5Njg3NSAyLjgyODEyNSAtMC4xMjUgMi4zNTkzNzUgLTAuMTI1IEMgMS41NDY4NzUgLTAuMTI1IDEuMjgxMjUgLTAuODQzNzUgMS4yODEyNSAtMS40Mzc1IEMgMS4yODEyNSAtMS44NTkzNzUgMS40ODQzNzUgLTMuMDE1NjI1IDEuOTA2MjUgLTMuODI4MTI1IEMgMi4yMTg3NSAtNC4zOTA2MjUgMi44NzUgLTUuMDMxMjUgMy42MjUgLTUuMDMxMjUgQyAzLjc4MTI1IC01LjAzMTI1IDQuNDM3NSAtNS4wMTU2MjUgNC42NzE4NzUgLTQuNSBaIE0gNC42NzE4NzUgLTQuNSAiCiAgICAgICAgICAgc3R5bGU9InN0cm9rZTpub25lOyIgLz4KICAgICAgPC9zeW1ib2w+CiAgICAgIDxzeW1ib2wKICAgICAgICAgaWQ9ImdseXBoMC00IgogICAgICAgICBvdmVyZmxvdz0idmlzaWJsZSI+CiAgICAgICAgPHBhdGgKICAgICAgICAgICBpZD0icGF0aDE1MyIKICAgICAgICAgICBkPSJNIDYuMDE1NjI1IC04IEMgNi4wMzEyNSAtOC4wNDY4NzUgNi4wNDY4NzUgLTguMTA5Mzc1IDYuMDQ2ODc1IC04LjE3MTg3NSBDIDYuMDQ2ODc1IC04LjI5Njg3NSA1LjkyMTg3NSAtOC4yOTY4NzUgNS45MDYyNSAtOC4yOTY4NzUgQyA1Ljg5MDYyNSAtOC4yOTY4NzUgNS4zMTI1IC04LjI1IDUuMjUgLTguMjM0Mzc1IEMgNS4wNDY4NzUgLTguMjE4NzUgNC44NTkzNzUgLTguMjAzMTI1IDQuNjU2MjUgLTguMTg3NSBDIDQuMzQzNzUgLTguMTU2MjUgNC4yNjU2MjUgLTguMTU2MjUgNC4yNjU2MjUgLTcuOTM3NSBDIDQuMjY1NjI1IC03LjgxMjUgNC4zNTkzNzUgLTcuODEyNSA0LjUzMTI1IC03LjgxMjUgQyA1LjEwOTM3NSAtNy44MTI1IDUuMTI1IC03LjcwMzEyNSA1LjEyNSAtNy41OTM3NSBDIDUuMTI1IC03LjUxNTYyNSA1LjEwOTM3NSAtNy40MjE4NzUgNS4wOTM3NSAtNy4zOTA2MjUgTCA0LjM1OTM3NSAtNC40ODQzNzUgQyA0LjIzNDM3NSAtNC43OTY4NzUgMy45MDYyNSAtNS4yNjU2MjUgMy4yODEyNSAtNS4yNjU2MjUgQyAxLjkzNzUgLTUuMjY1NjI1IDAuNDg0Mzc1IC0zLjUzMTI1IDAuNDg0Mzc1IC0xLjc1IEMgMC40ODQzNzUgLTAuNTc4MTI1IDEuMTcxODc1IDAuMTI1IDEuOTg0Mzc1IDAuMTI1IEMgMi42NDA2MjUgMC4xMjUgMy4yMDMxMjUgLTAuMzkwNjI1IDMuNTMxMjUgLTAuNzgxMjUgQyAzLjY1NjI1IC0wLjA3ODEyNSA0LjIxODc1IDAuMTI1IDQuNTc4MTI1IDAuMTI1IEMgNC45Mzc1IDAuMTI1IDUuMjE4NzUgLTAuMDkzNzUgNS40Mzc1IC0wLjUzMTI1IEMgNS42MjUgLTAuOTM3NSA1Ljc5Njg3NSAtMS42NTYyNSA1Ljc5Njg3NSAtMS43MDMxMjUgQyA1Ljc5Njg3NSAtMS43NjU2MjUgNS43NSAtMS44MTI1IDUuNjcxODc1IC0xLjgxMjUgQyA1LjU2MjUgLTEuODEyNSA1LjU2MjUgLTEuNzUgNS41MTU2MjUgLTEuNTc4MTI1IEMgNS4zMjgxMjUgLTAuODc1IDUuMTA5Mzc1IC0wLjEyNSA0LjYwOTM3NSAtMC4xMjUgQyA0LjI2NTYyNSAtMC4xMjUgNC4yNSAtMC40Mzc1IDQuMjUgLTAuNjcxODc1IEMgNC4yNSAtMC43MTg3NSA0LjI1IC0wLjk2ODc1IDQuMzI4MTI1IC0xLjI5Njg3NSBaIE0gMy41OTM3NSAtMS40MjE4NzUgQyAzLjUzMTI1IC0xLjIxODc1IDMuNTMxMjUgLTEuMTg3NSAzLjM3NSAtMC45Njg3NSBDIDMuMTA5Mzc1IC0wLjY0MDYyNSAyLjU3ODEyNSAtMC4xMjUgMi4wMTU2MjUgLTAuMTI1IEMgMS41MzEyNSAtMC4xMjUgMS4yNSAtMC41NjI1IDEuMjUgLTEuMjY1NjI1IEMgMS4yNSAtMS45MjE4NzUgMS42MjUgLTMuMjY1NjI1IDEuODU5Mzc1IC0zLjc2NTYyNSBDIDIuMjY1NjI1IC00LjYwOTM3NSAyLjgyODEyNSAtNS4wMzEyNSAzLjI4MTI1IC01LjAzMTI1IEMgNC4wNzgxMjUgLTUuMDMxMjUgNC4yMzQzNzUgLTQuMDQ2ODc1IDQuMjM0Mzc1IC0zLjk1MzEyNSBDIDQuMjM0Mzc1IC0zLjkzNzUgNC4yMDMxMjUgLTMuNzk2ODc1IDQuMTg3NSAtMy43NjU2MjUgWiBNIDMuNTkzNzUgLTEuNDIxODc1ICIKICAgICAgICAgICBzdHlsZT0ic3Ryb2tlOm5vbmU7IiAvPgogICAgICA8L3N5bWJvbD4KICAgIDwvZz4KICA8L2RlZnM+CiAgPGcKICAgICBpZD0ic3VyZmFjZTk2NjI0Ij4KICAgIDxnCiAgICAgICBpZD0iZzE2MiIKICAgICAgIHN0eWxlPSJmaWxsOnJnYigxMy43Mjk4NTglLDEyLjE1OTcyOSUsMTIuNTQ4ODI4JSk7ZmlsbC1vcGFjaXR5OjE7Ij4KICAgICAgPHVzZQogICAgICAgICBpZD0idXNlMTYwIgogICAgICAgICB5PSIxMi43Mzg3MDEiCiAgICAgICAgIHg9IjAuODE4MiIKICAgICAgICAgeGxpbms6aHJlZj0iI2dseXBoMC0xIiAvPgogICAgPC9nPgogICAgPGcKICAgICAgIGlkPSJnMTY2IgogICAgICAgc3R5bGU9ImZpbGw6cmdiKDEzLjcyOTg1OCUsMTIuMTU5NzI5JSwxMi41NDg4MjglKTtmaWxsLW9wYWNpdHk6MTsiPgogICAgICA8dXNlCiAgICAgICAgIGlkPSJ1c2UxNjQiCiAgICAgICAgIHk9IjkuNzM5MTkzIgogICAgICAgICB4PSI2Mi4xNjg4NjkiCiAgICAgICAgIHhsaW5rOmhyZWY9IiNnbHlwaDAtMiIgLz4KICAgIDwvZz4KICAgIDxnCiAgICAgICBpZD0iZzE3MCIKICAgICAgIHN0eWxlPSJmaWxsOnJnYigxMy43Mjk4NTglLDEyLjE1OTcyOSUsMTIuNTQ4ODI4JSk7ZmlsbC1vcGFjaXR5OjE7Ij4KICAgICAgPHVzZQogICAgICAgICBpZD0idXNlMTY4IgogICAgICAgICB5PSI0OC43Mzg3OTUiCiAgICAgICAgIHg9IjIxLjg1MTgyNiIKICAgICAgICAgeGxpbms6aHJlZj0iI2dseXBoMC0zIiAvPgogICAgPC9nPgogICAgPGcKICAgICAgIGlkPSJnMTc0IgogICAgICAgc3R5bGU9ImZpbGw6cmdiKDEzLjcyOTg1OCUsMTIuMTU5NzI5JSwxMi41NDg4MjglKTtmaWxsLW9wYWNpdHk6MTsiPgogICAgICA8dXNlCiAgICAgICAgIGlkPSJ1c2UxNzIiCiAgICAgICAgIHk9IjUwLjIzOTE0OCIKICAgICAgICAgeD0iOTguNTk1NzU3IgogICAgICAgICB4bGluazpocmVmPSIjZ2x5cGgwLTQiIC8+CiAgICA8L2c+CiAgICA8cGF0aAogICAgICAgaWQ9InBhdGgxNzYiCiAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwtMSwwLDU0KSIKICAgICAgIGQ9Ik0gMTEgNDUgTCA1NS41IDQ1IEwgMjQuNSAxNi41IEwgMTAzIDE2LjUgTCA1NS41IDQ1ICIKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjE7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlOnJnYigwJSwwJSwwJSk7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtbWl0ZXJsaW1pdDo0OyIgLz4KICAgIDxwYXRoCiAgICAgICBpZD0icGF0aDE3OCIKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLC0xLDAsNTQpIgogICAgICAgZD0iTSAxMS41IDQyLjUgQyAxMi42NzE4NzUgNDIuNSAxMy42MjEwOTQgNDMuNDQ5MjE5IDEzLjYyMTA5NCA0NC42MjEwOTQgQyAxMy42MjEwOTQgNDUuNzkyOTY5IDEyLjY3MTg3NSA0Ni43NDIxODggMTEuNSA0Ni43NDIxODggQyAxMC4zMjgxMjUgNDYuNzQyMTg4IDkuMzc4OTA2IDQ1Ljc5Mjk2OSA5LjM3ODkwNiA0NC42MjEwOTQgQyA5LjM3ODkwNiA0My40NDkyMTkgMTAuMzI4MTI1IDQyLjUgMTEuNSA0Mi41IFogTSAxMS41IDQyLjUgIgogICAgICAgc3R5bGU9ImZpbGwtcnVsZTpub256ZXJvO2ZpbGw6cmdiKDAlLDAlLDAlKTtmaWxsLW9wYWNpdHk6MTtzdHJva2Utd2lkdGg6MTtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2U6cmdiKDAlLDAlLDAlKTtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1taXRlcmxpbWl0OjQ7IiAvPgogICAgPHBhdGgKICAgICAgIGlkPSJwYXRoMTgwIgogICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsLTEsMCw1NCkiCiAgICAgICBkPSJNIDU1LjUgNDIuNSBDIDU2LjY3MTg3NSA0Mi41IDU3LjYyMTA5NCA0My40NDkyMTkgNTcuNjIxMDk0IDQ0LjYyMTA5NCBDIDU3LjYyMTA5NCA0NS43OTI5NjkgNTYuNjcxODc1IDQ2Ljc0MjE4OCA1NS41IDQ2Ljc0MjE4OCBDIDU0LjMyODEyNSA0Ni43NDIxODggNTMuMzc4OTA2IDQ1Ljc5Mjk2OSA1My4zNzg5MDYgNDQuNjIxMDk0IEMgNTMuMzc4OTA2IDQzLjQ0OTIxOSA1NC4zMjgxMjUgNDIuNSA1NS41IDQyLjUgWiBNIDU1LjUgNDIuNSAiCiAgICAgICBzdHlsZT0iZmlsbC1ydWxlOm5vbnplcm87ZmlsbDpyZ2IoMCUsMCUsMCUpO2ZpbGwtb3BhY2l0eToxO3N0cm9rZS13aWR0aDoxO3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZTpyZ2IoMCUsMCUsMCUpO3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLW1pdGVybGltaXQ6NDsiIC8+CiAgICA8cGF0aAogICAgICAgaWQ9InBhdGgxODIiCiAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwtMSwwLDU0KSIKICAgICAgIGQ9Ik0gMTAzIDE0LjUgQyAxMDQuMTcxODc1IDE0LjUgMTA1LjEyMTA5NCAxNS40NDkyMTkgMTA1LjEyMTA5NCAxNi42MjEwOTQgQyAxMDUuMTIxMDk0IDE3Ljc5Mjk2OSAxMDQuMTcxODc1IDE4Ljc0MjE4OCAxMDMgMTguNzQyMTg4IEMgMTAxLjgyODEyNSAxOC43NDIxODggMTAwLjg3ODkwNiAxNy43OTI5NjkgMTAwLjg3ODkwNiAxNi42MjEwOTQgQyAxMDAuODc4OTA2IDE1LjQ0OTIxOSAxMDEuODI4MTI1IDE0LjUgMTAzIDE0LjUgWiBNIDEwMyAxNC41ICIKICAgICAgIHN0eWxlPSJmaWxsLXJ1bGU6bm9uemVybztmaWxsOnJnYigwJSwwJSwwJSk7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlLXdpZHRoOjE7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlOnJnYigwJSwwJSwwJSk7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtbWl0ZXJsaW1pdDo0OyIgLz4KICAgIDxwYXRoCiAgICAgICBpZD0icGF0aDE4NCIKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLC0xLDAsNTQpIgogICAgICAgZD0iTSAyNC41IDE0LjUgQyAyNS42NzE4NzUgMTQuNSAyNi42MjEwOTQgMTUuNDQ5MjE5IDI2LjYyMTA5NCAxNi42MjEwOTQgQyAyNi42MjEwOTQgMTcuNzkyOTY5IDI1LjY3MTg3NSAxOC43NDIxODggMjQuNSAxOC43NDIxODggQyAyMy4zMjgxMjUgMTguNzQyMTg4IDIyLjM3ODkwNiAxNy43OTI5NjkgMjIuMzc4OTA2IDE2LjYyMTA5NCBDIDIyLjM3ODkwNiAxNS40NDkyMTkgMjMuMzI4MTI1IDE0LjUgMjQuNSAxNC41IFogTSAyNC41IDE0LjUgIgogICAgICAgc3R5bGU9ImZpbGwtcnVsZTpub256ZXJvO2ZpbGw6cmdiKDAlLDAlLDAlKTtmaWxsLW9wYWNpdHk6MTtzdHJva2Utd2lkdGg6MTtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2U6cmdiKDAlLDAlLDAlKTtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1taXRlcmxpbWl0OjQ7IiAvPgogIDwvZz4KPC9zdmc+Cg==</file>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+    </question>
+    <!-- question: 9173  -->
+    <question type="description">
+        <name>
+            <text>7.1.2.1 Definitions</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Definitions
+        <br/>
+    </span>
+    <span class="multilang" lang="no">
+        Definisjoner
+        <br/>
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        An array of numbers, rectangular in shape, is called a
+        <b>
+            matrix
+        </b>
+        .  The first matrix below has \(3\) rows and \(2\) columns and is said to be a '\(3\) by \(2\)' matrix (written \(3\times 2\)). The second matrix is a '\(2\) by \(4\)' matrix (written \(2\times 4\)).
+    </span>
+    <span class="multilang" lang="no">
+        En rekke tall, i rektangulær form, kalles en
+        <b>
+            matrise
+        </b>
+        . Den første matrisen nedenfor har \(3\) rader og \(2\) kolonner og sies å være en '\(3\) ganger \(2\)' matrise (skrevet \(3 \times 2 \)). Den andre matrisen er en '\(2 \) ganger \(4 \)' matrise (skrevet \(2 \times 4 \)).
+    </span>
+</p>
+<p>
+    \[\left[\begin{array}{rr}1&amp;4\\ -2&amp;3\\ 2&amp;1\end{array}\right]\ \qquad\qquad\left[\begin{array}{cccc}1&amp;2&amp;3&amp;4\\ 5&amp;6&amp;7&amp;9\end{array}\right]\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The general \(3\times 3\) matrix can be written
+    </span>
+    <span class="multilang" lang="no">
+        Den generelle \(3 \times 3 \) matrisen kan skrives som
+    </span>
+</p>
+<p>
+    \[A=\left[\begin{array}{lll}a_{11}&amp;a_{12}&amp;a_{13}\\ a_{21}&amp;a_{22}&amp;a_{23}\\a_{31}&amp;a_{32}&amp;a_{33}\end{array}\right]\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        where \(a_{ij}\) denotes the element in row \(i\), column \(j\).
+    </span>
+    <span class="multilang" lang="no">
+        der \(a_{ij}\) betegner elementet i rad \(i\), kolonne \(j\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        For example in the matrix:
+    </span>
+    <span class="multilang" lang="no">
+        For eksempel matrisen:
+    </span>
+</p>
+<p>
+    \[A=\left[\begin{array}{lll}\hfill 0&amp;\hfill -1&amp;\hfill -3\\ \hfill0&amp;\hfill 6&amp;\hfill -12\\ \hfill 5&amp;\hfill 7&amp;\hfill 123\end{array}\right]\]
+</p>
+<p>
+    \[a_{11}= 0,\qquad a_{12}=-1,\qquad a_{13}=-3,\quad\dots \quad a_{22}=6,\quad \dots \quad a_{32}=7,\quad a_{33}=123\]
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            Nøkkelpunkt
+        </span>
+    </h4>
+    <h5 style="text-align:center;">
+        <span class="multilang" lang="en">
+            The General Matrix
+        </span>
+        <span class="multilang" lang="no">
+            Den generelle matrisen
+        </span>
+    </h5>
+    <p style="text-align: left;">
+    </p>
+    <p style="">
+        <span class="multilang" lang="en">
+            A general \(m\times n\) matrix \(A\)  has \(m\) rows and \(n\) columns. The entries in the matrix \(A\) are called the
+            <b>
+                elements
+            </b>
+            of \(A\). In matrix \(A\) the element in row \(i\) and column \(j\) is denoted by \(a_{ij}\).
+        </span>
+        <span class="multilang" lang="no">
+            En generell \(m \times n \) matrise \(A\) har \(m \) rader og \(n \) kolonner. I matrisen \(A\) er elementet i rad \(i \) og kolonne \(j \) betegnet med \(a_{ij} \).
+        </span>
+    </p>
+    <p>
+    </p>
+</div>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        A matrix with only one column is called a
+        <b>
+            column vector
+        </b>
+        (or
+        <b>
+            column matrix
+        </b>
+        ). For example, \(\left[\begin{array}{c}x_1\\ x_2\\ x_3\end{array}\right]\) and \(\left[\begin{array}{c}3\\ 4\\ 5\end{array}\right]\) are both \(3\times 1\) column vectors. A matrix with only one row is called a
+        <b>
+            row vector
+        </b>
+        (or
+        <b>
+            row matrix
+        </b>
+        ). For example,  \([2, -3, 8, 9]\) is a \(1\times 4\) row vector. Often the entries in a row vector are separated by commas for clarity.
+    </span>
+    <span class="multilang" lang="no">
+        En matrise med bare en kolonne kalles en
+        <b>
+            kolonnevektor
+        </b>
+        (eller
+        <b>
+            kolonnematrise
+        </b>
+        ). For eksempel er \(\left[\begin{array}{c}x_1\\ x_2\\ x_3\end{array}\right]\) og \(\left[\begin{array}{c}3\\ 4\\ 5\end{array}\right]\) begge \(3 \times 1 \) kolonnevektorer. En matrise med bare en rad kalles en
+        <b>
+            radvektor
+        </b>
+        (eller
+        <b>
+            radmatrise
+        </b>
+        ). For eksempel er \([2, -3, 8, 9] \) en \(1 \times 4 \) radvektor. Ofte skilles elementene i en radvektor med komma for oversiktlighet.
+    </span>
+</p>
+<h4>
+    <span class="multilang" lang="en">
+        Square matrices
+    </span>
+    <span class="multilang" lang="no">
+        Kvadratisk matriser
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+    </span>
+    <span class="multilang" lang="no">
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        When the number of rows is the same as the number of columns, i.e. \(m=n\), the matrix is said to be
+        <b>
+            square
+        </b>
+        and of
+        <b>
+            order
+        </b>
+        \(n\) (or \(m\)).
+    </span>
+    <span class="multilang" lang="no">
+        Når antall rader er det samme som antall kolonner, dvs. \(m = n \), sies matrisen å være
+        <b>
+            kvadratisk
+        </b>
+        og av
+        <b>
+            orden
+        </b>
+        \(n\) (eller \(m\)).
+    </span>
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        <span class="multilang" lang="en">
+            In an \(n\times n\) square matrix \(A\), the
+            <b>
+                leading diagonal
+            </b>
+            (or
+            <b>
+                principal diagonal
+            </b>
+            ) is the `north-west to south-east' collection of elements \(a_{11},a_{22},\ldots , a_{nn}.\) The sum of the elements in the leading diagonal of \(A\) is called the
+            <b>
+                trace
+            </b>
+            of the matrix, denoted by \(\text{tr}(A)\).
+        </span>
+        <span class="multilang" lang="no">
+            I en \(n\times n\) kvadratisk matrix \(A\), er
+            <b>
+                diagonalen
+            </b>
+            den `nord-vest til sør-østlige' samlingen av elementer \(a_{11},a_{22},\ldots , a_{nn}.\) Summen av elementene i diagonalen til \(A\) er kjent som
+            <b>
+                sporet
+            </b>
+            til matrisen, og betegnet som \(\text{tr}(A)\).
+        </span>
+    </li>
+</ul>
+<p>
+</p>
+<p>
+    \[A=\left[\begin{matrix} a_{11}&amp;a_{12}&amp;\dots&amp;a_{1n}\\a_{21}&amp;a_{22}&amp;\dots&amp;a_{2n}\\\vdots&amp;\vdots&amp;\vdots&amp;\vdots\\a_{n1}&amp;a_{n2}&amp;\dots&amp;a_{nn}\end{matrix}\right] \qquad\qquad \text{tr}(A)=a_{11}+a_{22}+\dots +a_{nn}\]
+</p>
+<p>
+</p>
+<p>
+</p>
+<ul>
+    <li>
+        <span class="multilang" lang="en">
+            A square matrix in which all the elements below the leading diagonal are zero is called an
+            <b>
+                upper triangular matrix
+            </b>
+            , often denoted by \(U\).
+        </span>
+        <span class="multilang" lang="no">
+            En kvadratisk matrise der alle elementene under den ledende diagonalen er null kalles en
+            <b>
+                øvre triangulert matrise
+            </b>
+            , ofte betegnet med \(U\).
+        </span>
+    </li>
+</ul>
+\[U=\left[\begin{matrix}u_{11}&amp;u_{12}&amp;\dots&amp;\dots&amp;u_{1n}\\0&amp;u_{22}&amp;\dots&amp;\dots&amp;u_{2n}\\0&amp;0&amp;\dots&amp;\vdots&amp;\vdots\\0&amp;0&amp;\dots&amp;0&amp;u_{nn}\end{matrix}\right] \qquad\qquad u_{ij}=0\quad \text{
+<span class="multilang" lang="en">
+    when
+</span>
+<span class="multilang" lang="no">
+    når
+</span>
+}\ \ i&gt;j\]
+<br/>
+<ul>
+    <li>
+        <span class="multilang" lang="en">
+            A square matrix in which all the elements above the leading diagonal are zero is called a
+            <b>
+                lower triangular matrix
+            </b>
+            , often denoted by \(L\).
+        </span>
+        <span class="multilang" lang="no">
+            En kvadratisk matrise der alle elementene over den ledende diagonalen er null kalles en
+            <b>
+                nedre triangulert matrise
+            </b>
+            , ofte betegnet som \(L\).
+        </span>
+    </li>
+    <p>
+    </p>
+</ul>
+\[L=\left[\begin{matrix}l_{11}&amp;0&amp;0&amp;\dots&amp;0\\l_{21}&amp;l_{22}&amp;0&amp;\dots&amp;0\\\vdots&amp;\vdots&amp;\dots&amp;\dots&amp;0\\l_{n1}&amp;l_{n2}&amp;\vdots&amp;\dots&amp;l_{nn}\end{matrix}\right] \qquad\qquad l_{ij}=0\quad \text{
+<span class="multilang" lang="en">
+    when
+</span>
+<span class="multilang" lang="no">
+    når
+</span>
+}\ \ i&lt;j\]
+<p>
+</p>
+<ul>
+    <li>
+        <span class="multilang" lang="en">
+            A square matrix where all the non-zero elements are along the leading diagonal is called a diagonal matrix, often denoted by \(D\).
+        </span>
+        <span class="multilang" lang="no">
+            En kvadratisk matrise der alle ikke-null-elementene er langs den ledende diagonalen kalles en diagonal matrise, ofte betegnet som \(D \).
+        </span>
+    </li>
+</ul>
+<p>
+</p>
+<p>
+    \[ D=\left[\begin{matrix}d_{11}&amp;0&amp;0&amp;\dots&amp;0\\0&amp;d_{22}&amp;0&amp;\dots&amp;0\\0&amp;0&amp;\dots&amp;\dots&amp;0\\0&amp;0&amp;0&amp;\dots&amp;d_{nn}\end{matrix}\right] \qquad\qquad d_{ij}=0\quad \text{
+    <span class="multilang" lang="en">
+        when
+    </span>
+    <span class="multilang" lang="no">
+        når
+    </span>
+    }\ \ i\ne j\]
+</p>
+<p>
+</p>
+<h4>
+    <span class="multilang" lang="en">
+        Some examples of matrices and their classification
+    </span>
+    <span class="multilang" lang="no">
+        Noen eksempler på matriser og deres klassifisering
+    </span>
+</h4>
+<p>
+    \(\qquad A=\left[\begin{array}{ccc} 1&amp;2&amp;3\\ 4&amp;5&amp;6\end{array}\right]\)
+    <span class="multilang" lang="en">
+        is \(2\times 3\).  It is not square.
+    </span>
+    <span class="multilang" lang="no">
+        er \(2\times 3\).  Den er ikke kvadratisk.
+    </span>
+</p>
+<p>
+    \(\qquad B=\left[\begin{array}{cc}1&amp;2\\ 3&amp;4\end{array}\right]\)
+    <span class="multilang" lang="en">
+        is \(2\times 2\). It is square.
+    </span>
+    <span class="multilang" lang="no">
+        er \(2\times 2\). Den er kvadratisk.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Also, \(\text{tr}(A)\) does not exist as it is not a square matrix, but \(\text{tr}(B)=1+4=5\).
+    </span>
+    <span class="multilang" lang="no">
+        \(\text{tr}(A)\) eksisterer ikke siden den ikke er kvadratisk, men \(\text{tr}(B)=1+4=5\).
+    </span>
+</p>
+<p>
+    \(\qquad C=\left[\begin{array}{rrr}1&amp;2&amp;3\\ 0&amp;-2&amp;-5\\ 0&amp;0&amp;1\end{array}\right]\)
+    <span class="multilang" lang="en">
+        and
+    </span>
+    <span class="multilang" lang="no">
+        og
+    </span>
+    \(D=\left[\begin{array}{rrr} 4&amp;0&amp;3\\ 0&amp;-2&amp;5\\ 0&amp;0&amp;1\end{array}\right]\)
+    <span class="multilang" lang="en">
+        are both \(3\times 3\), square and upper triangular.
+    </span>
+    <span class="multilang" lang="no">
+        er begge \(3\times 3\), kvadratisk og øvre triangulære.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Also, \(\text{tr}(C)=0\) and \(\text{tr}(D)=3\).
+    </span>
+    <span class="multilang" lang="no">
+        \(\text{tr}(C)=0\) og \(\text{tr}(D)=3\).
+    </span>
+</p>
+<p>
+    \(\qquad E=\left[\begin{array}{rrr}1&amp;0&amp;0\\ 2&amp;-2&amp;0\\ 3&amp;-5&amp;1\end{array}\right]\)
+    <span class="multilang" lang="en">
+        and
+    </span>
+    <span class="multilang" lang="no">
+        og
+    </span>
+    \(F=\left[\begin{array}{rrr}-1&amp;0&amp;0\\ 1&amp;4&amp;0\\ 0&amp;1&amp;1\end{array}\right]\)
+    <span class="multilang" lang="en">
+        are both \(3\times 3\), square and lower triangular.
+    </span>
+    <span class="multilang" lang="no">
+        er begge \(3\times 3\), kvadratisk og nedre triangulære.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Also, \(\text{tr}(E)=0\) and \(\text{tr}(F)=4\).
+    </span>
+    <span class="multilang" lang="no">
+        \(\text{tr}(E)=0\) og \(\text{tr}(F)=4\).
+    </span>
+</p>
+<p>
+    \(\qquad G=\left[\begin{array}{rrr}1&amp;0&amp;0\\ 0&amp;2&amp;0\\ 0&amp;0&amp;-3\end{array}\right]\)
+    <span class="multilang" lang="en">
+        and
+    </span>
+    <span class="multilang" lang="no">
+        og
+    </span>
+    \(H=\left[\begin{array}{ccc}4&amp;0&amp;0\\ 0&amp;2&amp;0\\ 0&amp;0&amp;0\end{array}\right]\)
+    <span class="multilang" lang="en">
+        are both \(3\times 3\), square and diagonal.
+    </span>
+    <span class="multilang" lang="no">
+        er begge \(3\times 3\), kvadratiske og diagonale matriser.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Also, \(\text{tr}(G)=0\) and \(\text{tr}(H)=6\).
+    </span>
+    <span class="multilang" lang="no">
+        \(\text{tr}(G)=0\) og \(\text{tr}(H)=6\).
+    </span>
+</p>
+<ul>
+    <p>
+    </p>
+</ul>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+    </question>
+    <!-- question: 9176  -->
+    <question type="description">
+        <name>
+            <text>7.1.2.4 Equality of Matrices</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Equality of matrices
+    </span>
+    <span class="multilang" lang="no">
+        Likhet av matriser
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        As we noted earlier, the terms in a matrix are called the
+        <b>
+            elements
+        </b>
+        or
+        <b>
+            entries
+        </b>
+        of the matrix.
+    </span>
+    <span class="multilang" lang="no">
+        Som vi bemerket tidligere, kalles leddene i en matrise
+        <b>
+            elementer
+        </b>
+        eller
+        <b>
+            innføringer
+        </b>
+        av matrisen.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \[\text{The elements of the matrix}\quad A=\left[\begin{array}{ll}\hfill1&amp;\hfill 2\\ \hfill -1 &amp;\hfill -4\end{array}\right]\quad \text{are}\quad1,2,-1,-4.\]
+    </span>
+    <span class="multilang" lang="no">
+        \[\text{Elementene i matrisen}\quad A=\left[\begin{array}{ll}\hfill1&amp;\hfill 2\\ \hfill -1 &amp;\hfill -4\end{array}\right]\quad \text{er}\quad1,2,-1,-4.\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We say two matrices \(A\), \(B\) are
+        <b>
+            equal
+        </b>
+        to each other if and only if \(A\) and \(B\) have the same number of rows and the same number of columns and if each element of \(A\) is equal to the corresponding element of \(B\). When this is the case we write \(A=B\). For example if the following two matrices are equal:
+    </span>
+    <span class="multilang" lang="no">
+        Vi sier at to matriser \(A\), \(B \) er
+        <b>
+            lik
+        </b>
+        hverandre hvis og bare hvis \(A \) og \(B \) har samme antall rader og samme antall kolonner, og hvis hvert element av \(A \) er lik det tilsvarende elementet til \(B\). Når dette er tilfelle, skriver vi \(A=B \). For eksempel hvis følgende matriser er like:
+    </span>
+</p>
+<p>
+    \[A=\left[\begin{array}{ll}\hfill 1&amp;\hfill \alpha \\ \hfill -1&amp;\hfill -\beta\end{array}\right]\qquad B=\left[\begin{array}{ll}\hfill 1&amp;\hfill 2\\ \hfill -1&amp;\hfill -4\end{array}\right]\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        then we can conclude that \(\alpha=2\) and \(\beta =4\).
+    </span>
+    <span class="multilang" lang="no">
+        kan vi konkludere med at \(\alpha = 2 \) og \(\beta = 4 \).
+    </span>
+</p>
+<h4>
+    <span class="multilang" lang="en">
+        The unit matrix
+    </span>
+    <span class="multilang" lang="no">
+        Enhetsmatrisen
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        The
+        <b>
+            unit matrix
+        </b>
+        or the
+        <b>
+            identity matrix
+        </b>
+        , denoted by \(I_n\) (or, often, simply \(I\)), is the diagonal matrix of order \(n\) in which all diagonal elements are \(1\). Hence, for example, \(I_2=\left[\begin{array}{cc}1&amp;0\\ 0&amp;1\end{array}\right]\) and \(I_3=\left[\begin{array}{ccc}1&amp;0&amp;0\\ 0&amp;1&amp;0\\ 0&amp;0&amp;1\end{array}\right]\).
+    </span>
+    <span class="multilang" lang="no">
+        <b>
+            Enhetsmatrisen
+        </b>
+        eller
+        <b>
+            Identitetsmatrisen
+        </b>
+        , betegnet som \(I_n \) (eller ofte, ganske enkelt \(I \)), er den diagonale matrisen av orden \(n \) der alle diagonale elementer er \(1 \). Derforfo er for eksempel \(I_2=\left[\begin{array}{cc}1&amp;0\\ 0&amp;1\end{array}\right]\) og \(I_3=\left[\begin{array}{ccc}1&amp;0&amp;0\\ 0&amp;1&amp;0\\ 0&amp;0&amp;1\end{array}\right]\).
+    </span>
+</p>
+<h4>
+    <span class="multilang" lang="en">
+        The zero matrix
+    </span>
+    <span class="multilang" lang="no">
+        Nullmatrisen
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        The
+        <b>
+            zero matrix
+        </b>
+        or
+        <b>
+            null matrix
+        </b>
+        is the matrix all of whose elements are zero. There is a zero matrix for every size. For example the \(2\times 3\) and \(2\times 2\) cases are:
+    </span>
+    <span class="multilang" lang="no">
+        <b>
+            Nullmatrisen
+        </b>
+        er matrisen der alle elementene er null. Det er en nullmatrise for alle størrelser. For eksempel er nullmatrisen for tilfellene \(2\times 3\) og \(2\times 2\):
+    </span>
+</p>
+<p>
+    \[\left[\begin{array}{ccc}0&amp;0&amp;0\\ 0&amp;0&amp;0\end{array}\right],\ \left[\begin{array}{cc}0&amp;0\\ 0&amp;0\end{array}\right].\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Zero matrices, of whatever size, are denoted by \({\underline 0}\) with the size often inferred from the context.
+    </span>
+    <span class="multilang" lang="no">
+        Nullmatriser, uansett størrelse, betegnes av \({\underline 0}\) med størrelsen ofte utledet fra konteksten.
+    </span>
+</p>
+<h4>
+    <span class="multilang" lang="en">
+        The transpose of a matrix
+    </span>
+    <span class="multilang" lang="no">
+        Transponering av en matrise
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        The
+        <b>
+            transpose
+        </b>
+        of a matrix \(A\) is a matrix where the rows of \(A\) become the columns of the new matrix and the columns of \(A\) become its rows. For example
+    </span>
+    <span class="multilang" lang="no">
+        Den
+        <b>
+            transponerte
+        </b>
+        til en matrise \(S \) er en matrise der radene til \(A \) blir kolonnene til den nye matrisen og kolonnene til \(A\) blir dens rader. For eksempel er den transponerte til
+    </span>
+</p>
+<p>
+    \[ A=\left[\begin{array}{ccc}1&amp;2&amp;3\\ 4&amp;5&amp;6\end{array}\right]\ \ \text{
+    <span class="multilang" lang="en">
+        becomes
+    </span>
+    <span class="multilang" lang="no">
+        lik
+    </span>
+    }\ \left[\begin{array}{cc}1&amp;4\\ 2&amp;5\\ 3&amp;6\end{array}\right]\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The resulting matrix is called the
+        <b>
+            transposed matrix
+        </b>
+        of \(A\) and denoted \(A^T\). In the previous example it is clear that \(A^T\) is not equal to \(A\) since the matrices are of different sizes. If \(A\) is square \(n\times n\) then \(A^T\) will also be \(n\times n\).
+    </span>
+    <span class="multilang" lang="no">
+        Den resulterende matrisen kalles den
+        <b>
+            transponerte matrisen
+        </b>
+        av \(A \) og betegnet som \(A^T \). I det forrige eksemplet er det klart at \(A^T \) ikke er lik \(A \) siden matrisene er av forskjellige størrelser. Hvis \(A \) er en kvadratisk \(n \times n \), vil \(A^T \) også være \(n \times n \).
+    </span>
+</p>
+<p>
+</p>
+<p>
+    <br/>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Find the transpose of the matrix \(B=\left[\begin{array}{ccc}1&amp;2&amp;3\\ 4&amp;5&amp;6\\ 7&amp;8&amp;9\end{array}\right].\)
+    </span>
+    <span class="multilang" lang="no">
+        Finn den transponerte til matrisen \(B=\left[\begin{array}{ccc}1&amp;2&amp;3\\ 4&amp;5&amp;6\\ 7&amp;8&amp;9\end{array}\right].\)
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        Løsning
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Interchanging rows with columns we find \[\qquad B^T=\left[\begin{array}{ccc}1&amp;4&amp;7\\ 2&amp;5&amp;8\\ 3&amp;6&amp;9\end{array}\right].\]
+    </span>
+    <span class="multilang" lang="no">
+        Ved utveksling av rader med kolonner finner vi \[\qquad B^T=\left[\begin{array}{ccc}1&amp;4&amp;7\\ 2&amp;5&amp;8\\ 3&amp;6&amp;9\end{array}\right].\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Both matrices are \(3\times 3\) but \(B\) and \(B^T\) are clearly different.
+    </span>
+    <span class="multilang" lang="no">
+        Begge matrisene er \(3 \times 3 \) men \(B \) og \(B^T \) er helt klart forskjellige.
+    </span>
+</p>
+<hr/>
+<p>
+    <span class="multilang" lang="en">
+        When the transpose of a matrix is equal to the original matrix i.e. \(A^T=A\), then we say that the matrix \(A\) is
+        <b>
+            symmetric
+        </b>
+        . (This is because it has symmetry about the leading diagonal.)
+    </span>
+    <span class="multilang" lang="no">
+        Når transponering av en matrise er lik den opprinnelige matrisen, dvs. \(A^T = A \), sier vi at matrisen \(A \) er
+        <b>
+            symmetrisk
+        </b>
+        . (Dette er fordi den har symmetri om den ledende diagonalen.)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In the previous example \(B\) is
+        <b>
+            not
+        </b>
+        symmetric.
+    </span>
+    <span class="multilang" lang="no">
+        I forrige eksempel er \(B\)
+        <b>
+            ikke
+        </b>
+        symmetrisk.
+    </span>
+</p>
+<p>
+</p>
+<br/>
+<p>
+</p>
+<p>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Show that the matrix \(C=\left[\begin{array}{rrr}1&amp;-2&amp;3\\ -2&amp;4&amp;-5\\ 3&amp;-5&amp;6\end{array}\right]\) is symmetric.
+    </span>
+    <span class="multilang" lang="no">
+        Vis at matrisen \(C=\left[\begin{array}{rrr}1&amp;-2&amp;3\\ -2&amp;4&amp;-5\\ 3&amp;-5&amp;6\end{array}\right]\) er symmetrisk.
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        Løsning
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Taking the transpose of \(C\):
+    </span>
+    <span class="multilang" lang="no">
+        Transponerer \(C\):
+    </span>
+</p>
+<p>
+    \[C^T=\left[\begin{array}{rrr}1&amp;-2&amp;3\\ -2&amp;4&amp;-5\\ 3&amp;-5&amp;6\end{array}\right].\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Clearly \(C^T=C\) and so \(C\) is a symmetric matrix. Notice how the leading diagonal acts as a "mirror'' with the entries on the diagonal remaining fixed in place and, for example, \(c_{12}=-2\) and \(c_{21}=-2\) reflecting through the diagonal.
+    </span>
+    <span class="multilang" lang="no">
+        Såklart er \(C^T = C \) så \(C\) er en symmetrisk matrise. Legg merke til hvordan den ledende diagonalen fungerer som et "speil" så elementene på diagonalen blir festet på plass og for eksempel \(c_ {12} =-2 \) og \(c_ {21} =-2 \) reflekterer gjennom diagonalen.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In general \(c_{ij}=c_{ji}\) for a symmetric matrix.
+    </span>
+    <span class="multilang" lang="no">
+        Generelter er \(c_{ij} = c_{ji} \) for en symmetrisk matrise.
+    </span>
+</p>
+<p>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+    </question>
+    <!-- question: 9177  -->
+    <question type="description">
+        <name>
+            <text>7.1.3.1 Addition and Subtraction of Matrices</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Addition and subtraction of matrices
+    </span>
+    <span class="multilang" lang="no">
+        Addisjon og subtraksjon av matriser
+    </span>
+</h3>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Under what circumstances can we add two matrices i.e. define \(A+B\) for given matrices \(A\),\(B\)?
+    </span>
+    <span class="multilang" lang="no">
+        Under hvilke omstendigheter kan vi legge til to matriser, dvs. definere \(A+B \) for gitte matriser \(A \), \(B \)?
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Consider
+    </span>
+    <span class="multilang" lang="no">
+        Vurder
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \[A=\left[\begin{array}{cc}1&amp;2\\ 3&amp;4\end{array}\right]\qquad\text{and}\qquad B=\left[\begin{array}{rrr}5&amp;6&amp;9\\ 7&amp;8&amp;10\end{array}\right].\]
+    </span>
+    <span class="multilang" lang="no">
+        \[A=\left[\begin{array}{cc}1&amp;2\\ 3&amp;4\end{array}\right]\qquad\text{og}\qquad B=\left[\begin{array}{rrr}5&amp;6&amp;9\\ 7&amp;8&amp;10\end{array}\right].\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        There is no sensible way to define \(A+B\) in this case since \(A\) and \(B\) are different sizes. However, if we consider matrices of the same size then addition can be defined in a very natural way.
+    </span>
+    <span class="multilang" lang="no">
+        Det er ingen fornuftig måte å definere \(A+B \) i dette tilfellet siden \(A \) og \(B \) er forskjellige størrelser. Hvis vi likevel vurderer matriser av samme størrelse, kan addisjon defineres på en veldig naturlig måte.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Consider \(A=\left[\begin{array}{cc}1&amp;2\\ 3&amp;4\end{array}\right]\) and \(B=\left[\begin{array}{cc}5&amp;6\\ 7&amp;8\end{array}\right]\). The 'natural' way to add \(A\) and \(B\) is to add corresponding elements together:
+    </span>
+    <span class="multilang" lang="no">
+        Vurder \(A=\left[\begin{array}{cc}1&amp;2\\ 3&amp;4\end{array}\right]\) og \(B=\left[\begin{array}{cc}5&amp;6\\ 7&amp;8\end{array}\right]\). Den 'naturlige' måten å legge sammen \(A\) og \(B \) er å legge sammen tilsvarende elementer:
+    </span>
+</p>
+<p>
+    \[A+B=\left[\begin{array}{cc}1+{ 5}&amp;2+{ 6}\\3+{ 7}&amp;4+{ 8}\end{array}\right]=\left[\begin{array}{rr}6&amp;8\\10&amp;12\end{array}\right].\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In general if \(A\) and \(B\) are both  \(m\times n\) matrices, with elements \(a_{ij}\) and \(b_{ij}\) respectively, then their sum is a matrix \(C\), also \(m\times n\), such that the elements of \(C\) are
+    </span>
+    <span class="multilang" lang="no">
+        Generelt hvis \(A \) og \(B \) begge er \(m \times n \) matriser, med elementer \(a_{ij}\) og \(b_{ij}\) henholdsvis er summen dereser en matrise \(C \), også \(m \times n \), slik at elementene i \(C \) er
+    </span>
+</p>
+<p>
+    \[c_{ij}=a_{ij}+b_{ij}\qquad i=1,2,\dots ,m\quad j=1,2,\dots ,n.\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In the above example
+    </span>
+    <span class="multilang" lang="no">
+        I eksemplet ovenfor
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \[c_{11}=a_{11}+b_{11}= 1+5=6\qquad c_{21}=a_{21}+b_{21}=3+7=10\quad \text{and so on.}\]
+    </span>
+    <span class="multilang" lang="no">
+        \[c_{11}=a_{11}+b_{11}= 1+5=6\qquad c_{21}=a_{21}+b_{21}=3+7=10\quad \text{osv.}\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Subtraction of matrices follows along similar lines:
+    </span>
+    <span class="multilang" lang="no">
+        Subtraksjon av matriser følger på samme måte:
+    </span>
+</p>
+<p>
+    \[D=A-B=\left[\begin{array}{cc}1-{ 5}&amp;2-{ 6}\\3-{ 7}&amp;4-{ 8}\end{array}\right]=\left[\begin{array}{rr}-4&amp;-4\\-4&amp;-4\end{array}\right].\]
+</p>
+<p>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+    </question>
+    <!-- question: 9178  -->
+    <question type="description">
+        <name>
+            <text>7.1.4.1 Multiplication of a matrix by a number</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Multiplication of a matrix by a number
+    </span>
+    <span class="multilang" lang="no">
+        Multiplikasjon av en matrise med et tall
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        There is also a natural way of defining the product of a matrix with a number. Using the matrix \(A\) above, we note that
+    </span>
+    <span class="multilang" lang="no">
+        Det er også en naturlig måte å definere produktet av en matrise med et tall. Ved hjelp av matrisen \(A \) ovenfor, merker vi at
+    </span>
+</p>
+<p>
+    \[ A+A=\left[\begin{array}{cc}1&amp;2\\3&amp;4\end{array}\right]+\left[\begin{array}{cc}1&amp;2\\3&amp;4\end{array}\right]=\left[\begin{array}{cc}2&amp;4\\6&amp;8\end{array}\right].\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        What we see is that \(2A\) (which is the shorthand notation for \(A+A\)) is obtained by multiplying
+        <i>
+            every
+        </i>
+        element of \(A\) by \(2\).
+    </span>
+    <span class="multilang" lang="no">
+        Det vi ser er at \(2A \) (som er korthåndsnotasjonen for \(A+A\)) bestemmes ved å multiplisere
+        <i>
+            hvert
+        </i>
+        element av \(A \) med \(2 \).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In general if \(A\) is an \(m\times n\) matrix with typical element \(a_{ij}\) then the product of a number \(k\) with \(A\) is written \(kA\) and has the corresponding elements \(ka_{ij}\).
+    </span>
+    <span class="multilang" lang="no">
+        Generelt, hvis \(A \) er en \(m \times n \) matrise med typisk element \(a_{ij} \) så er produktet av et tall \(k \) med \(A \) skrevet som \(kA \) og har de tilsvarende elementene \(ka_{ij} \).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Hence, again using the matrix \(A\) above,
+    </span>
+    <span class="multilang" lang="no">
+        Derfor, igjen ved å bruke matrisen \(A \) ovenfor,
+    </span>
+</p>
+<p>
+    \[7A=7\left[\begin{array}{cc}1&amp;2\\3&amp;4\end{array}\right]=\left[\begin{array}{rr}7&amp;14\\ 21&amp;28\end{array}\right].\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Similarly:
+    </span>
+    <span class="multilang" lang="no">
+        På samme måte er:
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \[ -3A=\left[\begin{array}{rr}-3&amp;-6\\ -9&amp;-12\end{array}\right].\]
+    </span>
+</p>
+<p>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+    </question>
+    <!-- question: 9179  -->
+    <question type="description">
+        <name>
+            <text>7.1.5.1 Some simple matrix properties</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Some simple matrix properties
+    </span>
+    <span class="multilang" lang="no">
+        Noen enkle matriseegenskaper
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        Using the definition of matrix addition described above we can easily verify the following properties of matrix addition:
+    </span>
+    <span class="multilang" lang="no">
+        Ved å bruke definisjonen av matrise addisjon beskrevet tidligere, kan vi enkelt bekrefte følgende egenskaper ved matriksaddisjon:
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            Nøkkelpunkt
+        </span>
+    </h4>
+    <h5 style="text-align:center;">
+        <span class="multilang" lang="en">
+            Basic Properties of Matrices
+        </span>
+        <span class="multilang" lang="no">
+            Grunnleggende egenskaper hos matriser
+        </span>
+    </h5>
+    <p style="text-align: center; ">
+        <span class="multilang" lang="en">
+            Let \(A,B\) and \(C\) be matrices of the same size and let \(k\) be a scalar (i.e., \(k\) is a real number).
+        </span>
+        <span class="multilang" lang="no">
+            La \(A,B\) og \(C \) være matriser av samme størrelse og la \(k \) være en skalar (dvs. \(k \) er et reelt tall).
+        </span>
+    </p>
+    <p style="text-align: center; ">
+        <span class="multilang" lang="en">
+            Matrix addition is
+            <b>
+                commutative
+            </b>
+            : \(A+B=B+A\)
+        </span>
+        <span class="multilang" lang="no">
+            Matrise addisjon er
+            <b>
+                kommutativ
+            </b>
+            : \(A+B = B+A \)
+        </span>
+    </p>
+    <p style="text-align: center; ">
+        <span class="multilang" lang="en">
+            Matrix addition is
+            <b>
+                associative
+            </b>
+            : \(A+(B+C)=(A+B)+C\)
+        </span>
+        <span class="multilang" lang="no">
+            Matrise addisjon er
+            <b>
+                assosiativt
+            </b>
+            : \(A+(B+C) = (A+B)+C\)
+        </span>
+    </p>
+    <p style="text-align: center; ">
+        <span class="multilang" lang="en">
+            The
+            <b>
+                distributive law
+            </b>
+            holds: \(k(A+B)=k\, A+k\, B\)
+        </span>
+        <span class="multilang" lang="no">
+            Den
+            <b>
+                Distributive lov
+            </b>
+            holder: \(k(A+B) = k \, A+k \, B \)
+        </span>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+</div>
+<p>
+    <span class="multilang" lang="en">
+        These Key Point results follow from the fact that \(a_{ij}+b_{ij}=b_{ij}+a_{ij}\) etc.
+    </span>
+    <span class="multilang" lang="no">
+        Disse nøkkelpunktresultatene følger av det faktum at \(a_{ij}+b_{ij}=b_{ij}+a_{ij}\) osv.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We can also show that the transpose of a matrix satisfies the following simple properties:
+    </span>
+    <span class="multilang" lang="no">
+        Vi kan også vise at transponering av en matrise tilfredsstiller følgende enkle egenskaper:
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            Nøkkelpunkt
+        </span>
+    </h4>
+    <h5 style="text-align:center;">
+        <span class="multilang" lang="en">
+            Properties of Transposed Matrices
+        </span>
+        <span class="multilang" lang="no">
+            Egenskaper til transponerte matriser
+        </span>
+    </h5>
+    <p>
+        <span class="multilang" lang="en">
+            Let \(A\) and \(B\) be matrices of the same size.
+        </span>
+        <span class="multilang" lang="no">
+            La \(A\) og \(B\) være matriser av samme størrelse.
+        </span>
+    </p>
+    <p>
+    </p>
+    <p style="">
+        \[(A+B)^T=A^T+B^T\]
+    </p>
+    <p style="">
+        \[(A-B)^T=A^T-B^T\]
+    </p>
+    <p style="">
+        \[(A^T)^T=A\]
+    </p>
+    <p>
+    </p>
+</div>
+<p>
+    <br/>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Show that \((A^T)^T=A\) for the matrix
+    </span>
+    <span class="multilang" lang="no">
+        Vis at \((A^T)^T =A \) for matrisen
+    </span>
+</p>
+<p>
+    \(A=\left[\begin{array}{ccc}1&amp;2&amp;3\\ 4&amp;5&amp;6\end{array}\right]\).
+</p>
+<p>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        Løsning
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    \(A^T=\left[\begin{array}{cc}1&amp;4\\ 2&amp;5\\ 3&amp;6\end{array}\right]\)
+    <span class="multilang" lang="en">
+        so that
+    </span>
+    <span class="multilang" lang="no">
+        så
+    </span>
+    <br/>
+</p>
+<p>
+</p>
+<p>
+    \((A^T)^T=\left[\begin{array}{ccc}1&amp;2&amp;3\\ 4&amp;5&amp;6\end{array}\right]=A\).
+</p>
+<p>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+    </question>
+    <!-- question: 9175  -->
+    <question type="gapselect">
+        <name>
+            <text>7.1.2.3 Classify the following matrices</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        Øving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Classify the following \(3\times 3\) matrices. If multiple options are valid then choose the most restrictive option.
+    </span>
+    <span class="multilang" lang="no">
+        Klasifiser følgende \(3\times 3\) matriser. Hvis flere alternativer er gyldige, velg det mest restriktive alternativet.
+    </span>
+    <br/>
+</p>
+<p>
+    \(A=\left[\begin{array}{lll}\hfill 1&amp;\hfill 1&amp;\hfill 2\\ \hfill 1&amp;\hfill 1&amp;\hfill 1\\ \hfill 0&amp;\hfill 1&amp;\hfill 3 \end{array}\right]\), \(B=\left[\begin{array}{lll}\hfill 1&amp;\hfill 0&amp;\hfill 0\\ \hfill 1&amp;\hfill 1&amp;\hfill 0\\ \hfill 0&amp;\hfill 1&amp;\hfill 3 \end{array}\right]\), \(C=\left[\begin{array}{lll}\hfill 1&amp;\hfill 2&amp;\hfill 1\\ \hfill 0&amp;\hfill 1&amp;\hfill 4\\ \hfill 0&amp;\hfill 0&amp;\hfill 1 \end{array}\right]\), \(D=\left[\begin{array}{lll}\hfill 1&amp;\hfill 0&amp;\hfill 0\\ \hfill 0&amp;\hfill 3&amp;\hfill 0\\ \hfill 0&amp;\hfill 0&amp;\hfill 2 \end{array}\right]\)
+</p>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Matrix \(A\) is:
+    </span>
+    <span class="multilang" lang="no">
+        Matrise \(A\) er:
+    </span>
+    [[1]]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Matrix \(B\) is:
+    </span>
+    <span class="multilang" lang="no">
+        Matrise \(B\) er:
+    </span>
+    [[3]]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Matrix \(C\) is:
+    </span>
+    <span class="multilang" lang="no">
+        Matrise \(C\) er:
+    </span>
+    [[4]]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Matrix \(D\) is:
+    </span>
+    <span class="multilang" lang="no">
+        Matrise \(D\) er:
+    </span>
+    [[2]]
+    <br/>
+</p>
+<br/>
+<p>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+        <shuffleanswers>0</shuffleanswers>
+        <correctfeedback format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </incorrectfeedback>
+        <shownumcorrect></shownumcorrect>
+        <selectoption>
+            <text>A Square Matrix</text>
+            <group>1</group>
+        </selectoption>
+        <selectoption>
+            <text>Diagonal</text>
+            <group>1</group>
+        </selectoption>
+        <selectoption>
+            <text>Lower triangular</text>
+            <group>1</group>
+        </selectoption>
+        <selectoption>
+            <text>Upper triangular</text>
+            <group>1</group>
+        </selectoption>
+        <selectoption>
+            <text>None of the above apply</text>
+            <group>1</group>
+        </selectoption>
+    </question>
+    <!-- question: 9174  -->
+    <question type="stack">
+        <name>
+            <text>7.1.2.2 Classifying matrices</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        Øving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Give the size of the following matrices:
+    </span>
+    <span class="multilang" lang="no">
+        Gi størrelsen på følgende matriser:
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            \({@mat1@}\) [[input:ans1]] [[validation:ans1]] \(\times\) [[input:ans2]] [[validation:ans2]]
+        </p>
+        <p>
+            [[feedback:prt1]] [[feedback:prt2]]
+        </p>
+    </li>
+    <li>
+        <p>
+            \({@mat2@}\) [[input:ans3]] [[validation:ans3]] \(\times\) [[input:ans4]] [[validation:ans4]]
+        </p>
+        <p>
+            [[feedback:prt3]] [[feedback:prt4]]
+        </p>
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        Find the trace of the following matrices:
+    </span>
+    <span class="multilang" lang="no">
+        Finn sporene til følgende matriser:
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            \(A={@mat3@}\), \(\text{tr}(A) = \) [[input:ans5]][[validation:ans5]][[feedback:prt5]]
+        </p>
+    </li>
+    <li>
+        <p>
+            \(B={@mat4@}\), \(\text{tr}(B) = \) [[input:ans6]][[validation:ans6]][[feedback:prt6]]
+        </p>
+    </li>
+</ol>
+]]></text>
+            <file name="workbook7bl11.svg" path="/" encoding="base64">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiCiAgIHhtbG5zOnNvZGlwb2RpPSJodHRwOi8vc29kaXBvZGkuc291cmNlZm9yZ2UubmV0L0RURC9zb2RpcG9kaS0wLmR0ZCIKICAgeG1sbnM6aW5rc2NhcGU9Imh0dHA6Ly93d3cuaW5rc2NhcGUub3JnL25hbWVzcGFjZXMvaW5rc2NhcGUiCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMCAoNDAzNWE0ZmI0OSwgMjAyMC0wNS0wMSkiCiAgIHNvZGlwb2RpOmRvY25hbWU9Indvcmtib29rN2JsMTEuc3ZnIgogICBpZD0ic3ZnMTg3IgogICB2ZXJzaW9uPSIxLjIiCiAgIHZpZXdCb3g9IjAgMCAxMDYgNTQiCiAgIGhlaWdodD0iNTRwdCIKICAgd2lkdGg9IjEwNnB0Ij4KICA8bWV0YWRhdGEKICAgICBpZD0ibWV0YWRhdGExOTEiPgogICAgPHJkZjpSREY+CiAgICAgIDxjYzpXb3JrCiAgICAgICAgIHJkZjphYm91dD0iIj4KICAgICAgICA8ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD4KICAgICAgICA8ZGM6dHlwZQogICAgICAgICAgIHJkZjpyZXNvdXJjZT0iaHR0cDovL3B1cmwub3JnL2RjL2RjbWl0eXBlL1N0aWxsSW1hZ2UiIC8+CiAgICAgICAgPGRjOnRpdGxlPjwvZGM6dGl0bGU+CiAgICAgIDwvY2M6V29yaz4KICAgIDwvcmRmOlJERj4KICA8L21ldGFkYXRhPgogIDxzb2RpcG9kaTpuYW1lZHZpZXcKICAgICBpbmtzY2FwZTpjdXJyZW50LWxheWVyPSJzdmcxODciCiAgICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMCIKICAgICBpbmtzY2FwZTp3aW5kb3cteT0iMCIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iMCIKICAgICBpbmtzY2FwZTpjeT0iMzYiCiAgICAgaW5rc2NhcGU6Y3g9IjcwLjY2NjY2NyIKICAgICBpbmtzY2FwZTp6b29tPSI5Ljk1NTE4ODciCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIGlkPSJuYW1lZHZpZXcxODkiCiAgICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iNDgwIgogICAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iNzgyIgogICAgIGlua3NjYXBlOnBhZ2VzaGFkb3c9IjIiCiAgICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAiCiAgICAgZ3VpZGV0b2xlcmFuY2U9IjEwIgogICAgIGdyaWR0b2xlcmFuY2U9IjEwIgogICAgIG9iamVjdHRvbGVyYW5jZT0iMTAiCiAgICAgYm9yZGVyb3BhY2l0eT0iMSIKICAgICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgICBwYWdlY29sb3I9IiNmZmZmZmYiIC8+CiAgPGRlZnMKICAgICBpZD0iZGVmczE1OCI+CiAgICA8ZwogICAgICAgaWQ9ImcxNTYiPgogICAgICA8c3ltYm9sCiAgICAgICAgIGlkPSJnbHlwaDAtMCIKICAgICAgICAgb3ZlcmZsb3c9InZpc2libGUiPgogICAgICAgIDxwYXRoCiAgICAgICAgICAgaWQ9InBhdGgxNDEiCiAgICAgICAgICAgZD0iIgogICAgICAgICAgIHN0eWxlPSJzdHJva2U6bm9uZTsiIC8+CiAgICAgIDwvc3ltYm9sPgogICAgICA8c3ltYm9sCiAgICAgICAgIGlkPSJnbHlwaDAtMSIKICAgICAgICAgb3ZlcmZsb3c9InZpc2libGUiPgogICAgICAgIDxwYXRoCiAgICAgICAgICAgaWQ9InBhdGgxNDQiCiAgICAgICAgICAgZD0iTSAzLjU5Mzc1IC0xLjQyMTg3NSBDIDMuNTMxMjUgLTEuMjE4NzUgMy41MzEyNSAtMS4xODc1IDMuMzc1IC0wLjk2ODc1IEMgMy4xMDkzNzUgLTAuNjQwNjI1IDIuNTc4MTI1IC0wLjEyNSAyLjAxNTYyNSAtMC4xMjUgQyAxLjUzMTI1IC0wLjEyNSAxLjI1IC0wLjU2MjUgMS4yNSAtMS4yNjU2MjUgQyAxLjI1IC0xLjkyMTg3NSAxLjYyNSAtMy4yNjU2MjUgMS44NTkzNzUgLTMuNzY1NjI1IEMgMi4yNjU2MjUgLTQuNjA5Mzc1IDIuODI4MTI1IC01LjAzMTI1IDMuMjgxMjUgLTUuMDMxMjUgQyA0LjA3ODEyNSAtNS4wMzEyNSA0LjIzNDM3NSAtNC4wNDY4NzUgNC4yMzQzNzUgLTMuOTUzMTI1IEMgNC4yMzQzNzUgLTMuOTM3NSA0LjIwMzEyNSAtMy43OTY4NzUgNC4xODc1IC0zLjc2NTYyNSBaIE0gNC4zNTkzNzUgLTQuNDg0Mzc1IEMgNC4yMzQzNzUgLTQuNzk2ODc1IDMuOTA2MjUgLTUuMjY1NjI1IDMuMjgxMjUgLTUuMjY1NjI1IEMgMS45Mzc1IC01LjI2NTYyNSAwLjQ4NDM3NSAtMy41MzEyNSAwLjQ4NDM3NSAtMS43NSBDIDAuNDg0Mzc1IC0wLjU3ODEyNSAxLjE3MTg3NSAwLjEyNSAxLjk4NDM3NSAwLjEyNSBDIDIuNjQwNjI1IDAuMTI1IDMuMjAzMTI1IC0wLjM5MDYyNSAzLjUzMTI1IC0wLjc4MTI1IEMgMy42NTYyNSAtMC4wNzgxMjUgNC4yMTg3NSAwLjEyNSA0LjU3ODEyNSAwLjEyNSBDIDQuOTM3NSAwLjEyNSA1LjIxODc1IC0wLjA5Mzc1IDUuNDM3NSAtMC41MzEyNSBDIDUuNjI1IC0wLjkzNzUgNS43OTY4NzUgLTEuNjU2MjUgNS43OTY4NzUgLTEuNzAzMTI1IEMgNS43OTY4NzUgLTEuNzY1NjI1IDUuNzUgLTEuODEyNSA1LjY3MTg3NSAtMS44MTI1IEMgNS41NjI1IC0xLjgxMjUgNS41NjI1IC0xLjc1IDUuNTE1NjI1IC0xLjU3ODEyNSBDIDUuMzI4MTI1IC0wLjg3NSA1LjEwOTM3NSAtMC4xMjUgNC42MDkzNzUgLTAuMTI1IEMgNC4yNjU2MjUgLTAuMTI1IDQuMjUgLTAuNDM3NSA0LjI1IC0wLjY3MTg3NSBDIDQuMjUgLTAuOTM3NSA0LjI4MTI1IC0xLjA3ODEyNSA0LjM5MDYyNSAtMS41NDY4NzUgQyA0LjQ2ODc1IC0xLjg0Mzc1IDQuNTMxMjUgLTIuMTA5Mzc1IDQuNjI1IC0yLjQ1MzEyNSBDIDUuMDYyNSAtNC4yNSA1LjE3MTg3NSAtNC42NzE4NzUgNS4xNzE4NzUgLTQuNzUgQyA1LjE3MTg3NSAtNC45MDYyNSA1LjA0Njg3NSAtNS4wNDY4NzUgNC44NTkzNzUgLTUuMDQ2ODc1IEMgNC40ODQzNzUgLTUuMDQ2ODc1IDQuMzkwNjI1IC00LjYyNSA0LjM1OTM3NSAtNC40ODQzNzUgWiBNIDQuMzU5Mzc1IC00LjQ4NDM3NSAiCiAgICAgICAgICAgc3R5bGU9InN0cm9rZTpub25lOyIgLz4KICAgICAgPC9zeW1ib2w+CiAgICAgIDxzeW1ib2wKICAgICAgICAgaWQ9ImdseXBoMC0yIgogICAgICAgICBvdmVyZmxvdz0idmlzaWJsZSI+CiAgICAgICAgPHBhdGgKICAgICAgICAgICBpZD0icGF0aDE0NyIKICAgICAgICAgICBkPSJNIDIuNzY1NjI1IC04IEMgMi43NjU2MjUgLTguMDQ2ODc1IDIuNzk2ODc1IC04LjEwOTM3NSAyLjc5Njg3NSAtOC4xNzE4NzUgQyAyLjc5Njg3NSAtOC4yOTY4NzUgMi42NzE4NzUgLTguMjk2ODc1IDIuNjU2MjUgLTguMjk2ODc1IEMgMi42NDA2MjUgLTguMjk2ODc1IDIuMjE4NzUgLTguMjY1NjI1IDIgLTguMjM0Mzc1IEMgMS43OTY4NzUgLTguMjE4NzUgMS42MDkzNzUgLTguMjAzMTI1IDEuNDA2MjUgLTguMTg3NSBDIDEuMTA5Mzc1IC04LjE1NjI1IDEuMDMxMjUgLTguMTU2MjUgMS4wMzEyNSAtNy45Mzc1IEMgMS4wMzEyNSAtNy44MTI1IDEuMTQwNjI1IC03LjgxMjUgMS4yNjU2MjUgLTcuODEyNSBDIDEuODc1IC03LjgxMjUgMS44NzUgLTcuNzAzMTI1IDEuODc1IC03LjU5Mzc1IEMgMS44NzUgLTcuNSAxLjc4MTI1IC03LjE1NjI1IDEuNzM0Mzc1IC02LjkzNzUgTCAxLjQ1MzEyNSAtNS43OTY4NzUgQyAxLjMyODEyNSAtNS4zMTI1IDAuNjQwNjI1IC0yLjYwOTM3NSAwLjU5Mzc1IC0yLjM5MDYyNSBDIDAuNTMxMjUgLTIuMDkzNzUgMC41MzEyNSAtMS44OTA2MjUgMC41MzEyNSAtMS43MzQzNzUgQyAwLjUzMTI1IC0wLjUxNTYyNSAxLjIxODc1IDAuMTI1IDIgMC4xMjUgQyAzLjM3NSAwLjEyNSA0LjgxMjUgLTEuNjU2MjUgNC44MTI1IC0zLjM5MDYyNSBDIDQuODEyNSAtNC41IDQuMjAzMTI1IC01LjI2NTYyNSAzLjI5Njg3NSAtNS4yNjU2MjUgQyAyLjY3MTg3NSAtNS4yNjU2MjUgMi4xMDkzNzUgLTQuNzUgMS44OTA2MjUgLTQuNTE1NjI1IFogTSAyLjAxNTYyNSAtMC4xMjUgQyAxLjYyNSAtMC4xMjUgMS4yMDMxMjUgLTAuNDA2MjUgMS4yMDMxMjUgLTEuMzQzNzUgQyAxLjIwMzEyNSAtMS43MzQzNzUgMS4yNSAtMS45NTMxMjUgMS40NTMxMjUgLTIuNzk2ODc1IEMgMS41IC0yLjk1MzEyNSAxLjY4NzUgLTMuNzE4NzUgMS43MzQzNzUgLTMuODc1IEMgMS43NSAtMy45Njg3NSAyLjQ2ODc1IC01LjAzMTI1IDMuMjgxMjUgLTUuMDMxMjUgQyAzLjc5Njg3NSAtNS4wMzEyNSA0LjA0Njg3NSAtNC41IDQuMDQ2ODc1IC0zLjg5MDYyNSBDIDQuMDQ2ODc1IC0zLjMxMjUgMy43MDMxMjUgLTEuOTUzMTI1IDMuNDA2MjUgLTEuMzQzNzUgQyAzLjEwOTM3NSAtMC42ODc1IDIuNTYyNSAtMC4xMjUgMi4wMTU2MjUgLTAuMTI1IFogTSAyLjAxNTYyNSAtMC4xMjUgIgogICAgICAgICAgIHN0eWxlPSJzdHJva2U6bm9uZTsiIC8+CiAgICAgIDwvc3ltYm9sPgogICAgICA8c3ltYm9sCiAgICAgICAgIGlkPSJnbHlwaDAtMyIKICAgICAgICAgb3ZlcmZsb3c9InZpc2libGUiPgogICAgICAgIDxwYXRoCiAgICAgICAgICAgaWQ9InBhdGgxNTAiCiAgICAgICAgICAgZD0iTSA0LjY3MTg3NSAtNC41IEMgNC40NTMxMjUgLTQuNSA0LjM0Mzc1IC00LjUgNC4xNzE4NzUgLTQuMzQzNzUgQyA0LjA5Mzc1IC00LjI5Njg3NSAzLjk2ODc1IC00LjEwOTM3NSAzLjk2ODc1IC0zLjkyMTg3NSBDIDMuOTY4NzUgLTMuNjg3NSA0LjE0MDYyNSAtMy41MzEyNSA0LjM3NSAtMy41MzEyNSBDIDQuNjU2MjUgLTMuNTMxMjUgNC45ODQzNzUgLTMuNzgxMjUgNC45ODQzNzUgLTQuMjUgQyA0Ljk4NDM3NSAtNC44MjgxMjUgNC40Mzc1IC01LjI2NTYyNSAzLjYwOTM3NSAtNS4yNjU2MjUgQyAyLjA0Njg3NSAtNS4yNjU2MjUgMC40ODQzNzUgLTMuNTYyNSAwLjQ4NDM3NSAtMS44NTkzNzUgQyAwLjQ4NDM3NSAtMC44MjgxMjUgMS4xMjUgMC4xMjUgMi4zNDM3NSAwLjEyNSBDIDMuOTY4NzUgMC4xMjUgNSAtMS4xNDA2MjUgNSAtMS4yOTY4NzUgQyA1IC0xLjM3NSA0LjkyMTg3NSAtMS40Mzc1IDQuODc1IC0xLjQzNzUgQyA0Ljg0Mzc1IC0xLjQzNzUgNC44MjgxMjUgLTEuNDIxODc1IDQuNzE4NzUgLTEuMzEyNSBDIDMuOTUzMTI1IC0wLjI5Njg3NSAyLjgyODEyNSAtMC4xMjUgMi4zNTkzNzUgLTAuMTI1IEMgMS41NDY4NzUgLTAuMTI1IDEuMjgxMjUgLTAuODQzNzUgMS4yODEyNSAtMS40Mzc1IEMgMS4yODEyNSAtMS44NTkzNzUgMS40ODQzNzUgLTMuMDE1NjI1IDEuOTA2MjUgLTMuODI4MTI1IEMgMi4yMTg3NSAtNC4zOTA2MjUgMi44NzUgLTUuMDMxMjUgMy42MjUgLTUuMDMxMjUgQyAzLjc4MTI1IC01LjAzMTI1IDQuNDM3NSAtNS4wMTU2MjUgNC42NzE4NzUgLTQuNSBaIE0gNC42NzE4NzUgLTQuNSAiCiAgICAgICAgICAgc3R5bGU9InN0cm9rZTpub25lOyIgLz4KICAgICAgPC9zeW1ib2w+CiAgICAgIDxzeW1ib2wKICAgICAgICAgaWQ9ImdseXBoMC00IgogICAgICAgICBvdmVyZmxvdz0idmlzaWJsZSI+CiAgICAgICAgPHBhdGgKICAgICAgICAgICBpZD0icGF0aDE1MyIKICAgICAgICAgICBkPSJNIDYuMDE1NjI1IC04IEMgNi4wMzEyNSAtOC4wNDY4NzUgNi4wNDY4NzUgLTguMTA5Mzc1IDYuMDQ2ODc1IC04LjE3MTg3NSBDIDYuMDQ2ODc1IC04LjI5Njg3NSA1LjkyMTg3NSAtOC4yOTY4NzUgNS45MDYyNSAtOC4yOTY4NzUgQyA1Ljg5MDYyNSAtOC4yOTY4NzUgNS4zMTI1IC04LjI1IDUuMjUgLTguMjM0Mzc1IEMgNS4wNDY4NzUgLTguMjE4NzUgNC44NTkzNzUgLTguMjAzMTI1IDQuNjU2MjUgLTguMTg3NSBDIDQuMzQzNzUgLTguMTU2MjUgNC4yNjU2MjUgLTguMTU2MjUgNC4yNjU2MjUgLTcuOTM3NSBDIDQuMjY1NjI1IC03LjgxMjUgNC4zNTkzNzUgLTcuODEyNSA0LjUzMTI1IC03LjgxMjUgQyA1LjEwOTM3NSAtNy44MTI1IDUuMTI1IC03LjcwMzEyNSA1LjEyNSAtNy41OTM3NSBDIDUuMTI1IC03LjUxNTYyNSA1LjEwOTM3NSAtNy40MjE4NzUgNS4wOTM3NSAtNy4zOTA2MjUgTCA0LjM1OTM3NSAtNC40ODQzNzUgQyA0LjIzNDM3NSAtNC43OTY4NzUgMy45MDYyNSAtNS4yNjU2MjUgMy4yODEyNSAtNS4yNjU2MjUgQyAxLjkzNzUgLTUuMjY1NjI1IDAuNDg0Mzc1IC0zLjUzMTI1IDAuNDg0Mzc1IC0xLjc1IEMgMC40ODQzNzUgLTAuNTc4MTI1IDEuMTcxODc1IDAuMTI1IDEuOTg0Mzc1IDAuMTI1IEMgMi42NDA2MjUgMC4xMjUgMy4yMDMxMjUgLTAuMzkwNjI1IDMuNTMxMjUgLTAuNzgxMjUgQyAzLjY1NjI1IC0wLjA3ODEyNSA0LjIxODc1IDAuMTI1IDQuNTc4MTI1IDAuMTI1IEMgNC45Mzc1IDAuMTI1IDUuMjE4NzUgLTAuMDkzNzUgNS40Mzc1IC0wLjUzMTI1IEMgNS42MjUgLTAuOTM3NSA1Ljc5Njg3NSAtMS42NTYyNSA1Ljc5Njg3NSAtMS43MDMxMjUgQyA1Ljc5Njg3NSAtMS43NjU2MjUgNS43NSAtMS44MTI1IDUuNjcxODc1IC0xLjgxMjUgQyA1LjU2MjUgLTEuODEyNSA1LjU2MjUgLTEuNzUgNS41MTU2MjUgLTEuNTc4MTI1IEMgNS4zMjgxMjUgLTAuODc1IDUuMTA5Mzc1IC0wLjEyNSA0LjYwOTM3NSAtMC4xMjUgQyA0LjI2NTYyNSAtMC4xMjUgNC4yNSAtMC40Mzc1IDQuMjUgLTAuNjcxODc1IEMgNC4yNSAtMC43MTg3NSA0LjI1IC0wLjk2ODc1IDQuMzI4MTI1IC0xLjI5Njg3NSBaIE0gMy41OTM3NSAtMS40MjE4NzUgQyAzLjUzMTI1IC0xLjIxODc1IDMuNTMxMjUgLTEuMTg3NSAzLjM3NSAtMC45Njg3NSBDIDMuMTA5Mzc1IC0wLjY0MDYyNSAyLjU3ODEyNSAtMC4xMjUgMi4wMTU2MjUgLTAuMTI1IEMgMS41MzEyNSAtMC4xMjUgMS4yNSAtMC41NjI1IDEuMjUgLTEuMjY1NjI1IEMgMS4yNSAtMS45MjE4NzUgMS42MjUgLTMuMjY1NjI1IDEuODU5Mzc1IC0zLjc2NTYyNSBDIDIuMjY1NjI1IC00LjYwOTM3NSAyLjgyODEyNSAtNS4wMzEyNSAzLjI4MTI1IC01LjAzMTI1IEMgNC4wNzgxMjUgLTUuMDMxMjUgNC4yMzQzNzUgLTQuMDQ2ODc1IDQuMjM0Mzc1IC0zLjk1MzEyNSBDIDQuMjM0Mzc1IC0zLjkzNzUgNC4yMDMxMjUgLTMuNzk2ODc1IDQuMTg3NSAtMy43NjU2MjUgWiBNIDMuNTkzNzUgLTEuNDIxODc1ICIKICAgICAgICAgICBzdHlsZT0ic3Ryb2tlOm5vbmU7IiAvPgogICAgICA8L3N5bWJvbD4KICAgIDwvZz4KICA8L2RlZnM+CiAgPGcKICAgICBpZD0ic3VyZmFjZTk2NjI0Ij4KICAgIDxnCiAgICAgICBpZD0iZzE2MiIKICAgICAgIHN0eWxlPSJmaWxsOnJnYigxMy43Mjk4NTglLDEyLjE1OTcyOSUsMTIuNTQ4ODI4JSk7ZmlsbC1vcGFjaXR5OjE7Ij4KICAgICAgPHVzZQogICAgICAgICBpZD0idXNlMTYwIgogICAgICAgICB5PSIxMi43Mzg3MDEiCiAgICAgICAgIHg9IjAuODE4MiIKICAgICAgICAgeGxpbms6aHJlZj0iI2dseXBoMC0xIiAvPgogICAgPC9nPgogICAgPGcKICAgICAgIGlkPSJnMTY2IgogICAgICAgc3R5bGU9ImZpbGw6cmdiKDEzLjcyOTg1OCUsMTIuMTU5NzI5JSwxMi41NDg4MjglKTtmaWxsLW9wYWNpdHk6MTsiPgogICAgICA8dXNlCiAgICAgICAgIGlkPSJ1c2UxNjQiCiAgICAgICAgIHk9IjkuNzM5MTkzIgogICAgICAgICB4PSI2Mi4xNjg4NjkiCiAgICAgICAgIHhsaW5rOmhyZWY9IiNnbHlwaDAtMiIgLz4KICAgIDwvZz4KICAgIDxnCiAgICAgICBpZD0iZzE3MCIKICAgICAgIHN0eWxlPSJmaWxsOnJnYigxMy43Mjk4NTglLDEyLjE1OTcyOSUsMTIuNTQ4ODI4JSk7ZmlsbC1vcGFjaXR5OjE7Ij4KICAgICAgPHVzZQogICAgICAgICBpZD0idXNlMTY4IgogICAgICAgICB5PSI0OC43Mzg3OTUiCiAgICAgICAgIHg9IjIxLjg1MTgyNiIKICAgICAgICAgeGxpbms6aHJlZj0iI2dseXBoMC0zIiAvPgogICAgPC9nPgogICAgPGcKICAgICAgIGlkPSJnMTc0IgogICAgICAgc3R5bGU9ImZpbGw6cmdiKDEzLjcyOTg1OCUsMTIuMTU5NzI5JSwxMi41NDg4MjglKTtmaWxsLW9wYWNpdHk6MTsiPgogICAgICA8dXNlCiAgICAgICAgIGlkPSJ1c2UxNzIiCiAgICAgICAgIHk9IjUwLjIzOTE0OCIKICAgICAgICAgeD0iOTguNTk1NzU3IgogICAgICAgICB4bGluazpocmVmPSIjZ2x5cGgwLTQiIC8+CiAgICA8L2c+CiAgICA8cGF0aAogICAgICAgaWQ9InBhdGgxNzYiCiAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwtMSwwLDU0KSIKICAgICAgIGQ9Ik0gMTEgNDUgTCA1NS41IDQ1IEwgMjQuNSAxNi41IEwgMTAzIDE2LjUgTCA1NS41IDQ1ICIKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlLXdpZHRoOjE7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlOnJnYigwJSwwJSwwJSk7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtbWl0ZXJsaW1pdDo0OyIgLz4KICAgIDxwYXRoCiAgICAgICBpZD0icGF0aDE3OCIKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLC0xLDAsNTQpIgogICAgICAgZD0iTSAxMS41IDQyLjUgQyAxMi42NzE4NzUgNDIuNSAxMy42MjEwOTQgNDMuNDQ5MjE5IDEzLjYyMTA5NCA0NC42MjEwOTQgQyAxMy42MjEwOTQgNDUuNzkyOTY5IDEyLjY3MTg3NSA0Ni43NDIxODggMTEuNSA0Ni43NDIxODggQyAxMC4zMjgxMjUgNDYuNzQyMTg4IDkuMzc4OTA2IDQ1Ljc5Mjk2OSA5LjM3ODkwNiA0NC42MjEwOTQgQyA5LjM3ODkwNiA0My40NDkyMTkgMTAuMzI4MTI1IDQyLjUgMTEuNSA0Mi41IFogTSAxMS41IDQyLjUgIgogICAgICAgc3R5bGU9ImZpbGwtcnVsZTpub256ZXJvO2ZpbGw6cmdiKDAlLDAlLDAlKTtmaWxsLW9wYWNpdHk6MTtzdHJva2Utd2lkdGg6MTtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2U6cmdiKDAlLDAlLDAlKTtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1taXRlcmxpbWl0OjQ7IiAvPgogICAgPHBhdGgKICAgICAgIGlkPSJwYXRoMTgwIgogICAgICAgdHJhbnNmb3JtPSJtYXRyaXgoMSwwLDAsLTEsMCw1NCkiCiAgICAgICBkPSJNIDU1LjUgNDIuNSBDIDU2LjY3MTg3NSA0Mi41IDU3LjYyMTA5NCA0My40NDkyMTkgNTcuNjIxMDk0IDQ0LjYyMTA5NCBDIDU3LjYyMTA5NCA0NS43OTI5NjkgNTYuNjcxODc1IDQ2Ljc0MjE4OCA1NS41IDQ2Ljc0MjE4OCBDIDU0LjMyODEyNSA0Ni43NDIxODggNTMuMzc4OTA2IDQ1Ljc5Mjk2OSA1My4zNzg5MDYgNDQuNjIxMDk0IEMgNTMuMzc4OTA2IDQzLjQ0OTIxOSA1NC4zMjgxMjUgNDIuNSA1NS41IDQyLjUgWiBNIDU1LjUgNDIuNSAiCiAgICAgICBzdHlsZT0iZmlsbC1ydWxlOm5vbnplcm87ZmlsbDpyZ2IoMCUsMCUsMCUpO2ZpbGwtb3BhY2l0eToxO3N0cm9rZS13aWR0aDoxO3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZTpyZ2IoMCUsMCUsMCUpO3N0cm9rZS1vcGFjaXR5OjE7c3Ryb2tlLW1pdGVybGltaXQ6NDsiIC8+CiAgICA8cGF0aAogICAgICAgaWQ9InBhdGgxODIiCiAgICAgICB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwtMSwwLDU0KSIKICAgICAgIGQ9Ik0gMTAzIDE0LjUgQyAxMDQuMTcxODc1IDE0LjUgMTA1LjEyMTA5NCAxNS40NDkyMTkgMTA1LjEyMTA5NCAxNi42MjEwOTQgQyAxMDUuMTIxMDk0IDE3Ljc5Mjk2OSAxMDQuMTcxODc1IDE4Ljc0MjE4OCAxMDMgMTguNzQyMTg4IEMgMTAxLjgyODEyNSAxOC43NDIxODggMTAwLjg3ODkwNiAxNy43OTI5NjkgMTAwLjg3ODkwNiAxNi42MjEwOTQgQyAxMDAuODc4OTA2IDE1LjQ0OTIxOSAxMDEuODI4MTI1IDE0LjUgMTAzIDE0LjUgWiBNIDEwMyAxNC41ICIKICAgICAgIHN0eWxlPSJmaWxsLXJ1bGU6bm9uemVybztmaWxsOnJnYigwJSwwJSwwJSk7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlLXdpZHRoOjE7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlOnJnYigwJSwwJSwwJSk7c3Ryb2tlLW9wYWNpdHk6MTtzdHJva2UtbWl0ZXJsaW1pdDo0OyIgLz4KICAgIDxwYXRoCiAgICAgICBpZD0icGF0aDE4NCIKICAgICAgIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLC0xLDAsNTQpIgogICAgICAgZD0iTSAyNC41IDE0LjUgQyAyNS42NzE4NzUgMTQuNSAyNi42MjEwOTQgMTUuNDQ5MjE5IDI2LjYyMTA5NCAxNi42MjEwOTQgQyAyNi42MjEwOTQgMTcuNzkyOTY5IDI1LjY3MTg3NSAxOC43NDIxODggMjQuNSAxOC43NDIxODggQyAyMy4zMjgxMjUgMTguNzQyMTg4IDIyLjM3ODkwNiAxNy43OTI5NjkgMjIuMzc4OTA2IDE2LjYyMTA5NCBDIDIyLjM3ODkwNiAxNS40NDkyMTkgMjMuMzI4MTI1IDE0LjUgMjQuNSAxNC41IFogTSAyNC41IDE0LjUgIgogICAgICAgc3R5bGU9ImZpbGwtcnVsZTpub256ZXJvO2ZpbGw6cmdiKDAlLDAlLDAlKTtmaWxsLW9wYWNpdHk6MTtzdHJva2Utd2lkdGg6MTtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2U6cmdiKDAlLDAlLDAlKTtzdHJva2Utb3BhY2l0eToxO3N0cm9rZS1taXRlcmxpbWl0OjQ7IiAvPgogIDwvZz4KPC9zdmc+Cg==</file>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        First, we find the size of the first two matrices.
+    </span>
+    <span class="multilang" lang="no">
+        Først finner vi størrelsen på de to første matriser.
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The matrix
+            </span>
+            <span class="multilang" lang="no">
+                Matrisen
+            </span>
+        </p>
+        \[{@mat1@}\]
+        <p>
+            <span class="multilang" lang="en">
+                has {@m1@} rows and {@n1@} columns. Therefore, it is a \({@m1@} \times {@n1@}\) matrix.
+            </span>
+            <span class="multilang" lang="no">
+                har {@m1@} rader og {@n1@} kolonner. Derfor er det en \({@m1@} \times {@n1@}\) matrise.
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The matrix
+            </span>
+            <span class="multilang" lang="no">
+                Matrisen
+            </span>
+        </p>
+        \[{@mat2@}\]
+        <p>
+            <span class="multilang" lang="en">
+                has {@m2@} rows and {@n2@} columns. Therefore, it is a \({@m2@} \times {@n2@}\) matrix.
+            </span>
+            <span class="multilang" lang="no">
+                har {@m2@} rader og {@n2@} kolonner. Derfor er det en \({@m2@} \times {@n2@}\) matrise.
+            </span>
+        </p>
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        Next, we find the trace of the given matrices. Recall that the trace of a square matrix is the sum of its diagonal entries.
+    </span>
+    <span class="multilang" lang="no">
+        Deretter finner vi sporene til de gitte matrisene. Husk at sporet av en kvadratisk matrise er summen av dens diagonale elementer.
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The matrix
+            </span>
+            <span class="multilang" lang="no">
+                Matrisen
+            </span>
+        </p>
+        \[A = {@mat3@}\]
+        <p>
+            <span class="multilang" lang="en">
+                has diagonal entries {@mat3[1][1]@} and {@mat3[2][2]@}. Therefore, its trace is \(\mathrm{tr}(A) = {@mat3[1][1]@} + {@mat3[2][2]@} = {@tamat3@}\).
+            </span>
+            <span class="multilang" lang="no">
+                har de diagonale elementene {@mat3[1][1]@} og {@mat3[2][2]@}. Derfor er sporet \(\mathrm{tr}(A) = {@mat3[1][1]@} + {@mat3[2][2]@} = {@tamat3@}\).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                Similarly, the matrix
+            </span>
+            <span class="multilang" lang="no">
+                Ligenede har matrisen
+            </span>
+        </p>
+        \[B = {@mat4@}\]
+        <p>
+            <span class="multilang" lang="en">
+                has trace \(\mathrm{tr}(B) = {@tamat4@}\).
+            </span>
+            <span class="multilang" lang="no">
+                sporet \(\mathrm{tr}(B) = {@tamat4@}\).
+            </span>
+        </p>
+    </li>
+</ol>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+        <stackversion>
+            <text>2022082900</text>
+        </stackversion>
+        <questionvariables>
+            <text>n1:2+ rand(4)
+m1:2+ rand(4)
+mat1 : rand(9+zeromatrix(m1,n1))
+n2:2+ rand(5)
+m2:2+ rand(5)
+mat2 : rand(9+zeromatrix(m2,n2))
+tamat11:m1
+tamat12:n1
+tamat21:m2
+tamat22:n2
+mat3 : rand(9+zeromatrix(2,2))
+mat4 : rand(9+zeromatrix(3,3))
+tamat3 : mat_trace(mat3)
+tamat4 : mat_trace(mat4)
+</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text></text>
+        </specificfeedback>
+        <questionnote>
+            <text>\[{@mat1@}, {@mat2@}, {@mat3@}, {@mat4@}\]</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed></variantsselectionseed>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>tamat11</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>tamat12</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>tamat21</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>algebraic</type>
+            <tans>tamat22</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans5</name>
+            <type>algebraic</type>
+            <tans>tamat3</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans6</name>
+            <type>algebraic</type>
+            <tans>tamat4</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>tamat11</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>tamat12</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>tamat21</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>tamat22</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt5</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans5</sans>
+                <tans>tamat3</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt5-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt6</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans6</sans>
+                <tans>tamat4</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt6-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt6-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>58780941</deployedseed>
+        <deployedseed>337772847</deployedseed>
+        <deployedseed>634938105</deployedseed>
+        <deployedseed>1018074995</deployedseed>
+        <deployedseed>514566470</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>tamat11</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>tamat12</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>tamat21</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>tamat22</value>
+            </testinput>
+            <testinput>
+                <name>ans5</name>
+                <value>tamat3</value>
+            </testinput>
+            <testinput>
+                <name>ans6</name>
+                <value>tamat4</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt3-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt4-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt5</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt5-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt6</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt6-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>tamat11 +1</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>tamat12+2</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>tamat21+1</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>tamat22+2</value>
+            </testinput>
+            <testinput>
+                <name>ans5</name>
+                <value>tamat3+5</value>
+            </testinput>
+            <testinput>
+                <name>ans6</name>
+                <value>tamat4+6</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt1-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt2-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt3-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt4-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt5</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt5-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt6</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt6-1-F</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    <!-- question: 9180  -->
+    <question type="stack">
+        <name>
+            <text>7.1.2.5 Symmetric Matrices</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        Øving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Find the transpose of each of the following matrices.
+    </span>
+    <span class="multilang" lang="no">
+        Finn den transponerte til følgende matriser.
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            \(A = {@mat1@}\)
+        </p>
+        <div>
+            \(A^T = \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+        </div>
+        <span class="multilang" lang="en">
+            Is \(A\) symmetric?
+        </span>
+        <span class="multilang" lang="no">
+            Er \(A\) symmetrisk?
+        </span>
+        [[input:ans4]] [[validation:ans4]][[feedback:prt4]]
+    </li>
+    <li>
+        <p>
+            \(B = {@mat2@}\)
+        </p>
+        <div>
+            \(B^T = \)[[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
+        </div>
+        <span class="multilang" lang="en">
+            Is \(B\) symmetric?
+        </span>
+        <span class="multilang" lang="no">
+            Er \(B\) symmetrisk?
+        </span>
+        [[input:ans5]] [[validation:ans5]][[feedback:prt5]]
+    </li>
+    <li>
+        <p>
+            \(C = {@mat3@}\)
+        </p>
+        <div>
+            \(C^T = \)[[input:ans3]] [[validation:ans3]] [[feedback:prt3]]
+        </div>
+        <span class="multilang" lang="en">
+            Is \(C\) symmetric?
+        </span>
+        <span class="multilang" lang="no">
+            Er \(C\) symmetrisk?
+        </span>
+        [[input:ans6]] [[validation:ans6]][[feedback:prt6]]
+    </li>
+</ol>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        In order to find the transpose of a matrix we swap the roles of rows and columns. If the resulting transpose is equal to the original matrix we say it is symmetric.
+    </span>
+    <span class="multilang" lang="no">
+        For å finne transponeringen av en matrise bytter vi rollene til rader og kolonner. Hvis den resulterende transponering er lik den opprinnelige matrisen, sier vi at den er symmetrisk.
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The transpose of the matrix
+            </span>
+            <span class="multilang" lang="no">
+                Matrisenes transponering
+            </span>
+        </p>
+        \[A = {@mat1@}\]
+        <p>
+            <span class="multilang" lang="en">
+                is given by
+            </span>
+            <span class="multilang" lang="no">
+                er gitt ved
+            </span>
+        </p>
+        \[A^T = {@ta1@}.\]
+        <p>
+            <span class="multilang" lang="en">
+                We see that \(A^T \neq A\), so \(A\) is
+                <b>
+                    not
+                </b>
+                symmetric.
+            </span>
+            <span class="multilang" lang="no">
+                Vi ser at \(A^T \neq A\), så \(A\) er
+                <b>
+                    ikke
+                </b>
+                symmetrisk.
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The transpose of the matrix
+            </span>
+            <span class="multilang" lang="no">
+                Matrisenes transponering
+            </span>
+        </p>
+        \[B = {@mat2@}\]
+        <p>
+            <span class="multilang" lang="en">
+                is given by
+            </span>
+            <span class="multilang" lang="no">
+                er gitt ved
+            </span>
+        </p>
+        \[B^T = {@ta2@}.\]
+        <p>
+            <span class="multilang" lang="en">
+                We see that \(B^T = B\), so \(B\)
+                <b>
+                    is
+                </b>
+                symmetric.
+            </span>
+            <span class="multilang" lang="no">
+                Vi ser at \(B^T=B \), så \(B \)
+                <b>
+                    er
+                </b>
+                symmetrisk.
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The transpose of the matrix
+            </span>
+            <span class="multilang" lang="no">
+                Matrisenes transponering
+            </span>
+        </p>
+        \[C = {@mat3@}\]
+        <p>
+            <span class="multilang" lang="en">
+                is given by
+            </span>
+            <span class="multilang" lang="no">
+                er gitt ved
+            </span>
+        </p>
+        \[C^T = {@ta3@}.\]
+        <p>
+            <span class="multilang" lang="en">
+                We see that \(C^T = C\), so \(C\)
+                <b>
+                    is
+                </b>
+                symmetric.
+            </span>
+            <span class="multilang" lang="no">
+                Vi ser at \(C^T=C \), så \(C\)
+                <b>
+                    er
+                </b>
+                symmetrisk.
+            </span>
+        </p>
+    </li>
+</ol>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+        <stackversion>
+            <text>2022082900</text>
+        </stackversion>
+        <questionvariables>
+            <text>n1:1+rand(5)
+n2:2+rand(5)
+mat1:matrix([n1,n1+1],[n1+2,n1+3])
+mat2:matrix([n1,n2],[n2,-n1])
+mat3:matrix([1,0],[0,1])
+ta1:transpose(mat1)
+ta2:transpose(mat2)
+ta3:transpose(mat3)</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text></text>
+        </specificfeedback>
+        <questionnote>
+            <text>\[{@mat1@},{@mat2@},{@mat3@}\]</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed></variantsselectionseed>
+        <input>
+            <name>ans1</name>
+            <type>matrix</type>
+            <tans>ta1</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>matrix</type>
+            <tans>ta2</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>matrix</type>
+            <tans>ta3</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>algebraic</type>
+            <tans>N</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint>Y/N</syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords>Yes, No</allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans5</name>
+            <type>algebraic</type>
+            <tans>Y</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint>Y/N</syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans6</name>
+            <type>algebraic</type>
+            <tans>Y</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint>Y/N</syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>ta2</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>ta3</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>N</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt5</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans5</sans>
+                <tans>Y</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt5-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt5-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt6</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans6</sans>
+                <tans>Y</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt6-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt6-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1565282349</deployedseed>
+        <deployedseed>320674553</deployedseed>
+        <deployedseed>1952669844</deployedseed>
+        <deployedseed>1431559219</deployedseed>
+        <deployedseed>1033691357</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta1</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta2</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>ta3</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>N</value>
+            </testinput>
+            <testinput>
+                <name>ans5</name>
+                <value>Y</value>
+            </testinput>
+            <testinput>
+                <name>ans6</name>
+                <value>Y</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt3-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt4-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt5</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt5-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt6</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt6-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>transpose(ta1)</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta2</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>ta3</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>Y</value>
+            </testinput>
+            <testinput>
+                <name>ans5</name>
+                <value>N</value>
+            </testinput>
+            <testinput>
+                <name>ans6</name>
+                <value>N</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt1-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt3-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt4-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt5</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt5-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt6</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt6-1-F</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    <!-- question: 9181  -->
+    <question type="stack">
+        <name>
+            <text>7.1.4.2 Addition and Subtraction of Matrices</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    Exercise
+</p>
+<span class="multilang" lang="en">
+    For the following matrices find \(A+B,\ A-B,\ B-A,\ 2A\):
+</span>
+<span class="multilang" lang="no">
+    For følgende matriser, finn \(A+B,\ A-B,\ B-A,\ 2A\):
+</span>
+<p>
+    \[A = {@mat1@} \text{
+    <span class="multilang" lang="en">
+        and
+    </span>
+    <span class="multilang" lang="no">
+        og
+    </span>
+    } B = {@mat2@}.\]
+</p>
+<ol class="HELM_parts">
+    <li>
+        <div>
+            \(A+B = \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+        </div>
+    </li>
+    <li>
+        <div>
+            \(A-B = \) [[input:ans2]] [[validation:ans2]][[feedback:prt2]]
+            <br/>
+        </div>
+    </li>
+    <li>
+        <div>
+            \(B-A = \) [[input:ans3]] [[validation:ans3]][[feedback:prt3]]
+            <br/>
+        </div>
+    </li>
+    <li>
+        <div>
+            \(2A = \)  [[input:ans4]] [[validation:ans4]][[feedback:prt4]]
+        </div>
+    </li>
+</ol>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        We are give the matrices
+    </span>
+    <span class="multilang" lang="no">
+        Vi har matrisene
+    </span>
+</p>
+\[A = {@mat1@} \quad \text{
+<span class="multilang" lang="en">
+    and
+</span>
+<span class="multilang" lang="no">
+    og
+</span>
+} \quad B = {@mat2@},\]
+<p>
+    <span class="multilang" lang="en">
+        and are asked to find the following.
+    </span>
+    <span class="multilang" lang="no">
+        og skal finne følgende.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Recall that addition, subtraction and scalar multiplication of matrices is performed element-wise.
+    </span>
+    <span class="multilang" lang="no">
+        Husk at addisjon, subtraksjon og skalær multiplikasjon av matriser utføres elementvist.
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        \[A + B = {@mat1@} + {@mat2@} = {@sumsteps@} = {@ta1@}\]
+    </li>
+    <li>
+        \[A - B = {@mat1@} - {@mat2@} = {@substeps1@} = {@ta2@}\]
+    </li>
+    <li>
+        \[B - A = {@mat2@} - {@mat1@} = {@substeps2@} = {@ta3@}\]
+    </li>
+    <li>
+        \[2A = 2 {@mat1@} = {@mulsteps@} = {@ta4@}\]
+    </li>
+</ol>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+        <stackversion>
+            <text>2022082900</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[mat1 : rand(9+zeromatrix(2,2))
+mat2 : rand(9+zeromatrix(2,2))
+ta1 : mat1+mat2
+ta2 : mat1-mat2
+ta3 : mat2-mat1
+ta4 : 2*mat1
+
+/*Needed for solution*/
+simp: false;
+sumsteps: apply(matrix, zip_with(
+  lambda([rA, rB], zip_with("+", rA, rB)), 
+args(mat1), args(mat2)));
+substeps1: apply(matrix, zip_with(
+  lambda([rA, rB], zip_with("-", rA, rB)), 
+args(mat1), args(mat2)));
+substeps2: apply(matrix, zip_with(
+  lambda([rA, rB], zip_with("-", rA, rB)), 
+args(mat2), args(mat1)));
+mulsteps: apply(matrix, maplist(
+  lambda([row], maplist(lambda([a], 2*a), row)),
+args(mat1)));]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text></text>
+        </specificfeedback>
+        <questionnote>
+            <text>\[ A = {@mat1@} \quad B= {@mat2@} \]
+\[A+B={@ta1@}, \, A-B={@ta2@}, \, B-A={@ta3@}, \, 2A ={@ta4@}\]</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed></variantsselectionseed>
+        <input>
+            <name>ans1</name>
+            <type>matrix</type>
+            <tans>ta1</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint>[a,b]</syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>matrix</type>
+            <tans>ta2</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>matrix</type>
+            <tans>ta3</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>matrix</type>
+            <tans>ta4</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>ta2</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>ta3</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>ta4</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>310379044</deployedseed>
+        <deployedseed>1476541098</deployedseed>
+        <deployedseed>294147763</deployedseed>
+        <deployedseed>1714186308</deployedseed>
+        <deployedseed>1142953933</deployedseed>
+        <deployedseed>1209442152</deployedseed>
+        <deployedseed>503808301</deployedseed>
+        <deployedseed>736515423</deployedseed>
+        <deployedseed>1303554530</deployedseed>
+        <deployedseed>817376999</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta1</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta2</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>ta3</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>ta4</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt3-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt4-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta2</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta3</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>ta1</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>ta1</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt1-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt2-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt3-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt4-1-F</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    <!-- question: 9182  -->
+    <question type="stack">
+        <name>
+            <text>7.1.5.2 Distributivity of Matrices</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        Øving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        For the matrices \(A = {@mat1@}\) and \(B = {@mat2@}\), calculate:
+    </span>
+    <span class="multilang" lang="no">
+        For matrisene \(A = {@mat1@}\) and \(B = {@mat2@}\), beregne:
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            \(3(A+B) = \) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]
+        </p>
+    </li>
+    <li>
+        <p>
+            \(3A+3B = \) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]
+        </p>
+    </li>
+    <li>
+        <p>
+            \((A+B)^T = \) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]
+        </p>
+    </li>
+    <li>
+        <p>
+            \(A^T+B^T = \) [[input:ans4]] [[validation:ans4]] [[feedback:prt4]]
+        </p>
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        What do you notice about your answers to (a) and (b)? And (c) and (d)?
+    </span>
+    <span class="multilang" lang="no">
+        Hva merker du om svarene dine på (a) og (b)? Og (c) og (d)?
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        We are given the matrices \(A = {@mat1@}\) and \(B = {@mat2@}\), and are asked to find the following:
+    </span>
+    <span class="multilang" lang="no">
+        Har har matrisene \(A = {@mat1@}\) og \(B = {@mat2@}\), og blir bedt om å finne følgende:
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        \[\begin{aligned}
+                                3(A + B) &amp;= 3\cdot \left({@mat1@} + {@mat2@}\right) \\
+                                &amp;= 3 \cdot {@stepsApB@} \\
+                                &amp;= 3 \cdot {@ApB@} \\
+                                &amp;= {@stepsApBt3@} \\
+                                &amp;= {@ta1@}
+                                \end{aligned}\]
+    </li>
+    <li>
+        \[\begin{aligned}
+                                3A + 3B &amp;= 3 \cdot {@mat1@} + 3 \cdot {@mat2@} \\
+                                &amp;= {@stepsAt3@} + {@stepsBt3@} \\
+                                &amp;= {@At3@} + {@Bt3@} \\
+                                &amp;= {@stepsAt3pBt3@} \\
+                                &amp;= {@ta1@}
+                                \end{aligned}\]
+    </li>
+    <li>
+        \[\begin{aligned}
+                                (A + B)^T &amp;= \left({@mat1@} + {@mat2@}\right)^T \\
+                                &amp;= {@stepsApB@}^T \\
+                                &amp;= {@ApB@}^T \\
+                                &amp;= {@ta2@}
+                                \end{aligned}\]
+    </li>
+    <li>
+        \[\begin{aligned}
+                                A^T + B^T &amp;= {@mat1@}^T + {@mat2@}^T \\
+                                &amp;= {@AT@} + {@BT@} \\
+                                &amp;= {@stepsATpBT@} \\
+                                &amp;= {@ta2@}
+                                \end{aligned}\]
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        As you probably have noticed, the answers to (a) and (b) are equal, as are the answers to (c) and (d). This is no coincidence, since \(3(A + B) = 3A + 3B\) and \((A+B)^T = A^T + B^T\) by distributivity of scalar multiplication and transpose over addition.
+    </span>
+    <span class="multilang" lang="no">
+        Som du sikkert har lagt merke til, er svarene på (a) og (b) like, og det er svarene på (c) og (d) osgå. Dette er ikke tilfeldig, siden \(3(A + B) = 3A + 3B \) og \((A + B)^T = A^T + B^T \) ved distributivitet av skalar multiplikasjon og transponering over addisjon.
+    </span>
+</p>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+        <stackversion>
+            <text>2022082900</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[mat1 : rand(9+zeromatrix(2,2))
+mat2 : rand(9+zeromatrix(2,2))
+ta1 : 3*(mat1+mat2)
+ta2 : transpose((mat1 + mat2))
+
+/* Needed for solution */
+ApB: mat1 + mat2;
+At3: 3 * mat1;
+Bt3: 3 * mat2;
+AT: transpose(mat1);
+BT: transpose(mat2);
+
+simp: false;
+stepsApB: apply(matrix, zip_with(
+    lambda([r1, r2], zip_with("+", r1, r2)),
+args(mat1), args(mat2)));
+stepsApBt3: apply(matrix, map(
+    lambda([r], map(lambda([a], 3 * a), r)),
+args(ApB)));
+
+stepsAt3: apply(matrix, map(
+    lambda([r], map(lambda([a], 3 * a), r)),
+args(mat1)));
+stepsBt3: apply(matrix, map(
+    lambda([r], map(lambda([a], 3 * a), r)),
+args(mat2)));
+stepsAt3pBt3: apply(matrix, zip_with(
+    lambda([r1, r2], zip_with("+", r1, r2)),
+args(At3), args(Bt3)));
+
+stepsATpBT: apply(matrix, zip_with(
+    lambda([r1, r2], zip_with("+", r1, r2)),
+args(AT), args(BT)));]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text></text>
+        </specificfeedback>
+        <questionnote>
+            <text>\[A={@mat1@}, \quad B={@mat2@}\]</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed></variantsselectionseed>
+        <input>
+            <name>ans1</name>
+            <type>matrix</type>
+            <tans>ta1</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>matrix</type>
+            <tans>ta1</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>matrix</type>
+            <tans>ta2</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>matrix</type>
+            <tans>ta2</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>ta1</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>ta2</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt4</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans4</sans>
+                <tans>ta2</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt4-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt4-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>194518379</deployedseed>
+        <deployedseed>748674746</deployedseed>
+        <deployedseed>1977464143</deployedseed>
+        <deployedseed>440866575</deployedseed>
+        <deployedseed>75390253</deployedseed>
+        <deployedseed>1919781833</deployedseed>
+        <deployedseed>1156070541</deployedseed>
+        <deployedseed>548117111</deployedseed>
+        <deployedseed>1163756810</deployedseed>
+        <deployedseed>703459467</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta1</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta1</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>ta2</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>ta2</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt3-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt4-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta2</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta2</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>ta1</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>ta1</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt1-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt2-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt3</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt3-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt4</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt4-1-F</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    <!-- question: 9183  -->
+    <question type="stack">
+        <name>
+            <text>7.1.5.3 Exercises</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        Øving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Find the coefficient matrix \(A\) of the system:
+    </span>
+    <span class="multilang" lang="no">
+        Finn koeffisientmatrisen \(A \) til systemet:
+    </span>
+    <br/>
+</p>
+\[\begin{alignedat}{4}
+{@a1@}x_1 &amp; {}+{} &amp; {@a2@}x_2 &amp; {}+{} &amp; {@a3@}x_3 &amp;={@c1@} \\
+{@a4@}x_1 &amp; {}+{} &amp; {@a5@}x_2 &amp; {}+{} &amp; {@a6@}x_3 &amp;={@c2@} \\
+{@a7@}x_1 &amp; {}+{} &amp; {@a8@}x_2 &amp; {}+{} &amp; {@a9@}x_3 &amp;=&amp;{@c3@}
+\end{alignedat}\]
+<p>
+</p>
+<div>
+    \(A = \) [[input:ans1]][[validation:ans1]] [[feedback:prt1]]
+</div>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        If \(B={@mat2@}\) determine \((3A^T-B)^T\).
+    </span>
+    <span class="multilang" lang="no">
+        Hvis \(B = {@mat2@} \) bestemme \((3A^T-B)^T \).
+    </span>
+    <br/>
+</p>
+<p>
+</p>
+<p>
+</p>
+<div>
+    \((3A^T-B)^T = \) [[input:ans2]][[validation:ans2]] [[feedback:prt2]]
+    <br/>
+</div>
+<p>
+</p>
+<p>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        We are asked to write down the coefficient matrix of the system:
+    </span>
+    <span class="multilang" lang="no">
+        Vi blir bedt om å skrive ned koeffisientmatrisen til systemet:
+    </span>
+</p>
+\[\begin{alignedat}{4}
+{@a1@}x_1 &amp; {}+{} &amp; {@a2@}x_2 &amp; {}+{} &amp; {@a3@}x_3 &amp;={@c1@} \\
+{@a4@}x_1 &amp; {}+{} &amp; {@a5@}x_2 &amp; {}+{} &amp; {@a6@}x_3 &amp;={@c2@} \\
+{@a7@}x_1 &amp; {}+{} &amp; {@a8@}x_2 &amp; {}+{} &amp; {@a9@}x_3 &amp;=&amp;{@c3@}
+\end{alignedat}\]
+<p>
+    <span class="multilang" lang="en">
+        In order to do this, we can just read off the coefficients of \(x_1\) into the first column, those of \(x_2\) into the second column and those of \(x_3\) into the third column.
+    </span>
+    <span class="multilang" lang="no">
+        For å gjøre dette, kan vi bare sette koeffisientene til \(x_1 \) inn i den første kolonnen, de av \(x_2 \) inn i den andre kolonnen og de for \(x_3 \) inn i den tredje kolonnen.
+    </span>
+</p>
+\[A = {@matA@}\]
+<p>
+    <span class="multilang" lang="en">
+        Next, we are given the matrix
+    </span>
+    <span class="multilang" lang="no">
+        Videre får vi matrisen
+    </span>
+</p>
+\[B = {@mat2@}\]
+<p>
+    <span class="multilang" lang="en">
+        and are asked to compute \((3A^T - B)^T\).
+    </span>
+    <span class="multilang" lang="no">
+        og blir bedt om å beregne \((3A^T - B)^T\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We can do this directly, but we can simplify the calculation by using the distributivity property of the transpose.
+    </span>
+    <span class="multilang" lang="no">
+        Vi kan gjøre dette direkte, men vi kan forenkle beregningen ved å bruke distributivitet egenskapen til transponering.
+    </span>
+</p>
+\[(3A^T - B)^T = 3(A^T)^T - B^T = 3A - B^T\]
+<p>
+    <span class="multilang" lang="en">
+        We compute the latter expression, which is simpler.
+    </span>
+    <span class="multilang" lang="no">
+        Vi beregner det sistnevnte uttrykket, som er enklere.
+    </span>
+</p>
+\[\begin{aligned}
+3A - B^T &amp;= 3 \cdot {@matA@} - {@mat2@}^T \\
+&amp;= {@stepsAt3@} - {@BT@} \\
+&amp;= {@At3@} - {@BT@} \\
+&amp;= {@ta2@}
+\end{aligned}\]
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+        <stackversion>
+            <text>2022082900</text>
+        </stackversion>
+        <questionvariables>
+            <text>a1:1+rand(10);
+a2:1+rand(10);
+a3:1+rand(10);
+a4:1+rand(10);
+a5:1+rand(10);
+a6:1+rand(10);
+a7:1+rand(10);
+a8:1+rand(10);
+a9:1+rand(10);
+c1:1+rand(10);
+c2:1+rand(10);
+c3:1+rand(10);
+matA: matrix([a1,a2,a3],[a4,a5,a6],[a7,a8,a9]);
+mat2:rand(10+zeromatrix(3,3));
+ta1:matA;
+ta2 : 3*(matA)-transpose(mat2);
+
+/* Needed for solution */
+BT: transpose(mat2);
+At3: 3 * matA;
+
+simp: false;
+stepsAt3: apply(matrix, map(
+    lambda([r], map(lambda([a], 3 * a), r)),
+args(matA)));</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text></text>
+        </specificfeedback>
+        <questionnote>
+            <text>\[A= {@matA@}, \, (3A^T-B)^T ={@mat2@}\]</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed></variantsselectionseed>
+        <input>
+            <name>ans1</name>
+            <type>matrix</type>
+            <tans>ta1</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>matrix</type>
+            <tans>ta2</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>pta2: 3 * ans1 - transpose(mat2);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>ta2</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>pta2</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<p>
+    Your calculation is correct, but you started with the wrong \(A\).
+</p>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1721960807</deployedseed>
+        <deployedseed>1145072119</deployedseed>
+        <deployedseed>1505504020</deployedseed>
+        <deployedseed>1540501439</deployedseed>
+        <deployedseed>733530558</deployedseed>
+        <deployedseed>618858871</deployedseed>
+        <deployedseed>996305075</deployedseed>
+        <deployedseed>709505802</deployedseed>
+        <deployedseed>1670257662</deployedseed>
+        <deployedseed>74114573</deployedseed>
+        <deployedseed>1300804010</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta1</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta2</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta2</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta1</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt1-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt2-2-F</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>3</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta2</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ev(3*ta2 - transpose(mat2),simp)</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt1-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-2-T</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    <!-- question: 9184  -->
+    <question type="stack">
+        <name>
+            <text>7.1.5.4 Exercises b</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        Øving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        For the matrices \(A = {@mat1@}\) and \(B = {@mat2@}\), calculate:
+    </span>
+    <span class="multilang" lang="no">
+        For matrisene \(A = {@mat1@}\) og \(B = {@mat2@}\), kalkuler:
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <div>
+            \(3(A^T-B) = \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+        </div>
+    </li>
+    <li>
+        <p>
+        </p>
+        <div>
+            \((3A-3B^T)^T = \) [[input:ans2]] [[validation:ans2]][[feedback:prt2]]
+        </div>
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        What do you notice about your answers to (a) and (b)?
+    </span>
+    <span class="multilang" lang="no">
+        Hva merker du om svarene dine på (a) og (b)?
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        We are given the matrices \(A = {@mat1@}\) and \(B = {@mat2@}\), and are asked to compute the following.
+    </span>
+    <span class="multilang" lang="no">
+        Vi har matrisene \(A = {@mat1@}\) og \(B = {@mat2@}\), og blir bedt om å beregne følgende.
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        \[\begin{aligned}
+                                3(A^T - B) &amp;= 3\cdot \left({@mat1@}^T - {@mat2@}\right) \\
+                                &amp;= 3 \cdot \left({@transpose(mat1)@} - {@mat2@}\right) \\
+                                &amp;= 3 \cdot {@transpose(mat1) - mat2@} \\
+                                &amp;= {@ta@}
+                                \end{aligned}\]
+    </li>
+    <li>
+        \[\begin{aligned}
+                                (3A - B^T)^T &amp;= \left(3 \cdot {@mat1@} - 3 \cdot {@mat2@}^T\right)^T \\
+                                &amp;= \left(3 \cdot {@mat1@} - 3 \cdot {@transpose(mat2)@}\right)^T \\
+                                &amp;= \left({@3 * mat1@} - {@3 * transpose(mat2)@}\right)^T \\
+                                &amp;= \left({@3 * mat1 - 3 * transpose(mat2)@}\right)^T \\
+                                &amp;= {@ta@}
+                                \end{aligned}\]
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        Notice how both part (a) and (b) gave the same answer. This is because
+    </span>
+    <span class="multilang" lang="no">
+        Legg merke til hvordan både (a) og (b) ga samme svar. Dette er fordi
+    </span>
+</p>
+\[3(A^T - B) = 3A^T - 3B = \left((3A^T - 3B)^T\right)^T = (3A - B^T)^T,\]
+<p>
+    <span class="multilang" lang="en">
+        by the distributivity properties.
+    </span>
+    <span class="multilang" lang="no">
+        ved den distrive lov.
+    </span>
+</p>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber></idnumber>
+        <stackversion>
+            <text>2022082900</text>
+        </stackversion>
+        <questionvariables>
+            <text>mat1 : rand(9+zeromatrix(2,3));
+mat2 : rand(9+zeromatrix(3,2));
+matT: transpose(mat1);
+ta : 3*(matT- mat2);</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text></text>
+        </specificfeedback>
+        <questionnote>
+            <text>\[ A = {@mat1@}, \quad B = {@mat2@}\]
+\[3(A^T-B) = (3A-3B^T)^T = {@ta@}\]</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed></variantsselectionseed>
+        <input>
+            <name>ans1</name>
+            <type>matrix</type>
+            <tans>ta</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>matrix</type>
+            <tans>ta</tans>
+            <boxsize>5</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords></forbidwords>
+            <allowwords></allowwords>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options></options>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>ta</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>ta</tans>
+                <testoptions></testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty></truepenalty>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty></falsepenalty>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1350559907</deployedseed>
+        <deployedseed>256930533</deployedseed>
+        <deployedseed>1595776376</deployedseed>
+        <deployedseed>919233439</deployedseed>
+        <deployedseed>1658702322</deployedseed>
+        <deployedseed>1996212666</deployedseed>
+        <deployedseed>747781518</deployedseed>
+        <deployedseed>1983139137</deployedseed>
+        <deployedseed>1825501156</deployedseed>
+        <deployedseed>1975086400</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ta</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ta</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt2-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>ev(2*ta,simp)</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>ev(2*ta,simp)</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt1-1-F</expectedanswernote>
+            </expected>
+            <expected>
+                <name>prt2</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt2-1-F</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+</quiz>

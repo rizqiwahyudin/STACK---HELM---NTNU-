@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Oppgave 5</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+</p>
+<p>
+</p>
+<p>
+    Norges utslipp av \(SO_2\) m&#229;lt i tusen tonn per &#229;r, utviklet seg i perioden 1980-1999 i godt samsvar med modellen:
+</p>
+<p>
+    \(S(x)={@exp@}\)
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    \(a)\) Hva var \(SO_2\)-utslippet i \({@a3@}\)? Oppgi svaret i tusen tonn.
+</p>
+<p>
+    [[input:ans1]] [[validation:ans1]]
+</p>
+<p>
+    <span style="font-size: 0.9375rem;">
+        <br/>
+    </span>
+</p>
+<p>
+    <span style="font-size: 0.9375rem;">
+        \(c)\) Regn ut det tiln&#230;rmede samlede utslippet i perioden ved &#229; regne ut et integral.
+    </span>
+    <br/>
+</p>
+<p>
+    [[input:ans3]] [[validation:ans3]]
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    /*\(b)\) I hvilket &#229;r var utslippet ca. \({@ta2@}\)*/
+</p>
+<p>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020061000</text>
+        </stackversion>
+        <questionvariables>
+            <text>a1:rand_with_step(60,190,10);
+a2:rand_with_step(0.102,0.190,0.02);
+a2:significantfigures(a2,3);
+a3:1990+rand(8);
+aar:a3-1980;
+exp:a1*e^(-a2*x);
+
+ta1:subst(x=aar,exp);
+ta2:solve(exp=67.6,x)
+ta3:int(exp,x,0,20);
+ta3:significantfigures(ta3,5);
+
+</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text><![CDATA[
+[[feedback:prt1]]
+<br/>
+[[feedback:prt3]]
+]]></text>
+        </specificfeedback>
+        <questionnote>
+            <text>\({@exp@}\).   Utslipp i \({@a3@}={@ta1@}\).      Samlet utslipp: \({@ta3@}\)</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>ta1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>ta3</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions>0.26</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>NumAbsolute</answertest>
+                <sans>ans3</sans>
+                <tans>ta3</tans>
+                <testoptions>5</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    Pr&#248;v &#229; integrere med nedre grense=0 og &#248;vre grense=20
+</p>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1385562473</deployedseed>
+        <deployedseed>236526378</deployedseed>
+        <deployedseed>2052048230</deployedseed>
+        <deployedseed>575560668</deployedseed>
+        <deployedseed>414403709</deployedseed>
+        <deployedseed>771142604</deployedseed>
+        <deployedseed>1092202886</deployedseed>
+        <deployedseed>655195324</deployedseed>
+        <deployedseed>756855256</deployedseed>
+        <deployedseed>981772225</deployedseed>
+        <deployedseed>1813828920</deployedseed>
+        <deployedseed>405059783</deployedseed>
+        <deployedseed>1180003095</deployedseed>
+        <deployedseed>1372188607</deployedseed>
+        <deployedseed>1049759340</deployedseed>
+        <deployedseed>2139623536</deployedseed>
+        <deployedseed>396541198</deployedseed>
+        <deployedseed>1620821837</deployedseed>
+        <deployedseed>257161686</deployedseed>
+        <deployedseed>724849488</deployedseed>
+        <deployedseed>2059713122</deployedseed>
+        <deployedseed>804310434</deployedseed>
+        <deployedseed>866608718</deployedseed>
+        <deployedseed>10369899</deployedseed>
+        <deployedseed>1729681852</deployedseed>
+        <deployedseed>1326167155</deployedseed>
+        <deployedseed>452287553</deployedseed>
+        <deployedseed>495301482</deployedseed>
+        <deployedseed>1276534943</deployedseed>
+    </question>
+    
+
+</quiz>

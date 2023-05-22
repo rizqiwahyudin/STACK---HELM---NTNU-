@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>8.1.1.5 Exercise: Cramer's rule for solving simultaneous equations</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise 1 (paper exercise)
+        <br/>
+    </span>
+    <span class="multilang" lang="no">
+        Oppgave 1 (papir&#248;velse)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Use Cramer's rule to determine any and all solutions to the equations
+    </span>
+    <span class="multilang" lang="no">
+        Bruk Cramers regel for &#229; finne alle l&#248;sninger p&#229; likningene.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \[\text{(a)}\ \ \ \ \begin{array}{rrrrr}2x-3y&amp;=&amp;6\\ 4x-6y&amp;=&amp;12\end{array}
+                                \qquad\ \ \ \text{(b)}\ \ \begin{array}{rrrrr}2x-3y&amp;=&amp;6\\
+                                4x-6y&amp;=&amp;10\end{array}\]
+    </span>
+    <span class="multilang" lang="no">
+        \[\text{(a)}\ \ \ \ \begin{array}{rrrrr}2x-3y&amp;=&amp;6\\ 4x-6y&amp;=&amp;12\end{array}
+                                \qquad\ \ \ \text{(b)}\ \ \begin{array}{rrrrr}2x-3y&amp;=&amp;6\\
+                                4x-6y&amp;=&amp;10\end{array}\]
+    </span>
+</p>
+<hr/>
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        You should first have checked \(\begin{vmatrix}2 &amp; -3\\ 4 &amp; -6\end{vmatrix}\) since \[\begin{vmatrix}2 &amp; -3\\ 4 &amp; -6\end{vmatrix}=-12-(-12)=0.\]
+    </span>
+    <span class="multilang" lang="no">
+        Du burde f&#248;rst ha sjekket \(\begin{vmatrix}2 &amp; -3\\ 4 &amp; -6\end{vmatrix}\) siden \[\begin{vmatrix}2 &amp; -3\\ 4 &amp; -6\end{vmatrix}=-12-(-12)=0.\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Hence there is no unique solution in either case.
+    </span>
+    <span class="multilang" lang="no">
+        Derfor finnes det ingen unike l&#248;sninger i begge tilfeller.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In system (a) the second equation is twice the first so there are infinitely many solutions. (Here we can give \(y\)
+        <i>
+            any
+        </i>
+        value we wish, \(t\) say; but then the \(x\) value is always \((6+3t)/2\). So for each value of \(t\) there are values
+                for \(x\) and \(y\) which simultaneously satisfy both equations. There is an infinite number of possible solutions.)
+    </span>
+    <span class="multilang" lang="no">
+        I system (a) er den andre ligningen dobbelt s&#229; stor som den f&#248;rste, s&#229; det finnes uendelig mange l&#248;sninger. (Her kan vi gi \(y\)
+        <i>
+            hvilken som helst
+        </i>
+        verdi vi &#248;nsker, la oss si \(t\), men da vil \(x\)-verdien alltid v&#230;re \((6+3t)/2\). S&#229; for hver verdi av \(t\) finnes det verdier for \(x\) og \(y\) som samtidig oppfyller begge ligningene. Det finnes et uendelig antall mulige l&#248;sninger.)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In (b) the equations are inconsistent (since the first is \(2x-3y=6\) and the second is \(2x-3y=5\) which is not possible). Hence there are no solutions.
+    </span>
+    <span class="multilang" lang="no">
+        I (b) er ligningene inkonsistente (siden den f&#248;rste er \(2x-3y=6\) og den andre er \(2x-3y=5\) som ikke er mulig). Derfor finnes det ingen l&#248;sninger.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

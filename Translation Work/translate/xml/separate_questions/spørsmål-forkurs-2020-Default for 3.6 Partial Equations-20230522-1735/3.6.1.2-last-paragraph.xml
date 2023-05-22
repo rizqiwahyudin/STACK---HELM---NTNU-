@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>3.6.1.2 Last Paragraph</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        The denominator of an algebraic fraction can often be factorised into a product of linear and/or irreducible quadratic factors. Before we can separate algebraic fractions into simpler (partial) fractions we need to completely factorise the denominators
+        into linear and irreducible quadratic factors.
+    </span>
+    <span class="multilang" lang="no">
+        Nevneren til en algebraisk br&#248;k kan ofte faktoriseres til et produkt av line&#230;re og/eller ikke reduserbare kvadratiske faktorer. F&#248;r vi kan skille algebraiske br&#248;ker i enklere (del)br&#248;ker, m&#229; vi faktorisere nevnerne fullstendig
+                    til line&#230;re og ikke reduserbare kvadratiske faktorer.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        <b>
+            Linear factors
+        </b>
+        are those of the form \(ax+b\); for example \(2x+7\), \(3x-2\) and \(4-x\).
+    </span>
+    <span class="multilang" lang="no">
+        <b>
+            Line&#230;re faktorer
+        </b>
+        er faktorer formen \(ax+b\); for eksempel \(2x+7\), \(3x-2\) og \(4-x\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        <strong>
+            Irreducible quadratic factors
+        </strong>
+        are those of the form \(ax^2+bx+c\) such as \(x^2+x+1\), and \(4x^2-2x+3\),
+                which cannot be factorised into linear factors (these are real quadratics with complex roots).
+    </span>
+    <span class="multilang" lang="no">
+        <strong>
+            Ikke reduserbare kvadratiske faktorer
+        </strong>
+        er de p&#229; formen \(ax^2+bx+c\) som for eksempel \(x^2+x+1\), og \(4x^2-2x+3\),
+                som ikke kan faktoriseres til line&#230;re faktorer (disse er reelle kvadrater med komplekse r&#248;tter).
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>10.2.3.3 Key Point-Multiplication and division</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        We see that in calculating the quotient that the moduli \(r\) and \(t\)
+        <strong>
+            divide
+        </strong>
+        whilst the arguments \(\text{arg}(z)=\theta\) and \(\text{arg}(w)=\phi\) subtract.
+    </span>
+    <span class="multilang" lang="no">
+        Vi ser at n&#229;r vi regner ut kvotienten, s&#229;
+        <strong>
+            deles
+        </strong>
+        modulene \(r\) og \(t\) med hverandre mens argumentene \(\text{arg}(z)=\theta\) og \(\text{arg}(w)=\phi\) trekkes fra hverandre.
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt.
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            If \(z=r(\cos\theta +i\sin\theta )\) and \(w=t(\cos\phi
+                                                +i\sin\phi )\) then \[zw=rt(\cos (\theta +\phi)+i\sin (\theta + \phi ))\qquad
+                                                {z\over w}={r\over t}(\cos (\theta -\phi) +i\sin
+                                                (\theta -\phi ))\]
+        </span>
+        <span class="multilang" lang="no">
+            Hvis \(z=r(\cos\theta +i\sin\theta )\) og \(w=t(\cos\phi
+                                                +i\sin\phi )\), s&#229; er \[zw=rt(\cos (\theta +\phi)+i\sin (\theta + \phi ))\qquad
+                                                {z\over w}={r\over t}(\cos (\theta -\phi) +i\sin
+                                                (\theta -\phi ))\]
+        </span>
+    </p>
+</div>
+<p>
+    <span class="multilang" lang="en">
+        We conclude that addition and subtraction are most easily carried out in Cartesian form whereas multiplication and division are most easily carried out in polar form.
+    </span>
+    <span class="multilang" lang="no">
+        Vi konkluderer med at addisjon og subtraksjon er enklest &#229; utf&#248;re i kartesisk form, mens multiplikasjon og divisjon er enklest &#229; utf&#248;re i polar form.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

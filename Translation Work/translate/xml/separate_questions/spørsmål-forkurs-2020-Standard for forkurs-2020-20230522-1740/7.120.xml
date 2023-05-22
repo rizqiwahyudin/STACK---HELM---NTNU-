@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>7.120</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+    Nedenfor er grafen til funksjonsuttrykket \(f(x) = {@f(x)@}\) plasser punktet \(A\) i vendepunktet til grafen
+</p>
+[[jsxgraph input-ref-stateStore="stateRef"]]
+        // Create a board like normal.
+        var board = JXG.JSXGraph.initBoard(divid, {boundingbox: [-15, 15, 15, -15], axis: true, showCopyright: false});
+        // Create a point, its initial position will be the default position if no state is present.
+ 
+   
+   
+   
+  var f = board.jc.snippet('{#f(x)#}', true, 'x', true);
+        var curve = board.create('functiongraph', [f,-10,10]);
+
+  
+  
+  
+  var pts = {#pts#};
+        var arrayLength = pts.length;
+        for (var i = 0; i &lt; arrayLength; i++) {  
+                var tmp = board.create('point', pts[i], {fixed:true, size:0, name:''});
+        }
+
+  
+  
+  
+  // State represented as a JS-object, first define default then try loading the stored values.
+        var state = {'x':4};
+        var stateInput = document.getElementById(stateRef);
+        if (stateInput.value &amp;&amp; stateInput.value != '') {
+                state = JSON.parse(stateInput.value);
+        }
+
+  
+  
+  
+  var p = board.create('glider',[curve], {name:'A', snapToPoints: true, attractorDistance:1});
+  
+    
+    
+    
+  p.on('drag', function() {
+                var newState = {'x':Math.round(p.X())};
+                // Encode the state as JSON for storage and store it
+                stateInput.value = JSON.stringify(newState);
+        });
+
+  
+  
+  
+  // As a side note, you typically do not want the state storing input to be directly visible to the user
+        // although it may be handy during development to see what happens in it. You might hide it like this:
+        var stateInput = document.getElementById(stateRef);
+
+  
+  
+  
+  stateInput.style.display = 'none';
+[[/jsxgraph]]
+<p style="display:none">
+    [[input:stateStore]] [[validation:stateStore]]
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text>a: rand(2) + 1
+b: rand(5) +1
+f(x):=(x^3)/(b*3) - (a*x^2)/b
+/* points for snap to point */
+pts:[[-10, f(-10)], [-9, f(-9)], [-8, f(-8)], [-7, f(-7)], [-6, f(-6)], [-5, f(-5)], [-4, f(-4)], [-3, f(-3)], [-2, f(-2)], [-1, f(-1)], [0, f(0)], [1, f(1)], [2, f(2)], [3, f(3)], [4, f(4)], [5, f(5)], [6, f(6)], [7, f(7)], [8, f(8)], [9, f(9)]]
+
+
+ta1: [a, f(a)]</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text>[[feedback:prt1]]</text>
+        </specificfeedback>
+        <questionnote>
+            <text>{@f(x)@}</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>stateStore</name>
+            <type>string</type>
+            <tans>ta1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>1</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text><![CDATA[tmp:stackjson_parse(stateStore); 
+x:stackmap_get(tmp,"x");
+ans1: [x, f(x)]]]></text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquivNouns</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

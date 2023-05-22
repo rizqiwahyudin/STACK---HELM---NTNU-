@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>11.2.1.3 Engineering Example 1</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Engineering Example 1
+    </span>
+    <span class="multilang" lang="no">
+        Denne oppgaven krever litt mer kontekst for &#229; kunne gi en n&#248;yaktig oversettelse. Kan du gi meg mer informasjon om hva matematikken handler om?
+    </span>
+</h4>
+<h5>
+    Electrostatic potential
+</h5>
+<p>
+    <span class="multilang" lang="en">
+        <b>
+            Introduction
+        </b>
+        <br/>
+        The electrostatic potential due to a point charge \(Q\)
+        <b>
+            coulombs
+        </b>
+        at a position \(r\) (
+        <b>
+            m
+        </b>
+        ) from the charge is given by
+\[ V = \dfrac{Q}{4 \pi \epsilon_0 r} \]
+where \( \epsilon_0 \), the permittivity of free space, \( \approx 8.85 \times 10^{-12}\&#160; \mathrm{Fm^{-1}}\) and \(\pi \approx 3.14\).
+
+
+
+
+The field strength at position \(r\) is given by \(E =- \dfrac{dV}{dr} \).
+        <b>
+            Problem in words
+        </b>
+        <br/>
+        Find the electric field strength at a distance of \(5 \ \mathrm{m}\)&#160;from a source with a charge of \(1 \ \mathrm{coulomb}\).
+        <br/>
+        <b>
+            Mathematical statement of the problem
+        </b>
+        <br/>
+        \( V = \dfrac{Q}{4 \pi \epsilon_0 r} \).
+
+
+
+
+Substitute for \( \epsilon_0\) and \(\pi\) and use \(Q = 1\), so that
+\[ V = \dfrac{1}{4 \times 3.14 \times 8.85 \times 10^{-12} r} \approx \dfrac{9 \times 10^9}{r} = 9 \times 10^9 r^{-1}. \]
+We need to differentiate \(V\) in order to find the electric field strength from the relationship \( E = - \dfrac{dV}{dr} \)
+        <br/>
+        <b>
+            Mathematical analysis
+        </b>
+        <br/>
+        \( E = - \dfrac{dV}{dr} = -9 \times 10^9(-r^{-2}) = 9 \times 10^9 r^{-2} \)
+
+
+
+
+When \(r = 5\).
+\[ E = \dfrac{9 \times 10^9}{25} = 3.6 \times 10^8 \ \mathrm{Vm}^{-1} \]
+        <b>
+            Interpretation
+        </b>
+        <br/>
+        The electric field strength is \( 3.6 \times 10^8 \ \mathrm{Vm}^{-1}\)&#160;at \(r = 5 \ \mathrm{m}\).
+Note that the field potential varies with the reciprocal of distance (i.e. inverse linear law with distance) whereas the field strength obeys an inverse square law with distance.
+    </span>
+    <span class="multilang" lang="no">
+        <b>
+            Introduksjon
+        </b>
+        <br/>
+        Den elektrostatiske potensialet grunnet en punktladning \(Q\) p&#229; \(r\) avstand (
+        <b>
+            m
+        </b>
+        ) fra ladningen er gitt av
+\[ V = \dfrac{Q}{4 \pi \epsilon_0 r} \]
+der \( \epsilon_0 \), optisk permittivitet for vakuum, \( \approx 8,85 \times 10^{-12}\&#160;\mathrm{Fm^{-1}}\) og \(\pi \approx 3.14\).
+
+
+
+
+Feltstyrken p&#229; lokasjon \(r\) er gitt ved \(E = -\dfrac{dV}{dr}\).
+        <b>
+            Problemstilling
+        </b>
+        <br/>
+        Finn feltstyrken p&#229; en avstand av \(5 \ \mathrm{m}\) fra en kilde med en ladning p&#229; \(1 \ \mathrm{coulomb}\).
+        <br/>
+        <b>
+            Matematisk uttrykk for problemstillingen
+        </b>
+        <br/>
+        \( V = \dfrac{Q}{4 \pi \epsilon_0 r} \).
+
+
+
+
+Sett inn for \( \epsilon_0\) og \(\pi\) og bruk \(Q = 1\), slik at
+\[ V = \dfrac{1}{4 \times 3.14 \times 8,85 \times 10^{-12} r} \approx \dfrac{9 \times 10^9}{r} = 9 \times 10^9 r^{-1}. \]
+Vi m&#229; derivere \(V\) for &#229; finne feltstyrken fra relasjonen \( E = - \dfrac{dV}{dr} \)
+        <br/>
+        <b>
+            Matematisk analyse
+        </b>
+        <br/>
+        \( E = - \dfrac{dV}{dr} = - 9 \times 10^9 (-r^{-2}) = 9 \times 10^9 r^{-2} \)
+
+
+
+
+N&#229;r \(r = 5\).
+\[ E = \dfrac{9 \times 10^9}{25} = 3.6 \times 10^8 \ \mathrm{Vm^{-1}} \]
+        <b>
+            Tolkning
+        </b>
+        <br/>
+        Feltstyrken er \( 3.6 \times 10^8 \ \mathrm{Vm^{-1}}\) p&#229; avstand \(r = 5 \ \mathrm{m}\).
+Merk at feltet varierer med den inverse avstanden (dvs. invers line&#230;r avstand) mens feltstyrken f&#248;lger en invers kvadratisk lov med avstand.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>6.2.2.3 Key point</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point:
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt:
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            The fundamental identity relating hyperbolic functions is:
+        </span>
+        <span class="multilang" lang="no">
+            Den fundamentale identiteten som relaterer hyperbolske funksjoner er:
+        </span>
+    </p>
+    <p style="text-align: center;">
+        \(\rm cosh^2 x - \sinh^2 x \equiv 1\)
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            This is the hyperbolic function equivalent of the trigonometric identity: \( \cos^2x + \sin^2 x \equiv 1 \)
+        </span>
+        <span class="multilang" lang="no">
+            Dette er de hyperbolske funksjonenes ekvivalent til den trigonometriske identiteten: \( \cos^2x + \sin^2 x \equiv 1 \)
+        </span>
+    </p>
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

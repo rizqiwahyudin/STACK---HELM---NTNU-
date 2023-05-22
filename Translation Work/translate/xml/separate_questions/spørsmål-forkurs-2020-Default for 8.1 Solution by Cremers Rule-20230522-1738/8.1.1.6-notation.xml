@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>8.1.1.6 Notation</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        <strong style="font-size: 14px;">
+            Notation
+        </strong>
+        <br/>
+    </span>
+    <span class="multilang" lang="no">
+        <strong style="font-size: 14px;">
+            Notasjon
+        </strong>
+        <br/>
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        For ease of generalisation to larger systems we write the two-equation system in a different notation: \[\begin{aligned}
+                                a_{11}x_1+a_{12}x_2&amp;=&amp;b_1 \\
+                                a_{21}x_1+a_{22}x_2&amp;=&amp;b_2\end{aligned}\]
+    </span>
+    <span class="multilang" lang="no">
+        For &#229; lette generalisering til st&#248;rre systemer skriver vi det to-likningssystemet med en annen notasjon: 
+\[ \begin{aligned}
+a_{11}x_1+a_{12}x_2 &amp;=&amp; b_1 \\
+a_{21}x_1+a_{22}x_2 &amp;=&amp; b_2
+\end{aligned} \]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Here the unknowns are \(x_1\) and \(x_2\), the right-hand sides are \(b_1\) and \(b_2\) and the coefficients are
+                \(a_{ij}\) where, for example, \(a_{21}\) is the coefficient of \(x_1\) in equation two. In general, \(a_{ij}\) is the coefficient of \(x_j\) in equation \(i\).
+        <br/>
+    </span>
+    <span class="multilang" lang="no">
+        Her er de ukjente \(x_1\) og \(x_2\), h&#248;yresidene er \(b_1\) og \(b_2\) og koeffisientene er \(a_{ij}\), hvor for eksempel \(a_{21}\) er koeffisienten til \(x_1\) i ligning to. Generelt er \(a_{ij}\) koeffisienten til \(x_j\) i ligning \(i\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Cramer's rule can then be stated as follows:
+    </span>
+    <span class="multilang" lang="no">
+        Cramers regel kan da uttrykkes som f&#248;lger:
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        If \(\left|\begin{array}{cc}a_{11}&amp;a_{12}\\ a_{21}&amp;a_{22}\end{array}\right|\neq 0\), then the equations \[\begin{aligned}
+                                a_{11}x_1+a_{12}x_2&amp;=&amp;b_1\\
+                                a_{21}x_1+a_{22}x_2&amp;=&amp;b_2\end{aligned}\]&#160;have solution,
+    </span>
+    <span class="multilang" lang="no">
+        Hvis \(\left|\begin{array}{cc}a_{11}&amp;a_{12}\\ a_{21}&amp;a_{22}\end{array}\right|\neq 0\), s&#229; er ligningene  \[\begin{aligned}
+                                a_{11}x_1+a_{12}x_2&amp;=&amp;b_1\\
+                                a_{21}x_1+a_{22}x_2&amp;=&amp;b_2\end{aligned}\]  l&#248;sbare.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad x_1=\dfrac{\left|\begin{array}{cc}b_1&amp;a_{12}\\
+                                b_2&amp;a_{22}\end{array}\right|}{\left|\begin{array}{cc}a_{11}&amp;a_{12}\\
+                                a_{21}&amp;a_{22}\end{array}\right|}\ ,\ \ \ x_2=\dfrac{\left|\begin{array}{cc}a_{11}&amp;b_1\\
+                                a_{21}&amp;b_2\end{array}\right|}{\left|\begin{array}{cc}a_{11}&amp;a_{12}\\
+                                a_{21}&amp;a_{22}\end{array}\right|}.\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad x_1=\dfrac{\left|\begin{array}{cc}b_1&amp;a_{12}\\
+                                b_2&amp;a_{22}\end{array}\right|}{\left|\begin{array}{cc}a_{11}&amp;a_{12}\\
+                                a_{21}&amp;a_{22}\end{array}\right|}\ ,\ \ \ x_2=\dfrac{\left|\begin{array}{cc}a_{11}&amp;b_1\\
+                                a_{21}&amp;b_2\end{array}\right|}{\left|\begin{array}{cc}a_{11}&amp;a_{12}\\
+                                a_{21}&amp;a_{22}\end{array}\right|}.\)
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>22.3.2.14 Hermitian matrices</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Hermitian matrices
+    </span>
+    <span class="multilang" lang="no">
+        Hermiteske matriser
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        In some applications, of which quantum mechanics is one, matrices with
+        <strong>
+            complex
+        </strong>
+        elements arise.
+    </span>
+    <span class="multilang" lang="no">
+        I noen anvendelser, hvorav kvantemekanikk er en, oppst&#229;r matriser med kompleks elementer.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        If \(A\) is such a matrix then the matrix \(\overline{A}^T\) is the
+        <strong>
+            conjugate transpose
+        </strong>
+        of \(A\), i.e. the complex conjugate of each element of \(A\) is taken as well as \(A\) being transposed. Thus if
+                \[ A=\left[\begin{array}{cc}2+\mathrm{i}&amp;2\\ 3\mathrm{i}&amp;5-2\mathrm{i}\end{array}\right]\]
+                then
+                \[ \overline{A}^T=\left[\begin{array}{cc}2-\mathrm{i}&amp;-3\mathrm{i}\\ 2&amp;5+2\mathrm{i}\end{array}\right].\]
+                An
+        <strong>
+            Hermitian
+        </strong>
+        matrix is one satisfying
+                \[ \overline{A}^T=A.\]
+                The matrix \(A\) above is clearly non-Hermitian. Indeed the most obvious feature of an Hermitian matrix is that its diagonal elements
+        <strong>
+            must
+        </strong>
+        be real. (Can you see why?) Thus
+                \[ A=\left[\begin{array}{cc}6&amp;4+\mathrm{i}\\ 4-\mathrm{i}&amp;-2\end{array}\right]\]
+                is Hermitian.
+    </span>
+    <span class="multilang" lang="no">
+        Hvis \(A\) er en slik matrise, er matrisen \(\overline{A}^T\)
+        <strong>
+            konjugattransponeringen
+        </strong>
+        av \(A\), dvs. kompleks konjugering av hvert element i \(A\) blir tatt i tillegg til at \(A\) transponeres. S&#229; hvis
+                \[ A=\left[\begin{array}{cc}2+\mathrm{i}&amp;2\\ 3\mathrm{i}&amp;5-2\mathrm{i}\end{array}\right]\]
+                er
+                \[ \overline{A}^T=\left[\begin{array}{cc}2-\mathrm{i}&amp;-3\mathrm{i}\\ 2&amp;5+2\mathrm{i}\end{array}\right].\]
+                En
+        <strong>
+            hermitisk
+        </strong>
+        matrise er en som oppfyller
+\[ \overline{A}^T=A.\]
+Matrisen \(A\) over er klart ikke-hermitisk. Det mest &#229;penbare trekket ved en hermitisk matrise er faktisk at dens diagonale elementer
+        <strong>
+            m&#229;
+        </strong>
+        v&#230;re reelle. (Kan du se hvorfor?) Derfor er
+\[ A=\left[\begin{array}{cc}6&amp;4+\mathrm{i}\\ 4-\mathrm{i}&amp;-2\end{array}\right]\]
+hermitisk.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        A \(3\times 3\) example of an Hermitian matrix is
+                \[ A=\left[\begin{array}{ccc}1&amp;\mathrm{i}&amp;5-2\mathrm{i}\\ -\mathrm{i}&amp;3&amp;0\\ 5+2\mathrm{i}&amp;0&amp;2\end{array}\right].\]
+                An Hermitian matrix is in fact a generalization of a symmetric matrix. The key property of an Hermitian matrix is the same as that of a real symmetric matrix &#226;&#8364;&#8220; i.e. the eigenvalues are always
+        <strong>
+            real
+        </strong>
+        .
+    </span>
+    <span class="multilang" lang="no">
+        En \(3\times 3\) eksempel p&#229; en hermitisk matrise er 
+\[ A=\left[\begin{array}{ccc}1&amp;\mathrm{i}&amp;5-2\mathrm{i}\\ -\mathrm{i}&amp;3&amp;0\\ 5+2\mathrm{i}&amp;0&amp;2\end{array}\right].\]
+En Hermitisk matrise er faktisk en generalisering av en symmetrisk matrise. Den viktigste egenskapen til en hermitisk matrise er den samme som til en reell symmetrisk matrise - dvs. egenverdiene er alltid
+        <strong>
+            reelle
+        </strong>
+        .
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

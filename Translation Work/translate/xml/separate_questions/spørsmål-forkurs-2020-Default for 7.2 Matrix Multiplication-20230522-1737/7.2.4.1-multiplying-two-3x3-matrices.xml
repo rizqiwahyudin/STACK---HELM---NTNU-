@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>7.2.4.1 Multiplying two 3x3 matrices</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Multiplying two \(3\times3\) matrices
+    </span>
+    <span class="multilang" lang="no">
+        Multiplikasjon av to \(3\times 3\) matriser
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        The definition of the product \(C=AB\) where \(A\) and \(B\) are two \(3\times 3\)
+                                matrices is as follows
+    </span>
+    <span class="multilang" lang="no">
+        Definisjonen av produktet \(C=AB\) der \(A\) og \(B\) er to \(3\times 3\) matriser er som f&#248;lger
+    </span>
+    \[ C =\begin{bmatrix} a &amp; b &amp; c \\ d &amp; e &amp; f \\
+                g &amp; h &amp; i \end{bmatrix} \begin{bmatrix} r &amp; s &amp; t \\ u &amp; v &amp; w \\
+                x &amp; y &amp; z \end{bmatrix} = \begin{bmatrix} ar + bu + cx &amp; as + bv + cy &amp; at + bw + cz \\
+                dr + eu + fx &amp; ds + ev + fy &amp; dt + ew + fz \\ gr + hu + ix &amp; gs + hv + iy &amp; gt + hw + iz
+                \end{bmatrix} \]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        This looks a rather daunting amount of algebra but in fact the construction of the
+                                matrix on the right-hand side is straightforward if we follow the simple rule that the element in the \(i^{\rm
+                                th}\) row and \(j^{\rm th}\) column of \(C\) is obtained by multiplying the \(i^{\rm th}\) row of \(A\) with the
+                                \(j^{\rm th}\) column of \(B\).
+    </span>
+    <span class="multilang" lang="no">
+        Dette ser ut som en ganske skremmende mengde algebra, men faktisk er konstruksjonen av matrisen p&#229; h&#248;yre side enkel hvis vi f&#248;lger den enkle regelen om at elementet i \(i{\rm -te}\) rad og \(j{\rm -te}\) kolonne av \(C\) bestemmes ved &#229; multiplisere \(i{\rm -te}\) rad av \(A\) med \(j{\rm -te}\) kolonne av \(B\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        For example, to obtain the element in row 2, column 3 of \(C\) we take row 2 of \(A\): \(\begin{bmatrix} d &amp; e
+                &amp; f \end{bmatrix}\) and multiply it with column 3 of \(B\) in the usual way to produce \(\begin{bmatrix}dt + ew
+                + fz\end{bmatrix}\).
+    </span>
+    <span class="multilang" lang="no">
+        For eksempel, for &#229; bestemme elementet i rad 2, kolonne 3 av \(C\) tar vi rad 2 av \(A\): \(\begin{bmatrix} d &amp; e
+                &amp; f \end{bmatrix}\) og multipliserer den med kolonne 3 av \(B\) p&#229; vanlig m&#229;te for &#229; f&#229; \(\begin{bmatrix}dt + ew
+                + fz\end{bmatrix}\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        By repeating this process we obtain every element of \(C\).
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; gjenta denne prosessen f&#229;r vi hvert element av \(C\).
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

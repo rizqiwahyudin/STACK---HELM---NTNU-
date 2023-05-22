@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>22.1.3.1 Properties of eigenvalues and eigenvectors</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Properties of eigenvalues and eigenvectors
+    </span>
+    <span class="multilang" lang="no">
+        Egenskaper til egenverdier og egenvektorer
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        There are a number of general properties of eigenvalues and eigenvectors which you should be familiar with. You will be able to use them as a check on some of your calculations.
+    </span>
+    <span class="multilang" lang="no">
+        Det finnes flere generelle egenskaper for egenverdier og egenvektorer som du b&#248;r v&#230;re kjent med. Du vil kunne bruke dem som en sjekk p&#229; noen av beregningene dine.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        <strong>
+            Property 1: Sum of eigenvalues
+        </strong>
+    </span>
+    <span class="multilang" lang="no">
+        <strong>
+            Egenskap 1: Sum av egenverdier
+        </strong>
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        For any square matrix \(A\):
+    </span>
+    <span class="multilang" lang="no">
+        For en kvadratisk matrise \(A\):
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\quad\)sum of eigenvalues \(=\) sum of diagonal terms of \(A\) (called the
+        <strong>
+            trace
+        </strong>
+        of \(A\))
+    </span>
+    <span class="multilang" lang="no">
+        \(\quad\)summen av eigenverdiene \(=\) summen av diagonalelementene i \(A\)  (ogs&#229; kalt
+        <strong>
+            sporet
+        </strong>
+        av \(A\) )
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Formally, for an \(n\times n\) matrix \(A\): \(\qquad \displaystyle{\sum_{i=1}^n \lambda_i=\ \text{ trace} (A)}\)
+    </span>
+    <span class="multilang" lang="no">
+        Formelt, for en \(n\times n\) matrise \(A\) :  \(\qquad \displaystyle{\sum_{i=1}^n \lambda_i=\ \text{ spor} (A)}\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        (Repeated eigenvalues must be counted according to their multiplicity.)
+        <br/>
+        Thus if \(\lambda_1=4, \lambda_2=4,
+                                \lambda_3=1\) then \(\displaystyle{\sum_{i=1}^{3}\lambda_i=9}\)).
+    </span>
+    <span class="multilang" lang="no">
+        (Gjentatte egenverdier m&#229; telles med i henhold til deres multiplisitet.)
+        <br/>
+        Dermed, hvis \(\lambda_1=4, \lambda_2=4,
+                                \lambda_3=1\), s&#229; er \(\displaystyle{\sum_{i=1}^{3}\lambda_i=9}\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        <strong>
+            Property 2: Product of eigenvalues
+        </strong>
+    </span>
+    <span class="multilang" lang="no">
+        Egenskap 2: Produktet av egenverdier.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        For any square matrix \(A\):
+    </span>
+    <span class="multilang" lang="no">
+        For en kvadratisk matrise  \(A\):
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\quad\)product of eigenvalues \(=\) determinant of \(A\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\quad\)produktet av egenverdiene \(=\) determinant av \(A\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Formally: \(\displaystyle{\qquad \lambda_1\lambda_2\lambda_3\cdots\lambda_n=\prod_{i=1}^n \lambda_i=\text{ det}(A)}\)
+    </span>
+    <span class="multilang" lang="no">
+        Formelt: \(\displaystyle{\qquad \lambda_1\lambda_2\lambda_3\cdots\lambda_n=\prod_{i=1}^n \lambda_i=\text{det}(A)}\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The symbol \(\prod\) simply denotes multiplication, as \(\sum\) denotes summation.
+    </span>
+    <span class="multilang" lang="no">
+        Symbolet \(\prod\) betyr rett og slett multiplikasjon, som \(\sum\) betyr summering.
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+        <br/>
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Verify Properties 1 and 2 for the \(3\times 3\) matrix:
+    </span>
+    <span class="multilang" lang="no">
+        Verifiser egenskaper 1 og 2 for matrisen \(3\times 3\):
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad A = \left[\begin{array}{rrr}2&amp;-1&amp;0\\ -1&amp;2&amp;-1\\ 0&amp;-1&amp;2\end{array}\right]\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad A = \left[\begin{array}{rrr}2&amp;-1&amp;0\\ -1&amp;2&amp;-1\\ 0&amp;-1&amp;2\end{array}\right]\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        whose eigenvalues were found earlier.
+    </span>
+    <span class="multilang" lang="no">
+        hvem sin egenverdiene ble funnet tidligere.
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        The three eigenvalues for this matrix are:
+    </span>
+    <span class="multilang" lang="no">
+        De tre egenverdiene til denne matrisen er:
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad \lambda_1=2-\sqrt{2},\qquad \lambda_2=2,\qquad \lambda_3=2+\sqrt{2}.\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad \lambda_1=2-\sqrt{2},\qquad \lambda_2=2,\qquad \lambda_3=2+\sqrt{2}.\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Therefore
+    </span>
+    <span class="multilang" lang="no">
+        Derfor
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad \lambda_1+\lambda_2+\lambda_3=(2-\sqrt{2})+2+(2+\sqrt{2})=6=\text{trace}(A),\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad \lambda_1+\lambda_2+\lambda_3=(2-\sqrt{2})+2+(2+\sqrt{2})=6=\text{spor}(A),\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        whilst
+    </span>
+    <span class="multilang" lang="no">
+        mens
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad \lambda_1\lambda_2\lambda_3=(2-\sqrt{2})(2)(2+\sqrt{2})=4=\text{det}(A).\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad \lambda_1\lambda_2\lambda_3=(2-\sqrt{2})(2)(2+\sqrt{2})=4=\text{det}(A).\)
+    </span>
+</p>
+<hr/>
+<p>
+    <span class="multilang" lang="en">
+        <strong>
+            Property 3: Linear independence of eigenvectors
+        </strong>
+        <br/>
+    </span>
+    <span class="multilang" lang="no">
+        Egenskap 3: Line&#230;r uavhengighet av egenvektorer.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Eigenvectors of a matrix \(A\) corresponding to distinct eigenvalues are
+        <strong>
+            linearly independent
+        </strong>
+        i.e. one eigenvector
+        <strong>
+            cannot
+        </strong>
+        be written as a linear sum of the other eigenvectors. The proof of this result is omitted but we illustrate this property with two examples.
+    </span>
+    <span class="multilang" lang="no">
+        Eigenvektorene til en matrise \(A\) som korresponderer til distinkte egenverdier er
+        <strong>
+            line&#230;r uavhengige
+        </strong>
+        , dvs. &#233;n egenvector
+        <strong>
+            kan ikke
+        </strong>
+        skrives som en line&#230;r sum av de andre eigenvectorene. Beviset for dette resultatet er utelatt, men vi illustrerer denne egenskapen med to eksempler.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We saw earlier that the matrix
+    </span>
+    <span class="multilang" lang="no">
+        Vi s&#229; tidligere at matrisen
+    </span>
+</p>
+<p>
+    \(\qquad A=\left[\begin{array}{cc}1&amp;0\\ 1&amp;2\end{array}\right]\)
+</p>
+<p>
+    <span class="multilang" lang="en">
+        has distinct eigenvalues \(\lambda_1=1\qquad \lambda_2=2\) with associated eigenvectors
+    </span>
+    <span class="multilang" lang="no">
+        har distinkte egenverdier \(\lambda_1=1\qquad \lambda_2=2\) med tilh&#248;rende egenvektorer
+    </span>
+</p>
+<p>
+    \(\qquad \underline{x_1}=\dfrac{1}{\sqrt{2}}\left[\begin{array}{c}1\\ -1\end{array}\right]\qquad
+                                \underline{x_2}=\left[\begin{array}{r}0\\ 1\end{array}\right]\)
+</p>
+<p>
+    <span class="multilang" lang="en">
+        respectively.
+    </span>
+    <span class="multilang" lang="no">
+        henholdsvis.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Clearly \(\underline{x_1}\) is
+        <strong>
+            not
+        </strong>
+        a constant multiple of \(\underline{x_2}\) and these eigenvectors are
+        <strong>
+            linearly independent
+        </strong>
+    </span>
+    <span class="multilang" lang="no">
+        Tydeligvis er \(\underline{x_1}\)
+        <strong>
+            ikke
+        </strong>
+        en konstant multiplikasjon av \(\underline{x_2}\) og disse egenvektorene er
+        <strong>
+            line&#230;r uavhengige
+        </strong>
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We also saw that the \(3\times 3\) matrix
+    </span>
+    <span class="multilang" lang="no">
+        Vi s&#229; ogs&#229; at \(3\times 3\) matrisen
+    </span>
+</p>
+<p>
+    \(\qquad A=\left[\begin{array}{rrr}2&amp;-1&amp;0\\ -1&amp;2&amp;-1\\ 0&amp;-1&amp;2\end{array}\right]\)
+</p>
+<p>
+    <span class="multilang" lang="en">
+        had the following distinct eigenvalues \(\lambda_1=2-\sqrt{2},\ \lambda_2=2,\ \lambda_3=2+\sqrt{2}\) with corresponding eigenvectors of the form shown: \(\qquad \underline{x_1}=\left[\begin{array}{c}1\\ \sqrt{2}\\ 1\end{array}\right],\qquad
+                \underline{x_2}=\left[\begin{array}{r}1\\0\\-1\end{array}\right],\qquad
+                \underline{x_3}=\left[\begin{array}{c}1\\ -\sqrt{2}\\ 1\end{array}\right]\)
+    </span>
+    <span class="multilang" lang="no">
+        har f&#248;lgende distinkte egenverdier \(\lambda_1=2-\sqrt{2},\ \lambda_2=2,\ \lambda_3=2+\sqrt{2}\) med tilh&#248;rende egenvektorer av formen vist: \(\qquad \underline{x_1}=\left[\begin{array}{c}1\\ \sqrt{2}\\ 1\end{array}\right],\qquad
+                \underline{x_2}=\left[\begin{array}{r}1\\0\\-1\end{array}\right],\qquad
+                \underline{x_3}=\left[\begin{array}{c}1\\ -\sqrt{2}\\ 1\end{array}\right]\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Clearly none of these eigenvectors is a constant multiple of any other. Nor is any one obtainable as a linear combination of the other two. The three eigenvectors are
+        <strong>
+            linearly independent
+        </strong>
+        .
+    </span>
+    <span class="multilang" lang="no">
+        Tydeligvis er ingen av disse egenvektorene en konstant multiplikasjon av noen andre. Hverken er noen av dem en line&#230;r kombinasjon av de andre to. De tre egenvektorene er
+        <strong>
+            line&#230;r uavhengige
+        </strong>
+        .
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        <strong>
+            Property 4: Eigenvalues of diagonal matrices
+        </strong>
+    </span>
+    <span class="multilang" lang="no">
+        <strong>
+            Egenskap 4: Egenverdier til diagonalmatriser
+        </strong>
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        A \(2\times 2\) diagonal matrix \(D\) has the form
+    </span>
+    <span class="multilang" lang="no">
+        En \(2\times 2\) diagonalmatrise \(D\) har formen
+    </span>
+</p>
+<p>
+    \(\qquad D=\left[\begin{array}{cc}a&amp;0\\ 0&amp;d\end{array}\right]\)
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The characteristic equation
+    </span>
+    <span class="multilang" lang="no">
+        Den karakteristiske likningen
+    </span>
+</p>
+<p>
+    \(\quad |D-\lambda I|=0\) is \(\left|\begin{array}{cc}a-\lambda&amp;0\\ 0&amp;d-\lambda\end{array}\right|=0\)
+</p>
+<p>
+    <span class="multilang" lang="en">
+        i.e. \(\qquad (a-\lambda)(d-\lambda)=0\)
+    </span>
+    <span class="multilang" lang="no">
+        alts&#229; \(\qquad (a-\lambda)(d-\lambda)=0\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        So the eigenvalues are simply the diagonal elements \(a\) and \(d\).
+    </span>
+    <span class="multilang" lang="no">
+        S&#229; egenverdiene er bare diagonal-elementene \(a\) og \(d\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Similarly a \(3\times 3\) diagonal matrix has the form
+    </span>
+    <span class="multilang" lang="no">
+        P&#229; samme m&#229;te har en \(3\times 3\) diagonalmatrise formen
+    </span>
+</p>
+<p>
+    \(\qquad D=\left[\begin{array}{ccc}a&amp;0&amp;0\\ 0&amp;b&amp;0\\ 0&amp;0&amp;c\end{array}\right]\)
+</p>
+<p>
+    <span class="multilang" lang="en">
+        having characteristic equation
+    </span>
+    <span class="multilang" lang="no">
+        den karakteristiske likningen
+    </span>
+</p>
+<p>
+    \(\qquad |D-\lambda I|=(a-\lambda)(b-\lambda)(c-\lambda)=0\)
+</p>
+<p>
+    <span class="multilang" lang="en">
+        so again the diagonal elements
+        <strong>
+            are
+        </strong>
+        the eigenvalues.
+    </span>
+    <span class="multilang" lang="no">
+        s&#229; igjen er diagonal-elementene
+        <strong>
+            egenverdiene
+        </strong>
+        .
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We can see that a diagonal matrix is a particularly simple matrix to work with. In addition to the eigenvalues being obtainable immediately by inspection it is exceptionally easy to multiply diagonal matrices.
+    </span>
+    <span class="multilang" lang="no">
+        Vi kan se at en diagonalmatrise er en spesielt enkel matrise &#229; jobbe med. I tillegg til at egenverdiene er umiddelbart tilgjengelige ved inspeksjon er det sv&#230;rt enkelt &#229; multiplisere diagonalmatriser.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

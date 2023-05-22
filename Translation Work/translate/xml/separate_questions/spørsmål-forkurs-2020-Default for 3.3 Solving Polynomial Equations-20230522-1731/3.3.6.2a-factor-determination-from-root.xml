@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="multichoice">
+        <name>
+            <text>3.3.6.2A Factor determination from root</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        &#216;ving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        If \(a\) is root of polynomial \(p(x)\), which of the following is a factor of \(p(x)\)
+    </span>
+    <span class="multilang" lang="no">
+        Hvis \(a\) er roten av polynomet \(p(x)\), hva er da en faktor av \(p(x)\)
+    </span>
+    <br/>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        If \(x=a\) satisfies \(p(x)\) then \(x-a\) is a factor of \(p(x)\).
+    </span>
+    <span class="multilang" lang="no">
+        Hvis \(x=a\) tilfredsstiller \(p(x)\) s&#229; er \(x-a\) en faktor i \(p(x)\).
+    </span>
+</p>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <single>true</single>
+        <shuffleanswers>true</shuffleanswers>
+        <answernumbering>none</answernumbering>
+        <showstandardinstruction>1</showstandardinstruction>
+        <correctfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="en">
+    Your answer is correct.
+</span>
+<span class="multilang" lang="no">
+    Svaret ditt er riktig.
+</span>
+]]></text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="en">
+    Your answer is partially correct.
+</span>
+<span class="multilang" lang="no">
+    Svaret ditt er delvis riktig.
+</span>
+]]></text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="en">
+    Your answer is incorrect.
+</span>
+<span class="multilang" lang="no">
+    Svaret ditt er feil.
+</span>
+]]></text>
+        </incorrectfeedback>
+        <shownumcorrect/>
+        <answer fraction="100" format="html">
+            <text><![CDATA[
+<p>
+    \((x-a)\)
+</p>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+        <answer fraction="0" format="html">
+            <text><![CDATA[
+<p>
+    \((x+a)\)
+</p>
+]]></text>
+            <feedback format="html">
+                <text/>
+            </feedback>
+        </answer>
+    </question>
+    
+
+</quiz>

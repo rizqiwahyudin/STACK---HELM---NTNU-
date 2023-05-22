@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>22.1.1.1 Basic concepts</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Initial concepts
+    </span>
+    <span class="multilang" lang="no">
+        Innledende konsepter
+    </span>
+</h3>
+<h4>
+    <span class="multilang" lang="en">
+        Determinants reminder
+    </span>
+    <span class="multilang" lang="no">
+        P&#229;minnelse om determinanter
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        A square matrix possesses an associated determinant. Unlike a matrix, which is an
+                                array of numbers, a determinant has a single value.
+    </span>
+    <span class="multilang" lang="no">
+        En kvadratisk matrise har en tilknyttet determinant. I motsetning til en matrise, som er en rekke tall, har en
+                                determinant en enkel verdi.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        A two by two matrix \(C=\left[\begin{array}{ll}c_{11}&amp;c_{12}\\
+                                c_{21}&amp;c_{22}\end{array}\right]\) has an associated determinant
+    </span>
+    <span class="multilang" lang="no">
+        En to gangerto matrise \(C=\left[\begin{array}{ll}c_{11}&amp;c_{12}\\
+                                c_{21}&amp;c_{22}\end{array}\right]\) har en tilknyttet determinant
+    </span>
+</p>
+\[\mathrm{det}(C)=\begin{vmatrix}c_{11}&amp;c_{12}\\
+c_{21}&amp;c_{22}\end{vmatrix} = c_{11}c_{22}-c_{21}c_{12}\]
+<p>
+    <span class="multilang" lang="en">
+        (Note square or round brackets denote a matrix, straight vertical lines denote a
+                                determinant.)
+    </span>
+    <span class="multilang" lang="no">
+        (Merk at firkant- eller runde parenteser indikerer en matrise, rette vertikale streker indikerer en
+                                determinant.)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        A three by three matrix has an associated determinant
+    </span>
+    <span class="multilang" lang="no">
+        En tre ganger tre matrise har en tilknyttet determinant
+    </span>
+</p>
+\[\det (C)=\begin{vmatrix}c_{11}&amp;c_{12}&amp;c_{13}\\
+c_{21}&amp;c_{22}&amp;c_{23}\\
+c_{31}&amp;c_{32}&amp;c_{33}\end{vmatrix}\]
+<p>
+    <span class="multilang" lang="en">
+        Among other ways, this determinant can be evaluated by an &#8220;expansion about the top
+                                row&#8221;:
+    </span>
+    <span class="multilang" lang="no">
+        Blant andre m&#229;ter kan denne determinanten beregnes ved en "utvidelse om &#248;verste rad":
+    </span>
+</p>
+\[\det(C)=c_{11}\begin{vmatrix}c_{22}&amp;c_{23}\\
+c_{32}&amp;c_{33}\end{vmatrix} - c_{12}\begin{vmatrix}c_{21}&amp;c_{23}\\
+c_{31}&amp;c_{33}\end{vmatrix} + c_{13}\begin{vmatrix}c_{21}&amp;c_{22}\\ c_{31}&amp;c_{32}\end{vmatrix}\]
+<p>
+    <span class="multilang" lang="en">
+        Note the minus sign in the second term.
+    </span>
+    <span class="multilang" lang="no">
+        Merk minus tegnet i det andre leddet.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        A matrix such as \(A=\left[\begin{array}{cc}4&amp;8\\ 1&amp;2\end{array}\right]\)
+                                which has zero determinant is called a
+        <strong>
+            singular
+        </strong>
+        matrix. Matrices with a non-zero determinant
+                                are
+        <strong>
+            non-singular
+        </strong>
+        . The key factor to be aware of is as follows:
+    </span>
+    <span class="multilang" lang="no">
+        En matrise som \(A=\left[\begin{array}{cc}4&amp;8\\ 1&amp;2\end{array}\right]\) som har en null determinant kalles en
+        <strong>
+            singular
+        </strong>
+        matrise. Matriser med en ikke-null determinant kalles
+        <strong>
+            ikke-singul&#230;re
+        </strong>
+        matriser. Det viktige faktumet som skal v&#230;re klar for leseren er som f&#248;lger:
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+        <br/>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            Any non-singular \(n\times n\) matrix \(C\), for which \(\text{det}(C)\neq 0 \), possesses an inverse \(C^{-1}\)
+                                i.e.
+        </span>
+        <span class="multilang" lang="no">
+            Enhver ikke-singul&#230;r \(n\times n\) matrise \(C\), for hvilken \(\text{det}(C)\neq 0 \), har en invers \(C^{-1}\)
+                                dvs.
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            \[CC^{-1}=C^{-1}C=I \quad \text{where } I \text{ denotes the } n\times n \text{ identity matrix.}\]
+        </span>
+        <span class="multilang" lang="no">
+            \[CC^{-1}=C^{-1}C=I \quad \text{der } I \text{ er en } n\times n \text{ identitetsmatrise.}\]
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            A singular matrix does
+            <b>
+                not
+            </b>
+            possess an inverse.
+        </span>
+        <span class="multilang" lang="no">
+            En singul&#230;r matrise har
+            <b>
+                ikke
+            </b>
+            en invers.
+        </span>
+    </p>
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

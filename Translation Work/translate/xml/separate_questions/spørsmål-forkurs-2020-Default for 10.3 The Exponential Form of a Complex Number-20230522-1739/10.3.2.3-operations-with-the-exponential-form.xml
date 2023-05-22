@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>10.3.2.3 Operations with the exponential form</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<br/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        If \(z = re^{i\theta}\) and \(w = te^{i\phi}\) then find expressions for
+    </span>
+    <span class="multilang" lang="no">
+        Hvis \(z = re^{i\theta}\) og \(w = te^{i\phi}\), finn uttrykk for
+    </span>
+</p>
+<ol class="HELM_parts_inline">
+    <li>
+        \(z^{-1}\)
+    </li>
+    <li>
+        \(z^*\)
+    </li>
+    <li>
+        \(zw\)
+    </li>
+</ol>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<ol class="HELM_parts">
+    <li>
+        <span class="multilang" lang="en">
+            If \(z = re^{i\theta}\) then \[z^{-1} = \frac{1}{re^{i\theta}} = \frac{1}{r}e^{-i\theta}\] using the normal rules for indices.
+        </span>
+        <span class="multilang" lang="no">
+            Hvis \(z = re^{i\theta}\) s&#229; er \[z^{-1} = \frac{1}{re^{i\theta}} = \frac{1}{r}e^{-i\theta}\] ved &#229; bruke de normale reglene for eksponenter.
+        </span>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            Working in polar form: if \(z = re^{i\theta} = r(\cos\theta + i\sin\theta) \) then \[z^* = r(\cos\theta - i\sin\theta) = r(cos(-\theta) + i\sin(-\theta)) = re^{-i\theta}\] since \(\cos(-\theta) = \cos{\theta}\) and \(\sin(-\theta) = -\sin{\theta}\).
+                                In fact this reflects the general rule: to find the complex conjugate of any expression simply replace the \(i\) by \(-i\) wherever it occurs in the expression.
+        </span>
+        <span class="multilang" lang="no">
+            I polar form: hvis \(z = re^{i\theta} = r(\cos\theta + i\sin\theta) \) s&#229; er \[z^* = r(\cos\theta - i\sin\theta) = r(cos(-\theta) + i\sin(-\theta)) = re^{-i\theta}\] siden \(\cos(-\theta) = \cos{\theta}\) og \(\sin(-\theta) = -\sin{\theta}\).
+        </span>
+        <br/>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            \( zw = (re^{i\theta})(te^{i\phi}) = rte^{i\theta}e^{i\phi} = rte^{i\theta + i\phi} = rte^{i(\theta + \phi)} \) which is again the result we are familiar with: when complex numbers are multiplied their moduli multiply and their arguments add.
+        </span>
+        <span class="multilang" lang="no">
+            \( zw = (re^{i\theta})(te^{i\phi}) = rte^{i\theta}e^{i\phi} = rte^{i\theta + i\phi} = rte^{i(\theta + \phi)} \) som igjen er resultatet vi er kjent med: n&#229;r komplekse tall multipliseres s&#229; multipliseres deres modulus og deres argumenter adderes.
+        </span>
+    </li>
+</ol>
+<hr/>
+<p>
+    <span class="multilang" lang="en">
+        We see that in some circumstances the exponential form is even more convenient than the polar form since we need not worry about cumbersome trigonometric relations.
+    </span>
+    <span class="multilang" lang="no">
+        Vi ser at i noen situasjoner er den eksponentielle formen enda mer praktisk enn den polare formen siden vi ikke trenger &#229; bekymre oss for vanskelige trigonometriske forhold.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

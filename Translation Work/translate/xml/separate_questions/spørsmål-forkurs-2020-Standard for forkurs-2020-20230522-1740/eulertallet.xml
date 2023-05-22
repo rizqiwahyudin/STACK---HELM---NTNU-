@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>Eulertallet</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    Leonhard Euler (1707-1783) regnes av mange som historiens st&#248;rste matematiker. Han har gitt opphav til eulertallet \(e\approx 2,71828183....\), et irrasjonalt tall med f&#248;lgende egenskap:
+</p>
+<p dir="ltr" style="text-align: left;">
+    \((e^x)'=e^x\)
+</p>
+<p dir="ltr" style="text-align: left;">
+    Eulertallet er alts&#229; det grunntallet \(a\) vi kan bruke i en eksponentialfunksjon \(a^x\) for at funksjonens
+    <span>
+        <span style="">
+            vekstfart alltid skal v&#230;re lik verdien av tallet selv
+        </span>
+        . N&#229;r eulertallet brukes i en funksjon blir dermed derivasjon veldig enkelt.
+    </span>
+</p>
+<p dir="ltr" style="text-align: left;">
+    <span>
+        Logaritmen med eulertallet som grunntall kaller vi den naturlige logaritmen, og skriver \(\ln x\). Dette er det tallet vi m&#229; opph&#248;ye \(e\) i for &#229; f&#229; \(x\).
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

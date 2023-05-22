@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>9.5.3.6 Cartesian form, Example</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<ol class="HELM_parts_inline">
+    <li>
+        <span class="multilang" lang="en">
+            Write down the Cartesian form of the equation of the straight line which passes through the two points \((9,3,-2)\) and \((4,5,-1)\).
+        </span>
+        <span class="multilang" lang="no">
+            Skriv ned den kartesiske formen for ligningen p&#229; den rette linjen som passerer gjennom punktene \((9,3,-2)\) og \((4,5,-1)\).
+        </span>
+    </li>
+    <p>
+    </p>
+    <li>
+        <span class="multilang" lang="en">
+            State the equivalent vector equation.
+        </span>
+        <span class="multilang" lang="no">
+            Oppgi den ekvivalente vektorligningen.
+        </span>
+    </li>
+</ol>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<ol class="HELM_parts">
+    <li>
+        <span class="multilang" lang="en">
+            The Cartesian equation of the line is \(\dfrac{x-9}{4-9}=\dfrac{y-3}{5-3}= \dfrac{z-(-2)}{-1-(-2)},\) that is \(\dfrac{x-9}{-5}= \dfrac{y-3}{2} = \dfrac{z+2}{1}.\)
+        </span>
+        <span class="multilang" lang="no">
+            Den kartesiske ligningen for linjen er \(\dfrac{x-9}{4-9}=\dfrac{y-3}{5-3}= \dfrac{z-(-2)}{-1-(-2)},\) som er \(\dfrac{x-9}{-5}= \dfrac{y-3}{2} = \dfrac{z+2}{1}.\)
+        </span>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            The vector equation of the line is \[
+                                \underline{ r}=\underline{ a} +t(\underline{ b}-\underline{ a})\]
+                                \[=
+                                \begin{bmatrix}
+                                9 \\ 3 \\ -2
+                                \end{bmatrix} + t\left(
+                                \begin{bmatrix}
+                                4 \\ 5 \\ -1
+                                \end{bmatrix}-
+                                \begin{bmatrix}
+                                9 \\ 3 \\ -2
+                                \end{bmatrix}\right)\]\[=\begin{bmatrix}
+                                9 \\ 3 \\ -2
+                                \end{bmatrix} + t
+                                \begin{bmatrix}
+                                -5 \\ 2 \\1
+                                \end{bmatrix}.\]
+        </span>
+        <span class="multilang" lang="no">
+            Vektorligningen til linjen er \[
+                \underline{ r}=\underline{ a} +t(\underline{ b}-\underline{ a})\]
+                \[=
+                \begin{bmatrix}
+                9 \\ 3 \\ -2
+                \end{bmatrix} + t\left(
+                \begin{bmatrix}
+                4 \\ 5 \\ -1
+                \end{bmatrix}-
+                \begin{bmatrix}
+                9 \\ 3 \\ -2
+                \end{bmatrix}\right)\]\[=\begin{bmatrix}
+                9 \\ 3 \\ -2
+                \end{bmatrix} + t
+                \begin{bmatrix}
+                -5 \\ 2 \\1
+                \end{bmatrix}.\]
+        </span>
+    </li>
+</ol>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

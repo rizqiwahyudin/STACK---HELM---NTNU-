@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>7.2.3.4 Introducing the zero matrix</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        The zero matrix
+    </span>
+    <span class="multilang" lang="no">
+        Nullmatrisen
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        We call \(B=\begin{bmatrix}0 &amp; 0 \\ 0 &amp; 0 \end{bmatrix}\) the \(2 \times 2\)
+        <b>
+            zero matrix
+        </b>
+        written \(\underline{0}\) so that \(A \cdot \underline{0} = \underline{0} \cdot A = \underline{0}\) for any matrix \(A.\)
+    </span>
+    <span class="multilang" lang="no">
+        Vi kaller \(B=\begin{bmatrix}0 &amp; 0 \\ 0 &amp; 0 \end{bmatrix}\) \(2 \times 2\)
+        <b>
+            nullmatrisen
+        </b>
+        skrevet som \(\underline{0}\) slik at \(A \cdot \underline{0} = \underline{0} \cdot A = \underline{0}\) for hvilken som helst matrise \(A.\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Now in the multiplication of numbers, the equation \(ab = 0\) implies that either \(a\) is zero or \(b\) is zero or both are zero. The following task shows that this is not necessarily true for matrices.
+    </span>
+    <span class="multilang" lang="no">
+        I multiplikasjon av tall inneb&#230;rer ligningen \(ab = 0\) at enten \(a\) er null eller \(b\) er null eller at begge er null. F&#248;lgende oppgave viser at dette ikke n&#248;dvendigvis er sant for matriser.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

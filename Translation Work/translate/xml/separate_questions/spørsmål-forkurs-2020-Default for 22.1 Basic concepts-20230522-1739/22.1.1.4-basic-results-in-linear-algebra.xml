@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>22.1.1.4 Basic results in linear algebra</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Important results in linear algebra
+    </span>
+    <span class="multilang" lang="no">
+        Viktige resultater innen line&#230;r algebra
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        Consider the system of equations \(C\underline{x}=\underline{k}\).
+    </span>
+    <span class="multilang" lang="no">
+        Vurder systemet av ligninger \(C\underline{x}=\underline{k}\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We are concerned with the nature of the solutions (if any) of this system. We shall
+                                see that this system only exhibits three solution types:
+    </span>
+    <span class="multilang" lang="no">
+        Vi er opptatt av egenskapen til l&#248;sningene (om det er noen) til dette systemet. Vi
+                                skal se at dette systemet bare har tre typer l&#248;sninger:
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\bullet\) The system is consistent and has a unique solution for
+                                \(\underline{x}\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\bullet\) Systemet er konsistent og har en unik l&#248;sning for
+                                \(\underline{x}\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\bullet\) The system is consistent and has an infinite number of solutions for
+                                \(\underline{x}\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\bullet\) Systemet er konsistent og har et uendelig antall l&#248;sninger for
+                                \(\underline{x}\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\bullet\) The system is inconsistent and has no solution for
+                                \(\underline{x}\)
+        <br/>
+    </span>
+    <span class="multilang" lang="no">
+        \(\bullet\) Systemet er inkonsistent og har ingen l&#248;sning for
+                                \(\underline{x}\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        There are two basic cases to consider:
+    </span>
+    <span class="multilang" lang="no">
+        Det er to grunnleggende tilfeller &#229; vurdere:
+    </span>
+</p>
+<p style="text-align:center;">
+    <span class="multilang" lang="en">
+        \(\det(C)\ne 0\) or \(\det(C)=0\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\det(C)\ne 0\) eller \(\det(C)=0\)
+    </span>
+</p>
+<br/>
+<p>
+    <span class="multilang" lang="en">
+        <strong>
+            Case 1
+        </strong>
+        : \(\det(C)\ne 0\)
+    </span>
+    <span class="multilang" lang="no">
+        <strong>
+            Tilfelle 1
+        </strong>
+        : \(\det(C)\ne 0\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In this case \(C^{-1}\) exists and the
+        <strong>
+            unique
+        </strong>
+        solution to
+                                \(C\underline{x}=\underline{k}\) is
+    </span>
+    <span class="multilang" lang="no">
+        I dette tilfellet eksisterer \(C^{-1}\) og den
+        <strong>
+            unike
+        </strong>
+        l&#248;sning p&#229;
+                                \(C\underline{x}=\underline{k}\) er
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad \underline{x}=C^{-1}\underline{k}\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad \underline{x}=C^{-1}\underline{k}\)
+    </span>
+</p>
+<br/>
+<p>
+    <span class="multilang" lang="en">
+        <strong>
+            Case 2
+        </strong>
+        : \(\det(C)=0\)
+    </span>
+    <span class="multilang" lang="no">
+        <strong>
+            tilfelle 2
+        </strong>
+        : Determinanten til C er lik null.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In this case \(C^{-1}\) does not exist.
+    </span>
+    <span class="multilang" lang="no">
+        I dette tilfellet eksisterer ikke \(C^{-1}\).
+    </span>
+</p>
+<ol type="a">
+    <li>
+        <span class="multilang" lang="en">
+            If \(\underline{k}\ne{\underline 0}\) the system
+                                                \(C\underline{x}=\underline{k}\) either has
+            <strong>
+                no solutions
+            </strong>
+            or has
+            <strong>
+                an infinite number
+                                                                of solutions
+            </strong>
+            . We can use Gaussian elimination to determine which case it is. If we have no
+                                                solutions then the reduced augmented matrix will have a row which is zero in all but the rightmost position;
+                                                otherwise we have infinitely many solutions.
+        </span>
+        <span class="multilang" lang="no">
+            Hvis \(\underline{k}\ne{\underline 0}\) har systemet
+                                                \(C\underline{x}=\underline{k}\) enten
+            <strong>
+                ingen l&#248;sninger
+            </strong>
+            eller
+            <strong>
+                et uendelig antall
+                                                                l&#248;sninger
+            </strong>
+            . Vi kan bruke Gauss eliminering for &#229; bestemme hvilket tilfelle det er. Hvis vi ikke
+                                                har noen l&#248;sninger vil den reduserte matrisen ha en rad som er null i alle posisjoner bortsett fra den legst til
+                                                h&#248;yre; ellers har vi et uendelig antall l&#248;sninger.
+        </span>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            If \(\underline{k}={\underline 0}\) the system \(C\underline{x}={\underline
+                                                0}\) has an
+            <strong>
+                infinite number of solutions.
+            </strong>
+        </span>
+        <span class="multilang" lang="no">
+            Hvis \(\underline{k}={\underline 0}\) har systemet
+                                                \(C\underline{x}={\underline 0}\) et
+            <strong>
+                uendelig antall l&#248;sninger.
+            </strong>
+        </span>
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        We note that a homogeneous system
+    </span>
+    <span class="multilang" lang="no">
+        Vi merker at et homogent system
+    </span>
+</p>
+\[C\underline{x}={\underline 0}\]
+<p>
+    <span class="multilang" lang="en">
+        has a unique solution \(\underline{x}={\underline 0}\) if \(\det(C)\ne 0\) (this is
+                                called the
+        <strong>
+            trivial solution
+        </strong>
+        ) or an infinite number of solutions if \(\det(C)=0\).
+    </span>
+    <span class="multilang" lang="no">
+        har en entydig l&#248;sning \(\underline{x}={\underline 0}\) hvis \(\det(C)\ne 0\)
+                                (dette kalles den
+        <strong>
+            trivielle l&#248;sningen
+        </strong>
+        ) eller et uendelig antall l&#248;sninger hvis
+                                \(\det(C)=0\).
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        <strong>
+            (Case 1)
+        </strong>
+        Solve the inhomogeneous system of equations
+    </span>
+    <span class="multilang" lang="no">
+        <strong>
+            (Tilfelle 1)
+        </strong>
+        L&#248;s det inhomogene systemet av ligninger.
+    </span>
+</p>
+\[\left\{\begin{alignedat}{2}
+x_1 &amp; {}+{} &amp; x_2 &amp; = 1 \\
+2x_1 &amp; {}+{} &amp; x_2 &amp; = 2
+\end{alignedat}\right.\]
+<p>
+    <span class="multilang" lang="en">
+        which can be expressed as \(C\underline{x}=\underline{k}\) where
+    </span>
+    <span class="multilang" lang="no">
+        som kan uttrykkes som \(C\underline{x}=\underline{k}\) der
+    </span>
+</p>
+\[C=\begin{bmatrix}1&amp;1\\ 2&amp;1\end{bmatrix} \qquad \underline{x}=\begin{bmatrix} x_1\\ x_2\end{bmatrix} \qquad
+\underline{k}=\begin{bmatrix} 1\\ 2\end{bmatrix}\]
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Here det\((C)=-1\neq 0\).
+    </span>
+    <span class="multilang" lang="no">
+        Her er det\((C)=-1\neq 0\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The system of equations has the
+        <strong>
+            unique solution:
+        </strong>
+        \(\underline{x}=\left[\begin{array}{c} x_1\\ x_2\end{array}\right]=\left[\begin{array}{c} 1\\ 0
+                                \end{array}\right] \).
+    </span>
+    <span class="multilang" lang="no">
+        Ligningssystemet har den
+        <strong>
+            unike l&#248;sningen:
+        </strong>
+        \(\underline{x}=\left[\begin{array}{c} x_1\\ x_2\end{array}\right]=\left[\begin{array}{c} 1\\ 0
+                                \end{array}\right] \).
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        <strong>
+            (Case 2.a)
+        </strong>
+        Examine the following inhomogeneous system for
+                                solutions
+    </span>
+    <span class="multilang" lang="no">
+        <strong>
+            (Tilfelle 2.a)
+        </strong>
+        Unders&#248;k f&#248;lgende inhomogene system for
+                                l&#248;sninger.
+    </span>
+</p>
+\[\left\{\begin{alignedat}{2}
+x_1 &amp; {}+{} &amp; 2x_2 &amp; = 1 \\
+3x_1 &amp; {}+{} &amp; 6x_2 &amp; = 0
+\end{alignedat}\right.\]
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Here \(\det(C)=\begin{vmatrix}1&amp;2\\3&amp;6\end{vmatrix}=0\). In this case there
+                                are no solutions.
+    </span>
+    <span class="multilang" lang="no">
+        Her er \(\det(C)=\begin{vmatrix}1&amp;2\\3&amp;6\end{vmatrix}=0\). I dette tilfellet
+                                finnes det ingen l&#248;sninger.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        To see this we see the first equation of the system states \(x_1+2x_2=1\) whereas
+                                the second equation (after dividing through by 3) states \(x_1+2x_2=0\), a contradiction.
+    </span>
+    <span class="multilang" lang="no">
+        For &#229; se dette ser vi at den f&#248;rste ligningen i systemet sier \(x_1+2x_2=1\), mens
+                                den andre ligningen (etter divisjon med 3) sier \(x_1+2x_2=0\), en motstridelse.
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        <strong>
+            (Case 2.b)
+        </strong>
+        Solve the homogeneous system
+    </span>
+    <span class="multilang" lang="no">
+        <strong>
+            (Tilfelle 2.b)
+        </strong>
+        L&#248;s det homogene systemet.
+    </span>
+</p>
+<p>
+    \[\left\{\begin{alignedat}{2}
+                x_1 &amp; {}+{} &amp; x_2 &amp; = 0 \\
+                2x_1 &amp; {}+{} &amp; 2x_2 &amp; = 0
+                \end{alignedat}\right.\]
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Here \(\det(C)=\begin{vmatrix}1&amp;1\\2&amp;2\end{vmatrix}=0\). The solutions are
+        <strong>
+            any
+        </strong>
+        pair of numbers \(\{x_1,x_2\}\) such that \(x_1=-x_2\), i.e. \(\underline{x} =
+                                \begin{bmatrix}\alpha\\-\alpha\end{bmatrix}\), where \(\alpha\) is an arbitrary element of \(\mathbb{R}\). There
+                                are an
+        <strong>
+            infinite number of solutions
+        </strong>
+        .
+    </span>
+    <span class="multilang" lang="no">
+        Her er \(\det(C)=\begin{vmatrix}1&amp;1\\2&amp;2\end{vmatrix}=0\). L&#248;sningene er
+        <strong>
+            enhver
+        </strong>
+        par av tall \(\{x_1,x_2\}\) slik at \(x_1=-x_2\), dvs. \(\underline{x} =
+                                \begin{bmatrix}\alpha\\-\alpha\end{bmatrix}\), hvor \(\alpha\) er et vilk&#229;rlig element av \(\mathbb{R}\). Det er
+                                et
+        <strong>
+            uendelig antall l&#248;sninger
+        </strong>
+        .
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>22.2.1.1 Diagonalization of a matrix with distinct eigenvalues</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Diagonalization of a matrix with distinct eigenvalues
+    </span>
+    <span class="multilang" lang="no">
+        Diagonalisering av en matrise med ulike egenverdier.
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        Diagonalization means transforming a non-diagonal matrix into an equivalent matrix which is diagonal and hence is simpler to deal with.
+    </span>
+    <span class="multilang" lang="no">
+        Diagonalisering betyr &#229; transformere en ikke-diagonal matrise til en ekvivalent matrise som er diagonal og dermed enklere &#229; h&#229;ndtere.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        A matrix \(A\) with distinct eigenvalues has eigenvectors which are linearly independent. If we form a matrix \(P\) whose columns are these eigenvectors, it can be shown that \( \det (P)\neq 0\) so that \(P^{-1}\) exists.
+    </span>
+    <span class="multilang" lang="no">
+        En matrise \(A\) med distinkte egenverdier har egenvektorer som er line&#230;rt uavhengige. Hvis vi danner en matrise \(P\) hvor kolonnene er disse egenvektorene, kan det vises at \( \det (P) \neq 0\) slik at \(P^{-1}\) eksisterer.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The product \(P^{-1}AP\) is then a
+        <strong>
+            diagonal
+        </strong>
+        matrix \(D\) whose diagonal elements are the eigenvalues of \(A\). Thus if \(\lambda_1,\lambda_2,\ldots \lambda_n\) are the distinct eigenvalues of \(A\) with associated eigenvectors \(\underline{x}_1,\underline{x}_2,\ldots , \underline{x}_n\) respectively, then
+    </span>
+    <span class="multilang" lang="no">
+        Produktet \(P^{-1}AP\) er da en
+        <strong>
+            diagonal
+        </strong>
+        matrise \(D\) der de diagonal elementene er egenverdiene til \(A\) Dermed, hvis \(\lambda_1,\lambda_2,\ldots \lambda_n\) er de distinkte egenverdiene til \(A\) med tilh&#248;rende egenvektorer \(\underline{x}_1,\underline{x}_2,\ldots , \underline{x}_n\) henholdsvis, vil
+    </span>
+</p>
+\[P = [\underline{x}_1 : \underline{x}_2 : \ \cdots\ : \underline{x}_n]\]
+<p>
+    <span class="multilang" lang="en">
+        will produce a product
+    </span>
+    <span class="multilang" lang="no">
+        produsere et produkt
+    </span>
+</p>
+\[P^{-1}AP = D = \begin{bmatrix}
+\lambda_1 &amp; 0 &amp; \cdots &amp; 0 \\
+0 &amp; \lambda_2 &amp; \cdots &amp; 0 \\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots \\
+0 &amp; \cdots &amp; \cdots &amp; \lambda_n
+\end{bmatrix}\]
+<p>
+    <span class="multilang" lang="en">
+        We see that the order of the eigenvalues in \(D\) matches the order in which \(P\) is formed from the eigenvectors.
+    </span>
+    <span class="multilang" lang="no">
+        Vi ser at rekkef&#248;lgen til egenverdiene i \(D\) samsvarer med rekkef&#248;lgen til \(P\) som formes av egenvektorene.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Note that:
+    </span>
+    <span class="multilang" lang="no">
+        Merk at:
+    </span>
+</p>
+<ol type="a">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The matrix \(P\) is called the
+                <strong>
+                    modal matrix
+                </strong>
+                of \(A\).
+            </span>
+            <span class="multilang" lang="no">
+                Matrisen \(P\) kalles for den
+                <strong>
+                    modal matrisen
+                </strong>
+                til \(A\)
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                Since \(D\) is a diagonal matrix with eigenvalues \(\lambda_1,\lambda_2,\ldots,\lambda_n\) which are the same as those of \(A\), then the matrices \(D\) and \(A\) are said to be
+                <strong>
+                    similar
+                </strong>
+                .
+            </span>
+            <span class="multilang" lang="no">
+                Siden \(D\) er en diagonal matrise med egenverdier \(\lambda_1,\lambda_2,\ldots,\lambda_n\) som er de samme som de til \(A\), sies det at matrisene \(D\) og \(A\) er
+                <strong>
+                    like
+                </strong>
+                .
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                The transformation of \(A\) into \(D\) using \(P^{-1}AP=D\) is said to be a
+                <strong>
+                    similarity transformation.
+                </strong>
+            </span>
+            <span class="multilang" lang="no">
+                Transformasjon av \(A\) til \(D\) ved bruk av \(P^{-1}AP=D\) kalles en
+                <strong>
+                    likhetstransformasjon.
+                </strong>
+            </span>
+        </p>
+    </li>
+</ol>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Let \(A=\left[\begin{array}{cc}2&amp;3\\ 3&amp;2\end{array}\right]\). Obtain the modal matrix \(P\) and calculate the product \(P^{-1}AP\).
+    </span>
+    <span class="multilang" lang="no">
+        La \(A=\left[\begin{array}{cc}2&amp;3\\ 3&amp;2\end{array}\right]\) Finn modalmatrisen \(P\) og regn ut produktet \(P^{-1}AP\).
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        The matrix \(A\) has two distinct eigenvalues \(\lambda_1=-1\), \(\lambda_2=5\) with corresponding eigenvectors \(\underline{x_1}=\left[\begin{array}{r}x\\ -x\end{array}\right]\) and \(\underline{x_2}=\left[\begin{array}{c}x\\
+                                x\end{array}\right]\). We can therefore form the modal matrix from the simplest eigenvectors of these forms:
+    </span>
+    <span class="multilang" lang="no">
+        Matrisen \(A\) har to distinkte egenverdier \(\lambda_1=-1\), \(\lambda_2=5\) med tilh&#248;rende egenvektorer \(\underline{x_1}=\left[\begin{array}{r}x\\ -x\end{array}\right]\) og \(\underline{x_2}=\left[\begin{array}{c}x\\
+                                x\end{array}\right]\) Vi kan derfor danne den modale matrisen fra de enkleste egenvektorene:
+    </span>
+</p>
+\[ P=\left[\begin{array}{rr}1&amp;1\\ -1&amp;1\end{array}\right]\]
+<p>
+    <span class="multilang" lang="en">
+        (Other eigenvectors would be acceptable e.g. we could use \(P=\left[\begin{array}{rr}2&amp;3\\
+                                -2&amp;3\end{array}\right]\) but there is no reason to over complicate the calculation.)
+    </span>
+    <span class="multilang" lang="no">
+        (Andre egenvektorer ville v&#230;rt akseptable, f.eks. kunne vi bruke) \(P=\left[\begin{array}{rr}2&amp;3\\
+                                -2&amp;3\end{array}\right]\) Men det er ingen grunn til &#229; overkomplisere beregningen.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        It is easy to obtain the inverse of this \(2\times 2\) matrix \(P\) and the reader should confirm that:
+    </span>
+    <span class="multilang" lang="no">
+        Det er lett &#229; finne inversen til denne \(2\times 2\) matrisen \(P\), og leseren b&#248;r bekrefte dette:
+    </span>
+</p>
+\[P^{-1}=\dfrac{1}{\text{det}(P)}\ \text{adj}
+(P)=\dfrac{1}{2}\left[\begin{array}{rr}1&amp;1\\
+-1&amp;1\end{array}\right]^T=\dfrac{1}{2}\left[\begin{array}{rr}1&amp;-1\\ 1&amp;1\end{array}\right]\]
+<p>
+    <span class="multilang" lang="en">
+        We can now construct the product \(P^{-1}AP\):
+    </span>
+    <span class="multilang" lang="no">
+        Vi kan n&#229; konstruere produktet \(P^{-1}AP\):
+    </span>
+</p>
+\[\begin{aligned}
+P^{-1}AP&amp;=\dfrac{1}{2}\left[\begin{array}{rr}1&amp;-1\\
+1&amp;1\end{array}\right]\left[\begin{array}{cc}2&amp;3\\ 3&amp;2\end{array}\right]\left[\begin{array}{rr}1&amp;1\\
+-1&amp;1\end{array}\right]\\
+&amp;=\dfrac{1}{2}\left[\begin{array}{rr}1&amp;-1\\
+1&amp;1\end{array}\right]\left[\begin{array}{rr}-1&amp;5\\
+1&amp;5\end{array}\right]\\
+\\
+&amp;= \dfrac{1}{2}\left[\begin{array}{rr}-2&amp;0\\
+0&amp;10\end{array}\right]\\
+&amp;= \left[\begin{array}{rr}-1&amp;0\\ 0&amp;5\end{array}\right]\end{aligned}\]
+<p>
+    <span class="multilang" lang="en">
+        which is a diagonal matrix with entries that are the eigenvalues, as expected. Show (by repeating the method outlined above) that had we defined \(P=\left[\begin{array}{rr}1&amp;1\\ 1&amp;-1\end{array}\right]\) (i.e. interchanged the order in which the eigenvectors were taken) we would find \(P^{-1}AP=\left[\begin{array}{rr}5&amp;0\\ 0&amp;-1\end{array}\right]\) (i.e. the resulting diagonal elements would also be interchanged.)
+    </span>
+    <span class="multilang" lang="no">
+        som er en diagonalmatrise med elementer som er egenverdiene, som forventet. Vis (ved &#229; gjenta metoden som er beskrevet over) at hvis vi hadde definert \(P=\left[\begin{array}{rr}1&amp;1\\ 1&amp;-1\end{array}\right]\) (dvs. hvis vi byttet rekkef&#248;lgen p&#229; hvilke egenvektorer som ble tatt) ville vi finne \(P^{-1}AP=\left[\begin{array}{rr}5&amp;0\\ 0&amp;-1\end{array}\right]\) (dvs. de resulterende diagonale elementene ville ogs&#229; bli byttet om.)
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

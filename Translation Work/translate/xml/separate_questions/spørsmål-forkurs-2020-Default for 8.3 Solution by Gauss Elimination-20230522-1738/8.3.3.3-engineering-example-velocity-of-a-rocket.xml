@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>8.3.3.3 Engineering Example: Velocity of a rocket</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Engineering Example: Velocity of a rocket
+    </span>
+    <span class="multilang" lang="no">
+        Teknisk eksempel: Hastigheten til en rakett
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        The upward velocity of a rocket, measured at 3 different times, is shown in the following table \[\begin{array}{|c|c|}\hline
+                                \text{Time}, t &amp; \text{Velocity}, v \\
+                                \text{(seconds)}&amp; \text{(metres/second)} \\ \hline
+                                5&amp;106.8\\ \hline
+                                8&amp;177.2\\ \hline
+                                12&amp;279.2\\ \hline
+                                \end{array}\] The velocity over the time interval \(5\leq t\leq 12\) is approximated by a quadratic expression as \[v(t)=a_1t^2+a_2t+a_3\] Find the values of \(a_1, a_2\) and \(a_3\).
+    </span>
+    <span class="multilang" lang="no">
+        Oppadg&#229;ende fart til en rakett, m&#229;lt p&#229; 3 forskjellige tidspunkter, er vist i f&#248;lgende tabell. \[\begin{array}{|c|c|}\hline
+                                \text{Tid, t} &amp; \text{Fart, v} \\
+                                \text{(sekunder)}&amp; \text{(meter/sekund)} \\ \hline
+                                5&amp;106.8\\ \hline
+                                8&amp;177.2\\ \hline
+                                12&amp;279.2\\ \hline
+                                \end{array}\] Farten over tidsintervallet \(5\leq t\leq 12\) er tiln&#230;rmet ved uttrykket til en annengradsfunksjon \[v(t)=a_1t^2+a_2t+a_3\] Finn verdiene til \(a_1, a_2\) og \(a_3\).
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Substituting the values from the table into the quadratic equation for \(v(t)\) gives: \[\begin{array}{l}
+                                106.8 &amp; = &amp; 25a_1 &amp; + &amp; 5a_2 &amp; + &amp; a_3 \\
+                                177.2 &amp; = &amp; 64a_1 &amp; + &amp; 8a_2 &amp; + &amp; a_3 \\
+                                279.2 &amp; = &amp; 144a_1 &amp; + &amp; 12a_2 &amp; + &amp; a_3 \\
+                                \end{array}
+                                \qquad \text{or} \qquad
+                                \left[\begin{matrix}
+                                25&amp;5&amp;1\\
+                                64&amp;8&amp;1\\
+                                144&amp;12&amp;1
+                                \end{matrix}\right]
+                                \left[\begin{matrix}
+                                a_1\\a_2\\a_3
+                                \end{matrix}\right]=
+                                \left[\begin{matrix}
+                                106.8\\
+                                177.2\\
+                                279.2
+                                \end{matrix}\right]\] Applying one of the methods you&#226;&#8364;&#8482;ve learned gives the solution as \[a_1=0.2905\qquad a_2=19.6905\qquad a_3=1.0857 \quad \text{to } 4 \text{ d.p}.\] As the original values were all experimental observations then the values of the unknowns are all approximations. The relation \(v(t)=0.2905t^2+19.6905t+1.0857\) can now be used to predict the approximate position of the rocket for any time within
+                                the interval \(5\leq t \leq 12\).
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; sette inn verdiene fra tabellen inn i den kvadratiske ligningen for \(v(t)\) f&#229;r vi: \[\begin{array}{l}
+                                106.8 &amp; = &amp; 25a_1 &amp; + &amp; 5a_2 &amp; + &amp; a_3 \\
+                                177.2 &amp; = &amp; 64a_1 &amp; + &amp; 8a_2 &amp; + &amp; a_3 \\
+                                279.2 &amp; = &amp; 144a_1 &amp; + &amp; 12a_2 &amp; + &amp; a_3 \\
+                                \end{array}
+                                \qquad \text{eller} \qquad
+                                \left[\begin{matrix}
+                                25&amp;5&amp;1\\
+                                64&amp;8&amp;1\\
+                                144&amp;12&amp;1
+                                \end{matrix}\right]
+                                \left[\begin{matrix}
+                                a_1\\a_2\\a_3
+                                \end{matrix}\right]=
+                                \left[\begin{matrix}
+                                106.8\\
+                                177.2\\
+                                279.2
+                                \end{matrix}\right]\] &#197; bruke en av metodene du har l&#230;rt gir l&#248;sningen som \[a_1=0.2905\qquad a_2=19.6905\qquad a_3=1.0857 \quad \text{til } 4 \text{ d.p}.\] Siden de opprinnelige verdiene var alle eksperimentelle observasjoner, er verdiene for de ukjente st&#248;rrelsene alle tiln&#230;rminger. Sammenhengen \(v(t)=0.2905t^2+19.6905t+1.0857\) kan n&#229; brukes til &#229; forutsi den omtrentlige posisjonen til rakettene for ethvert tidspunkt innenfor intervallet \(5\leq t \leq 12\).
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

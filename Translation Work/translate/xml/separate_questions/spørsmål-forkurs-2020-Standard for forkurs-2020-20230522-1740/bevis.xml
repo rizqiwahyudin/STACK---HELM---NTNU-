@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>Bevis</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    Bevis
+</h3>
+<p>
+    Et bevis kan defineres som en argumentasjon for at noe, uten tvil, er sant/stemmer. Uten et bevis vil setninger og teorem i matematikken miste all betydning, og dermed er dette noe av det som har st&#248;rst betydning i faget. P&#229; denne siden skal vi g&#229; gjennom fire forskjellige teknikker p&#229; &#229; bevise p&#229;stander i matematikken.
+</p>
+<br/>
+<div class="HELM_keypoint">
+    <h4>
+        N&#248;kkelpunkt
+    </h4>
+    <p>
+        De fire bevis teknikkene vi skal repetere her er:
+    </p>
+    <ul>
+        <li>
+            Direkte bevis
+        </li>
+        <li>
+            Kontrapositivt bevis
+        </li>
+        <li>
+            Motsigelsesbevis
+        </li>
+        <li>
+            Induksjonsbevis
+        </li>
+    </ul>
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

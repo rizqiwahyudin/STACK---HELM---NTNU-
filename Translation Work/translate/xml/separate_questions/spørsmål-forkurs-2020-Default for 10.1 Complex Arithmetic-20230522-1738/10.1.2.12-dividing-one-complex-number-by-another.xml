@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>10.1.2.12 Dividing one complex number by another</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Dividing complex numbers
+    </span>
+    <span class="multilang" lang="no">
+        Divisjon av komplekse tall.
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        Here we consider the operation of dividing one complex number \(z=a+i b\) by another, \(w=c+i d\): \[\qquad
+                                {z\over w}={a+i b\over {c+i d}}\] We wish to simplify the right-hand side into the standard form of a complex number : \[\text{(Real part)}\ +i\ \text{(Imaginary part)}\] or the equivalent: \[\text{(Real part)}\ +\ \text{(Imaginary part)}\ i\] To do this we multiply 'top and bottom' by the complex conjugate of the bottom (the denominator), that is, by \(c-i d\) (this is called rationalising): \[\qquad
+                                {z\over w}={a+i b\over {c+i d}}={a+i b\over {c+i d}}\times {c-i d\over
+                                {c-i d}}\] and then carry out the multiplication, top and bottom: \[\begin{aligned}
+                                {z\over w}&amp;={(ac+bd)+i(bc-ad)\over {c^2+d^2}}\\
+                                &amp;=\left({ac+bd\over
+                                {c^2+d^2}}\right)+i\left({bc-ad\over
+                                {c^2+d^2}}\right)\qquad\end{aligned}\] which is now in the required form. The reason for rationalising is to get a real number in the denominator since a complex number divided by a real number is easy to evaluate.
+    </span>
+    <span class="multilang" lang="no">
+        Her vurderer vi operasjonen med &#229; dele en kompleks tall \(z=a+i b\) med en annen \(w=c+i d\): \[\qquad
+                                {z\over w}={a+i b\over {c+i d}}\] Vi &#248;nsker &#229; forenkle h&#248;yresiden til standardformen til et komplekst tall: \[\text{(Reell del)}\ +i\ \text{(Imagin&#230;r del)}\] eller det ekvivalente: \[\text{(Reell del)}\ +\ \text{(Imagin&#230;r del)}\ i\] For &#229; gj&#248;re dette multipliserer vi 'teller og nevner' med den komplekse konjugaten til nevneren, det vil si med \(c-i d\) (dette kalles rasjonalisering): \[\qquad
+                                {z\over w}={a+i b\over {c+i d}}={a+i b\over {c+i d}}\times {c-i d\over
+                                {c-i d}}\] og utf&#248;rer s&#229; multiplikasjonen, teller og nevner: \[\begin{aligned}
+                                {z\over w}&amp;={(ac+bd)+i(bc-ad)\over {c^2+d^2}}\\
+                                &amp;=\left({ac+bd\over
+                                {c^2+d^2}}\right)+i\left({bc-ad\over
+                                {c^2+d^2}}\right)\qquad\end{aligned}\] noe som n&#229; er i &#248;nsket form. &#197;rsaken til rasjonalisering er &#229; f&#229; et reelt tall i nevneren siden et komplekst tall delt med et reelt tall er enkelt &#229; evaluere.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

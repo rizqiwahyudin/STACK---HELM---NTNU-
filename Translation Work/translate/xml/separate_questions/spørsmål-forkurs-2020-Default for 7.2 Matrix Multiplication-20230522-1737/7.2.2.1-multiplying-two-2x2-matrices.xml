@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>7.2.2.1 Multiplying two 2x2 matrices</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Multiplying two \(2\times 2\) matrices
+    </span>
+    <span class="multilang" lang="no">
+        Multipliserer to \(2 \times 2 \) matriser
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        If \(A\) and \(B\) are two matrices then the product \(AB\) is obtained by multiplying the rows of \(A\) with the columns of \(B\) in the manner described above. This will only be possible if the number of elements in the rows of \(A\) is the same as the number of elements in the columns of \(B\). In particular, we define the product of two \(2\times 2\) matrices \(A\) and \(B\) to be another \(2\times 2\) matrix \(C\) whose elements are calculated according to the following pattern: \[ \begin{array}{ccccc} \begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix} &amp;\cdot &amp; \begin{bmatrix} w &amp; x \\ y &amp; z \end{bmatrix} &amp; = &amp; \begin{bmatrix} aw + by &amp; ax + bz \\ cw + dy &amp; cx + dz \end{bmatrix} \\ A &amp; \cdot &amp; B &amp; = &amp; C \end{array}\]
+    </span>
+    <span class="multilang" lang="no">
+        Hvis \(A\) og \(B\) er to matriser, bestemmes produktet \(AB\) ved &#229; multiplisere radene p&#229; \(A\) med kolonnene til \(B\) p&#229; m&#229;ten beskrevet ovenfor. Dette vil bare v&#230;re mulig hvis antall elementer i radene til \(A\) er det samme som antall elementer i kolonnene til \(B\). Vi definerer spesifikt produktet av to \(2 \times 2 \) matriser \(A \) og \(B \)  til &#229; v&#230;re en annen \(2 \times 2 \) matrise \(C \) der elementene er beregnet i f&#248;lgende m&#248;nster: \[ \begin{array}{ccccc} \begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix} &amp;\cdot &amp; \begin{bmatrix} w &amp; x \\ y &amp; z \end{bmatrix} &amp; = &amp; \begin{bmatrix} aw + by &amp; ax + bz \\ cw + dy &amp; cx + dz \end{bmatrix} \\ A &amp; \cdot &amp; B &amp; = &amp; C \end{array}\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Henceforth, rather than writing \(A \cdot B\), we omit the \(\cdot\). Thus we write \(AB\) for the matrix product. The rule for calculating the elements of the product \(C\) is described in the following Key Point.
+    </span>
+    <span class="multilang" lang="no">
+        Fremover, i stedet for &#229; skrive \(A \cdot B \), utelater vi \(\cdot \). Dermed skriver vi \(AB \) for matriksproduktet. Regelen for &#229; beregne elementene til produktet \(C \) er beskrevet i f&#248;lgende n&#248;kkelpunkt.
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <center>
+        <b>
+            <span class="multilang" lang="en">
+                Matrix Product
+            </span>
+            <span class="multilang" lang="no">
+                Matriseprodukt
+            </span>
+        </b>
+    </center>
+    <center>
+        <p>
+            <span class="multilang" lang="en">
+                \(AB=C\)
+            </span>
+            <span class="multilang" lang="no">
+                \(AB=C\)
+            </span>
+        </p>
+    </center>
+    <p>
+    </p>
+    <center>
+        <span class="multilang" lang="en">
+            The element in the \(i^{\text{th}}\) row and \(j^{\text{th}}\) column of \(C\) is obtained
+        </span>
+        <span class="multilang" lang="no">
+            Elementet i \(i{\text{-te}}\) rad og \(j{\text{-te}}\) kolonne for \(C \) bestemmes
+        </span>
+    </center>
+    <p>
+    </p>
+    <p>
+    </p>
+    <center>
+        <span class="multilang" lang="en">
+            by multiplying the \(i^{\text{th}}\) row of \(A\) with the \(j^{\text{th}}\) column of \(B\).
+        </span>
+        <span class="multilang" lang="no">
+            ved &#229; multiplisere \(i{\text{-te}}\) rad hos \(A\) med \(j{\text{-te}}\) kolonne hos \(B \).
+        </span>
+    </center>
+    <p>
+    </p>
+</div>
+<span class="multilang" lang="en">
+    We illustrate this construction for the abstract matrices \(A\) and \(B\) given above:
+</span>
+<span class="multilang" lang="no">
+    Vi illustrerer denne konstruksjonen for de abstrakte matrisene \(A \) og \(B \) gitt ovenfor:
+</span>
+<p>
+</p>
+\[ \begin{bmatrix} a &amp; b \\ c &amp; d \end{bmatrix} \begin{bmatrix} w &amp; x \\ y &amp; z\end{bmatrix} = \begin{bmatrix} \begin{bmatrix} a &amp; b\end{bmatrix} \begin{bmatrix} w \\ y \end{bmatrix} &amp; \begin{bmatrix} a &amp; b \end{bmatrix} \begin{bmatrix} x \\ z \end{bmatrix}\\ \\ \begin{bmatrix} c &amp; d \end{bmatrix} \begin{bmatrix} w \\ y\end{bmatrix} &amp; \begin{bmatrix} c &amp; d \end{bmatrix} \begin{bmatrix} x \\ z \end{bmatrix}\end{bmatrix} = \begin{bmatrix} aw+by &amp; ax+bz \\ cw+dy &amp; cx+d \end{bmatrix} \]
+<p>
+    <span class="multilang" lang="en">
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        For example,
+    </span>
+    <span class="multilang" lang="no">
+        For eksempel,
+    </span>
+</p>
+<p>
+    \[ \begin{bmatrix} 2 &amp; -1 \\ 3 &amp; -2 \end{bmatrix} \begin{bmatrix} 2 &amp; 4 \\ 6 &amp; 1 \end{bmatrix} = \begin{bmatrix} \begin{bmatrix} 2 &amp; -1 \end{bmatrix} \begin{bmatrix}2 \\ 6 \end{bmatrix} &amp; \begin{bmatrix} 2 &amp; -1\end{bmatrix} \begin{bmatrix} 4 \\ 1 \end{bmatrix} \\ \\ \begin{bmatrix} 3 &amp; -2\end{bmatrix} \begin{bmatrix}2 \\ 6\end{bmatrix} &amp; \begin{bmatrix} 3 &amp; -2 \end{bmatrix} \begin{bmatrix} 4 \\ 1 \end{bmatrix} \end{bmatrix} = \begin{bmatrix}-2 &amp; 7 \\ -6 &amp; 10 \end{bmatrix} \]
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

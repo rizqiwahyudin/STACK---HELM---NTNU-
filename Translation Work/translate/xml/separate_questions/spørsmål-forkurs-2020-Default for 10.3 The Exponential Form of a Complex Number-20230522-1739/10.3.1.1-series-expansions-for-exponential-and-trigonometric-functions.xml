@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>10.3.1.1 Series expansions for exponential and trigonometric functions</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Series expansions for exponential and trigonometric functions
+    </span>
+    <span class="multilang" lang="no">
+        Rekkeutvikling for eksponensielle og trigonometriske funksjoner.
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        We have, so far, considered two ways of representing a complex number: \[\qquad z=a+i b\qquad \text{Cartesian form}\]or \[\qquad z=r(\cos\theta +i\sin\theta)\qquad \text{polar form}\]In this quiz we introduce a third way of denoting a complex number: the exponential form.
+    </span>
+    <span class="multilang" lang="no">
+        Hittil har vi vurdert to m&#229;ter &#229; representere et komplekst tall p&#229;: \[\qquad z=a+i b\qquad \text{Kartesisk form}\] eller \[\qquad z=r(\cos\theta +i\sin\theta)\qquad \text{polar form}\] I denne quizen introduserer vi en tredje m&#229;te &#229; representere et komplekst tall p&#229;: den eksponentielle formen.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        If \(x\) is a real number then, as we shall verify in a later quiz, the exponential number \(e\) raised to the power \(x\) can be written as a series of powers of \(x\):\[\qquad e^x=1+x+{x^2\over {2!}}+{x^3\over {3!}}+{x^4\over {4!}}+\cdots\]in which \(n!=n(n-1)(n-2)\dots (3)(2)(1)\) is the factorial of the integer \(n\). Although there are an infinite number of terms on the right-hand side, in any practical calculation we could only use a finite number. For example if we choose \(x=1\) (and taking only six terms) then\[\begin{aligned}
+                e^1 &amp;\approx 1+1+{1\over {2!}}+{1\over {3!}}+{1\over {4!}}+{1\over {5!}}\\&amp;= 2+0.5+0.16666+0.04166+0.00833\\&amp;=2.71666\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\end{aligned}\] which is fairly close to the accurate value of \(e=2.71828\) (to 5 d.p.)
+    </span>
+    <span class="multilang" lang="no">
+        Hvis \(x\) er et reelt tall, kan eksponentialtallet \(e\) opph&#248;yd i \(x\) skrives som en rekke polynomer av \(x\), noe vi vil verifisere senere i en quiz: \[\qquad e^x=1+x+{x^2\over {2!}}+{x^3\over {3!}}+{x^4\over {4!}}+\cdots\] der \(n!=n(n-1)(n-2)\dots(3)(2)(1)\) er falkultet av tallet \textit{n}. Selv om det er et uendelig antall ledd p&#229; h&#248;yresiden, vil vi i praksis kun bruke et endelig antall ledd. For eksempel, hvis vi velger \(x=1\) (og tar kun med seks ledd), s&#229; vil \[\begin{aligned}
+                e^1 &amp;\approx 1+1+{1\over {2!}}+{1\over {3!}}+{1\over {4!}}+{1\over {5!}}\\&amp;= 2+0.5+0.16666+0.04166+0.00833\\&amp;=2.71666\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\end{aligned}\] som er ganske n&#230;r den n&#248;yaktige verdien av \(e=2.71828\) (med 5 desimaler).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We ask you to accept that \(e^x\), for any real value of \(x\), is the  same as \(\displaystyle{1+x+{x^2\over {2!}}+{x^3\over {3!}}+\cdots }\) and that if we wish to calculate \(e^x\) for a particular value of \(x\) we will only take a finite number of terms in the series. Obviously the more terms we take in any particular calculation the more accurate will be our calculation.
+    </span>
+    <span class="multilang" lang="no">
+        Vi ber deg om &#229; akseptere at \(e^x\), for hvilken som helst reell verdi av \(x\), er det samme som \(\displaystyle{1+x+{x^2\over {2!}}+{x^3\over {3!}}+\cdots}\) og at hvis vi &#248;nsker &#229; beregne \(e^x\) for en bestemt verdi av \(x\), vil vi bare ta et endelig antall ledd i serien. &#197;penbart vil jo flere ledd vi tar med i en beregning, jo v&#230;re mer presis vil v&#229;r beregning v&#230;re.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        As we shall also see later, similar series expansions exist for the trigonometric functions \(\sin x\) and \(\cos x\): \[\qquad \sin x=x-{x^3\over {3!}}+{x^5\over {5!}}-{x^7\over
+                                {7!}}+\cdots\]\[\qquad \cos x=1-{x^2\over {2!}}+{x^4\over {4!}}-{x^6\over
+                                {6!}}+\cdots\]in which \(x\)
+                is measured in radians.
+    </span>
+    <span class="multilang" lang="no">
+        Som vi ogs&#229; senere skal se, finnes det tilsvarende rekkeutviklinger for de trigonometriske funksjonene \(\sin x\) og \(\cos x\): \[\qquad \sin x=x-{x^3\over {3!}}+{x^5\over {5!}}-{x^7\over
+                                {7!}}+\cdots\]\[\qquad \cos x=1-{x^2\over {2!}}+{x^4\over {4!}}-{x^6\over
+                                {6!}}+\cdots\]der \(x\) m&#229;les i radianer.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The observant reader will see that these two series for \(\sin x\) and \(\cos x\) are similar to the series for \(e^x\). Through the use of the symbol \(i\) (where \(i^2=-1)\) we will examine this close correspondence.
+    </span>
+    <span class="multilang" lang="no">
+        Den observante leseren vil se at disse to rekkef&#248;lger for \(\sin x\) og \(\cos x\) ligner p&#229; rekkef&#248;lgen for \(e^x\). Ved bruk av symbolet \(i\) (hvor \(i^2=-1)\) vil vi unders&#248;ke denne n&#230;re sammenhengen.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In the series for \(e^x\) replace \(x\) on both left-hand and right-hand sides by \(i\theta\) to give: \[\qquad e^{i\theta}=1+(i\theta)+{(i\theta)^2\over {2!}}+{(i\theta)^3\over
+                                {3!}}+{(i\theta)^4\over {4!}}+{(i\theta)^5\over {5!}}+\cdots\]Then, as usual, replace every occurrence of \(i^2\) by \(-1\) to give \[\qquad e^{i\theta}=1+i\theta-{\theta^2\over {2!}}-i{\theta^3\over
+                                {3!}}+{\theta^4\over {4!}}+i{\theta^5\over {5!}}+\cdots\]
+    </span>
+    <span class="multilang" lang="no">
+        I serien for \(e^x\), erstatt \(x\) p&#229; b&#229;de venstre- og h&#248;yre side med \(i\theta\) for &#229; f&#229;: \[\qquad e^{i\theta}=1+(i\theta)+{(i\theta)^2\over {2!}}+{(i\theta)^3\over
+                                {3!}}+{(i\theta)^4\over {4!}}+{(i\theta)^5\over {5!}}+\cdots\]Deretter, som vanlig, bytt ut hver forekomst av \(i^2\) med \(-1\) for &#229; f&#229; \[\qquad e^{i\theta}=1+i\theta-{\theta^2\over {2!}}-i{\theta^3\over
+                                {3!}}+{\theta^4\over {4!}}+i{\theta^5\over {5!}}+\cdots\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        which, when re-organised into real and imaginary terms gives, finally: \[\begin{aligned}
+                                e^{i\theta}&amp;=\left[1-{\theta^2\over {2!}}+{\theta^4\over
+                                {4!}}-\cdots \right]+i\left[
+                                \theta-{\theta^3\over
+                                {3!}}+{\theta^5\over {5!}}-\cdots \right]\\
+                                &amp;=\cos\theta +i\sin\theta.\end{aligned}\]
+    </span>
+    <span class="multilang" lang="no">
+        som, n&#229;r den er reorganisert i reelle og imagin&#230;re termer, endelig gir: \[\begin{aligned}
+                                e^{i\theta}&amp;=\left[1-{\theta^2\over {2!}}+{\theta^4\over
+                                {4!}}-\cdots \right]+i\left[
+                                \theta-{\theta^3\over
+                                {3!}}+{\theta^5\over {5!}}-\cdots \right]\\
+                                &amp;=\cos\theta +i\sin\theta.\end{aligned}\]
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt.
+        </span>
+    </h4>
+    <p>
+        \(e^{i\theta} = \cos\theta+i\sin\theta\) .
+    </p>
+</div>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Find complex number expressions, in Cartesian form, for
+    </span>
+    <span class="multilang" lang="no">
+        Finn uttrykkene for komplekse tall, i kartesisk form, for
+    </span>
+</p>
+<p>
+</p>
+<ol class="HELM_parts_inline">
+    <li>
+        \({e^{i\pi /4}}\qquad\)
+    </li>
+    <li>
+        \(e^{-i}\qquad\)
+    </li>
+    <li>
+        \(e^{i\pi}\)
+    </li>
+    <p>
+    </p>
+</ol>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        We use the above Key Point:
+    </span>
+    <span class="multilang" lang="no">
+        Vi bruker det overst&#229;ende n&#248;kkelpunktet:
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        \(\displaystyle{e^{i\pi/4} = \cos\frac{\pi}{4} + i\sin\frac{\pi}{4} = \frac{1}{\sqrt{2}} + i\frac{1}{\sqrt{2}}}\)
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            \(e^{-i} = \cos{(-1)} + i\sin{(-1)} \approx 0.540 - i(0.841)\). Don't forget: use
+            <strong>
+                radians
+            </strong>
+            .
+        </span>
+        <span class="multilang" lang="no">
+            \(e^{-i} = \cos{(-1)} + i\sin{(-1)} \approx 0.540 - i(0.841)\). Ikke glem: bruk
+            <strong>
+                radianer
+            </strong>
+            .
+        </span>
+    </li>
+    <li>
+    </li>
+    <li>
+        \(e^{i\pi} = \cos\pi + i\sin\pi = -1+i(0) = -1\)
+    </li>
+</ol>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>4.3.3.1 Sine is shifted cosine</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Obtain expressions for \(\cos\theta\) in terms of the sine function and for \(\sin\theta\) in terms of the cosine function.
+    </span>
+    <span class="multilang" lang="no">
+        Finn et uttrykk for \(\cos\theta\), avhengig av sinusfunksjonen og for \(\sin\theta\) avhengig av cosinusfunksjonen.
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Using
+    </span>
+    <span class="multilang" lang="no">
+        Ved hjelp av
+    </span>
+</p>
+\[\cos (A-B)\equiv \cos A\cos B+\sin A\sin B\]
+<p>
+    <span class="multilang" lang="en">
+        with \(A=\theta,\ B=\dfrac{\pi}{2}\) we obtain
+    </span>
+    <span class="multilang" lang="no">
+        og med \(A=\theta,\ B=\dfrac{\pi}{2}\) f&#229;r vi
+    </span>
+</p>
+\[ \cos\left(\theta-\dfrac{\pi}{2}\right)\equiv\cos\theta\ \cos\left(\dfrac{\pi}{2}\right)+\sin\theta\ \sin \left (\dfrac{\pi}{2}\right)\equiv \cos\theta\ (0)+\sin \theta\ \]
+<p>
+    <span class="multilang" lang="en">
+        i.e.
+    </span>
+    <span class="multilang" lang="no">
+        dvs.
+    </span>
+</p>
+\[\sin\theta\equiv\cos\left(\theta-\dfrac{\pi}{2}\right)\equiv\cos\left(\dfrac{\pi}{2}-\theta\right)\]
+<p>
+    <span class="multilang" lang="en">
+        This result explains why the graph of \(\sin\theta\) has exactly the same shape as the graph of \(\cos\theta\) but it is shifted to the right by \(\dfrac{\pi}{2}\). A similar calculation yields
+    </span>
+    <span class="multilang" lang="no">
+        Dette resultatet forklarer hvorfor grafen til \(\sin\theta\) har n&#248;yaktig samme form som grafen til \(\cos\theta\), men er forskj&#248;vet til h&#248;yre med \(\dfrac{\pi}{2 }\). En lignende beregning gir
+    </span>
+</p>
+\[\cos\theta\equiv\sin\left(\theta+\dfrac{\pi}{2}\right).\]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

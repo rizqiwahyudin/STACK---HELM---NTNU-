@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>7.212</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+Plasser nullpunktene og ekstremalpunktene til \[f(x) = {@exp@}\]
+[[jsxgraph input-ref-stateStore="stateRef1" input-ref-stateStore2="stateRef2"]]
+        // Create a board like normal.
+        var board = JXG.JSXGraph.initBoard(divid, {boundingbox: [-8, 6, 8, -10], axis: true, showCopyright: false});
+        // Create a point, its initial position will be the default position if no state is present.
+
+  
+  
+  
+  var n1 = board.create('point', [4, 2], {snapToGrid:true, name:'Nullpunkt 1'});
+        var n2 = board.create('point', [4, 3], {snapToGrid:true, name:'Nullpunkt 2'});
+        var b = board.create('point', [4, 4], {snapToGrid:true, name:'Bunnpunkt'});
+        var t = board.create('point', [4, 5], {snapToGrid:true, name:'Toppunkt'});
+
+  
+  
+  
+  // Bind it to the input and state stored in it.
+        stack_jxg.bind_point_dual(stateRef1, n1, n2);
+        stack_jxg.bind_point_dual(stateRef2, b, t);
+
+  
+  
+  
+  // As a side note, you typically do not want the state storing input to be directly visible to the user
+        // although it may be handy during development to see what happens in it. You might hide it like this:
+        var stateInput = document.getElementById(stateRef1);
+        var stateInput2 = document.getElementById(stateRef2);
+
+  
+  
+  
+  stateInput.style.display = 'none';
+        stateInput2.style.display = 'none';
+[[/jsxgraph]]
+<p style="display:none">
+    [[input:stateStore]] [[validation:stateStore]]
+</p>
+<p style="display:none">
+    [[input:stateStore2]] [[validation:stateStore2]]
+</p>
+<p>
+    Hva er likningen for tangenten til grafen i \(({@tangentX@},f({@tangentX@})\)[[input:ans3]] [[validation:ans3]]
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[size: rand([-2,-1, 1, 2 ])
+offset: rand([-2,-1,0, 1, 2 ])
+f(x):= ((x^3) - (3*x^2))
+exp: expand(f(x+offset))/size
+
+tangentX: -1-offset
+tangentY: at(exp, [x = tangentX])
+tangentStigning: at(diff(exp, x, 1), [x = tangentX])
+
+ta1: &#160;[[-offset,0], [3-offset, 0]]
+ta1alt: [[3-offset, 0], [-offset,0]]
+
+if size > 0
+then (ta2: [[2-offset, -4/size],[0-offset, 0]])
+else (ta2: [[0-offset, 0],[2-offset, -4/size]])
+ta3: tangentY - tangentX * tangentStigning + tangentStigning*x
+
+]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text>[[feedback:prt1]]
+[[feedback:prt2]]Forh&#229;ndsvis
+[[feedback:prt3]]</text>
+        </specificfeedback>
+        <questionnote>
+            <text>\({@exp@}\)</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans3</name>
+            <type>algebraic</type>
+            <tans>ta3</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>1</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>stateStore</name>
+            <type>algebraic</type>
+            <tans>ta1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>1</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>stateStore2</name>
+            <type>algebraic</type>
+            <tans>ta2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>1</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>stateStore</sans>
+                <tans>ta1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>stateStore2</sans>
+                <tans>ta2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>ta3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<p>
+    Bra gjort! Her er grafen til \(f\) sammen med tangenten
+</p>
+[[jsxgraph]]
+        // boundingbox:[left, top, right, bottom]
+        var board = JXG.JSXGraph.initBoard(divid, {boundingbox: [-7, 7, 7, -7], axis: true, showCopyright: false});
+        var f = board.jc.snippet('{#exp#}', true, 'x', true);
+        var curve = board.create('functiongraph', [f,-10,10]);
+
+  
+  
+  
+  var g1 = board.create('glider', [{#tangentX#}, {#tangentY#}, curve], {fixed: true});
+        var t1 = board.create('tangent', [g1]);
+[[/jsxgraph]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

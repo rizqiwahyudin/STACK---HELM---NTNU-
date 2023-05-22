@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>10.3.2.1 The exponential form</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        The exponential form
+    </span>
+    <span class="multilang" lang="no">
+        Den eksponentielle formen
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        Since \(z=r(\cos\theta +i\sin\theta )\) and since \(e^{i\theta}=\cos\theta
+                                +i\sin\theta\) we therefore obtain another way in which to denote a complex number: \(z=re^{i\theta}\), called the exponential form.
+    </span>
+    <span class="multilang" lang="no">
+        Siden \(z=r(\cos\theta +i\sin\theta )\) og siden \(e^{i\theta}=\cos\theta
++i\sin\theta\), f&#229;r vi en annen m&#229;te &#229; betegne et komplekst tall p&#229;: \(z=re^{i\theta}\), kalt den eksponentielle formen.
+    </span>
+</p>
+<p>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            The exponential form of a complex number is \[z = re^{i\theta}\quad\text{in which}\quad r=|z|\quad\text{and}\quad\theta=\text{arg}(z)\] so \[z=re^{i\theta}=r(\cos\theta + i\sin\theta)\]
+        </span>
+        <span class="multilang" lang="no">
+            Den eksponentielle formen til et komplekst tall er \[z = re^{i\theta}\quad\text{der}\quad r=|z|\quad\text{og}\quad\theta=\text{arg}(z)\] s&#229; \[z=re^{i\theta}=r(\cos\theta + i\sin\theta)\]
+        </span>
+    </p>
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

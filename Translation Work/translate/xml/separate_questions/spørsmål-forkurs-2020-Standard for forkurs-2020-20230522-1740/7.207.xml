@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>7.207</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+    \({@ta1@}\)
+Funksjonen \(g\) er gitt ved \[g(x) = {@exp@}\]
+bestem \(a\) og \(c\) n&#229;r vi vet at funkjonen har et bunnpunkt i \(({@-pushLeft@}, {@pushUp@})\)
+</p>
+<p>
+    \(g(x) = \)[[input:ans1]] [[validation:ans1]]
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text>A: rand(2) +1
+pushLeft: rand(10) -5
+b: 2*A*pushLeft
+pushUp: rand(10)-5 
+C: pushUp + A*pushLeft^2
+
+
+ta1: A*x^2 + b*x + C
+exp: a*x^2 + b*x + c
+</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text>[[feedback:prt1]]</text>
+        </specificfeedback>
+        <questionnote>
+            <text>\({@f(x)@}\)
+</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>ta1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>1</insertstars>
+            <syntaxhint>{@b@}</syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text>Her er grafen til svaret ditt
+[[jsxgraph]]
+  // boundingbox:[left, top, right, bottom]
+  var board = JXG.JSXGraph.initBoard(divid, {boundingbox: [-7, 7, 7, -7], axis: true, showCopyright: false});
+  var f = board.jc.snippet('{#ans1#}', true, 'x', true);
+  board.create('functiongraph', [f,-10,10]);
+[[/jsxgraph]]</text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text>her er grafen til svaret ditt
+[[jsxgraph]]
+  // boundingbox:[left, top, right, bottom]
+  var board = JXG.JSXGraph.initBoard(divid, {boundingbox: [-7, 7, 7, -7], axis: true, showCopyright: false});
+  var f = board.jc.snippet('{#ans1#}', true, 'x', true);
+  board.create('functiongraph', [f,-10,10]);
+[[/jsxgraph]]</text>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

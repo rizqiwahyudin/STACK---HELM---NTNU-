@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>13.3.2.2b Area under a curve</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        Oppgave
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Find the area bounded by the curve \(y = {@exp3@}\) and the t-axis between \(t = {@l3@}\) and \(t = {@u3@}\).
+    </span>
+    <span class="multilang" lang="no">
+        Finn arealet avgrenset av kurven \(y = {@exp3@}\) og t-aksen mellom \(t = {@l3@}\) og \(t = {@u3@}\).
+    </span>
+    [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]
+</p>
+<span class="multilang" lang="en">
+    In each question you should check that the required area lies entirely above the horizontal axis.
+</span>
+<span class="multilang" lang="no">
+    Husk &#229; sjekke at omr&#229;det du skal finne faktisk ligger over horisontalaksen.
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+</p>
+<p>
+    Since the required area lies entirely above the horizontal axis for each question, the area under the curve \(y\) between \(x = a\) and \(x = b\) is \(\int_{a}^{b} y(x) \, dx\).
+</p>
+<p>
+    \(\displaystyle \int_{@l3@}^{@u3@} {@exp3@} \, dt = \left[ {@int(exp3,t)@} \right]_{@l3@}^{@u3@} = {@ta3@}.\)
+</p>
+<br/>
+<br/>
+<p>
+</p>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text>cc: rand(4) + 2;
+exp3: cc*t^2; 
+u3: rand([2,3,4]);   /*upper limit*/
+l3: -u3;                  /*lower limit*/
+ta3: int(exp3, t, l3, u3);</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote>
+            <text>\(\int_{@l3@}^{@u3@} {@exp3@} \, dt = {@ta3@} \) </text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans3</name>
+            <type>numerical</type>
+            <tans>ta3</tans>
+            <boxsize>7</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>1</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt3</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans3</sans>
+                <tans>ta3</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt3-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt3-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

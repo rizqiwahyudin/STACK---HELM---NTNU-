@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>3.6.5.1 Improper fractions</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Improper fractions
+    </span>
+    <span class="multilang" lang="no">
+        Uekte br&#248;ker
+    </span>
+</h4>
+<br/>
+<p>
+    <span class="multilang" lang="en">
+        When calculating the partial fractions of improper fractions an extra polynomial is added to any partial fractions that would normally arise. The added polynomial has degree
+        <span class="math inline">
+            \(n-d\)
+        </span>
+        where
+        <span class="math inline">
+            \(n\)
+        </span>
+        is the degree of the numerator and
+        <span class="math inline">
+            \(d\)
+        </span>
+        is the degree of the denominator. Recall that
+    </span>
+    <span class="multilang" lang="no">
+        Ved beregning av delbr&#248;ker av uekte br&#248;ker legges et ekstra polynom til eventuelle delbr&#248;ker som normalt ville oppst&#229;. Det tilf&#248;yde polynomet har graden
+        <span class="math inline">
+            \(n-d\)
+        </span>
+        der
+        <span class="math inline">
+            \(n\)
+        </span>
+        er graden til telleren og
+        <span class="math inline">
+            \(d\)
+        </span>
+        er graden til nevneren. Husk at
+    </span>
+</p>
+<ul>
+    <li>
+        <span class="multilang" lang="en">
+            a polynomial of degree 0 is a constant,
+        </span>
+        <span class="multilang" lang="no">
+            et polynom av grad 0 er en konstant,
+        </span>
+        <span class="math inline">
+            \(A\)
+        </span>
+        <span class="multilang" lang="en">
+            say,
+        </span>
+        <span class="multilang" lang="no">
+            for eksempel,
+        </span>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            a polynomial of degree 1 has the form
+        </span>
+        <span class="multilang" lang="no">
+            et polynom av grad 1 har formen
+        </span>
+        <span class="math inline">
+            \(Ax+B\)
+        </span>
+        ,
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            a polynomial of degree 2 has the form
+        </span>
+        <span class="multilang" lang="no">
+            et polynom av grad 2 har formen
+        </span>
+        <span class="math inline">
+            \(Ax^2+Bx+C\)
+        </span>
+    </li>
+</ul>
+<p>
+    <span class="multilang" lang="en">
+        and so on. If, for example, the improper fraction is such that the numerator has degree 5 and the denominator has degree 3, then
+        <span class="math inline">
+            \(n-d=2\)
+        </span>
+        , and we need to add a polynomial of the form
+    </span>
+    <span class="multilang" lang="no">
+        og s&#229; videre. Hvis for eksempel den uekte br&#248;ken er slik at telleren har grad 5 og nevneren har grad 3, s&#229; er
+        <span class="math inline">
+            \(n-d=2\)
+        </span>
+        , og vi m&#229; dermed legge til et polynom av formen
+    </span>
+    <span class="math inline">
+        \(Ax^2+Bx+C\)
+    </span>
+    .
+</p>
+<br/>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            If a fraction is improper an additional term is included taking the form of a polynomial of degree \(n-d\), where \(n\) is the degree of the numerator and \(d\) is the degree of the denominator.
+        </span>
+        <span class="multilang" lang="no">
+            Hvis en br&#248;k er uekte, inkluderes et tilleggsledd i form av et polynom av grad \(n-d\), der \(n\) er graden til telleren og \(d\) er graden til nevneren.
+        </span>
+    </p>
+</div>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Express as partial fractions
+    </span>
+    <span class="multilang" lang="no">
+        Delbr&#248;ksoppspalt
+    </span>
+</p>
+<p>
+    \[\dfrac{2x^2-x-2}{x+1}\]
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        The fraction is improper because
+        <span class="math inline">
+            \(n=2\)
+        </span>
+        ,
+        <span class="math inline">
+            \(d=1\)
+        </span>
+        and so
+        <span class="math inline">
+            \(d\le n\)
+        </span>
+        . Here
+        <span class="math inline">
+            \(n-d=1\)
+        </span>
+        , so we need to include as an extra term a polynomial of the form
+        <span class="math inline">
+            \(Bx+C\)
+        </span>
+        , in addition to the usual partial fractions. The linear term in the denominator gives rise to a partial fraction
+        <span class="math inline">
+            \(\dfrac{A}{x+1}\)
+        </span>
+        . So altogether we have
+    </span>
+    <span class="multilang" lang="no">
+        Br&#248;ken er uekte fordi
+        <span class="math inline">
+            \(n=2\)
+        </span>
+        ,
+        <span class="math inline">
+            \(d=1\)
+        </span>
+        s&#229;
+        <span class="math inline">
+            \(d\le n\)
+        </span>
+        . Her er
+        <span class="math inline">
+            \(n-d=1\)
+        </span>
+        , s&#229; vi m&#229; inkludere som et ekstraledd et polynom p&#229; formen
+        <span class="math inline">
+            \(Bx+C \)
+        </span>
+        , i tillegg til de vanlige delbr&#248;kene. Det line&#230;re leddet i nevneren gir opphav til en delbr&#248;k
+        <span class="math inline">
+            \(\dfrac{A}{x+1}\)
+        </span>
+        . S&#229; alt i alt har vi
+    </span>
+</p>
+<p>
+    \[\dfrac{2x^2-x-2}{x+1}= \dfrac{A}{x+1}+ (Bx+C).\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Multiplying both sides by
+        <span class="math inline">
+            \(x+1\)
+        </span>
+        we find
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; multiplisere begge sider med
+        <span class="math inline">
+            \(x+1\)
+        </span>
+        finner vi
+    </span>
+</p>
+<p>
+    \[2x^2-x-2 = A+(Bx+C)(x+1) = Bx^2 + (C+B)x + (C+A).\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Equating coefficients of
+        <span class="math inline">
+            \(x^2\)
+        </span>
+        gives
+    </span>
+    <span class="multilang" lang="no">
+        &#197; likestille koeffisientene til
+        <span class="math inline">
+            \(x^2\)
+        </span>
+        gir
+    </span>
+</p>
+<p>
+    \[B=2.\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Equating coefficients of
+        <span class="math inline">
+            \(x\)
+        </span>
+        gives
+    </span>
+    <span class="multilang" lang="no">
+        &#197; likestille koeffisientene til
+        <span class="math inline">
+            \(x\)
+        </span>
+        gir
+    </span>
+</p>
+<p>
+    \[-1=C+B\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        and so
+    </span>
+    <span class="multilang" lang="no">
+        s&#229;
+    </span>
+</p>
+<p>
+    \[C=-1-B=-3.\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Equating the constant terms gives
+    </span>
+    <span class="multilang" lang="no">
+        Likestille konstantleddet gir
+    </span>
+</p>
+<p>
+    \[-2=C+A\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        and so
+    </span>
+    <span class="multilang" lang="no">
+        s&#229;
+    </span>
+</p>
+<p>
+    \[A=-2-C=-2-(-3)=1.\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Finally, we have
+    </span>
+    <span class="multilang" lang="no">
+        Endelig har vi
+    </span>
+</p>
+<p>
+    \[\dfrac{2x^2-x-2}{x+1}= \dfrac{1}{x+1}+2x-3.\]
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>4.3.1.3 Pythagoras</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            For any value of \(\theta\) \[\sin^2\theta+\cos^2\theta\equiv1\]
+        </span>
+        <span class="multilang" lang="no">
+            For enhver verdi av \(\theta\) \[\sin^2\theta+\cos^2\theta\equiv1\]
+        </span>
+    </p>
+</div>
+<p>
+    <span class="multilang" lang="en">
+        One way of proving the result in the Key Point is to use the definitions of \(\sin\theta\) and \(\cos\theta\) obtained from the circle of unit radius.
+    </span>
+    <span class="multilang" lang="no">
+        En m&#229;te &#229; bevise resultatet i n&#248;kkelpunktet p&#229; er &#229; bruke definisjonene av \(\sin\theta\) og \(\cos\theta\) hentet fra enhetssirkelen.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Recall that \(\cos\theta=OQ\), \(\ \sin\theta=OR=QP\). By Pythagoras&#8217; theorem:\((OQ)^2+(QP)^2=(OP)^2=1\)
+    </span>
+    <span class="multilang" lang="no">
+        Husk at \(\cos\theta=OQ\), \(\ \sin\theta=OR=QP\). Etter Pythagoras' teorem:\((OQ)^2+(QP)^2=(OP)^2=1\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        hence \(\cos^2\theta+\sin^2\theta=1.\)
+    </span>
+    <span class="multilang" lang="no">
+        dermed er \(\cos^2\theta+\sin^2\theta=1.\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We have demonstrated the Key Point using an angle \(\theta\) in the first quadrant but the result is true for any \(\theta\) i.e. it is indeed an identity.
+    </span>
+    <span class="multilang" lang="no">
+        Vi har demonstrert n&#248;kkelpunktet ved &#229; bruke en vinkel \(\theta\) i f&#248;rste kvadrant, men resultatet er sant for enhver \(\theta\), dvs. det er faktisk en identitet.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

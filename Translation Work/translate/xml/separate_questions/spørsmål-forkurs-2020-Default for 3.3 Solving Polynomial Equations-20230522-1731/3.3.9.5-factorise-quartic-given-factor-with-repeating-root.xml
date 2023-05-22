@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>3.3.9.5 Factorise quartic given factor with repeating root</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        &#216;ving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Factorise {@eqn@} given that {@factor@} is a factor:
+    </span>
+    <span class="multilang" lang="no">
+        Faktoriser {@eqn@} gitt at {@factor@} er en faktor:
+    </span>
+</p>
+<p>
+    \( {@eqn@} = ( x + \) [[input:ans1]] [[validation:ans1]] \() ( x + \)&#160;[[input:ans2]] [[validation:ans2]] \() ( x + \)&#160;[[input:ans3]] [[validation:ans3]] \( )&#160;( x + \)&#160;[[input:ans4]] [[validation:ans4]] \( ) \).&#160;[[feedback:prt1]]
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        We are given the expression {@eqn@} and are told that \({@factor@}\) is a factor of the expression. Then \[{@eqn@} = ({@factor@})(ax^3 + bx^2 + cx + d).\] Expand the RHS of the above equation and equate the coefficients to find \[ ax^3 + bx^2 + cx + d = {@expand((x + cc)*(x + bb)*(x + aa))@}.\] From here, try substituting in values of \(x\) to find another root. We could, for example, notice that \({@factor@}\) is actually a factor of this cubic, i.e. it is a factor of multiplicity \(2\) of the original quartic. Then \[{@eqn@} = ({@factor@})^2(ax^2 + bx + c).\] Expand the RHS of the above equation and equate the coefficients to find \[ax^2 + bx + c = {@expand((x + bb)*(x + aa))@}.\] We can then factorise this quadratic as \({@(x + bb)*(x + aa)@}\). Therefore the original quartic can be expressed as \({@%eqn@}\).
+    </span>
+    <span class="multilang" lang="no">
+        Vi f&#229;r uttrykket {@eqn@} og blir fortalt at \({@factor@}\) er en faktor i uttrykket. Da er \[{@eqn@} = ({@factor@})(ax^3 + bx^2 + cx + d).\] Utvid h&#248;yre side og likestill koeffisientene for &#229; f&#229; \[ ax^3 + bx^2 + cx + d = {@expand((x + cc)*(x + bb)*(x + aa))@}.\] Herfra kan du pr&#248;ve &#229; sette inn ulike verdier av \(x\) til finne en annen rot. Vi kan for eksempel legge merke til at \({@factor@}\) faktisk er en faktor av denne kubiske likningen, dvs. den har er en multiplisitetsfaktor p&#229; \(2\) i den opprinnelige fjerdegradspolynomet. Da har vi \[{@eqn@} = ({@factor@})^2(ax^2 + bx + c).\] Utvid h&#248;yre side for ligningen ovenfor og likestill koeffisientene for &#229; f&#229; \[ax^2 + bx + c = {@expand((x + bb)*(x + aa))@}.\] Vi kan s&#229; faktorisere dette kvadratet som \({@(x + bb)*(x + aa)@}\) . Derfor kan det opprinnelige fjerdegradspolynomet uttrykkes som \({@%eqn@}\).
+    </span>
+</p>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2021120900</text>
+        </stackversion>
+        <questionvariables>
+            <text>aa: rand(3)-6;
+bb: rand(3)-3;
+cc: rand(3)+1;
+dd: cc;
+
+simp:true;
+factor: x + dd;
+%eqn: (x + dd)*(x + cc)*(x + bb)*(x + aa);
+eqn: x^4 + (aa + bb + cc + dd)*x^3 + (aa*bb + aa*cc + aa*dd + bb*cc + bb*dd + cc*dd)*x^2 + (aa*bb*cc + aa*bb*dd + aa*cc*dd + bb*cc*dd)*x + aa*bb*cc*dd;</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote>
+            <text>{@eqn@}, sol: [{@aa@},{@bb@},{@cc@},{@dd@}]</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>numerical</type>
+            <tans>aa</tans>
+            <boxsize>3</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>numerical</type>
+            <tans>bb</tans>
+            <boxsize>3</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans3</name>
+            <type>numerical</type>
+            <tans>cc</tans>
+            <boxsize>3</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans4</name>
+            <type>numerical</type>
+            <tans>dd</tans>
+            <boxsize>3</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>SetSA: sort([ans1,ans2,ans3,ans4]);
+SetTA: sort([aa,bb,cc,cc]);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>SetSA</sans>
+                <tans>SetTA</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1933910851</deployedseed>
+        <deployedseed>890438346</deployedseed>
+        <deployedseed>1055810587</deployedseed>
+        <deployedseed>901972510</deployedseed>
+        <deployedseed>323768340</deployedseed>
+        <deployedseed>159482512</deployedseed>
+        <deployedseed>777166451</deployedseed>
+        <deployedseed>1280107698</deployedseed>
+        <deployedseed>1778388253</deployedseed>
+        <deployedseed>1232479535</deployedseed>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>aa</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>bb</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>cc</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>dd</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>bb</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>aa</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>dd</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>cc</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>3</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>aa</value>
+            </testinput>
+            <testinput>
+                <name>ans2</name>
+                <value>aa</value>
+            </testinput>
+            <testinput>
+                <name>ans3</name>
+                <value>aa</value>
+            </testinput>
+            <testinput>
+                <name>ans4</name>
+                <value>aa</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt1-1-F</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

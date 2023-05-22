@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>6.4.3.2 Chemical Reaction 1</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        &#216;ving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The reaction
+    </span>
+    <span class="multilang" lang="no">
+        Reaksjonen
+    </span>
+</p>
+<p>
+    2NO\(_2\)(g) \(\longrightarrow\) 2NO(g) + O\(_2\)(g)
+</p>
+<nowrap>
+    <span class="multilang" lang="en">
+        has a reaction rate constant of \(1.0 \times 10 ^{-10}\) \(\text{s}^{-1}\) at
+                \(300 \text{K}\) and activation energy of \(111 \text{kJ mol}^{-1} = 111 000\text{ J
+                mol}^{-1}\). Use Arrhenius' law to find the reaction rate constant at
+        a temperature of {@Tt@}\(\text{K}\). Please give your answer to \(4\) s.f.
+    </span>
+    <span class="multilang" lang="no">
+        har en reaksjonshastighetskonstant p&#229; \(1,0 \times 10 ^{-10}\) \(\text{s}^{-1}\) ved
+                    \(300 \text{K}\) og aktiveringsenergi p&#229; \(111 \text{kJ mol}^{-1} = 111 000\text{ J
+                    mol}^{-1}\). Bruk Arrhenius lov for &#229; finne reaksjonshastighetskonstanten ved
+                    en temperatur p&#229; {@Tt@}\(\text{K}\). Vennligst gi ditt svar til \(4\)&#160;gjeldende sifre
+    </span>
+</nowrap>
+<p>
+    \( k = \) [[input:ans1]] [[validation:ans1]]
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="en">
+    Rearranging Arrhenius' equation gives
+\[k_0 = k \, \exp\left(\frac{E_a}{R\,T}\right).\]
+Substituting the values gives
+\[k_0= 2.126 \times 10^{9} \mbox{ s}^{-1}.\]
+Now we use this value of \(k_0\) with \(E_a\) in Arrhenius' equation (1) to
+find \(k\) at \(T\) = {@Tt@} K
+        \[k= k_0 \, \exp \left( \frac{-E_a}{R\,T} \right)= {@tar@} \mbox{ s}^{-1}.\]
+</span>
+<span class="multilang" lang="no">
+    Omorganisering av Arrhenius' ligning gir
+\[k_0 = k \, \exp\left(\frac{E_a}{R\,T}\right).\]
+&#197; subsituere verdiene gir
+\[k_0= 2.126 \times 10^{9} \mbox{ s}^{-1}.\]
+N&#229; bruker vi denne verdien av \(k_0\) med \(E_a\) i Arrhenius' ligning (1) til &#229; finne \(k\) p&#229; \(T\) = {@Tt@} K
+\[k= k_0 \, \exp \left( \frac{-E_a}{R\,T} \right)= {@tar@} \mbox{ s}^{-1}.\]
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2022082900</text>
+        </stackversion>
+        <questionvariables>
+            <text>k0 : e^(111000/(8.314*300))*10^(-10);
+Tt : 273;
+ta : k0*e^(-111000/(8.314*Tt))
+tar: significantfigures(ta,4);
+
+</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text>[[feedback:prt1]]</text>
+        </specificfeedback>
+        <questionnote>
+            <text>{@Tt@}</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>numerical</type>
+            <tans>tar</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>NumSigFigs</answertest>
+                <sans>ans1</sans>
+                <tans>tar</tans>
+                <testoptions>4</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <qtest>
+            <testcase>1</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>tar</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>1.0000000</expectedscore>
+                <expectedpenalty>0.0000000</expectedpenalty>
+                <expectedanswernote>prt1-1-T</expectedanswernote>
+            </expected>
+        </qtest>
+        <qtest>
+            <testcase>2</testcase>
+            <testinput>
+                <name>ans1</name>
+                <value>0</value>
+            </testinput>
+            <expected>
+                <name>prt1</name>
+                <expectedscore>0.0000000</expectedscore>
+                <expectedpenalty>0.1000000</expectedpenalty>
+                <expectedanswernote>prt1-1-F</expectedanswernote>
+            </expected>
+        </qtest>
+    </question>
+    
+
+</quiz>

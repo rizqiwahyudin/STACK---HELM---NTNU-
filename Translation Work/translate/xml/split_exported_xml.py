@@ -1,14 +1,12 @@
-#!/usr/bin/env python
-
-# created by Michael Kallweit
-# latest changes: 2023-03-13
-
 import lxml.etree as ET
-import os,sys
+import os
+import sys
 from termcolor import colored
 
 import unicodedata
 import re
+
+
 def slugify(value, allow_unicode=False):
     """
     Taken from https://github.com/django/django/blob/master/django/utils/text.py
@@ -21,9 +19,10 @@ def slugify(value, allow_unicode=False):
     if allow_unicode:
         value = unicodedata.normalize('NFKC', value)
     else:
-        value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore').decode('ascii')  
+        value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore').decode('ascii')
     value = re.sub(r'[^\w\s\-\.]', '', value.lower())
     return re.sub(r'[-\s]+', '-', value).strip('-_')
+
 
 if __name__ == '__main__':
     if len(sys.argv) != 2:
@@ -34,31 +33,31 @@ if __name__ == '__main__':
         print('File not found: ' + filename)
         sys.exit(1)
 
-folder="separate_questions"
+    folder = "separate_questions"
+    original_file_name = os.path.splitext(os.path.basename(filename))[0]
+    folder_path = os.path.join(folder, original_file_name)
 
-if not os.path.exists(folder):
-    os.makedirs(folder)
+    if not os.path.exists(folder_path):
+        os.makedirs(folder_path)
 
-parser = ET.XMLParser(strip_cdata=False)
-tree = ET.parse(filename,parser)
-root = tree.getroot()
+    parser = ET.XMLParser(strip_cdata=False)
+    tree = ET.parse(filename, parser)
+    root = tree.getroot()
 
+    questions = root.findall(".//question")
 
-questions=root.findall(".//question")
-
-for question in questions:
-    if question not in root.findall(".//question[@type='category']"):
-        name=question.find('name').find('text').text
-        print(name)
-        filename=slugify(name)
-        path=os.path.join(folder,filename+'.xml')
-        i=0
-        while os.path.exists(path):
-            i+=1
-            print(colored("Error: File exists: "+path,"red"))
-            path=os.path.join(folder,filename+'___'+str(i)+'.xml')
-        f=open(path,'wb')
-        f.write(b'<?xml version="1.0" encoding="UTF-8"?>\n<quiz>\n')
-        f.write(ET.tostring(question,pretty_print=True))
-        f.write(b'\n</quiz>')
-        f.close()
+    for question in questions:
+        if question not in root.findall(".//question[@type='category']"):
+            name = question.find('name').find('text').text
+            print(name)
+            filename = slugify(name)
+            path = os.path.join(folder_path, filename + '.xml')
+            i = 0
+            while os.path.exists(path):
+                i += 1
+                print(colored("Error: File exists: " + path, "red"))
+                path = os.path.join(folder_path, filename + '___' + str(i) + '.xml')
+            with open(path, 'wb') as f:
+                f.write(b'<?xml version="1.0" encoding="UTF-8"?>\n<quiz>\n')
+                f.write(ET.tostring(question, pretty_print=True))
+                f.write(b'\n</quiz>')

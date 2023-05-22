@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>3.2.1.1 Quadratic Equations</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Quadratic equations
+    </span>
+    <span class="multilang" lang="no">
+        Andregradsfunksjoner
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        A generalisation of the third law of indices states:
+    </span>
+    <span class="multilang" lang="no">
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <p>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            A
+            <b>
+                quadratic equation
+            </b>
+            is one which can be written in the form
+        </span>
+        <span class="multilang" lang="no">
+            En
+            <b>
+                kvadratisk ligning
+            </b>
+            kan skrives i formen
+        </span>
+    </p>
+    <p>
+        \[ax^2+bx+c=0\qquad a\ne 0\]
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            where \(a\), \(b\) and \(c\) are given numbers and \(x\) is the unknown whose value(s) must be found.
+        </span>
+        <span class="multilang" lang="no">
+            der \(a\), \(b\) og \(c\) er konstanter og \(x\) er en ukjent som m&#229; bestemmes.
+        </span>
+    </p>
+</div>
+<p>
+    <span class="multilang" lang="en">
+        For example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempeler p&#229; andregradsligninger er:
+    </span>
+    <br/>
+</p>
+<p>
+    \[2x^2+7x-3=0, \qquad x^2+x+1=0, \qquad 0.5x^2+3x+9=0\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        are all quadratic equations. To ensure the presence of the \(x^2\) term, the number \(a\), in the general expression \(ax^2+bx+c\) cannot be zero.
+    </span>
+    <span class="multilang" lang="no">
+        For &#229; beholde \(x^2\)-leddet, kan ikke tallet \(a\), i det generelle uttrykket \(ax^2+bx+c\) v&#230;re null.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        However \(b\) or \(c\) may be zero, so that
+    </span>
+    <span class="multilang" lang="no">
+        Imidlertid kan \(b\) eller \(c\) v&#230;re null, slik at
+    </span>
+</p>
+<p>
+    \[4x^2+3x=0, \quad 2x^2-3=0 \quad \hbox{
+    <span class="multilang" lang="en">
+        and
+    </span>
+    <span class="multilang" lang="no">
+        og
+    </span>
+    }\quad&#160; 6x^2=0\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        are also quadratic equations. Frequently, quadratic equations occur in non-standard form but where necessary they can be rearranged into standard form. For example
+    </span>
+    <span class="multilang" lang="no">
+        ogs&#229; er andregradsligninger. Andregradsligninger er oftest ikke skrevet p&#229; standardform (\(ax^2+bx+c=0\), men hvis det er n&#248;dvendig kan disse uttrykkene omorganiseres til standardform. For eksempel kan
+    </span>
+</p>
+<p>
+    \[3x^2+5x=8, \qquad \hbox{
+    <span class="multilang" lang="en">
+        can be re-written as
+    </span>
+    <span class="multilang" lang="no">
+        skrives om til
+    </span>
+    } \qquad&#160; 3x^2+5x-8=0;\]
+</p>
+<p>
+    \[2x^2=8x-9, \qquad \hbox{
+    <span class="multilang" lang="en">
+        can be re-written as
+    </span>
+    <span class="multilang" lang="no">
+        skrives om til
+    </span>
+    } \quad 2x^2-8x+9=0;\]
+</p>
+<p>
+    \[1+x=\frac{1}{x}, \qquad\ \quad \hbox{
+    <span class="multilang" lang="en">
+        can be re-written as
+    </span>
+    <span class="multilang" lang="no">
+        skrives om til
+    </span>
+    } \quad x^2+x-1=0.\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        A little care should be taken in the last example as in case one found \(x=0\) as a solution, this would not work in the initial equation. To solve a given quadratic equation we must find values of the unknown \(x\) which make the left-hand and right-hand sides equal. Such values are known as
+        <b>
+            solutions
+        </b>
+        or
+        <b>
+            roots
+        </b>
+        of the quadratic equation.
+    </span>
+    <span class="multilang" lang="no">
+        Merk at i det siste eksempelet ville ikke \(x=0\) fungert p&#229; formen skrevet f&#248;rst. For &#229; l&#248;se en gitt andregradsligning m&#229; vi finne verdier av den ukjente variabelen \(x\) som gir venstre og h&#248;yre side samme verdi. Slike verdier er kjent som
+        <b>
+            l&#248;sninger
+        </b>
+        eller
+        <b>
+            r&#248;tter
+        </b>
+        av andregradsligningen.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Note the difference between solving quadratic equations in comparison to solving linear equations. A quadratic equation will generally have
+        <b>
+            two
+        </b>
+        values of \(x\) (solutions) which satisfy it whereas a linear equation only has
+        <b>
+            one
+        </b>
+        solution.
+    </span>
+    <span class="multilang" lang="no">
+        Merke forskjellen mellom &#229; l&#248;se andregrads- og line&#230;re ligninger. En andregradsligning vil generelt ha
+        <b>
+            to
+        </b>
+        l&#248;sninger, mens en line&#230;r ligning bare har
+        <b>
+            &#233;n
+        </b>
+        l&#248;sning.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We shall now describe three techniques for solving quadratic equations:
+    </span>
+    <span class="multilang" lang="no">
+        Vi skal n&#229; beskrive tre teknikker for &#229; l&#248;se andregradsligninger:
+    </span>
+</p>
+<p>
+</p>
+<ol>
+    <li>
+        <span class="multilang" lang="en">
+            factorisation
+        </span>
+        <span class="multilang" lang="no">
+            faktorisering
+        </span>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            completing the square
+        </span>
+        <span class="multilang" lang="no">
+            fullf&#248;re kvadratiseringen
+        </span>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            using the quadratic formula.
+        </span>
+        <span class="multilang" lang="no">
+            bruke abc-formelen
+        </span>
+    </li>
+</ol>
+<p>
+</p>
+<p>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

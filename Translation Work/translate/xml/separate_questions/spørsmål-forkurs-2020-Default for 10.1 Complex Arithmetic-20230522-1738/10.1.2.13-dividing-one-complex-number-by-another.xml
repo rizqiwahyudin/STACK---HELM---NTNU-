@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>10.1.2.13 Dividing one complex number by another</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Find \(\displaystyle{{{z\over w}}}\) if \(z=2-3i\) and \(w=2+i\).
+    </span>
+    <span class="multilang" lang="no">
+        Finn \(\displaystyle{{{z\over w}}}\) hvis \(z=2-3i\) og \(w=2+i\).
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        \[\begin{aligned}
+                                {z\over w}={2-3i\over {2+i}}
+                                &amp;={(2-3i)\times (2-i)\over
+                                {(2+i)\times (2-i)}}\qquad \text{rationalising}\\&amp;={4-3+i(-6-2)\over
+                                {4+1}}\qquad \text{multiplying out}\qquad\qquad\qquad\qquad\qquad\qquad\\
+                                &amp;={1\over 5}-{8\over 5}i\qquad
+                                \text{dividing through}\end{aligned}\]
+    </span>
+    <span class="multilang" lang="no">
+        \[\begin{aligned}
+                                {z\over w}={2-3i\over {2+i}}
+                                &amp;={(2-3i)\times (2-i)\over
+                                {(2+i)\times (2-i)}}\qquad \text{rasjonaliserer}\\&amp;={4-3+i(-6-2)\over
+                                {4+1}}\qquad \text{ganger ut}\qquad\qquad\qquad\qquad\qquad\qquad\\
+                                &amp;={1\over 5}-{8\over 5}i\qquad
+                                \text{deler}\end{aligned}\]
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

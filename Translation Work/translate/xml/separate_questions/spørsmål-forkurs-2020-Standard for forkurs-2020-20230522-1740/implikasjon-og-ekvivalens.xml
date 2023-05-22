@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>Implikasjon og ekvivalens</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    Implikasjon og ekvivalens
+</h3>
+<p>
+    Implikasjon og ekvivalens brukes ofte for &#229; f&#229; er ryddig fremstilling av logiske argument. Implikasjontegnet \(\implies\) uttrykker at dersom det som st&#229;r foran tegnet er sant, m&#229; det som st&#229;r etter tegnet ogs&#229; v&#230;re sant.
+</p>
+<br/>
+<h4 class="HELM_example">
+    Eksempel
+</h4>
+<p>
+    Det regner \(\implies\) Det er v&#229;tt ute
+</p>
+<p>
+    Her ser vi at hvis det f&#248;rste utsagnet stemmer (alts&#229; at det regner) m&#229; det andre utsagnet (at det er v&#229;tt ute) ogs&#229; stemme. Siden det omvendte ikke n&#248;dvendigvis er sant bli det feil &#229; uttrykke: Det er v&#229;tt ute \(\implies\) Det regner. Det kan f.eks. v&#230;re v&#229;tt ute siden noen har vasket bilen, eller det har v&#230;rt vannkrig.
+</p>
+<br/>
+<h4 class="HELM_example">
+    Eksempel
+</h4>
+<p>
+    Et mer matematisk eksempel er: \(x = 2 \implies x^2 = 4\).&lt;\p&gt;
+</p>
+<p>
+    Det omvendte, alts&#229; \(x^2 = 4 \implies x = 2\) stemmer heller ikke her siden \(\sqrt(4)= \pm 2\). P&#229; generell form kan vi uttrykke A \(\implies\) B der A og B er to utsagn.
+</p>
+<p>
+    Dersom A \(\implies\) B og B \(\implies\) A kan man skrive A \(\Leftrightarrow\) B.
+</p>
+<br/>
+<h4 class="HELM_example">
+    Eksempel
+</h4>
+<p>
+    \(x^2 = 4 \Leftrightarrow x = 2 \lor x=-2 \)
+</p>
+<p>
+    Siden vi inkluderer \(\lor x=-2 \) vil setningen stemme uavhengig av retningen implikasjonspilen peker. Dermed bruker vi ekvivalent tegnet. &lt;\p&gt;
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

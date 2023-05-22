@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>7.4.1.1 The inverse of a square matrix</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        The inverse of a square matrix
+    </span>
+    <span class="multilang" lang="no">
+        Den inverse av en kvadratisk matrise
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        We know that any non-zero number \(k\) has an inverse; for example \(2\) has an inverse \(\frac{1}{2}\) or \(2^{-1}\). The inverse of the number \(k\) is usually written \(\frac{1}{k}\) or, more formally, by \(k^{-1}\). This numerical inverse has the property that
+        <br/>
+    </span>
+    <span class="multilang" lang="no">
+        Vi vet at ethvert tall som ikke er null, \(k\), har en invers; for eksempel har \(2\) en invers \(\frac{1}{2}\) eller \(2^{-1}\). Inversen av tallet \(k\) er vanligvis skrevet som \(\frac{1}{k}\) eller mer formelt som \(k^{-1}\). Denne numeriske inversen har egenskapen at
+    </span>
+</p>
+<p>
+    \( k\times k^{-1}=k^{-1}\times k=1\)
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We now show that an inverse of a matrix can, in certain circumstances, also be defined.
+    </span>
+    <span class="multilang" lang="no">
+        Vi viser n&#229; at en invers av en matrise kan, under visse omstendigheter, ogs&#229; defineres.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Given an \(n\times n\) square matrix \(A,\) then an \(n\times n\) square matrix \(B\) is said to be the
+        <b>
+            inverse matrix
+        </b>
+        of \(A\) if
+    </span>
+    <span class="multilang" lang="no">
+        Gitt en  \(n \times n\)  kvadratisk matrise  \(A,\)  s&#229; er en  \(n \times n\) kvadratisk matrise  \(B\) sagt &#229; v&#230;re
+        <b>
+            inversmatrisen
+        </b>
+        til  \(A\) hvis
+    </span>
+</p>
+<p>
+    <span class="math inline">
+        \(AB=BA=I\)
+    </span>
+</p>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        where \(I\) is, as usual, the identity matrix (or unit matrix) of the appropriate size.
+    </span>
+    <span class="multilang" lang="no">
+        hvor  \(I\)  som vanlig er identitetsmatrisen (eller enhetsmatrisen) med passende st&#248;rrelse.
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+        <br/>
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Show that the inverse matrix of
+        <span class="math inline">
+            \(A=\left[\begin{array}{cc}-1&amp;1\\ -2&amp;0\end{array}\right]\)
+        </span>
+        is
+        <span class="math inline">
+            \(B=\left[\begin{array}{cc}0&amp;-\frac{1}{2}\\ 1&amp;-\frac{1}{2}\end{array}\right]\)
+        </span>
+    </span>
+    <span class="multilang" lang="no">
+        Vis at den inverse matrisen til
+        <span class="math inline">
+            \(A=\left[\begin{array}{cc}-1&amp;1\\ -2&amp;0\end{array}\right]\)
+        </span>
+        er
+        <span class="math inline">
+            \(B=\left[\begin{array}{cc}0&amp;-\frac{1}{2}\\ 1&amp;-\frac{1}{2}\end{array}\right]\)
+        </span>
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        All we need to do is check that
+        <span class="math inline">
+            \(AB=BA=I\).
+        </span>
+    </span>
+    <span class="multilang" lang="no">
+        Alt vi trenger &#229; gj&#248;re er &#229; sjekke at
+        <span class="math inline">
+            \(AB=BA=I\).
+        </span>
+    </span>
+</p>
+<p>
+    <span class="math inline">
+        \(AB=\left[\begin{array}{cc}-1&amp;1\\ -2&amp;0\end{array}\right]\times\frac{1}{2}\left[\begin{array}{cc}0&amp;-1\\ 2&amp;-1\end{array}\right] = \frac{1}{2}\left[\begin{array}{cc}-1&amp;1\\ -2&amp;0\end{array}\right]\times\left[\begin{array}{cc}0&amp;-1\\ 2&amp;-1\end{array}\right] = \frac{1}{2}\left[\begin{array}{cc}2&amp;0\\ 0&amp;2\end{array}\right]=\left[\begin{array}{cc}1&amp;0\\ 0&amp;1\end{array}\right] \)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We make three important remarks:
+    </span>
+    <span class="multilang" lang="no">
+        Vi gj&#248;r tre viktige merknader:
+    </span>
+</p>
+<span class="multilang" lang="en">
+    <ul>
+        <li>
+            Non-square matrices do not have inverses.
+        </li>
+        <li>
+            The inverse of \(A\) is usually written \(A^{-1}\).
+        </li>
+        <li>
+            Not all square matrices have inverses.
+        </li>
+    </ul>
+</span>
+<span class="multilang" lang="no">
+    <ul>
+        <li>
+            Ikke-firkantet matriser har ikke inverser.
+        </li>
+        <li>
+            Den inverse av \(A\) er vanligvis skrevet som \(A^{-1}\).
+        </li>
+        <li>
+            Ikke alle firkantet matriser har inverser.
+        </li>
+    </ul>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

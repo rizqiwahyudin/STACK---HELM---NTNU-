@@ -1,0 +1,1853 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$module$/top/Default for 8.1 Solution by Cremer's Rule</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text>The default category for questions shared in context '8.1 Solution by Cremer's Rule'.</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9604  -->
+  <question type="description">
+    <name>
+      <text>8.1.1.1 Solving two equations in two unknowns</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h4><span class="multilang" lang="en">Solving two equations in two unknowns</span>
+    <span class="multilang" lang="no">Løse to ligninger med to ukjente.</span>
+</h4>
+<br>
+<p><span class="multilang" lang="en">If we have one linear equation&nbsp;</span>
+    <span class="multilang" lang="no">Hvis vi har en lineær ligning</span>
+</p>
+<p><span class="multilang" lang="en">\(\qquad ax=b\)</span>
+    <span class="multilang" lang="no">\(\qquad ax=b\)</span>
+</p>
+<p><span class="multilang" lang="en">in which the unknown is \(x\) and \(a\) and \(b\) are constants then there are just three possibilities:</span>
+    <span class="multilang" lang="no">hvor den ukjente er \(x\) og \(a\) og \(b\) er konstanter, så er det bare tre muligheter:</span>
+</p>
+
+<ul>
+    <li>
+        <p><span class="multilang" lang="en">\(a\neq 0\) then \(x=\dfrac{b}{a}= a^{-1}b\). In this case the equation \(ax=b\) has a <strong>unique solution</strong> for \(x\).</span>
+            <span class="multilang" lang="no">Hvis \(a\neq 0\) så er \(x=\dfrac{b}{a}=a^{-1}b\). I dette tilfellet har likningen \(ax=b\) en <strong>unik løsning</strong> for \(x\).</span>
+        </p>
+    </li>
+
+    <li>
+        <p><span class="multilang" lang="en">\(a=0\), \(b=0\) then the equation \(ax=b\) becomes \(0=0\) and any value of \(x\) will do. In this case the equation \(ax=b\) has <strong>infinitely many solutions</strong>.</span>
+            <span class="multilang" lang="no">Hvis \(a=0\) og \(b=0\), så blir likningen \(ax=b\) til \(0=0\) og da vil hvilken som helst verdi av \(x\) fungerere. I dette tilfellet har likningen \(ax=b\) <strong>uendelig mange løsninger</strong>.</span>
+        </p>
+    </li>
+
+    <li>
+        <p><span class="multilang" lang="en">\(a=0\) and \(b\neq 0\) then \(ax=b\) becomes \(0=b\) which is a contradiction. In this case the equation
+                \(ax=b\) has <strong>no solution</strong> for \(x\).
+            </span>
+            <span class="multilang" lang="no">Hvis \(a=0\) og \(b\neq 0\), så vil \(ax=b\) bli til \(0=b\), som er en motstrid. I dette tilfellet har likningen \(ax=b\) <strong>ingen løsning</strong> for \(x\).</span>
+        </p>
+    </li>
+
+
+</ul>
+<p><span class="multilang" lang="en">What happens if we have more than one equation and more than one unknown? We shall find that the solutions to such systems can be characterised in a manner similar to that occurring for a single equation; that is, a system may have a unique solution,
+        an infinity of solutions or no solution at all.</span>
+    <span class="multilang" lang="no">Hva skjer hvis vi har mer enn én ligning og mer enn én ukjent? Vi skal finne at løsningene til slike systemer kan karakteriseres på en lignende måte som for en enkelt ligning; det vil si at et system kan ha en unik løsning, en uendelighet av løsninger eller ingen løsning i det hele tatt.</span>
+</p>
+
+<p><span class="multilang" lang="en">In this Section we examine a method, known as Cramerâ€™s rule and employing determinants, for solving systems of linear equations.</span>
+    <span class="multilang" lang="no">I denne seksjonen skal vi undersøke en metode, kjent som Cramers metode og som bruker determinanter, for å løse lineære likningssystemer.</span>
+</p>
+
+<p><span class="multilang" lang="en">Consider the equations&nbsp;</span>
+    <span class="multilang" lang="no">Vurder ligningene</span>
+</p>
+<p><span class="multilang" lang="en">(1) \(\qquad ax+by=e\)</span>
+    <span class="multilang" lang="no">(1) \(\qquad ax+by=e\)</span>
+</p>
+
+<p><span class="multilang" lang="en">(2) \(\qquad cx+dy=f\)</span>
+    <span class="multilang" lang="no">(2) \(\qquad cx+dy=f\)</span>
+</p>
+
+<p><span class="multilang" lang="en">where \(a,b,c,d,e,f\) are given numbers. The variables \(x\) and \(y\) are unknowns we wish to find. The pairs of values of \(x\) and \(y\) which <strong>simultaneously</strong> satisfy both equations are called solutions. Simple algebra will eliminate the variable \(y\) between these equations. We
+        multiply equation (1) by \(d\), equation (2) by \(b\) and subtract:</span>
+    <span class="multilang" lang="no">hvor \(a,b,c,d,e,f\) er gitte tall. Variablene \(x\) og \(y\) er ukjente vi ønsker å finne. Par av verdier for \(x\) og \(y\) som <strong>simultant</strong> befrir begge ligningene kalles løsninger. Enkel algebra vil eliminere variabelen \(y\) mellom disse ligningene. Vi multipliserer ligning (1) med \(d\), ligning (2) med \(b\) og trekker fra:</span>
+</p>
+
+<p><span class="multilang" lang="en">\(\qquad \text{first,}\quad (1)\times d\qquad\qquad\qquad ad x+bd y=ed\qquad\qquad\qquad
+        \)</span>
+    <span class="multilang" lang="no">\(\qquad \text{først,}\quad (1)\times d\qquad\qquad\qquad ad x+bd y=ed\qquad\qquad\qquad
+        \)</span>
+</p>
+
+<p><span class="multilang" lang="en">\(\qquad \text{then},\quad (2)\times b\qquad\qquad\qquad bc x+bd y=bf\qquad\qquad\qquad \)</span>
+    <span class="multilang" lang="no">\(\qquad \text{når},\quad (2)\times b\qquad\qquad\qquad bc x+bd y=bf\qquad\qquad\qquad\)</span>
+</p>
+
+<p><span class="multilang" lang="en">(we multiplied in this way to make the coefficients of \(y\) equal.)</span>
+    <span class="multilang" lang="no">(vi multipliserte på denne måten for å gjøre koeffisientene til \(y\) like.)</span>
+</p>
+
+<p><span class="multilang" lang="en">Now subtract to obtain&nbsp;</span>
+    <span class="multilang" lang="no">Trekk nå fra for å få:</span>
+</p>
+
+<p><span class="multilang" lang="en">(3) \(\qquad (ad-bc)x=ed-bf\)</span>
+    <span class="multilang" lang="no">(3) \(\qquad (ad-bc)x=ed-bf\)</span>
+</p>
+<br>
+<p class="HELM_exercise"><span class="multilang" lang="en">Task: Starting with equations (1) and (2) above, eliminate \(x\).</span>
+    <span class="multilang" lang="no">Oppgave: Startende med likningene (1) og (2) over, eliminer \(x\).</span>
+</p>
+
+<br>
+<p><span class="multilang" lang="en"> Eliminating \(x\) using a similar method to the one above for eliminating \(y\), we obtain</span>
+    <span class="multilang" lang="no">Ved å eliminere \(x\) ved hjelp av en lignende metode som for eliminering av \(y\), finner vi</span>
+</p>
+
+<p><span class="multilang" lang="en">(4) \(\qquad&nbsp; (ad-bc)y=af-ec\)</span>
+    <span class="multilang" lang="no">(4) \(\qquad&nbsp; (ad-bc)y=af-ec\)</span>
+</p>
+
+<p><span class="multilang" lang="en">Dividing equations (3) and (4) by \(ad-bc\) we obtain the solutions&nbsp;</span>
+    <span class="multilang" lang="no">Ved å dele likningene (3) og (4) med \(ad-bc\) får vi løsningene</span>
+</p>
+
+<p><span class="multilang" lang="en">(5) \(\qquad x=\dfrac{ed-bf}{ad-bc}\ ,\ \ \ y=\dfrac{af-ec}{ad-bc}\)</span>
+    <span class="multilang" lang="no">(5) \(\qquad x=\dfrac{ed-bf}{ad-bc}\ ,\ \ \ y=\dfrac{af-ec}{ad-bc}\)</span>
+</p>
+
+<p><span class="multilang" lang="en">There is of course one proviso: if \(ad-bc=0\) then neither \(x\) nor \(y\) has a defined value.</span>
+    <span class="multilang" lang="no">Det er selvfølgelig ett unntak: hvis \(ad-bc=0\), så har verken \(x\) eller \(y\) en definert verdi.</span>
+</p>
+
+<p><span class="multilang" lang="en">If we choose to express these solutions in terms of determinants we have the formulation for the solution of simultaneous equations known as <strong>Cramer's rule</strong>.&nbsp;</span>
+    <span class="multilang" lang="no">Hvis vi velger å uttrykke disse løsningene ved hjelp av determinanter, har vi formuleringen for løsningen av samtidige ligninger som er kjent som <strong>Cramers regel</strong>.</span>
+</p>
+
+<p><span class="multilang" lang="en">If we define \(\Delta\) as the determinant \(\left|\begin{array}{cc}a&amp;b\\ c&amp;d\end{array}\right|\) and provided \(\Delta\neq 0\) then the <strong>unique</strong> solution of the equations&nbsp;</span>
+    <span class="multilang" lang="no">Hvis vi definerer \(\Delta\) som determinanten \(\left|\begin{array}{cc}a&amp;b\\ c&amp;d\end{array}\right|\), og gitt at \(\Delta\neq 0\), så er den <strong>unike</strong> løsningen på ligningene</span>
+</p>
+
+
+<p><span class="multilang" lang="en">\(\qquad ax+by=e\)</span>
+    <span class="multilang" lang="no">\(\qquad ax+by=e\)</span>
+</p>
+
+<p><span class="multilang" lang="en">\(\qquad cx+dy=f\)</span>
+    <span class="multilang" lang="no">\(\qquad cx+dy=f\)</span>
+</p>
+
+<p><span class="multilang" lang="en">is by (5) given by&nbsp;</span>
+    <span class="multilang" lang="no">er gitt av (5)</span>
+</p>
+
+<p><span class="multilang" lang="en">\(\qquad x=\dfrac{\Delta_x}{\Delta},\ \ y=\dfrac{\Delta_y}{\Delta}\quad\text{where}\quad
+        \Delta_x=\left|\begin{array}{cc}e&amp;b\\ f&amp;d\end{array}\right|,\ \
+        \Delta_y=\left|\begin{array}{cc}a&amp;e\\ c&amp;f\end{array}\right|.\)</span>
+    <span class="multilang" lang="no">\(\qquad x=\dfrac{\Delta_x}{\Delta},\ \ y=\dfrac{\Delta_y}{\Delta}\quad\text{hvor}\quad
+        \Delta_x=\left|\begin{array}{cc}e&amp;b\\ f&amp;d\end{array}\right|,\ \
+        \Delta_y=\left|\begin{array}{cc}a&amp;e\\ c&amp;f\end{array}\right|.\)</span>
+</p>
+
+<p><span class="multilang" lang="en">Now \(\Delta\) is the determinant of coefficients on the left-hand sides of the equations. In the expression \(\Delta_x\) the coefficients of \(x\) (i.e.
+        \(\left(\begin{array}{c}a\\
+        c\end{array}\right)\) which is column 1 of \(\Delta\)) are replaced by the terms on the right-hand sides of the equations (i.e. by \(\left(\begin{array}{c}e\\
+        f\end{array}\right)\)). Similarly in \(\Delta_y\) the coefficients of \(y\) (column 2 of \(\Delta\)) are replaced by the terms on the right-hand
+        sides of the equations.
+    </span>
+    <span class="multilang" lang="no">Nå er \(\Delta\) determinanten til koeffisientene på venstresiden av likningene. I uttrykket \(\Delta_x\) erstattes koeffisientene til \(x\) (dvs.
+        \(\left(\begin{array}{c}a\\
+        c\end{array}\right)\) som er kolonne 1 i \(\Delta\) ) med termene på høyresiden av likningene (dvs. med \(\left(\begin{array}{c}e\\
+        f\end{array}\right)\) ). På samme måte i \(\Delta_y\) erstattes koeffisientene til \(y\) (kolonne 2 i \(\Delta\) ) med termene på høyresiden av likningene.</span>
+</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9605  -->
+  <question type="description">
+    <name>
+      <text>8.1.1.2 Key point 1</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<div class="HELM_keypoint">
+<h4><span class="multilang" lang="en">Key point</span>
+<span class="multilang" lang="no">Nøkkelpunkt</span></h4>
+<br>
+
+<p><span class="multilang" lang="en">The unique solution to the equations:</span>
+<span class="multilang" lang="no">Den unike løsningen på likningene:</span></p>
+<p><span class="multilang" lang="en">\(\qquad ax+by=e\)</span>
+<span class="multilang" lang="no">\(\qquad ax+by=e\)</span></p>
+
+<p><span class="multilang" lang="en">\(\qquad cx+dy=f\)</span>
+<span class="multilang" lang="no">\(\qquad cx+dy=f\)</span></p>
+
+<p><span class="multilang" lang="en">is given by:</span>
+<span class="multilang" lang="no">er gitt ved:</span></p>
+
+<p><span class="multilang" lang="en">\(\qquad x=\dfrac{\Delta_x}{\Delta},\ \ y=\dfrac{\Delta_y}{\Delta}\)</span>
+<span class="multilang" lang="no">\(\qquad x=\dfrac{\Delta_x}{\Delta},\ \ y=\dfrac{\Delta_y}{\Delta}\)</span></p>
+
+<p><span class="multilang" lang="en">in which</span>
+<span class="multilang" lang="no">hvor</span></p>
+
+<p><span class="multilang" lang="en">\(\qquad\Delta=\left|\begin{array}{cc}a&amp;b\\ c&amp;d\end{array}\right|,\ \&nbsp;\Delta_x=\left|\begin{array}{cc}e&amp;b\\ f&amp;d\end{array}\right|,\ \ \Delta_y=\left|\begin{array}{cc}a&amp;e\\ c&amp;f\end{array}\right|.\)</span>
+<span class="multilang" lang="no">\(\qquad\Delta=\left|\begin{array}{cc}a&amp;b\\ c&amp;d\end{array}\right|\), \(\Delta_x=\left|\begin{array}{cc}e&amp;b\\ f&amp;d\end{array}\right|\), \( \Delta_y=\left|\begin{array}{cc}a&amp;e\\ c&amp;f\end{array}\right|\).</span></p>
+
+<p><span class="multilang" lang="en">If \(\Delta=0\) this method of solution cannot be used.</span>
+<span class="multilang" lang="no">Hvis \(\Delta=0\) kan ikke denne løsningsmetoden brukes.</span></p><br>
+
+</div>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9606  -->
+  <question type="description">
+    <name>
+      <text>8.1.1.4 Exercise: Cramer's rule for solving simultaneous equations</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise 1 (paper exercise)<br></span>
+<span class="multilang" lang="no">Oppgave 1 (skriftlig oppgave)</span></p>
+
+<p><span class="multilang" lang="en">Use Cramerâ€™s rule to determine any and all solutions to the equations</span>
+<span class="multilang" lang="no">Bruk Cramers regel for å finne alle løsninger til ligningene.</span></p>
+
+<p><span class="multilang" lang="en">\[\text{(a)}\ \ \ \ \begin{array}{rrrrr}2x-3y&amp;=&amp;6\\ 4x-6y&amp;=&amp;12\end{array}
+        \qquad\ \ \ \text{(b)}\ \ \begin{array}{rrrrr}2x-3y&amp;=&amp;6\\
+        4x-6y&amp;=&amp;10\end{array}\]</span>
+
+<span class="multilang" lang="no">\[\text{(a)}\ \ \ \ \begin{array}{rrrrr}2x-3y&amp;=&amp;6\\ 4x-6y&amp;=&amp;12\end{array}
+        \qquad\ \ \ \text{(b)}\ \ \begin{array}{rrrrr}2x-3y&amp;=&amp;6\\
+        4x-6y&amp;=&amp;10\end{array}\] </span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9607  -->
+  <question type="description">
+    <name>
+      <text>8.1.1.5 Exercise: Cramer's rule for solving simultaneous equations</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise 1 (paper exercise)<br></span>
+<span class="multilang" lang="no">Oppgave 1 (papirøvelse)</span></p>
+
+
+<p><span class="multilang" lang="en">Use Cramer's rule to determine any and all solutions to the equations</span>
+<span class="multilang" lang="no">Bruk Cramers regel for å finne alle løsninger på likningene.</span></p>
+
+
+<p><span class="multilang" lang="en">\[\text{(a)}\ \ \ \ \begin{array}{rrrrr}2x-3y&amp;=&amp;6\\ 4x-6y&amp;=&amp;12\end{array}
+        \qquad\ \ \ \text{(b)}\ \ \begin{array}{rrrrr}2x-3y&amp;=&amp;6\\
+        4x-6y&amp;=&amp;10\end{array}\]</span>
+<span class="multilang" lang="no">\[\text{(a)}\ \ \ \ \begin{array}{rrrrr}2x-3y&amp;=&amp;6\\ 4x-6y&amp;=&amp;12\end{array}
+        \qquad\ \ \ \text{(b)}\ \ \begin{array}{rrrrr}2x-3y&amp;=&amp;6\\
+        4x-6y&amp;=&amp;10\end{array}\] 
+</span></p>
+
+<hr>
+<p class="HELM_exercise"><span class="multilang" lang="en">Solution</span>
+<span class="multilang" lang="no">Løsning</span></p>
+
+<p><span class="multilang" lang="en">You should first have checked \(\begin{vmatrix}2 &amp; -3\\ 4 &amp; -6\end{vmatrix}\) since \[\begin{vmatrix}2 &amp; -3\\ 4 &amp; -6\end{vmatrix}=-12-(-12)=0.\]</span>
+<span class="multilang" lang="no">Du burde først ha sjekket \(\begin{vmatrix}2 &amp; -3\\ 4 &amp; -6\end{vmatrix}\) siden \[\begin{vmatrix}2 &amp; -3\\ 4 &amp; -6\end{vmatrix}=-12-(-12)=0.\]</span></p>
+
+<p><span class="multilang" lang="en">Hence there is no unique solution in either case.</span>
+<span class="multilang" lang="no">Derfor finnes det ingen unike løsninger i begge tilfeller.</span></p>
+
+<p><span class="multilang" lang="en">In system (a) the second equation is twice the first so there are infinitely many solutions. (Here we can give \(y\) <i>any</i>&nbsp;value we wish, \(t\) say; but then the \(x\) value is always \((6+3t)/2\). So for each value of \(t\) there are values
+    for \(x\) and \(y\) which simultaneously satisfy both equations. There is an infinite number of possible solutions.)</span>
+<span class="multilang" lang="no">I system (a) er den andre ligningen dobbelt så stor som den første, så det finnes uendelig mange løsninger. (Her kan vi gi \(y\)&nbsp;<i>hvilken som helst</i> verdi vi ønsker, la oss si \(t\), men da vil \(x\)-verdien alltid være \((6+3t)/2\). Så for hver verdi av \(t\) finnes det verdier for \(x\) og \(y\) som samtidig oppfyller begge ligningene. Det finnes et uendelig antall mulige løsninger.)</span></p>
+
+
+<p><span class="multilang" lang="en">In (b) the equations are inconsistent (since the first is \(2x-3y=6\) and the second is \(2x-3y=5\) which is not possible). Hence there are no solutions.</span>
+<span class="multilang" lang="no">I (b) er ligningene inkonsistente (siden den første er \(2x-3y=6\) og den andre er \(2x-3y=5\) som ikke er mulig). Derfor finnes det ingen løsninger.</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9608  -->
+  <question type="description">
+    <name>
+      <text>8.1.1.6 Notation</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h4><span class="multilang" lang="en"><strong style="font-size: 14px;">Notation</strong><br></span>
+<span class="multilang" lang="no"><strong style="font-size: 14px;">Notasjon</strong> <br></span>
+</h4>
+
+<p><span class="multilang" lang="en">For ease of generalisation to larger systems we write the two-equation system in a different notation: \[\begin{aligned}
+        a_{11}x_1+a_{12}x_2&amp;=&amp;b_1 \\
+        a_{21}x_1+a_{22}x_2&amp;=&amp;b_2\end{aligned}\]&nbsp;</span>
+
+<span class="multilang" lang="no">For å lette generalisering til større systemer skriver vi det to-likningssystemet med en annen notasjon: 
+\[ \begin{aligned}
+a_{11}x_1+a_{12}x_2 &amp;=&amp; b_1 \\
+a_{21}x_1+a_{22}x_2 &amp;=&amp; b_2
+\end{aligned} \]</span></p>
+
+
+<p><span class="multilang" lang="en">Here the unknowns are \(x_1\) and \(x_2\), the right-hand sides are \(b_1\) and \(b_2\) and the coefficients are
+    \(a_{ij}\) where, for example, \(a_{21}\) is the coefficient of \(x_1\) in equation two. In general, \(a_{ij}\) is the coefficient of \(x_j\) in equation \(i\).<br>
+</span>
+<span class="multilang" lang="no">Her er de ukjente \(x_1\) og \(x_2\), høyresidene er \(b_1\) og \(b_2\) og koeffisientene er \(a_{ij}\), hvor for eksempel \(a_{21}\) er koeffisienten til \(x_1\) i ligning to. Generelt er \(a_{ij}\) koeffisienten til \(x_j\) i ligning \(i\).</span></p>
+
+
+<p><span class="multilang" lang="en">Cramer's rule can then be stated as follows:</span>
+<span class="multilang" lang="no">Cramers regel kan da uttrykkes som følger:</span></p>
+
+<p><span class="multilang" lang="en">If \(\left|\begin{array}{cc}a_{11}&amp;a_{12}\\ a_{21}&amp;a_{22}\end{array}\right|\neq 0\), then the equations \[\begin{aligned}
+        a_{11}x_1+a_{12}x_2&amp;=&amp;b_1\\
+        a_{21}x_1+a_{22}x_2&amp;=&amp;b_2\end{aligned}\]&nbsp;have solution,</span>
+
+
+<span class="multilang" lang="no">Hvis \(\left|\begin{array}{cc}a_{11}&amp;a_{12}\\ a_{21}&amp;a_{22}\end{array}\right|\neq 0\), så er ligningene  \[\begin{aligned}
+        a_{11}x_1+a_{12}x_2&amp;=&amp;b_1\\
+        a_{21}x_1+a_{22}x_2&amp;=&amp;b_2\end{aligned}\]  løsbare.</span></p>
+
+<p><span class="multilang" lang="en">\(\qquad x_1=\dfrac{\left|\begin{array}{cc}b_1&amp;a_{12}\\
+        b_2&amp;a_{22}\end{array}\right|}{\left|\begin{array}{cc}a_{11}&amp;a_{12}\\
+        a_{21}&amp;a_{22}\end{array}\right|}\ ,\ \ \ x_2=\dfrac{\left|\begin{array}{cc}a_{11}&amp;b_1\\
+        a_{21}&amp;b_2\end{array}\right|}{\left|\begin{array}{cc}a_{11}&amp;a_{12}\\
+        a_{21}&amp;a_{22}\end{array}\right|}.\)</span>
+
+<span class="multilang" lang="no">\(\qquad x_1=\dfrac{\left|\begin{array}{cc}b_1&amp;a_{12}\\
+        b_2&amp;a_{22}\end{array}\right|}{\left|\begin{array}{cc}a_{11}&amp;a_{12}\\
+        a_{21}&amp;a_{22}\end{array}\right|}\ ,\ \ \ x_2=\dfrac{\left|\begin{array}{cc}a_{11}&amp;b_1\\
+        a_{21}&amp;b_2\end{array}\right|}{\left|\begin{array}{cc}a_{11}&amp;a_{12}\\
+        a_{21}&amp;a_{22}\end{array}\right|}.\)
+</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9609  -->
+  <question type="description">
+    <name>
+      <text>8.1.2.1 Solving three equations in three unknowns</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h4><span class="multilang" lang="en">Solving three equations in three unknowns</span>
+<span class="multilang" lang="no">Løse tre ligninger med tre ukjente.</span></h4>
+
+<p><span class="multilang" lang="en">Cramer's rule can be extended to larger systems of simultaneous equations but the calculational effort increases rapidly as the size of the system increases. We quote Cramer's rule for a system of three equations.</span>
+<span class="multilang" lang="no">Cramers regel kan utvides til større systemer av samtidige ligninger, men beregningsinnsatsen øker raskt når størrelsen på systemet øker. Vi nevner Cramers regel for et system med tre ligninger.</span></p>
+
+<div class="HELM_keypoint">
+<h4><span class="multilang" lang="en">Key Point<br></span>
+<span class="multilang" lang="no">Nøkkelpunkt.</span></h4>
+
+<p><span class="multilang" lang="en">The unique solution to the system of equations:</span>
+<span class="multilang" lang="no">Den unike løsningen av systemet med likninger:</span></p>
+
+<p><span class="multilang" lang="en">\(\begin{eqnarray*}a_{11}x_1+a_{12}x_2+a_{13}x_3&amp;=&amp;b_1\\ a_{21}x_1+a_{22}x_2+a_{23}x_3&amp;=&amp;b_2\\ a_{31}x_1+a_{32}x_2+a_{33}x_3&amp;=&amp;b_3\end{eqnarray*}\)</span>
+<span class="multilang" lang="no">\(\begin{eqnarray*}a_{11}x_1+a_{12}x_2+a_{13}x_3&amp;=&amp;b_1\\ a_{21}x_1+a_{22}x_2+a_{23}x_3&amp;=&amp;b_2\\ a_{31}x_1+a_{32}x_2+a_{33}x_3&amp;=&amp;b_3\end{eqnarray*}\)</span></p>
+
+<p><span class="multilang" lang="en">is</span>
+<span class="multilang" lang="no">er</span></p>
+
+<p><span class="multilang" lang="en">\(x_1=\dfrac{\Delta_{x_1}}{\Delta},\ \ x_2=\dfrac{\Delta_{x_2}}{\Delta},\ \ x_3=\dfrac{\Delta_{x_3}}{\Delta}\)&nbsp;</span>
+<span class="multilang" lang="no">\(x_1=\dfrac{\Delta_{x_1}}{\Delta},\ \ x_2=\dfrac{\Delta_{x_2}}{\Delta},\ \ x_3=\dfrac{\Delta_{x_3}}{\Delta}\)</span></p>
+<p><span class="multilang" lang="en">in which</span>
+<span class="multilang" lang="no">hvor</span></p>
+
+<p><span class="multilang" lang="en">\(\Delta=\left|\begin{array}{ccc}a_{11}&amp;a_{12}&amp;a_{13}\\ a_{21}&amp;a_{22}&amp;a_{23}\\ a_{31}&amp;a_{32}&amp;a_{33}\end{array}\right|\)&nbsp;</span>
+<span class="multilang" lang="no">\(\Delta=\left|\begin{array}{ccc}a_{11}&amp;a_{12}&amp;a_{13}\\ a_{21}&amp;a_{22}&amp;a_{23}\\ a_{31}&amp;a_{32}&amp;a_{33}\end{array}\right|\)</span></p>
+
+<p><span class="multilang" lang="en">and&nbsp;</span>
+<span class="multilang" lang="no">og</span></p>
+
+<p><span class="multilang" lang="en">\(\Delta_{x_1}=\left|\begin{array}{ccc}b_1&amp;a_{12}&amp;a_{13}\\ b_2&amp;a_{22}&amp;a_{23}\\ b_3&amp;a_{32}&amp;a_{33}\end{array}\right|\qquad \Delta_{x_2}=\left|\begin{array}{ccc}a_{11}&amp;b_1&amp;a_{13}\\ a_{21}&amp;b_2&amp;a_{23}\\ a_{31}&amp;b_3&amp;a_{33}\end{array}\right|\qquad
+        \Delta_{x_3}=\left|\begin{array}{ccc}a_{11}&amp;a_{12}&amp;b_1\\ a_{21}&amp;a_{22}&amp;b_2\\ a_{31}&amp;a_{32}&amp;b_3\end{array}\right|\)</span>
+<span class="multilang" lang="no">\(\Delta_{x_1}=\left|\begin{array}{ccc}b_1&amp;a_{12}&amp;a_{13}\\ b_2&amp;a_{22}&amp;a_{23}\\ b_3&amp;a_{32}&amp;a_{33}\end{array}\right|\qquad \Delta_{x_2}=\left|\begin{array}{ccc}a_{11}&amp;b_1&amp;a_{13}\\ a_{21}&amp;b_2&amp;a_{23}\\ a_{31}&amp;b_3&amp;a_{33}\end{array}\right|\qquad
+        \Delta_{x_3}=\left|\begin{array}{ccc}a_{11}&amp;a_{12}&amp;b_1\\ a_{21}&amp;a_{22}&amp;b_2\\ a_{31}&amp;a_{32}&amp;b_3\end{array}\right|\)</span></p>
+
+<p><span class="multilang" lang="en">If \(\Delta=0\) this method of&nbsp; solution cannot be used.</span>
+<span class="multilang" lang="no">Hvis \(\Delta=0\), kan ikke denne løsningsmetoden brukes.</span></p>
+</div>
+
+
+<p><span class="multilang" lang="en">Notice that the structure of the fractions is similar to that for the two-equation case. For example, the determinant forming the numerator of \(x_1\) is obtained from the determinant of coefficients, \(\Delta\),
+    by replacing the first column by the right-hand sides of the equations.</span>
+<span class="multilang" lang="no">Legg merke til at strukturen til brøkene er lik den for to ligninger. For eksempel blir determinanten som utgjør telleren til  \(x_1\)  funnet ved å erstatte den første kolonnen i koeffisientmatrisen med høyresidene av ligningene i determinanten, kalt  \(\Delta\).</span></p>
+
+<p><span class="multilang" lang="en">Notice too the increase in calculation: in the two-equation case we had to evaluate three \(2\times 2\) determinants, whereas in the three-equation case we have to evaluate four \(3\times 3\) determinants. Hence Cramer's rule is not really practicable for larger systems.</span>
+<span class="multilang" lang="no">Legg merke til økningen i beregninger: i tilfellet med to ligninger måtte vi evaluere tre \((2 \times 2)\) determinanter, mens i tilfellet med tre ligninger må vi evaluere fire \((3 \times 3)\) determinanter. Dermed er ikke Cramers regel egentlig praktisk for større systemer.</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9610  -->
+  <question type="description">
+    <name>
+      <text>8.1.3.1 Engineering Example 1 ─ Stresses and strains on a section of material</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h4><span class="multilang" lang="en">Engineering Example -- Stresses and strains on a section of material</span>
+<span class="multilang" lang="no">Stress og strain på et stykke materiale.</span></h4>
+<br>
+
+<h5>Introduction</h5>
+<p><span class="multilang" lang="en">An important engineering problem is to determine the effect on materials of different types of loading. One way of measuring the effects is through the strain or fractional change in dimensions in the material which can be measured using a strain
+    gauge.</span>
+
+<span class="multilang" lang="no">En viktig ingeniørutfordring er å bestemme effekten på materialer av ulike typer belastninger. En måte å måle effektene på er gjennom belastningsendringen eller brøkendringen i dimensjoner i materialet, som kan måles ved hjelp av en belastningsensor.</span></p>
+
+
+<p><span class="multilang" lang="en"><strong>Problem in words</strong>&nbsp;</span>
+<span class="multilang" lang="no"><strong> Problemet i ord</strong></span></p>
+<p><span class="multilang" lang="en">In a homogeneous, isotropic and linearly elastic material, the strains (i.e. fractional displacements) on a section of the material, represented by \(\varepsilon_x, \ \varepsilon_y, \
+        \varepsilon_z\) for the \(x\)-,&nbsp; \(y\)-,&nbsp;\(z\)-directions respectively, can be related to the stresses (i.e. force per unit area),
+    \(\sigma_x, \ \sigma_y, \ \sigma_z\) by the following system of equations.
+</span>
+<span class="multilang" lang="no">I en homogen, isotrop og lineær elastisk materiale, kan forskyvningene i et  avsnitt av materialet, representert ved \(\varepsilon_x, \ \varepsilon_y, \varepsilon_z\) for henholdsvis  \(x\)-, \(y\)- og  \(z\)-retningene, relateres til spenningene (dvs. kraft per enhetsområde), \(\sigma_x, \ \sigma_y, \ \sigma_z\), ved hjelp av følgende system av ligninger.</span></p>
+
+
+<p><span class="multilang" lang="en">\[\begin{aligned}
+        \varepsilon_x&amp;=&amp;\dfrac{1}{E}(\begin{array}{ccc}\sigma_x&amp;-v\sigma_y&amp;-v\sigma_z\end{array})\\
+        \\
+        \varepsilon_y&amp;=&amp;\dfrac{1}{E}(\begin{array}{ccc}-v\sigma_x&amp;+\sigma_y&amp;-v\sigma_z\end{array})\\
+        \\
+        \varepsilon_z&amp;=&amp;\dfrac{1}{E}(\begin{array}{ccc}-v\sigma_x&amp;-v\sigma_y&amp;+\sigma_z\end{array})\end{aligned}\]</span>
+<span class="multilang" lang="no">\[\begin{aligned}
+        \varepsilon_x&amp;=&amp;\dfrac{1}{E}(\begin{array}{ccc}\sigma_x&amp;-v\sigma_y&amp;-v\sigma_z\end{array})\\
+        \\
+        \varepsilon_y&amp;=&amp;\dfrac{1}{E}(\begin{array}{ccc}-v\sigma_x&amp;+\sigma_y&amp;-v\sigma_z\end{array})\\
+        \\
+        \varepsilon_z&amp;=&amp;\dfrac{1}{E}(\begin{array}{ccc}-v\sigma_x&amp;-v\sigma_y&amp;+\sigma_z\end{array})\end{aligned}\] </span></p>
+
+
+<p><span class="multilang" lang="en">where \(E\) is the modulus of elasticity (also called Youngâ€™s modulus) and \(v\) is Poissonâ€™s ratio which relates the lateral strain to the axial strain.</span>
+<span class="multilang" lang="no">hvor  \(E\)  er elastisitetsmodulen (også kalt Youngs modul) og  \(v\)  er PoiSSons forhold som relaterer lateral deformasjon til aksial deformasjon.</span></p>
+
+
+
+<p><span class="multilang" lang="en">Find expressions for the stresses \(\sigma_x, \ \sigma_y, \ \sigma_z,\) in terms of the strains \(\varepsilon_x,\
+        \varepsilon_y,\) and \(\varepsilon_z.\)</span>
+<span class="multilang" lang="no">Finn uttrykkene for spenningene  \(\sigma_x, \ \sigma_y, \ \sigma_z,\) basert på deformasjonene  \(\varepsilon_x,\
+        \varepsilon_y,\)  og  \(\varepsilon_z.\)</span></p>
+
+
+<p><span class="multilang" lang="en"><strong>Mathematical statement of problem</strong></span>
+<span class="multilang" lang="no"><strong>Matematisk problemstilling</strong></span></p>
+
+
+<p><span class="multilang" lang="en">The given system of equations can be written as a matrix equation:</span>
+<span class="multilang" lang="no">Det gitte ligningssystemet kan skrives som en matrise-ligning:</span></p>
+
+
+<p><span class="multilang" lang="en">\(\qquad \left(\begin{array}{c}\varepsilon_x\\ \varepsilon_y\\ \varepsilon_z\end{array}\right)=\dfrac{1}{E}\
+        \left(\begin{array}{rrr}1&amp;-v&amp;-v\\ -v&amp;1&amp;-v\\ -v&amp;-v&amp;1\end{array}\right)\
+        \left(\begin{array}{c}\sigma_x\\ \sigma_y\\ \sigma_z\end{array}\right)\)</span>
+<span class="multilang" lang="no">\(\qquad \left(\begin{array}{c}\varepsilon_x\\ \varepsilon_y\\ \varepsilon_z\end{array}\right)=\dfrac{1}{E}\
+        \left(\begin{array}{rrr}1&amp;-v&amp;-v\\ -v&amp;1&amp;-v\\ -v&amp;-v&amp;1\end{array}\right)\
+        \left(\begin{array}{c}\sigma_x\\ \sigma_y\\ \sigma_z\end{array}\right)\)</span></p>
+
+<p><span class="multilang" lang="en">We can write this equation as&nbsp;</span>
+<span class="multilang" lang="no">Vi kan skrive denne likningen som</span></p>
+
+<p><span class="multilang" lang="en">\(\qquad \varepsilon=\dfrac{1}{E}{\pmb A}\pmb{\sigma}\)</span>
+<span class="multilang" lang="no">\(\qquad \varepsilon=\dfrac{1}{E}{\pmb A}\pmb{\sigma}\)</span></p>
+
+<p><span class="multilang" lang="en">where \(\varepsilon=\left(\begin{array}{c}\varepsilon_x\\ \varepsilon_y\\ \varepsilon_z\end{array}\right),\ {\pmb A}=\left(\begin{array}{rrr}1&amp;-v&amp;-v\\
+        -v&amp;1&amp;-v\\ -v&amp;-v&amp;1\end{array}\right)\) and \(\pmb{\sigma}=\left(\begin{array}{c}\sigma_x\\ \sigma_y\\ \sigma_z\end{array}\right)\)</span>
+<span class="multilang" lang="no">hvor  \(\varepsilon=\left(\begin{array}{c}\varepsilon_x\\ \varepsilon_y\\ \varepsilon_z\end{array}\right),\ {\pmb A}=\left(\begin{array}{rrr}1&amp;-v&amp;-v\\
+        -v&amp;1&amp;-v\\ -v&amp;-v&amp;1\end{array}\right)\)  og  \(\pmb{\sigma}=\left(\begin{array}{c}\sigma_x\\ \sigma_y\\ \sigma_z\end{array}\right)\)</span></p>
+
+
+
+<p><span class="multilang" lang="en">This matrix equation must be solved to find the vector \(\pmb{\sigma}\) in terms of the vector \(\varepsilon\) and the inverse of the matrix \({\pmb A}\).</span>
+<span class="multilang" lang="no">Denne ligningen med matriser må løses for å finne vektoren \(\pmb{\sigma}\) i form av vektoren \(\varepsilon\) og inversen av matrisen \(\pmb A\).</span></p>
+
+<p><span class="multilang" lang="en"><strong>Mathematical analysis</strong></span>
+<span class="multilang" lang="no">Matematisk analyse</span></p>
+
+<p><span class="multilang" lang="en">\(\qquad \varepsilon=\dfrac{1}{E}{\pmb A}\pmb{\sigma}\)</span>
+<span class="multilang" lang="no">\(\qquad \varepsilon=\dfrac{1}{E}{\pmb A}\pmb{\sigma}\)
+</span></p>
+
+
+<p><span class="multilang" lang="en">Multiplying both sides of the expression by \(E\) we get&nbsp;</span>
+<span class="multilang" lang="no">Ved å multiplisere begge sider av uttrykket med \(E\), får vi</span></p>
+
+<p><span class="multilang" lang="en">\(\qquad E\varepsilon={\pmb A}\pmb{\sigma}\)</span>
+<span class="multilang" lang="no">Epsilon equals A times sigma.</span></p>
+
+<p><span class="multilang" lang="en">Multiplying both sides by \({\pmb A}^{-1}\) we find that:&nbsp;</span>
+<span class="multilang" lang="no">Ved å multiplisere begge sider med \({\pmb A}^{-1}\) finner vi at:</span></p>
+
+<p><span class="multilang" lang="en">\(\qquad {\pmb A}^{-1}E\varepsilon={\pmb A}^{-1}{\pmb A}\pmb{\sigma}\)</span>
+<span class="multilang" lang="no">\(\qquad {\pmb A}^{-1}E\varepsilon={\pmb A}^{-1}{\pmb A}\pmb{\sigma}\)</span></p>
+
+<p><span class="multilang" lang="en">But \({\pmb A}^{-1}{\pmb A} = {\bf I}\) so this becomes&nbsp;</span>
+<span class="multilang" lang="no">Men \({\pmb A}^{-1}{\pmb A} = {\bf I}\), så dette blir</span></p>
+
+<p><span class="multilang" lang="en">\(\qquad \pmb{\sigma}=E{\pmb A}^{-1}\varepsilon\)</span>
+<span class="multilang" lang="no">\(\qquad \pmb{\sigma}=E{\pmb A}^{-1}\varepsilon\)</span></p>
+
+<p><span class="multilang" lang="en">To find expressions for the stresses \(\sigma_x, \ \sigma_y, \ \sigma_z\), in terms of the strains \(\varepsilon_x,\
+        \varepsilon_y\) and \(\varepsilon_z\), we must find the inverse of the matrix \({\pmb A}\).</span>
+<span class="multilang" lang="no">For å finne uttrykkene for spenningene \(\sigma_x, \ \sigma_y, \ \sigma_z\) , i form av tøyningsverdiene \(\varepsilon_x,\ \varepsilon_y\) og \(\varepsilon_z\), må vi finne den inverse matrisen til \({\pmb A}\).</span></p>
+
+<p><span class="multilang" lang="en">To find the inverse of \(\left(\begin{array}{rrr}1&amp;-v&amp;-v\\ -v&amp;1&amp;-v\\ -v&amp;-v&amp;1\end{array}\right)\) we first find the matrix of minors which is:&nbsp;</span>
+<span class="multilang" lang="no">For å finne inversen til \(\left(\begin{array}{rrr}1&amp;-v&amp;-v\\ -v&amp;1&amp;-v\\ -v&amp;-v&amp;1\end{array}\right)\) finner vi først matrisen av minorer som er:</span></p>
+
+<p><span class="multilang" lang="en">\(\qquad\left(\begin{array}{ccc}\left|\begin{array}{rr}1&amp;-v\\-v&amp;1\end{array}\right|&amp;\left|\begin{array}{rr}-v&amp;-v\\-v&amp;1\end{array}\right|&amp;\left|\begin{array}{rr}-v&amp;1\\-v&amp;-v\end{array}\right|\\
+        \\
+        \left|\begin{array}{rr}-v&amp;-v\\
+        -v&amp;1\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-v\\-v&amp;1\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-v\\-v&amp;-v\end{array}\right|\\
+        \\
+        \left|\begin{array}{rr}-v&amp;-v\\ 1&amp;-v\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-v\\
+        -v&amp;-v\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-v\\-v&amp;1\end{array}\right|\end{array}\right)=\left(\begin{array}{ccc}1-v^2&amp;-v-v^2&amp;v^2+v\\
+        -v-v^2&amp;1-v^2&amp;-v-v^2\\ v^2+v&amp;-v-v^2&amp;1-v^2\end{array}\right).\)</span>
+
+<span class="multilang" lang="no">\(\qquad\left(\begin{array}{ccc}\left|\begin{array}{rr}1&amp;-v\\-v&amp;1\end{array}\right|&amp;\left|\begin{array}{rr}-v&amp;-v\\-v&amp;1\end{array}\right|&amp;\left|\begin{array}{rr}-v&amp;1\\-v&amp;-v\end{array}\right|\\
+    \\
+    \left|\begin{array}{rr}-v&amp;-v\\
+    -v&amp;1\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-v\\-v&amp;1\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-v\\-v&amp;-v\end{array}\right|\\
+    \\
+    \left|\begin{array}{rr}-v&amp;-v\\ 1&amp;-v\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-v\\
+    -v&amp;-v\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-v\\-v&amp;1\end{array}\right|\end{array}\right)=\left(\begin{array}{ccc}1-v^2&amp;-v-v^2&amp;v^2+v\\
+    -v-v^2&amp;1-v^2&amp;-v-v^2\\ v^2+v&amp;-v-v^2&amp;1-v^2\end{array}\right).\)</span></p>
+
+
+
+
+
+<p><span class="multilang" lang="en">We then apply the pattern of signs:&nbsp;</span>
+<span class="multilang" lang="no">Vi bruker så mønsteret til tegnene:</span></p>
+
+<p><span class="multilang" lang="en">\(\qquad \left(\begin{matrix} +&amp;-&amp;+\\
+        -&amp;+&amp;-\\
+        +&amp;-&amp;+
+        \end{matrix}\right)\)</span>
+<span class="multilang" lang="no">\(\qquad \left(\begin{matrix} +&amp;-&amp;+\\
+        -&amp;+&amp;-\\
+        +&amp;-&amp;+
+        \end{matrix}\right)\)</span></p>
+
+<p><span class="multilang" lang="en">to obtain the matrix of cofactors</span>
+<span class="multilang" lang="no">å få matrisen av cofaktorer</span></p>
+
+<p><span class="multilang" lang="en">\(\qquad \left(\begin{array}{ccc}1-v^2&amp;v+v^2&amp;v^2+v\\ v+v^2&amp;1-v^2&amp;v+v^2\\ v^2+v&amp;v+v^2&amp;1-v^2\end{array}\right).\)</span>
+<span class="multilang" lang="no">\(\qquad \left(\begin{array}{ccc}1-v^2&amp;v+v^2&amp;v^2+v\\ v+v^2&amp;1-v^2&amp;v+v^2\\ v^2+v&amp;v+v^2&amp;1-v^2\end{array}\right)\)</span></p>
+
+
+<p><span class="multilang" lang="en">To find the adjoint we take the transpose of the above, (which is the same as the original matrix since the matrix is symmetric)</span>
+<span class="multilang" lang="no">For å finne den adjungerende, tar vi transponatet av det ovennevnte (som er det samme som den opprinnelige matrisen, ettersom matrisen er symmetrisk).</span></p>
+
+
+<p><span class="multilang" lang="en">\(\qquad \left(\begin{array}{ccc}1-v^2&amp;v+v^2&amp;v^2+v\\ v+v^2&amp;1-v^2&amp;v+v^2\\ v^2+v&amp;v+v^2&amp;1-v^2\end{array}\right).\)</span>
+<span class="multilang" lang="no">\(\qquad \left(\begin{array}{ccc}1-v^2&amp;v+v^2&amp;v^2+v\\ v+v^2&amp;1-v^2&amp;v+v^2\\ v^2+v&amp;v+v^2&amp;1-v^2\end{array}\right).\)</span></p>
+
+
+<p><span class="multilang" lang="en">The determinant of the original matrix is&nbsp;</span>
+<span class="multilang" lang="no">Determinanten av den opprinnelige matrisen er</span></p>
+
+<p><span class="multilang" lang="en">\(\qquad 1\times (1-v^2)-v(v+v^2)-v(v^2+v)=1-3v^2-2v^3.\) Finally we divide the adjoint by the determinant to find the inverse, giving&nbsp;</span>
+<span class="multilang" lang="no">\(\qquad 1\times (1-v^2)-v(v+v^2)-v(v^2+v)=1-3v^2-2v^3.\) Til slutt deler vi adjunktet med determinanten for å finne den inverse, som gir</span></p>
+
+<p><span class="multilang" lang="en">\(\qquad \dfrac{1}{1-3v^2-2v^3}\left(\begin{array}{ccc}1-v^2&amp;v+v^2&amp;v+v^2\\ v+v^2&amp;1-v^2&amp;v+v^2\\
+        v+v^2&amp;v+v^2&amp;1-v^2\end{array}\right).\)</span>
+<span class="multilang" lang="no">\(\dfrac{1}{1-3v^2-2v^3}\left(\begin{array}{ccc}1-v^2&amp;v+v^2&amp;v+v^2\\ v+v^2&amp;1-v^2&amp;v+v^2\\
+        v+v^2&amp;v+v^2&amp;1-v^2\end{array}\right)\)</span></p>
+
+
+<br>
+<p><span class="multilang" lang="en">Now we found that \(\pmb{\sigma}=E{\pmb A}^{-1}\varepsilon\) so \(\left(\begin{array}{c}\sigma_x\\ \sigma_y\\
+        \sigma_z\end{array}\right)=\dfrac{E}{1-3v^2-2v^3}\left(\begin{array}{ccc}1-v^2&amp;v+v^2&amp;v+v^2\\ v+v^2&amp;1-v^2&amp;v+v^2\\
+        v+v^2&amp;v+v^2&amp;1-v^2\end{array}\right)\left(\begin{array}{c}\varepsilon_x\\ \varepsilon_y\\
+        \varepsilon_z\end{array}\right)\)</span>
+<span class="multilang" lang="no">Nå har vi funnet at  \(\pmb{\sigma}=E{\pmb A}^{-1}\varepsilon\)  så  \(\left(\begin{array}{c}\sigma_x\\ \sigma_y\\
+        \sigma_z\end{array}\right)=\dfrac{E}{1-3v^2-2v^3}\left(\begin{array}{ccc}1-v^2&amp;v+v^2&amp;v+v^2\\ v+v^2&amp;1-v^2&amp;v+v^2\\
+        v+v^2&amp;v+v^2&amp;1-v^2\end{array}\right)\left(\begin{array}{c}\varepsilon_x\\ \varepsilon_y\\
+        \varepsilon_z\end{array}\right)\)</span></p>
+
+
+<p><span class="multilang" lang="en">We can write this matrix equation as 3 equations relating the stresses \(\sigma_x,\ \sigma_y,\ \sigma_z,\) in terms of the strains \(\varepsilon_x,\
+        \varepsilon_y\) and \(\varepsilon_z\), by multiplying out this matrix expression, giving: \[\begin{aligned}
+        \sigma_x&amp;=&amp;\dfrac{E}{1-3v^2-2v^3}\
+        \left((1-v^2)\varepsilon_x+(v+v^2)\varepsilon_y+(v+v^2)\varepsilon_z\right)\\
+        \\
+        \sigma_y&amp;=&amp;\dfrac{E}{1-3v^2-2v^3}\ \left((v+v^2)\varepsilon_x+(1-v^2)\varepsilon_y+(v+v^2)\varepsilon_z\right)\\
+        \\
+        \sigma_z&amp;=&amp;\dfrac{E}{1-3v^2-2v^3}\
+        \left((v+v^2)\varepsilon_x+(v+v^2)\varepsilon_y+(1-v^2)\varepsilon_z\right)\end{aligned}\]</span>
+<span class="multilang" lang="no">Vi kan skrive denne matrise-likningen som 3 ligninger som angir spenningene \(\sigma_x,\ \sigma_y,\ \sigma_z,\) i form av deformasjonene \(\varepsilon_x, \varepsilon_y\) og \(\varepsilon_z\) ved å multiplisere dette matriseuttrykket, slik at vi får: \[\begin{aligned}
+        \sigma_x&amp;=&amp;\dfrac{E}{1-3v^2-2v^3}\
+        \left((1-v^2)\varepsilon_x+(v+v^2)\varepsilon_y+(v+v^2)\varepsilon_z\right)\\
+        \\
+        \sigma_y&amp;=&amp;\dfrac{E}{1-3v^2-2v^3}\ \left((v+v^2)\varepsilon_x+(1-v^2)\varepsilon_y+(v+v^2)\varepsilon_z\right)\\
+        \\
+        \sigma_z&amp;=&amp;\dfrac{E}{1-3v^2-2v^3}\
+        \left((v+v^2)\varepsilon_x+(v+v^2)\varepsilon_y+(1-v^2)\varepsilon_z\right)\end{aligned}\]</span></p>
+
+<br>
+
+
+<p><span class="multilang" lang="en"><strong>Interpretation</strong></span>
+<span class="multilang" lang="no"><strong>Tolkning</strong></span></p>
+<p><span class="multilang" lang="en">Matrix manipulation has been used to transform three simultaneous equations relating strain to stress into simultaneous equations relating stress to strain in terms of the elastic constants. These would be useful for deducing the applied stress if
+    the strains are known. The original equations enable calculation of strains if the applied stresses are known.</span>
+<span class="multilang" lang="no">Matrisemanipulering har blitt brukt for å transformere tre samtidige ligninger som beskriver forholdet mellom deformasjon og spenning til samtidige ligninger som beskriver forholdet mellom spenning og deformasjon med hensyn til de elastiske konstantene. Disse ville være nyttige for å beregne den påførte spenningen dersom deformasjonene er kjent. De opprinnelige ligningene gjør det mulig å beregne deformasjonene hvis påført spenning er kjent.</span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9611  -->
+  <question type="stack">
+    <name>
+      <text>8.1.1.3 Solving two equations in two unknowns</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise</span>
+<span class="multilang" lang="no">Oppgave.</span></p>
+
+<p><span class="multilang" lang="en">Use Cramer's rule to find the solution of the system:&nbsp;<br></span>
+<span class="multilang" lang="no">Bruk Cramers regel for å finne løsningen av systemet:</span></p>
+
+<p><span class="multilang" lang="en"> \[ {@eqns[1]@}\ =\ {@bmat[1,1]@} , \] \[ {@eqns[2]@}\ =\ {@bmat[2,1]@} , \] <br> \(x=\) [[input:ans1]]&nbsp;[[validation:ans1]]&nbsp;<br>\(y=\) [[input:ans2]]&nbsp;[[validation:ans2]]<br>[[feedback:Result]]<br></span></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><span class="multilang" lang="en">Cramer's rule states that \(x = \frac{\Delta_{x}}{\Delta}\) where \(\Delta\) is the determinant of the matrix and \(\Delta_{x}\) is the determinant of the matrix with the x column replaced by the numbers on the right hand side of
+  the equations and similarly \(y = \frac{\Delta_{y}}{\Delta}\). <br>
+</span>
+<span class="multilang" lang="no">Cramers regel sier at \(x = \frac{\Delta_{x}}{\Delta}\) der \(\Delta\) er determinanten til matrisen og \(\Delta_{x}\) er determinanten til matrisen der x-kolonnen er erstattet av tallene på høyre side av likningene, og tilsvarende \(y = \frac{\Delta_{y}}{\Delta}\).</span></p>
+
+
+<p><span class="multilang" lang="en">Therefore for the system, <br> \[{@eqns[1]@}\ =\ {@bmat[1,1]@} , \] \[ {@eqns[2]@}\ =\ {@bmat[2,1]@} , \]&nbsp;&nbsp;<br> \[\Delta = \det{@Amat@}={@D@},\]<br> \[\Delta_{x} = \det{@Amatx@}={@Dx@},\] and<br> \[\Delta_{y} = \det{@Amaty@}={@Dy@},\]</span>
+<span class="multilang" lang="no">Derfor for systemet, <br> \[{@eqns[1]@}\ =\ {@bmat[1,1]@} , \] \[ {@eqns[2]@}\ =\ {@bmat[2,1]@} , \]   <br> \[\Delta = \det{@Amat@}={@D@},\] <br> \[\Delta_{x} = \det{@Amatx@}={@Dx@},\] og <br> \[\Delta_{y} = \det{@Amaty@}={@Dy@},\]</span></p>
+
+<p><span class="multilang" lang="en">where the notation \(\det A = |A|\) is the determinant of a matrix \(A\).&nbsp;<br></span>
+<span class="multilang" lang="no">Hvor notasjonen \(\det A = |A|\) representerer determinanten til matrisen \(A\).</span></p>
+
+<p><span class="multilang" lang="en"> Hence, \[x=\frac{@Dx@}{@D@} = {@Dx/D@},\] and<br> </span>
+<span class="multilang" lang="no">Derfor blir \[x=\frac{@Dx@}{@D@} = {@Dx/D@},\] og <br></span></p>
+
+<p><span class="multilang" lang="en">\[y=\frac{@Dy@}{@D@} = {@Dy/D@}.\]</span>
+<span class="multilang" lang="no">\[y=\frac{@Dy@}{@D@} = {@Dy/D@}.\]</span></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text>pos:rand(2)+1;
+vdet:rand(6)+2;
+Au:matrix([rand_with_step(-1,1,2),ev(rand(9)-4)],[0,rand_with_step(-1,1,2)]);
+Au[pos,pos]:vdet;
+Bu:matrix([rand_with_step(-1,1,2),ev(rand(9)-4)],[0,rand_with_step(-1,1,2)]);
+Amat:ev(transpose(Au).Bu);
+bmat:matrix([rand(5)+1],[rand(5)+1]);
+ xy:matrix([x],[y]);
+
+eqns[1]:ev(Amat.xy)[1,1];
+eqns[2]:ev(Amat.xy)[2,1];
+truesolm:ev(invert(Amat) . bmat);
+correctanswer:[truesolm[1,1],truesolm[2,1]];
+
+D:determinant(Amat);
+Amatx:copymatrix(Amat);
+Amatx[1,1]:ev(bmat[1,1]);
+Amatx[2,1]:ev(bmat[2,1]);
+Dx:determinant(Amatx);
+Amaty:copymatrix(Amat);
+Amaty[1,2]:ev(bmat[1,1]);
+Amaty[2,2]:ev(bmat[2,1]);
+Dy:determinant(Amaty);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\[ {@eqns[1]@}\ =\ {@bmat[1,1]@}\] 
+\[{@eqns[2]@}\ =\ {@bmat[2,1]@}\]
+gives x,y = {@correctanswer@}</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<p><span class="correct">Correct answer, well done.</span></p>]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<p><span class="partially">Your answer is partially correct.</span></p>]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<p><span class="incorrect">Incorrect answer.</span></p>]]></text>
+    </prtincorrect>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>correctanswer[1]</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>1</requirelowestterms>
+      <checkanswertype>1</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>correctanswer[2]</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>1</requirelowestterms>
+      <checkanswertype>1</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>Result</name>
+      <value>2.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>correctanswer[1]</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>Result-0-T </trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p><span class="multilang" lang="en">Your x-value is correct.</span>
+<span class="multilang" lang="no">Din x-verdi er riktig.</span></p>]]></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>Result-0-F </falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p></p><div><div>&lt;p&gt;&lt;span class="multilang" lang="en"&gt;Your x-value is incorrect.&lt;/span&gt;</div><div>&lt;span class="multilang" lang="no"&gt;Din x-verdi er feil.&lt;/span&gt;&lt;/p&gt;</div></div><p></p>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>correctanswer[2]</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>Result-1-T </trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p></p><div><div>&lt;p&gt;&lt;span class="multilang" lang="en"&gt;Your y-value is correct.&lt;/span&gt;</div><div>&lt;span class="multilang" lang="no"&gt;Din y-verdi er riktig.&lt;/span&gt;&lt;/p&gt;</div></div><p></p>]]></text>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>Result-1-F </falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p></p><div><div>&lt;p&gt;&lt;span class="multilang" lang="en"&gt;Your y-value is correct.&lt;/span&gt;</div><div>&lt;span class="multilang" lang="no"&gt;Din x-verdi er feil.&lt;/span&gt;&lt;/p&gt;</div></div><p></p>]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>658506017</deployedseed>
+    <deployedseed>1174886397</deployedseed>
+    <deployedseed>1974833147</deployedseed>
+    <deployedseed>937479468</deployedseed>
+    <deployedseed>514296711</deployedseed>
+    <deployedseed>1147402</deployedseed>
+    <deployedseed>1901494326</deployedseed>
+    <deployedseed>1729491826</deployedseed>
+    <deployedseed>481817568</deployedseed>
+    <deployedseed>1173835051</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>correctanswer[1]</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>correctanswer[2]</value>
+      </testinput>
+      <expected>
+        <name>Result</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>Result-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>correctanswer[1]-10</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>correctanswer[2]-10</value>
+      </testinput>
+      <expected>
+        <name>Result</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>Result-1-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9612  -->
+  <question type="stack">
+    <name>
+      <text>8.1.2.2 Applying Cramer's rule to system with three equations and three unknowns</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise</span>
+    <span class="multilang" lang="no">Oppgave</span>
+</p>
+<p><span class="multilang" lang="en">Use Cramer's rule to find the y-coordinate of the solution of the system:</span>
+    <span class="multilang" lang="no">Bruk Cramers regel for å finne y-koordinaten til løsningen av systemet:</span>
+</p>
+<br>
+<p>\[{@eqns[1]@}\ =\ {@bmat[1,1]@} , \] \[ {@eqns[2]@}\ =\ {@bmat[2,1]@} , \] \[ {@eqns[3]@}\ =\ {@bmat[3,1]@} . \] <br> y= [[input:ans1]] [[validation:ans1]]&nbsp;[[feedback:Result]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><span class="multilang" lang="en">Cramer's rule states that \(y = \frac{\Delta_{y}}{\Delta}\) where \(\Delta\) is the determinant of the matrix and \(\Delta_{y}\) is the determinant of the matrix with the y column replaced by the numbers on the right hand side of
+  the equations.
+</span>
+<span class="multilang" lang="no">Cramers regel sier at \(y = \frac{\Delta_{y}}{\Delta}\), hvor \(\Delta\) er determinanten til matrisen og \(\Delta_{y}\) er determinanten til matrisen der kolonnen y er erstattet av tallene på høyre side av likningene.</span></p>
+<br>
+
+
+
+<p><span class="multilang" lang="en">Therefore for the system <br> \[{@eqns[1]@}\ =\ {@bmat[1,1]@} , \] \[ {@eqns[2]@}\ =\ {@bmat[2,1]@} , \] \[ {@eqns[3]@}\ =\ {@bmat[3,1]@} , \]</span>
+<span class="multilang" lang="no">Derfor for systemet <br> \[{@eqns[1]@}\ =\ {@bmat[1,1]@} , \] \[ {@eqns[2]@}\ =\ {@bmat[2,1]@} , \] \[ {@eqns[3]@}\ =\ {@bmat[3,1]@} , \]</span></p>¨
+
+
+<p><span class="multilang" lang="en"> \[ \Delta = \det{@Amat@}={@D@},\] and<br></span>
+<span class="multilang" lang="no">\[ \Delta = \det{@Amat@}={@D@},\] og</span></p>
+
+<p><span class="multilang" lang="en"> \[\Delta_{y} = \det{@Amaty@}={@Dy@},\]</span>
+<span class="multilang" lang="no">\[\Delta_{y} = \det@Amaty@={@Dy@},\]</span></p>
+
+<p><span class="multilang" lang="en">where the notation \(\det A = |A|\) is the determinant of a matrix \(A.\)<br></span>
+<span class="multilang" lang="no">der notasjon \(\det A = |A|\) er determinanten til matrisen \(A.\)</span></p>
+<p><span class="multilang" lang="en">Hence, \[y=\frac{\Delta_{y}}{\Delta}=\frac{@Dy@}{@D@} = {@Dy/D@}.\]</span>
+<span class="multilang" lang="no">Dermed blir \[y=\frac{\Delta_{y}}{\Delta}=\frac{@Dy@}{@D@} = {@Dy/D@}.\]</span></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text>ordergreat(x,y,z);
+Au:matrix([rand_with_step(-1,1,2),ev(rand(7)-3),ev(rand(7)-3)],[0,rand_with_step(-1,1,2),ev(rand(7)-3)],[0,0,rand_with_step(-1,1,2)]);
+ Bu:matrix([rand_with_step(-1,1,2),ev(rand(7)-3),ev(rand(7)-3)],[0,rand_with_step(-1,1,2),ev(rand(7)-3)],[0,0,rand_with_step(-1,1,2)]);
+ Amat:ev(transpose(Au).Bu);
+ bmat:matrix([rand(5)+1],[rand(5)+1],[rand(5)+1]);
+ xyz:matrix([x],[y],[z]);
+ eqns[1]:ev(Amat.xyz)[1,1];
+ eqns[2]:ev(Amat.xyz)[2,1];
+ eqns[3]:ev(Amat.xyz)[3,1];
+ truesolm:ev(invert(Amat) . bmat);
+ correctanswer:truesolm[2,1];
+ D:determinant(Amat);
+ Amaty:copymatrix(Amat);
+ Amaty[1,2]:ev(bmat[1,1]);
+ Amaty[2,2]:ev(bmat[2,1]);
+ Amaty[3,2]:ev(bmat[3,1]);
+ Dy:determinant(Amaty);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\[ {@eqns[1]@}\ =\ {@bmat[1,1]@}\]  \[{@eqns[2]@}\ =\ {@bmat[2,1]@}\]
+\[{@eqns[3]@}\ =\ {@bmat[3,1]@} \quad\] gives y= {@correctanswer@}</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<p><span class="correct">Correct answer, well done.</span></p>]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<p><span class="partially">Your answer is partially correct.</span></p>]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<p><span class="incorrect">Incorrect answer.</span></p>]]></text>
+    </prtincorrect>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>correctanswer</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>1</requirelowestterms>
+      <checkanswertype>1</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>Result</name>
+      <value>2.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>correctanswer</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>Result-0-T </trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>Result-0-F </falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1946506527</deployedseed>
+    <deployedseed>2084874014</deployedseed>
+    <deployedseed>607398891</deployedseed>
+    <deployedseed>1441251235</deployedseed>
+    <deployedseed>629089706</deployedseed>
+    <deployedseed>912469399</deployedseed>
+    <deployedseed>1648714820</deployedseed>
+    <deployedseed>1150508064</deployedseed>
+    <deployedseed>1660747688</deployedseed>
+    <deployedseed>789096562</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>correctanswer</value>
+      </testinput>
+      <expected>
+        <name>Result</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>Result-0-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ev(correctanswer-10, simp)</value>
+      </testinput>
+      <expected>
+        <name>Result</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>Result-0-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9613  -->
+  <question type="stack">
+    <name>
+      <text>8.1.2.3 Solving three equations in three unknowns</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise</span>
+<span class="multilang" lang="no">Oppgave</span></p>
+
+<p><span class="multilang" lang="en">Use Cramer's rule to find the solution of the system: <br> <br> \[ {@eqns[1]@}\ =\ {@bmat[1,1]@} , \] \[ {@eqns[2]@}\ =\ {@bmat[2,1]@} , \] \[ {@eqns[3]@}\ =\ {@bmat[3,1]@} , \]</span>
+
+<span class="multilang" lang="no">Bruk Cramers regel for å finne løsningen til systemet:   <br> <br>  \[ {@eqns[1]@}\ =\ {@bmat[1,1]@} , \] \[ {@eqns[2]@}\ =\ {@bmat[2,1]@} , \] \[ {@eqns[3]@}\ =\ {@bmat[3,1]@} , \]</span></p>
+
+<p> <br> \(x=\) [[input:ans1]]&nbsp;[[validation:ans1]]<br> \(y=\) [[input:ans2]]&nbsp;&nbsp;[[validation:ans2]]<br> \(z=\) [[input:ans3]]&nbsp;[[validation:ans3]]<br>&nbsp;[[feedback:Result]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><span class="multilang" lang="en">Cramer's rule states that \(x = \frac{\Delta_{x}}{\Delta}\) where \(\Delta\) is the determinant of the matrix and \(\Delta_{x}\) is the determinant of the matrix with the x column replaced by the numbers on the right hand side of
+  the equations and similarly \(y = \frac{\Delta_{y}}{\Delta}\) and \(z = \frac{\Delta_{z}}{\Delta}\).
+</span>
+
+<span class="multilang" lang="no">Cramers regel sier at \(x = \frac{\Delta_{x}}{\Delta}\) hvor \(\Delta\) er determinanten til matrisen og \(\Delta_{x}\) er determinanten til matrisen der x-kolonnen er erstattet med tallene på høyresiden av ligningene, og tilsvarende \(y = \frac{\Delta_{y}}{\Delta}\) og \(z = \frac{\Delta_{z}}{\Delta}\).</span></p>
+<br>
+
+<p><span class="multilang" lang="en">Therefore for the system, <br> \[{@eqns[1]@}\ =\ {@bmat[1,1]@} , \] \[ {@eqns[2]@}\ =\ {@bmat[2,1]@} , \] \[ {@eqns[3]@}\ =\ {@bmat[3,1]@} , \]<br> \[ \Delta = \det{@Amat@}={@D@},\]<br> \[\Delta_{x} = \det{@Amatx@}={@Dx@},\]<br> \[\Delta_{y} = \det{@Amaty@}={@Dy@},\]
+  and<br> \[\Delta_{z} = \det{@Amatz@}={@Dz@},\]</span>
+<span class="multilang" lang="no">Derfor for systemet, <br>\[{@eqns[1]@}\ =\ {@bmat[1,1]@} , \] \[ {@eqns[2]@}\ =\ {@bmat[2,1]@} , \] \[ {@eqns[3]@}\ =\ {@bmat[3,1]@} , \]<br> \[ \Delta = \det{@Amat@}={@D@},\]<br> \[\Delta_{x} = \det{@Amatx@}={@Dx@},\]<br> \[\Delta_{y} = \det{@Amaty@}={@Dy@},\]
+    og<br> \[\Delta_{z} = \det{@Amatz@}={@Dz@},\]</span></p>
+
+<p><span class="multilang" lang="en">where the notation \(\det A = |A|\) is the determinant of a matrix \(A\).&nbsp;&nbsp;</span>
+<span class="multilang" lang="no">hvor notasjonen \(\det A = |A|\) er determinanten til en matrise \(A\).</span></p>
+
+<p><span class="multilang" lang="en"><br> Hence, \[x=\frac{@Dx@}{@D@} = {@Dx/D@},\] <br> </span>
+<span class="multilang" lang="no">Derfor blir \[x=\frac{@Dx@}{@D@} = {@Dx/D@},\]</span></p>
+
+<p><span class="multilang" lang="en">\[y=\frac{@Dy@}{@D@} = {@Dy/D@},\]&nbsp; and</span>
+<span class="multilang" lang="no">\[y=\frac{@Dy@}{@D@} = {@Dy/D@},\]&nbsp; and</span></p>
+
+<p><span class="multilang" lang="en"> \[z=\frac{@Dz@}{@D@} = {@Dz/D@}.\]</span>
+<span class="multilang" lang="no">\[z=\frac{@Dz@}{@D@} = {@Dz/D@}.\] </span></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text>ordergreat(x,y,z);
+pos:rand(3)+1;
+vdet:rand(6)+2;
+Au:matrix([0,0,0],[0,0,0],[0,0,0]);
+Au:matrix([rand_with_step(-1,1,2),ev(rand(9)-4),ev(rand(9)-4)],[0,rand_with_step(-1,1,2),ev(rand(9)-4)],[0,0,rand_with_step(-1,1,2)]);
+Au[pos,pos]:vdet;
+
+Bu:matrix([rand_with_step(-1,1,2),ev(rand(9)-4),ev(rand(9)-4)],[0,rand_with_step(-1,1,2),ev(rand(9)-4)],[0,0,rand_with_step(-1,1,2)]);
+Amat:ev(transpose(Au).Bu);
+bmat:matrix([rand(5)+1],[rand(5)+1],[rand(5)+1]);
+xyz:matrix([x],[y],[z]);
+
+ eqns[1]:ev(Amat.xyz)[1,1];
+ eqns[2]:ev(Amat.xyz)[2,1];
+ eqns[3]:ev(Amat.xyz)[3,1];
+ truesolm:ev(invert(Amat) . bmat);
+ correctanswer:[truesolm[1,1],truesolm[2,1],truesolm[3,1]];
+
+ D:determinant(Amat);
+ Amatx:copymatrix(Amat);
+ Amatx[1,1]:ev(bmat[1,1]);
+ Amatx[2,1]:ev(bmat[2,1]);
+ Amatx[3,1]:ev(bmat[3,1]);
+ Dx:determinant(Amatx);
+ Amaty:copymatrix(Amat);
+ Amaty[1,2]:ev(bmat[1,1]);
+ Amaty[2,2]:ev(bmat[2,1]);
+ Amaty[3,2]:ev(bmat[3,1]);
+ Dy:determinant(Amaty);
+ Amatz:copymatrix(Amat);
+ Amatz[1,3]:ev(bmat[1,1]);
+ Amatz[2,3]:ev(bmat[2,1]);
+ Amatz[3,3]:ev(bmat[3,1]);
+ Dz:determinant(Amatz);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\[ {@eqns[1]@}\ =\ {@bmat[1,1]@}\]
+\[{@eqns[2]@}\ =\ {@bmat[2,1]@}\] 
+\[{@eqns[3]@}\ =\ {@bmat[3,1]@} \] gives x,y,z = {@correctanswer@}</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<p><span class="correct">Correct answer, well done.</span></p>]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<p><span class="partially">Your answer is partially correct.</span></p>]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<p><span class="incorrect">Incorrect answer.</span></p>]]></text>
+    </prtincorrect>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>correctanswer[1]</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>1</requirelowestterms>
+      <checkanswertype>1</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>correctanswer[2]</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>1</requirelowestterms>
+      <checkanswertype>1</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>correctanswer[3]</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>1</requirelowestterms>
+      <checkanswertype>1</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>Result</name>
+      <value>2.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>correctanswer[1]</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.3400000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>Result-0-T </trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p><span class="multilang" lang="en">Your x-value is correct.</span>
+<span class="multilang" lang="no">Din x-verdi er korrekt.</span></p>]]></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>Result-0-F </falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p></p><div><div>&lt;p&gt;&lt;span class="multilang" lang="en"&gt;Your x-value is incorrect.&lt;/span&gt;</div><div>&lt;span class="multilang" lang="no"&gt;Din x-verdi er feil.&lt;/span&gt;&lt;/p&gt;</div></div><p></p>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>correctanswer[2]</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.3300000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>2</truenextnode>
+        <trueanswernote>Result-1-T </trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p><span class="multilang" lang="en">Your y-value is correct.</span>
+<span class="multilang" lang="no">Din y-verdi er korrekt.</span></p>]]></text>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>Result-1-F </falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p><span class="multilang" lang="en">Your y-value is incorrect.</span>
+<span class="multilang" lang="no">Din y-verdi er feil.</span></p>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>correctanswer[3]</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.3300000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>Result-2-T </trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p><span class="multilang" lang="en">Your z-value is correct.</span>
+<span class="multilang" lang="no">Din z-verdi er korrekt.</span></p>]]></text>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>Result-2-F </falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p><span class="multilang" lang="en">Your z-value is incorrect.</span>
+<span class="multilang" lang="no">Din z-verdi er feil.</span></p>]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1385408516</deployedseed>
+    <deployedseed>1207439069</deployedseed>
+    <deployedseed>500011713</deployedseed>
+    <deployedseed>1814149122</deployedseed>
+    <deployedseed>333795477</deployedseed>
+    <deployedseed>1884411365</deployedseed>
+    <deployedseed>1560971363</deployedseed>
+    <deployedseed>769991549</deployedseed>
+    <deployedseed>2043006363</deployedseed>
+    <deployedseed>1350071435</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>correctanswer[1]</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>correctanswer[2]</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>correctanswer[3]</value>
+      </testinput>
+      <expected>
+        <name>Result</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>Result-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>correctanswer[1]-10</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>correctanswer[2]-10</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>correctanswer[3]-10</value>
+      </testinput>
+      <expected>
+        <name>Result</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>Result-2-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9614  -->
+  <question type="stack">
+    <name>
+      <text>8.1.4.1 (not in quiz): Solving two equations in two unknowns</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Use Cramer's rule to find the solution of the system: <br>  \[ {@eqns[1]@}\ =\ {@bmat[1,1]@} , \] \[ {@eqns[2]@}\ =\ {@bmat[2,1]@} , \] <br> \(x=\) [[input:ans1]]&nbsp;[[validation:ans1]]<br> \(y=\) [[input:ans2]]&nbsp;[[validation:ans2]]<br>&nbsp;[[feedback:Result]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Cramer's rule states that \(x = \frac{\Delta_{x}}{\Delta}\) where \(\Delta\) is the determinant of the matrix and \(\Delta_{x}\) is the determinant of the matrix with the x column replaced by the numbers on the right hand side of
+the equations and similarly \(y = \frac{\Delta_{y}}{\Delta}\). <br>
+</p><p></p>
+<p>Therefore for the system, <br> \[{@eqns[1]@}\ =\ {@bmat[1,1]@} , \] \[ {@eqns[2]@}\ =\ {@bmat[2,1]@} , \]&nbsp;&nbsp;<br> \[\Delta = \det{@Amat@}={@D@},\]<br> \[\Delta_{x} = \det{@Amatx@}={@Dx@},\] and<br> \[\Delta_{y} = \det{@Amaty@}={@Dy@},\]</p>
+<p>where the notation \(\det A = |A|\) is the determinant of a matrix \(A\).&nbsp;<br></p>
+<p> Hence, \[x=\frac{@Dx@}{@D@} = {@Dx/D@},\] and<br> </p>
+<p>\[y=\frac{@Dy@}{@D@} = {@Dy/D@}.\]&nbsp;&nbsp;</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2020120600</text>
+    </stackversion>
+    <questionvariables>
+      <text>ordergreat(x,y);
+pos:rand(2)+1;
+ vdet:rand(6)+2;
+ Au:matrix([0,0],[0,0]);
+ Au:matrix([rand_with_step(-1,1,2),ev(rand(9)-4)],[0,rand_with_step(-1,1,2)]);
+ Au[pos,pos]:vdet;
+ Bu:matrix([rand_with_step(-1,1,2),ev(rand(9)-4)],[0,rand_with_step(-1,1,2)]);
+ Amat:ev(transpose(Au).Bu);
+ bmat:matrix([rand(5)+1],[rand(5)+1]);
+ xy:matrix([x],[y]);
+ eqns[1]:ev(Amat.xy)[1,1];
+ eqns[2]:ev(Amat.xy)[2,1];
+ truesolm:ev(invert(Amat) . bmat);
+ correctanswer:[truesolm[1,1],truesolm[2,1]];
+ D:determinant(Amat);
+ Amatx:copymatrix(Amat);
+ Amatx[1,1]:ev(bmat[1,1]);
+ Amatx[2,1]:ev(bmat[2,1]);
+ Dx:determinant(Amatx);
+ Amaty:copymatrix(Amat);
+ Amaty[1,2]:ev(bmat[1,1]);
+ Amaty[2,2]:ev(bmat[2,1]);
+ Dy:determinant(Amaty);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\[ {@eqns[1]@}\ =\ {@bmat[1,1]@}\]   \[{@eqns[2]@}\ =\ {@bmat[2,1]@} \] gives x,y = {@correctanswer@}</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<p><span class="correct">Correct answer, well done.</span></p>]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<p><span class="partially">Your answer is partially correct.</span></p>]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<p><span class="incorrect">Incorrect answer.</span></p>]]></text>
+    </prtincorrect>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>correctanswer[1]</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>1</requirelowestterms>
+      <checkanswertype>1</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>correctanswer[2]</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>1</requirelowestterms>
+      <checkanswertype>1</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>Result</name>
+      <value>2.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>correctanswer[1]</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>Result-0-T </trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your x-value is correct.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>Result-0-F </falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>Your x-value is incorrect.</p>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>correctanswer[2]</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.5000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>Result-1-T </trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your y-value is correct.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>Result-1-F </falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>Your y-value is incorrect.</p>]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1416438987</deployedseed>
+    <deployedseed>1424515908</deployedseed>
+    <deployedseed>4741691</deployedseed>
+    <deployedseed>879644659</deployedseed>
+    <deployedseed>1841239305</deployedseed>
+    <deployedseed>359355855</deployedseed>
+    <deployedseed>138843354</deployedseed>
+    <deployedseed>824785688</deployedseed>
+    <deployedseed>172333940</deployedseed>
+    <deployedseed>1505066948</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>correctanswer[1]</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>correctanswer[2]</value>
+      </testinput>
+      <expected>
+        <name>Result</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>Result-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>correctanswer[1]-10</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>correctanswer[2]-10</value>
+      </testinput>
+      <expected>
+        <name>Result</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>Result-1-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9615  -->
+  <question type="stack">
+    <name>
+      <text>8.1.4.2 (not in quiz): Solving three equations in three unknowns</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Use Cramer's rule to find the solution of the system: <br> <br> \[ {@eqns[1]@}\ =\ {@bmat[1,1]@} , \] \[ {@eqns[2]@}\ =\ {@bmat[2,1]@} , \] \[ {@eqns[3]@}\ =\ {@bmat[3,1]@} , \] <br> \(x=\) [[input:ans1]]&nbsp;[[validation:ans1]]<br> \(y=\) [[input:ans2]]&nbsp;[[validation:ans2]]<br> \(z=\) [[input:ans3]]&nbsp;[[validation:ans3]]<br>&nbsp;&nbsp;[[feedback:Result]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Cramer's rule states that \(x = \frac{\Delta_{x}}{\Delta}\) where \(\Delta\) is the determinant of the matrix and \(\Delta_{x}\) is the determinant of the matrix with the x column replaced by the numbers on the right hand side of
+the equations and similarly \(y = \frac{\Delta_{y}}{\Delta}\) and \(z = \frac{\Delta_{z}}{\Delta}\). <br>
+</p><p></p>
+<p>Therefore for the system, <br> \[{@eqns[1]@}\ =\ {@bmat[1,1]@} , \] \[ {@eqns[2]@}\ =\ {@bmat[2,1]@} , \] \[ {@eqns[3]@}\ =\ {@bmat[3,1]@} , \]<br> \[ \Delta = \det{@Amat@}={@D@},\]<br> \[\Delta_{x} = \det{@Amatx@}={@Dx@},\]<br> \[\Delta_{y} = \det{@Amaty@}={@Dy@},\]
+    and<br> \[\Delta_{z} = \det{@Amatz@}={@Dz@},\]</p>
+<p>where the notation \(\det A = |A|\) is the determinant of a matrix \(A\).&nbsp;&nbsp;</p>
+<p><br> Hence, \[x=\frac{@Dx@}{@D@} = {@Dx/D@},\] <br> </p>
+<p>\[y=\frac{@Dy@}{@D@} = {@Dy/D@},\]&nbsp; and</p>
+<p> \[z=\frac{@Dz@}{@D@} = {@Dz/D@}.\]</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2020120600</text>
+    </stackversion>
+    <questionvariables>
+      <text>ordergreat(x,y,z);
+pos:rand(3)+1;
+ vdet:rand(6)+2;
+ Au:matrix([0,0,0],[0,0,0],[0,0,0]);
+ Au:matrix([rand_with_step(-1,1,2),ev(rand(9)-4),ev(rand(9)-4)],[0,rand_with_step(-1,1,2),ev(rand(9)-4)],[0,0,rand_with_step(-1,1,2)]);
+ Au[pos,pos]:vdet;
+ Bu:matrix([rand_with_step(-1,1,2),ev(rand(9)-4),ev(rand(9)-4)],[0,rand_with_step(-1,1,2),ev(rand(9)-4)],[0,0,rand_with_step(-1,1,2)]);
+ Amat:ev(transpose(Au).Bu);
+ bmat:matrix([rand(5)+1],[rand(5)+1],[rand(5)+1]);
+ xyz:matrix([x],[y],[z]);
+ eqns[1]:ev(Amat.xyz)[1,1];
+ eqns[2]:ev(Amat.xyz)[2,1];
+ eqns[3]:ev(Amat.xyz)[3,1];
+ truesolm:ev(invert(Amat) . bmat);
+ correctanswer:[truesolm[1,1],truesolm[2,1],truesolm[3,1]];
+ D:determinant(Amat);
+ Amatx:copymatrix(Amat);
+ Amatx[1,1]:ev(bmat[1,1]);
+ Amatx[2,1]:ev(bmat[2,1]);
+ Amatx[3,1]:ev(bmat[3,1]);
+ Dx:determinant(Amatx);
+ Amaty:copymatrix(Amat);
+ Amaty[1,2]:ev(bmat[1,1]);
+ Amaty[2,2]:ev(bmat[2,1]);
+ Amaty[3,2]:ev(bmat[3,1]);
+ Dy:determinant(Amaty);
+ Amatz:copymatrix(Amat);
+ Amatz[1,3]:ev(bmat[1,1]);
+ Amatz[2,3]:ev(bmat[2,1]);
+ Amatz[3,3]:ev(bmat[3,1]);
+ Dz:determinant(Amatz);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\[{@eqns[1]@}\ =\ {@bmat[1,1]@}\]
+\[{@eqns[2]@}\ =\ {@bmat[2,1]@}\]
+\[{@eqns[3]@}\ =\ {@bmat[3,1]@} \]
+gives x,y,z = {@correctanswer@}</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<p><span class="correct">Correct answer, well done.</span></p>]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<p><span class="partially">Your answer is partially correct.</span></p>]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<p><span class="incorrect">Incorrect answer.</span></p>]]></text>
+    </prtincorrect>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>algebraic</type>
+      <tans>correctanswer[1]</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>1</requirelowestterms>
+      <checkanswertype>1</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>algebraic</type>
+      <tans>correctanswer[2]</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>1</requirelowestterms>
+      <checkanswertype>1</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>algebraic</type>
+      <tans>correctanswer[3]</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>1</requirelowestterms>
+      <checkanswertype>1</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>Result</name>
+      <value>2.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>correctanswer[1]</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>0.3400000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>1</truenextnode>
+        <trueanswernote>Result-0-T </trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your x-value is correct.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>Result-0-F </falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>Your x-value is incorrect.</p>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>correctanswer[2]</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.3300000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>2</truenextnode>
+        <trueanswernote>Result-1-T </trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your y-value is correct.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>2</falsenextnode>
+        <falseanswernote>Result-1-F </falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>Your y-value is incorrect.</p>]]></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>2</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>correctanswer[3]</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.3300000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>Result-2-T </trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>Your z-value is correct.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>+</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>Result-2-F </falseanswernote>
+        <falsefeedback format="html">
+          <text><![CDATA[<p>Your z-value is incorrect.</p>]]></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>621277423</deployedseed>
+    <deployedseed>137036269</deployedseed>
+    <deployedseed>1531605949</deployedseed>
+    <deployedseed>1551906852</deployedseed>
+    <deployedseed>77731740</deployedseed>
+    <deployedseed>1213785733</deployedseed>
+    <deployedseed>187955987</deployedseed>
+    <deployedseed>440787071</deployedseed>
+    <deployedseed>437671573</deployedseed>
+    <deployedseed>477035353</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>correctanswer[1]</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>correctanswer[2]</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>correctanswer[3]</value>
+      </testinput>
+      <expected>
+        <name>Result</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>Result-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>correctanswer[1]-10</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>correctanswer[2]-10</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>correctanswer[3]-10</value>
+      </testinput>
+      <expected>
+        <name>Result</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>Result-2-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+</quiz>

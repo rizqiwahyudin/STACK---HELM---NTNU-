@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>Oppgave 1</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+</p>
+<p>
+</p>
+<p>
+    Et elektron har farten \(2.0\cdot10^7\) m/s. Hvor lang tid bruker elektronet p&#229; &#229; bevege seg \(15\)&#160;cm?
+</p>
+<p>
+    [[input:ans1]] [[validation:ans1]]
+</p>
+<p>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020070100</text>
+        </stackversion>
+        <questionvariables>
+            <text>stack_unit_si_declare(true);
+
+t1:7.5
+ta1:t1*ns;</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text>[[feedback:prt1]]</text>
+        </specificfeedback>
+        <questionnote>
+            <text/>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>units</type>
+            <tans>ta1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>5</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>3</showvalidation>
+            <options>minsf:2, maxsf:3</options>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>san:first(stack_units_split(ans1));
+sau:second(stack_units_split(ans1));
+mag:integerp(rat(float(log(san/t1)/log(10))));</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>UnitsAbsolute</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions>0.025</testoptions>
+                <quiet>1</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    Riktig
+</p>
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>mag</sans>
+                <tans>true</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<p dir="ltr">
+    Det ser ut som du har l&#248;st oppgaven p&#229; riktig m&#229;te, men gjort en kommafeil i
+    <span style="font-size: 0.9375rem;">
+        regning eller i forbindelse med omgj&#248;ring av enheter.
+    </span>
+</p>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<p dir="ltr">
+    <br/>
+</p>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>1674575664</deployedseed>
+        <deployedseed>649567570</deployedseed>
+        <deployedseed>536703762</deployedseed>
+        <deployedseed>1015598315</deployedseed>
+        <deployedseed>1099838436</deployedseed>
+        <hint format="html">
+            <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    Her m&#229; vi bruke at strekning er fart ganger tid, \(s=vt\).
+</p>
+]]></text>
+        </hint>
+        <hint format="html">
+            <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    Her m&#229; vi bruke at strekning er fart ganger tid, \(s=vt\).
+    <br/>
+    <span style="color:blue">
+        Vi m&#229; gj&#248;re om p&#229; formelen slik at den blir en formel for tiden \(t\)
+    </span>
+</p>
+]]></text>
+        </hint>
+        <hint format="html">
+            <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    Her m&#229; vi bruke at strekning er fart ganger tid, \(s=vt\).
+    <br/>
+    Vi m&#229; gj&#248;re om p&#229; formelen slik at den blir en formel for tiden \(t\)
+    <span style="font-size: 0.9375rem;">
+        .
+        <br/>
+    </span>
+    <span style="font-size: 0.9375rem; color: blue;">
+        Ved &#229; dividere med \(v\) p&#229; begge sider av likhetstegnet f&#229;r vi
+        <br/>
+        \(\frac{s}{v}=\frac{vt}{v}\)
+        <br/>
+    </span>
+    <span style="color: blue; font-size: 0.9375rem;">
+        Vi forkorter p&#229; h&#248;yre
+        side og f&#229;r
+        <br/>
+        \(\frac{s}{v}=t\).
+    </span>
+</p>
+]]></text>
+        </hint>
+        <hint format="html">
+            <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    Her m&#229; vi bruke at strekning er fart ganger tid, \(s=vt\).
+    <br/>
+    Vi m&#229; gj&#248;re om p&#229; formelen slik at den blir en formel for tiden \(t\).
+    <br/>
+    <span>
+        Ved &#229; dividere med \(v\) p&#229; begge sider av likhetstegnet f&#229;r vi
+        <br/>
+        \(\frac{s}{v}=\frac{vt}{v}\)
+        <br/>
+    </span>
+    Vi
+                forkorter p&#229; h&#248;yre side og f&#229;r
+    <br/>
+    \(\frac{s}{v}=t\).&lt;\p&gt;
+</p>
+<p style="color:blue">
+    N&#229;r vi skal dele strekning p&#229; fart er det veldig lurt &#229; ha samme lengdeenhet i begge st&#248;rrelsene. Vi kan for eksempel bruke at \(15\) cm = \(0.15\) m.
+</p>
+]]></text>
+        </hint>
+    </question>
+    
+
+</quiz>

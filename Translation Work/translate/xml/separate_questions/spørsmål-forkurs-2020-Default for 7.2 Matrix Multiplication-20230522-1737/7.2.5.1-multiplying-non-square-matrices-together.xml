@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>7.2.5.1 Multiplying non-square matrices together</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Multiplying non-square matrices together
+    </span>
+    <span class="multilang" lang="no">
+        Multiplisering av ikke-kvadratiske matriser
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        So far, we have just looked at multiplying \(2\times
+                2\) matrices and \(3\times 3\) matrices. However, products between non-square matrices may be possible.
+    </span>
+    <span class="multilang" lang="no">
+        S&#229; langt har vi bare sett p&#229; multiplisering av \(2\times
+                2\) matriser og \(3\times 3\) matriser. Likevel kan produkter mellom ikke-kvadratiske matriser eksistere.
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <p style="text-align:center;">
+        <b>
+            <span class="multilang" lang="en">
+                General Matrix Products
+            </span>
+            <span class="multilang" lang="no">
+                Generelle matriseprodukter
+            </span>
+        </b>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            The general rule is that an \(n \times p\) matrix \(A\) can be multiplied by a \(p \times m\) matrix \(B\) to form an \(n \times m\) matrix \(AB = C.\)
+        </span>
+        <span class="multilang" lang="no">
+            Den generelle regelen er at en \(n \times p\) matrise \(A\) kan multipliseres med en \(p \times m\) matrise \(B\) for &#229; danne en \(n \times m\) matrise \(AB = C.\)
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            In words:
+        </span>
+        <span class="multilang" lang="no">
+            Med ord:
+        </span>
+    </p>
+    <p style="text-align:center;">
+        <span class="multilang" lang="en">
+            For the matrix product \(AB\) to be defined the number
+                                of columns of \(A\) must equal the number of rows of \(B\).
+        </span>
+        <span class="multilang" lang="no">
+            For at matriseproduktet \(AB\) skal v&#230;re definert m&#229; antall kolonner i \(A\) v&#230;re lik antall rader i \(B\).
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            The elements of \(C\) are found in the usual way:
+        </span>
+        <span class="multilang" lang="no">
+            Elementene i \(C\) finnes p&#229; vanlig m&#229;te:
+        </span>
+    </p>
+    <p style="text-align:center;">
+        <span class="multilang" lang="en">
+            The element in the \(i^{\text{th}}\) row and \(j^{\text{th}}\) column of \(C\) is obtained
+                                by multiplying the \(i^{\text{th}}\) row of \(A\) with the \(j^{\text{th}}\) column of \(B\).
+        </span>
+        <span class="multilang" lang="no">
+            Elementet i \(i{\text{-te}}\) raden og \(j{\text{-te}}\) kolonnen i \(C\) er funnet ved &#229; multiplisere \(i{\text{-te}}\) raden i \(A\) med \(j{\text{-te}}\) kolonnen i \(B\).
+        </span>
+    </p>
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

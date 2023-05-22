@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>10.1.2.1 Addition and subtraction of complex numbers</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Addition and subtraction of complex numbers
+    </span>
+    <span class="multilang" lang="no">
+        Addisjon og subtraksjon av komplekse tall
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        Let \(z\) and \(w\) be any two complex numbers  where \(z=a+i b\) and \(w=c+i d\) then
+                \[z+w=(a+c)+i(b+d),\] \[z-w=(a-c)+i(b-d).\] For example if \(z=2-3i\), \(w=-4+2i\) then 
+                                \[z+w=\{2+(-4)\}+\{(-3)+2\}i =-2-i,\]
+                                \[z-w=\{2-(-4)\}+\{(-3)-2\}i =6-5i\]
+    </span>
+    <span class="multilang" lang="no">
+        La \(z\) og \(w\) v&#230;re komplekse tall, der \(z=a+ib\) og \(w=c+id\). Da er 
+\[z+w=(a+c)+i(b+d),\]
+\[z-w=(a-c)+i(b-d).\]
+For eksempel, dersom \(z=2-3i\) og \(w=-4+2i\), s&#229; er 
+\[z+w=(2+(-4))+((-3)+2)i=-2-i, \]
+\[z-w=(2-(-4))+((-3)-2)i=6-5i.\]
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

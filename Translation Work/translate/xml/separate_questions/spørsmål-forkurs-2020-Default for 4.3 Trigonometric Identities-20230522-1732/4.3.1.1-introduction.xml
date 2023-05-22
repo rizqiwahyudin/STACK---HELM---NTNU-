@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>4.3.1.1 Introduction</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Trigonometric identities
+    </span>
+    <span class="multilang" lang="no">
+        Trigonometriske identiteter
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        An identity is a relation which is always true. To emphasise this the symbol &#8216;\(\equiv\)&#8217; is often used rather than &#8216;\(=\)&#8217;. For example, \((x+1)^2\equiv x^2+2x+1\) (always true) but \((x+1)^2=0\) (only true for \(x=-1\)).
+    </span>
+    <span class="multilang" lang="no">
+        En identitet er en relasjon som alltid er sann. For &#229; understreke dette brukes ofte symbolet '\(\equiv\)' i stedet for '\(=\)'. For eksempel, \((x+1)^2\equiv x^2+2x+1\) (alltid sant) men \((x+1)^2=0\) (bare sant for \(x=- 1\)).
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

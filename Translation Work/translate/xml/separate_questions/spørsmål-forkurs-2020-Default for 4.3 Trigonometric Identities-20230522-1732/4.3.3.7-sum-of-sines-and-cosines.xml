@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>4.3.3.7 Sum of sines and cosines</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Sum of two sines and sum of two cosines
+    </span>
+    <span class="multilang" lang="no">
+        Summen av to sinuser og av to cosinuser
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Here we obtain results that are widely used in areas of science and engineering such as vibration theory, wave theory and electric circuit theory.
+    </span>
+    <span class="multilang" lang="no">
+        Her f&#229;r vi resultater som er mye brukt innen vitenskap og ingeni&#248;rfag som vibrasjonsteori, b&#248;lgeteori og elektrisk kretsteori.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We return to the identities angle addition formulae:
+    </span>
+    <span class="multilang" lang="no">
+        Vi g&#229;r tilbake til addisjonsformlene for vinkeler:
+    </span>
+</p>
+\[\begin{aligned} \sin(A+B ) &amp;\equiv \sin A\cos B+\cos A\sin B\\ \sin (A-B) &amp;\equiv \sin A\cos B-\cos A\sin B \end{aligned}\]
+<p>
+    <span class="multilang" lang="en">
+        Adding these identities gives
+    </span>
+    <span class="multilang" lang="no">
+        &#197; legge sammen disse identitetene gir
+    </span>
+</p>
+\[\sin(A+B)+\sin(A-B)\equiv 2\sin A\cos B.\]
+<p>
+    <span class="multilang" lang="en">
+        Subtracting the identities produces
+    </span>
+    <span class="multilang" lang="no">
+        &#197; trekke fra identitetene gir
+    </span>
+</p>
+\[\sin (A+B)-\sin(A-B)\equiv 2\cos A\sin B\]
+<p>
+    <span class="multilang" lang="en">
+        It is now convenient to let \(C=A+B\) and \(D=A-B\) so that
+    </span>
+    <span class="multilang" lang="no">
+        Det er n&#229; praktisk &#229; la \(C=A+B\) og \(D=A-B\) slik at
+    </span>
+</p>
+<span class="multilang" lang="en">
+    \[A=\dfrac{C+D}{2} \qquad \text{and} \qquad B=\dfrac{C-D}{2}\]
+</span>
+<span class="multilang" lang="no">
+    \[A=\dfrac{C+D}{2} \qquad \text{og} \qquad B=\dfrac{C-D}{2}\]
+</span>
+<p>
+    <span class="multilang" lang="en">
+        The above then becomes:
+    </span>
+    <span class="multilang" lang="no">
+        Det ovenst&#229;ende blir da:
+    </span>
+</p>
+\[\sin C+\sin D\equiv 2\sin\left(\dfrac{C+D}{2}\right)\cos \left(\dfrac{C-D}{2}\right) \]
+<p>
+    <span class="multilang" lang="en">
+        Similarly:
+    </span>
+    <span class="multilang" lang="no">
+        P&#229; samme m&#229;te:
+    </span>
+</p>
+\[\sin C-\sin D\equiv 2\cos\left(\dfrac{C+D}{2}\right)\sin \left(\dfrac{C-D}{2}\right) \]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

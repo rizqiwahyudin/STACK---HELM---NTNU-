@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>11.4.2.1 Differentiating a quotient</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Differentiating a quotient
+    </span>
+    <span class="multilang" lang="no">
+        Derivasjon av en kvotient
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        In this Section we consider functions of the form \(y = \dfrac{f(x)}{g(x)}\). To find the derivative of such a function we make use of the following Key Point:
+    </span>
+    <span class="multilang" lang="no">
+        I denne seksjonen vil vi se p&#229; funksjoner p&#229; formen \(y = \dfrac{f(x)}{g(x)}\). For &#229; finne den deriverte av en slik funksjon, bruker vi f&#248;lgende viktige punkt:
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            <b>
+                Quotient Rule
+            </b>
+        </span>
+        <span class="multilang" lang="no">
+            <b>
+                Kvotientregelen
+            </b>
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            If \(y = \dfrac{f(x)}{g(x)}\), then \[ \dfrac{dy}{dx} = \dfrac{ g(x) \dfrac{df}{dx} - \dfrac{dg}{dx}f(x)}{[g(x)]^2}\] or \(y' = \dfrac{ gf' - g'f}{g^2}\).
+        </span>
+        <span class="multilang" lang="no">
+            Hvis \(y = \dfrac{f(x)}{g(x)}\), s&#229; er \[ \dfrac{dy}{dx} = \dfrac{ g(x) \dfrac{df}{dx} - \dfrac{dg}{dx}f(x)}{[g(x)]^2}\] eller \(y' = \dfrac{ gf' - g'f}{g^2}\).
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            In slightly more compact notation we have that if \(y = \dfrac{u}{v}\), then \[ \dfrac{dy}{dx} = \dfrac{ v \dfrac{du}{dx} - \dfrac{dv}{dx}u}{v^2}\] or \(y' = \dfrac{ vu' - v'u}{v^2}\).
+        </span>
+        <span class="multilang" lang="no">
+            I litt mer kompakt notasjon har vi at dersom \(y = \dfrac{u}{v}\), s&#229; har vi at \[ \dfrac{dy}{dx} = \dfrac{ v \dfrac{du}{dx} - \dfrac{dv}{dx}u}{v^2}\] eller \(y' = \dfrac{ vu' - v'u}{v^2}\).
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            These are two equivalent versions of the
+            <b>
+                quotient rule
+            </b>
+            .
+        </span>
+        <span class="multilang" lang="no">
+            Dette er to ekvivalente versjoner av
+            <b>
+                kvote-regelen
+            </b>
+            .
+        </span>
+    </p>
+</div>
+<br/>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Find the derivative of \(y = \dfrac{\ln x}{x}\).
+    </span>
+    <span class="multilang" lang="no">
+        Finn den deriverte av \(y = \dfrac{\ln x}{x}\)
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Here \(f(x) = \ln x\) and \(g(x) = x\)
+\[ \therefore \dfrac{df}{dx} = \dfrac{1}{x} \text{ and } \dfrac{dg}{dx} = 1 \]
+Hence \(\dfrac{dy}{dx} =\dfrac{x \left( \dfrac{1}{x} \right) - 1(\ln x) }{[x]^2} = \dfrac{1 - \ln x}{x^2}\)
+    </span>
+    <span class="multilang" lang="no">
+        Her er \(f(x) = \ln x\) og \(g(x) = x\)
+\[ \therefore \dfrac{df}{dx} = \dfrac{1}{x} \text{ og } \dfrac{dg}{dx} = 1 \]
+Derfor \(\dfrac{dy}{dx} =\dfrac{x \left( \dfrac{1}{x} \right) - 1(\ln x) }{[x]^2} = \dfrac{1 - \ln x}{x^2}\)
+    </span>
+</p>
+<hr/>
+<p>
+    <span class="multilang" lang="en">
+        Note that the product rule can also be used to differentiate this function by writing it in the form \(y = f(x)g(x) = (\ln x)(x^{-1})\).
+    </span>
+    <span class="multilang" lang="no">
+        Merk at produktregelen kan ogs&#229; bli brukt for &#229; derivere denne funksjonen ved &#229; skrive den p&#229; formen \(y = f(x)g(x) = (\ln x)(x^{-1})\).
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

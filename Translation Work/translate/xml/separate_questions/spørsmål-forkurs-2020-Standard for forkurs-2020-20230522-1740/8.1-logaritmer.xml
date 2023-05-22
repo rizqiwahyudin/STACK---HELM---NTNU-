@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>8.1 Logaritmer</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    Logaritmer har mange bruksomr&#229;der i matematikken. For eksempel kan du ofte finne at en graf med b&#229;de store og sm&#229; tall presenteres med logaritmisk akse, noe som gj&#248;r grafen tydeligere. I tillegg trenger vi logaritmer for &#229; kunne l&#248;se likninger med potens der den ukjente er i eksponenten.
+</p>
+<p dir="ltr" style="text-align: left;">
+    \(\lg x\) eller&#160;\(\lg(x)\)&#160; er tierlogaritmen til x. Et annet vanlig navn er den briggske logaritmen, etter engelske Henry Briggs som var en av de mest sentrale matematikerne i innf&#248;ringen av logaritmer p&#229; 1600-tallet.
+</p>
+<p dir="ltr" style="text-align: left;">
+    Vi kan oversette&#160;\(\lg x\) med "tallet vi m&#229; opph&#248;ye 10 i for &#229; f&#229; x".
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

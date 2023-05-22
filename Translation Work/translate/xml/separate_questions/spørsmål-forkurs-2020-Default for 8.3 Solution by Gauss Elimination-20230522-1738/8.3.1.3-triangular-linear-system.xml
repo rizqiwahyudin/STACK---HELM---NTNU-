@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>8.3.1.3 Triangular linear system</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h5>
+    <span class="multilang" lang="en">
+        The triangular system
+    </span>
+    <span class="multilang" lang="no">
+        Det triangul&#230;re systemet
+    </span>
+</h5>
+<p>
+    <span class="multilang" lang="en">
+        The next easiest system of equations to solve is of the following kind: \[\begin{matrix}
+                                3x_1 &amp; + &amp; x_2 &amp; - &amp; x_3 &amp; = &amp; 0 \\
+                                &amp; &amp; 2x_2 &amp; + &amp; x_3 &amp; = &amp; 12 \\
+                                &amp; &amp; &amp; &amp; 3x_3 &amp; = &amp; 6 \\
+                                \end{matrix}\] The last equation can be solved immediately to give \(x_3=2\).
+    </span>
+    <span class="multilang" lang="no">
+        Det neste enkleste likningssystemet &#229; l&#248;se er av f&#248;lgende type: \[\begin{matrix}
+                                3x_1 &amp; + &amp; x_2 &amp; - &amp; x_3 &amp; = &amp; 0 \\
+                                &amp; &amp; 2x_2 &amp; + &amp; x_3 &amp; = &amp; 12 \\
+                                &amp; &amp; &amp; &amp; 3x_3 &amp; = &amp; 6 \\
+                                \end{matrix}\] Den siste likningen kan l&#248;ses umiddelbart for &#229; gi \(x_3=2\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Substituting this value of \(x_3\) into the second equation gives
+    </span>
+    <span class="multilang" lang="no">
+        Substitusjonen av denne verdien for \(x_3\) i den andre ligningen gir
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \[2x_2+2=12\qquad{\rm from\ which}\qquad 2x_2=10\qquad {\rm so\ that}\qquad x_2=5\]
+    </span>
+    <span class="multilang" lang="no">
+        \[2x_2+2=12\qquad{\rm hvorfra}\qquad 2x_2=10\qquad {\rm slik\ at} \qquad x_2=5\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Substituting these values of \(x_2\) and \(x_3\) into the first equation gives
+    </span>
+    <span class="multilang" lang="no">
+        Substitusjon av disse verdiene for \(x_2\) og \(x_3\) inn i den f&#248;rste ligningen gir
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \[3x_1+5-2=0\qquad {\rm from\ which}\qquad\ 3x_1=-3\qquad {\rm so\ that}\qquad x_1=-1\] Hence the solution is \([x_1,x_2,x_3]^T=[-1,5,2]^T.\)
+    </span>
+    <span class="multilang" lang="no">
+        \[3x_1+5-2=0\qquad {\rm hvorfra}\qquad\ 3x_1=-3\qquad {\rm slik\ at}\qquad x_1=-1\] S&#229; l&#248;sningen er \([x_1,x_2,x_3]^T=[-1,5,2]^T.\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        This process of solution is called back-substitution.
+    </span>
+    <span class="multilang" lang="no">
+        Denne l&#248;sningsprosessen kalles bakover-substitusjon.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In matrix form the system of equations is
+    </span>
+    <span class="multilang" lang="no">
+        I matriseform er likningssystemet gitt som
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \[\left[\begin{array}{rrr}3&amp;1&amp;-1\\ 0&amp;2&amp;1\\ 0&amp;0&amp;3\end{array}\right]\left[\begin{array}{c}x_1\\
+                                x_2\\ x_3\end{array}\right]=\left[\begin{array}{r}0\\ 12\\ 6\end{array}\right].\]
+    </span>
+    <span class="multilang" lang="no">
+        \[\left[\begin{array}{rrr}3&amp;1&amp;-1\\ 0&amp;2&amp;1\\ 0&amp;0&amp;3\end{array}\right]\left[\begin{array}{c}x_1\\
+                                x_2\\ x_3\end{array}\right]=\left[\begin{array}{r}0\\ 12\\ 6\end{array}\right].\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The matrix of coefficients is said to be upper triangular because all elements below the leading diagonal are zero. Any system of equations in which the coefficient matrix is triangular (whether upper or lower) will be particularly easy to solve.
+    </span>
+    <span class="multilang" lang="no">
+        Matrisen av koeffisienter kalles &#248;vre triangul&#230;r fordi alle elementene under diagonalen er null. Ethvert ligningssystem der koeffisientmatrisen er triangul&#230;r (enten &#248;vre eller nedre) vil v&#230;re spesielt enkelt &#229; l&#248;se.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

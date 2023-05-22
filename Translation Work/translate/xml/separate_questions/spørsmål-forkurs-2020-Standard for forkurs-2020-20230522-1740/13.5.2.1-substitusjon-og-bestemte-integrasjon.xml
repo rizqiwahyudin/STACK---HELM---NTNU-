@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>13.5.2.1 Substitusjon og bestemte integrasjon</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="en">
+    <h3>
+        <span>
+            Substitution and definite integration
+        </span>
+        <br/>
+    </h3>
+    <p>
+        If you are dealing with definite integrals (ones with limits of integration) you must be particularly careful when you substitute. Consider the following example.
+    </p>
+    <hr/>
+    <h4 class="HELM_example">
+        Example
+    </h4>
+    <p>
+        Find the definite integral \({\displaystyle\int_2^3 t\sin(t^2)\mathrm{d}t}\) by making the substitution \(u=t^2\).
+    </p>
+    <h4 class="HELM_solution">
+        Solution
+    </h4>
+    <p>
+        Note that if \(u=t^2\) then \(\dfrac{du}{dt}=2t\) so that \(dt = \dfrac{du}{2t}\).
+    </p>
+    <p>
+        We find \({\displaystyle\int_{t=2}^{t=3}t\sin(t^2)\mathrm{d}t}\) = \({\displaystyle\int_{t=2}^{t=3}t\sin u \dfrac{du}{2t}} = \dfrac{1}{2}{\displaystyle\int_{t=2}^{t=3}\sin u\mathrm{d}u}\)
+    </p>
+    <p>
+    </p>
+    <p>
+        An important point to note is that the limits of integration are limits on the variable \(t\), not \(u\). To emphasise this they have been written explicitly as \(t=2\) and \(t=3\). When we integrate with respect to the variable \(u\), the limits must
+                be written in terms of \(u\). From the substitution \(u=t^2\), note that when \(t=2\) then \(u=4\) and when \(t=3\) then \(u=9\) so the integral becomes
+    </p>
+    <p>
+    </p>
+    <p>
+        \(\dfrac{1}{2}{\displaystyle\int_{u=4}^{u=9}\sin u\mathrm{d}u} = \dfrac{1}{2}\left[\phantom{\dfrac{1}{1}}\!\!\! -\cos u\right]_4^9= \dfrac{1}{2}\left(-\cos 9 +\cos 4\right) = 0.129\) to 3 d.p.
+    </p>
+    <hr/>
+</span>
+<span class="multilang" lang="no">
+    <h3>
+        <span>
+            Substitusjon og bestemt intgrasjon
+        </span>
+        <br/>
+    </h3>
+    <p>
+        N&#229;r man skal h&#229;ndtere bestemte integraler (alts&#229; de med grenser) m&#229; man v&#230;re spesielt forsiktig n&#229;r man substituerer. Se f&#248;lgende eksempel.
+    </p>
+    <hr/>
+    <h4 class="HELM_example">
+        Eksempel
+    </h4>
+    <p>
+        Finn det bestemte integralet \({\displaystyle\int_2^3 t\sin(t^2)\mathrm{d}t}\) ved &#229; gj&#248;re substitusjonen \(u=t^2\).
+    </p>
+    <h4 class="HELM_solution">
+        L&#248;sning
+    </h4>
+    <p>
+        Se at hvis \(u=t^2\) da er \(\dfrac{du}{dt}=2t\) s&#229;nn at \(dt = \dfrac{du}{2t}\).
+    </p>
+    <p>
+        Vi ser \({\displaystyle\int_{t=2}^{t=3}t\sin(t^2)\mathrm{d}t}\) = \({\displaystyle\int_{t=2}^{t=3}t\sin u \dfrac{du}{2t}} = \dfrac{1}{2}{\displaystyle\int_{t=2}^{t=3}\sin u\mathrm{d}u}\)
+    </p>
+    <p>
+    </p>
+    <p>
+        Det er viktig &#229; merke seg at grenser for integralet er grenser for variablen \(t\), ikke \(u\). For &#229; gj&#248;re dette tydelig er grensene skrevet som \(t=2\) and \(t=3\). N&#229;r vi integrerer med hensyn til variablen \(u\), m&#229; grensene ogs&#229; skrives i hensyn
+                til \(u\). Fra substitusjonen \(u=t^2\), legg merke til at n&#229;r \(t=2\) er \(u=4\) og n&#229;r \(t=3\) er \(u=9\) slik at integralet blir
+    </p>
+    <p>
+    </p>
+    <p>
+        \(\dfrac{1}{2}{\displaystyle\int_{u=4}^{u=9}\sin u\mathrm{d}u} = \dfrac{1}{2}\left[\phantom{\dfrac{1}{1}}\!\!\! -\cos u\right]_4^9= \dfrac{1}{2}\left(-\cos 9 +\cos 4\right)&#160;&#8776; 0.129\)
+        <br/>
+    </p>
+    <hr/>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

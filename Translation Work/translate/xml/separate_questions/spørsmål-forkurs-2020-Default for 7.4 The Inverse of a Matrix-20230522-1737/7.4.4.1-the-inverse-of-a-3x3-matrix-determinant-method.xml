@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>7.4.4.1 The inverse of a 3x3 matrix &#9472; determinant method</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        The inverse of a \(3\times 3\) matrix - determinant method
+    </span>
+    <span class="multilang" lang="no">
+        Den inversen av en \(3\times 3\) matrise - determinanten metode
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        This method which employs determinants, is of importance from a theoretical perspective. The numerical computations involved are too heavy for matrices of higher order than \(3\times 3\) and in such cases the Gauss elimination approach is preferred.
+    </span>
+    <span class="multilang" lang="no">
+        Denne metoden, som bruker determinanter, er av betydning fra et teoretisk perspektiv. De numeriske beregningene som er involvert, er for tunge for matriser med h&#248;yere orden enn \(3\times 3\), og i slike tilfeller foretrekkes Gauss-elimineringsmetoden.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        To obtain \(A^{-1}\) using the determinant approach the steps in the following keypoint are followed:
+    </span>
+    <span class="multilang" lang="no">
+        For &#229; f&#229;  \(A^{-1}\)  ved &#229; bruke determinanttiln&#230;rmingen, f&#248;lges trinnene i f&#248;lgende n&#248;kkelpunkt:
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+            <br/>
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <h5 style="text-align: center;">
+        Matrix Inverse - the Determinant Method
+    </h5>
+    <p>
+        <span class="multilang" lang="en">
+            Given a square matrix \(A\), we first calculate \(|A|\). If&#160;\(|A|=0\) then&#160;\(A^{-1}\) does not exist.
+        </span>
+        <span class="multilang" lang="no">
+            Gitt en matrise \(A\), beregner vi f&#248;rst \(|A|\). Hvis \(|A|=0\), eksisterer ikke \(A^{-1}\).
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            If&#160;\(|A|\neq 0\) we can proceed to find the inverse matrix, as follows:
+        </span>
+        <span class="multilang" lang="no">
+            Hvis&#160;\(|A|\neq 0\) kan vi fortsette med &#229; finne den inverse matrisen p&#229; f&#248;lgende m&#229;te:
+        </span>
+    </p>
+    <ul>
+        <li>
+            Replace each element of&#160;\(A\) by its cofactor
+        </li>
+        <li>
+            Transpose the result to form the
+            <b>
+                adjoint matrix
+            </b>
+            , denoted by&#160;\(\mathrm{adj}(A)\)
+        </li>
+        <li>
+            Then calculate&#160;\(A^{-1}=\frac{1}{|A|}\mathrm{adj}(A)\).
+        </li>
+    </ul>
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>7.4.3.1 The inverse of a 3x3 matrix - Gauss elimination method</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        The inverse of a \(3\times 3\) matrix &#226;&#8364;&#8220; Gauss elimination method
+    </span>
+    <span class="multilang" lang="no">
+        Den inverse av en \(3\times 3\) matrise - Gauss eliminasjonsmetode.
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        It is true, in general, that if the determinant of a matrix is zero then that matrix has no inverse. If the
+                                determinant is non-zero then the matrix has a (unique) inverse. In this Section and the next we look at two ways of
+                                finding the inverse of a \(3\times
+                                3\) matrix; larger matrices can be inverted by the same methods - the process is more tedious and takes
+                                longer. The \(2\times 2\) case could be handled similarly but as we have seen we
+                                have a simple formula to use.
+    </span>
+    <span class="multilang" lang="no">
+        Generelt er det sant at hvis determinanten til en matrise er null, s&#229; har ikke matrisen en invers. Hvis determinanten er forskjellig fra null, s&#229; har matrisen en (unik) invers. I denne seksjonen og den neste ser vi p&#229; to m&#229;ter &#229; finne inversen til en \(3\times 3\) matrise; st&#248;rre matriser kan ogs&#229; inverteres ved de samme metodene - prosessen er mer kjedelig og tar lengre tid. \(2\times 2\) tilfellet kan l&#248;ses p&#229; en lignende m&#229;te, men som vi har sett har vi en enkel formel &#229; bruke.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The method we now describe for finding the inverse of a matrix has many similarities to a technique used to obtain
+                                solutions of simultaneous equations. This method involves operating on the rows of a matrix in order to reduce it to
+                                a unit matrix.
+    </span>
+    <span class="multilang" lang="no">
+        Metoden vi n&#229; beskriver for &#229; finne inversen av en matrise har mange likheter med en teknikk brukt for &#229; finne
+                                l&#248;sninger av samtidige ligninger. Denne metoden inneb&#230;rer &#229; operere p&#229; radene i en matrise for &#229; redusere den til
+                                en enhetsmatrise.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The row operations we shall use are
+    </span>
+    <span class="multilang" lang="no">
+        De radoperasjonene vi skal bruke er
+    </span>
+</p>
+<ol type="i">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                interchanging two rows
+            </span>
+            <span class="multilang" lang="no">
+                &#229; bytte om p&#229; to rader
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                multiplying a row by a constant factor
+            </span>
+            <span class="multilang" lang="no">
+                multiplisere en rad med en konstant faktor
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                adding a multiple of one row to another.
+            </span>
+            <span class="multilang" lang="no">
+                &#229; legge til en multiplikasjon av en rad til en annen.
+            </span>
+        </p>
+    </li>
+</ol>
+<p>
+    <span class="multilang" lang="en">
+        Note that in (ii) and (iii) the multiple could be negative or fractional, or both.
+    </span>
+    <span class="multilang" lang="no">
+        Merk at i b&#229;de (ii) og (iii) kan multiplikatoren v&#230;re negativ eller br&#248;k, eller begge deler.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The Gauss elimination method is outlined in the following Key Point:
+    </span>
+    <span class="multilang" lang="no">
+        Gauss eliminasjonsmetode er beskrevet i f&#248;lgende n&#248;kkelpunkt:
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <h5 style="text-align: center;">
+        <span class="multilang" lang="en">
+            Matrix Inverse - Gauss Elimination Method
+        </span>
+        <span class="multilang" lang="no">
+            Invers til et Matrise - Gauss Eliminasjonsmetode
+        </span>
+    </h5>
+    <p>
+        <span class="multilang" lang="en">
+            We use the result, quoted without proof, that:
+        </span>
+        <span class="multilang" lang="no">
+            Vi bruker resultatet, sitert uten bevis, at:
+        </span>
+    </p>
+    <p style="text-align: center;">
+        <span class="multilang" lang="en">
+            if a sequence of row operations applied to a square matrix \(A\) reduces
+        </span>
+        <span class="multilang" lang="no">
+            hvis en rekke radoperasjoner brukt p&#229; en kvadratisk matrise \(A\) reduserer den til
+        </span>
+    </p>
+    <p style="text-align: center;">
+        <span class="multilang" lang="en">
+            it to the identity matrix \(I\) of the same size then the same sequence of
+        </span>
+        <span class="multilang" lang="no">
+            hvis den blir multiplisert med identitetsmatrisen \(I\) av samme st&#248;rrelse, vil den samme sekvensen av
+        </span>
+    </p>
+    <p style="text-align: center;">
+        <span class="multilang" lang="en">
+            operations applied to \(I\) reduces it to \(A^{-1}\).
+            <br/>
+        </span>
+        <span class="multilang" lang="no">
+            Operasjoner som blir brukt p&#229; \(I\) reduserer det til \(A^{-1}\).
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            Three points to note:
+        </span>
+        <span class="multilang" lang="no">
+            Tre punkter &#229; merke seg:
+        </span>
+    </p>
+    <ul>
+        <li>
+            <p>
+                <span class="multilang" lang="en">
+                    If it is impossible to reduce \(A\) to \(I\) then \(A^{-1}\) does not exist. This will become evident by the appearance of a row of zeros.
+                </span>
+                <span class="multilang" lang="no">
+                    Hvis det er umulig &#229; redusere \(A\) til \(I\) s&#229; eksisterer ikke \(A^{-1}\). Dette vil bli tydelig ved utseendet til en rad med nuller.
+                </span>
+            </p>
+        </li>
+        <li style="text-align: left;">
+            <p>
+                <span class="multilang" lang="en">
+                    There is no unique procedure for reducing \(A\) to \(I\) and it is experience which leads to selection of the optimum route.
+                </span>
+                <span class="multilang" lang="no">
+                    Det er ingen unik prosedyre for &#229; redusere \(A\) til \(I\), og det er erfaring som f&#248;rer til valg av den optimale ruten.
+                </span>
+            </p>
+        </li>
+        <li style="text-align: left;">
+            <p>
+                <span class="multilang" lang="en">
+                    It is more efficient to do the two reductions, \(A\) to \(I\) and \(I\) to \(A^{-1}\), simultaneously.
+                </span>
+                <span class="multilang" lang="no">
+                    Det er mer effektivt &#229; gj&#248;re de to reduksjonene, \(A\) til \(I\) og \(I\) til \(A^{-1}\), samtidig.
+                </span>
+            </p>
+        </li>
+    </ul>
+</div>
+<p>
+    <span class="multilang" lang="en">
+        Suppose we wish to find the inverse of the matrix
+    </span>
+    <span class="multilang" lang="no">
+        Anta at vi &#248;nsker &#229; finne inversen til matrisen
+    </span>
+</p>
+\[A = \begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 1 &amp; 4 &amp; 3 \\ 2 &amp; 7 &amp; 7 \end{bmatrix}\]
+<p>
+    <span class="multilang" lang="en">
+        We first place \(A\) and \(I\) adjacent to each other.
+    </span>
+    <span class="multilang" lang="no">
+        Vi plasserer f&#248;rst \(A\) og \(I\) ved siden av hverandre.
+    </span>
+</p>
+\[
+\begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 1 &amp; 4 &amp; 3 \\ 2 &amp; 7 &amp; 7 \end{bmatrix} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}
+\]
+<h5>
+    Phase 1
+</h5>
+<p>
+    <span class="multilang" lang="en">
+        We now proceed by changing the columns of \(A\)
+        <em>
+            left to right
+        </em>
+        to reduce \(A\) to the form
+    </span>
+    <span class="multilang" lang="no">
+        Vi g&#229;r n&#229; videre ved &#229; endre kolonnene i \(A\)
+        <em>
+            fra venstre til h&#248;yre
+        </em>
+        for &#229; redusere \(A\) til formen
+    </span>
+</p>
+\[\begin{bmatrix} 1 &amp; * &amp; * \\ 0 &amp; 1 &amp; * \\ 0 &amp; 0 &amp; 1 \end{bmatrix},\]
+<p>
+    <span class="multilang" lang="en">
+        where \(*\) can be any number. This form is called
+        <b>
+            upper triangular
+        </b>
+        .
+    </span>
+    <span class="multilang" lang="no">
+        hvor \(*\) kan v&#230;re et hvilket som helst tall. Dette kalles
+        <b>
+            &#248;vre triangul&#230;r
+        </b>
+        .
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        First we subtract row 1 from row 2 and twice row 1 from row 3. &#226;&#8364;&#732;Row&#226;&#8364;&#8482; refers to both matrices.
+    </span>
+    <span class="multilang" lang="no">
+        F&#248;rst trekker vi rad 1 fra rad 2 og to ganger rad 1 fra rad 3. 'Rad' refererer til begge matrisene.
+    </span>
+</p>
+\[
+\begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 1 &amp; 4 &amp; 3 \\ 2 &amp; 7 &amp; 7 \end{bmatrix} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}
+\quad \xrightarrow[R3 - 2R1]{R2 - R1} \quad
+\begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ -1 &amp; 1 &amp; 0 \\ -2 &amp; 0 &amp; 1 \end{bmatrix}
+\]
+<p>
+    <span class="multilang" lang="en">
+        Now we subtract row 2 from row 3.
+    </span>
+    <span class="multilang" lang="no">
+        N&#229; trekker vi rad 2 fra rad 3.
+    </span>
+</p>
+\[
+\begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ -1 &amp; 1 &amp; 0 \\ -2 &amp; 0 &amp; 1 \end{bmatrix}
+\quad \xrightarrow{R3 - R2} \quad
+\begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ -1 &amp; 1 &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{bmatrix}
+\]
+<h5>
+    Phase 2
+</h5>
+<p>
+    <span class="multilang" lang="en">
+        This consists of continuing the row operations to reduce the elements above the leading diagonal to zero.
+    </span>
+    <span class="multilang" lang="no">
+        Dette best&#229;r i &#229; fortsette radoperasjonene for &#229; redusere elementene over den ledende diagonale til null.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We proceed
+        <em>
+            right to left
+        </em>
+        . We subtract 3 times row 3 from row 1 (the elements in row 2 column 3 is already zero).
+    </span>
+    <span class="multilang" lang="no">
+        Vi g&#229;r
+        <em>
+            fra h&#248;yre mot venstre
+        </em>
+        . Vi trekker fra 3 ganger rad 3 fra rad 1 (elementene i rad 2 kolonne 3 er allerede null).
+    </span>
+</p>
+\[
+\begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ -1 &amp; 1 &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{bmatrix}
+\quad \xrightarrow{R1 - 3R3} \quad
+\begin{bmatrix} 1 &amp; 3 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 4 &amp; 3 &amp; -3 \\ -1 &amp; 1 &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{bmatrix}
+\]
+<p>
+    <span class="multilang" lang="en">
+        Finally we subtract 3 times row 2 from row 1.
+    </span>
+    <span class="multilang" lang="no">
+        Til slutt trekker vi fra 3 ganger rad 2 fra rad 1.
+    </span>
+</p>
+\[
+\begin{bmatrix} 1 &amp; 3 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 4 &amp; 3 &amp; -3 \\ -1 &amp; 1 &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{bmatrix}
+\quad \xrightarrow{R1 - 3R2} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 7 &amp; 0 &amp; -3 \\ -1 &amp; 1 &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{bmatrix}
+\]
+<p>
+    <span class="multilang" lang="en">
+        Then we have
+    </span>
+    <span class="multilang" lang="no">
+        Da har vi
+    </span>
+</p>
+\[A^{-1} = \begin{bmatrix} 7 &amp; 0 &amp; -3 \\ -1 &amp; 1 &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{bmatrix}\]
+<p>
+    <span class="multilang" lang="en">
+        (This can be verified by showing that \(AA^{-1} - I\) or \(A^{-1}A = I\).)
+    </span>
+    <span class="multilang" lang="no">
+        (Dette kan verifiseres ved &#229; vise at \(AA^{-1} - I\) eller \(A^{-1}A = I\).)
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

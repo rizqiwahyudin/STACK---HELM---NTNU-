@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>13.3.2.1 Curve above the x-axis</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+</p>
+<h3>
+    <span class="multilang" lang="en">
+        The area bounded by a curve lying above the x-axis
+        <br/>
+    </span>
+    <span class="multilang" lang="no">
+        Omr&#229;de avgrenset av en kurve over x-aksen
+    </span>
+</h3>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Consider the graph of the function \(y=f(x)\) shown in Figure 8. Suppose we are interested in calculating the area underneath the graph and above the \(x\)-axis, between the points where \(x=a\) and \(x=b\). When such an area lies entirely above the \(x\)-axis,
+as is clearly the case here, this area is given by the definite integral \({\displaystyle\int_a^b f(x)\mathrm{d}x}\)
+    </span>
+    <span class="multilang" lang="no">
+        Betrakt grafen til funksjonen \(y=f(x)\) vist i figuren under. Vi vil beregne omr&#229;det som er under grafen og over \(x\)-aksen, mellom punktene \(x=a\) og \(x=b\). N&#229;r et helt slikt omr&#229;de ligger over \(x\)-aksen,
+som er tilfelle her, er arealet gitt ved \({\displaystyle\int_a^b f(x)\mathrm{d}x}\).
+    </span>
+</p>
+<p style="text-align: center;">
+    <img alt="" class="img-responsive atto_image_button_text-bottom" height="123" role="presentation" src="https://stack-demo.maths.ed.ac.uk/demo/draftfile.php/9185/user/draft/473558989/13.3.2.1%20Area%20under%20curve.svg" width="295"/>
+    <br/>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            Kort fortalt
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            The area under the curve \(y=f(x)\), between \(x=a\) and \(x=b\) is given by \({\displaystyle\int_a^b f(x)\mathrm{d}x}\) when the curve lies entirely above the \(x\) axis between \(a\) and \(b\).
+        </span>
+        <span class="multilang" lang="no">
+            Arealet under kurven \(y=f(x)\), mellom \(x=a\) og \(x=b\) er gitt ved \({\displaystyle\int_a^b f(x)\mathrm{d}x}\) n&#229;r hele kurven ligger over \(x\)- aksen mellom \(a\) og \(b\).
+        </span>
+    </p>
+</div>
+<br/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Calculate the area bounded by \(y=x^{-1}\) and the \(x\)-axis, between \(x=1\) and \(x=4\).
+    </span>
+    <span class="multilang" lang="no">
+        Beregn arealet avgrenset av \(y=x^{-1}\) og \(x\)-aksen, mellom \(x=1\) og \(x=4\)
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <strong>
+        <span class="multilang" lang="en">
+            Solution
+        </span>
+        <span class="multilang" lang="no">
+            L&#248;sning
+        </span>
+    </strong>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Below is a graph of \(y=x^{-1}\). The area required is shaded; it lies entirely above the \(x\)-axis.
+    </span>
+    <span class="multilang" lang="no">
+        Under er grafen til \(y=x^{-1}\). Arealet vi skal beregne er skyggelagt; det ligger over \(x\)-aksen.
+    </span>
+</p>
+<p style="text-align: center;">
+    <img alt="Area under the curve y = 1/x between 1 and 4" class="img-responsive atto_image_button_text-bottom" height="115" src="https://stack-demo.maths.ed.ac.uk/demo/draftfile.php/9185/user/draft/473558989/13.3.2.2%20Example.svg" width="345"/>
+    <br/>
+</p>
+\({\displaystyle\int_1^4 \dfrac{1}{x}\mathrm{d}x}=\bigg[ln |x|\bigg]_1^4= \ln 4 - \ln 1 = \ln 4= 1.386.\)
+<p>
+    <br/>
+</p>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Find the area bounded by the curve \(y=\sin x\) and the \(x\)-axis between \(x=0\) and \(x=\pi\). (The required area is shown in the figure. Note that it lies entirely above the \(x\)-axis.).
+    </span>
+    <span class="multilang" lang="no">
+        Finn arealet avgrenset av kurven \(y=\sin x\) og \(x\)-aksen mellom \(x=0\) og \(x=\pi\). (Arealet er vist i figuren. Merk at det ligger over \(x\)-aksen.).
+    </span>
+</p>
+<p style="text-align: center;">
+    <img alt="Area under the sine of x between 0 and pi" class="img-responsive atto_image_button_text-bottom" height="115" src="https://stack-demo.maths.ed.ac.uk/demo/draftfile.php/9185/user/draft/473558989/13.3.2.2%20Area%20under%20sine.svg" width="371"/>
+    <br/>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+\({\displaystyle\int_0^\pi \sin x\mathrm{d}x}=\bigg[-\cos x\bigg]_0^\pi = 2.\)
+<p>
+    <br/>
+</p>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Find the area under \(f(x)=e^{2x}\) from \(x=1\) to \(x=3\) given that the exponential function \(e^{2x}\) is always positive.
+    </span>
+    <span class="multilang" lang="no">
+        Finn arealet under \(f(x)=e^{2x}\) fra \(x=1\) til \(x=3\) gitt at eksponentialfunksjonen \(e^{2x}\) alltid er positiv.
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+area =\({\displaystyle\int_1^3 e^{2x}\mathrm{d}x}\) = \(\bigg[\dfrac{1}{2}e^{2x}\bigg]_1^3=198\)
+<span class="multilang" lang="en">
+    to 3 significant figures.
+</span>
+<span class="multilang" lang="no">
+    Til 3 signifikante sifre.
+</span>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        The figure shows the graphs of \(y=\sin x\) and \(y=\cos x\) for \({0\le x\le \dfrac{1}{2}\pi}\). The two graphs intersect at the point where \(x=\dfrac{1}{4}\pi\). Find the shaded area.
+    </span>
+    <span class="multilang" lang="no">
+        Figuren viser grafene til \(y=\sin x\) og \(y=\cos x\) for \({0\le x\le \dfrac{1}{2}\pi}\). De to grafene skj&#230;rer hverandre i punktet hvor \(x=\dfrac{1}{4}\pi\). Finn det skyggelagte arealet.
+    </span>
+</p>
+<p style="text-align: center;">
+    <img alt="Area between y = sin(x) and y = cos(x) between 0 and pi/4" class="img-responsive atto_image_button_text-bottom" height="139" src="https://stack-demo.maths.ed.ac.uk/demo/draftfile.php/9185/user/draft/473558989/13.3.2.2%20Area%20between%20two%20curves.svg" width="425"/>
+    <br/>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<span class="multilang" lang="en">
+    To find the shaded area we could calculate the area under the graph of \(y=\sin x\) for \(x\) between 0 and \(\dfrac{1}{4} \pi\), and subtract this from the area under the graph of \(y=\cos x\) between the same limits. Alternatively the two processes
+                can be combined into one and we can write
+    <br/>
+    shaded area \(\\={\displaystyle\int_0^{\pi/4}( \cos x - \sin x )\mathrm{d}x} \\= \bigg[ \sin x + \cos x\bigg]_0^{\pi/4} \\= \left(\sin \left(\tfrac{1}{4}\pi\right) + \cos \left(\tfrac{1}{4}\pi\right)\right) -\left( \sin 0 +\cos 0\right) \\= \left(\dfrac{1}{\sqrt{2}}+\dfrac{1}{\sqrt{2}}\right)-(0+1)\\=\dfrac{2}{\sqrt{2}}-1\\=\sqrt{2}-1\)
+</span>
+<span class="multilang" lang="no">
+    For &#229; finne det skyggelagte omr&#229;det kan vi beregne arealet under grafen til \(y=\sin x\) for \(x\) mellom 0 og \(\dfrac{1}{4} \pi\), og trekke dette fra arealet under grafen til \(y=\cos x\) med de samme grensene for \(x\). Alternativt kan vi gj&#248;re dette i ett steg og skrive at
+    <br/>
+    <br/>
+    skyggelagt omr&#229;de \(\\={\displaystyle\int_0^{\pi/4}( \cos x - \sin x )\mathrm{d}x} \\= \bigg[ \sin x + \cos x\bigg]_0^{\pi/4} \\= \left(\sin \left(\tfrac{1}{4}\pi\right) + \cos \left(\tfrac{1}{4}\pi\right)\right) -\left( \sin 0 +\cos 0\right) \\= \left(\dfrac{1}{\sqrt{2}}+\dfrac{1}{\sqrt{2}}\right)-(0+1)\\=\dfrac{2}{\sqrt{2}}-1\\=\sqrt{2}-1\)
+</span>
+<p>
+</p>
+<pre><span class="multilang" lang="en" style="font-size: 0.9375rem;"></span><span class="multilang" lang="no" style="font-size: 0.9375rem;"></span></pre>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

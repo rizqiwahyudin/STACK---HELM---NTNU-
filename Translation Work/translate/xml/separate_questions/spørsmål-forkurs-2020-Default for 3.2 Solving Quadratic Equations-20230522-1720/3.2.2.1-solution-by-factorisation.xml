@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>3.2.2.1 Solution by Factorisation</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Solution by Factorisation
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning ved faktorisering
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        It may be possible to solve a quadratic equation by factorisation, essentially being able to spot the roots. You should be aware that not all quadratic equations can be easily factorised but some simple cases can occur.
+    </span>
+    <span class="multilang" lang="no">
+        En andregradsligning kan l&#248;ses ved faktorisering, ved &#229; identifisere r&#248;ttene til uttrykket. Du b&#248;r v&#230;re klar over at ikke alle andregradsligninger lett kan faktoriseres, men noen enkle tilfeller kan forekomme.
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Solve the equation
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;s ligningen
+    </span>
+    \(x^2+5x=0.\)
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Factorising and equating each factor to zero we find
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; f&#248;rst faktorisere og sette hver faktor til null finner vi at
+    </span>
+</p>
+<p>
+    \[x^2+5x =0\quad \text{
+    <span class="multilang" lang="en">
+        is equivalent to
+    </span>
+    <span class="multilang" lang="no">
+        tilsvarer
+    </span>
+    }\quad x(x+5) = 0\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        so that \(x=0\) and \(x=-5\) are the two solutions. We know this since the product of two numbers (the factors, in this case) will be zero if at least one of them is zero.
+    </span>
+    <span class="multilang" lang="no">
+        slik at de to l&#248;sningene er \(x=0\) og \(x=-5\). Vi vet dette siden produktet av to tall (faktorene, i dette tilfellet) vil v&#230;re null hvis minst en av dem er null.
+    </span>
+    <br/>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Solve the quadratic equation \(x^2+x-6=0\).
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;s andregradsligningen \(x^2+x-6=0\).
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Factorising the left hand side we find \(x^2+x-6=(x+3)(x-2)\) so that
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; faktorisere venstre side finner vi \(x^2+x-6=(x+3)(x-2)\) slik at
+    </span>
+</p>
+<p>
+    \[x^2+x-6=0 \quad \text{
+    <span class="multilang" lang="en">
+        is equivalent to
+    </span>
+    <span class="multilang" lang="no">
+        tilsvarer
+    </span>
+    }\quad (x+3)(x-2) = 0.\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        When the product of two quantities equals zero, at least one of the two must equal zero. In this case either \((x+3)\) is zero or \((x-2)\) is zero. It follows that
+    </span>
+    <span class="multilang" lang="no">
+        N&#229;r produktet av to st&#248;rrelser er lik null, m&#229; minst &#233;n av de to v&#230;re lik null. I dette tilfellet er enten \((x+3)\) null eller \((x-2)\) null. Det f&#248;lger at
+    </span>
+</p>
+\[x+3=0, \qquad \hbox{
+<span class="multilang" lang="en">
+    giving
+</span>
+<span class="multilang" lang="no">
+    gir
+</span>
+} \qquad x = -3\]
+<p>
+    <span class="multilang" lang="en">
+        or
+    </span>
+    <span class="multilang" lang="no">
+        eller
+    </span>
+</p>
+\[x-2 = 0,\qquad&#160; \hbox{
+<span class="multilang" lang="en">
+    giving
+</span>
+<span class="multilang" lang="no">
+    gir
+</span>
+} \qquad x=2\]
+<p>
+    <span class="multilang" lang="en">
+        Here there are two solutions, \(x=-3\) and \(x=2\). These solutions can be checked quite easily by substitution back into the given equation.
+    </span>
+    <span class="multilang" lang="no">
+        Her er det to l&#248;sninger, \(x=-3\) og \(x=2\). Disse l&#248;sningene kan sjekkes ganske enkelt ved &#229; sette svarene tilbake til den gitte ligningen.
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Solve the quadratic equation \(2x^2-7x-4=0\) by factorising the left-hand side.
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;s andregradsligningen \(2x^2-7x-4=0\) ved &#229; faktorisere venstre side.
+    </span>
+</p>
+<p>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Factorising the left hand side: \(2x^2-7x-4=(2x+1)(x-4)\) so \(2x^2-7x-4=0\) \(\text{is equivalent to}\ \&#160; (2x+1)(x-4) = 0.\)
+    </span>
+    <span class="multilang" lang="no">
+        Faktorisering av venstre side: \(2x^2-7x-4=(2x+1)(x-4)\) s&#229; \(2x^2-7x-4=0\) \(\text{tilsvarer }\ \&#160; (2x+1)(x-4) = 0.\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In this case either \((2x+1)\) is zero or \((x-4)\) is zero. It follows that \(2x+1=0, \quad \text{giving } \quad x = -\dfrac{1}{2}\quad\) or \( x-4 = 0,\quad&#160; \text{giving } \quad x=4\).
+    </span>
+    <span class="multilang" lang="no">
+        I dette tilfellet er enten \((2x+1)\) null eller er \((x-4)\) null. Det f&#248;lger at \(2x+1=0, \quad \text{som gir} \quad x = -\dfrac{1}{2}\quad\) eller \( x-4 = 0,\quad&#160; \text{ som gir } \quad x=4\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        There are two solutions, \(x=-\dfrac{1}{2}\) and \(x=4\).
+    </span>
+    <span class="multilang" lang="no">
+        Det er to l&#248;sninger, \(x=-\dfrac{1}{2}\) og \(x=4\).
+    </span>
+</p>
+<p>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Solve the equation \(4x^2+12x+9=0\).
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;s ligningen \(4x^2+12x+9=0\).
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Factorising we find \(4x^2+12x+9 = (2x+3)(2x+3) = (2x+3)^2\). This time the factor \((2x+3)\) occurs twice. The original equation \(4x^2+12x+9=0\) becomes
+    </span>
+    <span class="multilang" lang="no">
+        Ved faktorisering finner vi \(4x^2+12x+9 = (2x+3)(2x+3) = (2x+3)^2\). Denne gangen forekommer faktoren \((2x+3)\) to ganger. Den opprinnelige ligningen \(4x^2+12x+9=0\) blir
+    </span>
+</p>
+<p>
+    \[(2x+3)^2=0\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        so that \(2x+3 = 0\) and we obtain the solution \(x=-\dfrac{3}{2}\). Because the factor \(2x+3\) appears twice in the equation \((2x+3)^2=0\) we say that this root is a
+        <b>
+            repeated solution
+        </b>
+        or
+        <b>
+            double root
+        </b>
+        .
+    </span>
+    <span class="multilang" lang="no">
+        slik at \(2x+3 = 0\) og vi f&#229;r l&#248;sningen \(x=-\dfrac{3}{2}\). Siden faktoren \(2x+3\) vises to ganger i ligningen \((2x+3)^2=0\), sier vi at denne roten er en
+        <b>
+            gjentatt l&#248;sning
+        </b>
+        eller
+        <b>
+            dobbel rot
+        </b>
+        .
+    </span>
+</p>
+<p>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

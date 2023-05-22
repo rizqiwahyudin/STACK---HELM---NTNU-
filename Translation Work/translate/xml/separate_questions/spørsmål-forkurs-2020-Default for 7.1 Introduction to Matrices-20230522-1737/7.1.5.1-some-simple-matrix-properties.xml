@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>7.1.5.1 Some simple matrix properties</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Some simple matrix properties
+    </span>
+    <span class="multilang" lang="no">
+        Noen enkle matriseegenskaper
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        Using the definition of matrix addition described above we can easily verify the following properties of matrix addition:
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; bruke definisjonen av matrise addisjon beskrevet tidligere, kan vi enkelt bekrefte f&#248;lgende egenskaper ved matriksaddisjon:
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <h5 style="text-align:center;">
+        <span class="multilang" lang="en">
+            Basic Properties of Matrices
+        </span>
+        <span class="multilang" lang="no">
+            Grunnleggende egenskaper hos matriser
+        </span>
+    </h5>
+    <p style="text-align: center; ">
+        <span class="multilang" lang="en">
+            Let \(A,B\) and \(C\) be matrices of the same size and let \(k\) be a scalar (i.e., \(k\) is a real number).
+        </span>
+        <span class="multilang" lang="no">
+            La \(A,B\) og \(C \) v&#230;re matriser av samme st&#248;rrelse og la \(k \) v&#230;re en skalar (dvs. \(k \) er et reelt tall).
+        </span>
+    </p>
+    <p style="text-align: center; ">
+        <span class="multilang" lang="en">
+            Matrix addition is
+            <b>
+                commutative
+            </b>
+            : \(A+B=B+A\)
+        </span>
+        <span class="multilang" lang="no">
+            Matrise addisjon er
+            <b>
+                kommutativ
+            </b>
+            : \(A+B = B+A \)
+        </span>
+    </p>
+    <p style="text-align: center; ">
+        <span class="multilang" lang="en">
+            Matrix addition is
+            <b>
+                associative
+            </b>
+            : \(A+(B+C)=(A+B)+C\)
+        </span>
+        <span class="multilang" lang="no">
+            Matrise addisjon er
+            <b>
+                assosiativt
+            </b>
+            : \(A+(B+C) = (A+B)+C\)
+        </span>
+    </p>
+    <p style="text-align: center; ">
+        <span class="multilang" lang="en">
+            The
+            <b>
+                distributive law
+            </b>
+            holds: \(k(A+B)=k\, A+k\, B\)
+        </span>
+        <span class="multilang" lang="no">
+            Den
+            <b>
+                Distributive lov
+            </b>
+            holder: \(k(A+B) = k \, A+k \, B \)
+        </span>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+</div>
+<p>
+    <span class="multilang" lang="en">
+        These Key Point results follow from the fact that \(a_{ij}+b_{ij}=b_{ij}+a_{ij}\) etc.
+    </span>
+    <span class="multilang" lang="no">
+        Disse n&#248;kkelpunktresultatene f&#248;lger av det faktum at \(a_{ij}+b_{ij}=b_{ij}+a_{ij}\) osv.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We can also show that the transpose of a matrix satisfies the following simple properties:
+    </span>
+    <span class="multilang" lang="no">
+        Vi kan ogs&#229; vise at transponering av en matrise tilfredsstiller f&#248;lgende enkle egenskaper:
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <h5 style="text-align:center;">
+        <span class="multilang" lang="en">
+            Properties of Transposed Matrices
+        </span>
+        <span class="multilang" lang="no">
+            Egenskaper til transponerte matriser
+        </span>
+    </h5>
+    <p>
+        <span class="multilang" lang="en">
+            Let \(A\) and \(B\) be matrices of the same size.
+        </span>
+        <span class="multilang" lang="no">
+            La \(A\) og \(B\) v&#230;re matriser av samme st&#248;rrelse.
+        </span>
+    </p>
+    <p>
+    </p>
+    <p style="">
+        \[(A+B)^T=A^T+B^T\]
+    </p>
+    <p style="">
+        \[(A-B)^T=A^T-B^T\]
+    </p>
+    <p style="">
+        \[(A^T)^T=A\]
+    </p>
+    <p>
+    </p>
+</div>
+<p>
+    <br/>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Show that \((A^T)^T=A\) for the matrix
+    </span>
+    <span class="multilang" lang="no">
+        Vis at \((A^T)^T =A \) for matrisen
+    </span>
+</p>
+<p>
+    \(A=\left[\begin{array}{ccc}1&amp;2&amp;3\\ 4&amp;5&amp;6\end{array}\right]\).
+</p>
+<p>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    \(A^T=\left[\begin{array}{cc}1&amp;4\\ 2&amp;5\\ 3&amp;6\end{array}\right]\)
+    <span class="multilang" lang="en">
+        so that
+    </span>
+    <span class="multilang" lang="no">
+        s&#229;
+    </span>
+    <br/>
+</p>
+<p>
+</p>
+<p>
+    \((A^T)^T=\left[\begin{array}{ccc}1&amp;2&amp;3\\ 4&amp;5&amp;6\end{array}\right]=A\).
+</p>
+<p>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

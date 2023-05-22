@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>22.3.2.7 Orthogonal vectors</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            Two \(n\times 1\) column vectors \(X\) and \(Y\) are
+            <strong>
+                orthogonal
+            </strong>
+            if \(X^TY=\mathbf{0}\) or (equivalently) \(Y^TX=\mathbf{0}\).
+        </span>
+        <span class="multilang" lang="no">
+            To \(n\times 1\) kolonnevektorer \(X\) og \(Y\) er
+            <strong>
+                ortogonale
+            </strong>
+            hvis \(X^TY=\mathbf{0}\) eller (ekvivalent) \(Y^TX=\mathbf{0}\).
+        </span>
+    </p>
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

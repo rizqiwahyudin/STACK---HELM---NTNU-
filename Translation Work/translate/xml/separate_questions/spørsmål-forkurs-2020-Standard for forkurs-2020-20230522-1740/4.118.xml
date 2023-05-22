@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>4.118</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+Gi \(2\) ulike eksempler p&#229; rette linjer p&#229; formen \(y=ax+b\) som g&#229;r gjennom punktet \(({@x0@},{@y0@})\).
+<br/>
+<br/>
+\(y=\)&#160;[[input:ans1]] [[validation:ans1]]
+<br/>
+<br/>
+\(y=\)&#160;[[input:ans2]] [[validation:ans2]]&#160;[[feedback:prt1]] [[feedback:prt2]]
+<br/>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2022082900</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[/*Mest logikk i PTR*/
+x0:rand([-1,1])*(1+rand(5))
+y0:1+rand(6)
+a:-y0/-x0
+
+/* Trengs for "model answer" */
+ta1:y0
+ta2:a*x]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote>
+            <text>\(y={@ta1@}\) g&#229;r gjennom \(({@x0@},{@y0@})\)</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>none</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>ta1</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>4</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>ta2</tans>
+            <boxsize>10</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>4</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>s_eqn1:y=ans1
+s_eqn2:y=ans2
+innsatt1: ev(s_eqn1,x=x0,y=y0)
+test1:( if rhs(innsatt1)=lhs(innsatt1) then True else False)
+checkpolyn:(if polynomialp(ans1,[x]) then True else False)
+checkdegree:(if degree(ans1,x)=1 then True else False)</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>test1</sans>
+                <tans>True</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+[[jsxgraph]] var board = JXG.JSXGraph.initBoard(divid, {boundingbox: [-7, 7, 7, -7], axis: true, showCopyright: false}); var f1 = board.jc.snippet('{#ans1#}', true, 'x', true); board.create('functiongraph', [f1,-10,10]); 
+var f2 = board.jc.snippet('{#ans2#}',true,'x', true); board.create('functiongraph', [f2,-10,10]); board.create('text',[{#x0#}+1,{#y0#}-1,"{#s_eqn2#}"]); var p = board.create('point',[{#x0#},{#y0#}]); [[/jsxgraph]]
+]]></text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+[[jsxgraph]] var board = JXG.JSXGraph.initBoard(divid, {boundingbox: [-7, 7, 7, -7], axis: true, showCopyright: false}); var f1 = board.jc.snippet('{#ans1#}', true, 'x', true); board.create('functiongraph', [f1,-10,10]); var f2 = board.jc.snippet('{#ans2#}',true,'x',
+true); board.create('functiongraph', [f2,-10,10]); board.create('text',[{#x0#}+1,{#y0#}-1,"{#s_eqn2#}"]); var p = board.create('point',[{#x0#},{#y0#}]); [[/jsxgraph]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>ans2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    Likningene skal v&#230;re ulike.
+</p>
+]]></text>
+                </truefeedback>
+                <falsescoremode>+</falsescoremode>
+                <falsescore>0.5000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>s_eqn2:y=ans2
+innsatt2: ev(s_eqn2,x=x0,y=y0)
+test2:( if rhs(innsatt2)=lhs(innsatt2) then True else False)</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>test2</sans>
+                <tans>True</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>9247543</deployedseed>
+        <deployedseed>282816079</deployedseed>
+        <deployedseed>890293230</deployedseed>
+        <deployedseed>1756478464</deployedseed>
+        <deployedseed>1586012250</deployedseed>
+        <deployedseed>1276367669</deployedseed>
+        <deployedseed>219340305</deployedseed>
+        <deployedseed>182257139</deployedseed>
+        <deployedseed>1211761624</deployedseed>
+        <deployedseed>2108893908</deployedseed>
+    </question>
+    
+
+</quiz>

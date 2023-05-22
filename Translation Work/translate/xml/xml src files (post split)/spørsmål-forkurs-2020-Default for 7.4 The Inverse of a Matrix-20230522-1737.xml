@@ -1,0 +1,4018 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$module$/top/Default for 7.4 The Inverse of a Matrix</text>
+    </category>
+    <info format="moodle_auto_format">
+      <text>The default category for questions shared in context '7.4 The Inverse of a Matrix'.</text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9118  -->
+  <question type="description">
+    <name>
+      <text>7.4.1 The inverse of a square matrix (copy)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h4>The inverse of a square matrix</h4><hr>
+<p>We know that any non-zero number <span class="math inline">\(k\)</span> has an inverse; for example <span class="math inline">\(2\)</span> has an inverse <span class="math inline">\(\frac{1}{2}\)</span> or <span class="math inline">\(2^{-1}\)</span>. The inverse of the number <span class="math inline">\(k\)</span> is usually written <span class="math inline">\(\frac{1}{k}\)</span> or, more formally, by <span class="math inline">\(k^{-1}\)</span>. This numerical inverse has the property that&nbsp;<br></p><p><span class="math inline">\( k\times k^{-1}=k^{-1}\times k=1\)</span></p><p>We now show that an inverse of a matrix can, in certain circumstances, also be defined.&nbsp;</p><p>Given an <span class="math inline">\(n\times n\)</span> square matrix <span class="math inline">\(A,\)</span> then an <span class="math inline">\(n\times n\)</span> square matrix <span class="math inline">\(B\)</span> is said to be the <b>inverse matrix</b> of <span class="math inline">\(A\)</span> if</p><p><span class="math inline">\(AB=BA=I\)</span></p><p>where <span class="math inline">\(I\)</span> is, as usual, the identity matrix (or unit matrix) of the appropriate size.</p><p><br></p>
+
+
+<hr>
+<h4 class="HELM_example">Example 6</h4>
+<p><span>6</span> Show that the inverse matrix of <span class="math inline">\(A=\left[\begin{array}{cc}-1&amp;1\\ -2&amp;0\end{array}\right]\)</span> is <span class="math inline">\(B=\left[\begin{array}{cc}0&amp;-\frac{1}{2}\\ 1&amp;-\frac{1}{2}\end{array}\right]\)</span></p>
+<h4 class="HELM_solution">Solution</h4>
+<p> All we need to do is check that  <span class="math inline"> \(AB=BA=I\)</span>.&nbsp;</p><p><span class="math inline">\(AB=\left[\begin{array}{cc}-1&amp;1\\ -2&amp;0\end{array}\right]\times\frac{1}{2}\left[\begin{array}{cc}0&amp;-1\\ 2&amp;-1\end{array}\right] = \frac{1}{2}\left[\begin{array}{cc}-1&amp;1\\ -2&amp;0\end{array}\right]\times\left[\begin{array}{cc}0&amp;-1\\ 2&amp;-1\end{array}\right] = \frac{1}{2}\left[\begin{array}{cc}2&amp;0\\ 0&amp;2\end{array}\right]=\left[\begin{array}{cc}1&amp;0\\ 0&amp;1\end{array}\right]  \)
+ </span></p>
+
+<p>We make three important remarks:&nbsp;</p><p><span class="math inline">\(\bullet\)</span>Non-square matrices do not have inverses.&nbsp;</p><p><span class="math inline">\(\bullet\)</span>The inverse of <span class="math inline">\(A\)</span> is usually written <span class="math inline">\(A^{-1}\)</span>.&nbsp;</p><p><span class="math inline">\(\bullet\)</span>Not all square matrices have inverses.</p><p><br></p>
+
+<hr>
+
+<p><span class="math inline">\(\bullet\)</span>If a matrix has an inverse then that inverse is unique.</p>
+<p>&nbsp; Suppose <span class="math inline">\(B\)</span> and <span class="math inline">\(C\)</span> are both inverses of <span class="math inline">\(A\)</span>. Then, by definition of the inverse,&nbsp;</p><p><span class="math inline">&nbsp; \(\qquad AB=BA=I\)&nbsp;<b>and&nbsp;</b>\(AC=CA=I\)</span></p><p>&nbsp; Consider the two ways of forming the product <span class="math inline">\(CAB\)</span></p>
+<ol>
+<li><p><span class="math inline">\(CAB=C(AB)=CI=C\)</span></p></li>
+<li><p><span class="math inline">\(CAB=(CA)B=IB=B.\)</span></p></li>
+</ol>
+<p>&nbsp; Hence <span class="math inline">\(B=C\)</span> and the <span><strong>inverse is unique</strong></span>.&nbsp;</p><p><br></p>
+<p><span class="math inline">\(\bullet\)</span>There is no such operation as division in matrix algebra.</p><p>&nbsp; We do not write <span class="math inline">\(\dfrac{B}{A}\)</span> but rather&nbsp;</p><p><span class="math inline">&nbsp; \(\qquad A^{-1}B\ \ \text{or}\ \ BA^{-1},\)</span></p><p>&nbsp; depending on the order required.</p><p><span class="math inline">\(\bullet\)</span>Assuming that the square matrix <span class="math inline">\(A\)</span> has an inverse <span class="math inline">\(A^{-1}\)</span> then the solution of the system of equations <span class="math inline">\(A X=B\)</span> is found by pre-multiplying both sides by <span class="math inline">\(A^{-1}\)</span>.&nbsp;</p><p><br></p><table>
+<caption></caption>
+<thead></thead>
+<tbody>
+<tr>
+<td align="right"></td>
+<td align="right">\(AX\)</td>
+<td style="text-align: center;">=</td>
+<td>\(B\)</td>
+<td></td>
+</tr>
+<tr>
+<td align="right">pre-multiplying by} \(A^{-1}\):</td>
+<td align="right">&nbsp; &nbsp; \(A^{-1}(AX)\)</td>
+<td style="text-align: center;">=</td>
+<td>\(A^{-1}B\),</td>
+<td></td>
+</tr>
+<tr>
+<td align="right">using associativity:</td>
+<td align="right">&nbsp; \((A^{-1}A)X\)</td>
+<td style="text-align: center;">=</td>
+<td>\(A^{-1}B\),</td>
+<td></td>
+</tr>
+<tr>
+<td align="right">using \(A^{-1}A = I\):</td>
+<td align="right">\(IX\)</td>
+<td style="text-align: center;">=</td>
+<td>\(A^{-1}B\),</td>
+<td></td>
+</tr>
+<tr>
+<td align="right">using property of \(I\):</td>
+<td align="right">\(X\)</td>
+<td style="text-align: center;">=</td>
+<td>\(A^{-1}B\)</td>
+<td>&nbsp; &nbsp; which is the solution we seek.</td>
+</tr>
+</tbody>
+</table>
+<br><p><br></p><p><br></p><p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9105  -->
+  <question type="description">
+    <name>
+      <text>7.4.1.1 The inverse of a square matrix</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h3><span class="multilang" lang="en">The inverse of a square matrix</span>
+<span class="multilang" lang="no">Den inverse av en kvadratisk matrise</span></h3>
+
+<p><span class="multilang" lang="en">We know that any non-zero number \(k\) has an inverse; for example \(2\) has an inverse \(\frac{1}{2}\) or \(2^{-1}\). The inverse of the number \(k\) is usually written \(\frac{1}{k}\) or, more formally, by \(k^{-1}\). This numerical inverse has the property that&nbsp;<br></span>
+<span class="multilang" lang="no">Vi vet at ethvert tall som ikke er null, \(k\), har en invers; for eksempel har \(2\) en invers \(\frac{1}{2}\) eller \(2^{-1}\). Inversen av tallet \(k\) er vanligvis skrevet som \(\frac{1}{k}\) eller mer formelt som \(k^{-1}\). Denne numeriske inversen har egenskapen at</span></p>
+
+
+<p>\( k\times k^{-1}=k^{-1}\times k=1\)</p>
+<p><span class="multilang" lang="en">We now show that an inverse of a matrix can, in certain circumstances, also be defined.</span>
+<span class="multilang" lang="no">Vi viser nå at en invers av en matrise kan, under visse omstendigheter, også defineres.</span></p>
+
+<p><span class="multilang" lang="en">Given an \(n\times n\) square matrix \(A,\) then an \(n\times n\) square matrix \(B\) is said to be the <b>inverse matrix</b> of \(A\) if</span>
+<span class="multilang" lang="no">Gitt en  \(n \times n\)  kvadratisk matrise  \(A,\)  så er en  \(n \times n\) kvadratisk matrise  \(B\) sagt å være  <b>inversmatrisen</b>  til  \(A\) hvis </span></p>
+
+<p><span class="math inline">\(AB=BA=I\)</span></p>
+<p>
+
+</p><p><span class="multilang" lang="en">where \(I\) is, as usual, the identity matrix (or unit matrix) of the appropriate size.</span>
+<span class="multilang" lang="no">hvor  \(I\)  som vanlig er identitetsmatrisen (eller enhetsmatrisen) med passende størrelse.</span></p>
+
+<hr>
+<h4 class="HELM_example"><span class="multilang" lang="en">Example <br></span>
+<span class="multilang" lang="no">Eksempel</span></h4>
+
+<p><span class="multilang" lang="en">Show that the inverse matrix of <span class="math inline"> \(A=\left[\begin{array}{cc}-1&amp;1\\ -2&amp;0\end{array}\right]\) </span> is <span class="math inline"> \(B=\left[\begin{array}{cc}0&amp;-\frac{1}{2}\\ 1&amp;-\frac{1}{2}\end{array}\right]\) </span></span>
+
+<span class="multilang" lang="no"> Vis at den inverse matrisen til <span class="math inline"> \(A=\left[\begin{array}{cc}-1&amp;1\\ -2&amp;0\end{array}\right]\) </span> er  <span class="math inline"> \(B=\left[\begin{array}{cc}0&amp;-\frac{1}{2}\\ 1&amp;-\frac{1}{2}\end{array}\right]\)</span> </span> </p>
+
+
+<h4 class="HELM_solution"><span class="multilang" lang="en">Solution</span>
+<span class="multilang" lang="no">Løsning</span></h4>
+<p><span class="multilang" lang="en"> All we need to do is check that <span class="math inline"> \(AB=BA=I\). </span></span>
+<span class="multilang" lang="no">Alt vi trenger å gjøre er å sjekke at <span class="math inline"> \(AB=BA=I\).</span></span></p>
+
+
+<p><span class="math inline">\(AB=\left[\begin{array}{cc}-1&amp;1\\ -2&amp;0\end{array}\right]\times\frac{1}{2}\left[\begin{array}{cc}0&amp;-1\\ 2&amp;-1\end{array}\right] = \frac{1}{2}\left[\begin{array}{cc}-1&amp;1\\ -2&amp;0\end{array}\right]\times\left[\begin{array}{cc}0&amp;-1\\ 2&amp;-1\end{array}\right] = \frac{1}{2}\left[\begin{array}{cc}2&amp;0\\ 0&amp;2\end{array}\right]=\left[\begin{array}{cc}1&amp;0\\ 0&amp;1\end{array}\right] \)
+</span></p>
+
+<p><span class="multilang" lang="en">We make three important remarks:</span>
+<span class="multilang" lang="no">Vi gjør tre viktige merknader:</span></p>
+<span class="multilang" lang="en">
+<ul>
+    <li>Non-square matrices do not have inverses.</li>
+    <li>The inverse of \(A\) is usually written \(A^{-1}\).</li>
+    <li>Not all square matrices have inverses.</li>
+</ul></span>
+
+<span class="multilang" lang="no">
+    <ul>
+        <li>Ikke-firkantet matriser har ikke inverser.</li>
+        <li>Den inverse av \(A\) er vanligvis skrevet som \(A^{-1}\).</li>
+        <li>Ikke alle firkantet matriser har inverser.</li>
+    </ul></span>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9116  -->
+  <question type="description">
+    <name>
+      <text>7.4.1.3 The inverse of a square matrix</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<ul>
+    <li>
+        <p><span class="multilang" lang="en">A matrix that has no inverse is said to be a <b>singular matrix</b>. A matrix which has an inverse is said to be <b>non-singular</b>.</span>
+            <span class="multilang" lang="no">En matrise som ikke har en invers kalles en <b>singulær matrise</b>. En matrise som har en invers kalles <b>ikke-singulær</b>.</span>
+        </p>
+    </li>
+
+
+
+    <li>
+        <p><span class="multilang" lang="en">If a matrix has an inverse then that inverse is unique.</span>
+            <span class="multilang" lang="no">Hvis en matrise har en invers, så er denne inversen unik.</span>
+        </p>
+        <p><span class="multilang" lang="en">Suppose \(B\) and \(C\) are both inverses of \(A\). Then, by definition of the inverse,</span>
+            <span class="multilang" lang="no">Anta at \(B\) og \(C\) begge er inverser av \(A\). Da, ifølge definisjonen av inversen, er</span>
+        </p>
+        <p style="text-align: center;"><span class="multilang" lang="en">\(AB = BA = I\) â€ƒ <b>and</b> â€ƒ \(AC = CA = I\).</span>
+            <span class="multilang" lang="no">\(AB = BA = I\) <b>og</b> \(AC = CA = I\).</span>
+        </p>
+        <p><span class="multilang" lang="en">Consider the two ways of forming the product \(CAB\).</span>
+            <span class="multilang" lang="no">Vurder de to måtene å danne produktet \(CAB\).</span>
+        </p>
+        <ol type="1">
+            <li>\(CAB = C(AB) = CI = C\).</li>
+            <li>\(CAB = (CA)B = IB = B\).</li>
+
+        </ol>
+        <p><span class="multilang" lang="en">Hence, \(B = C\) and the <b>inverse is unique</b>.</span>
+            <span class="multilang" lang="no">Altså, \(B = C\) og den <b>inversen er unik</b>.</span>
+        </p>
+    </li>
+
+
+    <li>
+        <p><span class="multilang" lang="en">There is no such operation as division in matrix algebra.</span>
+            <span class="multilang" lang="no">Det finnes ingen operasjon som heter divisjon i matrisearitmetikk.</span>
+        </p>
+        <p><span class="multilang" lang="en">We do not write \(\dfrac{B}{A}\) but rather \(A^{-1}B\) or \(BA^{-1}\), depending on the order required.</span>
+            <span class="multilang" lang="no">Vi skriver ikke \(\dfrac{B}{A}\) men heller \(A^{-1}B\) eller \(BA^{-1}\), avhengig av rekkefølgen som kreves.</span>
+        </p>
+    </li>
+
+
+
+    <li>
+        <p><span class="multilang" lang="en">Assuming that the square matrix \(A\) has an inverse \(A^{-1}\) then the solution of the systems of equations \(AX = B\) is found by pre-multiplying both sides by \(A^{-1}\).</span>
+            <span class="multilang" lang="no">Forutsatt at den kvadratiske matrisen \(A\) har en invers \(A^{-1}\), så finnes løsningen på systemet med ligninger \(AX = B\) ved å multiplisere begge sider på forhånd med \(A^{-1}\).</span>
+        </p>
+
+        <div>
+            <center>
+            </center>
+        </div>
+    </li>
+    <li>
+        <p style="text-align: center;">
+            \(AX\)\(=\)\(B\)
+
+        </p>
+    </li>
+
+
+
+    <li>
+        <p style="text-align: center;">
+            <span class="multilang" lang="en">pre-multiplying by \(A^{-1}\): â€ƒ
+                \(A^{-1}(AX)\)
+                \(=\)
+                \(A^{-1}B\),</span>
+            <span class="multilang" lang="no">multipliserer på forhånd \(A^{-1}\):
+                \(A^{-1}(AX)\)
+                \(=\)
+                \(A^{-1}B\),</span>
+        </p>
+    </li>
+
+    <li>
+        <p style="text-align: center;">
+            <span class="multilang" lang="en">using associativity:
+                \((A^{-1}A)X\)
+                \(=\)
+                \(B\),</span>
+            <span class="multilang" lang="no">ved bruk av assosiativitet:
+                \((A^{-1}A)X\)
+                \(=\)
+                \(B\),</span>
+        </p>
+    </li>
+
+    <li>
+        <p style="text-align: center;">
+            <span class="multilang" lang="en">using \(A^{-1}A = \):
+                \(IX\)
+                \(=\)
+                \(A^{-1}B\),</span>
+            <span class="multilang" lang="no">ved bruk av \(A^{-1}A = \):
+                \(IX\)
+                \(=\)
+                \(A^{-1}B\),</span>
+        </p>
+    </li>
+
+
+    <li>
+        <p style="text-align: center;">
+            <span class="multilang" lang="en">using property of \(I\):
+                \(X\)
+                \(=\)
+                \(A^{-1}B\)
+                â€ƒ which is the solution we seek.</span>
+            <span class="multilang" lang="no">ved bruk av egenskapen \(I\):
+                \(X\)
+                \(=\)
+                \(A^{-1}B\)
+                , som er løsningen vi ser etter.</span>
+        </p>
+    </li>
+
+
+
+
+
+
+</ul>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9108  -->
+  <question type="description">
+    <name>
+      <text>7.4.2.2 Key point ─ The inverse of a 2 x 2 matrix</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p><span class="multilang" lang="en">You will see that, had we chosen</span>
+<span class="multilang" lang="no">Du vil se at hvis vi hadde valgt</span></p>
+\[C = \frac{1}{ad - bc} \begin{bmatrix}d &amp; -b \\ -c &amp; a\end{bmatrix}\]
+<p><span class="multilang" lang="en">instead of \(B\), then both products \(AC\) and \(CA\) will be equal to \(I\). This requires \(ad - bc \neq 0\). Hence this matrix \(C\) is the inverse of \(A\). However, if \(ad - bc = 0\) then \(A\) has <b>no inverse</b>.</span>
+<span class="multilang" lang="no">I stedet for \(B\), vil begge produktene \(AC\) og \(CA\) være lik \(I\). Dette krever at \(ad-bc \neq 0\). Derfor vil matrisen \(C\) være inversen til \(A\). Men hvis \(ad-bc=0\), så har \(A\) <b>ingen invers</b>.</span></p>
+<p><span class="multilang" lang="en">Note that for the matrix</span>
+<span class="multilang" lang="no">Merk at for matrisen</span></p>
+\[A = \begin{bmatrix}1 &amp; 0 \\ 2 &amp; 0\end{bmatrix},\]
+<p><span class="multilang" lang="en">which occurred in the last question, \(ad - bc = 1 \times 0 - 0 \times 2 = 0\), confirming as we found that \(A\) has no inverse.</span>
+<span class="multilang" lang="no">som skjedde i forrige spørsmål, \(ad - bc = 1 \times 0 - 0 \times 2 = 0\), bekrefter som vi fant ut at \(A\) ikke har noen invers.</span></p>
+
+
+
+<div class="HELM_keypoint">
+<h4><span class="multilang" lang="en">Key Point<br></span>
+<span class="multilang" lang="no">Nøkkelpunkt</span></h4>
+<p><span class="multilang" lang="en">If \(ad-bc\neq 0\) then the \(2\times 2\) matrix \(A=\left[\begin{array}{cc}a&amp;b\\ c&amp;d\end{array}\right]\) has a (unique) inverse given by</span>
+<span class="multilang" lang="no">Hvis \(ad-bc\neq 0\) så har matrisen \(2\times 2\) \(A=\left[\begin{array}{cc}a&amp;b\\ c&amp;d\end{array}\right]\) en (unik) invers gitt ved</span></p>
+    \[A^{-1}=\frac{1}{ad-bc}\left[\begin{array}{cc}d&amp; -b\\ -c &amp; a \end{array}\right]\]
+    <p><span class="multilang" lang="en">Note that \(ad-bc=|A|\), the determinant of the matrix \(A\).</span>
+<span class="multilang" lang="no">Merk at \(ad-bc=|A|\), determinanten til matrisen \(A\).</span></p>
+<p><span class="multilang" lang="en">In words: To find the inverse of a \(2\times 2\) matrix \(A\) we interchange the diagonal elements, change the sign of the other two elements, and then divide by the determinant of \(A\).
+    </span>
+<span class="multilang" lang="no">For å finne inversen av en \(2\times 2\) matrise \(A\), bytter vi diagonal elementene, endrer fortegnet til de andre to elementene, og deretter deler med determinanten til \(A\).</span></p>
+</div>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9109  -->
+  <question type="description">
+    <name>
+      <text>7.4.3.1 The inverse of a 3x3 matrix - Gauss elimination method</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h3><span class="multilang" lang="en">The inverse of a \(3\times 3\) matrix â€“ Gauss elimination method</span>
+    <span class="multilang" lang="no">Den inverse av en \(3\times 3\) matrise - Gauss eliminasjonsmetode.</span>
+</h3>
+<p><span class="multilang" lang="en">It is true, in general, that if the determinant of a matrix is zero then that matrix has no inverse. If the
+        determinant is non-zero then the matrix has a (unique) inverse. In this Section and the next we look at two ways of
+        finding the inverse of a \(3\times
+        3\) matrix; larger matrices can be inverted by the same methods - the process is more tedious and takes
+        longer. The \(2\times 2\) case could be handled similarly but as we have seen we
+        have a simple formula to use.</span>
+    <span class="multilang" lang="no">Generelt er det sant at hvis determinanten til en matrise er null, så har ikke matrisen en invers. Hvis determinanten er forskjellig fra null, så har matrisen en (unik) invers. I denne seksjonen og den neste ser vi på to måter å finne inversen til en \(3\times 3\) matrise; større matriser kan også inverteres ved de samme metodene - prosessen er mer kjedelig og tar lengre tid. \(2\times 2\) tilfellet kan løses på en lignende måte, men som vi har sett har vi en enkel formel å bruke.</span>
+</p>
+<p><span class="multilang" lang="en">The method we now describe for finding the inverse of a matrix has many similarities to a technique used to obtain
+        solutions of simultaneous equations. This method involves operating on the rows of a matrix in order to reduce it to
+        a unit matrix.</span>
+    <span class="multilang" lang="no">Metoden vi nå beskriver for å finne inversen av en matrise har mange likheter med en teknikk brukt for å finne
+        løsninger av samtidige ligninger. Denne metoden innebærer å operere på radene i en matrise for å redusere den til
+        en enhetsmatrise.</span>
+</p>
+<p><span class="multilang" lang="en">The row operations we shall use are</span>
+    <span class="multilang" lang="no">De radoperasjonene vi skal bruke er</span>
+</p>
+<ol type="i">
+    <li>
+        <p><span class="multilang" lang="en">interchanging two rows</span>
+            <span class="multilang" lang="no">å bytte om på to rader</span>
+        </p>
+    </li>
+    <li>
+        <p><span class="multilang" lang="en">multiplying a row by a constant factor</span>
+            <span class="multilang" lang="no">multiplisere en rad med en konstant faktor</span>
+        </p>
+    </li>
+    <li>
+        <p><span class="multilang" lang="en">adding a multiple of one row to another.</span>
+            <span class="multilang" lang="no">å legge til en multiplikasjon av en rad til en annen.</span>
+        </p>
+    </li>
+</ol>
+<p><span class="multilang" lang="en">Note that in (ii) and (iii) the multiple could be negative or fractional, or both.&nbsp;</span>
+    <span class="multilang" lang="no">Merk at i både (ii) og (iii) kan multiplikatoren være negativ eller brøk, eller begge deler.</span>
+</p>
+<p><span class="multilang" lang="en">The Gauss elimination method is outlined in the following Key Point:</span>
+    <span class="multilang" lang="no">Gauss eliminasjonsmetode er beskrevet i følgende nøkkelpunkt:</span>
+</p>
+<div class="HELM_keypoint">
+    <h4><span class="multilang" lang="en">Key Point</span>
+        <span class="multilang" lang="no">Nøkkelpunkt</span>
+    </h4>
+    <h5 style="text-align: center;"><span class="multilang" lang="en">Matrix Inverse - Gauss Elimination Method</span>
+        <span class="multilang" lang="no">Invers til et Matrise - Gauss Eliminasjonsmetode</span>
+    </h5>
+    <p><span class="multilang" lang="en">We use the result, quoted without proof, that:</span>
+        <span class="multilang" lang="no">Vi bruker resultatet, sitert uten bevis, at:</span>
+    </p>
+    <p style="text-align: center;"><span class="multilang" lang="en">if a sequence of row operations applied to a square matrix \(A\) reduces</span>
+        <span class="multilang" lang="no">hvis en rekke radoperasjoner brukt på en kvadratisk matrise \(A\) reduserer den til</span>
+    </p>
+    <p style="text-align: center;"><span class="multilang" lang="en">it to the identity matrix \(I\) of the same size then the same sequence of</span>
+        <span class="multilang" lang="no">hvis den blir multiplisert med identitetsmatrisen \(I\) av samme størrelse, vil den samme sekvensen av</span>
+    </p>
+    <p style="text-align: center;"><span class="multilang" lang="en">operations applied to \(I\) reduces it to \(A^{-1}\).<br></span>
+        <span class="multilang" lang="no">Operasjoner som blir brukt på \(I\) reduserer det til \(A^{-1}\).</span>
+    </p>
+    <p><span class="multilang" lang="en">Three points to note:</span>
+        <span class="multilang" lang="no">Tre punkter å merke seg:</span>
+    </p>
+    <ul>
+        <li>
+            <p><span class="multilang" lang="en">If it is impossible to reduce \(A\) to \(I\) then \(A^{-1}\) does not exist. This will become evident by the appearance of a row of zeros.</span><span class="multilang" lang="no">Hvis det er umulig å redusere \(A\) til \(I\) så eksisterer ikke \(A^{-1}\). Dette vil bli tydelig ved utseendet til en rad med nuller.</span></p>
+        </li>
+        <li style="text-align: left;"><p><span class="multilang" lang="en">There is no unique procedure for reducing \(A\) to \(I\) and it is experience which leads to selection of the optimum route.</span>
+          <span class="multilang" lang="no">Det er ingen unik prosedyre for å redusere \(A\) til \(I\), og det er erfaring som fører til valg av den optimale ruten.</span></p></li>
+        <li style="text-align: left;"><p><span class="multilang" lang="en">It is more efficient to do the two reductions, \(A\) to \(I\) and \(I\) to \(A^{-1}\), simultaneously.</span>
+          <span class="multilang" lang="no">Det er mer effektivt å gjøre de to reduksjonene, \(A\) til \(I\) og \(I\) til \(A^{-1}\), samtidig.</span></p></li>
+    </ul>
+</div>
+<p><span class="multilang" lang="en">Suppose we wish to find the inverse of the matrix</span>
+    <span class="multilang" lang="no">Anta at vi ønsker å finne inversen til matrisen</span>
+</p>
+\[A = \begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 1 &amp; 4 &amp; 3 \\ 2 &amp; 7 &amp; 7 \end{bmatrix}\]
+<p><span class="multilang" lang="en">We first place \(A\) and \(I\) adjacent to each other.</span>
+    <span class="multilang" lang="no">Vi plasserer først \(A\) og \(I\) ved siden av hverandre.</span>
+</p>
+\[
+\begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 1 &amp; 4 &amp; 3 \\ 2 &amp; 7 &amp; 7 \end{bmatrix} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}
+\]
+
+<h5>Phase 1</h5>
+<p><span class="multilang" lang="en">We now proceed by changing the columns of \(A\) <em>left to right</em> to reduce \(A\) to the form</span>
+    <span class="multilang" lang="no">Vi går nå videre ved å endre kolonnene i \(A\) <em>fra venstre til høyre</em> for å redusere \(A\) til formen</span>
+</p>
+\[\begin{bmatrix} 1 &amp; * &amp; * \\ 0 &amp; 1 &amp; * \\ 0 &amp; 0 &amp; 1 \end{bmatrix},\]
+<p><span class="multilang" lang="en">where \(*\) can be any number. This form is called <b>upper triangular</b>.</span>
+    <span class="multilang" lang="no">hvor \(*\) kan være et hvilket som helst tall. Dette kalles <b>øvre triangulær</b>.</span>
+</p>
+<p><span class="multilang" lang="en">First we subtract row 1 from row 2 and twice row 1 from row 3. â€˜Rowâ€™ refers to both matrices.</span>
+    <span class="multilang" lang="no">Først trekker vi rad 1 fra rad 2 og to ganger rad 1 fra rad 3. 'Rad' refererer til begge matrisene.</span>
+</p>
+\[
+\begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 1 &amp; 4 &amp; 3 \\ 2 &amp; 7 &amp; 7 \end{bmatrix} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}
+\quad \xrightarrow[R3 - 2R1]{R2 - R1} \quad
+\begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ -1 &amp; 1 &amp; 0 \\ -2 &amp; 0 &amp; 1 \end{bmatrix}
+\]
+<p><span class="multilang" lang="en">Now we subtract row 2 from row 3.</span>
+    <span class="multilang" lang="no">Nå trekker vi rad 2 fra rad 3.</span>
+</p>
+\[
+\begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 1 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ -1 &amp; 1 &amp; 0 \\ -2 &amp; 0 &amp; 1 \end{bmatrix}
+\quad \xrightarrow{R3 - R2} \quad
+\begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ -1 &amp; 1 &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{bmatrix}
+\]
+
+<h5>Phase 2</h5>
+<p><span class="multilang" lang="en">This consists of continuing the row operations to reduce the elements above the leading diagonal to zero.</span>
+    <span class="multilang" lang="no">Dette består i å fortsette radoperasjonene for å redusere elementene over den ledende diagonale til null.</span>
+</p>
+<p><span class="multilang" lang="en">We proceed <em>right to left</em>. We subtract 3 times row 3 from row 1 (the elements in row 2 column 3 is already zero).</span>
+    <span class="multilang" lang="no">Vi går <em>fra høyre mot venstre</em>. Vi trekker fra 3 ganger rad 3 fra rad 1 (elementene i rad 2 kolonne 3 er allerede null).</span>
+</p>
+\[
+\begin{bmatrix} 1 &amp; 3 &amp; 3 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ -1 &amp; 1 &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{bmatrix}
+\quad \xrightarrow{R1 - 3R3} \quad
+\begin{bmatrix} 1 &amp; 3 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 4 &amp; 3 &amp; -3 \\ -1 &amp; 1 &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{bmatrix}
+\]
+<p><span class="multilang" lang="en">Finally we subtract 3 times row 2 from row 1.</span>
+    <span class="multilang" lang="no">Til slutt trekker vi fra 3 ganger rad 2 fra rad 1.</span>
+</p>
+\[
+\begin{bmatrix} 1 &amp; 3 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 4 &amp; 3 &amp; -3 \\ -1 &amp; 1 &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{bmatrix}
+\quad \xrightarrow{R1 - 3R2} \quad
+\begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \quad
+\begin{bmatrix} 7 &amp; 0 &amp; -3 \\ -1 &amp; 1 &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{bmatrix}
+\]
+<p><span class="multilang" lang="en">Then we have</span>
+    <span class="multilang" lang="no">Da har vi
+
+    </span>
+</p>
+\[A^{-1} = \begin{bmatrix} 7 &amp; 0 &amp; -3 \\ -1 &amp; 1 &amp; 0 \\ -1 &amp; -1 &amp; 1 \end{bmatrix}\]
+<p><span class="multilang" lang="en">(This can be verified by showing that \(AA^{-1} - I\) or \(A^{-1}A = I\).)</span>
+    <span class="multilang" lang="no">(Dette kan verifiseres ved å vise at \(AA^{-1} - I\) eller \(A^{-1}A = I\).)</span>
+</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9110  -->
+  <question type="description">
+    <name>
+      <text>7.4.4.1 The inverse of a 3x3 matrix ─ determinant method</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<h3><span class="multilang" lang="en">The inverse of a \(3\times 3\) matrix - determinant method</span>
+<span class="multilang" lang="no">Den inversen av en \(3\times 3\) matrise - determinanten metode</span></h3>
+<p><span class="multilang" lang="en">This method which employs determinants, is of importance from a theoretical perspective. The numerical computations involved are too heavy for matrices of higher order than \(3\times 3\) and in such cases the Gauss elimination approach is preferred.&nbsp;</span>
+<span class="multilang" lang="no">Denne metoden, som bruker determinanter, er av betydning fra et teoretisk perspektiv. De numeriske beregningene som er involvert, er for tunge for matriser med høyere orden enn \(3\times 3\), og i slike tilfeller foretrekkes Gauss-elimineringsmetoden.</span></p>
+<p><span class="multilang" lang="en">To obtain \(A^{-1}\) using the determinant approach the steps in the following keypoint are followed:</span>
+<span class="multilang" lang="no">For å få  \(A^{-1}\)  ved å bruke determinanttilnærmingen, følges trinnene i følgende nøkkelpunkt:</span></p>
+<div class="HELM_keypoint">
+<h4><span class="multilang" lang="en">Key Point<br></span>
+<span class="multilang" lang="no">Nøkkelpunkt</span></h4>
+<h5 style="text-align: center;">Matrix Inverse - the Determinant Method</h5>
+<p><span class="multilang" lang="en">Given a square matrix \(A\), we first calculate \(|A|\). If&nbsp;\(|A|=0\) then&nbsp;\(A^{-1}\) does not exist.&nbsp;</span>
+<span class="multilang" lang="no">Gitt en matrise \(A\), beregner vi først \(|A|\). Hvis \(|A|=0\), eksisterer ikke \(A^{-1}\).</span></p>
+<p><span class="multilang" lang="en">If&nbsp;\(|A|\neq 0\) we can proceed to find the inverse matrix, as follows:</span>
+<span class="multilang" lang="no">Hvis&nbsp;\(|A|\neq 0\) kan vi fortsette med å finne den inverse matrisen på følgende måte:</span></p>
+<ul>
+<li>Replace each element of&nbsp;\(A\) by its cofactor</li>
+<li>Transpose the result to form the <b>adjoint matrix</b>, denoted by&nbsp;\(\mathrm{adj}(A)\)</li>
+<li>Then calculate&nbsp;\(A^{-1}=\frac{1}{|A|}\mathrm{adj}(A)\).</li>
+</ul>
+</div>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>0.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+  </question>
+
+<!-- question: 9111  -->
+  <question type="multichoice">
+    <name>
+      <text>7.4.2.2 The inverse of a 2 x 2 matrix</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p>Which of the following matrices has an inverse?</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>false</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>none</answernumbering>
+    <showstandardinstruction>1</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Your answer is correct.</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Your answer is partially correct.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Your answer is incorrect.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<p>\(A=\left[{ \begin{array}{cc}1&amp;0\\2&amp;3\end{array}} \right]\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>\(|A|=1\times 3 - 0\times 2 = 3\).</p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<p>\(B=\left[{ \begin{array}{cc}1&amp;1\\-1&amp;1\end{array}} \right]\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>\(|B|=1+1 =2\).<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="0" format="html">
+      <text><![CDATA[<p>\(C=\left[{ \begin{array}{cc}1&amp;-1\\-2&amp;2\end{array}} \right]\)<br></p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>\(|C|=2-2 =0\). Therefore \(C\) has no inverse because its determinant is zero.<br></p>]]></text>
+      </feedback>
+    </answer>
+    <answer fraction="33.33333" format="html">
+      <text><![CDATA[<p>\(D=\left[{ \begin{array}{cc}2&amp;0\\0&amp;2\end{array}} \right]\)</p>]]></text>
+      <feedback format="html">
+        <text><![CDATA[<p>\(|D|=4-0 =4\).<br></p>]]></text>
+      </feedback>
+    </answer>
+  </question>
+
+<!-- question: 9106  -->
+  <question type="stack">
+    <name>
+      <text>7.4.1.2 Inverse of a matrix</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise</span>
+<span class="multilang" lang="no">Oppgave</span></p>
+
+<p><span class="multilang" lang="en">Consider \(A={@A@}\), and let \(B={@B@}\) be a possible inverse of \(A\).</span>
+<span class="multilang" lang="no">La \(A={@A@}\) være gitt, og la \(B={@B@}\) være en mulig invers av \(A\).</span></p>
+
+<ol class="HELM_parts">
+<li>
+<p><span class="multilang" lang="en">Find \(AB\) and \(BA\)</span>
+<span class="multilang" lang="no">Finn \(AB\) og \(BA\)</span></p>
+<div>\(AB= \) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]</div>
+<div><br></div>
+<div>\(BA= \) [[input:ans2]] [[validation:ans2]][[feedback:prt2]]</div>
+</li>
+<li>
+<p><span class="multilang" lang="en"> Equate the elements of \(AB\) to those of \(I={@I@}\) and try to solve the resulting four equations. </span>
+    <span class="multilang" lang="no"> Sammenligne elementene til \(AB\) til elementene for \(I={@I@}\) og prøve da å løse de fire likninger som følger. </span></p>
+
+<p> <span class="multilang" lang="en"> What does your solution tell you about finding an inverse of \(A\)? </span>
+    <span class="multilang" lang="no"> Hva kan du si om inversen til \(A\) mht. løsnigen din? </span></p>
+</li>
+</ol>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<ol class="HELM_parts">
+    <li>
+
+        <p>For \(A={@A@}\), \(B={@B@}\) the products are</p>
+        \[AB={@ta1@}, BA={@ta2@}.\]
+    </li>
+</ol>
+<p>Equating \(AB=I\) yields</p>
+\[a=1, b=0, a=0, b=1/2.\]
+<p>This is a contradiction, and hence the matrix \(A\) has no inverse and is said to be a <b>singular matrix</b>.</p>
+<p>A matrix with an inverse is said to be <b>non-singular</b>.</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text>A:matrix([1,0],[2,0]);
+B:matrix([a,b],[c,d]);
+I:matrix([1,0],[0,1]);
+ta1:A.B;
+ta2:B.A;
+</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\[ A={@A@}, B={@B@}, \quad AB={@ta1@}, BA={@ta2@}.\]</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>ta1</tans>
+      <boxsize>2</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>1</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>matrix</type>
+      <tans>ta2</tans>
+      <boxsize>2</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-1-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-1-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9107  -->
+  <question type="stack">
+    <name>
+      <text>7.4.2.1 Inverse of a 2 x 2 matrix</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise</span>
+<span class="multilang" lang="no">Øvelse</span></p>
+<p></p>
+<p><span class="multilang" lang="en">Form the matrix products \(AB\) and \(BA\) where </span>
+<span class="multilang" lang="no">Lage matriseproduktene \(AB\) og \(BA\) hvor </span></p>
+<p>\(A={@A@}\) and \(B={@B@}\).</p>
+<div>\(AB=\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</div>
+<div><br></div>
+<div>\(BA=\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]</div>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><span class="multilang" lang="en">For \(A={@A@}\), \(B={@B@}\) the products are: \[AB={@ta1@}, \quad BA={@ta2@}\]</span></p>
+<p><span class="multilang" lang="no">For \(A={@A@}\), \(B={@B@}\) er produktene: \[AB={@ta1@}, \quad BA={@ta2@}\]</span></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text>A:matrix([a,b],[c,d]);
+B:matrix([d,-b],[-c,a]);
+ta1:A.B;
+ta2:B.A;
+</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\[ A={@A@}, B={@B@}, \quad AB={@ta1@}, BA={@ta2@}.\]</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>none</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>ta1</tans>
+      <boxsize>2</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>1</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>matrix</type>
+      <tans>ta2</tans>
+      <boxsize>2</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ev(ta1+1,simp)</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ev(ta2+1,simp)</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-1-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-1-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9117  -->
+  <question type="stack">
+    <name>
+      <text>7.4.2.3 Which 2 x 2 matrix has an inverse?</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise</span>
+<span class="multilang" lang="no">Øvelse</span></p>
+<p><span class="multilang" lang="en">Which of the following matrices are invertible? Find the inverse where possible.</span>
+<span class="multilang" lang="no">Hvilken av de følgende matriser er inverterbart? Finn inversen der det er mulig.</span></p>
+<ol class="HELM_parts">
+    <li>
+        <p>\(A = {@A@}\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</p>
+    </li>
+    <li>
+        <p>\(B = {@B@}\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]</p>
+    </li>
+    <li>
+        <p>\(C = {@C@}\) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]</p>
+    </li>
+    <li>
+        <p>\(D = {@D@}\) [[input:ans4]] [[validation:ans4]] [[feedback:prt4]]</p>
+    </li>
+    <li>
+        <p>\(E = {@E@}\) [[input:ans5]] [[validation:ans5]] [[feedback:prt5]]</p>
+    </li>
+</ol>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p>Recall that a \(2 \times 2\) has an inverse if and only if its determinant is nonzero.</p>
+<ol class="HELM_parts">
+    <li><p>The determinant of \(A = {@A@}\) is \(\lvert A \rvert = {@detWithSteps(A)@} = {@ev(detWithSteps(A),simp)@} \neq 0\). Therefore, \(A\) is <b>invertible</b>.</p></li>
+    <li><p>The determinant of \(B = {@B@}\) is \(\lvert B \rvert = {@detWithSteps(B)@} = {@ev(detWithSteps(B),simp)@} \neq 0\). Therefore, \(B\) is <b>invertible</b>.</p></li>
+    <li><p>The determinant of \(C = {@C@}\) is \(\lvert C \rvert = {@detWithSteps(C)@} = {@ev(detWithSteps(C),simp)@}\). Therefore, \(C\) is <b>not invertible</b>.</p></li>
+    <li><p>The determinant of \(D = {@D@}\) is \(\lvert D \rvert = {@detWithSteps(D)@} = {@ev(detWithSteps(D),simp)@} \neq 0\). Therefore, \(D\) is <b>invertible</b>.</p></li>
+    <li><p>The determinant of \(E = {@E@}\) is \(\lvert E \rvert = {@detWithSteps(E)@} = {@ev(detWithSteps(E),simp)@}\). Therefore, \(E\) is <b>not invertible</b>.</p></li>
+</ol>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text><![CDATA[x1:rand(9)+1;
+x2:rand(9)+1;
+x3:rand(9)+1;
+x4:rand(9)+1;
+x5:rand(9)+1;
+x6:rand(9)+1;
+a1:rand([-4,-3,-2,-1,1,2,3,4]);
+a2:rand([-4,-3,-2,-1,1,2,3,4]);
+
+A:matrix([rand(4)+5,rand(4)+1],[rand(4)+1,rand(4)+5]);
+B:matrix([rand(9)+1,0],[0,rand(9)+1]);
+C:matrix([x1,x2],[x1*a1,x2*a1]);
+D:matrix([x5*((-1)^(rand([0,1]))), rand(9)], [rand_with_step(-9,9,1),x6*((-1)^(rand([0,1])))]);
+E:matrix([x3,a2*x3],[x4,a2*x4]);
+
+Ainverse:invert(A);
+Binverse:invert(B);
+Dinverse:invert(D);
+
+
+tav:[["Invertible",true],["Not invertible",false]];
+tav2:[["Invertible",false],["Not invertible",true]];
+ta1: "Invertible";
+ta2: "Invertible";
+ta3: "Not invertible";
+ta4: "Invertible";
+ta5: "Not invertible";
+
+/* Needed for answer */
+simp: false;
+detWithSteps(A) := A[1,1] * A[2,2] - A[1,2] * A[2,1];]]></text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\[ A = {@A@}, {@ta1@} \quad B = {@B@}, {@ta2@} \quad  C={@C@}, {@ta3@}\]
+\[ D={@D@}, {@ta4@}, E={@E@}, {@ta5@}\]</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:green;"><i class="fa fa-check"></i></span> Correct answer, well done.]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:orange;"><i class="fa fa-adjust"></i></span> Your answer is partially correct.]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<span style="font-size: 1.5em; color:red;"><i class="fa fa-times"></i></span> Incorrect answer.]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>dropdown</type>
+      <tans>tav</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>dropdown</type>
+      <tans>tav</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>dropdown</type>
+      <tans>tav2</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans4</name>
+      <type>dropdown</type>
+      <tans>tav</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans5</name>
+      <type>dropdown</type>
+      <tans>tav2</tans>
+      <boxsize>15</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>0</mustverify>
+      <showvalidation>0</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>ta3</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt4</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans4</sans>
+        <tans>ta4</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt4-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt4-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt5</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans5</sans>
+        <tans>ta5</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt5-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt5-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1663808140</deployedseed>
+    <deployedseed>965417613</deployedseed>
+    <deployedseed>1209656577</deployedseed>
+    <deployedseed>1257871165</deployedseed>
+    <deployedseed>2013598330</deployedseed>
+    <deployedseed>1463452267</deployedseed>
+    <deployedseed>2129064134</deployedseed>
+    <deployedseed>918658444</deployedseed>
+    <deployedseed>1326790233</deployedseed>
+    <deployedseed>1626275970</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>ta4</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>ta5</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt4-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt5</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt5-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>first(mcq_incorrect(tav))</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>first(mcq_incorrect(tav))</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>first(mcq_incorrect(tav2))</value>
+      </testinput>
+      <testinput>
+        <name>ans4</name>
+        <value>first(mcq_incorrect(tav))</value>
+      </testinput>
+      <testinput>
+        <name>ans5</name>
+        <value>first(mcq_incorrect(tav2))</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-1-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-1-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt3-1-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt4</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt4-1-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt5</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt5-1-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9112  -->
+  <question type="stack">
+    <name>
+      <text>7.4.2.4 Inverse of a 2 x 2 matrix</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise</span>
+<span class="multilang" lang="no">Øvelse</span></p>
+<p><span class="multilang" lang="en">Find the inverses of the following matrices</span>
+<span class="multilang" lang="no">Finn inversene til de følgende matriser</span></p>
+<p>\(A={@A@}\), \(B={@B@}\), \(C={@C@}\).</p>
+<ol class="HELM_parts">
+    <li>
+        <div>\(A^{-1}=\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</div>
+    </li>
+    <li>
+        <div>\(B^{-1}=\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]</div>
+    </li>
+    <li>
+        <div>\(C^{-1}=\) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]</div>
+    </li>
+</ol>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><span class="multilang" lang="en">Recall that the inverse of a \(2 \times 2\) matrix
+    \(A = {@matrixabcd@}\) is given by the formula</span>
+  <span class="multilang" lang="no">Husk at inversen til en \(2 \times 2\) matrix
+    \(A = {@matrixabcd@}\) er gitt av formelen</span></p>
+
+\[A^{-1} = \frac{1}{ad - bc} {@matrixdbca@}.\]
+<p><span class="multilang" lang="en">We apply this to each of the given matrices.</span>
+<span class="multilang" lang="no">Vi anvender dette til hvert av de gitte matriser.</span></p>
+
+<ol class="HELM_parts">
+    <li>
+        <p><span class="multilang" lang="en">For \(A = {@A@}\), we have</span>
+      <span class="multilang" lang="no">For \(A = {@A@}\), vi har</span></p>
+        \[A^{-1} = \frac{1}{{@determinant(A)@}} {@preInv(A)@} = {@ta1@}.\]
+    </li>
+    <li>
+        <p><span class="multilang" lang="en">For \(B = {@B@}\), we have</span>
+      <span class="multilang" lang="no">For \(B = {@B@}\), vi har</span></p>
+        \[B^{-1} = \frac{1}{{@determinant(B)@}} {@preInv(B)@} = {@ta2@}.\]
+    </li>
+    <li>
+        <p><span class="multilang" lang="en">For \(C = {@C@}\), we have</span>
+      <span class="multilang" lang="no">For \(C = {@C@}\), vi har</span></p>
+        \[C^{-1} = \frac{1}{{@determinant(C)@}} {@preInv(C)@} = {@ta3@}.\]
+    </li>
+</ol>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text>A:matrix([rand(4)+5,rand(4)+1],[rand(4)+1,rand(4)+5]);
+B:matrix([rand(9)+1,0],[0,rand(9)+1]);
+
+p:matrix([0,2],[2,2]); q:matrix([2,0],[2,2]); r:matrix([2,2],[0,2]); s:matrix([2,2],[2,0]);
+t:matrix([2,0],[0,0]); u:matrix([0,2],[0,0]); v:matrix([0,0],[2,0]); w:matrix([0,0],[0,2]);
+
+Ca:matrix([-1,-1],[-1,-1]);
+Cb:[p,q,r,s,t,u,v,w];
+C:Ca+rand(Cb);
+
+ta1:invert(A);
+ta2:invert(B);
+ta3:invert(C);
+
+/* Needed for answer */
+preInv(A) := matrix([A[2,2], -A[1,2]], [-A[2,1], A[1,1]]);
+
+/* Needed for feedback */
+matrixabcd: matrix([a,b],[c,d]);
+matrixdbca: matrix([d,-b],[-c,a]);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\[\bf A = {@A@}, B = {@B@}, C = {@C@}\] 
+\[A^{-1} = {@ta1@}, B^{-1} = {@ta2@},  C^{-1} = {@ta3@}\]</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text>Correct answer, well done.</text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text>Your answer is partially correct.</text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text>Incorrect answer.</text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>ta1</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>matrix</type>
+      <tans>ta2</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>matrix</type>
+      <tans>ta3</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>wronganswer1: ev(-A,simp);
+wronganswer2: zeromatrix(2,2);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>wronganswer1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>It appears you have given the matrix \(-A\)! This is not the inverse matrix. Recall the inverse of a 2 \(\times\) 2 matrix \[{@matrixabcd@}\]&nbsp;is \[\frac{1}{ad-bc}{@matrixdbca@}.\] Please try part (a) again!</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>wronganswer3: ev(-B,simp);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>wronganswer3</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>It appears you have given the matrix \(-B\)! This is not the inverse matrix. Recall the inverse of a 2 \(\times\) 2 matrix \[{@matrixabcd@}\]&nbsp;is \[\frac{1}{ad-bc}{@matrixdbca@}.\] Please try part (b) again!<br></p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>wronganswer4: ev(-C,simp);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>ta3</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>wronganswer4</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>It appears you have given the matrix \(-C\)! This is not the inverse matrix. Recall the inverse of a 2 \(\times\) 2 matrix \[{@matrixabcd@}\]&nbsp;is \[\frac{1}{ad-bc}{@matrixdbca@}.\] Please try part (c) again!<br></p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>2069815244</deployedseed>
+    <deployedseed>1507202455</deployedseed>
+    <deployedseed>1734004583</deployedseed>
+    <deployedseed>1263231680</deployedseed>
+    <deployedseed>1227297017</deployedseed>
+    <deployedseed>1438520701</deployedseed>
+    <deployedseed>914692551</deployedseed>
+    <deployedseed>778843748</deployedseed>
+    <deployedseed>291531524</deployedseed>
+    <deployedseed>1819291261</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ev(-A,simp)</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ev(-B,simp)</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ev(-C,simp)</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ev(ta1+1,simp)</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ev(ta2+1,simp)</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ev(ta3+1,simp)</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-2-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-2-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-2-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9113  -->
+  <question type="stack">
+    <name>
+      <text>7.4.2.5 Inverse of 2 x 2 rotation matrix</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise</span>
+<span class="multilang" lang="no">Øvelse</span></p>
+<p><span class="multilang" lang="en">It can be shown that the matrix \({A}={@A@}\) represents a <b>clockwise</b> rotation through an angle \(\theta\) in an \(xy\)-plane about the origin. The matrix \(B\) represents a rotation <b>anti-clockwise</b>&nbsp;through an angle \(\theta\). It is therefore given by<br></span>
+<span class="multilang" lang="no">Matrisen \({A}={@A@}\) representerer et rotasjon som går <b>med klokken&nbsp;</b>gjennom en vinkel \(\theta\) i et \(xy\)-plan om origo. Matrisen\(B\) representerer et rotasjon <b>mot klokken</b>&nbsp;gjennom et vinkel \(\theta\). Det er derfor gitt av<br></span></p>
+<p>\(B={@B1@}={@B@}\)</p>
+<p><span class="multilang" lang="en">Form the products \(AB\) and \(BA\) for these 'rotation matrices'.<br></span>
+<span class="multilang" lang="no">Lage produktene \(AB\) og \(BA\) for de 'rotasjonsmatriser'.</span></p>
+<div>\(AB=\) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]</div>
+<div><br></div>
+<div>\(BA=\) [[input:ans2]] [[validation:ans2]][[feedback:prt2]]</div>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[\[{AB} ={@AB@}={@I@}\] <br> \[{BA} ={@BA@}={@I@}\]<br><br>
+<p></p>
+<p><span class="multilang" lang="en"> Effectively: a rotation through an angle \(\theta\) followed by a rotation through angle \(-\theta\) is equivalent to zero rotation. </span>
+<span class="multilang" lang="no"> Effektivt: en rotasjon gjennom en vinkel \(\theta\) etterfulgt av en rotasjon gjennom vinkel \(-\theta\) tilsvarer nullrotasjon.</span></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text>A:matrix([cos(theta), sin(theta)],[-sin(theta),cos(theta)]);
+B1:matrix([cos(-theta), sin(-theta)],[-sin(-theta),cos(-theta)]);
+B:matrix([cos(theta), -sin(theta)],[sin(theta),cos(theta)]);
+I:matrix([1,0],[0,1]);
+
+AB:ev(A.B,simp);
+BA:ev(B.A,simp);
+
+ta1:I;
+ta2:I;
+</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text></text>
+    </questionnote>
+    <questionsimplify>0</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text><![CDATA[<p><span class="correct">Correct answer, well done.</span></p>]]></text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text><![CDATA[<p><span class="partially">Your answer is partially correct.</span></p>]]></text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text><![CDATA[<p><span class="incorrect">Incorrect answer.</span></p>]]></text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>ta1</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords>determinant</forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>1</requirelowestterms>
+      <checkanswertype>1</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>matrix</type>
+      <tans>ta2</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>AB</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You should ensure to simplify answers using trigonometric identities.</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text></text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>CasEqual</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>BA</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>You should ensure to simplify answers using trigonometric identities.<br></p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>AB</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>BA</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ev(ta1+1,simp)</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ev(ta2+1,simp)</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-2-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-2-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9114  -->
+  <question type="stack">
+    <name>
+      <text>7.4.3.2 Inverse of 3 x 3 matrix ─ Gauss elimination method</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise</span>
+<span class="multilang" lang="no">Øvelse</span></p>
+<p><span class="multilang" lang="en">Use the Gauss elimination method to find the inverse of the
+    following matrices</span>
+<span class="multilang" lang="no">Bruk Gauss eliminasjonsmetoden for å finne inversen av følgende matriser.</span></p>
+<p><span class="multilang" lang="en">\[A = {@A@},\] \[B = {@B@}.\]</span>
+<span class="multilang" lang="no">\[A = {@A@},\] \[B = {@B@}.\] </span></p>
+
+<ol class="HELM_parts">
+<li>
+<div>\(A^{-1}=\) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</div>
+</li>
+<li>
+<div>\(B^{-1}=\) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]</div>
+</li>
+</ol>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><span class="multilang" lang="en">We can find the inverse of matrix \(A\) using the Gaussian elimination method.</span>
+<span class="multilang" lang="no">Vi kan finne inversen av matrisen \(A\) ved å bruke Gauss-eleminasjonsmetoden.</span></p>
+<p><span class="multilang" lang="en">We do this by reducing the matrix \(A\) to the identity matrix \(I\). There is no unique procedure for
+    this but here is one example.</span>
+<span class="multilang" lang="no">Vi gjør dette ved å redusere matrisen \(A\) til identitetsmatrisen \(I\). Det finnes ingen unik fremgangsmåte for dette, men her er et eksempel.</span></p>
+<p><span class="multilang" lang="en">We first place \(A\) and \(I\) adjacent to each other.</span>
+<span class="multilang" lang="no">Vi plasserer først \(A\) og \(I\) ved siden av hverandre.</span></p>
+
+<p><span class="multilang" lang="en">{@A@} {@I@}.</span>
+<span class="multilang" lang="no">{@A@} {@I@}.</span></p>
+<p><span class="multilang" lang="en">We now proceed by changing the columns of \(A\) left to right to reduce \(A\) to the form {@upper@}, where \(n\) can be any number. This form is called upper triangular.</span>
+<span class="multilang" lang="no">Vi går nå videre ved å endre kolonnene i \(A\) fra venstre mot høyre for å redusere \(A\) til formen {@upper@}, hvor \(n\) kan være et vilkårlig tall. Denne formen kalles øvre triangulær.</span></p>
+<p><span class="multilang" lang="en">First we swap row 1 and row 2.</span>
+<span class="multilang" lang="no">Først bytter vi rad 1 og rad 2.</span></p>
+<p><span class="multilang" lang="en">\[{@A@} {@I@} R1 \leftrightarrow R2 \longrightarrow {@matrixa@} {@I2@} \].</span>
+<span class="multilang" lang="no">\[{@A@} {@I@} R1 \leftrightarrow R2 \longrightarrow {@matrisea@} {@I2@} \].</span></p>
+<p><span class="multilang" lang="en">Now we subtract {@a[2,1]@} times row 1 from row 2 and {@a[3,1]@} times row 1 from row 3.</span>
+<span class="multilang" lang="no">Nå trekker vi fra rad 1 multiplisert med {@a[2,1]@} fra rad 2 og {@a[3,1]@} fra rad 3.</span></p>
+<p><span class="multilang" lang="en">\[{@matrixa@} {@I2@} R2 - {@a[2,1]@} R1, R3 - {@a[3,1]@} R1 \longrightarrow {@matrixb@} {@I3@}\]</span>
+<span class="multilang" lang="no">\[{@matrixa@} {@I2@} R2 - {@a[2,1]@} R1, R3 - {@a[3,1]@} R1 \longrightarrow {@matrixb@} {@I3@}\]</span></p>
+<p><span class="multilang" lang="en">Then we divide row 2 by {@b[2,2]@} and subtract {@b[3,2]@} times row 2 from row 3.</span>
+<span class="multilang" lang="no">Så deler vi rad 2 med {@b[2,2]@} og trekker fra {@b[3,2]@} ganger rad 2 fra rad 3.</span></p>
+<p><span class="multilang" lang="en">\[{@matrixb@} {@I3@} R2/{@b[2,2]@}, R3 - {@b[3,2]@} R2 \longrightarrow {@matrixc@} {@I4@}\].</span>
+<span class="multilang" lang="no">\[{@matrixb@} {@I3@} R2/{@b[2,2]@}, R3 - {@b[3,2]@} R2 \longrightarrow {@matrixc@} {@I4@}\]</span></p>
+<p><span class="multilang" lang="en">Finally we divide row 3 by {@c[3,3]@}.</span>
+<span class="multilang" lang="no">Til slutt deler vi rad 3 med {@c[3,3]@}.</span></p>
+\[{@matrixc@} {@I4@} R3/{@c[3,3]@} \longrightarrow {@matrixd@}
+{@I5@}\]
+<p><span class="multilang" lang="en">We would usually proceed by changing the columns of \(A\) right to left to reduce \(A\) to the form {@I@}. However, for this question we already obtained zeros above the main diagonal after we swapped row 1 and row 2.</span>
+<span class="multilang" lang="no">Vi ville vanligvis gå frem ved å endre kolonnene til \(A\) fra høyre til venstre for å redusere \(A\) til formen {@I@}. Imidlertid har vi for dette spørsmålet allerede fått nuller over diagonalen etter at vi byttet rad 1 og rad 2.</span></p>
+<p><span class="multilang" lang="en">So we have,</span>
+<span class="multilang" lang="no">Så vi har,</span></p>
+<p><span class="multilang" lang="en">\[A^{-1} = {@I5@}.\]</span>
+<span class="multilang" lang="no">\[A^{-1} = {@I5@}.\]</span></p>
+<p><span class="multilang" lang="en">The method can be used to determine \(B^{-1}\) similarly.</span>
+<span class="multilang" lang="no">Metoden kan brukes på samme måte for å bestemme \(B^{-1}\).</span></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text>A:matrix([rand(9)+2,rand(9)+1,0],[1,0,0],[rand(9)+1,rand(9)+1,rand(9)+1]);
+ta1:invert(A);
+
+B:matrix([rand_with_prohib(-1,1,[0]),rand_with_prohib(-1,1,[0]),rand_with_prohib(-1,1,[0])],[0,rand_with_prohib(-1,1,[0]),rand_with_prohib(-1,1,[0])],[0,0,rand_with_prohib(-1,1,[0])]);
+ta2:invert(B);
+
+
+/* Gaussian Elimination method*/
+/* Swap R1 and R2 */
+a[1,1]:A[2,1]; a[1,2]:A[2,2]; a[1,3]:A[2,3];
+a[2,1]:A[1,1]; a[2,2]:A[1,2]; a[2,3]:A[1,3]; 
+a[3,1]:A[3,1]; a[3,2]:A[3,2]; a[3,3]:A[3,3];
+matrixa: genmatrix(a,3,3);
+/* R2-a21*R1, R3-a31*R1*/
+b:copy(matrixa);
+S1: for nj:1 thru 3 do b[2,nj]:b[2,nj]-a[2,1]*b[1,nj];
+S2: for nj:1 thru 3 do b[3,nj]:b[3,nj]-a[3,1]*b[1,nj];
+matrixb: ev(b,simp);
+/* R2/b22, R3-b32*R2 */
+c:copy(matrixb)
+S3: for nj:1 thru 3 do c[2,nj]:c[2,nj]/b[2,2];
+S4: for nj:1 thru 3 do c[3,nj]:c[3,nj]-b[3,2]*c[2,nj];
+matrixc: ev(c,simp);
+/* R3/c33 */
+d:copy(matrixc)
+S5: for nj:1 thru 3 do d[3,nj]:d[3,nj]/c[3,3];
+matrixd: ev(d,simp);
+
+I:ident(3);
+/* Swap R1 and R2 */
+I2:matrix([0,1,0],[1,0,0],[0,0,1])
+/* R2-a21*R1, R3-a31*R1*/
+I3:copy(I2);
+T1: for nj:1 thru 3 do I3[2,nj]:I3[2,nj]-a[2,1]*I3[1,nj];
+T2: for nj:1 thru 3 do I3[3,nj]:I3[3,nj]-a[3,1]*I3[1,nj];
+I3:ev(I3,simp);
+/* R2/b22, R3-b32*R2 */
+I4:copy(I3)
+T3: for nj:1 thru 3 do I4[2,nj]:I4[2,nj]/b[2,2];
+T4: for nj:1 thru 3 do I4[3,nj]:I4[3,nj]-b[3,2]*I4[2,nj];
+I4:ev(I4,simp);
+/* R3/c33 */
+I5:copy(I4)
+T5: for nj:1 thru 3 do I5[3,nj]:I5[3,nj]/c[3,3];
+I5:ev(I5,simp);
+
+upper: matrix([1,n,n],[0,1,n],[0,0,n]);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\(A = {@A@}, B = {@B@}, A^{-1} = {@ta1@}, B^{-1} = {@ta2@}\)</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text>Correct answer, well done.</text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text>Your answer is partially correct.</text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text>Incorrect answer.</text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>ta1</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>matrix</type>
+      <tans>ta2</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>wronganswer1:ev(-A,simp);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>wronganswer1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p><span class="multilang" lang="en">It appears you have given the matrix \(\bf -A\)! This is not the inverse matrix. Please try again!<br></span>
+<span class="multilang" lang="no">Jeg ser at du har gitt matrisen \(\bf -A\)! Dette er ikke den inverse matrisen. Vennligst prøv igjen!</span></p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>wronganswer2:ev(-B,simp);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>wronganswer2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p><span class="multilang" lang="en">It appears you have given the matrix \(\bf -B\)! This is not the inverse matrix. Please try again!<br></span>
+<span class="multilang" lang="no">Det ser ut som du har gitt matrisen \(\bf -B\)! Dette er ikke den inverse matrisen. Vennligst prøv igjen!</span></p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1528032857</deployedseed>
+    <deployedseed>2142445401</deployedseed>
+    <deployedseed>2016017185</deployedseed>
+    <deployedseed>1492363149</deployedseed>
+    <deployedseed>1031303524</deployedseed>
+    <deployedseed>1724797541</deployedseed>
+    <deployedseed>1247993289</deployedseed>
+    <deployedseed>1566086606</deployedseed>
+    <deployedseed>1043533215</deployedseed>
+    <deployedseed>1737529701</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ev(-A,simp)</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ev(-B,simp)</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ev(ta1+1,simp)</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ev(ta2+1,simp)</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-2-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-2-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9115  -->
+  <question type="stack">
+    <name>
+      <text>7.4.4.2 Inverse of a 3 x 3 matrix ─ determinant method</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise"><span class="multilang" lang="en">Exercise</span>
+<span class="multilang" lang="no">Oppgave</span></p>
+<p><span class="multilang" lang="en">Use the determinant method to find the inverse of the
+    following matrices</span>
+<span class="multilang" lang="no">Bruk determinantmetoden for å finne inversen til følgende matriser.</span></p>
+<p><span class="multilang" lang="en">\[A = {@A@},\] \[B = {@B@}.\]</span>
+<span class="multilang" lang="no">\[A = {@A@},\] \[B = {@B@}.\] </span></p>
+<ol class="HELM_parts">
+<li>
+<div>\(A^{-1} = \) [[input:ans1]] [[validation:ans1]] [[feedback:prt1]]</div>
+</li>
+<li>
+<div>\(B^{-1} = \) [[input:ans2]] [[validation:ans2]] [[feedback:prt2]]</div>
+</li>
+</ol>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p><span class="multilang" lang="en">To find the inverse of \(A = {@A@}\) using the determinant method will require four steps.</span>
+<span class="multilang" lang="no">For å finne inversen av \(A = {@A@}\) ved hjelp av determinantmetoden vil det kreve fire trinn.</span></p>
+<p><span class="multilang" lang="en">First we find the determinant of \(A\).</span>
+<span class="multilang" lang="no">Først finner vi determinanten til \(A\).</span></p>
+<p><span class="multilang" lang="en">\[ \det(A) = {@detA@}. \]</span>
+<span class="multilang" lang="no">\[ \det(A) = {@detA@}. \] </span></p>
+<p><span class="multilang" lang="en">Since \(\det(A) \neq 0\) the inverse of \(A\) exists.</span>
+<span class="multilang" lang="no">Siden \(\det(A) \neq 0\) finnes inversen til \(A\).</span></p>
+<p><span class="multilang" lang="en">Now, we replace each element of \(A\) by its cofactor.</span>
+<span class="multilang" lang="no">Nå erstatter vi hvert element i \(A\) med dets kofaktor.</span></p>
+<p><span class="multilang" lang="en">The cofactor of \({A}_{ij}\) is the determinant of the matrix that remains when row \(i\) and column \(j\) are
+    removed, multiplied by \((-1)^{i+j}\). So we have,</span>
+<span class="multilang" lang="no">Kofaktoren til \({A}_{ij}\) er determinanten til matrisen som gjenstår når rad \(i\) og kolonne \(j\) fjernes, multiplisert med \((-1)^{i+j}\). Så vi har,</span></p>
+<p><span class="multilang" lang="en">{@cofactorsA@}.</span>
+<span class="multilang" lang="no">{@cofactorsA@}.</span></p>
+<p><span class="multilang" lang="en">Then we transpose the result to obtain the adjoint matrix:</span>
+<span class="multilang" lang="no">Så transponerer vi resultatet for å få den tilhørende adjungerende matrisen:</span></p>
+<p><span class="multilang" lang="en">\(\mathrm{adj}(A) = {@cofactorsA@}^{T} = {@adjA@}\).</span>
+<span class="multilang" lang="no">\(\mathrm{adj}(A) = {@cofactorsA@}^{T} = {@adjA@}\)</span></p>
+<p><span class="multilang" lang="en">Finally we obtain \(A^{-1}\) using the following formula:</span>
+<span class="multilang" lang="no">Til slutt får vi \(A^{-1}\) ved å bruke følgende formel:</span></p>
+<p><span class="multilang" lang="en">\(A^{-1} = \frac{1}{\det(A)} \mathrm{adj}(A) = \frac{1}{@detA@} {@adjA@} = {@ta1@}\).</span>
+<span class="multilang" lang="no">\(A^{-1} = \frac{1}{\det(A)} \mathrm{adj}(A) = \frac{1}{@detA@} {@adjA@} = {@ta1@}\).</span></p>
+<p><span class="multilang" lang="en">The method can be used to determine \(B^{-1}\) similarly, which gives \( B^{-1} = {@ta2@}.\)</span>
+<span class="multilang" lang="no">Metoden kan brukes på samme måte for å bestemme \(B^{-1}\), som gir \(B^{-1} = {@ta2@}.\)</span></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.1000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2023010400</text>
+    </stackversion>
+    <questionvariables>
+      <text>A:matrix([rand(9)+2,rand(9)+1,0],[1,0,0],[rand(9)+1,rand(9)+1,rand(9)+1]);
+ta1:invert(A);
+
+B:matrix([rand_with_prohib(-1,1,[0]),rand_with_prohib(-1,1,[0]),rand_with_prohib(-1,1,[0])],[0,rand_with_prohib(-1,1,[0]),rand_with_prohib(-1,1,[0])],[0,0,rand_with_prohib(-1,1,[0])]);
+ta2:invert(B);
+
+/* Determinant method*/
+detA:determinant(A);
+cofactorsA:transpose(adjoint(A));
+adjA:adjoint(A)
+
+upper: matrix([1,n,n],[0,1,n],[0,0,n]);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\[\bf A = {@A@}, B = {@B@}\]
+\[A^{-1} = {@ta1@}, B^{-1} = {@ta2@}\]</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text>Correct answer, well done.</text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text>Your answer is partially correct.</text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text>Incorrect answer.</text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>ta1</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>matrix</type>
+      <tans>ta2</tans>
+      <boxsize>3</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>wronganswer1:ev(-A,simp);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>wronganswer1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p><span class="multilang" lang="en">It appears you have given the matrix \(\bf -A\)! This is not the inverse matrix. Please try again!<br></span>
+<span class="multilang" lang="no">Beklager, jeg mente å si at jeg ga deg matrisen \(\bf A\), men ikke den inverse matrisen. La meg prøve igjen:</span></p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>wronganswer2:ev(-B,simp);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>wronganswer2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p><span class="multilang" lang="en">It appears you have given the matrix \(\bf -B\)! This is not the inverse matrix. Please try again!<br></span>
+<span class="multilang" lang="no">Det virker som om du har gitt matrisen \(\bf -B\)! Dette er ikke den inverse matrisen. Vennligst prøv igjen!</span></p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>361301438</deployedseed>
+    <deployedseed>1469324625</deployedseed>
+    <deployedseed>171644071</deployedseed>
+    <deployedseed>358966885</deployedseed>
+    <deployedseed>818821470</deployedseed>
+    <deployedseed>1536609802</deployedseed>
+    <deployedseed>793837122</deployedseed>
+    <deployedseed>254525453</deployedseed>
+    <deployedseed>1140548974</deployedseed>
+    <deployedseed>1437129438</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ev(-A,simp)</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ev(-B,simp)</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt1-2-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.1000000</expectedpenalty>
+        <expectedanswernote>prt2-2-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9119  -->
+  <question type="stack">
+    <name>
+      <text>7.4.5.1 Exercise: Inverse of a 2 x 2 matrix (NOT IN QUIZ)</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p class="HELM_exercise">Exercise</p>
+<p>Find the inverses of the following matrices</p>
+<p>\(\bf A={@A@}\), \(\bf B={@B@}\), \(\bf C={@C@}\).</p>
+<ol class="HELM_parts">
+    <li>
+        <div>\(\bf A^{-1}=\) [[input:ans1]][[validation:ans1]] [[feedback:prt1]]</div>
+    </li>
+    <li>
+        <div>\(\bf B^{-1}=\) [[input:ans2]][[validation:ans2]] [[feedback:prt2]]</div>
+    </li>
+    <li>
+        <div>\(\bf C^{-1}=\) [[input:ans3]] [[validation:ans3]] [[feedback:prt3]]</div>
+    </li>
+</ol>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p></p>
+<p></p>
+<p><b>FEEDBACK</b></p>
+<p><b></b></p>The inverse of a 2 \(\times\) 2 matrix \[{@matrixabcd@}\] is \[\frac{1}{ad-bc}{@matrixdbca@}.\]<br>
+<p>Therefore the inverse of matrix \[\bf A = {@A@}\] is</p>
+<p>\[\bf A^{-1} = \frac{1}{({@A[1,1]@}).({@A[2,2]@}) -({@A[1,2]@}).({@A[2,1]@})}{@ta1@} = \frac{1}{({@A[1,1]*A[2,2]@}) -({@A[1,2]*A[2,1]@})}{@ta1@} ={@ta1@}.\]</p>
+<p><br></p>
+<p>The inverse of matrices \( \bf B\) and \( \bf C\) can be found similarly and are</p>
+<p>\[ B^{-1} = {@ta2@} \quad C^{-1} = {@ta3@}.\]</p>
+<p></p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2021072200</text>
+    </stackversion>
+    <questionvariables>
+      <text>A:matrix([rand(4)+5,rand(4)+1],[rand(4)+1,rand(4)+5]);
+B:matrix([rand(9)+1,0],[0,rand(9)+1]);
+
+p:matrix([0,2],[2,2]); q:matrix([2,0],[2,2]); r:matrix([2,2],[0,2]); s:matrix([2,2],[2,0]);
+t:matrix([2,0],[0,0]); u:matrix([0,2],[0,0]); v:matrix([0,0],[2,0]); w:matrix([0,0],[0,2]);
+
+Ca:matrix([-1,-1],[-1,-1]);
+Cb:[p,q,r,s,t,u,v,w];
+C:Ca+rand(Cb);
+
+ta1:invert(A);
+ta2:invert(B);
+ta3:invert(C);
+
+matrixabcd:matrix([a,b],[c,d]);
+matrixdbca:matrix([d,-b],[-c,a]);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\[\bf A = {@A@}, B = {@B@}, C = {@C@} \] \[A^{-1} = {@ta1@}, B^{-1} = {@ta2@},  C^{-1} = {@ta3@}\]</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text>Correct answer, well done.</text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text>Your answer is partially correct.</text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text>Incorrect answer.</text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>ta1</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>matrix</type>
+      <tans>ta2</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans3</name>
+      <type>matrix</type>
+      <tans>ta3</tans>
+      <boxsize>7</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>wronganswer1: ev(-A,simp);
+wronganswer2: zeromatrix(2,2);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>wronganswer1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>It appears you have given the matrix \(\bf -A\)! This is not the inverse matrix. Recall the inverse of a 2 \(\times\) 2 matrix \[{@matrixabcd@}\]&nbsp;is \[\frac{1}{ad-bc}{@matrixdbca@}.\] Please try part (a) again!</p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>wronganswer3: ev(-B,simp);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>wronganswer3</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>It appears you have given the matrix \(\bf -B\)! This is not the inverse matrix. Recall the inverse of a 2 \(\times\) 2 matrix \[{@matrixabcd@}\]&nbsp;is \[\frac{1}{ad-bc}{@matrixdbca@}.\] Please try part (b) again!<br></p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt3</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>wronganswer4: ev(-C,simp);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>ta3</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt3-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans3</sans>
+        <tans>wronganswer4</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt3-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>It appears you have given the matrix \(\bf -C\)! This is not the inverse matrix. Recall the inverse of a 2 \(\times\) 2 matrix \[{@matrixabcd@}\]&nbsp;is \[\frac{1}{ad-bc}{@matrixdbca@}.\] Please try part (c) again!<br></p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt3-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>786525696</deployedseed>
+    <deployedseed>1989893794</deployedseed>
+    <deployedseed>752036970</deployedseed>
+    <deployedseed>1645270553</deployedseed>
+    <deployedseed>1089483067</deployedseed>
+    <deployedseed>940155801</deployedseed>
+    <deployedseed>14054742</deployedseed>
+    <deployedseed>1008431228</deployedseed>
+    <deployedseed>327903614</deployedseed>
+    <deployedseed>314436248</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta3</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ev(-A,simp)</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ev(-B,simp)</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ev(-C,simp)</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta3</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans3</name>
+        <value>ta2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-2-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-2-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt3</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt3-2-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9120  -->
+  <question type="stack">
+    <name>
+      <text>7.4.5.2 (not in quiz): Gauss elimination method ─ inverse of 3 x 3 matrix</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p>
+<p>Use the Gauss elimination method to find the inverse of the following matrices</p>
+<p>\[\bf A = {@A@},\] \[\bf B = {@B@}.\]</p>
+<div>(a) \(\bf A^{-1}=\) [[input:ans1]] [[validation:ans1]][[feedback:prt1]]</div>
+<p><br></p>
+<div>(b) \(\bf B^{-1}=\) [[input:ans2]] [[validation:ans2]][[feedback:prt2]]</div>
+<p></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p></p><p><b>FEEDBACK</b></p><p>We can find the inverse of matrix \(\bf A\) using the Gaussian elimination method.<br></p><p>We do this by reducing the matrix \(\bf A\) to the identity matrix \(\bf I\).&nbsp;There is no unique procedure for this but here is one example.</p><p>We first place \(\bf A\) and \(\bf I\) adjacent to each other.<br></p><p></p><p>{@A@} {@I@}.</p><p>We now proceed by changing the columns of \(\bf A\) left to right to reduce \(\bf A\) to the form {@upper@},</p><p>where \(n\) can be any number. This form is called upper triangular.<br></p><p>First we swap row 1 and row 2.</p><p>\[{@A@} {@I@} R1 \leftrightarrow R2 \longrightarrow {@matrixa@} {@I2@}. \]</p><p>Now we subtract {@a[2,1]@} times row 1 from row 2 and {@a[3,1]@} times row 1 from row 3.</p><p>\[{@matrixa@} {@I2@} R2 - {@a[2,1]@} R1, R3 - {@a[3,1]@} R1 \longrightarrow&nbsp;{@matrixb@} {@I3@}.\]<br></p><p>Then we divide row 2 by {@b[2,2]@} and subtract {@b[3,2]@} times row 2 from row 3.</p><p>\[{@matrixb@} {@I3@} R2/{@b[2,2]@}, R3 - {@b[3,2]@} R2 \longrightarrow {@matrixc@} {@I4@}.\]<br></p><p>Finally we divide row 3 by {@c[3,3]@}.</p>\[{@matrixc@} {@I4@} R3/{@c[3,3]@} \longrightarrow {@matrixd@} {@I5@}.\]<p></p><p>We would usually proceed by changing the columns of \(\bf A\) right to left to reduce \(\bf A\) to the form {@I@}. However, for this question we already obtained zeros above the main diagonal after we swapped row 1 and row 2.<br></p><p>So we have,</p><p>\[\bf A^{-1} = {@I5@}.\]</p><p><br></p><p>The method can be used to determine \(\bf B^{-1}\) similarly, which gives \( B^{-1} = {@ta2@}.\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2021072200</text>
+    </stackversion>
+    <questionvariables>
+      <text>A:matrix([rand(9)+2,rand(9)+1,0],[1,0,0],[rand(9)+1,rand(9)+1,rand(9)+1]);
+ta1:invert(A);
+
+B:matrix([rand_with_prohib(-1,1,[0]),rand_with_prohib(-1,1,[0]),rand_with_prohib(-1,1,[0])],[0,rand_with_prohib(-1,1,[0]),rand_with_prohib(-1,1,[0])],[0,0,rand_with_prohib(-1,1,[0])]);
+ta2:invert(B);
+
+
+/* Gaussian Elimination method*/
+/* Swap R1 and R2 */
+a[1,1]:A[2,1]; a[1,2]:A[2,2]; a[1,3]:A[2,3];
+a[2,1]:A[1,1]; a[2,2]:A[1,2]; a[2,3]:A[1,3]; 
+a[3,1]:A[3,1]; a[3,2]:A[3,2]; a[3,3]:A[3,3];
+matrixa: genmatrix(a,3,3);
+/* R2-a21*R1, R3-a31*R1*/
+b:copy(matrixa);
+S1: for nj:1 thru 3 do b[2,nj]:b[2,nj]-a[2,1]*b[1,nj];
+S2: for nj:1 thru 3 do b[3,nj]:b[3,nj]-a[3,1]*b[1,nj];
+matrixb: ev(b,simp);
+/* R2/b22, R3-b32*R2 */
+c:copy(matrixb)
+S3: for nj:1 thru 3 do c[2,nj]:c[2,nj]/b[2,2];
+S4: for nj:1 thru 3 do c[3,nj]:c[3,nj]-b[3,2]*c[2,nj];
+matrixc: ev(c,simp);
+/* R3/c33 */
+d:copy(matrixc)
+S5: for nj:1 thru 3 do d[3,nj]:d[3,nj]/c[3,3];
+matrixd: ev(d,simp);
+
+I:ident(3);
+/* Swap R1 and R2 */
+I2:matrix([0,1,0],[1,0,0],[0,0,1])
+/* R2-a21*R1, R3-a31*R1*/
+I3:copy(I2);
+T1: for nj:1 thru 3 do I3[2,nj]:I3[2,nj]-a[2,1]*I3[1,nj];
+T2: for nj:1 thru 3 do I3[3,nj]:I3[3,nj]-a[3,1]*I3[1,nj];
+I3:ev(I3,simp);
+/* R2/b22, R3-b32*R2 */
+I4:copy(I3)
+T3: for nj:1 thru 3 do I4[2,nj]:I4[2,nj]/b[2,2];
+T4: for nj:1 thru 3 do I4[3,nj]:I4[3,nj]-b[3,2]*I4[2,nj];
+I4:ev(I4,simp);
+/* R3/c33 */
+I5:copy(I4)
+T5: for nj:1 thru 3 do I5[3,nj]:I5[3,nj]/c[3,3];
+I5:ev(I5,simp);
+
+upper: matrix([1,n,n],[0,1,n],[0,0,n]);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\[\bf A = {@A@}, B = {@B@}\] 
+\[A^{-1} = {@ta1@}, B^{-1} = {@ta2@}\]</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text>Correct answer, well done.</text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text>Your answer is partially correct.</text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text>Incorrect answer.</text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>ta1</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>matrix</type>
+      <tans>ta2</tans>
+      <boxsize>5</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>3</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>wronganswer1:ev(-A,simp);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>wronganswer1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>It appears you have given the matrix \(\bf -A\)! This is not the inverse matrix. Please try again!<br></p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>wronganswer2:ev(-B,simp);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>wronganswer2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>It appears you have given the matrix \(\bf -B\)! This is not the inverse matrix. Please try again!<br></p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>2064231801</deployedseed>
+    <deployedseed>177426508</deployedseed>
+    <deployedseed>1566321368</deployedseed>
+    <deployedseed>1530852070</deployedseed>
+    <deployedseed>1936890616</deployedseed>
+    <deployedseed>1221466336</deployedseed>
+    <deployedseed>761763446</deployedseed>
+    <deployedseed>368480703</deployedseed>
+    <deployedseed>678245693</deployedseed>
+    <deployedseed>371043483</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ev(-A,simp)</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ev(-B,simp)</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-2-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-2-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+<!-- question: 9121  -->
+  <question type="stack">
+    <name>
+      <text>7.4.5.3 (not in quiz): Determinant method ─ Inverse of a 3 x 3 matrix</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p></p><p>Use the determinant method to find the inverse of the following matrices</p>
+<p>\[\bf A = {@A@},\] \[\bf B = {@B@}.\]</p>
+<div>(a) \(\bf A^{-1}=\) [[input:ans1]].</div><div><br></div><p>[[validation:ans1]] [[feedback:prt1]]<br></p>
+<div>(b) \(\bf B^{-1}=\) [[input:ans2]].</div><p>[[validation:ans2]] [[feedback:prt2]]</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text><![CDATA[<p></p><p><b>FEEDBACK</b></p><p>To find the inverse of \(\bf A = {@A@}\) using the determinant method will require four steps.</p><p>First we find the determinant of \(\bf A.\)</p><p>\[ \det(\bf A) = {@detA@} .\]</p><p>Since \(\det(\bf A) \neq 0\) the inverse of \(\bf A\) exists.</p><p>Now, we replace each element of \(\bf A\) by its cofactor.</p><p>The cofactor of \({\bf A}_{ij}\) is the determinant of the matrix that remains when row \(i\) and column \(j\) are removed, multiplied by \((-1)^{i+j}\). So we have,</p><p>{@cofactorsA@}.</p><p>Then we transpose the result to obtain the adjoint matrix:<br></p><p>\(\bf adj(A) =&nbsp;{@cofactorsA@}^{T} = {@adjA@}.\)</p><p>Finally we obtain \(\bf A^{-1}\) using the following formula:<br></p><p>\(\bf A^{-1} = \frac{1}{\det(A)} adj(A) = \frac{1}{@detA@} {@adjA@} = {@ta1@}.\)</p><p>The method can be used to determine \(\bf B^{-1}\)&nbsp;similarly, which gives \(B^{-1} = {@ta2@}.\)</p>]]></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.0000000</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <stackversion>
+      <text>2020070100</text>
+    </stackversion>
+    <questionvariables>
+      <text>A:matrix([rand(9)+2,rand(9)+1,0],[1,0,0],[rand(9)+1,rand(9)+1,rand(9)+1]);
+ta1:invert(A);
+
+B:matrix([rand_with_prohib(-1,1,[0]),rand_with_prohib(-1,1,[0]),rand_with_prohib(-1,1,[0])],[0,rand_with_prohib(-1,1,[0]),rand_with_prohib(-1,1,[0])],[0,0,rand_with_prohib(-1,1,[0])]);
+ta2:invert(B);
+
+/* Determinant method*/
+detA:determinant(A);
+cofactorsA:transpose(adjoint(A));
+adjA:adjoint(A)
+
+upper: matrix([1,n,n],[0,1,n],[0,0,n]);</text>
+    </questionvariables>
+    <specificfeedback format="html">
+      <text></text>
+    </specificfeedback>
+    <questionnote>
+      <text>\[\bf A = {@A@}, B = {@B@}\]
+\[ A^{-1} = {@ta1@}, B^{-1} = {@ta2@}\]</text>
+    </questionnote>
+    <questionsimplify>1</questionsimplify>
+    <assumepositive>0</assumepositive>
+    <assumereal>0</assumereal>
+    <prtcorrect format="html">
+      <text>Correct answer, well done.</text>
+    </prtcorrect>
+    <prtpartiallycorrect format="html">
+      <text>Your answer is partially correct.</text>
+    </prtpartiallycorrect>
+    <prtincorrect format="html">
+      <text>Incorrect answer.</text>
+    </prtincorrect>
+    <multiplicationsign>dot</multiplicationsign>
+    <sqrtsign>1</sqrtsign>
+    <complexno>i</complexno>
+    <inversetrig>cos-1</inversetrig>
+    <logicsymbol>lang</logicsymbol>
+    <matrixparens>[</matrixparens>
+    <variantsselectionseed></variantsselectionseed>
+    <input>
+      <name>ans1</name>
+      <type>matrix</type>
+      <tans>ta1</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>1</showvalidation>
+      <options></options>
+    </input>
+    <input>
+      <name>ans2</name>
+      <type>matrix</type>
+      <tans>ta2</tans>
+      <boxsize>10</boxsize>
+      <strictsyntax>1</strictsyntax>
+      <insertstars>0</insertstars>
+      <syntaxhint></syntaxhint>
+      <syntaxattribute>0</syntaxattribute>
+      <forbidwords></forbidwords>
+      <allowwords></allowwords>
+      <forbidfloat>1</forbidfloat>
+      <requirelowestterms>0</requirelowestterms>
+      <checkanswertype>0</checkanswertype>
+      <mustverify>1</mustverify>
+      <showvalidation>1</showvalidation>
+      <options></options>
+    </input>
+    <prt>
+      <name>prt1</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>wronganswer1:ev(-A,simp);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>ta1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt1-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans1</sans>
+        <tans>wronganswer1</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt1-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>It appears you have given the matrix \(\bf -A\)! This is not the inverse matrix. Please try again!<br></p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt1-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <prt>
+      <name>prt2</name>
+      <value>1.0000000</value>
+      <autosimplify>1</autosimplify>
+      <feedbackstyle>1</feedbackstyle>
+      <feedbackvariables>
+        <text>wronganswer2:ev(-B,simp);</text>
+      </feedbackvariables>
+      <node>
+        <name>0</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>ta2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>=</truescoremode>
+        <truescore>1.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-1-T</trueanswernote>
+        <truefeedback format="html">
+          <text></text>
+        </truefeedback>
+        <falsescoremode>=</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>1</falsenextnode>
+        <falseanswernote>prt2-1-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+      <node>
+        <name>1</name>
+        <answertest>AlgEquiv</answertest>
+        <sans>ans2</sans>
+        <tans>wronganswer2</tans>
+        <testoptions></testoptions>
+        <quiet>0</quiet>
+        <truescoremode>+</truescoremode>
+        <truescore>0.0000000</truescore>
+        <truepenalty></truepenalty>
+        <truenextnode>-1</truenextnode>
+        <trueanswernote>prt2-2-T</trueanswernote>
+        <truefeedback format="html">
+          <text><![CDATA[<p>It appears you have given the matrix \(\bf -B\)! This is not the inverse matrix. Please try again!<br></p>]]></text>
+        </truefeedback>
+        <falsescoremode>-</falsescoremode>
+        <falsescore>0.0000000</falsescore>
+        <falsepenalty></falsepenalty>
+        <falsenextnode>-1</falsenextnode>
+        <falseanswernote>prt2-2-F</falseanswernote>
+        <falsefeedback format="html">
+          <text></text>
+        </falsefeedback>
+      </node>
+    </prt>
+    <deployedseed>1635662583</deployedseed>
+    <deployedseed>28586388</deployedseed>
+    <deployedseed>2132154867</deployedseed>
+    <deployedseed>2062942790</deployedseed>
+    <deployedseed>436909176</deployedseed>
+    <deployedseed>878864092</deployedseed>
+    <deployedseed>1538044859</deployedseed>
+    <deployedseed>1873402618</deployedseed>
+    <qtest>
+      <testcase>1</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta1</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta2</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-1-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>1.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-1-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>2</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ev(-A,simp)</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ev(-B,simp)</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-2-T</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-2-T</expectedanswernote>
+      </expected>
+    </qtest>
+    <qtest>
+      <testcase>3</testcase>
+      <testinput>
+        <name>ans1</name>
+        <value>ta2</value>
+      </testinput>
+      <testinput>
+        <name>ans2</name>
+        <value>ta1</value>
+      </testinput>
+      <expected>
+        <name>prt1</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt1-2-F</expectedanswernote>
+      </expected>
+      <expected>
+        <name>prt2</name>
+        <expectedscore>0.0000000</expectedscore>
+        <expectedpenalty>0.0000000</expectedpenalty>
+        <expectedanswernote>prt2-2-F</expectedanswernote>
+      </expected>
+    </qtest>
+  </question>
+
+</quiz>

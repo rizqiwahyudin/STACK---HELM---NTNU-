@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>11.2.1.1 Table of derivatives</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Table of derivatives
+    </span>
+    <span class="multilang" lang="no">
+        Tabell over derivativer
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        The table below lists some of the common functions used in engineering and their corresponding derivatives. Remember that in each case the function in the right-hand column gives the rate of change, or the gradient of the graph, of the function on the left at a particular value of \(x\).
+N.B. The angle must always be in radians when differentiating trigonometric functions.
+    </span>
+    <span class="multilang" lang="no">
+        Tabellen under lister opp noen av de vanlige funksjonene som brukes i ingeni&#248;rfag og deres tilh&#248;rende derivater. Husk at i hvert tilfelle gir funksjonen i h&#248;yre kolonne endringstakten, eller stigningen til grafen, av funksjonen til venstre p&#229; en bestemt verdi av \(x\).
+Obs. Vinkelen m&#229; alltid v&#230;re i radianer n&#229;r man deriverer trigonometriske funksjoner.
+    </span>
+</p>
+<table class="HELM_table">
+    <thead>
+        <tr>
+            <th>
+                <p>
+                    <span class="multilang" lang="en">
+                        Function
+                    </span>
+                    <span class="multilang" lang="no">
+                        Funksjon
+                    </span>
+                </p>
+            </th>
+            <th>
+                <p>
+                    <span class="multilang" lang="en">
+                        Derivative
+                    </span>
+                    <span class="multilang" lang="no">
+                        Den deriverte.
+                    </span>
+                </p>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <p>
+                    <span class="multilang" lang="en">
+                        constant
+                    </span>
+                    <span class="multilang" lang="no">
+                        konstant
+                    </span>
+                </p>
+            </td>
+            <td>
+                0
+            </td>
+        </tr>
+        <tr>
+            <td>
+                \(x\)
+            </td>
+            <td>
+                \(1\)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                \(kx\)
+            </td>
+            <td>
+                \(k\)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                \(x^n\)
+            </td>
+            <td>
+                \(nx^{n-1}\)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                \(kx^n\)
+            </td>
+            <td>
+                \(knx^{n-1}\)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                \(e^x\)
+            </td>
+            <td>
+                \(e^x\)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                \(e^{kx}\)
+            </td>
+            <td>
+                \(ke^{kx}\)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                \(\ln x\)
+            </td>
+            <td>
+                \(1/x\)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                \(\ln kx\)
+            </td>
+            <td>
+                \(1/x\)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                \(\sin x\)
+            </td>
+            <td>
+                \(\cos x\)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                \(\sin kx\)
+            </td>
+            <td>
+                \(k \cos kx\)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                \(\sin (kx + c)\)
+            </td>
+            <td>
+                \(k \cos (kx + c) \)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                \(\cos x\)
+            </td>
+            <td>
+                \(-\sin x\)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                \(\cos kx\)
+            </td>
+            <td>
+                \(-k \sin kx\)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                \(\cos (kx + c)\)
+            </td>
+            <td>
+                \(-k \sin (kx + c) \)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                \(\tan x\)
+            </td>
+            <td>
+                \(\sec^2 x\)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                \(\tan kx\)
+            </td>
+            <td>
+                \(k \sec^2 kx\)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                \(\tan (kx + c)\)
+            </td>
+            <td>
+                \(k \sec^2 (kx + c) \)
+            </td>
+        </tr>
+    </tbody>
+</table>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

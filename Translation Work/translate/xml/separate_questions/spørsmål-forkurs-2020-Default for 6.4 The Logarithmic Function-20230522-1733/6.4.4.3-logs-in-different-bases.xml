@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>6.4.4.3 Logs in different bases</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<br/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Solve for \(x\) if \(3\ln x+4\log_{10} x=1\).
+    </span>
+    <span class="multilang" lang="no">
+        Finn \(x\) hvis \(3\ln x+4\log_{10} x=1\).
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        This has logs to two different bases. So we must first express each logarithm in terms of logs to the
+        <i>
+            same
+        </i>
+        base, \(e\) say Recall
+    </span>
+    <span class="multilang" lang="no">
+        Vi har logaritmer med to forskjellige baser. F&#248;rst m&#229; vi uttrykke hver logaritme med
+        <i>
+            samme
+        </i>
+        base, \(e\). Husk at
+    </span>
+</p>
+\[\log_{10} x=\dfrac{\ln x}{\ln 10}.\] S&#229; \(3\ln x+4\log x=1\) blir \[ 3\ln x+4\dfrac{\ln x}{\ln 10}=1\qquad\text{eller}\qquad \left(3+\dfrac{4}{\ln 10}\right)\ln x=1\] Dette leder til \(\ln x=\dfrac{\ln 10}{3\ln 10 +4}=\dfrac{2.302585}{10.907755}=0.211096\)
+slik at \[ x=e^{0.211096}=1.2350311.\]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

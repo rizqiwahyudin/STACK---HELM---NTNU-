@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>6.4.2.4 Solving quadratics involving exponentials</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<br/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Find \(x\) if \(10^x-5+6(10^{-x})=0\).
+    </span>
+    <span class="multilang" lang="no">
+        Bestem \(x\) hvis \(10^x-5+6(10^{-x})=0\).
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        We first simplify this expression by multiplying through by \(10^x\) (to eliminate the
+                term \(10^{-x}\)):
+                \[10^x(10^x)-10^x(5)+10^x(6(10^{-x}))=0,\]
+                or
+        \[(10^{x})^2-5(10^x)+6=0\qquad\text{since}\qquad 10^x(10^{-x})=10^0=1.\]
+    </span>
+    <span class="multilang" lang="no">
+        Vi forenkler f&#248;rst dette uttrykket ved &#229; multiplisere med \(10^x\) (for &#229; eliminere \(10^{-x}\)):
+                    \[10^x(10^x)-10^x(5)+10^x(6(10^{-x}))=0,\]
+                    eller
+                    \[(10^{x})^2-5(10^x)+6=0\qquad\text{siden}\qquad 10^x(10^{-x})=10^0=1.\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We realise that this expression is a
+        <b>
+            quadratic equation
+        </b>
+        . Let us put
+                \(y=10^x\) to give
+        \[y^2-5y+6=0.\]
+    </span>
+    <span class="multilang" lang="no">
+        Vi innser at dette uttrykket er en
+        <b>
+            andregradsligning
+        </b>
+        . La oss sette
+                    \(y=10^x\) for &#229; f&#229;
+                    \[y^2-5y+6=0.\]
+    </span>
+</p>
+<span class="multilang" lang="en">
+    Now, we can factorise to give
+        \[(y-3)(y-2)=0 \qquad \text{so that}\qquad y=3\quad\text{or}\quad y=2.\]
+</span>
+<span class="multilang" lang="no">
+    N&#229; kan vi faktorisere 
+\[(y-3)(y-2)=0 \qquad \text{slik at}\qquad y=3\quad\text{eller}\quad y=2.\]
+</span>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        For each of these values of \(y\) we obtain a separate value for \(x\) since \(y=10^x\)
+    </span>
+    <span class="multilang" lang="no">
+        For hver av disse verdiene av \(y\) f&#229;r vi en egen verdi for \(x\) siden \(y=10^x\)
+    </span>
+    .
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        <b>
+            Case 1
+        </b>
+        If \(y=3\) then \(3=10^x\) implying \(x=\log_{10} 3=0.4771212\).
+    </span>
+    <span class="multilang" lang="no">
+        <b>
+            Tilfelle 1
+        </b>
+        Hvis \(y=3\) s&#229; er \(3=10^x\) som impliserer at \(x=\log_{10} 3=0,4771212\).
+    </span>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        <b>
+            Case 2
+        </b>
+        If \(y=2\) then \(2=10^x\) implying \(x=\log_{10} 2=0.3010300\).
+    </span>
+    <span class="multilang" lang="no">
+        <b>
+            Tilfelle 2
+        </b>
+        Hvis \(y=2\) s&#229; er \(2=10^x\) som impliserer at \(x=\log_{10} 2=0,3010300\).
+    </span>
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We conclude that the equation \(10^x-5+6(10^{-x})=0\) has two possible solutions for \(x\): either \(x=\log_{10} 3\) or \(x=\log_{10} 2\).
+    </span>
+    <span class="multilang" lang="no">
+        Vi konkluderer med at ligningen \(10^x-5+6(10^{-x})=0\) har to mulige l&#248;sninger for \(x\): enten \(x=\log_{10} 3\) eller \(x=\log_{10} 2\).
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

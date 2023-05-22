@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>8.2.3.1 Example 3x3 linear system inverse matrix method</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h5>
+    <span class="multilang" lang="en">
+        Solving three equations in three unknowns
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;se tre ligninger med tre ukjente.
+    </span>
+</h5>
+<p>
+    <span class="multilang" lang="en">
+        It is much more tedious to use the inverse matrix to solve a system of three equations although in principle, the method is the same as for two equations.
+    </span>
+    <span class="multilang" lang="no">
+        Det er mye mer kjedelig &#229; bruke den inverse matrisen for &#229; l&#248;se et system med tre ligninger selv om prinsippet er det samme som for to ligninger.
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Consider the system \[\begin{matrix}
+                                x_1 &amp;- &amp; 2x_2 &amp; + &amp; x_3 &amp; = &amp; 3\\
+                                2x_1 &amp; + &amp; x_2 &amp; - &amp; x_3 &amp; = &amp; 5\\
+                                3x_1 &amp; - &amp; x_2 &amp; + &amp; 2x_3 &amp; = &amp; 12 \\
+                                \end{matrix}\]
+    </span>
+    <span class="multilang" lang="no">
+        Vi ser p&#229; systemet \[\begin{matrix}
+                                x_1 &amp;- &amp; 2x_2 &amp; + &amp; x_3 &amp; = &amp; 3\\
+                                2x_1 &amp; + &amp; x_2 &amp; - &amp; x_3 &amp; = &amp; 5\\
+                                3x_1 &amp; - &amp; x_2 &amp; + &amp; 2x_3 &amp; = &amp; 12 \\
+                                \end{matrix}\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        and its matrix form \(AX = B\). One can find that \(|A|=10\) (check it!). Hence \(A^{-1}\) exists.
+    </span>
+    <span class="multilang" lang="no">
+        og matrisen kan skrives som \(AX = B\). Vi kan se at \(|A|=10\) (sjekk det!). Derfor eksisterer \(A^{-1}\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Solve it using the inverse matrix method.
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;s den ved &#229; bruke metoden med inversmatrisen.
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<ol class="HELM_parts_inline">
+    <li>
+        <span class="multilang" lang="en">
+            Find \(A^{-1}\) by the method of determinants.
+        </span>
+        <span class="multilang" lang="no">
+            Finn \(A^{-1}\) ved hjelp av metoden av determinanter.
+        </span>
+    </li>
+    <p>
+        <span class="multilang" lang="en">
+            Form the matrix where each element of \(A\) is replaced by its minor:
+        </span>
+        <span class="multilang" lang="no">
+            Dann matrisen der hvert element i \(A\) er erstattet av sin minor:
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            \(\left[\begin{array}{ccc}\left|\begin{array}{rr}1&amp;-1\\
+                                                -1&amp;2\end{array}\right|&amp;\left|\begin{array}{rr}2&amp;-1\\
+                                                3&amp;2\end{array}\right|&amp;\left|\begin{array}{rr}2&amp;1\\ 3&amp;-1\end{array}\right|\\
+                                                \\
+                                                \left|\begin{array}{rr}-2&amp;1\\ -1&amp;2\end{array}\right|&amp;\left|\begin{array}{cc}1&amp;1\\
+                                                3&amp;2\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-2\\ 3&amp;-1\end{array}\right|\\
+                                                \\
+                                                \left|\begin{array}{rr}-2&amp;1\\ 1&amp;-1\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;1\\
+                                                2&amp;-1\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-2\\
+                                                2&amp;1\end{array}\right|\end{array}\right]=\left[\begin{array}{rrr}1&amp;7&amp;-5\\ -3&amp;-1&amp;5\\
+                                                1&amp;-3&amp;5\end{array}\right].\)
+        </span>
+        <span class="multilang" lang="no">
+            \(\left[\begin{array}{ccc}\left|\begin{array}{rr}1&amp;-1\\
+                                                -1&amp;2\end{array}\right|&amp;\left|\begin{array}{rr}2&amp;-1\\
+                                                3&amp;2\end{array}\right|&amp;\left|\begin{array}{rr}2&amp;1\\ 3&amp;-1\end{array}\right|\\
+                                                \\
+                                                \left|\begin{array}{rr}-2&amp;1\\ -1&amp;2\end{array}\right|&amp;\left|\begin{array}{cc}1&amp;1\\
+                                                3&amp;2\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-2\\ 3&amp;-1\end{array}\right|\\
+                                                \\
+                                                \left|\begin{array}{rr}-2&amp;1\\ 1&amp;-1\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;1\\
+                                                2&amp;-1\end{array}\right|&amp;\left|\begin{array}{rr}1&amp;-2\\
+                                                2&amp;1\end{array}\right|\end{array}\right]=\left[\begin{array}{rrr}1&amp;7&amp;-5\\ -3&amp;-1&amp;5\\
+                                                1&amp;-3&amp;5\end{array}\right].\)
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            Now use the \(3\times 3\) array of signs to obtain the matrix of cofactors:
+        </span>
+        <span class="multilang" lang="no">
+            Bruk n&#229; \(3\times 3\) matrisen for fortegn for &#229; finne matrisen av kofaktorer:
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            The array of signs is \[\left[\begin{matrix}
+                                                +&amp;-&amp;+\\
+                                                -&amp;+&amp;-\\
+                                                +&amp;-&amp;+ \\
+                                                \end{matrix}\right]\] so that we obtain \[\left[\begin{matrix}
+                                                1&amp;-7&amp;-5\\
+                                                3&amp;-1&amp;-5\\
+                                                1&amp;3&amp;5 \\
+                                                \end{matrix}\right].\]
+        </span>
+        <span class="multilang" lang="no">
+            Matrisen av fortegn er \[\left[\begin{matrix}
+                                                +&amp;-&amp;+\\
+                                                -&amp;+&amp;-\\
+                                                +&amp;-&amp;+ \\
+                                                \end{matrix}\right]\] slik at vi f&#229;r \[\left[\begin{matrix}
+                                                1&amp;-7&amp;-5\\
+                                                3&amp;-1&amp;-5\\
+                                                1&amp;3&amp;5 \\
+                                                \end{matrix}\right].\]
+        </span>
+    </p>
+    <li>
+        <span class="multilang" lang="en">
+            Transpose this matrix and divide by \(|A|\) to obtain \(A^{-1}\).
+        </span>
+        <span class="multilang" lang="no">
+            Transponer denne matrisen og del p&#229; \(|A|\) for &#229; f&#229; \(A^{-1}\).
+        </span>
+    </li>
+    <p>
+        <span class="multilang" lang="en">
+            Transposing gives \[\left[\begin{matrix}
+                                                1&amp;3&amp;1\\
+                                                -7&amp;-1&amp;3\\
+                                                -5&amp;-5&amp;5 \\
+                                                \end{matrix}\right].\] Finally, \[A^{-1} = \frac{1}{10}
+                                                \left[\begin{matrix}
+                                                1&amp;3&amp;1 \\
+                                                -7&amp;-1&amp;3 \\
+                                                -5&amp;-5&amp;5 \\
+                                                \end{matrix}\right].\]
+        </span>
+        <span class="multilang" lang="no">
+            Transponering gir \[\left[\begin{matrix}
+                1&amp;3&amp;1\\
+                -7&amp;-1&amp;3\\
+                -5&amp;-5&amp;5 \\
+                \end{matrix}\right].\] Til slutt, \[A^{-1} = \frac{1}{10}
+                \left[\begin{matrix}
+                1&amp;3&amp;1 \\
+                -7&amp;-1&amp;3 \\
+                -5&amp;-5&amp;5 \\
+                \end{matrix}\right].\]
+        </span>
+    </p>
+    <li>
+        <span class="multilang" lang="en">
+            Now use \(X=A^{-1} B\) to solve the system of linear equations.
+        </span>
+        <span class="multilang" lang="no">
+            Bruk n&#229; \(X=A^{-1} B\) til &#229; l&#248;se systemet med line&#230;re ligninger
+        </span>
+    </li>
+    <p>
+        \[X=\frac{1}{10}\left[\begin{matrix}1&amp;3&amp;1\\ -7&amp;-1&amp;3\\
+                                                -5&amp;-5&amp;5\end{matrix}\right]\left[\begin{matrix} 3\\ 5\\
+                                                12\end{matrix}\right]=\frac{1}{10}\left[\begin{matrix}30\\ 10\\
+                                                20\end{matrix}\right]=\left[\begin{matrix} 3\\ 1\\ 2\end{matrix}\right]\] Then \(x_1=3,\ x_2=1,\ x_3=2\).
+    </p>
+</ol>
+<p>
+</p>
+<hr/>
+<p>
+    <span class="multilang" lang="en">
+        This approach, and another known as Cramer's rule (which is not covered here) are both rather tedious! The advantage of the inverse matrix method is that we can determine when there is a unique solution and we can operate on matrix equations abstractly, i.e. if we have \(AX+B=C\) and we know that \(A\) has an inverse then we can rewrite \(X=A^{-1}(C-B)\). By this we can simplify a problem algebraically before attempting any calculations.
+    </span>
+    <span class="multilang" lang="no">
+        Denne metoden, og en annen som kalles Cramers regel (som ikke dekkes her) er begge ganske kjedelige! Fordelen med inversmatrise-metoden er at vi kan avgj&#248;re n&#229;r det finnes en unik l&#248;sning og at vi kan operere p&#229; matrise-ligninger abstrakt, dvs. hvis vi har \(AX+B=C\) og vi vet at \(A\) har en invers kan vi omskrive dette til \(X=A^{-1}(C-B)\). P&#229; denne m&#229;ten kan vi forenkle et problem algebraisk f&#248;r vi pr&#248;ver noen beregninger.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        There are cases where the matrix is more simple than a general \(3 \times 3\) matrix due to the presence of zeros. In these cases the calculation will take less time and become more feasible.
+    </span>
+    <span class="multilang" lang="no">
+        Det er tilfeller der matrisen er enklere enn en generell \(3 \times 3\) matrise p&#229; grunn av tilstedev&#230;relsen av nuller. I disse tilfellene vil beregningen ta mindre tid og bli mer gjennomf&#248;rbar.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We will soon see Gaussian elimination which is superior method for general matrices.
+    </span>
+    <span class="multilang" lang="no">
+        Vi vil snart se Gauss-eliminasjon, som er en overlegen metode for generelle matriser.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

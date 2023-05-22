@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>3.2.3.1 Completing the Square</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Completing the square
+    </span>
+    <span class="multilang" lang="no">
+        Fullf&#248;r kvadratet
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        The technique known as completing the square can be used to solve quadratic equations although it is applicable in many other circumstances too so it is well worth studying.
+    </span>
+    <span class="multilang" lang="no">
+        Teknikken kjent som &#229; fullf&#248;re kvadratet kan brukes til &#229; l&#248;se kvadratiske ligninger og er anvendelig i mange andre omstendigheter ogs&#229;, s&#229; den er vel verdt &#229; studere.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Observe that the quadratic \(x^2+c=0\), is more easily solved than \(x^2+bx+c=0\). The method of completing the square involves rewriting the equation so that the variable \(x\) appears only in the square term. That is, we can write \( (x+d)^2+e=0\) for suitable numbers \(d,e\). This form is not just easier to solve, it reveals more information about the graph of \(y=x^2+ax+c\), and will be used to simplify expressions appearing in later material such as in calculus.
+    </span>
+    <span class="multilang" lang="no">
+        Merke at kvadratet \(x^2+c=0\), er lettere &#229; l&#248;se enn \(x^2+bx+c=0\). Metoden for &#229; fullf&#248;re kvadratet inneb&#230;rer &#229; omskrive ligningen slik at variabelen \(x\) bare vises i kvadratleddet. Det vil si at vi kan skrive \( (x+d)^2+e=0\) for passende tall \(d,e\). Denne formen er ikke bare enklere &#229; l&#248;se, den avsl&#248;rer mer informasjon om grafen til \(y=x^2+ax+c\), og vil bli brukt til &#229; forenkle uttrykk som vises i senere materiale, for eksempel i kalkulus.
+    </span>
+    <br/>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<ol class="HELM_parts_inline">
+    <p>
+    </p>
+    <li>
+        <span class="multilang" lang="en">
+            Show that \((x+3)^2=x^2+6x+9\).
+        </span>
+        <span class="multilang" lang="no">
+            Vis at \((x+3)^2=x^2+6x+9\).
+        </span>
+    </li>
+    <p>
+    </p>
+    <p>
+    </p>
+    <li>
+        <span class="multilang" lang="en">
+            Hence show that \(x^2+6x\) can be written as \((x+3)^2 - 9\).
+        </span>
+        <span class="multilang" lang="no">
+            Vis at \(x^2+6x\) derfor kan skrives som \((x+3)^2 - 9\).
+        </span>
+    </li>
+    <p>
+    </p>
+</ol>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<ol class="HELM_parts">
+    <li>
+        <span class="multilang" lang="en">
+            Removing the brackets we find
+        </span>
+        <span class="multilang" lang="no">
+            Ved &#229; &#229;pne parantesene ser vi at
+        </span>
+        \[(x+3)^2= (x+3)(x+3) = x^2 +3x+3x + 9 = x^2 +6x + 9.\]
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            By subtracting \(9\) from both sides of the previous equation it follows that
+        </span>
+        <span class="multilang" lang="no">
+            Ved &#229; subtrahere \(9\) fra begge sider av den forrige ligningen f&#248;lger det at
+        </span>
+        \[(x+3)^2-9 = x^2+6x.\]
+    </li>
+</ol>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<ol class="HELM_parts_inline">
+    <p>
+    </p>
+    <li>
+        <span class="multilang" lang="en">
+            Show that
+        </span>
+        <span class="multilang" lang="no">
+            Vis at
+        </span>
+        \((x-4)^2= x^2-8x+16\).
+    </li>
+    <p>
+    </p>
+    <p>
+    </p>
+    <li>
+        <span class="multilang" lang="en">
+            Hence show that \(x^2-8x\) can be written as \((x-4)^2-16\).
+        </span>
+        <span class="multilang" lang="no">
+            Vis at \(x^2-8x\) derfor kan skrives som \((x-4)^2-16\).
+        </span>
+    </li>
+    <p>
+    </p>
+</ol>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<ol class="HELM_parts">
+    <li>
+        <span class="multilang" lang="en">
+            Removing the brackets we find \[(x-4)^2= (x-4)(x-4) = x^2-4x-4x+16 = x^2-8x+16.\]
+        </span>
+        <span class="multilang" lang="no">
+            Ved &#229; &#229;pne parantesene finner vi at \[(x-4)^2= (x-4)(x-4) = x^2-4x-4x+16 = x^2-8x+16.\]
+        </span>
+    </li>
+    <li>
+        <span class="multilang" lang="en">
+            Subtracting \(16\) from both sides we can write \[(x-4)^2-16 = x^2-8x.\]
+        </span>
+        <span class="multilang" lang="no">
+            Ved &#229; trekke \(16\) fra begge sider kan vi skrive \[(x-4)^2-16 = x^2-8x.\]
+        </span>
+    </li>
+</ol>
+<span class="multilang" lang="en">
+    We shall now generalise the results of the previous two examples. Noting that
+</span>
+<span class="multilang" lang="no">
+    Vi skal n&#229; generalisere resultatene av de to foreg&#229;ende eksemplene. Legg merke til at
+</span>
+<p>
+    \[(x+k)^2=x^2+2kx+k^2\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        we can write
+    </span>
+    <span class="multilang" lang="no">
+        vi kan skrive
+    </span>
+</p>
+<p>
+    \[ x^2+2kx = (x+k)^2 - k^2.\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Note that the constant term in the brackets on the right-hand side is always half the coefficient of \(x\) on the left. This process is called
+        <b>
+            completing the square
+        </b>
+        .
+    </span>
+    <span class="multilang" lang="no">
+        Merk at konstantleddet i parentes p&#229; h&#248;yre side alltid er halvparten av koeffisienten (\(2k\)) foran \(x\) p&#229; venstre side. Denne prosessen er kjent som
+        <b>
+            &#229; fullf&#248;re kvadratet
+        </b>
+        .
+    </span>
+</p>
+<hr/>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <p>
+        <b>
+            <span class="multilang" lang="en">
+                Completing the Square
+            </span>
+            <span class="multilang" lang="no">
+                Fullf&#248;r kvadratet
+            </span>
+        </b>
+    </p>
+    <p>
+        <span>
+        </span>
+    </p>
+    <p style="">
+        \[\qquad \hbox{
+        <span class="multilang" lang="en">
+            The expression
+        </span>
+        <span class="multilang" lang="no">
+            Uttrykket
+        </span>
+        }\quad x^2+2kx \quad\hbox{
+        <span class="multilang" lang="en">
+            is equivalent to
+        </span>
+        <span class="multilang" lang="no">
+            tilsvarer
+        </span>
+        }\quad (x+k)^2 -k^2.\]
+    </p>
+    <p>
+    </p>
+</div>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Complete the square for the expression
+    </span>
+    <span class="multilang" lang="no">
+        Fullf&#248;r kvadratet for uttrykket
+    </span>
+    \(x^2+16x\).
+</p>
+<p>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Comparing \(x^2+16x\) with the general form \(x^2+2kx\) we see that \(k=8\). Hence
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; sammenligne \(x^2+16x\) med den generelle formen \(x^2+2kx\) ser vi at \(k=8\). Dermed er
+    </span>
+</p>
+\[x^2+16x = (x+8)^2 - 8^2 = (x+8)^2-64\]
+<p>
+    <span class="multilang" lang="en">
+        Note that the constant term in the brackets on the right, that is \(8\), is half the coefficient of \(x\) on the left, which is \(16\).
+    </span>
+    <span class="multilang" lang="no">
+        Merk at konstantleddet i parentes til h&#248;yre, det vil si \(8\), er halvparten av koeffisienten til \(x\) til venstre, som er \(16\).
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Complete the square for the expression \(5x^2+4x\).
+    </span>
+    <span class="multilang" lang="no">
+        Fullf&#248;r kvadratet til \(5x^2+4x\).
+    </span>
+</p>
+<p>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Consider \(5x^2+4x\). First of all the coefficient \(5\) is removed outside a bracket as follows
+    </span>
+    <span class="multilang" lang="no">
+        Vurder \(5x^2+4x\). F&#248;rst av alt fjernes koeffisienten \(5\) utenfor en parentes som f&#248;lger
+    </span>
+</p>
+<p>
+    \[ 5x^2+4x = 5\left(x^2+{4\over 5}x\right).\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We can now complete the square for the quadratic expression in the brackets:
+    </span>
+    <span class="multilang" lang="no">
+        Vi kan n&#229; fullf&#248;re kvadratet for det kvadratiske uttrykket i parentes:
+    </span>
+</p>
+<p>
+    \[ x^2+{4\over 5}x = \left(x+{2\over 5}\right)^2 - \left({2\over 5}\right)^2 = \left(x+{2\over 5}\right)^2-{4\over25}.\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Finally, multiplying both sides by \(5\) we find
+    </span>
+    <span class="multilang" lang="no">
+        Til slutt, multiplisere vi begge sider med \(5\) og finner
+    </span>
+</p>
+<p>
+    \[ 5x^2 + 4x = 5\left(\left(x+{2\over 5}\right)^2- {4\over 25}\right).\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Completing the square can be used to solve quadratic equations as shown in the following examples.
+    </span>
+    <span class="multilang" lang="no">
+        &#197; fullf&#248;re kvadratet kan brukes til &#229; l&#248;se andregradsligninger som vist i de f&#248;lgende eksemplene.
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Solve the equation \(x^2+6x+2=0\) by completing the square.
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;s ligningen \(x^2+6x+2=0\) ved &#229; fullf&#248;re kvadratet.
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        First of all just consider \(x^2+6x\), and note that we can write this as \[x^2+6x = (x+3)^2 - 9.\]
+    </span>
+    <span class="multilang" lang="no">
+        F&#248;rst av alt bare tenk p&#229; \(x^2+6x\), og merk at vi kan skrive dette som \[x^2+6x = (x+3)^2 - 9.\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Then the quadratic equation can be written as
+    </span>
+    <span class="multilang" lang="no">
+        Da kan andregradsligningen skrives som
+    </span>
+</p>
+<p>
+    \[x^2+6x+2= (x+3)^2-9 + 2&#160; =0\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        that is
+    </span>
+    <span class="multilang" lang="no">
+        alts&#229;
+    </span>
+</p>
+<p>
+    \[ (x+3)^2 = 7.\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Taking the square root of both sides gives
+    </span>
+    <span class="multilang" lang="no">
+        &#197; ta kvadratroten p&#229; begge sider gir
+    </span>
+</p>
+<p>
+    \[x+3 = \pm \sqrt 7\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        so \(x = -3 \pm \sqrt 7\). The two solutions are \(x=-3+\sqrt{7}=-0.3542\) and \(x=-3-\sqrt{7}=-5.6458\), to 4 d.p.
+    </span>
+    <span class="multilang" lang="no">
+        s&#229; \(x = -3 \pm \sqrt 7\). De to l&#248;sningene er \(x=-3+\sqrt{7}=-0,3542\) og \(x=-3-\sqrt{7}=-5,6458\), med 4 desimaler.
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Solve the equation \(x^2-8x+5=0\).
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;s ligningen \(x^2-8x+5=0\).
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        First consider \(x^2-8x\) which we can write as
+    </span>
+    <span class="multilang" lang="no">
+        Vurder f&#248;rst \(x^2-8x\) som vi kan skrive som
+    </span>
+</p>
+<p>
+    \[x^2-8x&#160; = (x-4)^2 -16\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        so that the equation becomes
+    </span>
+    <span class="multilang" lang="no">
+        slik at uttrykket blir
+    </span>
+</p>
+<p>
+    \[x^2-8x+5 = (x-4)^2-16 + 5 = 0.\]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        i.e \[(x-4)^2 = 11 \text{ implies } x-4 = \pm\sqrt{11} \text{ and hence } x= 4 \pm \sqrt{11}.\]
+    </span>
+    <span class="multilang" lang="no">
+        dvs. \[(x-4)^2 = 11 \text{ impliserer } x-4 = \pm\sqrt{11} \text{ og dermed } x= 4 \pm \sqrt{11}.\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        So \(x=7.3166\) or \(x= 0.6834\) (to 4 d.p.).
+    </span>
+    <span class="multilang" lang="no">
+        S&#229; \(x=7.3166\) eller \(x= 0.6834\) (med 4 desimaler.).
+    </span>
+</p>
+<p>
+</p>
+<p>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

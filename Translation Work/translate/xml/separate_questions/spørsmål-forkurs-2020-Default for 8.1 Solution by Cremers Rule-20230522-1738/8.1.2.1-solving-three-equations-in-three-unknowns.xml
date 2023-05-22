@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>8.1.2.1 Solving three equations in three unknowns</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Solving three equations in three unknowns
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;se tre ligninger med tre ukjente.
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Cramer's rule can be extended to larger systems of simultaneous equations but the calculational effort increases rapidly as the size of the system increases. We quote Cramer's rule for a system of three equations.
+    </span>
+    <span class="multilang" lang="no">
+        Cramers regel kan utvides til st&#248;rre systemer av samtidige ligninger, men beregningsinnsatsen &#248;ker raskt n&#229;r st&#248;rrelsen p&#229; systemet &#248;ker. Vi nevner Cramers regel for et system med tre ligninger.
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+            <br/>
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt.
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            The unique solution to the system of equations:
+        </span>
+        <span class="multilang" lang="no">
+            Den unike l&#248;sningen av systemet med likninger:
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            \(\begin{eqnarray*}a_{11}x_1+a_{12}x_2+a_{13}x_3&amp;=&amp;b_1\\ a_{21}x_1+a_{22}x_2+a_{23}x_3&amp;=&amp;b_2\\ a_{31}x_1+a_{32}x_2+a_{33}x_3&amp;=&amp;b_3\end{eqnarray*}\)
+        </span>
+        <span class="multilang" lang="no">
+            \(\begin{eqnarray*}a_{11}x_1+a_{12}x_2+a_{13}x_3&amp;=&amp;b_1\\ a_{21}x_1+a_{22}x_2+a_{23}x_3&amp;=&amp;b_2\\ a_{31}x_1+a_{32}x_2+a_{33}x_3&amp;=&amp;b_3\end{eqnarray*}\)
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            is
+        </span>
+        <span class="multilang" lang="no">
+            er
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            \(x_1=\dfrac{\Delta_{x_1}}{\Delta},\ \ x_2=\dfrac{\Delta_{x_2}}{\Delta},\ \ x_3=\dfrac{\Delta_{x_3}}{\Delta}\)
+        </span>
+        <span class="multilang" lang="no">
+            \(x_1=\dfrac{\Delta_{x_1}}{\Delta},\ \ x_2=\dfrac{\Delta_{x_2}}{\Delta},\ \ x_3=\dfrac{\Delta_{x_3}}{\Delta}\)
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            in which
+        </span>
+        <span class="multilang" lang="no">
+            hvor
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            \(\Delta=\left|\begin{array}{ccc}a_{11}&amp;a_{12}&amp;a_{13}\\ a_{21}&amp;a_{22}&amp;a_{23}\\ a_{31}&amp;a_{32}&amp;a_{33}\end{array}\right|\)
+        </span>
+        <span class="multilang" lang="no">
+            \(\Delta=\left|\begin{array}{ccc}a_{11}&amp;a_{12}&amp;a_{13}\\ a_{21}&amp;a_{22}&amp;a_{23}\\ a_{31}&amp;a_{32}&amp;a_{33}\end{array}\right|\)
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            and
+        </span>
+        <span class="multilang" lang="no">
+            og
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            \(\Delta_{x_1}=\left|\begin{array}{ccc}b_1&amp;a_{12}&amp;a_{13}\\ b_2&amp;a_{22}&amp;a_{23}\\ b_3&amp;a_{32}&amp;a_{33}\end{array}\right|\qquad \Delta_{x_2}=\left|\begin{array}{ccc}a_{11}&amp;b_1&amp;a_{13}\\ a_{21}&amp;b_2&amp;a_{23}\\ a_{31}&amp;b_3&amp;a_{33}\end{array}\right|\qquad
+                                \Delta_{x_3}=\left|\begin{array}{ccc}a_{11}&amp;a_{12}&amp;b_1\\ a_{21}&amp;a_{22}&amp;b_2\\ a_{31}&amp;a_{32}&amp;b_3\end{array}\right|\)
+        </span>
+        <span class="multilang" lang="no">
+            \(\Delta_{x_1}=\left|\begin{array}{ccc}b_1&amp;a_{12}&amp;a_{13}\\ b_2&amp;a_{22}&amp;a_{23}\\ b_3&amp;a_{32}&amp;a_{33}\end{array}\right|\qquad \Delta_{x_2}=\left|\begin{array}{ccc}a_{11}&amp;b_1&amp;a_{13}\\ a_{21}&amp;b_2&amp;a_{23}\\ a_{31}&amp;b_3&amp;a_{33}\end{array}\right|\qquad
+                                \Delta_{x_3}=\left|\begin{array}{ccc}a_{11}&amp;a_{12}&amp;b_1\\ a_{21}&amp;a_{22}&amp;b_2\\ a_{31}&amp;a_{32}&amp;b_3\end{array}\right|\)
+        </span>
+    </p>
+    <p>
+        <span class="multilang" lang="en">
+            If \(\Delta=0\) this method of&#160; solution cannot be used.
+        </span>
+        <span class="multilang" lang="no">
+            Hvis \(\Delta=0\), kan ikke denne l&#248;sningsmetoden brukes.
+        </span>
+    </p>
+</div>
+<p>
+    <span class="multilang" lang="en">
+        Notice that the structure of the fractions is similar to that for the two-equation case. For example, the determinant forming the numerator of \(x_1\) is obtained from the determinant of coefficients, \(\Delta\),
+                by replacing the first column by the right-hand sides of the equations.
+    </span>
+    <span class="multilang" lang="no">
+        Legg merke til at strukturen til br&#248;kene er lik den for to ligninger. For eksempel blir determinanten som utgj&#248;r telleren til  \(x_1\)  funnet ved &#229; erstatte den f&#248;rste kolonnen i koeffisientmatrisen med h&#248;yresidene av ligningene i determinanten, kalt  \(\Delta\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Notice too the increase in calculation: in the two-equation case we had to evaluate three \(2\times 2\) determinants, whereas in the three-equation case we have to evaluate four \(3\times 3\) determinants. Hence Cramer's rule is not really practicable for larger systems.
+    </span>
+    <span class="multilang" lang="no">
+        Legg merke til &#248;kningen i beregninger: i tilfellet med to ligninger m&#229;tte vi evaluere tre \((2 \times 2)\) determinanter, mens i tilfellet med tre ligninger m&#229; vi evaluere fire \((3 \times 3)\) determinanter. Dermed er ikke Cramers regel egentlig praktisk for st&#248;rre systemer.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

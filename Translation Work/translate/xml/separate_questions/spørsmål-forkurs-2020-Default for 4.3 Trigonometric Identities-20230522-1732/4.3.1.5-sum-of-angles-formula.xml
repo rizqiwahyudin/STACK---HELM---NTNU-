@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>4.3.1.5 Sum of angles formula</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Sum of angles identity
+    </span>
+    <span class="multilang" lang="no">
+        Sum av vinkler
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        This Key Point introduces two further important identities.
+    </span>
+    <span class="multilang" lang="no">
+        Dette n&#248;kkelpunktet introduserer to viktige identiteter.
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    \[\begin{aligned} \sin (A+B) &amp;\equiv \sin A\cos B+\cos A\sin B \qquad \qquad (1) \\ \cos(A+B) &amp;\equiv \cos A\cos B-\sin A\sin B \qquad \qquad (2) \end{aligned}\]
+</div>
+<p>
+    <span class="multilang" lang="en">
+        Note carefully the addition sign in \((1)\) but the subtraction sign in \((2)\). Further identities can readily be obtained from \((1)\) and \((2)\).
+    </span>
+    <span class="multilang" lang="no">
+        Legg n&#248;ye merke til addisjonstegnet i \((1)\), men subtraksjonstegnet i \((2)\). Ytterligere identiteter kan lett f&#229;s fra \((1)\) og \((2)\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Dividing \((1)\) by \((2)\) we obtain
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; dele \((1)\) med \((2)\) f&#229;r vi
+    </span>
+</p>
+\[\tan(A+B)\equiv \dfrac{\sin(A+B)}{\cos(A+B)}\equiv \dfrac{\sin A\cos B+\cos A\sin B}{\cos A\cos B-\sin A\sin B}\]
+<p>
+    <span class="multilang" lang="en">
+        Dividing every term by \(\cos A\ \cos B\) we obtain:
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; dele hvert ledd med \(\cos A\ \cos B\) f&#229;r vi:
+    </span>
+</p>
+\[\tan (A+B)\equiv \dfrac{\tan A+\tan B}{1-\tan A\tan B}\]
+<p>
+    <span class="multilang" lang="en">
+        Replacing \(B\) by \(-B\) in \((1)\) and \((2)\) and remembering that \(\cos (-B)\equiv \cos B\) and \(\sin(-B)\equiv -\sin B\) we find
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; erstatte \(B\) med \(-B\) i \((1)\) og \((2)\) og huske at \(\cos (-B)\equiv \cos B\) og \( \sin(-B)\equiv -\sin B\) finner vi at
+    </span>
+</p>
+\[\begin{aligned} \sin(A-B) &amp;\equiv \sin A\cos B-\cos A\sin B \\ \cos (A-B) &amp;\equiv \cos A\cos B+\sin A\sin B. \end{aligned}\]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

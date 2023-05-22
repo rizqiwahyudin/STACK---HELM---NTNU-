@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>15.152</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+</p>
+<p>
+</p>
+<p>
+    Figuren viser grafen til funksjonen \(f(x)={@exp@}\). Svaret skal v&#230;re et rasjonalt tall.
+</p>
+<p>
+</p>
+<pre><code>{@plot(exp,[x,-1,4],[y,-1,a+2],[box,false],[xlabel,"x"],[ylabel,"y"],[axes,solid],grid2d)@}</code></pre>
+<p>
+    Finn arealet av omr&#229;det i f&#248;rste kvadrant avgrenset av \(f\) og \(x-\)aksen.
+</p>
+<p>
+    [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+</p>
+<p>
+</p>
+]]></text>
+            <file name="image.png" path="/" encoding="base64">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</file>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text>a:1+rand(5)
+b:2*a
+exp:b*x-a*x^2
+ta:int(exp,x,0,2)</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote>
+            <text>\[ \int_{0}^{4} {@exp@} \,dx ={@ta@}\]</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>numerical</type>
+            <tans>ta</tans>
+            <boxsize>7</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>ta</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>252620646</deployedseed>
+        <deployedseed>1338683612</deployedseed>
+        <deployedseed>1609684288</deployedseed>
+        <deployedseed>484293636</deployedseed>
+        <deployedseed>902079715</deployedseed>
+    </question>
+    
+
+</quiz>

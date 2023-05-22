@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>10.2.3.1 Multiplication and division using polar coordinates</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Multiplication and Division of Complex Numbers in Polar form
+    </span>
+    <span class="multilang" lang="no">
+        Multiplikasjon og divisjon av komplekse tall i polar form.
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        Now we finally get to the true power of the polar form of a complex number. There is necessary effort in converting from cartesian form to polar form but then work makes multiplication and division much more convenient. To see why, let us consider two complex numbers in polar form: \[z=r(\cos\theta +i\sin \theta)\qquad w=t(\cos\phi +i\sin\phi ).\]
+
+    
+    
+    
+    Then the product \(zw\) is calculated in the usual way \[\begin{aligned}
+                                zw&amp;=[r\ (\cos\theta +i\sin \theta)][t\ (\cos\phi +i\sin\phi )]\\
+                                &amp;\equiv rt\ [\cos\theta\cos\phi -\sin\theta\sin\phi +i(\sin\theta\cos\phi
+                                +\cos\theta\sin\phi)]\qquad\qquad\qquad\qquad\qquad\quad\\
+                                &amp;\equiv rt\ [\cos (\theta +\phi)+i\sin (\theta + \phi )]\end{aligned}\] in which we have used the standard trigonometric identities \(
+                                \cos (\theta +\phi )\equiv \cos\theta\cos\phi -\sin\theta\sin\phi\qquad \sin
+                                (\theta + \phi )\equiv\sin\theta\cos\phi +\cos\theta\sin\phi.\) We see that in calculating the product that the moduli \(r\) and \(t\) multiply together whilst the arguments \(\text{arg}(z)=\theta\) and \(\text{arg}(w)=\phi\) add together.
+    </span>
+    <span class="multilang" lang="no">
+        N&#229; kommer vi endelig til den virkelige kraften i den polare formen til et komplekst tall. Det kreves en viss innsats for &#229; konvertere fra kartesisk form til polar form, men det gj&#248;r arbeidet multiplikasjon og divisjon mye mer praktisk. For &#229; se hvorfor, la oss vurdere to komplekse tall i polar form: \[z=r(\cos\theta +i\sin \theta)\qquad w=t(\cos\phi +i\sin\phi ).\]
+
+    
+    
+    
+    Da beregnes produktet \(zw\) p&#229; vanlig m&#229;te\[\begin{aligned}
+                                zw&amp;=[r\ (\cos\theta +i\sin \theta)][t\ (\cos\phi +i\sin\phi )]\\
+                                &amp;\equiv rt\ [\cos\theta\cos\phi -\sin\theta\sin\phi +i(\sin\theta\cos\phi
+                                +\cos\theta\sin\phi)]\qquad\qquad\qquad\qquad\qquad\quad\\
+                                &amp;\equiv rt\ [\cos (\theta +\phi)+i\sin (\theta + \phi )]\end{aligned}\] hvor vi har brukt standard trigonometriske identiteter \(
+                                \cos (\theta +\phi )\equiv \cos\theta\cos\phi -\sin\theta\sin\phi\qquad \sin
+                                (\theta + \phi )\equiv\sin\theta\cos\phi +\cos\theta\sin\phi.\) Vi ser at ved &#229; beregne produktet multipliseres modulusene \(r\) og \(t\) sammen mens argumentene \(\text{arg}(z)=\theta\) og \(\text{arg}(w)=\phi\) legges sammen.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>8.2.3.3 3x3 linear equations with no unique solution</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h5>
+    <span class="multilang" lang="en">
+        Equations with no unique solution
+    </span>
+    <span class="multilang" lang="no">
+        Ligninger uten en unik l&#248;sning
+    </span>
+</h5>
+<p>
+    <span class="multilang" lang="en">
+        If \(|A|=0\), \(A^{-1}\) does not exist and therefore it is easy to see that the system of equations has no unique solution. But it is not obvious whether this is because the equations are inconsistent and have no solution or whether they are consistent and have infinitely many solutions.
+    </span>
+    <span class="multilang" lang="no">
+        Hvis \(|A|=0\), eksisterer ikke \(A^{-1}\), og det er derfor lett &#229; se at ligningssystemet ikke har en unik l&#248;sning. Men det er ikke &#229;penbart om dette skyldes at likningene er inkonsistente og ikke har noen l&#248;sning, eller om de er konsistente og har uendelig mange l&#248;sninger.
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Consider the systems \[\text{(a)}\ \ \ \ \begin{array}{rrrrr}x_1-x_2+x_3&amp;=&amp;4\\
+                                2x_1+3x_2-2x_3&amp;=&amp;3\\
+                                3x_1+2x_2-x_3&amp;=&amp;7\end{array}
+                                \qquad\ \ \ \text{(b)}\ \ \ \ \begin{array}{rrrrr}x_1-x_2+x_3&amp;=&amp;4\\
+                                2x_1+3x_2-2x_3&amp;=&amp;3\\ x_1-11x_2+9x_3&amp;=&amp;13\end{array}\]
+    </span>
+    <span class="multilang" lang="no">
+        Betragt systemene \[\text{(a)}\ \ \ \ \begin{array}{rrrrr}x_1-x_2+x_3&amp;=&amp;4\\
+                                2x_1+3x_2-2x_3&amp;=&amp;3\\
+                                3x_1+2x_2-x_3&amp;=&amp;7\end{array}
+                                \qquad\ \ \ \text{(b)}\ \ \ \ \begin{array}{rrrrr}x_1-x_2+x_3&amp;=&amp;4\\
+                                2x_1+3x_2-2x_3&amp;=&amp;3\\ x_1-11x_2+9x_3&amp;=&amp;13\end{array}\]
+    </span>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <span class="multilang" lang="en">
+            In system (a) add the first equation to the second. What does this tell you about the system?
+        </span>
+        <span class="multilang" lang="no">
+            I system (a) legg den f&#248;rste ligningen til den andre. Hva forteller dette deg om systemet?
+        </span>
+    </li>
+    <p>
+        <span class="multilang" lang="en">
+            The sum is \(3x_1+2x_2-x_3=7\), which is identical to the third equation. Thus, essentially, there are only two equations \[\begin{matrix}
+                                                x_1 &amp; - &amp; x_2 &amp; + &amp; x_3 &amp; = &amp; 4 \\
+                                                3x_1 &amp; + &amp; 2x_2 &amp; - &amp; x_3 &amp; = &amp; 7 \\
+                                                \end{matrix}\] Now adding these two gives \(4x_1+x_2=11\) or, equivalently, \(x_2=11-4x_1\). Therefore, \[x_3=4-x_1+x_2=4-x_1+11-4x_1=15-5x_1\] Hence if we give \(x_1\) a value, \(t\) say, then \(x_2=11-4t\) and \(x_3=15-5t\). Thus there is an infinite number of solutions (one for each value of \(t\)).
+        </span>
+        <span class="multilang" lang="no">
+            Summen er \(3x_1+2x_2-x_3=7\), som er identisk med den tredje ligningen. Dermed er det i essens kun to ligninger: \[\begin{matrix}
+                                                x_1 &amp; - &amp; x_2 &amp; + &amp; x_3 &amp; = &amp; 4 \\
+                                                3x_1 &amp; + &amp; 2x_2 &amp; - &amp; x_3 &amp; = &amp; 7 \\
+                                                \end{matrix}\] Hvis vi legger disse to ligningene sammen, f&#229;r vi \(4x_1+x_2=11\), eller tilsvarende, \(x_2=11-4x_1\). Derfor er \[x_3=4-x_1+x_2=4-x_1+11-4x_1=15-5x_1\] Hvis vi gir \(x_1\) en verdi, si \(t\), s&#229; blir \(x_2=11-4t\) og \(x_3=15-5t\). Dermed er det et uendelig antall l&#248;sninger (en for hver verdi av \(t\)).
+        </span>
+    </p>
+    <li>
+        <span class="multilang" lang="en">
+            In system (b) take the combination \( 5 \) times the first equation minus \(2\) times the second equation. What does this tell you about the system?
+        </span>
+        <span class="multilang" lang="no">
+            I system (b) lag kombinasjonen \( 5 \) ganger den f&#248;rste ligningen minus \(2\) ganger den andre ligningen. Hva forteller dette deg om systemet?
+        </span>
+    </li>
+    <p>
+        <span class="multilang" lang="en">
+            The combination is \(x_1-11x_2+9x_3=14\), which conflicts with the third equation. There is thus no solution.
+        </span>
+        <span class="multilang" lang="no">
+            Kombinasjonen er \(x_1-11x_2+9x_3=14\), som strider med den tredje ligningen. Det finnes derfor ingen l&#248;sning.
+        </span>
+    </p>
+</ol>
+<p>
+</p>
+<hr/>
+<p>
+    <span class="multilang" lang="en">
+        In practice, systems containing three or more linear equations are best solved by Gauss Elimination.
+    </span>
+    <span class="multilang" lang="no">
+        I praksis l&#248;ses systemer med tre eller flere line&#230;re likninger best ved bruk av Gauss eliminering.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

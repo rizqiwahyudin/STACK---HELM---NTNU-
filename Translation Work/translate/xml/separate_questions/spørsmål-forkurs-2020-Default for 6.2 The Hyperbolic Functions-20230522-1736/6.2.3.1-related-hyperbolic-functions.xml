@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>6.2.3.1 Related hyperbolic functions</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Related Hyperbolic Functions
+    </span>
+    <span class="multilang" lang="no">
+        Relaterte hyperbolske funksjoner
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        Given the trigonometric functions \(\cos x,\sin x\) related functions can be defined; \(\tan x, \sec x, \rm cosec\) \(x\) through the relations: \(\tan x \equiv\dfrac{\sin x}{\cos x}\qquad \sec x\equiv\dfrac{1}{\cos x}\qquad{\rm cosec}\ x\equiv\dfrac{1}{\sin
+                                x}\qquad\cot x\equiv\dfrac{\cos x}{\sin x}\).
+    </span>
+    <span class="multilang" lang="no">
+        Gitt de trigonometriske funksjonene \(\cos x,\sin x\) kan relaterte funksjoner \(\tan x, \sec x, \rm cosec\) \(x\) defineres gjennom relasjonen: \(\tan x \equiv\dfrac{\sin x}{\cos x}\qquad \sec x\equiv\dfrac{1}{\cos x}\qquad{\rm cosec}\ x\equiv\dfrac{1}{\sin
+                                x}\qquad\cot x\equiv\dfrac{\cos x}{\sin x}\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In an analogous way, given \(\cosh x\) and \(\sinh x\) we can introduce hyperbolic functions.&#160;These functions are defined in the following Key Point.
+    </span>
+    <span class="multilang" lang="no">
+        Lignende, gitt \(\cosh x\) og \(\sinh x\) kan vi introdusere hyperbolske funksjoner. Disse funksjonene er definert i f&#248;lgende n&#248;kkelpunkt.
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point: Further hyperbolic functions
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt: Ytterligere hyperbolske funksjoner
+        </span>
+    </h4>
+    <p style="text-align: center;">
+        \(\tanh x \equiv \dfrac{\sinh x}{\cosh x}\)
+    </p>
+    <p style="text-align: center;">
+        \(\rm sech\) \(x \equiv \dfrac{1}{\cosh x}\)
+    </p>
+    <p style="text-align: center;">
+        \(\rm cosech\) \(x \equiv \dfrac{1}{\sinh x}\)
+    </p>
+    <p style="text-align: center;">
+        \(\coth x \equiv \dfrac{\cosh x}{\sinh x}\)
+    </p>
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

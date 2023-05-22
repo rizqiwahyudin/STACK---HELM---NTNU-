@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>Differensialligninger</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+    Differensialligninger er typisk ligninger der den ukjente er en funksjon (istedenfor en variabel) og ligningen uttrykker en sammenheng mellom denne funksjonen og dens deriverte. Eksempler p&#229; differensialligninger er: \(y'+2y=6\), \(y''-16y=0\) og \(y''-5y'+6y=0\)
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

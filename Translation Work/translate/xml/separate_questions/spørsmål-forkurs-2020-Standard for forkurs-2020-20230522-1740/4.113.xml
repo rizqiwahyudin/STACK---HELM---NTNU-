@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>4.113</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+    Flytt p&#229; punktene \(A\) og \(B\) slik at linja \(y=ax+b\) har stigningstall \(a= {@m@}\) og konstantledd \(b= {@c@}\).
+</p>
+<p class="stack-variables" style="display:none">
+    {#v1#}
+</p>
+<p style="display:none">
+    [[input:ans1]] [[validation:ans1]]
+</p>
+[[jsxgraph width='360px' height='360px']] /* The values from the question text are saved in variable vars. These are needed only if you want to "randomize" the diagram. The random-values should be saved in a maxima-list and printed in a paragraph with
+the class "stack-variables". Use the syntax {#list1#} to print the list as plain text. You can use the attribute style="display:none;" to hide the list from students. Example:
+<p class="stack-variables" style="display:none">
+    {#list1#}
+</p>
+*/ var vars = []; /* The answers from the answer-field are saved here. This is needed to save the 'state' of the diagram.*/ var ans = []; /* Shortcut for accessing the document. */ /* var doc = window.parent.document; For ILIAS */ var doc = document;
+/* For Moodle */ /************************************************************************************************/ /* ONLY EDIT THE CODE BETWEEN THESE TWO STAR-LINES */ /* Create the board and all elements use vars[0], vars[1], etc. for accessing the
+values read from the question text. If you want to test the applet offline, you need to uncomment the next line. var divid = "box"; */ JXG.Options.axis.ticks.minorTicks = 0; var board = JXG.JSXGraph.initBoard(divid, {boundingbox: [-7, 7, 7, -7], axis:
+true, grid: true, showNavigation: false, showCopyright:false}); /* The function createWithTimeout should include the elements that depend on values read from the question text. These elements are created with a slight delay, so that the page has time
+to load. Use vars[0], vars[1], etc. for accessing the values read from the question text. */ var createWithTimeout = function() { /* none needed */ }; /* This vector from p1 to p2 can be moved by the student */ var p1 = board.create('point', [-3,1], {color:'#003399',name:'A',
+showInfobox:true, snapToGrid:true}); var p2 = board.create('point', [3,1], {color:'#003399',name:'B', showInfobox:true, snapToGrid:true}); var v2 = board.create('line', [p1,p2], {strokeColor:'#7f99cc', showInfobox:true}); /* Define here an array of points,
+whose x- and y-coordinates are transmitted to STACK. The x and y coordinates of these points are written as a maxima-list to the field ans1 and can then be used in STACK to evaluate the answer. If you define here, for example [ p1 , p2 , ... ], the list
+written in ans1 has the form [p1_x , p1_y , p2_x , p2_y , ... ]. */ var answer = [ p1 , p2 ]; /************************************************************************************************/ /* This function writes the x and y coordinates of the points
+in the array 'answer' to the field ans1 in the STACK-question. */ var defineValues = function() { var coords = []; for (let pts of answer) { coords.push(pts.X()); coords.push(pts.Y()); }; return coords; }; /* This function moves the points defined in
+array 'answer' to the positions based on the value in the answer field ans1. This is needed for preserving the 'state' of the diagram ans happens after a student clicks "Check"/"Pr&#252;fen". */ var moveThingsAround = function() { var i = 0; for (let pts of
+answer) { pts.moveTo([ ans[2*i] , ans[2*i+1] ]); i++; }; }; /* Read the values from the question text. This is done with a slight delay, so that the page has time to load.*/ setTimeout(function() { vars = JSON.parse( doc.querySelector("p.stack-variables").innerHTML
+); createWithTimeout(); }, 100); /* Read the values from the input-field ans1 to the array ant. Then update the positions of the elements accordingly. */ if (doc.querySelector('input[id*="_ans1"]').value!="") { ans = JSON.parse( doc.querySelector('[id*="_ans1"]').value
+); moveThingsAround(); }; /* If anything changes on the board, write the values of the array vals to the input-field. The answers are always written as a maxima type 'list'. */ board.on('update', function () { var vals = defineValues(); doc.querySelector('[id*="_ans1"]').value
+= "[" + vals + "]"; }); [[/jsxgraph]]
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[m:rand([1,-1])*rand([2,3,4]);
+c:rand_with_prohib(-5,5,[0]);
+eqn:y=m*x+c;
+ta_A:[0,c];
+x_b:lmax([1,abs(1/m)]);
+y_b:ev(rhs(eqn),x=x_b);
+/* check that (x_b, y_b) is inside the grid, and otherwise pick a different point */
+x_b:( if abs(y_b)>5 then -x_b else x_b);
+y_b:ev(rhs(eqn),x=x_b);
+ta_B:[x_b,y_b];
+solution:flatten(append(ta_A,ta_B));
+wa1:[0,c,x_b,c];
+wa2:[0,c-1,x_b,ev(rhs(eqn),x=x_b)-1];]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text>[[feedback:prt1]]</text>
+        </specificfeedback>
+        <questionnote>
+            <text>{@eqn@} goes through \({@ta_A@}, {@ta_B@}\)</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>solution</tans>
+            <boxsize>50</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>4</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>0</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>0</mustverify>
+            <showvalidation>0</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>ansA:[ans1[1],ans1[2]];
+ansB:[ans1[3],ans1[4]];
+their_m:(ansB[2]-ansA[2])/(ansB[1]-ansA[1]);
+their_eqn:y=expand(their_m*(x-ansA[1])+ansA[2]);
+their_c:ev(rhs(their_eqn),x=0);
+fx:expand(their_m*(x-ansA[1])+ansA[2]);</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>NumAbsolute</answertest>
+                <sans>their_m</sans>
+                <tans>m</tans>
+                <testoptions>0.05</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<p>
+    Linjen du har laget har stigningstall {@their_m@} og konstantledd {@their_c@}. Pr&#248;v igjen!
+</p>
+[[jsxgraph]] var board = JXG.JSXGraph.initBoard(divid, {boundingbox: [-7, 7, 7, -7], axis: true, showCopyright: false}); var f = board.jc.snippet('{#fx#}', true, 'x', true); board.create('functiongraph', [f,-10,10]); [[/jsxgraph]]
+]]></text>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <answertest>NumAbsolute</answertest>
+                <sans>their_c</sans>
+                <tans>c</tans>
+                <testoptions>0.05</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.5000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    Linjen du har laget har stigningstall {@their_m@} og konstantledd {@their_c@}. Pr&#248;v igjen!
+    <br/>
+</p>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>806507567</deployedseed>
+        <deployedseed>1443589848</deployedseed>
+        <deployedseed>889292210</deployedseed>
+        <deployedseed>1734550540</deployedseed>
+        <deployedseed>2083385901</deployedseed>
+        <deployedseed>1368129687</deployedseed>
+        <deployedseed>1626195636</deployedseed>
+        <deployedseed>1293711445</deployedseed>
+        <deployedseed>1470975315</deployedseed>
+        <deployedseed>193538460</deployedseed>
+    </question>
+    
+
+</quiz>

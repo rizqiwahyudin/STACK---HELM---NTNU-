@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>7.4.1.3 The inverse of a square matrix</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<ul>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                A matrix that has no inverse is said to be a
+                <b>
+                    singular matrix
+                </b>
+                . A matrix which has an inverse is said to be
+                <b>
+                    non-singular
+                </b>
+                .
+            </span>
+            <span class="multilang" lang="no">
+                En matrise som ikke har en invers kalles en
+                <b>
+                    singul&#230;r matrise
+                </b>
+                . En matrise som har en invers kalles
+                <b>
+                    ikke-singul&#230;r
+                </b>
+                .
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                If a matrix has an inverse then that inverse is unique.
+            </span>
+            <span class="multilang" lang="no">
+                Hvis en matrise har en invers, s&#229; er denne inversen unik.
+            </span>
+        </p>
+        <p>
+            <span class="multilang" lang="en">
+                Suppose \(B\) and \(C\) are both inverses of \(A\). Then, by definition of the inverse,
+            </span>
+            <span class="multilang" lang="no">
+                Anta at \(B\) og \(C\) begge er inverser av \(A\). Da, if&#248;lge definisjonen av inversen, er
+            </span>
+        </p>
+        <p style="text-align: center;">
+            <span class="multilang" lang="en">
+                \(AB = BA = I\) &#226;&#8364;&#402;
+                <b>
+                    and
+                </b>
+                &#226;&#8364;&#402; \(AC = CA = I\).
+            </span>
+            <span class="multilang" lang="no">
+                \(AB = BA = I\)
+                <b>
+                    og
+                </b>
+                \(AC = CA = I\).
+            </span>
+        </p>
+        <p>
+            <span class="multilang" lang="en">
+                Consider the two ways of forming the product \(CAB\).
+            </span>
+            <span class="multilang" lang="no">
+                Vurder de to m&#229;tene &#229; danne produktet \(CAB\).
+            </span>
+        </p>
+        <ol type="1">
+            <li>
+                \(CAB = C(AB) = CI = C\).
+            </li>
+            <li>
+                \(CAB = (CA)B = IB = B\).
+            </li>
+        </ol>
+        <p>
+            <span class="multilang" lang="en">
+                Hence, \(B = C\) and the
+                <b>
+                    inverse is unique
+                </b>
+                .
+            </span>
+            <span class="multilang" lang="no">
+                Alts&#229;, \(B = C\) og den
+                <b>
+                    inversen er unik
+                </b>
+                .
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                There is no such operation as division in matrix algebra.
+            </span>
+            <span class="multilang" lang="no">
+                Det finnes ingen operasjon som heter divisjon i matrisearitmetikk.
+            </span>
+        </p>
+        <p>
+            <span class="multilang" lang="en">
+                We do not write \(\dfrac{B}{A}\) but rather \(A^{-1}B\) or \(BA^{-1}\), depending on the order required.
+            </span>
+            <span class="multilang" lang="no">
+                Vi skriver ikke \(\dfrac{B}{A}\) men heller \(A^{-1}B\) eller \(BA^{-1}\), avhengig av rekkef&#248;lgen som kreves.
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                Assuming that the square matrix \(A\) has an inverse \(A^{-1}\) then the solution of the systems of equations \(AX = B\) is found by pre-multiplying both sides by \(A^{-1}\).
+            </span>
+            <span class="multilang" lang="no">
+                Forutsatt at den kvadratiske matrisen \(A\) har en invers \(A^{-1}\), s&#229; finnes l&#248;sningen p&#229; systemet med ligninger \(AX = B\) ved &#229; multiplisere begge sider p&#229; forh&#229;nd med \(A^{-1}\).
+            </span>
+        </p>
+        <div>
+            <center>
+            </center>
+        </div>
+    </li>
+    <li>
+        <p style="text-align: center;">
+            \(AX\)\(=\)\(B\)
+        </p>
+    </li>
+    <li>
+        <p style="text-align: center;">
+            <span class="multilang" lang="en">
+                pre-multiplying by \(A^{-1}\): &#226;&#8364;&#402;
+                                                                \(A^{-1}(AX)\)
+                                                                \(=\)
+                                                                \(A^{-1}B\),
+            </span>
+            <span class="multilang" lang="no">
+                multipliserer p&#229; forh&#229;nd \(A^{-1}\):
+                                                                \(A^{-1}(AX)\)
+                                                                \(=\)
+                                                                \(A^{-1}B\),
+            </span>
+        </p>
+    </li>
+    <li>
+        <p style="text-align: center;">
+            <span class="multilang" lang="en">
+                using associativity:
+                                                                \((A^{-1}A)X\)
+                                                                \(=\)
+                                                                \(B\),
+            </span>
+            <span class="multilang" lang="no">
+                ved bruk av assosiativitet:
+                                                                \((A^{-1}A)X\)
+                                                                \(=\)
+                                                                \(B\),
+            </span>
+        </p>
+    </li>
+    <li>
+        <p style="text-align: center;">
+            <span class="multilang" lang="en">
+                using \(A^{-1}A = \):
+                                                                \(IX\)
+                                                                \(=\)
+                                                                \(A^{-1}B\),
+            </span>
+            <span class="multilang" lang="no">
+                ved bruk av \(A^{-1}A = \):
+                                                                \(IX\)
+                                                                \(=\)
+                                                                \(A^{-1}B\),
+            </span>
+        </p>
+    </li>
+    <li>
+        <p style="text-align: center;">
+            <span class="multilang" lang="en">
+                using property of \(I\):
+                                                                \(X\)
+                                                                \(=\)
+                                                                \(A^{-1}B\)
+                                                                &#226;&#8364;&#402; which is the solution we seek.
+            </span>
+            <span class="multilang" lang="no">
+                ved bruk av egenskapen \(I\):
+                                                                \(X\)
+                                                                \(=\)
+                                                                \(A^{-1}B\)
+                                                                , som er l&#248;sningen vi ser etter.
+            </span>
+        </p>
+    </li>
+</ul>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>9.5.4.2 Plane equation</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        The vector equation of a plane
+    </span>
+    <span class="multilang" lang="no">
+        Vektorligningen til et plan
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        The answer to the above question, \(\underline{ r} \cdot \underline{ n}=\underline{ a} \cdot \underline{ n},\) is the
+        <strong>
+            equation of a plane
+        </strong>
+        , written in vector form, passing through \(A\) and perpendicular to \(\underline{n}\).
+    </span>
+    <span class="multilang" lang="no">
+        Svaret p&#229; sp&#248;rsm&#229;let ovenfor, \(\underline{ r} \cdot \underline{ n}=\underline{ a} \cdot \underline{ n},\) er
+        <strong>
+            ligningen til et plan
+        </strong>
+        , skrevet i vektorform, og passerer gjennom \(A\) og er vinkelrett p&#229; \(\underline{n}\) .
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In this formula it does not matter whether or not \(\underline{n}\) is a unit vector. If \(\underline{ \hat n}\) is a unit vector then \(\underline{ a} \cdot \underline{\hat n}\) represents the perpendicular distance from the origin to the plane which we usually denote by \(d\). Hence we can write \(\underline{ r} \cdot \underline{ \hat n}= d.\)
+    </span>
+    <span class="multilang" lang="no">
+        I denne formelen spiller det ingen rolle om \(\underline{n}\) er en enhetsvektor. Hvis \(\underline{ \hat n}\) er en enhetsvektor representerer da \(\underline{ a} \cdot \underline{\hat n}\) avstanden fra origo til planet som vi vanligvis betegnes med \(d\). Derfor kan vi skrive \(\underline{ r} \cdot \underline{ \hat n}= d.\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        This is the
+        <strong>
+            equation of a plane
+        </strong>
+        , written in vector form, with unit normal \(\underline{\hat n}\) and which is a perpendicular distance \(d\) from \(O\).
+    </span>
+    <span class="multilang" lang="no">
+        Dette er
+        <strong>
+            ligning til et plan,
+        </strong>
+        skrevet i vektorform, med enhet normalen \(\underline{\hat n}\) og som har er en avstand \(d\) fra \(O\) .
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <p>
+        <span class="multilang" lang="en">
+            A plane with unit normal \(\underline{ \hat n}\), which is a perpendicular distance \(d\) from \(O\) is given by \[\underline{ r} \cdot \underline{ \hat n}=d.\]
+        </span>
+        <span class="multilang" lang="no">
+            Et plan med enhet normalen \(\underline{ \hat n}\) , har en avstand \(d\) fra \(O\) gitt ved \[\underline{ r} \cdot \underline{ \hat n}=d.\]
+        </span>
+    </p>
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

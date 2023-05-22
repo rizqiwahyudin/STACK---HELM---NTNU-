@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>8.2.2.1 Intro Non-unique solutions</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Non-unique solutions
+    </span>
+    <span class="multilang" lang="no">
+        Ikke-unike l&#248;sninger
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        The key to obtaining a unique solution of the system \(AX=B\) is to find \(A^{-1}\). What happens when \(A^{-1}\) does not exist?
+    </span>
+    <span class="multilang" lang="no">
+        N&#248;kkelen til &#229; oppn&#229; en unik l&#248;sning av systemet \(AX=B\) er &#229; finne \(A^{-1}\). Hva skjer n&#229;r \(A^{-1}\) ikke eksisterer?
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Consider the system \[\begin{matrix}
+                                2x_1 &amp; + &amp; 3x_2 &amp; = &amp; 5 &amp; \qquad(1) \\
+                                4x_1&amp; + &amp; 6x_2 &amp; = &amp; 10 &amp; \qquad (2) \\
+                                \end{matrix}\] In matrix form this becomes \[\left[\begin{matrix} 2&amp;3\\ 4&amp;6\end{matrix}\right]\left[\begin{matrix} x_1\\
+                                x_2\end{matrix}\right]=\left[\begin{matrix} 5\\ 10\end{matrix}\right].\]
+    </span>
+    <span class="multilang" lang="no">
+        Vi ser p&#229; systemet \[\begin{matrix}
+                                                2x_1 &amp; + &amp; 3x_2 &amp; = &amp; 5 &amp; \qquad(1) \\
+                                                4x_1&amp; + &amp; 6x_2 &amp; = &amp; 10 &amp; \qquad (2) \\
+                                                \end{matrix}\] som kan skrives p&#229; matriseform som \[\left[\begin{matrix} 2&amp;3\\ 4&amp;6\end{matrix}\right]\left[\begin{matrix} x_1\\
+                                                x_2\end{matrix}\right]=\left[\begin{matrix} 5\\ 10\end{matrix}\right].\]
+    </span>
+</p>
+<hr/>
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Identify the matrix \(A\) and hence find \(A^{-1}\) if it exists.
+    </span>
+    <span class="multilang" lang="no">
+        Identifiser matrisen \(A\) og finn \(A^{-1}\) hvis den eksisterer.
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        \[A=\left[\begin{matrix} 2 &amp; 3\\ 4 &amp; 6 \end{matrix}\right]\] and \(|A|=2\times 6-4 \times 3=0.\) Hence \(A^{-1}\) does not exist.
+    </span>
+    <span class="multilang" lang="no">
+        \[A=\left[\begin{matrix} 2 &amp; 3\\ 4 &amp; 6 \end{matrix}\right]\] og \(|A|=2\times 6-4 \times 3=0.\) Derfor eksisterer ikke \(A^{-1}.\)
+    </span>
+</p>
+<hr/>
+<p>
+    <span class="multilang" lang="en">
+        Looking at the original system we see that Equation (2) is simply Equation (1) with all coefficients doubled. In effect we have only one equation for the two unknowns \(x_1\) and \(x_2\). The equations are consistent and have infinitely many solutions.
+    </span>
+    <span class="multilang" lang="no">
+        N&#229;r vi ser p&#229; det opprinnelige systemet, ser vi at ligning (2) er ligning (1) med alle koeffisienter fordoblet. Effektivt sett har vi bare &#233;n ligning for de to ukjente \(x_1\) og \(x_2\). Ligningene er konsistente og har uendelig mange l&#248;sninger.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        If we let \(x_2\) assume a particular value, \(t\) say, then \(x_1\) must take the value \(x_1=\dfrac{1}{2}(5-3t)\), i.e., the solution to the given equations is:
+    </span>
+    <span class="multilang" lang="no">
+        Hvis vi lar \(x_2\) ha en bestemt verdi, si \(t\), s&#229; m&#229; \(x_1\) ta verdien \(x_1=\dfrac{1}{2}(5-3t)\), dvs. l&#248;sningen p&#229; de gitte likningene er:
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \[x_2=t,\qquad x_1=\dfrac{1}{2}(5-3t)\] where \(t\) is called a parameter.
+    </span>
+    <span class="multilang" lang="no">
+        \[x_2=t,\qquad x_1=\dfrac{1}{2}(5-3t)\] hvor \(t\) kalles en parameter.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        For each value of \(t\) there are unique values for \(x_1\) and \(x_2\) which satisfy the original system of equations. For example, if \(t=1\), then \(x_2=1\), \(x_1=1\), if \(t=-3\) then \(x_2=-3\), \(x_1=7\) and so on.
+    </span>
+    <span class="multilang" lang="no">
+        For hver verdi av \(t\) er det unike verdier for \(x_1\) og \(x_2\) som tilfredsstiller det opprinnelige ligningssystemet. For eksempel, hvis \(t=1\), da er \(x_2=1\), \(x_1=1\), hvis \(t=-3\) s&#229; er \(x_2=-3\), \(x_1=7\) og s&#229; videre.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        We can think of the initial problem as finding a point of intersection of the lines given by the equations. Equation (2) is simply equation (1) multiplied by \(2\) and describes the same line. Every point on the line is a point of intersection.
+    </span>
+    <span class="multilang" lang="no">
+        Vi kan tenke p&#229; den opprinnelige problemstillingen som &#229; finne et skj&#230;ringspunkt mellom linjene gitt av ligningene. Ligning (2) er rett og slett ligning (1) multiplisert med \(2\) og beskriver samme linje. Hvert punkt p&#229; linjen er et skj&#230;ringspunkt.
+    </span>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Now consider the system \[\begin{matrix}
+                                2x_1 &amp; + &amp; 3x_2 &amp; = &amp; 5 &amp; \qquad (3) \\
+                                4x_1 &amp; + &amp; 6x_2 &amp; = &amp; 9 &amp; \qquad (4)\\
+                                \end{matrix}\] Since the left-hand sides are the same as those in the previous system then \(A\) is the same and again \(A^{-1}\) does not exist. There is no solution to the Equations (3) and (4).
+    </span>
+    <span class="multilang" lang="no">
+        N&#229; skal vi se p&#229; systemet \[\begin{matrix}
+                                2x_1 &amp; + &amp; 3x_2 &amp; = &amp; 5 &amp; \qquad (3) \\
+                                4x_1 &amp; + &amp; 6x_2 &amp; = &amp; 9 &amp; \qquad (4)\\
+                                \end{matrix}\] Siden venstresidene er de samme som i det forrige systemet, er \(A\) det samme, og igjen eksisterer ikke \(A^{-1}\). Det finnes ingen l&#248;sning for likningene (3) og (4).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Indeed, if we double Equation (3) we obtain \[4x_1+6x_2=10\] which conflicts with Equation (4). There are thus no solutions to (3) and (4) and the equations are said to be inconsistent.
+    </span>
+    <span class="multilang" lang="no">
+        Hvis vi dobler likning (3), f&#229;r vi \[4x_1+6x_2=10\] som strider mot likning (4). Det finnes derfor ingen l&#248;sninger for (3) og (4), og likningene sies &#229; v&#230;re inkonsistente.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Thinking of the geometry, the problem is now to find the intersection of two different but parallel lines. Of course such parallel lines will never meet so there are no points of intersection.
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; tenke p&#229; geometrien er problemet n&#229; &#229; finne skj&#230;ringspunktet til to forskjellige, men parallelle linjer. Selvf&#248;lgelig vil slike parallelle linjer aldri m&#248;tes, s&#229; det finnes ingen skj&#230;ringspunkter.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

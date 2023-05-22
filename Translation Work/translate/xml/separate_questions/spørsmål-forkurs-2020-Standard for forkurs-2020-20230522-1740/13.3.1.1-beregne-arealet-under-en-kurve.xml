@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>13.3.1.1 Beregne arealet under en kurve</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span>
+        <span class="multilang" lang="en">
+            Calculating the area under a curve
+        </span>
+        <span class="multilang" lang="no">
+            Arealet under en kurve
+        </span>
+    </span>
+    <br/>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        Let us denote the area under \(y=f(x)\) between a fixed point \(a\) and a variable point \(x\) by \(A(x)\):
+    </span>
+    <span class="multilang" lang="no">
+        La \(A(x)\) v&#230;re arealet under \(y=f(x)\) mellom et fast punkt \(a\) og et varierende punkt \(x\):
+    </span>
+</p>
+<p style="text-align: center;">
+    <img alt="Area under a generic function " class="img-responsive atto_image_button_text-bottom" height="119" src="https://stack-demo.maths.ed.ac.uk/demo/draftfile.php/9185/user/draft/307353344/13.3%20area%20under%20a%20curve.svg" width="303"/>
+    <br/>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(A(x)\) is clearly a function of \(x\) since as the upper limit changes so does the area. How does the area change if we change the upper limit by a very small amount \(\delta x\)? See the figure below.
+    </span>
+    <span class="multilang" lang="no">
+        \(A(x)\) er &#229;penbart en funksjon av \(x\) siden arealet endres n&#229;r \(x\) blir st&#248;rre eller mindre. Hva skjer med arealet dersom vi endrer &#248;vre skranke med en liten \(\delta x\)? Se figuren under.
+    </span>
+</p>
+<p style="text-align: center;">
+    <img alt="Area under a generic function ii" class="img-responsive atto_image_button_text-bottom" height="116" src="https://stack-demo.maths.ed.ac.uk/demo/draftfile.php/9185/user/draft/754351299/13.3.1.1%20approximation%20%281%29.svg" width="388"/>
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+<span class="multilang" lang="en">
+    To a good approximation the change in the area is: \(A(x+\delta x)-A(x)\approx f(x)\delta x\) [This is because the shaded area is approximately a rectangle with base \(\delta x\) and height \(f(x)\).]
+    <br/>
+    This approximation gets better and better as \(\delta x\) gets smaller and smaller. Rearranging gives: \(f(x)\approx \dfrac{A(x+\delta x)-A(x)}{\delta x}\);Clearly, in the limit as \(\delta x\to 0\) we have \(f(x)={\displaystyle\lim_{\delta x\to 0}} \dfrac{A(x+\delta x)-A(x)}{\delta x}\). But this limit on the right-hand side is the&#160;derivative&#160;of \(A(x)\) with respect to \(x\) so \(f(x)=\dfrac{d A(x)}{d x}\)Thus \(A(x)\) is an&#160;indefinite integral&#160;of \(f(x)\) and we can therefore write: \(A(x)={\displaystyle\int f(x)\mathrm{d}x}\).
+    <br/>
+    Now the area under the curve from \(a\) to \(b\) is clearly \(A(b)-A(a)\).
+But remembering our shorthand notation for this difference, introduced in the last Section we have, finally \(A(b)-A(a)\equiv\left[\phantom{\dfrac{1}{1}}\!\!\!A(x)\right]_a^b={\displaystyle\int_a^bf(x)\mathrm{d} x}\).
+    <br/>
+    We conclude that the area under
+                the curve \(y=f(x)\) from \(a\) to \(b\) is given by the definite integral of \(f(x)\) from \(a\) to \(b\).
+</span>
+<span class="multilang" lang="no">
+    En god tiln&#230;rming til endring av arealet er: \(A(x+\delta x)-A(x)\approx f(x)\delta x\).
+    <br/>
+    [Fordi det skyggelagte omr&#229;det er omtrent et rektangel med bredde \(\delta x\) og h&#248;yde \(f(x)\).]
+    <br/>
+    Denne tiln&#230;rmingen blir bedre og bedre n&#229;r \(\delta x\) blir mindre og mindre.
+    <br/>
+    Omskriving gir: \(f(x)\approx \dfrac{A(x+\delta x)-A(x)}{\delta x}\).
+    <br/>
+    Her ser vi at n&#229;r \(\delta x\to 0\) har vi at \(f(x)={\displaystyle\lim_{\delta x\to 0}} \dfrac{A(x+\delta x)-A(x)}{\delta x}\). Men denne grensen p&#229; h&#248;yresiden er ikke annet enn definisjonen p&#229; den deriverte av \(A(x)\) med hensyn p&#229; \(x\) s&#229; \(f(x)=\dfrac{d A(x)}{d x}\).
+    <br/>
+    Dermed er \(A(x)\) et
+    <strong>
+        u
+    </strong>
+    <strong>
+        bestemt integral
+    </strong>
+    av \(f(x)\) og vi kan skrive det p&#229; formen: \(A(x)={\displaystyle\int f(x)\mathrm{d}x}\).
+    <br/>
+    N&#229; er arealet under kurven fra \(a\) til \(b\) gitt ved \(A(b)-A(a)\).
+Dette kan imidlertid skrives som \(A(b)-A(a)\equiv\left[\phantom{\dfrac{1}{1}}\!\!\!A(x)\right]_a^b={\displaystyle\int_a^bf(x)\mathrm{d} x}\).
+    <br/>
+    Vi konkluderer med at arealet under kurven \(y=f(x)\) fra \(a\) til \(b\) er gitt ved det bestemt integralet av \(f(x)\) fra \(a\) til \(b\).
+</span>
+<p>
+</p>
+<p>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

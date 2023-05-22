@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>2.7.2.3 Vertical asymptotes</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        Note from the answers to parts (b) and (c) that we must exclude the value \(t = -3/2\) from the domain of this function because division by zero is not defined. At this point, as you can see, the graph shoots off towards very large postive values (we say it tends to positive infinity) if the point is approached from the left, and towards very large negative values (we say it tends to negative infinity) if the point is approached from the right. The dotted line in the graph of \(R_2(x)\) has equation \(t = -3/2\). It is approached by the curve as \(t\) approaches \(-3/2\) and is known as a
+        <strong>
+            vertical asymptote
+        </strong>
+        .
+    </span>
+    <span class="multilang" lang="no">
+        Merk fra svarene til del (b) og (c) at vi m&#229; ekskludere verdien \(t = -3/2\) fra definisjonsmengden til denne funksjonen fordi divisjon med null ikke er definert. P&#229; dette tidspunktet, som du kan se, skyter grafen av mot veldig store positive verdier (vi sier at den har en tendens til positiv uendelig) hvis punktet n&#230;rmer seg fra venstre, og mot veldig store negative verdier (vi sier at den har en tendens til negativ uendelighet) ) hvis punktet n&#230;rmes fra h&#248;yre. Den stiplede linjen i grafen til \(R_2(x)\) har ligningen \(t = -3/2\). Den n&#230;rmes av kurven n&#229;r \(t\) n&#230;rmer seg \(-3/2\) og er kjent som en
+        <strong>
+            vertikal asymptote
+        </strong>
+        .
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

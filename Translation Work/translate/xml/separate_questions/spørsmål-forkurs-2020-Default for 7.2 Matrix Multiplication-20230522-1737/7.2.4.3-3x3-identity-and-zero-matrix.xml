@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>7.2.4.3 3x3 identity and zero matrix</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+    <span class="multilang" lang="en">
+        The \(3\times 3\) unit matrix is: \[ I = \begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \] and as in the \(2\times 2\) case this has the property that \( AI = IA = A \) for all matrices \(A\).
+    </span>
+    <span class="multilang" lang="no">
+        \(3\times 3\) enhetsmatrisen er: \[ I = \begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \] og som i tilfellet med \(2\times 2\) matrisen har denne egenskapen at \( AI = IA = A \) for hvilken som helst matrise \(A\).
+    </span>
+    <br/>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        The \(3\times 3\) zero matrix is \[ \underline{0} = \begin{bmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{bmatrix} \]
+    </span>
+    <span class="multilang" lang="no">
+        \(3\times 3\) nullmatrisen er \[ \underline{0} = \begin{bmatrix} 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 0 \end{bmatrix} \]
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

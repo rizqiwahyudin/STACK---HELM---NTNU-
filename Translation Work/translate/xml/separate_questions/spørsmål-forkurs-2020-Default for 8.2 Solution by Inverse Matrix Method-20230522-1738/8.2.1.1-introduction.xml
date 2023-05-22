@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>8.2.1.1 Introduction</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Solving a system of two equations using the inverse matrix
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;se et system av to likninger ved hjelp av inversmatrisen.
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        If we have one linear equation
+                \( ax=b\)
+                in which the unknown is \(x\) and \(a\) and \(b\) are constants and \(a\neq 0\) then \(x=\dfrac{b}{a}= a^{-1}b\).
+    </span>
+    <span class="multilang" lang="no">
+        Hvis vi har en line&#230;r likning:
+                \( ax=b\)
+                der den ukjente er \(x\) og \(a\) og \(b\) er konstanter og \(a\neq 0\), s&#229; er \(x=\dfrac{b}{a}= a^{-1}b\).
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        What happens if we have more than one equation and more than one unknown? In this worksheet we copy the algebraic solution \(x=a^{-1}b\) used for a single equation to solve a system of linear equations. As we shall see, this will be a very natural way of solving the system if it is first written in matrix form.
+    </span>
+    <span class="multilang" lang="no">
+        Hva skjer hvis vi har mer enn &#233;n ligning og mer enn &#233;n ukjent? I dette arbeidsarket kopierer vi den algebraiske l&#248;sningen \(x=a^{-1}b\) som brukes for en enkelt ligning for &#229; l&#248;se et line&#230;rt ligningssystem. Som vi skal se, vil dette v&#230;re en veldig naturlig m&#229;te &#229; l&#248;se systemet p&#229; hvis det f&#248;rst er skrevet i matriseform.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Consider the system \[\begin{matrix}
+                                2x_1 &amp; + &amp; 3x_2&amp;= &amp; 5 \\
+                                x_1 &amp; - &amp; 2x_2&amp;= &amp; -1. \end{matrix} \] In matrix form this becomes \[\qquad \left[\begin{array}{rr}
+                                2&amp;3\\ 1&amp;-2\end{array}\right] \left[\begin{array}{c}x_1\\
+                                x_2\end{array}\right]=\left[\begin{array}{r}5\\ -1\end{array}\right]\ \
+                                \quad\text{which is of the form}\ \quad AX=B.\]
+    </span>
+    <span class="multilang" lang="no">
+        Vurder systemet \[\begin{matrix}
+                                2x_1 &amp; + &amp; 3x_2&amp;= &amp; 5 \\
+                                x_1 &amp; - &amp; 2x_2&amp;= &amp; -1. \end{matrix} \] I matriseform blir dette \[\qquad \left[\begin{array}{rr}
+                                2&amp;3\\ 1&amp;-2\end{array}\right] \left[\begin{array}{c}x_1\\
+                                x_2\end{array}\right]=\left[\begin{array}{r}5\\ -1\end{array}\right]\ \
+                                \quad\text{som er av formen}\ \quad AX=B.\]
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        If \(A^{-1}\) exists then the solution is \[\qquad X=A^{-1}B.\qquad\text{(compare the solution} \ x=a^{-1}b \ \text{above)}\]
+    </span>
+    <span class="multilang" lang="no">
+        Hvis \(A^{-1}\) eksisterer, s&#229; er l&#248;sningen \[\qquad X=A^{-1}B.\qquad\text{(sammenlign l&#248;sningen} \ x=a^{-1}b \ \text{over)}\]
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

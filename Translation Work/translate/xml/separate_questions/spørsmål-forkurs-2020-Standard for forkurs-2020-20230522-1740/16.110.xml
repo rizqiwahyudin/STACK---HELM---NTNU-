@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>16.110</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+Figuren viser grafen til funksjonen \(f(x) = 4\)
+<br/>
+<p>
+    <img alt="Bilde av funksjonen f(x) = 4" class="img-fluid atto_image_button_text-bottom" height="340" src="@@PLUGINFILE@@/integrasjonVolum.png?time=1618763433945" width="701"/>
+    <br/>
+</p>
+<p>
+    Vi dreier det fargelagte flatestykket 360 grader om x-aksen.
+</p>
+<p>
+    a) Hva slags romfigur f&#229;r vi? (skriv svaret i mellom anf&#248;rselstegnene)
+    <br/>
+</p>
+<p>
+    [[input:ans1]] [[validation:ans1]]
+    <br/>
+</p>
+<p>
+    b) romfiguren er en omdreiningsgjennstand. Finn volumet til denne gjenstanden ved integrasjon. Skriv pi for \(\pi\)
+    <br/>
+</p>
+<p>
+    [[input:ans2]] [[validation:ans2]]
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+]]></text>
+            <file name="integrasjonVolum.png" path="/" encoding="base64">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</file>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text><![CDATA[ta1: "sylinder"
+ta2: 64 * pi]]></text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text><![CDATA[
+<p>
+    [[feedback:prt1]]
+</p>
+<p>
+    [[feedback:prt2]]
+    <br/>
+</p>
+]]></text>
+        </specificfeedback>
+        <questionnote>
+            <text/>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>ta1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint><![CDATA[""]]></syntaxhint>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>ta2</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>StringSloppy</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans2</sans>
+                <tans>ta2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

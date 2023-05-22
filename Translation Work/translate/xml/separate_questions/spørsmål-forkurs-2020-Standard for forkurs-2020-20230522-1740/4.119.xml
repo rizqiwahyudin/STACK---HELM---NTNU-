@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>4.119</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p>
+</p>
+<p>
+    Hvor mange forskjellige rette linjer som g&#229;r gjennom punktet \(A({@x0@},{@y0@})\) kan vi tegne&#160;n&#229;r b&#229;de stigningstallet og konstantleddet skal v&#230;re hele tall p&#229; intervallet \([-5,5]\)?
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    [[input:ans1]] [[validation:ans1]][[feedback:prt1]]
+    <br/>
+</p>
+[[jsxgraph]] 
+var board = JXG.JSXGraph.initBoard(divid, {boundingbox: [-7, 7, 7, -7], axis: true, showCopyright: false}); board.create('point',[{#x0#},{#y0#}]); [[/jsxgraph]]
+<p>
+    <br/>
+</p>
+<p>
+    <br/>
+</p>
+<p>
+    Hva blir likningene for disse linjene? Oppgi svaret som en mengde, f.eks \(\{y=2x+2, y=3, ...\}\)
+</p>
+<p>
+    [[input:ans2]] [[validation:ans2]][[feedback:prt2]]
+    <br/>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text>x0:2
+y0:3
+p:(x0,y0)
+ta1:6
+ta2:{y=3,y=-x+5,y=x+1,y=2*x-1,y=3*x-3,y=4*x-5}</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote>
+            <text>\({@x0@},{@y0@})\)</text>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans1</name>
+            <type>algebraic</type>
+            <tans>ta1</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans2</name>
+            <type>algebraic</type>
+            <tans>ta2</tans>
+            <boxsize>30</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint>{y=...}</syntaxhint>
+            <syntaxattribute>1</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt1</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>dif:abs(ta1-ans1)</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>AlgEquiv</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>1</falsenextnode>
+                <falseanswernote>prt1-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+            <node>
+                <name>1</name>
+                <answertest>GT</answertest>
+                <sans>ans1</sans>
+                <tans>ta1</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>+</truescoremode>
+                <truescore>0.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt1-2-T</trueanswernote>
+                <truefeedback format="html">
+                    <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    Du har funnet \({@dif@}\) for mange linjer! Kan du se hvilke?
+</p>
+]]></text>
+                </truefeedback>
+                <falsescoremode>-</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt1-2-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    Du har funnet \({@ans1@}\) linjer, men det finnes \({@dif@}\) til! Kan du se hvilke?
+    <br/>
+</p>
+]]></text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt2</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text>svar:listify(ans2)
+y1:rhs(svar[1])
+y2:rhs(svar[2])
+y3:rhs(svar[3])
+y4:rhs(svar[4])
+y5:rhs(svar[5])
+y6:rhs(svar[6])</text>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>Sets</answertest>
+                <sans>ans2</sans>
+                <tans>ta2</tans>
+                <testoptions/>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt2-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text>[[jsxgraph]] var board = JXG.JSXGraph.initBoard(divid, {boundingbox: [-7, 7, 7, -7], axis: true, showCopyright: false}); 
+var f1 = board.jc.snippet('{#y1#}', true, 'x', true); 
+board.create('functiongraph', [f1,-10,10]); 
+var f2 = board.jc.snippet('{#y2#}',true,'x', true); 
+board.create('functiongraph', [f2,-10,10]) 
+var f3 = board.jc.snippet('{#y3#}',true, 'x', true); 
+board.create('functiongraph', [f3,-10,10]) 
+var f4 = board.jc.snippet('{#y4#}',true, 'x', true); 
+board.create('functiongraph', [f4,-10,10]) 
+var f5 = board.jc.snippet('{#y5#}',true, 'x', true); 
+board.create('functiongraph', [f5,-10,10]) 
+var f6 = board.jc.snippet('{#y6#}',true, 'x', true); 
+board.create('functiongraph', [f6,-10,10]) 
+var p3 = board.create('point', [{#x0#},{#y0#}], { name: 'A', id:'A', label:{autoPosition: true, offset:[10, 10]}}); 
+[[/jsxgraph]]</text>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt2-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text>[[jsxgraph]] var board = JXG.JSXGraph.initBoard(divid, {boundingbox: [-7, 7, 7, -7], axis: true, showCopyright: false}); 
+var f1 = board.jc.snippet('{#y1#}', true, 'x', true); 
+board.create('functiongraph', [f1,-10,10]); 
+var f2 = board.jc.snippet('{#y2#}',true,'x', true); 
+board.create('functiongraph', [f2,-10,10]) 
+var f3 = board.jc.snippet('{#y3#}',true, 'x', true); 
+board.create('functiongraph', [f3,-10,10]) 
+var f4 = board.jc.snippet('{#y4#}',true, 'x', true); 
+board.create('functiongraph', [f4,-10,10]) 
+var f5 = board.jc.snippet('{#y5#}',true, 'x', true); 
+board.create('functiongraph', [f5,-10,10]) 
+var f6 = board.jc.snippet('{#y6#}',true, 'x', true); 
+board.create('functiongraph', [f6,-10,10]) 
+var p3 = board.create('point', [{#x0#},{#y0#}], { name: 'A', id:'A', label:{autoPosition: true, offset:[10, 10]}}); 
+[[/jsxgraph]]</text>
+                </falsefeedback>
+            </node>
+        </prt>
+        <deployedseed>535367774</deployedseed>
+        <deployedseed>1228712228</deployedseed>
+        <deployedseed>270446133</deployedseed>
+        <deployedseed>501207636</deployedseed>
+        <deployedseed>1934675915</deployedseed>
+        <deployedseed>1179910406</deployedseed>
+        <deployedseed>1050893320</deployedseed>
+        <deployedseed>1443700787</deployedseed>
+        <deployedseed>2088493856</deployedseed>
+        <deployedseed>557707386</deployedseed>
+    </question>
+    
+
+</quiz>

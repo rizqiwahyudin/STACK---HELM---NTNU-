@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>10.4.1.1 De Moivre&#8217;s theorem</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        De Moivre's Theorem
+    </span>
+    <span class="multilang" lang="no">
+        De Moivre's teorem
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        We have seen that in polar form, if \(z=r(\cos\theta +i\sin\theta)\) and \(w=t(\cos\phi +i\sin\phi )\) then the product \(zw\) is: \[\qquad zw=rt(\cos (\theta +\phi ) +i\sin (\theta +\phi ))\]In particular, if \(r=1, t=1\) and \(\theta =\phi\) (i.e. \(z=w=\cos\theta +i\sin\theta\)), we obtain \[\qquad (\cos\theta +i\sin\theta )^2=\cos 2\theta +i\sin 2\theta\] Multiplying each side of the above equation by \(\cos\theta +i\sin\theta\) gives \[\qquad (\cos\theta +i\sin\theta )^3=(\cos 2\theta +i\sin 2\theta)(\cos\theta
+                                +i\sin\theta )=\cos 3\theta +i\sin 3\theta\]on adding the arguments of the terms in the product.
+    </span>
+    <span class="multilang" lang="no">
+        Vi har sett at i polar form, hvis \(z=r(\cos\theta +i\sin\theta)\) og \(w=t(\cos\phi +i\sin\phi )\), s&#229; er produktet \(zw\) gitt som: \[\qquad zw=rt(\cos (\theta +\phi ) +i\sin (\theta +\phi ))\]Spesielt, hvis \(r=1, t=1\) og \(\theta =\phi\) (dvs. \(z=w=\cos\theta +i\sin\theta\)), f&#229;r vi \[\qquad (\cos\theta +i\sin\theta )^2=\cos 2\theta +i\sin 2\theta\] Ved &#229; multiplisere hver side av ovennevnte likning med \(\cos\theta +i\sin\theta\) f&#229;r vi \[\qquad (\cos\theta +i\sin\theta )^3=(\cos 2\theta +i\sin 2\theta)(\cos\theta
++i\sin\theta )=\cos 3\theta +i\sin 3\theta\] etter &#229; ha lagt sammen argumentene til termene i produktet.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Similarly, \[\qquad
+                                (\cos\theta +i\sin\theta
+                                )^4=\cos 4\theta +i\sin 4\theta.\]After completing \(p\) such products we have: \[\qquad (\cos\theta +i\sin\theta )^p=\cos p\theta +i\sin p\theta\]where \(p\) is a positive integer.
+    </span>
+    <span class="multilang" lang="no">
+        P&#229; samme m&#229;te har vi: 
+\[\qquad
+                                (\cos\theta +i\sin\theta
+                                )^4=\cos 4\theta +i\sin 4\theta.\] Etter &#229; ha fullf&#248;rt \(p\) slike produkter har vi: \[\qquad (\cos\theta +i\sin\theta )^p=\cos p\theta +i\sin p\theta\] hvor \(p\) er et positivt heltall.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In fact this result can be shown to be true for those cases in which \(p\) is a negative integer and even when \(p\) is a rational number e.g. \(p= \dfrac12\).
+    </span>
+    <span class="multilang" lang="no">
+        Faktisk kan dette resultatet vises &#229; v&#230;re sant for de tilfellene der \(p\) er et negativt heltall og til og med n&#229;r \(p\) er et rasjonalt tall, f.eks. \(p= \dfrac12\).
+    </span>
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        <span class="multilang" lang="en">
+            Key Point
+        </span>
+        <span class="multilang" lang="no">
+            N&#248;kkelpunkt
+        </span>
+    </h4>
+    <span class="multilang" lang="en">
+        If \(p\) is a rational number then \[(\cos\theta + i\sin\theta)^p = \cos(p\theta) + i\sin(p\theta).\] This result is known as
+        <strong>
+            De Moivre's Theorem
+        </strong>
+        .
+    </span>
+    <span class="multilang" lang="no">
+        Hvis \(p\) er et rasjonalt tall, s&#229; er \[(\cos\theta + i\sin\theta)^p = \cos(p\theta) + i\sin(p\theta).\] Dette resultatet er kjent som
+        <strong>
+            De Moivres teorem
+        </strong>
+        .
+    </span>
+</div>
+<p>
+    <br/>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Recalling from the exponential form that \(\cos\theta +i\sin\theta =e^{i\theta}\), De Moivre's Theorem is simply a statement of the laws of indices: \[\qquad (e^{i \theta})^p=e^{i p\theta}.\]
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; huske p&#229; den eksponentielle formen \(\cos\theta +i\sin\theta =e^{i\theta}\), er De Moivres teorem rett og slett en erkl&#230;ring om potensreglene: \[\qquad (e^{i \theta})^p=e^{i p\theta}.\]
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

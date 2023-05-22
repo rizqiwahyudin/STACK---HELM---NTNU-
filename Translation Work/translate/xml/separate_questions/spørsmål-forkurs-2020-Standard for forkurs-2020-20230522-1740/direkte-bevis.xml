@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>Direkte bevis</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    Direkte bevis
+</h3>
+<p>
+    Direkte bevis er den enkleste type bevis. Her begynner man med en forutsentning man vet er sann og bygger en logisk kjede av argumenter helt til riktig konklusjon blir n&#229;dd.
+</p>
+<br/>
+<div class="HELM_keypoint">
+    <h4>
+        N&#248;kkelpunkt
+    </h4>
+    <p>
+        For &#229; bevise at \(p \implies q\) med direkte bevis bruker man en rekke med argumentasjoner slik at \(p \implies ... \implies q \). Siden \(p\) er sann m&#229; \(q\) ogs&#229; stemme.
+    </p>
+</div>
+<br/>
+<h4 class="HELM_example">
+    Eksempel
+</h4>
+<p>
+    Vis at dersom \(n\) er et partall er \(n^2\) ogs&#229; et partall.
+</p>
+<br/>
+<h4 class="HELM_solution">
+    L&#248;sning
+</h4>
+<p>
+    Vi vet at partall er alle tall som er i 2 tabellen. Dermed kan vi skrive \(n\) som \(2k\) der \(k\) er et hvilket som helst heltall.
+</p>
+<p>
+    N&#229;r vi antar \(n\) er et partall har vi:
+</p>
+<p>
+    \(n=2k \implies n^2 = (2k)^2 \implies n^2 = 4k^2\)
+</p>
+<p>
+    Siden \(4k^2\) er delelig p&#229; 2 er \(4k^2\) et partall som betyr at \(n^2\) ogs&#229; er et partall (siden \(n^2 = 4k^2\) ).
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

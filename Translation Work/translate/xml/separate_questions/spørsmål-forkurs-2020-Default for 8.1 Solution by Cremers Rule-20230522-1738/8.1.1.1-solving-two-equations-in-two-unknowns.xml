@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>8.1.1.1 Solving two equations in two unknowns</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4>
+    <span class="multilang" lang="en">
+        Solving two equations in two unknowns
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;se to ligninger med to ukjente.
+    </span>
+</h4>
+<br/>
+<p>
+    <span class="multilang" lang="en">
+        If we have one linear equation
+    </span>
+    <span class="multilang" lang="no">
+        Hvis vi har en line&#230;r ligning
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad ax=b\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad ax=b\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        in which the unknown is \(x\) and \(a\) and \(b\) are constants then there are just three possibilities:
+    </span>
+    <span class="multilang" lang="no">
+        hvor den ukjente er \(x\) og \(a\) og \(b\) er konstanter, s&#229; er det bare tre muligheter:
+    </span>
+</p>
+<ul>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                \(a\neq 0\) then \(x=\dfrac{b}{a}= a^{-1}b\). In this case the equation \(ax=b\) has a
+                <strong>
+                    unique solution
+                </strong>
+                for \(x\).
+            </span>
+            <span class="multilang" lang="no">
+                Hvis \(a\neq 0\) s&#229; er \(x=\dfrac{b}{a}=a^{-1}b\). I dette tilfellet har likningen \(ax=b\) en
+                <strong>
+                    unik l&#248;sning
+                </strong>
+                for \(x\).
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                \(a=0\), \(b=0\) then the equation \(ax=b\) becomes \(0=0\) and any value of \(x\) will do. In this case the equation \(ax=b\) has
+                <strong>
+                    infinitely many solutions
+                </strong>
+                .
+            </span>
+            <span class="multilang" lang="no">
+                Hvis \(a=0\) og \(b=0\), s&#229; blir likningen \(ax=b\) til \(0=0\) og da vil hvilken som helst verdi av \(x\) fungerere. I dette tilfellet har likningen \(ax=b\)
+                <strong>
+                    uendelig mange l&#248;sninger
+                </strong>
+                .
+            </span>
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                \(a=0\) and \(b\neq 0\) then \(ax=b\) becomes \(0=b\) which is a contradiction. In this case the equation
+                                                                \(ax=b\) has
+                <strong>
+                    no solution
+                </strong>
+                for \(x\).
+            </span>
+            <span class="multilang" lang="no">
+                Hvis \(a=0\) og \(b\neq 0\), s&#229; vil \(ax=b\) bli til \(0=b\), som er en motstrid. I dette tilfellet har likningen \(ax=b\)
+                <strong>
+                    ingen l&#248;sning
+                </strong>
+                for \(x\).
+            </span>
+        </p>
+    </li>
+</ul>
+<p>
+    <span class="multilang" lang="en">
+        What happens if we have more than one equation and more than one unknown? We shall find that the solutions to such systems can be characterised in a manner similar to that occurring for a single equation; that is, a system may have a unique solution,
+                                an infinity of solutions or no solution at all.
+    </span>
+    <span class="multilang" lang="no">
+        Hva skjer hvis vi har mer enn &#233;n ligning og mer enn &#233;n ukjent? Vi skal finne at l&#248;sningene til slike systemer kan karakteriseres p&#229; en lignende m&#229;te som for en enkelt ligning; det vil si at et system kan ha en unik l&#248;sning, en uendelighet av l&#248;sninger eller ingen l&#248;sning i det hele tatt.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        In this Section we examine a method, known as Cramer&#226;&#8364;&#8482;s rule and employing determinants, for solving systems of linear equations.
+    </span>
+    <span class="multilang" lang="no">
+        I denne seksjonen skal vi unders&#248;ke en metode, kjent som Cramers metode og som bruker determinanter, for &#229; l&#248;se line&#230;re likningssystemer.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Consider the equations
+    </span>
+    <span class="multilang" lang="no">
+        Vurder ligningene
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        (1) \(\qquad ax+by=e\)
+    </span>
+    <span class="multilang" lang="no">
+        (1) \(\qquad ax+by=e\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        (2) \(\qquad cx+dy=f\)
+    </span>
+    <span class="multilang" lang="no">
+        (2) \(\qquad cx+dy=f\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        where \(a,b,c,d,e,f\) are given numbers. The variables \(x\) and \(y\) are unknowns we wish to find. The pairs of values of \(x\) and \(y\) which
+        <strong>
+            simultaneously
+        </strong>
+        satisfy both equations are called solutions. Simple algebra will eliminate the variable \(y\) between these equations. We
+                                multiply equation (1) by \(d\), equation (2) by \(b\) and subtract:
+    </span>
+    <span class="multilang" lang="no">
+        hvor \(a,b,c,d,e,f\) er gitte tall. Variablene \(x\) og \(y\) er ukjente vi &#248;nsker &#229; finne. Par av verdier for \(x\) og \(y\) som
+        <strong>
+            simultant
+        </strong>
+        befrir begge ligningene kalles l&#248;sninger. Enkel algebra vil eliminere variabelen \(y\) mellom disse ligningene. Vi multipliserer ligning (1) med \(d\), ligning (2) med \(b\) og trekker fra:
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad \text{first,}\quad (1)\times d\qquad\qquad\qquad ad x+bd y=ed\qquad\qquad\qquad
+                                \)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad \text{f&#248;rst,}\quad (1)\times d\qquad\qquad\qquad ad x+bd y=ed\qquad\qquad\qquad
+                                \)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad \text{then},\quad (2)\times b\qquad\qquad\qquad bc x+bd y=bf\qquad\qquad\qquad \)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad \text{n&#229;r},\quad (2)\times b\qquad\qquad\qquad bc x+bd y=bf\qquad\qquad\qquad\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        (we multiplied in this way to make the coefficients of \(y\) equal.)
+    </span>
+    <span class="multilang" lang="no">
+        (vi multipliserte p&#229; denne m&#229;ten for &#229; gj&#248;re koeffisientene til \(y\) like.)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Now subtract to obtain
+    </span>
+    <span class="multilang" lang="no">
+        Trekk n&#229; fra for &#229; f&#229;:
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        (3) \(\qquad (ad-bc)x=ed-bf\)
+    </span>
+    <span class="multilang" lang="no">
+        (3) \(\qquad (ad-bc)x=ed-bf\)
+    </span>
+</p>
+<br/>
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Task: Starting with equations (1) and (2) above, eliminate \(x\).
+    </span>
+    <span class="multilang" lang="no">
+        Oppgave: Startende med likningene (1) og (2) over, eliminer \(x\).
+    </span>
+</p>
+<br/>
+<p>
+    <span class="multilang" lang="en">
+        Eliminating \(x\) using a similar method to the one above for eliminating \(y\), we obtain
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; eliminere \(x\) ved hjelp av en lignende metode som for eliminering av \(y\), finner vi
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        (4) \(\qquad&#160; (ad-bc)y=af-ec\)
+    </span>
+    <span class="multilang" lang="no">
+        (4) \(\qquad&#160; (ad-bc)y=af-ec\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Dividing equations (3) and (4) by \(ad-bc\) we obtain the solutions
+    </span>
+    <span class="multilang" lang="no">
+        Ved &#229; dele likningene (3) og (4) med \(ad-bc\) f&#229;r vi l&#248;sningene
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        (5) \(\qquad x=\dfrac{ed-bf}{ad-bc}\ ,\ \ \ y=\dfrac{af-ec}{ad-bc}\)
+    </span>
+    <span class="multilang" lang="no">
+        (5) \(\qquad x=\dfrac{ed-bf}{ad-bc}\ ,\ \ \ y=\dfrac{af-ec}{ad-bc}\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        There is of course one proviso: if \(ad-bc=0\) then neither \(x\) nor \(y\) has a defined value.
+    </span>
+    <span class="multilang" lang="no">
+        Det er selvf&#248;lgelig ett unntak: hvis \(ad-bc=0\), s&#229; har verken \(x\) eller \(y\) en definert verdi.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        If we choose to express these solutions in terms of determinants we have the formulation for the solution of simultaneous equations known as
+        <strong>
+            Cramer's rule
+        </strong>
+        .
+    </span>
+    <span class="multilang" lang="no">
+        Hvis vi velger &#229; uttrykke disse l&#248;sningene ved hjelp av determinanter, har vi formuleringen for l&#248;sningen av samtidige ligninger som er kjent som
+        <strong>
+            Cramers regel
+        </strong>
+        .
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        If we define \(\Delta\) as the determinant \(\left|\begin{array}{cc}a&amp;b\\ c&amp;d\end{array}\right|\) and provided \(\Delta\neq 0\) then the
+        <strong>
+            unique
+        </strong>
+        solution of the equations
+    </span>
+    <span class="multilang" lang="no">
+        Hvis vi definerer \(\Delta\) som determinanten \(\left|\begin{array}{cc}a&amp;b\\ c&amp;d\end{array}\right|\), og gitt at \(\Delta\neq 0\), s&#229; er den
+        <strong>
+            unike
+        </strong>
+        l&#248;sningen p&#229; ligningene
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad ax+by=e\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad ax+by=e\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad cx+dy=f\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad cx+dy=f\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        is by (5) given by
+    </span>
+    <span class="multilang" lang="no">
+        er gitt av (5)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \(\qquad x=\dfrac{\Delta_x}{\Delta},\ \ y=\dfrac{\Delta_y}{\Delta}\quad\text{where}\quad
+                                \Delta_x=\left|\begin{array}{cc}e&amp;b\\ f&amp;d\end{array}\right|,\ \
+                                \Delta_y=\left|\begin{array}{cc}a&amp;e\\ c&amp;f\end{array}\right|.\)
+    </span>
+    <span class="multilang" lang="no">
+        \(\qquad x=\dfrac{\Delta_x}{\Delta},\ \ y=\dfrac{\Delta_y}{\Delta}\quad\text{hvor}\quad
+                                \Delta_x=\left|\begin{array}{cc}e&amp;b\\ f&amp;d\end{array}\right|,\ \
+                                \Delta_y=\left|\begin{array}{cc}a&amp;e\\ c&amp;f\end{array}\right|.\)
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Now \(\Delta\) is the determinant of coefficients on the left-hand sides of the equations. In the expression \(\Delta_x\) the coefficients of \(x\) (i.e.
+                                \(\left(\begin{array}{c}a\\
+                                c\end{array}\right)\) which is column 1 of \(\Delta\)) are replaced by the terms on the right-hand sides of the equations (i.e. by \(\left(\begin{array}{c}e\\
+                                f\end{array}\right)\)). Similarly in \(\Delta_y\) the coefficients of \(y\) (column 2 of \(\Delta\)) are replaced by the terms on the right-hand
+                                sides of the equations.
+    </span>
+    <span class="multilang" lang="no">
+        N&#229; er \(\Delta\) determinanten til koeffisientene p&#229; venstresiden av likningene. I uttrykket \(\Delta_x\) erstattes koeffisientene til \(x\) (dvs.
+                                \(\left(\begin{array}{c}a\\
+                                c\end{array}\right)\) som er kolonne 1 i \(\Delta\) ) med termene p&#229; h&#248;yresiden av likningene (dvs. med \(\left(\begin{array}{c}e\\
+                                f\end{array}\right)\) ). P&#229; samme m&#229;te i \(\Delta_y\) erstattes koeffisientene til \(y\) (kolonne 2 i \(\Delta\) ) med termene p&#229; h&#248;yresiden av likningene.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

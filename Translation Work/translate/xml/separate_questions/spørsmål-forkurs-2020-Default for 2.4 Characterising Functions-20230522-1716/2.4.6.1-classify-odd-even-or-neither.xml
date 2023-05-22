@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="gapselect">
+        <name>
+            <text>2.4.6.1 Classify odd, even, or neither</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        &#216;ving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Classify the following functions as odd, even or neither. If necessary sketch a graph to help you decide.
+    </span>
+    <span class="multilang" lang="no">
+        Klassifiser f&#248;lgende funksjoner som odde, jevn eller ingen av dem. Skisser om n&#248;dvendig en graf for &#229; hjelpe deg med &#229; bestemme.
+    </span>
+</p>
+<p>
+    <br/>
+</p>
+<ol class="HELM_parts">
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                \(f(x)=6\) is
+            </span>
+            <span class="multilang" lang="no">
+                \(f(x)=6\) er
+            </span>
+            [[1]]
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                \(f(x)=x^2\) is
+            </span>
+            <span class="multilang" lang="no">
+                \(f(x)=x^2\) er
+            </span>
+            [[1]]
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                \(f(x)=2x+1\) is
+            </span>
+            <span class="multilang" lang="no">
+                \(f(x)=2x+1\) er
+            </span>
+            [[3]]
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                \(f(x)=x\) is
+            </span>
+            <span class="multilang" lang="no">
+                \(f(x)=x\) er
+            </span>
+            [[2]]
+        </p>
+    </li>
+    <li>
+        <p>
+            <span class="multilang" lang="en">
+                \(f(x)=2x\) is
+            </span>
+            <span class="multilang" lang="no">
+                \(f(x)=2x\) er
+            </span>
+            [[2]]
+        </p>
+    </li>
+</ol>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <shuffleanswers>1</shuffleanswers>
+        <correctfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="en">
+    Your answer is correct.
+</span>
+<span class="multilang" lang="no">
+    Svaret ditt er riktig.
+</span>
+]]></text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="en">
+    Your answer is partially correct.
+</span>
+<span class="multilang" lang="no">
+    Svaret ditt er delvis riktig.
+</span>
+]]></text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="en">
+    Your answer is incorrect.
+</span>
+<span class="multilang" lang="no">
+    Svaret ditt er feil.
+</span>
+]]></text>
+        </incorrectfeedback>
+        <shownumcorrect/>
+        <selectoption>
+            <text>even</text>
+            <group>1</group>
+        </selectoption>
+        <selectoption>
+            <text>odd</text>
+            <group>2</group>
+        </selectoption>
+        <selectoption>
+            <text>neither odd nor even</text>
+            <group>3</group>
+        </selectoption>
+        <selectoption>
+            <text>even</text>
+            <group>2</group>
+        </selectoption>
+        <selectoption>
+            <text>even</text>
+            <group>3</group>
+        </selectoption>
+        <selectoption>
+            <text>odd</text>
+            <group>1</group>
+        </selectoption>
+        <selectoption>
+            <text>odd</text>
+            <group>3</group>
+        </selectoption>
+        <selectoption>
+            <text>neither odd nor even</text>
+            <group>1</group>
+        </selectoption>
+        <selectoption>
+            <text>neither odd nor even</text>
+            <group>2</group>
+        </selectoption>
+    </question>
+    
+
+</quiz>

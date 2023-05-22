@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>Potensregler</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p dir="ltr" style="text-align: left;">
+    <span style="font-size: 1.64062rem;">
+        Potenser
+    </span>
+    <br/>
+</p>
+<p>
+    Her er en liten oversikt over potensreglene.
+</p>
+<div class="HELM_keypoint">
+    <h4>
+        N&#248;kkelpunkt
+    </h4>
+    <ul>
+        <li>
+            \(a^n \cdot a^m = a^{n+m}\)
+        </li>
+        <li>
+            \(\frac{a^n}{a^m} = a^{n-m}\)
+        </li>
+        <li>
+            \((a^n)^m = a^{n \cdot m}\)
+        </li>
+        <li>
+            \(a^n \cdot b^n = (ab)^n\)
+        </li>
+        <li>
+            \(\frac{a^n}{b^n} = \left(\frac{a}{b}\right)^n\)
+        </li>
+        <li>
+            \(a^0 = 1\)
+        </li>
+        <li>
+            \(a^{-n} = \frac{1}{a^n}\)
+        </li>
+    </ul>
+</div>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

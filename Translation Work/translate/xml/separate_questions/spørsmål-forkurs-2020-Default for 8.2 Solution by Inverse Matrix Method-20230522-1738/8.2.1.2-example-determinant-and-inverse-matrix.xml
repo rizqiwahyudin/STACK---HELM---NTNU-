@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>8.2.1.2 Example determinant and inverse matrix</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h4 class="HELM_example">
+    <span class="multilang" lang="en">
+        Example
+    </span>
+    <span class="multilang" lang="no">
+        Eksempel
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Given the matrix \[A=\left[\begin{array}{rr}2&amp;3\\ 1&amp;-2\end{array}\right]\] find its determinant. What does this tell you about \(A^{-1}\)?
+    </span>
+    <span class="multilang" lang="no">
+        Gitt matrisen \[A=\left[\begin{array}{rr}2&amp;3\\1&amp;-2\end{array}\right]\] finn determinantet. Hva forteller dette deg om \(A^{-1}\)?
+    </span>
+</p>
+<h4 class="HELM_solution">
+    <span class="multilang" lang="en">
+        Solution
+    </span>
+    <span class="multilang" lang="no">
+        L&#248;sning
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        \[|A|=2\times (-2)-1\times 3=-7.\] Since \(|A|\neq 0\) then \(A^{-1}\) exists. Therefore, we can now find \(A^{-1}\):
+    </span>
+    <span class="multilang" lang="no">
+        \[|A|=2\times (-2)-1\times 3=-7.\] Siden \(|A|\neq 0\) eksisterer \(A^{-1}\). Derfor kan vi finne \(A^{-1}\):
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        \[A^{-1}=\dfrac{1}{(-7)}\left[\begin{array}{rr}-2&amp;-3\\
+                                -1&amp;2\end{array}\right]=\dfrac{1}{7}\left[\begin{array}{rr}2&amp;3\\ 1&amp;-2\end{array}\right]\]
+    </span>
+    <span class="multilang" lang="no">
+        \[A^{-1}=\dfrac{1}{(-7)}\left[\begin{array}{rr}-2&amp;-3\\
+                                -1&amp;2\end{array}\right]=\dfrac{1}{7}\left[\begin{array}{rr}2&amp;3\\ 1&amp;-2\end{array}\right]\]
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

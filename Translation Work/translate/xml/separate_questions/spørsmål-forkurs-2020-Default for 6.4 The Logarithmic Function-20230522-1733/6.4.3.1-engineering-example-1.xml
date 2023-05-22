@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>6.4.3.1 Engineering Example 1</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        Arrhenius' law
+    </span>
+    <span class="multilang" lang="no">
+        Arrhenius lov
+    </span>
+</h3>
+<h4>
+    <span class="multilang" lang="en">
+        Introduction
+    </span>
+    <span class="multilang" lang="no">
+        Introduksjon
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Chemical reactions are very sensitive to temperature; normally,
+                the rate of reaction increases as temperature increases. For
+                example, the corrosion of iron and the spoiling of food are more
+                rapid at higher temperatures. Chemically, the probability of
+                collision between two molecules increases with temperature, and an
+                increased collision rate results in higher kinetic energy, thus
+                increasing the proportion of molecules that have the
+        <b>
+            activation energy
+        </b>
+        for the reaction, i.e. the minimum energy
+                required for a reaction to occur. Based upon his observations, the
+                Swedish chemist, Svante Arrhenius, proposed that the rate of a
+                chemical reaction increases exponentially with temperature. This
+        relationship, now known as Arrhenius' law, is written as
+    </span>
+    <span class="multilang" lang="no">
+        Kjemiske reaksjoner er sv&#230;rt f&#248;lsomme for temperatur; vanligvis &#248;ker reaksjonshastigheten n&#229;r temperaturen &#248;ker. For eksempel er korrosjon av jern og nedbryting av mat raskere ved h&#248;yere temperaturer. Kjemisk &#248;ker sannsynligheten for kollisjon mellom to molekyler med temperaturen, og en &#248;kt kollisjonshastighet resulterer derfor i h&#248;yere kinetisk energi som &#248;ker antall molekyler som har tilstrekkelig
+        <b>
+            aktiveringsenergi
+        </b>
+        for reaksjonen, dvs. minimumsenergien n&#248;dvendig for at en reaksjon skal oppst&#229;. Basert p&#229; observasjoner foreslo den svenske kjemikeren Svante Arrhenius at hastigheten p&#229; en kjemisk reaksjon &#248;ker eksponentielt med temperaturen. Dette forhold, n&#229; kjent som Arrhenius lov, er skrevet som
+    </span>
+</p>
+\[k = k_0 \, \exp \left( \frac{-E_a}{R\,T} \right) \qquad (1)\]
+<p>
+    <span class="multilang" lang="en">
+        where \(k\) is the reaction rate constant, \(k_0\) is the frequency
+                factor, \(E_a\)is the activation energy, \(R\) is the universal gas
+                constant and \(T\) is the absolute temperature. Thus, the reaction
+                rate constant, \(k\), depends on the quantities \(k_0\) and \(E_a\),
+                which characterise a given reaction, and are generally assumed to
+        be temperature independent.
+    </span>
+    <span class="multilang" lang="no">
+        hvor \(k\) er reaksjonshastighetskonstanten, \(k_0\) er frekvensfaktoren, \(E_a\) er aktiveringsenergien, \(R\) er den universelle gass
+                    konstanten og \(T\) er den absolutte temperaturen. Alts&#229; avhenger reaksjonshastighetskonstant, \(k\), av mengdene \(k_0\) og \(E_a\),
+                    som karakteriserer en gitt reaksjon, og er antatt temperaturuavhengige.
+    </span>
+</p>
+<h4>
+    <span class="multilang" lang="en">
+        Problem in words
+    </span>
+    <span class="multilang" lang="no">
+        Problemet i ord
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        In a laboratory, ethyl acetate is reacted with sodium
+                hydroxide to investigate the reaction kinetics. Calculate the
+                frequency factor and activation energy of the reaction from
+                Arrhenius' Law, using the experimental measurements of temperature
+        and reaction rate constant in the table:
+    </span>
+    <span class="multilang" lang="no">
+        I et laboratorium reagerer etylacetat med natrium
+                    hydroksyd for &#229; unders&#248;ke reaksjonskinetikken. Beregn
+                    frekvensfaktoren og aktiveringsenergien til reaksjonen med
+                    Arrhenius' lov, ved bruk av eksperimentelle m&#229;linger av temperatur
+                    og reaksjonshastighetskonstant, gitt i tabellen:
+    </span>
+</p>
+<center>
+    <table border="1" frame="void" rules="all">
+        <thead>
+            <tr class="header">
+                <th style="text-align: center;">
+                    <span class="math inline">
+                        \(T\)
+                    </span>
+                </th>
+                <th style="text-align: center;">
+                    310
+                </th>
+                <th style="text-align: center;">
+                    350
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="odd">
+                <td style="text-align: center;">
+                    <span class="math inline">
+                        \(k\)
+                    </span>
+                </td>
+                <td style="text-align: center;">
+                    7.757192
+                </td>
+                <td style="text-align: center;">
+                    110.9601
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</center>
+<h4>
+    <span class="multilang" lang="en">
+        Mathematical statement of problem
+    </span>
+    <span class="multilang" lang="no">
+        Matematisk problemformulering
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Given that \(k = 7.757192 s^{-1}\) at \(T = 310 K\) and \(k =
+                110.9601 s^{-1}\) at \(T = 350 K\), use Equation (1) to produce two
+                linear equations in \(E_a\) and \(k_0\). Solve these to find \(E_a\) and
+                \(k_0\). (Assume that the gas constant \(R = 8.314 J K^{-1}
+        \text{mol}^{-1}.\))
+    </span>
+    <span class="multilang" lang="no">
+        Gitt at \(k = 7,757192 s^{-1}\) ved \(T = 310 K\) og \(k =
+                    110,9601 s^{-1}\) ved \(T = 350 K\), bruk ligning (1) for &#229; produsere to
+                    line&#230;re ligninger med \(E_a\) og \(k_0\). L&#248;s disse for &#229; finne \(E_a\) og
+                    \(k_0\). (Anta at gasskonstanten \(R = 8,314 J K^{-1}
+                    \text{mol}^{-1}.\))
+    </span>
+</p>
+<h4>
+    <span class="multilang" lang="en">
+        Mathematical analysis
+    </span>
+    <span class="multilang" lang="no">
+        Matematisk analyse
+    </span>
+</h4>
+<p>
+    <span class="multilang" lang="en">
+        Taking the natural logarithm of both sides of (1)
+    </span>
+    <span class="multilang" lang="no">
+        Ta den naturlige logaritmen til begge sider av (1)
+    </span>
+</p>
+<span class="multilang" lang="en">
+    \[\ln k = \ln \left\{k_0 \, \exp\left(\frac{-E_a}{R\,T}\right)\right\}= \ln k_0 - \frac{E_a}{R\,T}.\]
+Now inserting the experimental data gives the two linear equations in \(E_a\) and \(k_0\)
+
+
+
+
+\[\ln k_1 = \ln k_0 - {\frac{E_a}{R\,T_1}} \qquad (2)\]
+
+
+
+
+\[\ln k_2 = \ln k_0 - \frac{E_a}{R\,T_2} \qquad (3)\]
+
+
+
+
+where \(k_1 = 7.757192\), \(T_1 = 310\) and \(k_2 = 110.9601\), \(T_2 =
+        350\).
+</span>
+<span class="multilang" lang="no">
+    \[\ln k = \ln \left\{k_0 \, \exp\left(\frac{-E_a}{R\,T}\right)\right\}= \ln k_0 - \frac{E_a}{R\,T}.\]
+Innsetting av den eksperimentelle dataen gir de to line&#230;re ligningene med \(E_a\) og \(k_0\)
+
+
+
+
+\[\ln k_1 = \ln k_0 - {\frac{E_a}{R\,T_1}} \qquad (2)\]
+
+
+
+
+\[\ln k_2 = \ln k_0 - \frac{E_a}{R\,T_2} \qquad (3)\]
+
+
+
+
+der \(k_1 = 7.757192\), \(T_1 = 310\) og \(k_2 = 110.9601\), \(T_2 =
+350\).
+</span>
+<p>
+    <span class="multilang" lang="en">
+        Firstly, to find \(E_a\), subtract Equation (2) from Equation (3)
+                \[\ln k_2-\ln k_1= \dfrac{E_a}{R\,T_1}-\dfrac{E_a}{R\,T_2}= \dfrac{E_a}{R} \left( \dfrac{1}{T_1} - \dfrac{1}{T_2} \right)\]
+                so that
+                \[E_a = \frac{R\,(\ln k_2-\ln k_1)}{\left(\frac{1}{T_1}-\frac{1}{T_2}\right)}\]
+                and substituting the values gives
+                \[E_a= 60 000 \mbox{ J mol}^{-1} = 60 \mbox{ kJ mol}^{-1}\]
+                Secondly, to find \(k_0\), from (2)
+                \[\ln k_0 = \ln k_1 + \frac{E_a}{R\,T_1}\]
+                which implies
+                \[k_0 = \exp \left( \ln k_1 + \frac{E_a}{R\,T_1}\right)= k_1 \, \exp \left(\frac{E_a}{R\,T_1}\right)\]
+                and substituting the values gives
+        \[k_0= 1.0 \times 10^{11} \mbox{ s}^{-1}.\]
+    </span>
+    <span class="multilang" lang="no">
+        F&#248;rst, for &#229; finne \(E_a\), trekk ligning (2) fra ligning (3)
+                \[\ln k_2-\ln k_1= \dfrac{E_a}{R\,T_1}-\dfrac{E_a}{R\,T_2}= \dfrac{E_a}{R} \left( \dfrac{1}{T_1} - \dfrac{1}{T_2} \right)\]
+                slik at
+                \[E_a = \frac{R\,(\ln k_2-\ln k_1)}{\left(\frac{1}{T_1}-\frac{1}{T_2}\right)}\] &#197; sette inn verdiene gir
+                \[E_a= 60 000 \mbox{ J mol}^{-1} = 60 \mbox{ kJ mol}^{-1}\]
+                For det andre, for &#229; finne \(k_0\), fra (2)
+                \[\ln k_0 = \ln k_1 + \frac{E_a}{R\,T_1}\]
+                som impliserer
+                \[k_0 = \exp \left( \ln k_1 + \frac{E_a}{R\,T_1}\right)= k_1 \, \exp \left(\frac{E_a}{R\,T_1}\right)\]
+                og substituere verdiene gir
+                \[k_0= 1.0 \times 10^{11} \mbox{ s}^{-1}.\]
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

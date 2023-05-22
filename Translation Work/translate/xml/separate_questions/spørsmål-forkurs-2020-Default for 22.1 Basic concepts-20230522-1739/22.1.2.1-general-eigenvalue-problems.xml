@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>22.1.2.1 General eigenvalue problems</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    <span class="multilang" lang="en">
+        General eigenvalue problems
+    </span>
+    <span class="multilang" lang="no">
+        Generelle egenverdiproblemer
+    </span>
+</h3>
+<p>
+    <span class="multilang" lang="en">
+        Consider a given square matrix \(A\). If \(\underline{x}\) is a column vector and
+                                \(\lambda\) is a scalar (a number)
+                                then the relation
+    </span>
+    <span class="multilang" lang="no">
+        La oss betrakte en gitt kvadratisk matrise \(A\). Hvis \(\underline{x}\) er en kolonnevektor og \(\lambda\) er
+                                en skalar (et tall)
+                                s&#229; er relasjonen
+    </span>
+</p>
+\[A\underline{x}=\lambda \underline{x} \tag{1}\]
+<p>
+    <span class="multilang" lang="en">
+        is called an
+        <strong>
+            eigenvalue problem
+        </strong>
+        . Our purpose is to carry out an
+                                analysis of this equation in a
+                                manner similar to the example above. However, we will attempt a more general approach which will apply to
+        <strong>
+            all
+        </strong>
+        problems of this kind.
+    </span>
+    <span class="multilang" lang="no">
+        kalt et
+        <strong>
+            egenverdiproblem
+        </strong>
+        . V&#229;rt form&#229;l er &#229; utf&#248;re en analyse av denne likningen p&#229; en m&#229;te som
+                                er lignende det i eksempelet over. Vi vil imidlertid pr&#248;ve en mer generell tiln&#230;rming som vil gjelde for
+        <strong>
+            alle
+        </strong>
+        problemer av denne typen.
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Firstly, we can spot an obvious solution (for \(\underline{x}\)) to these equations. The solution
+                \(\underline{x}=\underline{0}\) is a possibility (for then both sides are zero). We will not be interested in these
+        <strong>
+            trivial solutions
+        </strong>
+        of the eigenvalue problem. Our main interest will be in the occurrence of
+        <strong>
+            non-trivial solutions
+        </strong>
+        for \(\underline{x}\). These may exist for special values of \(\lambda\),
+                called the
+        <strong>
+            eigenvalues
+        </strong>
+        of the matrix \(A\). We proceed as in the previous example:
+    </span>
+    <span class="multilang" lang="no">
+        For det f&#248;rste kan vi se at det er en &#229;penbar l&#248;sning (for \(\underline{x}\)) til disse ligningene. L&#248;sningen
+                                \(\underline{x}=\underline{0}\) er en mulighet (for da er begge sider null). Vi vil ikke v&#230;re interessert i disse
+        <strong>
+            trivielle l&#248;sningene
+        </strong>
+        til egenverdiproblemet. V&#229;rt hovedinteresse vil v&#230;re i forekomsten av
+        <strong>
+            ikke-trivielle l&#248;sninger
+        </strong>
+        for \(\underline{x}\). Disse kan eksistere for spesielle verdier av
+                                \(\lambda\), kalt
+        <strong>
+            egenverdiene
+        </strong>
+        til matrisen \(A\). Vi fortsetter som i det forrige eksempelet:
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Take all unknowns to one side:
+    </span>
+    <span class="multilang" lang="no">
+        Ta alle ukjente til en side:
+    </span>
+</p>
+\[(A-\lambda I)\underline{x}=\underline{0} \tag{2}\]
+<p>
+    <span class="multilang" lang="en">
+        where \(I\) is a unit matrix with the same dimensions as \(A\). (Note that \(A\underline{x}-\lambda
+                \underline{x}=\underline{0}\) does
+        <strong>
+            not
+        </strong>
+        simplify to \((A-\lambda)\underline{x}=\underline{0}\) as
+                you
+        <strong>
+            cannot
+        </strong>
+        subtract a scalar \(\lambda\) from a matrix \(A\)). This equation \((2)\) is a
+        <strong>
+            homogeneous
+        </strong>
+        system of equations. In the notation of the earlier discussion \(C\equiv A-\lambda I\)
+                and \(\underline{k}\equiv \underline{0}\). For such a system we know that non-trivial solutions will only exist if
+                the determinant of the coefficient matrix is zero:
+    </span>
+    <span class="multilang" lang="no">
+        hvor \(I\) er en enhetsmatrise med samme dimensjoner som \(A\). (Merk at \(A\underline{x}-\lambda \underline{x}=\underline{0}\)
+                                ikke forenkles til \((A-\lambda)\underline{x}=\underline{0}\) siden du
+        <strong>
+            ikke
+        </strong>
+        kan trekke fra en
+                                skalar \(\lambda\) fra en matrise \(A\)). Denne likningen \((2)\) er et
+        <strong>
+            homogent
+        </strong>
+        system av
+                                ligninger. I notasjonen fra tidligere diskusjon er \(C\equiv A-\lambda I\) og \(\underline{k}\equiv \underline{0}\).
+                                For slike systemer vet vi at ikke-trivielle l&#248;sninger bare vil eksistere hvis determinanten til koeffisientmatrisen
+                                er null:
+    </span>
+</p>
+\[\det(A-\lambda I)=0 \tag{3}\]
+<p>
+    <span class="multilang" lang="en">
+        Equation \((3)\) is called the
+        <strong>
+            characteristic equation
+        </strong>
+        of the eigenvalue problem. We see that the
+                characteristic equation only involves one unknown \(\lambda\). The characteristic equation is generally a polynomial
+                in \(\lambda\), with degree being the same as the order of \(A\) (so if \(A\) is \(2\times 2\) the characteristic
+                equation is a quadratic, if \(A\) is a \(3\times 3\) it is a cubic equation, and so on). For each value of
+                \(\lambda\) that is obtained the corresponding vector \(\underline{x}\) is obtained by solving the original
+                equations \((1)\). These \(\underline{x}\) are called
+        <strong>
+            eigenvectors
+        </strong>
+        .
+    </span>
+    <span class="multilang" lang="no">
+        Likningen \((3)\) kalles dne
+        <strong>
+            karakteristiske likningen
+        </strong>
+        til egenverdiproblemet. Vi ser at den karakterisktiske likningen
+                                bare involverer en ukjent \(\lambda\). Dne karakteristiske likningen er generelt en polynomlikning i \(\lambda\), med grad
+                                lik orderen til \(A\) (s&#229; hvis \(A\) er \(2\times 2\) er den karakterisktiske likningen kvadratisk, hvis \(A\) er en
+                                \(3\times 3\) er det en kubisk likning, og s&#229; videre). For hver verdi av \(\lambda\) som bestemmes, f&#229;r vi den
+                                tilsvarende vektoren \(\underline{x}\) ved &#229; l&#248;se de opprinnelige ligningene \((1)\). Disse \(\underline{x}\) kalles
+        <strong>
+            egenvektorer
+        </strong>
+        .
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        N.B. We shall see that eigenvectors are only unique up to a multiplicative factor: i.e. if \(\underline{x}\)
+                satisfies \(A\underline{x}=\lambda \underline{x}\) then so does \(k\underline{x}\) when \(k\) is any constant.
+    </span>
+    <span class="multilang" lang="no">
+        NB. Vi skal se at egenvektorer er unike opp til en multiplikativ faktor: dvs. hvis \(\underline{x}\) oppfyller
+                \(A\underline{x}=\lambda \underline{x}\) s&#229; gj&#248;r \(k\underline{x}\) dte ogs&#229; n&#229;r \(k\) er en konstant.
+    </span>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

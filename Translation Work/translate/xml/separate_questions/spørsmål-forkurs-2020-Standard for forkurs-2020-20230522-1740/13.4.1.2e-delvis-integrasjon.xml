@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="stack">
+        <name>
+            <text>13.4.1.2e Delvis integrasjon</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<span class="multilang" lang="en">
+    <p class="HELM_exercise">
+        Exercise
+    </p>
+    <p>
+        In some questions below it will be necessary to apply integration by parts more than once.
+    </p>
+    <p>
+        Find
+    </p>
+    <ol class="HELM_parts">
+        <li>
+            \({\displaystyle\int x\cos kx\mathrm{d}x}\), where \(k\) is a constant [[input:ans9]] [[validation:ans9]] [[feedback:prt9]]
+        </li>
+        <li>
+            \({\displaystyle\int z^2\cos kz\mathrm{d}z}\), where \(k\) is a constant [[input:ans10]] [[validation:ans10]] [[feedback:prt10]]
+        </li>
+    </ol>
+</span>
+<span class="multilang" lang="no">
+    <p class="HELM_exercise">
+        Oppgave
+    </p>
+    <p>
+        Regn ut
+    </p>
+    <ol class="HELM_parts">
+        <li>
+            \({\displaystyle\int x\cos kx\mathrm{d}x}\), hvor \(k\) er en konstant [[input:ans9]] [[validation:ans9]] [[feedback:prt9]]
+        </li>
+        <li>
+            \({\displaystyle\int z^2\cos kz\mathrm{d}z}\), hvor \(k\) er en konstant [[input:ans10]] [[validation:ans10]] [[feedback:prt10]]
+        </li>
+    </ol>
+</span>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text><![CDATA[
+<span class="multilang" lang="en">
+    <p>
+        We apply integraton by parts: \[ \int u{{\rm d}v\over {\rm d}x}{\rm d}x=uv- \int{{\rm d}u\over {\rm d}x}v\,{\rm d}x\]
+    </p>
+    <p>
+        or alternatively: \[\int f(x)g(x)\,{\rm d}x=f(x)\,\int g(x){\rm d}x -\int {{\rm d}f\over {\rm d}x}\left\{\int g(x){\rm d}x\right\}{\rm d}x.\]
+    </p>
+    <ol class="HELM_parts">
+        <li>
+            <p>
+                We are given the integral \({\displaystyle\int {@exp9@} \mathrm{d}x}.\)
+            </p>
+            <p>
+                We have \( f(x) = {@f9@}\) and \(g(x) = {@g9@}.\)
+            </p>
+            <p>
+                Hence:
+            </p>
+            <p>
+                \(\begin{align} \int {@exp9@} \mathrm{d}x &amp;={@f9@} \int {@g9@} \mathrm{d}x -\int \left({@df9@} \cdot \int {@g9@}\mathrm{d}x \right)\mathrm{d}x \\ &amp;= {@f9* intg9@}- \int {@df9*intg9@}\mathrm{d}x \\ &amp;= {@ta9@}. \end{align}\)
+            </p>
+        </li>
+        <li>
+            <p>
+                We are given the integral \(\displaystyle{ \int {@exp10@} \mathrm{d}z}.\)
+            </p>
+            <p>
+                We have \( f(z) = {@f10@}\) and \(g(z) = {@g10@}.\)
+            </p>
+            <p>
+                Hence:
+            </p>
+            <p>
+                \(\begin{align} \int {@exp10@} \mathrm{d}z &amp;={@f10@} \int {@g10@} \mathrm{d}z -\int \left({@df10@} \cdot \int {@g10@}\mathrm{d}z \right)\mathrm{d}z \\ &amp;= {@f10* intg10@}- \int {@df10*intg10@}\mathrm{d}z \end{align}\)
+            </p>
+            <p>
+                We now need to find \(\displaystyle \int {@df10*intg10@} \mathrm{d}z \) using integration by part again. We get
+            </p>
+            <p>
+                \(\begin{align} \int {@df10*intg10@} \mathrm{d}z = {@int(df10*intg10, z)@} \end{align}\)
+            </p>
+            <p>
+                Altogether we have:
+            </p>
+            <p>
+                \(\displaystyle{ \int {@exp10@} \mathrm{d}z= {@ta10@}}.\)
+            </p>
+        </li>
+    </ol>
+</span>
+<span class="multilang" lang="no">
+    <p>
+        Vi bruker delvis integrasjon: \[ \int u{{\rm d}v\over {\rm d}x}{\rm d}x=uv- \int{{\rm d}u\over {\rm d}x}v\,{\rm d}x\]
+    </p>
+    <p>
+        alternativt: \[\int f(x)g(x)\,{\rm d}x=f(x)\,\int g(x){\rm d}x -\int {{\rm d}f\over {\rm d}x}\left\{\int g(x){\rm d}x\right\}{\rm d}x.\]
+    </p>
+    <ol class="HELM_parts">
+        <li>
+            <p>
+                Gitt integralet \({\displaystyle\int {@exp9@} \mathrm{d}x}.\)
+            </p>
+            <p>
+                Vi velger \( f(x) = {@f9@}\) og \(g(x) = {@g9@}.\)
+            </p>
+            <p>
+                Dermed:
+            </p>
+            <p>
+                \(\begin{align} \int {@exp9@} \mathrm{d}x &amp;={@f9@} \int {@g9@} \mathrm{d}x -\int \left({@df9@} \cdot \int {@g9@}\mathrm{d}x \right)\mathrm{d}x \\ &amp;= {@f9* intg9@}- \int {@df9*intg9@}\mathrm{d}x \\ &amp;= {@ta9@}. \end{align}\)
+            </p>
+        </li>
+        <li>
+            <p>
+                Gitt integralet\(\displaystyle{ \int {@exp10@} \mathrm{d}z}.\)
+            </p>
+            <p>
+                Velger \( f(z) = {@f10@}\) og \(g(z) = {@g10@}.\)
+            </p>
+            <p>
+                Dermed:
+            </p>
+            <p>
+                \(\begin{align} \int {@exp10@} \mathrm{d}z &amp;={@f10@} \int {@g10@} \mathrm{d}z -\int \left({@df10@} \cdot \int {@g10@}\mathrm{d}z \right)\mathrm{d}z \\ &amp;= {@f10* intg10@}- \int {@df10*intg10@}\mathrm{d}z \end{align}\)
+            </p>
+            <p>
+                N&#229; m&#229; vi finne \(\displaystyle \int {@df10*intg10@} \mathrm{d}z \) med en ny runde delvis integrasjon. Da f&#229;r vi
+            </p>
+            <p>
+                \(\begin{align} \int {@df10*intg10@} \mathrm{d}z = {@int(df10*intg10, z)@} \end{align}\)
+            </p>
+            <p>
+                Tilsammen f&#229;r vi:
+            </p>
+            <p>
+                \(\displaystyle{ \int {@exp10@} \mathrm{d}z= {@ta10@}}.\)
+            </p>
+        </li>
+    </ol>
+</span>
+]]></text>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.1000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <stackversion>
+            <text>2020120600</text>
+        </stackversion>
+        <questionvariables>
+            <text>exp9: x*cos(k*x); 
+f9: x;                         /* needed for worked solution */
+g9: cos(k*x);
+intg9: int(g9,x);
+df9: diff(f9,x);
+
+exp10: z^2*cos(k*z);
+f10: z^2;                         /* needed for worked solution */
+g10: cos(k*z);
+intg10: int(g10,z);
+df10: diff(f10,z); 
+
+ta9: int(exp9, x) + c; 
+ta10: int(exp10, z) + c;</text>
+        </questionvariables>
+        <specificfeedback format="html">
+            <text/>
+        </specificfeedback>
+        <questionnote>
+            <text/>
+        </questionnote>
+        <questionsimplify>1</questionsimplify>
+        <assumepositive>0</assumepositive>
+        <assumereal>0</assumereal>
+        <prtcorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </prtcorrect>
+        <prtpartiallycorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </prtpartiallycorrect>
+        <prtincorrect format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </prtincorrect>
+        <multiplicationsign>dot</multiplicationsign>
+        <sqrtsign>1</sqrtsign>
+        <complexno>i</complexno>
+        <inversetrig>cos-1</inversetrig>
+        <logicsymbol>lang</logicsymbol>
+        <matrixparens>[</matrixparens>
+        <variantsselectionseed/>
+        <input>
+            <name>ans10</name>
+            <type>algebraic</type>
+            <tans>ta10</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <input>
+            <name>ans9</name>
+            <type>algebraic</type>
+            <tans>ta9</tans>
+            <boxsize>15</boxsize>
+            <strictsyntax>1</strictsyntax>
+            <insertstars>0</insertstars>
+            <syntaxhint/>
+            <syntaxattribute>0</syntaxattribute>
+            <forbidwords/>
+            <allowwords/>
+            <forbidfloat>1</forbidfloat>
+            <requirelowestterms>0</requirelowestterms>
+            <checkanswertype>0</checkanswertype>
+            <mustverify>1</mustverify>
+            <showvalidation>1</showvalidation>
+            <options/>
+        </input>
+        <prt>
+            <name>prt10</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>Int</answertest>
+                <sans>ans10</sans>
+                <tans>ta10</tans>
+                <testoptions>z</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt10-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt10-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+        <prt>
+            <name>prt9</name>
+            <value>1.0000000</value>
+            <autosimplify>1</autosimplify>
+            <feedbackstyle>1</feedbackstyle>
+            <feedbackvariables>
+                <text/>
+            </feedbackvariables>
+            <node>
+                <name>0</name>
+                <answertest>Int</answertest>
+                <sans>ans9</sans>
+                <tans>ta9</tans>
+                <testoptions>x</testoptions>
+                <quiet>0</quiet>
+                <truescoremode>=</truescoremode>
+                <truescore>1.0000000</truescore>
+                <truepenalty/>
+                <truenextnode>-1</truenextnode>
+                <trueanswernote>prt9-1-T</trueanswernote>
+                <truefeedback format="html">
+                    <text/>
+                </truefeedback>
+                <falsescoremode>=</falsescoremode>
+                <falsescore>0.0000000</falsescore>
+                <falsepenalty/>
+                <falsenextnode>-1</falsenextnode>
+                <falseanswernote>prt9-1-F</falseanswernote>
+                <falsefeedback format="html">
+                    <text/>
+                </falsefeedback>
+            </node>
+        </prt>
+    </question>
+    
+
+</quiz>

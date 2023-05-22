@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="gapselect">
+        <name>
+            <text>7.1.2.3 Classify the following matrices</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<p class="HELM_exercise">
+    <span class="multilang" lang="en">
+        Exercise
+    </span>
+    <span class="multilang" lang="no">
+        &#216;ving
+    </span>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Classify the following \(3\times 3\) matrices. If multiple options are valid then choose the most restrictive option.
+    </span>
+    <span class="multilang" lang="no">
+        Klasifiser f&#248;lgende \(3\times 3\) matriser. Hvis flere alternativer er gyldige, velg det mest restriktive alternativet.
+    </span>
+    <br/>
+</p>
+<p>
+    \(A=\left[\begin{array}{lll}\hfill 1&amp;\hfill 1&amp;\hfill 2\\ \hfill 1&amp;\hfill 1&amp;\hfill 1\\ \hfill 0&amp;\hfill 1&amp;\hfill 3 \end{array}\right]\), \(B=\left[\begin{array}{lll}\hfill 1&amp;\hfill 0&amp;\hfill 0\\ \hfill 1&amp;\hfill 1&amp;\hfill 0\\ \hfill 0&amp;\hfill 1&amp;\hfill 3 \end{array}\right]\), \(C=\left[\begin{array}{lll}\hfill 1&amp;\hfill 2&amp;\hfill 1\\ \hfill 0&amp;\hfill 1&amp;\hfill 4\\ \hfill 0&amp;\hfill 0&amp;\hfill 1 \end{array}\right]\), \(D=\left[\begin{array}{lll}\hfill 1&amp;\hfill 0&amp;\hfill 0\\ \hfill 0&amp;\hfill 3&amp;\hfill 0\\ \hfill 0&amp;\hfill 0&amp;\hfill 2 \end{array}\right]\)
+</p>
+<p>
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Matrix \(A\) is:
+    </span>
+    <span class="multilang" lang="no">
+        Matrise \(A\) er:
+    </span>
+    [[1]]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Matrix \(B\) is:
+    </span>
+    <span class="multilang" lang="no">
+        Matrise \(B\) er:
+    </span>
+    [[3]]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Matrix \(C\) is:
+    </span>
+    <span class="multilang" lang="no">
+        Matrise \(C\) er:
+    </span>
+    [[4]]
+</p>
+<p>
+    <span class="multilang" lang="en">
+        Matrix \(D\) is:
+    </span>
+    <span class="multilang" lang="no">
+        Matrise \(D\) er:
+    </span>
+    [[2]]
+    <br/>
+</p>
+<br/>
+<p>
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>1.0000000</defaultgrade>
+        <penalty>0.3333333</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+        <shuffleanswers>0</shuffleanswers>
+        <correctfeedback format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:green;">
+    <i class="fa fa-check">
+    </i>
+</span>
+Correct answer, well done.
+]]></text>
+        </correctfeedback>
+        <partiallycorrectfeedback format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:orange;">
+    <i class="fa fa-adjust">
+    </i>
+</span>
+Your answer is partially correct.
+]]></text>
+        </partiallycorrectfeedback>
+        <incorrectfeedback format="html">
+            <text><![CDATA[
+<span style="font-size: 1.5em; color:red;">
+    <i class="fa fa-times">
+    </i>
+</span>
+Incorrect answer.
+]]></text>
+        </incorrectfeedback>
+        <shownumcorrect/>
+        <selectoption>
+            <text>A Square Matrix</text>
+            <group>1</group>
+        </selectoption>
+        <selectoption>
+            <text>Diagonal</text>
+            <group>1</group>
+        </selectoption>
+        <selectoption>
+            <text>Lower triangular</text>
+            <group>1</group>
+        </selectoption>
+        <selectoption>
+            <text>Upper triangular</text>
+            <group>1</group>
+        </selectoption>
+        <selectoption>
+            <text>None of the above apply</text>
+            <group>1</group>
+        </selectoption>
+    </question>
+    
+
+</quiz>

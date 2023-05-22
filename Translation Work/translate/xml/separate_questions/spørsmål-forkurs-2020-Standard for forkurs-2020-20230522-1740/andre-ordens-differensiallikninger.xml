@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>Andre ordens differensiallikninger</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    Andre ordens differensiallikninger
+</h3>
+<p>
+    Andre ordens differensialligninger representeres p&#229; formen \(ay''+by'+cy=0\) der \(a, b\) og \(c\) er konstanter. Disse ligningene l&#248;ses ved hjelp av den karakteistiske ligningen \(ar^2+br+c=0\).
+</p>
+<br/>
+<p>
+    Om den karakteristiske ligningen kun har en l&#248;sning, \(r_1\), er den generelle l&#248;sningen:
+</p>
+<p>
+    \(y=(C_1+C_2x)e^{r_1x}\)
+</p>
+<br/>
+<p>
+    Om den karakteristiske ligningen har to l&#248;sninger, \(r_1\) og \(r_2\), er den generelle l&#248;sningen:
+</p>
+<p>
+    \(y=C_1e^{r_1x}+C_2e^{r_2x}\)
+</p>
+<br/>
+<p>
+    Dersom l&#248;sningen til den karakteristiske ligningen er kompleks, alts&#229; p&#229; formen \(r=s\pm it\) er den generelle l&#248;sningen:
+</p>
+<p>
+    \(y=e^{sx}(C_1\sin(tx)+C_2\cos(tx))\)
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<quiz>
+<question type="description">
+        <name>
+            <text>F&#248;rsteordens line&#230;re differensialligninger</text>
+        </name>
+        <questiontext format="html">
+            <text><![CDATA[
+<h3>
+    F&#248;rsteordens line&#230;re differensialligninger
+</h3>
+<p>
+    En f&#248;rsteordens line&#230;re differensialligninger har formen \(y'+f(x)y=g(x)\). Slike ligninger l&#248;ses ved &#229; forvandle venstre side til det deriverte av en produkt. Dette er oppn&#229;dd ved &#229; multiplisere begge sider med den integrerende faktoren: \(\exp(\int f(x) dx) = M(x)\).
+</p>
+<p>
+    Dersom vi multipliserer begge sider av den generelle ligningen \(y'+f(x)y=g(x)\) med den integrerende faktoren \(M(x)\) f&#229;r vi:
+</p>
+<p>
+    \(M(x)y'+M(x)f(x)y=M(x)g(x) \implies\)
+</p>
+<p>
+    \((M(x) \cdot y)'=M(x)g(x)\)
+</p>
+<br/>
+<p>
+    Husk at \(M(x) = e^{\int f(x)}\) s&#229; \((M(x)y)'=M(x)y'+M(x)f(x)y\)
+</p>
+<p>
+    Videre integrerer vi begge sider som gir:
+</p>
+<br/>
+<p>
+    \((M(x)y) + C_1 = \int g(x)M(x) dx \implies \)
+</p>
+<p>
+    \(y =-\frac{C_1}{M(x)} + \frac{1}{M(x)} \int g(x)M(x) dx\)
+</p>
+<h4 class="HELM_example">
+    Eksempel
+</h4>
+<p>
+    L&#248;s \((x^3+4)y' + 3x^2y = 6x^2\cdot (2x^3+8)\).
+</p>
+<h4 class="HELM_solution">
+    L&#248;sning
+</h4>
+<p>
+    Vi endrer f&#248;rst litt p&#229; uttrykket s&#229; den har samme form som det generelle uttrykket \(y'+f(x)y=g(x)\). Dette gj&#248;res ved &#229; dividere begge sider med \((x^3+4)\):
+</p>
+<p>
+    \(y' + \frac{3x^2}{(x^3+4)}y = 12x^2\)
+</p>
+<br/>
+<p>
+    Da er \(f(x) = \frac{3x^2}{(x^3+4)}\) og \(g(x) = 12x^2\). Den integrerende faktoren er da:
+</p>
+<p>
+    \(M(x) = \exp(\int f(x) dx) = \exp(\int \frac{3x^2}{(x^3+4)}dx) = x^3+4 \quad \text{(bruk substitusjon for &#229; integrere)}\)
+</p>
+<p>
+    Vi multipliserer begge sider med den integrerende faktoren \(x^3+4\) og merker at \((x^3+4)y'+3x^2y = ((x^3+4)y)'\):
+</p>
+<p>
+    \((x^3+4)y'+3x^2y = 12x^5+48x^2 \implies\)
+</p>
+<p>
+    \(((x^3+4)y)' = 12x^5+48x^2 \implies \)
+</p>
+<p>
+    \((x^3+4)y = 2x^6+16x^3 + C \implies \)
+</p>
+<p>
+    \(y = \frac{2x^6+16x^3 + C}{x^3+4} \)
+</p>
+]]></text>
+        </questiontext>
+        <generalfeedback format="html">
+            <text/>
+        </generalfeedback>
+        <defaultgrade>0.0000000</defaultgrade>
+        <penalty>0.0000000</penalty>
+        <hidden>0</hidden>
+        <idnumber/>
+    </question>
+    
+
+</quiz>
